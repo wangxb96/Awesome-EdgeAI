@@ -9,3 +9,5 @@
 **The edge computing infrastructure:**
 
 ![The edge computing infrastructure](https://raw.githubusercontent.com/wangxb96/Awesome-Edge-Intelligence/main/Edge_computing_infrastructure.png)
+
+**Edge Device:** An edge device is a device that provides an entry point into enterprise or service provider core networks. Examples include routers, routing switches, integrated access devices (IADs), multiplexers, and a variety of metropolitan area network (MAN) and wide area network (WAN) access devices.

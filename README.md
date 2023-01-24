@@ -39,3 +39,6 @@
 - [What is Edge AI?](https://www.advian.fi/en/what-is-edge-ai)
 - [Edge AI – Driving Next-Gen AI Applications in 2022](https://viso.ai/edge-ai/edge-ai-applications-and-trends/)
 - [Edge Intelligence: Edge Computing and Machine Learning (2023 Guide)](https://viso.ai/edge-ai/edge-intelligence-deep-learning-with-edge-computing/)
+- [What is Edge AI, and how does it work?](https://xailient.com/blog/a-comprehensive-guide-to-edge-ai/)
+- [Edge AI 101- What is it, Why is it important, and How to implement Edge AI?](https://www.seeedstudio.com/blog/2021/04/02/edge-ai-what-is-it-and-what-can-it-do-for-edge-iot/)
+- [Edge AI: The Future of Artificial Intelligence](https://softtek.eu/en/tech-magazine-en/artificial-intelligence-en/edge-ai-el-futuro-de-la-inteligencia-artificial/)

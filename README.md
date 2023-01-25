@@ -44,3 +44,15 @@
 - [Edge AI: The Future of Artificial Intelligence](https://softtek.eu/en/tech-magazine-en/artificial-intelligence-en/edge-ai-el-futuro-de-la-inteligencia-artificial/)
 - [What is Edge AI? Machine Learning + IoT](https://www.digikey.com/en/maker/projects/what-is-edge-ai-machine-learning-iot/4f655838138941138aaad62c170827af)
 - [What is edge AI computing?](https://www.telusinternational.com/insights/ai-data/article/what-is-edge-ai-computing)
+
+## Reviews
+
+### Edge Computing
+- [Shi, W., Cao, J., Zhang, Q., Li, Y., & Xu, L. (2016). Edge computing: Vision and challenges. IEEE internet of things journal, 3(5), 637-646.](https://ieeexplore.ieee.org/abstract/document/7488250)
+- [Varghese, B., Wang, N., Barbhuiya, S., Kilpatrick, P., & Nikolopoulos, D. S. (2016, November). Challenges and opportunities in edge computing. In 2016 IEEE International Conference on Smart Cloud (SmartCloud) (pp. 20-26). IEEE.](https://ieeexplore.ieee.org/abstract/document/7796149)
+- [Shi, W., & Dustdar, S. (2016). The promise of edge computing. Computer, 49(5), 78-81.](https://ieeexplore.ieee.org/abstract/document/7469991)
+- [Satyanarayanan, M. (2017). The emergence of edge computing. Computer, 50(1), 30-39.](https://ieeexplore.ieee.org/abstract/document/7807196)
+
+### Edge AI
+- [Chen, J., & Ran, X. (2019). Deep learning with edge computing: A review. Proceedings of the IEEE, 107(8), 1655-1674.](https://ieeexplore.ieee.org/abstract/document/8763885/)
+- 

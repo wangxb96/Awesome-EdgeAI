@@ -131,10 +131,15 @@
 
 ### Important Surveys on Edge AI (Related to edge inference and model deploy)
 - [Wang, X., Han, Y., Leung, V. C., Niyato, D., Yan, X., & Chen, X. (2020). Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/relation_ei_ie.png)
 - [Chen, J., & Ran, X. (2019). Deep learning with edge computing: A review. Proceedings of the IEEE, 107(8), 1655-1674.](https://ieeexplore.ieee.org/abstract/document/8763885/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/DNN_inference_speedup_methods.png)
 - [Murshed, M. S., Murphy, C., Hou, D., Khan, N., Ananthanarayanan, G., & Hussain, F. (2021). Machine learning at the network edge: A survey. ACM Computing Surveys (CSUR), 54(8), 1-37.](https://dl.acm.org/doi/abs/10.1145/3469029)
-- [Wang, X., Han, Y., Leung, V. C., Niyato, D., Yan, X., & Chen, X. (2020). Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/ML_at_edge.png)
 - [Deng, S., Zhao, H., Fang, W., Yin, J., Dustdar, S., & Zomaya, A. Y. (2020). Edge intelligence: The confluence of edge computing and artificial intelligence. IEEE Internet of Things Journal, 7(8), 7457-7469.](https://ieeexplore.ieee.org/abstract/document/9052677/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/research_roadmap_edge_intelligence.png)
 - [Zhou, Z., Chen, X., Li, E., Zeng, L., Luo, K., & Zhang, J. (2019). Edge intelligence: Paving the last mile of artificial intelligence with edge computing. Proceedings of the IEEE, 107(8), 1738-1762.](https://ieeexplore.ieee.org/abstract/document/8736011/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/six_level_EI.png)
 - [Xu, D., Li, T., Li, Y., Su, X., Tarkoma, S., Jiang, T., ... & Hui, P. (2021). Edge intelligence: Empowering intelligence to the edge of network. Proceedings of the IEEE, 109(11), 1778-1837.](https://ieeexplore.ieee.org/abstract/document/9596610/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/classification_of_edge_ai.png)
 

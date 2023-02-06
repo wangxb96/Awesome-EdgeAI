@@ -45,7 +45,7 @@
 - [What is Edge AI? Machine Learning + IoT](https://www.digikey.com/en/maker/projects/what-is-edge-ai-machine-learning-iot/4f655838138941138aaad62c170827af)
 - [What is edge AI computing?](https://www.telusinternational.com/insights/ai-data/article/what-is-edge-ai-computing)
 
-## Papers
+## Papers 
 
 ### Edge Computing
 - [Shi, W., Cao, J., Zhang, Q., Li, Y., & Xu, L. (2016). Edge computing: Vision and challenges. IEEE internet of things journal, 3(5), 637-646.](https://ieeexplore.ieee.org/abstract/document/7488250)
@@ -142,4 +142,18 @@
 ![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/six_level_EI.png)
 - [Xu, D., Li, T., Li, Y., Su, X., Tarkoma, S., Jiang, T., ... & Hui, P. (2021). Edge intelligence: Empowering intelligence to the edge of network. Proceedings of the IEEE, 109(11), 1778-1837.](https://ieeexplore.ieee.org/abstract/document/9596610/)
 ![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/classification_of_edge_ai.png)
+
+
+##  Efficient Computing Methods for Edge Intelligence
+### Data Prepocessing
+#### Label Cleaning
+| Title | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Bernhardt M, Castro D C, Tanno R, et al. Active label cleaning for improved dataset quality under resource constraints[J]. Nature communications, 2022, 13(1): 1161.](https://www.nature.com/articles/s41467-022-28818-3) | Microsoft Research Cambridge |  [Code](https://github.com/microsoft/InnerEye-DeepLearning/tree/1606729c7a16e1bfeb269694314212b6e2737939/InnerEye-DataQuality) |
+| [Mishra, R., Gupta, A., & Gupta, H. P. (2021). Locomotion mode recognition using sensory data with noisy labels: A deep learning approach. IEEE Transactions on Mobile Computing.](https://ieeexplore.ieee.org/abstract/document/9653808/) | Indian Institute of Technology BHU Varanasi | [Code](https://github.com/errahulm/LRNL_approach) |
+| [Wang T, Ke H, Zheng X, et al. Big data cleaning based on mobile edge computing in industrial sensor-cloud[J]. IEEE Transactions on Industrial Informatics, 2019, 16(2): 1321-1329.](https://ieeexplore.ieee.org/abstract/document/8822503/) | Huaqiao University | -- |
+| [Ma L, Pei Q, Zhou L, et al. Federated data cleaning: Collaborative and privacy-preserving data cleaning for edge intelligence[J]. IEEE Internet of Things Journal, 2020, 8(8): 6757-6770.](https://ieeexplore.ieee.org/abstract/document/9210000/) | Xidian University | -- |
+| [Sun D, Xue S, Wu H, et al. A data stream cleaning system using edge intelligence for smart city industrial environments[J]. IEEE Transactions on Industrial Informatics, 2021, 18(2): 1165-1174.](https://ieeexplore.ieee.org/abstract/document/9424956/) | Hangzhou Dianzi University | -- |
+
+
 

@@ -155,6 +155,8 @@
 | [Ma L, Pei Q, Zhou L, et al. Federated data cleaning: Collaborative and privacy-preserving data cleaning for edge intelligence[J]. IEEE Internet of Things Journal, 2020, 8(8): 6757-6770.](https://ieeexplore.ieee.org/abstract/document/9210000/) | Xidian University | -- |
 | [Sun D, Xue S, Wu H, et al. A data stream cleaning system using edge intelligence for smart city industrial environments[J]. IEEE Transactions on Industrial Informatics, 2021, 18(2): 1165-1174.](https://ieeexplore.ieee.org/abstract/document/9424956/) | Hangzhou Dianzi University | -- |
 | [Gupta C, Suggala A S, Goyal A, et al. Protonn: Compressed and accurate knn for resource-scarce devices[C]//International conference on machine learning. PMLR, 2017: 1331-1340.](https://proceedings.mlr.press/v70/gupta17a.html) | Microsoft Research, India | [Code](https://github.com/Microsoft/ELL) |
+| [Sun D, Wu J, Yang J, et al. Intelligent data collaboration in heterogeneous-device iot platforms[J]. ACM Transactions on Sensor Networks (TOSN), 2021, 17(3): 1-17.](https://dl.acm.org/doi/abs/10.1145/3427912) | Hangzhou Dianzi University | -- |
+
 
 #### Feature Compression
 | Title & Basic Information | Affiliation | Code |
@@ -164,9 +166,14 @@
 | [Chen Z, Fan K, Wang S, et al. Toward intelligent sensing: Intermediate deep feature compression[J]. IEEE Transactions on Image Processing, 2019, 29: 2230-2243.](https://ieeexplore.ieee.org/abstract/document/8848858/) | Nangyang Technological University | -- | 
 | [Liu C, Li X, Chen H, et al. Selective feature compression for efficient activity recognition inference[C]//Proceedings of the IEEE/CVF International Conference on Computer Vision. 2021: 13628-13637.](http://openaccess.thecvf.com/content/ICCV2021/html/Liu_Selective_Feature_Compression_for_Efficient_Activity_Recognition_Inference_ICCV_2021_paper.html) | Amazon Web Services | -- |
 | [Duan L, Liu J, Yang W, et al. Video coding for machines: A paradigm of collaborative compression and intelligent analytics[J]. IEEE Transactions on Image Processing, 2020, 29: 8680-8695.](https://ieeexplore.ieee.org/abstract/document/9180095/) | Peking University | -- |
-| [Shao J, Zhang J. Communication-computation trade-off in resource-constrained edge inference[J]. IEEE Communications Magazine, 2020, 58(12): 20-26.](https://ieeexplore.ieee.org/abstract/document/9311935/) | Hong Kong University of Science and Technology | [Code](https://github.com/shaojiawei07/Edge_Inference_three-step_framework) |
-
-
+| [Shao J, Zhang J. Communication-computation trade-off in resource-constrained edge inference[J]. IEEE Communications Magazine, 2020, 58(12): 20-26.](https://ieeexplore.ieee.org/abstract/document/9311935/) | The Hong Kong Polytechnic University | [Code](https://github.com/shaojiawei07/Edge_Inference_three-step_framework) |
+| [Abdellatif A A, Emam A, Chiasserini C F, et al. Edge-based compression and classification for smart healthcare systems: Concept, implementation and evaluation[J]. Expert Systems with Applications, 2019, 117: 1-14.](https://www.sciencedirect.com/science/article/pii/S0957417418305967) | Qatar University | -- |
+| [Zhou S, Van Le D, Yang J Q, et al. EFCam: Configuration-adaptive fog-assisted wireless cameras with reinforcement learning[C]//2021 18th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON). IEEE, 2021: 1-9.](https://ieeexplore.ieee.org/abstract/document/9491609/) | Nanyang Technological University | -- | 
+| [Abdellatif A A, Mohamed A, Chiasserini C F, et al. Edge computing for smart health: Context-aware approaches, opportunities, and challenges[J]. IEEE Network, 2019, 33(3): 196-203.](https://ieeexplore.ieee.org/abstract/document/8674240/) | Qatar University | -- |
+| [Cheng Y, Li G, Wong N, et al. DEEPEYE: A deeply tensor-compressed neural network for video comprehension on terminal devices[J]. ACM Transactions on Embedded Computing Systems (TECS), 2020, 19(3): 1-25.](https://dl.acm.org/doi/abs/10.1145/3381805) | Shanghai Jiao Tong University | -- |
+| [Masud M, Singh P, Gaba G S, et al. CROWD: crow search and deep learning based feature extractor for classification of Parkinson’s disease[J]. ACM Transactions on Internet Technology (TOIT), 2021, 21(3): 1-18.](https://dl.acm.org/doi/abs/10.1145/3418500) | Taif University | -- |
+| [Moreno-Rodenas, Antonio M et al. "Deep-Learning Based Monitoring Of Fog Layer Dynamics In Wastewater Pumping Stations", Water research 202 (2021): 117482.](https://cz5waila03cyo0tux1owpyofgoryroob.oss-cn-beijing.aliyuncs.com/50/65/C8/5065C803C133DF389836C73A6267F1E0.pdf) | 
+Deltares | -- |
 
 
 

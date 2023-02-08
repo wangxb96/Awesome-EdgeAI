@@ -146,14 +146,57 @@
 
 ##  Efficient Computing Methods for Edge Intelligence
 ### Data Prepocessing
-#### Label Cleaning
-| Title | Affiliation | Code |
+#### Data Cleaning
+| Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Bernhardt M, Castro D C, Tanno R, et al. Active label cleaning for improved dataset quality under resource constraints[J]. Nature communications, 2022, 13(1): 1161.](https://www.nature.com/articles/s41467-022-28818-3) | Microsoft Research Cambridge |  [Code](https://github.com/microsoft/InnerEye-DeepLearning/tree/1606729c7a16e1bfeb269694314212b6e2737939/InnerEye-DataQuality) |
 | [Mishra, R., Gupta, A., & Gupta, H. P. (2021). Locomotion mode recognition using sensory data with noisy labels: A deep learning approach. IEEE Transactions on Mobile Computing.](https://ieeexplore.ieee.org/abstract/document/9653808/) | Indian Institute of Technology BHU Varanasi | [Code](https://github.com/errahulm/LRNL_approach) |
 | [Wang T, Ke H, Zheng X, et al. Big data cleaning based on mobile edge computing in industrial sensor-cloud[J]. IEEE Transactions on Industrial Informatics, 2019, 16(2): 1321-1329.](https://ieeexplore.ieee.org/abstract/document/8822503/) | Huaqiao University | -- |
 | [Ma L, Pei Q, Zhou L, et al. Federated data cleaning: Collaborative and privacy-preserving data cleaning for edge intelligence[J]. IEEE Internet of Things Journal, 2020, 8(8): 6757-6770.](https://ieeexplore.ieee.org/abstract/document/9210000/) | Xidian University | -- |
 | [Sun D, Xue S, Wu H, et al. A data stream cleaning system using edge intelligence for smart city industrial environments[J]. IEEE Transactions on Industrial Informatics, 2021, 18(2): 1165-1174.](https://ieeexplore.ieee.org/abstract/document/9424956/) | Hangzhou Dianzi University | -- |
+| [Gupta C, Suggala A S, Goyal A, et al. Protonn: Compressed and accurate knn for resource-scarce devices[C]//International conference on machine learning. PMLR, 2017: 1331-1340.](https://proceedings.mlr.press/v70/gupta17a.html) | Microsoft Research, India | [Code](https://github.com/Microsoft/ELL) |
+
+#### Feature Compression
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Matsubara Y, Yang R, Levorato M, et al. Supervised compression for resource-constrained edge computing systems[C]//Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2022: 2685-2695.](https://openaccess.thecvf.com/content/WACV2022/html/Matsubara_Supervised_Compression_for_Resource-Constrained_Edge_Computing_Systems_WACV_2022_paper.html) | University of California, Irvine | [Code](https://github.com/yoshitomo-matsubara/supervised-compression) |
+| [Chen, Dong, et al. "Blessing of dimensionality: High-dimensional feature and its efficient compression for face verification." Proceedings of the IEEE conference on computer vision and pattern recognition. 2013.](https://www.cv-foundation.org/openaccess/content_cvpr_2013/html/Chen_Blessing_of_Dimensionality_2013_CVPR_paper.html) | University of Science and Technology of China | -- |
+| [Chen Z, Fan K, Wang S, et al. Toward intelligent sensing: Intermediate deep feature compression[J]. IEEE Transactions on Image Processing, 2019, 29: 2230-2243.](https://ieeexplore.ieee.org/abstract/document/8848858/) | Nangyang Technological University | -- | 
+| [Liu C, Li X, Chen H, et al. Selective feature compression for efficient activity recognition inference[C]//Proceedings of the IEEE/CVF International Conference on Computer Vision. 2021: 13628-13637.](http://openaccess.thecvf.com/content/ICCV2021/html/Liu_Selective_Feature_Compression_for_Efficient_Activity_Recognition_Inference_ICCV_2021_paper.html) | Amazon Web Services | -- |
+| [Duan L, Liu J, Yang W, et al. Video coding for machines: A paradigm of collaborative compression and intelligent analytics[J]. IEEE Transactions on Image Processing, 2020, 29: 8680-8695.](https://ieeexplore.ieee.org/abstract/document/9180095/) | Peking University | -- |
+| [Shao J, Zhang J. Communication-computation trade-off in resource-constrained edge inference[J]. IEEE Communications Magazine, 2020, 58(12): 20-26.](https://ieeexplore.ieee.org/abstract/document/9311935/) | Hong Kong University of Science and Technology | [Code](https://github.com/shaojiawei07/Edge_Inference_three-step_framework) |
 
 
 
+
+
+### Efficient Model Architecture
+## Neural Architecture Search (NAS)
+
+## Compact Architecture
+
+
+
+### Model Compression
+#### Pruning
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Matsubara Y, Yang R, Levorato M, et al. Supervised compression for resource-constrained edge computing systems[C]//Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2022: 2685-2695.](https://openaccess.thecvf.com/content/WACV2022/html/Matsubara_Supervised_Compression_for_Resource-Constrained_Edge_Computing_Systems_WACV_2022_paper.html) | University of Pittsburgh | -- |
+
+
+### Quantization
+
+
+### Parameter Sharing
+
+### Knowledge Distillation
+
+### Low-rank Factorization
+
+
+
+### Model Acceleration
+#### Deep Learning Framework
+
+
+#### Hardware Acceleration

@@ -173,13 +173,14 @@
 | [Cheng Y, Li G, Wong N, et al. DEEPEYE: A deeply tensor-compressed neural network for video comprehension on terminal devices[J]. ACM Transactions on Embedded Computing Systems (TECS), 2020, 19(3): 1-25.](https://dl.acm.org/doi/abs/10.1145/3381805) | Shanghai Jiao Tong University | -- |
 | [Masud M, Singh P, Gaba G S, et al. CROWD: crow search and deep learning based feature extractor for classification of Parkinson’s disease[J]. ACM Transactions on Internet Technology (TOIT), 2021, 21(3): 1-18.](https://dl.acm.org/doi/abs/10.1145/3418500) | Taif University | -- |
 | [Moreno-Rodenas, Antonio M et al. "Deep-Learning Based Monitoring Of Fog Layer Dynamics In Wastewater Pumping Stations", Water research 202 (2021): 117482.](https://cz5waila03cyo0tux1owpyofgoryroob.oss-cn-beijing.aliyuncs.com/50/65/C8/5065C803C133DF389836C73A6267F1E0.pdf) | Deltares | -- |
+| [Guo Y, Zou B, Ren J, et al. Distributed and efficient object detection via interactions among devices, edge, and cloud[J]. IEEE Transactions on Multimedia, 2019, 21(11): 2903-2915.](https://ieeexplore.ieee.org/abstract/document/8695132/) | Central South University | -- |
 
 
 
 ### Efficient Model Architecture
-## Neural Architecture Search (NAS)
+#### Neural Architecture Search (NAS)
 
-## Compact Architecture
+#### Compact Architecture
 
 
 

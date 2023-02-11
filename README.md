@@ -159,6 +159,16 @@
 
 
 #### Feature Compression
+##### Feature Selection
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Do T T, Hoang T, Pomponiu V, et al. Accessible melanoma detection using smartphones and mobile image analysis[J]. IEEE Transactions on Multimedia, 2018, 20(10): 2849-2864.](https://ieeexplore.ieee.org/abstract/document/8316868/) | Singapore University of Technology and Design | -- |
+| [Sudhakar S R V, Kayastha N, Sha K. ActID: An efficient framework for activity sensor based user identification[J]. Computers & Security, 2021, 108: 102319.](https://sciencedirect.53yu.com/science/article/pii/S0167404821001437) | University of Houston-Clear Lake | -- |
+| [Laddha P, Omer O J, Kalsi G S, et al. Descriptor Scoring for Feature Selection in Real-Time Visual Slam[C]//2020 IEEE International Conference on Image Processing (ICIP). IEEE, 2020: 2601-2605.](https://cz5waila03cyo0tux1owpyofgoryroob.oss-cn-beijing.aliyuncs.com/17/B9/05/17B90503C6B685151A7C1EC364D10815.pdf) | Processor Architecture Research Lab, Intel Labs
+ | -- |
+
+
+##### Feature Extraction
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Matsubara Y, Yang R, Levorato M, et al. Supervised compression for resource-constrained edge computing systems[C]//Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2022: 2685-2695.](https://openaccess.thecvf.com/content/WACV2022/html/Matsubara_Supervised_Compression_for_Resource-Constrained_Edge_Computing_Systems_WACV_2022_paper.html) | University of California, Irvine | [Code](https://github.com/yoshitomo-matsubara/supervised-compression) |

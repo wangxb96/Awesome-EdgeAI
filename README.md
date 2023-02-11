@@ -164,9 +164,11 @@
 | ---- | ---- | ---- | 
 | [Do T T, Hoang T, Pomponiu V, et al. Accessible melanoma detection using smartphones and mobile image analysis[J]. IEEE Transactions on Multimedia, 2018, 20(10): 2849-2864.](https://ieeexplore.ieee.org/abstract/document/8316868/) | Singapore University of Technology and Design | -- |
 | [Sudhakar S R V, Kayastha N, Sha K. ActID: An efficient framework for activity sensor based user identification[J]. Computers & Security, 2021, 108: 102319.](https://sciencedirect.53yu.com/science/article/pii/S0167404821001437) | University of Houston-Clear Lake | -- |
-| [Laddha P, Omer O J, Kalsi G S, et al. Descriptor Scoring for Feature Selection in Real-Time Visual Slam[C]//2020 IEEE International Conference on Image Processing (ICIP). IEEE, 2020: 2601-2605.](https://cz5waila03cyo0tux1owpyofgoryroob.oss-cn-beijing.aliyuncs.com/17/B9/05/17B90503C6B685151A7C1EC364D10815.pdf) | Processor Architecture Research Lab, Intel Labs
- | -- |
-
+| [Laddha P, Omer O J, Kalsi G S, et al. Descriptor Scoring for Feature Selection in Real-Time Visual Slam[C]//2020 IEEE International Conference on Image Processing (ICIP). IEEE, 2020: 2601-2605.](https://cz5waila03cyo0tux1owpyofgoryroob.oss-cn-beijing.aliyuncs.com/17/B9/05/17B90503C6B685151A7C1EC364D10815.pdf) | Processor Architecture Research Lab, Intel Labs | -- |
+| [Chen J, Zheng Y, Liang Y, et al. Edge2Analysis: a novel AIoT platform for atrial fibrillation recognition and detection[J]. IEEE Journal of Biomedical and Health Informatics, 2022, 26(12): 5772-5782.](https://ieeexplore.ieee.org/abstract/document/9769989/) | Sun Yat-Sen University | -- |
+| [Moran-Fernandez L, Sechidis K, Bolon-Canedo V, et al. Feature selection with limited bit depth mutual information for portable embedded systems[J]. Knowledge-Based Systems, 2020, 197: 105885.](https://sci-hub.et-fine.com/10.1016/j.knosys.2020.105885) | CITIC, Universidade da Coruña | -- |
+| [Callegaro D, Levorato M, Restuccia F. Seremas: Self-resilient mobile autonomous systems through predictive edge computing[C]//2021 18th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON). IEEE, 2021: 1-9.](https://ieeexplore.ieee.org/abstract/document/9491618/) | University of California, Irvine | -- |
+| [Shen C, Zhang K, Tang J. A covid-19 detection algorithm using deep features and discrete social learning particle swarm optimization for edge computing devices[J]. ACM Transactions on Internet Technology (TOIT), 2021, 22(3): 1-17.](https://dl.acm.org/doi/abs/10.1145/3453170) | Hubei Province Key Laboratory of Intelligent Information Processing and Real-time Industrial System | -- |
 
 ##### Feature Extraction
 | Title & Basic Information | Affiliation | Code |

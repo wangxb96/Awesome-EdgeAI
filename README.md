@@ -187,7 +187,13 @@
 | [Moreno-Rodenas, Antonio M et al. "Deep-Learning Based Monitoring Of Fog Layer Dynamics In Wastewater Pumping Stations", Water research 202 (2021): 117482.](https://cz5waila03cyo0tux1owpyofgoryroob.oss-cn-beijing.aliyuncs.com/50/65/C8/5065C803C133DF389836C73A6267F1E0.pdf) | Deltares | -- |
 | [Guo Y, Zou B, Ren J, et al. Distributed and efficient object detection via interactions among devices, edge, and cloud[J]. IEEE Transactions on Multimedia, 2019, 21(11): 2903-2915.](https://ieeexplore.ieee.org/abstract/document/8695132/) | Central South University | -- |
 
-
+#### Data Augmentation
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Jiao Z, Huang K, Jia G, et al. An effective litchi detection method based on edge devices in a complex scene[J]. Biosystems Engineering, 2022, 222: 15-28.](https://sciencedirect.53yu.com/science/article/pii/S1537511022001714) | Beihang University | -- |
+| [Liu X, Deng Z. Segmentation of drivable road using deep fully convolutional residual network with pyramid pooling[J]. Cognitive Computation, 2018, 10: 272-281.](https://linkspringer.53yu.com/article/10.1007/s12559-017-9524-y) | Tsinghua University | -- |
+| [Liao R F, Wen H, Chen S, et al. Multiuser physical layer authentication in internet of things with data augmentation[J]. IEEE internet of things journal, 2019, 7(3): 2077-2088.](https://ieeexplore.ieee.org/abstract/document/8935162/) | University of Electronic Science and Technology of China | -- |
+| [Wang Z, Hu J, Min G, et al. Data-augmentation-based cellular traffic prediction in edge-computing-enabled smart city[J]. IEEE Transactions on Industrial Informatics, 2020, 17(6): 4179-4187.](https://ieeexplore.ieee.org/abstract/document/9140397/) | University of Electronic Science and Technology of China | -- |
 
 ### Efficient Model Architecture
 #### Neural Architecture Search (NAS)

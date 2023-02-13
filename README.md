@@ -194,6 +194,10 @@
 | [Liu X, Deng Z. Segmentation of drivable road using deep fully convolutional residual network with pyramid pooling[J]. Cognitive Computation, 2018, 10: 272-281.](https://linkspringer.53yu.com/article/10.1007/s12559-017-9524-y) | Tsinghua University | -- |
 | [Liao R F, Wen H, Chen S, et al. Multiuser physical layer authentication in internet of things with data augmentation[J]. IEEE internet of things journal, 2019, 7(3): 2077-2088.](https://ieeexplore.ieee.org/abstract/document/8935162/) | University of Electronic Science and Technology of China | -- |
 | [Wang Z, Hu J, Min G, et al. Data-augmentation-based cellular traffic prediction in edge-computing-enabled smart city[J]. IEEE Transactions on Industrial Informatics, 2020, 17(6): 4179-4187.](https://ieeexplore.ieee.org/abstract/document/9140397/) | University of Electronic Science and Technology of China | -- |
+| [Gu G, Ko B, Go S H, et al. Towards light-weight and real-time line segment detection[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2022, 36(1): 726-734.](https://ojs.aaai.org/index.php/AAAI/article/view/19953) | NAVER/LINE Corp. | [Code](https://github.com/navervision/mlsd) |
+| [Liu C, Antypenko R, Sushko I, et al. Intrusion Detection System After Data Augmentation Schemes Based on the VAE and CVAE[J]. IEEE Transactions on Reliability, 2022, 71(2): 1000-1010.](https://ieeexplore.ieee.org/abstract/document/9761959/) | Guangdong Ocean University | -- |
+| [Pan H, Chen Y C, Ye Q, et al. Magicinput: Training-free multi-lingual finger input system using data augmentation based on mnists[C]//Proceedings of the 20th International Conference on Information Processing in Sensor Networks (co-located with CPS-IoT Week 2021). 2021: 119-131.](https://dl.acm.org/doi/abs/10.1145/3412382.3458261) | Shanghai Jiao Tong University | -- |
+
 
 ### Efficient Model Architecture
 #### Neural Architecture Search (NAS)

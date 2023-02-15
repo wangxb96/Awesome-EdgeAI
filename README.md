@@ -200,9 +200,18 @@
 
 
 ### Efficient Model Architecture
+#### Compact Architecture
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Howard A G, Zhu M, Chen B, et al. Mobilenets: Efficient convolutional neural networks for mobile vision applications[J]. arXiv preprint arXiv:1704.04861, 2017.](https://arxiv.53yu.com/abs/1704.04861) | Google Inc. | [Code](https://github.com/Zehaos/MobileNet) |
+| [Sandler M, Howard A, Zhu M, et al. Mobilenetv2: Inverted residuals and linear bottlenecks[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2018: 4510-4520.](http://openaccess.thecvf.com/content_cvpr_2018/html/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.html) | Google Inc. | [Code](https://github.com/d-li14/mobilenetv2.pytorch) |  
+| [Howard A, Sandler M, Chu G, et al. Searching for mobilenetv3[C]//Proceedings of the IEEE/CVF international conference on computer vision. 2019: 1314-1324.](http://openaccess.thecvf.com/content_ICCV_2019/html/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.html) | Google Inc. | [Code](https://github.com/xiaolai-sqlai/mobilenetv3) | 
+| [Zhou D, Hou Q, Chen Y, et al. Rethinking bottleneck structure for efficient mobile network design[C]//Computer Vision–ECCV 2020: 16th European Conference, Glasgow, UK, August 23–28, 2020, Proceedings, Part III 16. Springer International Publishing, 2020: 680-697.](https://arxiv.org/abs/2007.02269) | National University of Singapore | [Code](https://github.com/zhoudaquan/rethinking_bottleneck_design) |
+
+
 #### Neural Architecture Search (NAS)
 
-#### Compact Architecture
+
 
 
 

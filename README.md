@@ -1,41 +1,38 @@
-# Contents
-- [1. Awesome-Edge-Efficient-Intelligence](#1-awesome-edge-efficient-intelligence)
-  - [1.1. Background Knowledge](#11-background-knowledge)
-    - [1.1.1. Edge Computing](#111-edge-computing)
-    - [1.1.2. Edge AI](#112-edge-ai)
-      - [1.1.2.1. About Edge AI](#1121-about-edge-ai)
-  - [1.2. Papers](#12-papers)
-    - [1.2.1. Edge Computing](#121-edge-computing)
-    - [1.2.2. Edge AI](#122-edge-ai)
-    - [1.2.3. Important Surveys on Edge AI (Related to edge inference and model deploy)](#123-important-surveys-on-edge-ai-related-to-edge-inference-and-model-deploy)
-  - [1.3. Efficient Computing Methods for Edge Intelligence](#13-efficient-computing-methods-for-edge-intelligence)
-    - [1.3.1. Data Prepocessing](#131-data-prepocessing)
-      - [1.3.1.1. Data Cleaning](#1311-data-cleaning)
-      - [1.3.1.2. Feature Compression](#1312-feature-compression)
-        - [1.3.1.2.1. Feature Selection](#13121-feature-selection)
-        - [1.3.1.2.2. Feature Extraction](#13122-feature-extraction)
-      - [1.3.1.3. Data Augmentation](#1313-data-augmentation)
-    - [1.3.2. Efficient Model Architecture](#132-efficient-model-architecture)
-      - [1.3.2.1. Compact Architecture](#1321-compact-architecture)
-      - [1.3.2.2. Neural Architecture Search (NAS)](#1322-neural-architecture-search-nas)
-    - [1.3.3. Model Compression](#133-model-compression)
-      - [1.3.3.1. Pruning](#1331-pruning)
-    - [1.3.4. Quantization](#134-quantization)
-    - [1.3.5. Parameter Sharing](#135-parameter-sharing)
-    - [1.3.6. Knowledge Distillation](#136-knowledge-distillation)
-    - [1.3.7. Low-rank Factorization](#137-low-rank-factorization)
-    - [1.3.8. Model Acceleration](#138-model-acceleration)
-      - [1.3.8.1. Deep Learning Framework](#1381-deep-learning-framework)
-      - [1.3.8.2. Hardware Acceleration](#1382-hardware-acceleration)
-
-
-# 1. Awesome-Edge-Efficient-Intelligence
+# Awesome-Edge-Efficient-Intelligence
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![repo size](https://img.shields.io/github/repo-size/wangxb96/Awesome-Edge-Intelligence)](https://github.com/wangxb96/Awesome-Edge-Intelligence)
 ![License](https://img.shields.io/github/license/wangxb96/Awesome-Edge-Intelligence?color=blue) 
 
-## 1.1. Background Knowledge
-### 1.1.1. Edge Computing
+# Contents
+  - [1. Background Knowledge](#1-background-knowledge)
+    - [1.1. Edge Computing](#11-edge-computing)
+    - [1.2. Edge AI](#12-edge-ai)
+      - [1.2.1. About Edge AI](#121-about-edge-ai)
+  - [2. Papers](#2-papers)
+    - [2.1. Edge Computing](#21-edge-computing)
+    - [2.2. Edge AI](#22-edge-ai)
+    - [2.3. Important Surveys on Edge AI (Related to edge inference and model deploy)](#23-important-surveys-on-edge-ai-related-to-edge-inference-and-model-deploy)
+  - [3. Efficient Computing Methods for Edge Intelligence](#3-efficient-computing-methods-for-edge-intelligence)
+    - [3.1. Data Prepocessing](#31-data-prepocessing)
+      - [3.1.1. Data Cleaning](#311-data-cleaning)
+      - [3.1.2. Feature Compression](#312-feature-compression)
+        - [3.1.2.1. Feature Selection](#3121-feature-selection)
+        - [3.1.2.2. Feature Extraction](#3122-feature-extraction)
+      - [3.1.3. Data Augmentation](#313-data-augmentation)
+    - [3.2. Efficient Model Architecture](#32-efficient-model-architecture)
+      - [3.2.1. Compact Architecture](#321-compact-architecture)
+      - [3.2.2. Neural Architecture Search (NAS)](#322-neural-architecture-search-nas)
+    - [3.3. Model Compression](#33-model-compression)
+      - [3.3.1. Pruning](#331-pruning)
+    - [3.4. Quantization](#34-quantization)
+    - [3.5. Parameter Sharing](#35-parameter-sharing)
+    - [3.6. Knowledge Distillation](#36-knowledge-distillation)
+    - [3.7. Low-rank Factorization](#37-low-rank-factorization)
+    - [3.8. Model Acceleration](#38-model-acceleration)
+      - [3.8.1. Deep Learning Framework](#381-deep-learning-framework)
+      - [3.8.2. Hardware Acceleration](#382-hardware-acceleration)
+## 1. Background Knowledge
+### 1.1. Edge Computing
 **Definition:** Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data. This is expected to improve response times and save bandwidth.
 
 [What is edge computing? Everything you need to know](https://www.techtarget.com/searchdatacenter/definition/edge-computing)
@@ -46,7 +43,7 @@
 
 **Edge Device:** An edge device is a device that provides an entry point into enterprise or service provider core networks. Examples include routers, routing switches, integrated access devices (IADs), multiplexers, and a variety of metropolitan area network (MAN) and wide area network (WAN) access devices.
 
-### 1.1.2. Edge AI
+### 1.2. Edge AI
 **Edge AI** is a combination of Edge Computing and Artificial Intelligence. *Edge computing* is a distributed computing paradigm that brings computation and data storage closer to the location of the device. *Artificial Intelligence* algorithms process the data that are created on the device with or without having any internet connection. This allows data to be processed within a few milliseconds providing real-time feedback. *Edge AI* is a system that uses Machine Learning algorithms to process data generated by a hardware device at the local level.
 
 **Advantages:** 
@@ -66,7 +63,7 @@
 - Smart Driven cars
 - Raspberry PI
 
-#### 1.1.2.1. About Edge AI
+#### 1.2.1. About Edge AI
 - [Edge AI – What is it and how does it Work?](https://micro.ai/blog/edge-ai-what-is-it-and-how-does-it-work)
 - [What is Edge AI?](https://www.advian.fi/en/what-is-edge-ai)
 - [Edge AI – Driving Next-Gen AI Applications in 2022](https://viso.ai/edge-ai/edge-ai-applications-and-trends/)
@@ -77,9 +74,9 @@
 - [What is Edge AI? Machine Learning + IoT](https://www.digikey.com/en/maker/projects/what-is-edge-ai-machine-learning-iot/4f655838138941138aaad62c170827af)
 - [What is edge AI computing?](https://www.telusinternational.com/insights/ai-data/article/what-is-edge-ai-computing)
 
-## 1.2. Papers 
+## 2. Papers 
 
-### 1.2.1. Edge Computing
+### 2.1. Edge Computing
 - [Shi, W., Cao, J., Zhang, Q., Li, Y., & Xu, L. (2016). Edge computing: Vision and challenges. IEEE internet of things journal, 3(5), 637-646.](https://ieeexplore.ieee.org/abstract/document/7488250)
 - [Varghese, B., Wang, N., Barbhuiya, S., Kilpatrick, P., & Nikolopoulos, D. S. (2016, November). Challenges and opportunities in edge computing. In 2016 IEEE International Conference on Smart Cloud (SmartCloud) (pp. 20-26). IEEE.](https://ieeexplore.ieee.org/abstract/document/7796149)
 - [Shi, W., & Dustdar, S. (2016). The promise of edge computing. Computer, 49(5), 78-81.](https://ieeexplore.ieee.org/abstract/document/7469991)
@@ -117,7 +114,7 @@
 - [Liu, Y., Yang, C., Jiang, L., Xie, S., & Zhang, Y. (2019). Intelligent edge computing for IoT-based energy management in smart cities. IEEE network, 33(2), 111-117.](https://ieeexplore.ieee.org/abstract/document/8675180/)
 
 
-### 1.2.2. Edge AI
+### 2.2. Edge AI
 - [Chen, J., & Ran, X. (2019). Deep learning with edge computing: A review. Proceedings of the IEEE, 107(8), 1655-1674.](https://ieeexplore.ieee.org/abstract/document/8763885/)
 - [Deng, S., Zhao, H., Fang, W., Yin, J., Dustdar, S., & Zomaya, A. Y. (2020). Edge intelligence: The confluence of edge computing and artificial intelligence. IEEE Internet of Things Journal, 7(8), 7457-7469.](https://ieeexplore.ieee.org/abstract/document/9052677)
 - [Zhou, Z., Chen, X., Li, E., Zeng, L., Luo, K., & Zhang, J. (2019). Edge intelligence: Paving the last mile of artificial intelligence with edge computing. Proceedings of the IEEE, 107(8), 1738-1762.](https://ieeexplore.ieee.org/abstract/document/8736011/)
@@ -161,7 +158,7 @@
 - [Zawish, M., Davy, S., & Abraham, L. (2022). Complexity-driven cnn compression for resource-constrained edge ai. arXiv preprint arXiv:2208.12816.](https://arxiv.org/abs/2208.12816)
 - [Yao, J., Zhang, S., Yao, Y., Wang, F., Ma, J., Zhang, J., ... & Yang, H. (2022). Edge-Cloud Polarization and Collaboration: A Comprehensive Survey for AI. IEEE Transactions on Knowledge and Data Engineering.](https://ieeexplore.ieee.org/abstract/document/9783185/)
 
-### 1.2.3. Important Surveys on Edge AI (Related to edge inference and model deploy)
+### 2.3. Important Surveys on Edge AI (Related to edge inference and model deploy)
 - [Wang, X., Han, Y., Leung, V. C., Niyato, D., Yan, X., & Chen, X. (2020). Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
 ![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/relation_ei_ie.png)
 - [Chen, J., & Ran, X. (2019). Deep learning with edge computing: A review. Proceedings of the IEEE, 107(8), 1655-1674.](https://ieeexplore.ieee.org/abstract/document/8763885/)
@@ -176,9 +173,9 @@
 ![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/classification_of_edge_ai.png)
 
 
-##  1.3. Efficient Computing Methods for Edge Intelligence
-### 1.3.1. Data Prepocessing
-#### 1.3.1.1. Data Cleaning
+##  3. Efficient Computing Methods for Edge Intelligence
+### 3.1. Data Prepocessing
+#### 3.1.1. Data Cleaning
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Bernhardt M, Castro D C, Tanno R, et al. Active label cleaning for improved dataset quality under resource constraints[J]. Nature communications, 2022, 13(1): 1161.](https://www.nature.com/articles/s41467-022-28818-3) | Microsoft Research Cambridge |  [Code](https://github.com/microsoft/InnerEye-DeepLearning/tree/1606729c7a16e1bfeb269694314212b6e2737939/InnerEye-DataQuality) |
@@ -190,8 +187,8 @@
 | [Sun D, Wu J, Yang J, et al. Intelligent data collaboration in heterogeneous-device iot platforms[J]. ACM Transactions on Sensor Networks (TOSN), 2021, 17(3): 1-17.](https://dl.acm.org/doi/abs/10.1145/3427912) | Hangzhou Dianzi University | -- |
 
 
-#### 1.3.1.2. Feature Compression
-##### 1.3.1.2.1. Feature Selection
+#### 3.1.2. Feature Compression
+##### 3.1.2.1. Feature Selection
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Do T T, Hoang T, Pomponiu V, et al. Accessible melanoma detection using smartphones and mobile image analysis[J]. IEEE Transactions on Multimedia, 2018, 20(10): 2849-2864.](https://ieeexplore.ieee.org/abstract/document/8316868/) | Singapore University of Technology and Design | -- |
@@ -202,7 +199,7 @@
 | [Callegaro D, Levorato M, Restuccia F. Seremas: Self-resilient mobile autonomous systems through predictive edge computing[C]//2021 18th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON). IEEE, 2021: 1-9.](https://ieeexplore.ieee.org/abstract/document/9491618/) | University of California, Irvine | -- |
 | [Shen C, Zhang K, Tang J. A covid-19 detection algorithm using deep features and discrete social learning particle swarm optimization for edge computing devices[J]. ACM Transactions on Internet Technology (TOIT), 2021, 22(3): 1-17.](https://dl.acm.org/doi/abs/10.1145/3453170) | Hubei Province Key Laboratory of Intelligent Information Processing and Real-time Industrial System | -- |
 
-##### 1.3.1.2.2. Feature Extraction
+##### 3.1.2.2. Feature Extraction
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Matsubara Y, Yang R, Levorato M, et al. Supervised compression for resource-constrained edge computing systems[C]//Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2022: 2685-2695.](https://openaccess.thecvf.com/content/WACV2022/html/Matsubara_Supervised_Compression_for_Resource-Constrained_Edge_Computing_Systems_WACV_2022_paper.html) | University of California, Irvine | [Code](https://github.com/yoshitomo-matsubara/supervised-compression) |
@@ -219,7 +216,7 @@
 | [Moreno-Rodenas, Antonio M et al. "Deep-Learning Based Monitoring Of Fog Layer Dynamics In Wastewater Pumping Stations", Water research 202 (2021): 117482.](https://cz5waila03cyo0tux1owpyofgoryroob.oss-cn-beijing.aliyuncs.com/50/65/C8/5065C803C133DF389836C73A6267F1E0.pdf) | Deltares | -- |
 | [Guo Y, Zou B, Ren J, et al. Distributed and efficient object detection via interactions among devices, edge, and cloud[J]. IEEE Transactions on Multimedia, 2019, 21(11): 2903-2915.](https://ieeexplore.ieee.org/abstract/document/8695132/) | Central South University | -- |
 
-#### 1.3.1.3. Data Augmentation
+#### 3.1.3. Data Augmentation
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Jiao Z, Huang K, Jia G, et al. An effective litchi detection method based on edge devices in a complex scene[J]. Biosystems Engineering, 2022, 222: 15-28.](https://sciencedirect.53yu.com/science/article/pii/S1537511022001714) | Beihang University | -- |
@@ -231,8 +228,8 @@
 | [Pan H, Chen Y C, Ye Q, et al. Magicinput: Training-free multi-lingual finger input system using data augmentation based on mnists[C]//Proceedings of the 20th International Conference on Information Processing in Sensor Networks (co-located with CPS-IoT Week 2021). 2021: 119-131.](https://dl.acm.org/doi/abs/10.1145/3412382.3458261) | Shanghai Jiao Tong University | -- |
 
 
-### 1.3.2. Efficient Model Architecture
-#### 1.3.2.1. Compact Architecture
+### 3.2. Efficient Model Architecture
+#### 3.2.1. Compact Architecture
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Howard A G, Zhu M, Chen B, et al. Mobilenets: Efficient convolutional neural networks for mobile vision applications[J]. arXiv preprint arXiv:1704.04861, 2017.](https://arxiv.53yu.com/abs/1704.04861) | Google Inc. | [Code](https://github.com/Zehaos/MobileNet) |
@@ -270,7 +267,7 @@
 | [Zhou H, Li J, Peng J, et al. Triplet Attention: Rethinking the Similarity in Transformers[C]//Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining. 2021: 2378-2388.](https://dl.acm.org/doi/abs/10.1145/3447548.3467241) | Beihang University | [Code](https://github.com/zhouhaoyi/TripletAttention) |
 | [Zhang H, Wu C, Zhang Z, et al. Resnest: Split-attention networks[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022: 2736-2746.](https://openaccess.thecvf.com/content/CVPR2022W/ECV/papers/Zhang_ResNeSt_Split-Attention_Networks_CVPRW_2022_paper.pdf) | Meta | [Code](https://github.com/zhanghang1989/ResNeSt) |    
 
-#### 1.3.2.2. Neural Architecture Search (NAS)
+#### 3.2.2. Neural Architecture Search (NAS)
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Ning X, Ge G, Li W, et al. FTT-NAS: Discovering fault-tolerant convolutional neural architecture[J]. ACM Transactions on Design Automation of Electronic Systems (TODAES), 2021, 26(6): 1-24.](https://dl.acm.org/doi/abs/10.1145/3460288) | Tsinghua University | [Code](https://github.com/walkerning/aw_nas) |
@@ -285,27 +282,27 @@
 | [Li S, Sun Y, Yen G G, et al. Automatic design of convolutional neural network architectures under resource constraints[J]. IEEE Transactions on Neural Networks and Learning Systems, 2021.](https://ieeexplore.ieee.org/abstract/document/9609007/) | Sichuan University | -- |
 
 
-### 1.3.3. Model Compression
-#### 1.3.3.1. Pruning
+### 3.3. Model Compression
+#### 3.3.1. Pruning
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Matsubara Y, Yang R, Levorato M, et al. Supervised compression for resource-constrained edge computing systems[C]//Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2022: 2685-2695.](https://openaccess.thecvf.com/content/WACV2022/html/Matsubara_Supervised_Compression_for_Resource-Constrained_Edge_Computing_Systems_WACV_2022_paper.html) | University of Pittsburgh | -- |
 
 
-### 1.3.4. Quantization
+### 3.4. Quantization
 
 
-### 1.3.5. Parameter Sharing
+### 3.5. Parameter Sharing
 
-### 1.3.6. Knowledge Distillation
+### 3.6. Knowledge Distillation
 
-### 1.3.7. Low-rank Factorization
-
-
-
-### 1.3.8. Model Acceleration
-#### 1.3.8.1. Deep Learning Framework
+### 3.7. Low-rank Factorization
 
 
-#### 1.3.8.2. Hardware Acceleration
+
+### 3.8. Model Acceleration
+#### 3.8.1. Deep Learning Framework
+
+
+#### 3.8.2. Hardware Acceleration
 

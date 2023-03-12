@@ -246,7 +246,11 @@
 | [Chen H, Zhuo L, Zhang B, et al. Binarized neural architecture search for efficient object recognition[J]. International Journal of Computer Vision, 2021, 129: 501-516.](https://linkspringer.53yu.com/article/10.1007/s11263-020-01379-y) | Beihang University | -- |
 | [Lyu B, Wen S, Shi K, et al. Multiobjective reinforcement learning-based neural architecture search for efficient portrait parsing[J]. IEEE Transactions on Cybernetics, 2021.](https://ieeexplore.ieee.org/abstract/document/9524839/) | University of Electronic Science and Technology of China | -- |
 | [Mendis H R, Kang C K, Hsiu P. Intermittent-aware neural architecture search[J]. ACM Transactions on Embedded Computing Systems (TECS), 2021, 20(5s): 1-27.](https://dl.acm.org/doi/abs/10.1145/3476995) | Academia Sinica and National Taiwan University | [Code](https://github.com/EMCLab-Sinica/Intermittent-aware-NAS) |
-
+| [Nayman N, Aflalo Y, Noy A, et al. Hardcore-nas: Hard constrained differentiable neural architecture search[C]//International Conference on Machine Learning. PMLR, 2021: 7979-7990.](http://proceedings.mlr.press/v139/nayman21a.html) | Alibaba Group, Tel Aviv, Israel | [Code](https://github.com/Alibaba-MIIL/HardCoReNAS) |
+| [Liu P, Wu B, Ma H, et al. MemNAS: Memory-efficient neural architecture search with grow-trim learning[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020: 2108-2116.](http://openaccess.thecvf.com/content_CVPR_2020/html/Liu_MemNAS_Memory-Efficient_Neural_Architecture_Search_With_Grow-Trim_Learning_CVPR_2020_paper.html) | Beijing University of Posts and Telecommunications | -- |
+| [Liu Z, Tang H, Zhao S, et al. Pvnas: 3D neural architecture search with point-voxel convolution[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021, 44(11): 8552-8568.](https://ieeexplore.ieee.org/abstract/document/9527118/) | Massachusetts Institute of Technology | -- |
+| [Zhang C, Yuan X, Zhang Q, et al. Toward tailored models on private aiot devices: Federated direct neural architecture search[J]. IEEE Internet of Things Journal, 2022, 9(18): 17309-17322.](https://ieeexplore.ieee.org/abstract/document/9721425/) | Northeastern University, Qinhuangdao | -- |
+| [Li S, Sun Y, Yen G G, et al. Automatic design of convolutional neural network architectures under resource constraints[J]. IEEE Transactions on Neural Networks and Learning Systems, 2021.](https://ieeexplore.ieee.org/abstract/document/9609007/) | Sichuan University | -- |
 
 
 ### Model Compression

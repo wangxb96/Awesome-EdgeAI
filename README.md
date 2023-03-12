@@ -236,11 +236,16 @@
 | [Wang Q, Wu B, Zhu P, et al. ECA-Net: Efficient channel attention for deep convolutional neural networks[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020: 11534-11542.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.pdf) | Tianjin University | [Code](https://github.com/BangguWu/ECANet) |
 | [Zhang Q L, Yang Y B. Sa-net: Shuffle attention for deep convolutional neural networks[C]//ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2021: 2235-2239.](https://ieeexplore.ieee.org/abstract/document/9414568) | Nanjing University | [Code](https://github.com/wofmanaf/SA-Net) |
 | [Zhou H, Li J, Peng J, et al. Triplet Attention: Rethinking the Similarity in Transformers[C]//Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining. 2021: 2378-2388.](https://dl.acm.org/doi/abs/10.1145/3447548.3467241) | Beihang University | [Code](https://github.com/zhouhaoyi/TripletAttention) |
-| [Zhang H, Wu C, Zhang Z, et al. Resnest: Split-attention networks[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022: 2736-2746.](https://openaccess.thecvf.com/content/CVPR2022W/ECV/papers/Zhang_ResNeSt_Split-Attention_Networks_CVPRW_2022_paper.pdf) | Meta | [Code](https://github.com/zhanghang1989/ResNeSt) |
+| [Zhang H, Wu C, Zhang Z, et al. Resnest: Split-attention networks[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022: 2736-2746.](https://openaccess.thecvf.com/content/CVPR2022W/ECV/papers/Zhang_ResNeSt_Split-Attention_Networks_CVPRW_2022_paper.pdf) | Meta | [Code](https://github.com/zhanghang1989/ResNeSt) |    
 
 #### Neural Architecture Search (NAS)
-
-
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Ning X, Ge G, Li W, et al. FTT-NAS: Discovering fault-tolerant convolutional neural architecture[J]. ACM Transactions on Design Automation of Electronic Systems (TODAES), 2021, 26(6): 1-24.](https://dl.acm.org/doi/abs/10.1145/3460288) | Tsinghua University | [Code](https://github.com/walkerning/aw_nas) |
+| [Lu H, Du M, He X, et al. An adaptive neural architecture search design for collaborative edge-cloud computing[J]. IEEE Network, 2021, 35(5): 83-89.](https://ieeexplore.ieee.org/abstract/document/9606812/) | Nanjing University of Posts and Telecommunications | -- |
+| [Chen H, Zhuo L, Zhang B, et al. Binarized neural architecture search for efficient object recognition[J]. International Journal of Computer Vision, 2021, 129: 501-516.](https://linkspringer.53yu.com/article/10.1007/s11263-020-01379-y) | Beihang University | -- |
+| [Lyu B, Wen S, Shi K, et al. Multiobjective reinforcement learning-based neural architecture search for efficient portrait parsing[J]. IEEE Transactions on Cybernetics, 2021.](https://ieeexplore.ieee.org/abstract/document/9524839/) | University of Electronic Science and Technology of China | -- |
+| [Mendis H R, Kang C K, Hsiu P. Intermittent-aware neural architecture search[J]. ACM Transactions on Embedded Computing Systems (TECS), 2021, 20(5s): 1-27.](https://dl.acm.org/doi/abs/10.1145/3476995) | Academia Sinica and National Taiwan University | [Code](https://github.com/EMCLab-Sinica/Intermittent-aware-NAS) |
 
 
 

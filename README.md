@@ -24,13 +24,13 @@
       - [3.2.2. Neural Architecture Search (NAS)](#322-neural-architecture-search-nas)
     - [3.3. Model Compression](#33-model-compression)
       - [3.3.1. Pruning](#331-pruning)
-    - [3.4. Quantization](#34-quantization)
-    - [3.5. Parameter Sharing](#35-parameter-sharing)
-    - [3.6. Knowledge Distillation](#36-knowledge-distillation)
-    - [3.7. Low-rank Factorization](#37-low-rank-factorization)
-    - [3.8. Model Acceleration](#38-model-acceleration)
-      - [3.8.1. Deep Learning Framework](#381-deep-learning-framework)
-      - [3.8.2. Hardware Acceleration](#382-hardware-acceleration)
+      - [3.3.2. Quantization](#332-quantization)
+      - [3.3.3. Parameter Sharing](#333-parameter-sharing)
+      - [3.3.4. Knowledge Distillation](#334-knowledge-distillation)
+      - [3.3.5. Low-rank Factorization](#335-low-rank-factorization)
+    - [3.4. Model Acceleration](#34-model-acceleration)
+      - [3.4.1. Deep Learning Framework](#341-deep-learning-framework)
+      - [3.4.2. Hardware Acceleration](#342-hardware-acceleration)
 ## 1. Background Knowledge
 ### 1.1. Edge Computing
 **Definition:** Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data. This is expected to improve response times and save bandwidth.
@@ -289,20 +289,20 @@
 | [Matsubara Y, Yang R, Levorato M, et al. Supervised compression for resource-constrained edge computing systems[C]//Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2022: 2685-2695.](https://openaccess.thecvf.com/content/WACV2022/html/Matsubara_Supervised_Compression_for_Resource-Constrained_Edge_Computing_Systems_WACV_2022_paper.html) | University of Pittsburgh | -- |
 
 
-### 3.4. Quantization
+### 3.3.2. Quantization
 
 
-### 3.5. Parameter Sharing
+### 3.3.3. Parameter Sharing
 
-### 3.6. Knowledge Distillation
+### 3.3.4. Knowledge Distillation
 
-### 3.7. Low-rank Factorization
-
-
-
-### 3.8. Model Acceleration
-#### 3.8.1. Deep Learning Framework
+### 3.3.5. Low-rank Factorization
 
 
-#### 3.8.2. Hardware Acceleration
+
+### 3.4. Model Acceleration
+#### 3.4.1. Deep Learning Framework
+
+
+#### 3.4.2. Hardware Acceleration
 

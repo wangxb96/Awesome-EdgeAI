@@ -287,6 +287,12 @@
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Matsubara Y, Yang R, Levorato M, et al. Supervised compression for resource-constrained edge computing systems[C]//Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2022: 2685-2695.](https://openaccess.thecvf.com/content/WACV2022/html/Matsubara_Supervised_Compression_for_Resource-Constrained_Edge_Computing_Systems_WACV_2022_paper.html) | University of Pittsburgh | -- |
+| [Li Z, Wallace E, Shen S, et al. Train big, then compress: Rethinking model size for efficient training and inference of transformers[C]//International Conference on machine learning. PMLR, 2020: 5958-5968.](http://proceedings.mlr.press/v119/li20m.html) | UC Berkeley | -- |
+| [Lin M, Ji R, Wang Y, et al. Hrank: Filter pruning using high-rank feature map[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020: 1529-1538.](http://openaccess.thecvf.com/content_CVPR_2020/html/Lin_HRank_Filter_Pruning_Using_High-Rank_Feature_Map_CVPR_2020_paper.html) |  Xiamen University | [Code](https://github.com/lmbxmu/HRank) | 
+| [Tung F, Mori G. Clip-q: Deep network compression learning by in-parallel pruning-quantization[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2018: 7873-7882.](http://openaccess.thecvf.com/content_cvpr_2018/html/Tung_CLIP-Q_Deep_Network_CVPR_2018_paper.html) | Simon Fraser University | -- |
+| [Fedorov I, Adams R P, Mattina M, et al. Sparse: Sparse architecture search for cnns on resource-constrained microcontrollers[J]. Advances in Neural Information Processing Systems, 2019, 32.](https://proceedings.neurips.cc/paper/2019/hash/044a23cadb567653eb51d4eb40acaa88-Abstract.html) | Arm ML Research | -- |
+| [Huang Y, Qiao X, Tang J, et al. Deepadapter: A collaborative deep learning framework for the mobile web using context-aware network pruning[C]//IEEE INFOCOM 2020-IEEE Conference on Computer Communications. IEEE, 2020: 834-843.](https://ieeexplore.ieee.org/abstract/document/9155379/) |  Beijing University of Posts and Telecommunications | -- |
+| [Hassantabar S, Wang Z, Jha N K. SCANN: Synthesis of compact and accurate neural networks[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2021, 41(9): 3012-3025.](https://ieeexplore.ieee.org/abstract/document/9552199/) | Princeton University | -- |
 
 
 ### 3.3.2. Quantization

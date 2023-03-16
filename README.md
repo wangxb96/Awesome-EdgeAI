@@ -311,7 +311,7 @@
 | [Yu F, Huang K, Wang M, et al. Width & depth pruning for vision transformers[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2022, 36(3): 3143-3151.](https://ojs.aaai.org/index.php/AAAI/article/view/20222) | Institute of Computing Technology, Chinese Academy of Sciences | -- |
 | [Khaleghi B, Imani M, Rosing T. Prive-hd: Privacy-preserved hyperdimensional computing[C]//2020 57th ACM/IEEE Design Automation Conference (DAC). IEEE, 2020: 1-6.](https://ieeexplore.ieee.org/abstract/document/9218493/) | UC San Diego | -- |
 | [http://openaccess.thecvf.com/content/CVPR2021/html/Liu_Content-Aware_GAN_Compression_CVPR_2021_paper.html](http://openaccess.thecvf.com/content/CVPR2021/html/Liu_Content-Aware_GAN_Compression_CVPR_2021_paper.html) | Princeton University | -- |
-
+| [Zhou X, Jia Q, Xie R. NestFL: efficient federated learning through progressive model pruning in heterogeneous edge computing[C]//Proceedings of the 28th Annual International Conference on Mobile Computing And Networking. 2022: 817-819.](https://dl.acm.org/doi/abs/10.1145/3495243.3558248) | Purple Mountain Laboratories, Nanjing | -- |
 
  
 

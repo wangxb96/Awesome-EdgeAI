@@ -324,6 +324,9 @@
 | [Wang R, Wei Z, Duan H, et al. EfficientTDNN: Efficient architecture search for speaker recognition[J]. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2022, 30: 2267-2279.](https://ieeexplore.ieee.org/abstract/document/9798861/) | Tongji University | [Code](https://github.com/mechanicalsea/sugar) |
 | [Sun Y, Yuan F, Yang M, et al. A generic network compression framework for sequential recommender systems[C]//Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval. 2020: 1299-1308.](https://dl.acm.org/doi/abs/10.1145/3397271.3401125) | University of Science and Technology | [Code](https://github.com/siat-nlp/CpRec) |
 | [Hu S, Xie X, Cui M, et al. Neural architecture search for LF-MMI trained time delay neural networks[J]. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2022, 30: 1093-1107.](https://ieeexplore.ieee.org/abstract/document/9721103/) | The Chinese University of Hong Kong | -- |
+| [Sindhwani V, Sainath T, Kumar S. Structured transforms for small-footprint deep learning[J]. Advances in Neural Information Processing Systems, 2015, 28.](https://proceedings.neurips.cc/paper/2015/hash/851300ee84c2b80ed40f51ed26d866fc-Abstract.html) | Google, New York | -- |
+| [Thakker U, Beu J, Gope D, et al. Compressing rnns for iot devices by 15-38x using kronecker products[J]. arXiv preprint arXiv:1906.02876, 2019.](https://arxiv.org/abs/1906.02876) | 
+
 
 ### 3.3.3. Quantization
 

@@ -319,7 +319,11 @@
 | ---- | ---- | ---- | 
 | [Wu J, Wang Y, Wu Z, et al. Deep k-means: Re-training and parameter sharing with harder cluster assignments for compressing deep convolutions[C]//International Conference on Machine Learning. PMLR, 2018: 5363-5372.](http://proceedings.mlr.press/v80/wu18h.html) | Texas A&M University | [Code](https://github.com/Sandbox3aster/Deep-K-Means) |
 | [Obukhov A, Rakhuba M, Georgoulis S, et al. T-basis: a compact representation for neural networks[C]//International Conference on Machine Learning. PMLR, 2020: 7392-7404.](http://proceedings.mlr.press/v119/obukhov20a/obukhov20a.pdf) | ETH Zurich | [Code](http://obukhov.ai/tbasis) |
-
+| [Ullrich, Karen, Edward Meeds, and Max Welling. "Soft Weight-Sharing for Neural Network Compression." International Conference on Learning Representations.](https://arxiv.org/pdf/1702.04008.pdf) | University of Amsterdam | [Code](https://github.com/KarenUllrich/Tutorial-SoftWeightSharingForNNCompression) |
+| [You H, Li B, Huihong S, et al. ShiftAddNAS: Hardware-inspired search for more accurate and efficient neural networks[C]//International Conference on Machine Learning. PMLR, 2022: 25566-25580.](https://proceedings.mlr.press/v162/you22a.html) | Rice University | [Code](https://github.com/RICE-EIC/ShiftAddNAS) |
+| [Wang R, Wei Z, Duan H, et al. EfficientTDNN: Efficient architecture search for speaker recognition[J]. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2022, 30: 2267-2279.](https://ieeexplore.ieee.org/abstract/document/9798861/) | Tongji University | [Code](https://github.com/mechanicalsea/sugar) |
+| [Sun Y, Yuan F, Yang M, et al. A generic network compression framework for sequential recommender systems[C]//Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval. 2020: 1299-1308.](https://dl.acm.org/doi/abs/10.1145/3397271.3401125) | University of Science and Technology | [Code](https://github.com/siat-nlp/CpRec) |
+| [Hu S, Xie X, Cui M, et al. Neural architecture search for LF-MMI trained time delay neural networks[J]. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2022, 30: 1093-1107.](https://ieeexplore.ieee.org/abstract/document/9721103/) | The Chinese University of Hong Kong | -- |
 
 ### 3.3.3. Quantization
 

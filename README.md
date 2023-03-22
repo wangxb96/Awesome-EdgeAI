@@ -313,13 +313,17 @@
 | [http://openaccess.thecvf.com/content/CVPR2021/html/Liu_Content-Aware_GAN_Compression_CVPR_2021_paper.html](http://openaccess.thecvf.com/content/CVPR2021/html/Liu_Content-Aware_GAN_Compression_CVPR_2021_paper.html) | Princeton University | -- |
 | [Zhou X, Jia Q, Xie R. NestFL: efficient federated learning through progressive model pruning in heterogeneous edge computing[C]//Proceedings of the 28th Annual International Conference on Mobile Computing And Networking. 2022: 817-819.](https://dl.acm.org/doi/abs/10.1145/3495243.3558248) | Purple Mountain Laboratories, Nanjing | -- |
 
- 
+
+### 3.3.2. Parameter Sharing 
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Wu J, Wang Y, Wu Z, et al. Deep k-means: Re-training and parameter sharing with harder cluster assignments for compressing deep convolutions[C]//International Conference on Machine Learning. PMLR, 2018: 5363-5372.](http://proceedings.mlr.press/v80/wu18h.html) | Texas A&M University | [Code](https://github.com/Sandbox3aster/Deep-K-Means) |
+| [Obukhov A, Rakhuba M, Georgoulis S, et al. T-basis: a compact representation for neural networks[C]//International Conference on Machine Learning. PMLR, 2020: 7392-7404.](http://proceedings.mlr.press/v119/obukhov20a/obukhov20a.pdf) | ETH Zurich | [Code](http://obukhov.ai/tbasis) |
 
 
-### 3.3.2. Quantization
+### 3.3.3. Quantization
 
 
-### 3.3.3. Parameter Sharing
 
 ### 3.3.4. Knowledge Distillation
 

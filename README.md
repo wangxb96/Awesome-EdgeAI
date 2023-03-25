@@ -3,7 +3,7 @@
 [![repo size](https://img.shields.io/github/repo-size/wangxb96/Awesome-Edge-Intelligence)](https://github.com/wangxb96/Awesome-Edge-Intelligence)
 ![License](https://img.shields.io/github/license/wangxb96/Awesome-Edge-Intelligence?color=blue) 
 
-# Contents
+# Table of Contents
   - [1. Background Knowledge](#1-background-knowledge)
     - [1.1. Edge Computing](#11-edge-computing)
     - [1.2. Edge AI](#12-edge-ai)

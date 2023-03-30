@@ -342,7 +342,7 @@
 | [Lin H, Lou J, Xiong L, et al. Integer-arithmetic-only certified robustness for quantized neural networks[C]//Proceedings of the IEEE/CVF International Conference on Computer Vision. 2021: 7828-7837.](http://openaccess.thecvf.com/content/ICCV2021/html/Lin_Integer-Arithmetic-Only_Certified_Robustness_for_Quantized_Neural_Networks_ICCV_2021_paper.html) | University of Southern California | -- |
 | [Cui Y, Wu S, Li Q, et al. Bits-Ensemble: Toward Light-Weight Robust Deep Ensemble by Bits-Sharing[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2022, 41(11): 4397-4408.](https://ieeexplore.ieee.org/abstract/document/9854091/) | McGill University | -- |
 | [Sabet A, Hare J, Al-Hashimi B M, et al. Similarity-Aware CNN for Efficient Video Recognition at the Edge[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2021, 41(11): 4901-4914.](https://ieeexplore.ieee.org/abstract/document/9656540/) | University of Southampton | -- |
-
+| [Chikin V, Antiukh M. Data-Free Network Compression via Parametric Non-uniform Mixed Precision Quantization[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022: 450-459.](http://openaccess.thecvf.com/content/CVPR2022/html/Chikin_Data-Free_Network_Compression_via_Parametric_Non-Uniform_Mixed_Precision_Quantization_CVPR_2022_paper.html) | Huawei Noah's Ark Lab | -- |
 
 ### 3.3.4. Knowledge Distillation
 

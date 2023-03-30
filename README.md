@@ -324,10 +324,20 @@
 | [Wang R, Wei Z, Duan H, et al. EfficientTDNN: Efficient architecture search for speaker recognition[J]. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2022, 30: 2267-2279.](https://ieeexplore.ieee.org/abstract/document/9798861/) | Tongji University | [Code](https://github.com/mechanicalsea/sugar) |
 | [Sun Y, Yuan F, Yang M, et al. A generic network compression framework for sequential recommender systems[C]//Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval. 2020: 1299-1308.](https://dl.acm.org/doi/abs/10.1145/3397271.3401125) | University of Science and Technology | [Code](https://github.com/siat-nlp/CpRec) |
 | [Hu S, Xie X, Cui M, et al. Neural architecture search for LF-MMI trained time delay neural networks[J]. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2022, 30: 1093-1107.](https://ieeexplore.ieee.org/abstract/document/9721103/) | The Chinese University of Hong Kong | -- |
-| [Sindhwani V, Sainath T, Kumar S. Structured transforms for small-footprint deep learning[J]. Advances in Neural Information Processing Systems, 2015, 28.](https://proceedings.neurips.cc/paper/2015/hash/851300ee84c2b80ed40f51ed26d866fc-Abstract.html) | Google, New York | -- |
+| [Sindhwani V, Sainath T, Kumar S. Structured transforms for small-footprint deep learning[J]. Advances in Neural Information Processing Systems, 2015, 28.](https://proceedings.neurips.cc/paper/2015/hash/851300ee84c2b80ed40f51ed26d866fc-Abstract.html) | Google, New York | -- | 
 
 
 ### 3.3.3. Quantization
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Fu Y, You H, Zhao Y, et al. Fractrain: Fractionally squeezing bit savings both temporally and spatially for efficient dnn training[J]. Advances in Neural Information Processing Systems, 2020, 33: 12127-12139.](https://proceedings.neurips.cc/paper_files/paper/2020/file/8dc5983b8c4ef1d8fcd5f325f9a65511-Paper.pdf) | Rice University | [Code](https://github.com/RICE-EIC/FracTrain) |
+| [Tambe T, Hooper C, Pentecost L, et al. Edgebert: Sentence-level energy optimizations for latency-aware multi-task nlp inference[C]//MICRO-54: 54th Annual IEEE/ACM International Symposium on Microarchitecture. 2021: 830-844.](https://dl.acm.org/doi/abs/10.1145/3466752.3480095) | Harvard University | -- |
+| [Boo Y, Shin S, Choi J, et al. Stochastic precision ensemble: self-knowledge distillation for quantized deep neural networks[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2021, 35(8): 6794-6802.](https://ojs.aaai.org/index.php/AAAI/article/view/16839) | Seoul National University | -- |
+| [Marchisio A, Bussolino B, Colucci A, et al. Q-capsnets: A specialized framework for quantizing capsule networks[C]//2020 57th ACM/IEEE Design Automation Conference (DAC). IEEE, 2020: 1-6.](https://ieeexplore.ieee.org/abstract/document/9218746/) | Technische Universitat Wien (TU Wien) | [Code](https://git.io/JvDIF) |
+| [Putra R V W, Shafique M. Fspinn: An optimization framework for memory-efficient and energy-efficient spiking neural networks[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2020, 39(11): 3601-3613.](https://ieeexplore.ieee.org/abstract/document/9211568/) | Technische Universität Wien | -- |
+| [Zhou Q, Guo S, Qu Z, et al. Octo: INT8 Training with Loss-aware Compensation and Backward Quantization for Tiny On-device Learning[C]//USENIX Annual Technical Conference. 2021: 177-191.](https://www.usenix.org/system/files/atc21-zhou.pdf) | Hong Kong Polytechnic University | [COde](https://github.com/kimihe/Octo) |
+| [Wang K, Liu Z, Lin Y, et al. Hardware-centric automl for mixed-precision quantization[J]. International Journal of Computer Vision, 2020, 128(8-9): 2035-2048.](https://linkspringer.53yu.com/article/10.1007/s11263-020-01339-6) | Massachusetts Institute of Technology | -- |
+| [Li B, Qu S, Wang Y. An automated quantization framework for high-utilization rram-based pim[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2021, 41(3): 583-596.](https://ieeexplore.ieee.org/abstract/document/9360862/) | Capital Normal University | -- |
 
 
 

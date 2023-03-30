@@ -338,7 +338,10 @@
 | [Zhou Q, Guo S, Qu Z, et al. Octo: INT8 Training with Loss-aware Compensation and Backward Quantization for Tiny On-device Learning[C]//USENIX Annual Technical Conference. 2021: 177-191.](https://www.usenix.org/system/files/atc21-zhou.pdf) | Hong Kong Polytechnic University | [COde](https://github.com/kimihe/Octo) |
 | [Wang K, Liu Z, Lin Y, et al. Hardware-centric automl for mixed-precision quantization[J]. International Journal of Computer Vision, 2020, 128(8-9): 2035-2048.](https://linkspringer.53yu.com/article/10.1007/s11263-020-01339-6) | Massachusetts Institute of Technology | -- |
 | [Li B, Qu S, Wang Y. An automated quantization framework for high-utilization rram-based pim[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2021, 41(3): 583-596.](https://ieeexplore.ieee.org/abstract/document/9360862/) | Capital Normal University | -- |
-
+| [Simon W A, Ray V, Levisse A, et al. Exact neural networks from inexact multipliers via fibonacci weight encoding[C]//2021 58th ACM/IEEE Design Automation Conference (DAC). IEEE, 2021: 805-810.](https://ieeexplore.ieee.org/abstract/document/9586245/) | Swiss Federal Institute of Technology Lausanne (EPFL) | -- |
+| [Lin H, Lou J, Xiong L, et al. Integer-arithmetic-only certified robustness for quantized neural networks[C]//Proceedings of the IEEE/CVF International Conference on Computer Vision. 2021: 7828-7837.](http://openaccess.thecvf.com/content/ICCV2021/html/Lin_Integer-Arithmetic-Only_Certified_Robustness_for_Quantized_Neural_Networks_ICCV_2021_paper.html) | University of Southern California | -- |
+| [Cui Y, Wu S, Li Q, et al. Bits-Ensemble: Toward Light-Weight Robust Deep Ensemble by Bits-Sharing[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2022, 41(11): 4397-4408.](https://ieeexplore.ieee.org/abstract/document/9854091/) | McGill University | -- |
+| [Sabet A, Hare J, Al-Hashimi B M, et al. Similarity-Aware CNN for Efficient Video Recognition at the Edge[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2021, 41(11): 4901-4914.](https://ieeexplore.ieee.org/abstract/document/9656540/) | University of Southampton | -- |
 
 
 ### 3.3.4. Knowledge Distillation

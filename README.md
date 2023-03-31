@@ -261,8 +261,16 @@
 | [Chikin V, Antiukh M. Data-Free Network Compression via Parametric Non-uniform Mixed Precision Quantization[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022: 450-459.](http://openaccess.thecvf.com/content/CVPR2022/html/Chikin_Data-Free_Network_Compression_via_Parametric_Non-Uniform_Mixed_Precision_Quantization_CVPR_2022_paper.html) | Huawei Noah's Ark Lab | -- |
 
 ### 3.3.4. Knowledge Distillation
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+
 
 ### 3.3.5. Low-rank Factorization
+| Title & Basic Information | Affiliation | Code |
+| ---- | ---- | ---- | 
+| [Yang H, Tang M, Wen W, et al. Learning low-rank deep neural networks via singular vector orthogonality regularization and singular value sparsification[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition workshops. 2020: 678-679.](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w40/Yang_Learning_Low-Rank_Deep_Neural_Networks_via_Singular_Vector_Orthogonality_Regularization_CVPRW_2020_paper.pdf) | Duke University | -- |
+| [Li Y, Chen Y, Dai X, et al. MicroNet: Towards image recognition with extremely low FLOPs[J]. arXiv preprint arXiv:2011.12289, 2020.](https://arxiv.org/pdf/2011.12289.pdf) | UC San Diego | -- |
+| [Li Z, Li H, Li K, et al. Locality Sensitive Hash Aggregated Nonlinear Neighborhood Matrix Factorization for Online Sparse Big Data Analysis[J]. ACM/IMS Transactions on Data Science (TDS), 2022, 2(4): 1-27.](https://dl.acm.org/doi/abs/10.1145/3497749) | Hunan University | -- |
 
 
 

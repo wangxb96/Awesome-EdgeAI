@@ -263,6 +263,25 @@
 ### 3.3.4. Knowledge Distillation
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
+| [Zhang L, Song J, Gao A, et al. Be your own teacher: Improve the performance of convolutional neural networks via self distillation[C]//Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019: 3713-3722.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Be_Your_Own_Teacher_Improve_the_Performance_of_Convolutional_Neural_ICCV_2019_paper.pdf) | Tsinghua University | [Code](https://github.com/ArchipLab-LinfengZhang/) |
+| [Hou L, Huang Z, Shang L, et al. Dynabert: Dynamic bert with adaptive width and depth[J]. Advances in Neural Information Processing Systems, 2020, 33: 9782-9793.](https://proceedings.neurips.cc/paper/2020/hash/6f5216f8d89b086c18298e043bfe48ed-Abstract.html) | Huawei Noah’s Ark Lab | [Code](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/DynaBERT) |
+| [Zhang L, Tan Z, Song J, et al. Scan: A scalable neural networks framework towards compact and efficient models[J]. Advances in Neural Information Processing Systems, 2019, 32.](https://proceedings.neurips.cc/paper/2019/hash/934b535800b1cba8f96a5d72f72f1611-Abstract.html) | Tsinghua University | [Code](https://github.com/ArchipLab-LinfengZhang/pytorch-scalable-neural-networks) |
+| [Liu Y, Shu Z, Li Y, et al. Content-aware gan compression[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2021: 12156-12166.](http://openaccess.thecvf.com/content/CVPR2021/html/Liu_Content-Aware_GAN_Compression_CVPR_2021_paper.html) | 
+| [Boo Y, Shin S, Choi J, et al. Stochastic precision ensemble: self-knowledge distillation for quantized deep neural networks[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2021, 35(8): 6794-6802.](https://ojs.aaai.org/index.php/AAAI/article/view/16839) | Seoul National University | -- |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### 3.3.5. Low-rank Factorization
@@ -271,6 +290,7 @@
 | [Yang H, Tang M, Wen W, et al. Learning low-rank deep neural networks via singular vector orthogonality regularization and singular value sparsification[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition workshops. 2020: 678-679.](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w40/Yang_Learning_Low-Rank_Deep_Neural_Networks_via_Singular_Vector_Orthogonality_Regularization_CVPRW_2020_paper.pdf) | Duke University | -- |
 | [Li Y, Chen Y, Dai X, et al. MicroNet: Towards image recognition with extremely low FLOPs[J]. arXiv preprint arXiv:2011.12289, 2020.](https://arxiv.org/pdf/2011.12289.pdf) | UC San Diego | -- |
 | [Li Z, Li H, Li K, et al. Locality Sensitive Hash Aggregated Nonlinear Neighborhood Matrix Factorization for Online Sparse Big Data Analysis[J]. ACM/IMS Transactions on Data Science (TDS), 2022, 2(4): 1-27.](https://dl.acm.org/doi/abs/10.1145/3497749) | Hunan University | -- |
+
 
 
 

@@ -266,10 +266,10 @@
 | [Zhang L, Song J, Gao A, et al. Be your own teacher: Improve the performance of convolutional neural networks via self distillation[C]//Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019: 3713-3722.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Be_Your_Own_Teacher_Improve_the_Performance_of_Convolutional_Neural_ICCV_2019_paper.pdf) | Tsinghua University | [Code](https://github.com/ArchipLab-LinfengZhang/) |
 | [Hou L, Huang Z, Shang L, et al. Dynabert: Dynamic bert with adaptive width and depth[J]. Advances in Neural Information Processing Systems, 2020, 33: 9782-9793.](https://proceedings.neurips.cc/paper/2020/hash/6f5216f8d89b086c18298e043bfe48ed-Abstract.html) | Huawei Noah’s Ark Lab | [Code](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/DynaBERT) |
 | [Zhang L, Tan Z, Song J, et al. Scan: A scalable neural networks framework towards compact and efficient models[J]. Advances in Neural Information Processing Systems, 2019, 32.](https://proceedings.neurips.cc/paper/2019/hash/934b535800b1cba8f96a5d72f72f1611-Abstract.html) | Tsinghua University | [Code](https://github.com/ArchipLab-LinfengZhang/pytorch-scalable-neural-networks) |
-| [Liu Y, Shu Z, Li Y, et al. Content-aware gan compression[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2021: 12156-12166.](http://openaccess.thecvf.com/content/CVPR2021/html/Liu_Content-Aware_GAN_Compression_CVPR_2021_paper.html) | 
+| [Liu Y, Shu Z, Li Y, et al. Content-aware gan compression[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2021: 12156-12166.](http://openaccess.thecvf.com/content/CVPR2021/html/Liu_Content-Aware_GAN_Compression_CVPR_2021_paper.html) | Princeton University | -- |
 | [Boo Y, Shin S, Choi J, et al. Stochastic precision ensemble: self-knowledge distillation for quantized deep neural networks[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2021, 35(8): 6794-6802.](https://ojs.aaai.org/index.php/AAAI/article/view/16839) | Seoul National University | -- |
-
-
+| [Ni J, Sarbajna R, Liu Y, et al. Cross-modal knowledge distillation for vision-to-sensor action recognition[C]//ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2022: 4448-4452.](https://ieeexplore.ieee.org/abstract/document/9746752/) | Texas State University | -- |
+| [Zhang Y, Yan Z, Sun X, et al. Learning efficient and accurate detectors with dynamic knowledge distillation in remote sensing imagery[J]. IEEE Transactions on Geoscience and Remote Sensing, 2021, 60: 1-19.](https://ieeexplore.ieee.org/abstract/document/9625952/) | Chinese Academy of Sciences | -- |
 
 
 

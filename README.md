@@ -270,12 +270,12 @@
 | [Boo Y, Shin S, Choi J, et al. Stochastic precision ensemble: self-knowledge distillation for quantized deep neural networks[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2021, 35(8): 6794-6802.](https://ojs.aaai.org/index.php/AAAI/article/view/16839) | Seoul National University | -- |
 | [Ni J, Sarbajna R, Liu Y, et al. Cross-modal knowledge distillation for vision-to-sensor action recognition[C]//ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2022: 4448-4452.](https://ieeexplore.ieee.org/abstract/document/9746752/) | Texas State University | -- |
 | [Zhang Y, Yan Z, Sun X, et al. Learning efficient and accurate detectors with dynamic knowledge distillation in remote sensing imagery[J]. IEEE Transactions on Geoscience and Remote Sensing, 2021, 60: 1-19.](https://ieeexplore.ieee.org/abstract/document/9625952/) | Chinese Academy of Sciences | -- |
-
-
-
-
-
-
+| [Xia X, Yin H, Yu J, et al. On-Device Next-Item Recommendation with Self-Supervised Knowledge Distillation[C]//Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval. 2022: 546-555.](https://dl.acm.org/doi/abs/10.1145/3477495.3531775) | The University of Queensland | [Code](https://github.com/xiaxin1998/OD-Rec) |
+| [Jin H, Bai D, Yao D, et al. Personalized edge intelligence via federated self-knowledge distillation[J]. IEEE Transactions on Parallel and Distributed Systems, 2022, 34(2): 567-580.](https://ieeexplore.ieee.org/abstract/document/9964434/) | Huazhong University of Science and Technology | -- |
+| [Xu Z, Hong Z, Ding C, et al. Mobilefaceswap: A lightweight framework for video face swapping[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2022, 36(3): 2973-2981.](https://ojs.aaai.org/index.php/AAAI/article/view/20203) | Baidu Inc. | -- |
+| [Bai H, Mao H, Nair D. Dynamically pruning segformer for efficient semantic segmentation[C]//ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2022: 3298-3302.](https://ieeexplore.ieee.org/abstract/document/9747634) | Amazon Halo Health & Wellness | -- |
+| [Hao Z, Luo Y, Wang Z, et al. CDFKD-MFS: Collaborative Data-Free Knowledge Distillation via Multi-Level Feature Sharing[J]. IEEE Transactions on Multimedia, 2022, 24: 4262-4274.](https://ieeexplore.ieee.org/abstract/document/9834142/) | Beijing Institute of Technology | [Code](https://github.com/Hao840/CDFKD-MFS) |
+| [Hao Z, Guo J, Jia D, et al. Learning Efficient Vision Transformers via Fine-Grained Manifold Distillation[J]. Advances in Neural Information Processing Systems, 2022, 35: 9164-9175.](https://proceedings.neurips.cc/paper_files/paper/2022/hash/3bd2d73b4e96b0ac5a319be58a96016c-Abstract-Conference.html) | Beijing Institute of Technology | [Code]([https://github.com/Hao840/CDFKD-MFS](https://github.com/Hao840/manifold-distillation)) |
 
 
 

@@ -37,6 +37,10 @@
 
 [What is edge computing? Everything you need to know](https://www.techtarget.com/searchdatacenter/definition/edge-computing)
 
+[Machine Learning at the Edge — μML](https://heartbeat.comet.ml/machine-learning-at-the-edge-%CE%BCml-2802f1af92de)
+
+[在边缘实现机器学习都需要什么？](https://www.infoq.cn/article/shdudgbwmho0ewwpmk5i)
+
 **The edge computing infrastructure:**
 
 ![The edge computing infrastructure](https://raw.githubusercontent.com/wangxb96/Awesome-Edge-Intelligence/main/Edge_computing_infrastructure.png)

@@ -299,7 +299,8 @@
 | [Ding Y, Yu C H, Zheng B, et al. Hidet: Task-mapping programming paradigm for deep learning tensor programs[C]//Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2. 2023: 370-384.](https://dl.acm.org/doi/abs/10.1145/3575693.3575702) | University of Toronto | [Code](https://www.github.com/hidet-org/hidet) |
 | [Xia M, Huang Z, Tian L, et al. SparkNoC: An energy-efficiency FPGA-based accelerator using optimized lightweight CNN for edge computing[J]. Journal of Systems Architecture, 2021, 115: 101991.](https://sciencedirect.53yu.com/science/article/pii/S1383762121000138) | Shanghai Advanced Research Institute, Chinese Academy of Sciences | -- |
 | [Wang Y, Li H, Li X. Re-architecting the on-chip memory sub-system of machine-learning accelerator for embedded devices[C]//2016 IEEE/ACM International Conference on Computer-Aided Design (ICCAD). IEEE, 2016: 1-6.](https://ieeexplore.ieee.org/abstract/document/7827590/) | Institute of Computing Technology, Chinese Academy of Sciences | -- |
-
+| [Wang L, Chen Z, Liu Y, et al. A unified optimization approach for cnn model inference on integrated gpus[C]//Proceedings of the 48th International Conference on Parallel Processing. 2019: 1-10.](https://dl.acm.org/doi/pdf/10.1145/3337821.3337839) | Amazon Web Services | [Code](https://github.com/dmlc/tvm/) |
+| [Xu H, Wang Y, Wang Y, et al. ACG-engine: An inference accelerator for content generative neural networks[C]//2019 IEEE/ACM International Conference on Computer-Aided Design (ICCAD). IEEE, 2019: 1-7.](https://ieeexplore.ieee.org/abstract/document/8942169/) | University of Chinese Academy of Sciences | -- |
 
 #### 3.4.2. AI Model Accelerator
 | Title & Basic Information | Affiliation | Code |

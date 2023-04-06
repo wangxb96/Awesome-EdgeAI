@@ -29,8 +29,8 @@
       - [3.3.4. Knowledge Distillation](#334-knowledge-distillation)
       - [3.3.5. Low-rank Factorization](#335-low-rank-factorization)
     - [3.4. Model Acceleration](#34-model-acceleration)
-      - [3.4.1. Deep Learning Framework](#341-deep-learning-framework)
-      - [3.4.2. Hardware Acceleration](#342-hardware-acceleration)
+      - [3.4.1. AI Inference Framework](#341-ai-inference-framework)
+      - [3.4.2. AI Model Accelerator](#342-ai-model-accelerator)
 ## 1. Background Knowledge
 ### 1.1. Edge Computing
 **Definition:** Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data. This is expected to improve response times and save bandwidth.

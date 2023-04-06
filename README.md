@@ -307,7 +307,8 @@
 | [Huang Y, Qiao X, Ren P, et al. A lightweight collaborative deep neural network for the mobile web in edge cloud[J]. IEEE Transactions on Mobile Computing, 2020, 21(7): 2289-2305.](https://ieeexplore.ieee.org/abstract/document/9286558/) | Beijing University of Posts and Telecommunications | -- |
 | [Farhadi M, Ghasemi M, Vrudhula S, et al. Enabling incremental knowledge transfer for object detection at the edge[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops. 2020: 396-397.](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w28/Farhadi_Enabling_Incremental_Knowledge_Transfer_for_Object_Detection_at_the_Edge_CVPRW_2020_paper.pdf) | Arizona State university | -- |
 | [Yang L, Rakin A S, Fan D. DA3: Dynamic Additive Attention Adaption for Memory-Efficient On-Device Multi-Domain Learning[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022: 2619-2627.](https://openaccess.thecvf.com/content/CVPR2022W/ECV/papers/Yang_DA3_Dynamic_Additive_Attention_Adaption_for_Memory-Efficient_On-Device_Multi-Domain_Learning_CVPRW_2022_paper.pdf) | Arizona State University | -- |
- 
+| [He S, Meng H, Zhou Z, et al. An efficient GPU-accelerated inference engine for binary neural network on mobile phones[J]. Journal of Systems Architecture, 2021, 117: 102156.](https://sciencedirect.53yu.com/science/article/pii/S1383762121001120) | Sun Yat-sen University | [Code](https://code.ihub.org.cn/projects/915/repository/PhoneBit) |
+| [Kosta A K, Anwar M A, Panda P, et al. RAPID-RL: A Reconfigurable Architecture with Preemptive-Exits for Efficient Deep-Reinforcement Learning[C]//2022 International Conference on Robotics and Automation (ICRA). IEEE, 2022: 7492-7498.](https://ieeexplore.ieee.org/abstract/document/9812320) | Purdue University | -- |
 
 
 #### 3.4.2. AI Model Accelerator

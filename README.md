@@ -313,10 +313,18 @@
 | [Gao C, Rios-Navarro A, Chen X, et al. EdgeDRNN: Recurrent neural network accelerator for edge inference[J]. IEEE Journal on Emerging and Selected Topics in Circuits and Systems, 2020, 10(4): 419-432.](https://ieeexplore.ieee.org/abstract/document/9268992/) | University of Zürich and ETH Zürich | -- |
 | [Wen L, Zhang X, Bai H, et al. Structured pruning of recurrent neural networks through neuron selection[J]. Neural Networks, 2020, 123: 134-141.](https://www.sciencedirect.com/science/article/pii/S0893608019303776) | University of Electronic Science and Technology of China | -- |
 | [Zhang J, Wang X, Li D, et al. Dynamically hierarchy revolution: dirnet for compressing recurrent neural network on mobile devices[J]. arXiv preprint arXiv:1806.01248, 2018.](https://arxiv.org/pdf/1806.01248.pdf) | Arizona State University | -- | 
+| [Wang S, Ananthanarayanan G, Zeng Y, et al. High-throughput cnn inference on embedded arm big. little multicore processors[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2019, 39(10): 2254-2267.](https://ieeexplore.ieee.org/abstract/document/8852739/) | National University of Singapore | -- |
+| [Zhao L, Zhang Y, Yang J. SCA: a secure CNN accelerator for both training and inference[C]//2020 57th ACM/IEEE Design Automation Conference (DAC). IEEE, 2020: 1-6.](https://ieeexplore.ieee.org/abstract/document/9218752/) | University of Pittsburgh | -- |
+| [Hou X, Guan Y, Han T. NeuLens: spatial-based dynamic acceleration of convolutional neural networks on edge[C]//Proceedings of the 28th Annual International Conference on Mobile Computing And Networking. 2022: 186-199.](https://dl.acm.org/doi/abs/10.1145/3495243.3560528?casa_token=ioLt8xczh7cAAAAA:EpjRGtBuz0Hy3sYw9H4v1TVXcX03I68KMtlLjk1Tt2FhheVS0MA97woEWGgg_pjfjXc_njTf2JV8sQ) | New Jersey Institute of Technology | -- |
+
+
 
 #### 3.4.2. AI Model Accelerator
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
+
+
+
 
 <!-- 
 ## 2. Papers 

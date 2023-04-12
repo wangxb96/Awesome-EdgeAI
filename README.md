@@ -322,8 +322,10 @@
 #### 3.4.2. AI Model Accelerator
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
-
-
+| [Jia T, Ju Y, Joseph R, et al. Ncpu: An embedded neural cpu architecture on resource-constrained low power devices for real-time end-to-end performance[C]//2020 53rd Annual IEEE/ACM International Symposium on Microarchitecture (MICRO). IEEE, 2020: 1097-1109.](https://ieeexplore.ieee.org/abstract/document/9251958/) | Northwestern Univeristy, Evanston, IL | -- |
+| [Nori A V, Bera R, Balachandran S, et al. Reduct: Keep it close, keep it cool!: Efficient scaling of dnn inference on multi-core cpus with near-cache compute[C]//2021 ACM/IEEE 48th Annual International Symposium on Computer Architecture (ISCA). IEEE, 2021: 167-180.](https://ieeexplore.ieee.org/abstract/document/9499927/) | ETH Z¨urich  | -- |
+| [Cho H, Lee J, Lee J. FARNN: FPGA-GPU hybrid acceleration platform for recurrent neural networks[J]. IEEE Transactions on Parallel and Distributed Systems, 2021, 33(7): 1725-1738.](https://ieeexplore.ieee.org/abstract/document/9600618/) | Sungkyunkwan University | -- |
+| [Roohi A, Sheikhfaal S, Angizi S, et al. Apgan: Approximate gan for robust low energy learning from imprecise components[J]. IEEE Transactions on Computers, 2019, 69(3): 349-360.](https://ieeexplore.ieee.org/abstract/document/8880521/) | University of Central Florida | -- |
 
 
 <!-- 

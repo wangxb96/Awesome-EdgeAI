@@ -316,6 +316,8 @@
 | [Wang S, Ananthanarayanan G, Zeng Y, et al. High-throughput cnn inference on embedded arm big. little multicore processors[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2019, 39(10): 2254-2267.](https://ieeexplore.ieee.org/abstract/document/8852739/) | National University of Singapore | -- |
 | [Zhao L, Zhang Y, Yang J. SCA: a secure CNN accelerator for both training and inference[C]//2020 57th ACM/IEEE Design Automation Conference (DAC). IEEE, 2020: 1-6.](https://ieeexplore.ieee.org/abstract/document/9218752/) | University of Pittsburgh | -- |
 | [Hou X, Guan Y, Han T. NeuLens: spatial-based dynamic acceleration of convolutional neural networks on edge[C]//Proceedings of the 28th Annual International Conference on Mobile Computing And Networking. 2022: 186-199.](https://dl.acm.org/doi/abs/10.1145/3495243.3560528?casa_token=ioLt8xczh7cAAAAA:EpjRGtBuz0Hy3sYw9H4v1TVXcX03I68KMtlLjk1Tt2FhheVS0MA97woEWGgg_pjfjXc_njTf2JV8sQ) | New Jersey Institute of Technology | -- |
+| [Susskind Z, Arora A, Miranda I D S, et al. Weightless neural networks for efficient edge inference[C]//Proceedings of the International Conference on Parallel Architectures and Compilation Techniques. 2022: 279-290.](https://dl.acm.org/doi/pdf/10.1145/3559009.3569680) | The University of Texas at Austin | [Code](https://github.com/ZSusskind/BTHOWeN) |
+| [Geng T, Li A, Wang T, et al. O3BNN-R: An out-of-order architecture for high-performance and regularized BNN inference[J]. IEEE Transactions on parallel and distributed systems, 2020, 32(1): 199-213.](https://ieeexplore.ieee.org/abstract/document/9154597/) | -- |
 
 
 
@@ -323,9 +325,13 @@
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Jia T, Ju Y, Joseph R, et al. Ncpu: An embedded neural cpu architecture on resource-constrained low power devices for real-time end-to-end performance[C]//2020 53rd Annual IEEE/ACM International Symposium on Microarchitecture (MICRO). IEEE, 2020: 1097-1109.](https://ieeexplore.ieee.org/abstract/document/9251958/) | Northwestern Univeristy, Evanston, IL | -- |
-| [Nori A V, Bera R, Balachandran S, et al. Reduct: Keep it close, keep it cool!: Efficient scaling of dnn inference on multi-core cpus with near-cache compute[C]//2021 ACM/IEEE 48th Annual International Symposium on Computer Architecture (ISCA). IEEE, 2021: 167-180.](https://ieeexplore.ieee.org/abstract/document/9499927/) | ETH Z¨urich  | -- |
+| [Nori A V, Bera R, Balachandran S, et al. Reduct: Keep it close, keep it cool!: Efficient scaling of dnn inference on multi-core cpus with near-cache compute[C]//2021 ACM/IEEE 48th Annual International Symposium on Computer Architecture (ISCA). IEEE, 2021: 167-180.](https://ieeexplore.ieee.org/abstract/document/9499927/) | ETH Zurich  | -- |
 | [Cho H, Lee J, Lee J. FARNN: FPGA-GPU hybrid acceleration platform for recurrent neural networks[J]. IEEE Transactions on Parallel and Distributed Systems, 2021, 33(7): 1725-1738.](https://ieeexplore.ieee.org/abstract/document/9600618/) | Sungkyunkwan University | -- |
 | [Roohi A, Sheikhfaal S, Angizi S, et al. Apgan: Approximate gan for robust low energy learning from imprecise components[J]. IEEE Transactions on Computers, 2019, 69(3): 349-360.](https://ieeexplore.ieee.org/abstract/document/8880521/) | University of Central Florida | -- |
+| [Choudhury Z, Shrivastava S, Ramapantulu L, et al. An FPGA overlay for CNN inference with fine-grained flexible parallelism[J]. ACM Transactions on Architecture and Code Optimization (TACO), 2022, 19(3): 1-26.](https://dl.acm.org/doi/full/10.1145/3519598) | International Institute of Information Technology | -- |
+| [Xiang Y, Kim H. Pipelined data-parallel CPU/GPU scheduling for multi-DNN real-time inference[C]//2019 IEEE Real-Time Systems Symposium (RTSS). IEEE, 2019: 392-405.](https://ieeexplore.ieee.org/abstract/document/9052147/) | University of California, Riverside | -- |
+| [Capodieci N, Cavicchioli R, Bertogna M, et al. Deadline-based scheduling for GPU with preemption support[C]//2018 IEEE Real-Time Systems Symposium (RTSS). IEEE, 2018: 119-130.](https://ieeexplore.ieee.org/abstract/document/8603197) | University of Modena and Reggio Emilia Modena | -- |
+
 
 
 <!-- 

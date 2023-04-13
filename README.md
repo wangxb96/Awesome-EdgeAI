@@ -318,7 +318,8 @@
 | [Hou X, Guan Y, Han T. NeuLens: spatial-based dynamic acceleration of convolutional neural networks on edge[C]//Proceedings of the 28th Annual International Conference on Mobile Computing And Networking. 2022: 186-199.](https://dl.acm.org/doi/abs/10.1145/3495243.3560528?casa_token=ioLt8xczh7cAAAAA:EpjRGtBuz0Hy3sYw9H4v1TVXcX03I68KMtlLjk1Tt2FhheVS0MA97woEWGgg_pjfjXc_njTf2JV8sQ) | New Jersey Institute of Technology | -- |
 | [Susskind Z, Arora A, Miranda I D S, et al. Weightless neural networks for efficient edge inference[C]//Proceedings of the International Conference on Parallel Architectures and Compilation Techniques. 2022: 279-290.](https://dl.acm.org/doi/pdf/10.1145/3559009.3569680) | The University of Texas at Austin | [Code](https://github.com/ZSusskind/BTHOWeN) |
 | [Geng T, Li A, Wang T, et al. O3BNN-R: An out-of-order architecture for high-performance and regularized BNN inference[J]. IEEE Transactions on parallel and distributed systems, 2020, 32(1): 199-213.](https://ieeexplore.ieee.org/abstract/document/9154597/) | -- |
-
+| [Zhou Z, Shi B, Zhang Z, et al. Blockgnn: Towards efficient gnn acceleration using block-circulant weight matrices[C]//2021 58th ACM/IEEE Design Automation Conference (DAC). IEEE, 2021: 1009-1014.](https://ieeexplore.ieee.org/abstract/document/9586181/) | Peking University | -- |
+| [Kwon M, Gouk D, Lee S, et al. {Hardware/Software}{Co-Programmable} Framework for Computational {SSDs} to Accelerate Deep Learning Service on {Large-Scale} Graphs[C]//20th USENIX Conference on File and Storage Technologies (FAST 22). 2022: 147-164.](https://www.usenix.org/conference/fast22/presentation/kwon) | KAIST | -- |
 
 
 #### 3.4.2. AI Model Accelerator
@@ -331,7 +332,7 @@
 | [Choudhury Z, Shrivastava S, Ramapantulu L, et al. An FPGA overlay for CNN inference with fine-grained flexible parallelism[J]. ACM Transactions on Architecture and Code Optimization (TACO), 2022, 19(3): 1-26.](https://dl.acm.org/doi/full/10.1145/3519598) | International Institute of Information Technology | -- |
 | [Xiang Y, Kim H. Pipelined data-parallel CPU/GPU scheduling for multi-DNN real-time inference[C]//2019 IEEE Real-Time Systems Symposium (RTSS). IEEE, 2019: 392-405.](https://ieeexplore.ieee.org/abstract/document/9052147/) | University of California, Riverside | -- |
 | [Capodieci N, Cavicchioli R, Bertogna M, et al. Deadline-based scheduling for GPU with preemption support[C]//2018 IEEE Real-Time Systems Symposium (RTSS). IEEE, 2018: 119-130.](https://ieeexplore.ieee.org/abstract/document/8603197) | University of Modena and Reggio Emilia Modena | -- |
-
+| [Zhou Z, Liu J, Gu Z, et al. Energon: Toward Efficient Acceleration of Transformers Using Dynamic Sparse Attention[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2022, 42(1): 136-149.](https://ieeexplore.ieee.org/abstract/document/9763839/) | Peking University | -- |
 
 
 <!-- 

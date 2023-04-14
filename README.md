@@ -320,6 +320,8 @@
 | [Geng T, Li A, Wang T, et al. O3BNN-R: An out-of-order architecture for high-performance and regularized BNN inference[J]. IEEE Transactions on parallel and distributed systems, 2020, 32(1): 199-213.](https://ieeexplore.ieee.org/abstract/document/9154597/) | -- |
 | [Zhou Z, Shi B, Zhang Z, et al. Blockgnn: Towards efficient gnn acceleration using block-circulant weight matrices[C]//2021 58th ACM/IEEE Design Automation Conference (DAC). IEEE, 2021: 1009-1014.](https://ieeexplore.ieee.org/abstract/document/9586181/) | Peking University | -- |
 | [Kwon M, Gouk D, Lee S, et al. {Hardware/Software}{Co-Programmable} Framework for Computational {SSDs} to Accelerate Deep Learning Service on {Large-Scale} Graphs[C]//20th USENIX Conference on File and Storage Technologies (FAST 22). 2022: 147-164.](https://www.usenix.org/conference/fast22/presentation/kwon) | KAIST | -- |
+| [Zhang X, Jiang W, Hu J. Achieving full parallelism in LSTM via a unified accelerator design[C]//2020 IEEE 38th International Conference on Computer Design (ICCD). IEEE, 2020: 469-477.](https://ieeexplore.ieee.org/abstract/document/9283568/) | University of Pittsburgh | -- |
+| [Yang T, Li D, Ma F, et al. Pasgcn: An reram-based pim design for gcn with adaptively sparsified graphs[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2022, 42(1): 150-163.](https://ieeexplore.ieee.org/abstract/document/9774869/) | Shanghai Jiao Tong University | -- |
 
 
 #### 3.4.2. AI Model Accelerator
@@ -333,7 +335,10 @@
 | [Xiang Y, Kim H. Pipelined data-parallel CPU/GPU scheduling for multi-DNN real-time inference[C]//2019 IEEE Real-Time Systems Symposium (RTSS). IEEE, 2019: 392-405.](https://ieeexplore.ieee.org/abstract/document/9052147/) | University of California, Riverside | -- |
 | [Capodieci N, Cavicchioli R, Bertogna M, et al. Deadline-based scheduling for GPU with preemption support[C]//2018 IEEE Real-Time Systems Symposium (RTSS). IEEE, 2018: 119-130.](https://ieeexplore.ieee.org/abstract/document/8603197) | University of Modena and Reggio Emilia Modena | -- |
 | [Zhou Z, Liu J, Gu Z, et al. Energon: Toward Efficient Acceleration of Transformers Using Dynamic Sparse Attention[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2022, 42(1): 136-149.](https://ieeexplore.ieee.org/abstract/document/9763839/) | Peking University | -- |
-
+| [Yu Y, Zhao T, Wang K, et al. Light-OPU: An FPGA-based overlay processor for lightweight convolutional neural networks[C]//Proceedings of the 2020 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays. 2020: 122-132.](https://dl.acm.org/doi/abs/10.1145/3373087.3375311) | University of california, Los Angeles | -- |
+| [Kouris A, Venieris S I, Laskaridis S, et al. Fluid Batching: Exit-Aware Preemptive Serving of Early-Exit Neural Networks on Edge NPUs[J]. arXiv preprint arXiv:2209.13443, 2022.](https://arxiv.org/pdf/2209.13443.pdf) | Samsung AI Center, Cambridge | -- |
+| [Yang Q, Li H. BitSystolic: A 26.7 TOPS/W 2b~ 8b NPU with configurable data flows for edge devices[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2020, 68(3): 1134-1145.](https://ieeexplore.ieee.org/abstract/document/9301197/) | Duke University | -- |
+| [Wang Y, Deng D, Liu L, et al. PL-NPU: An Energy-Efficient Edge-Device DNN Training Processor With Posit-Based Logarithm-Domain Computing[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2022, 69(10): 4042-4055.](https://ieeexplore.ieee.org/abstract/document/9803862/) | Tsinghua University | -- |
 
 <!-- 
 ## 2. Papers 

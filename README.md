@@ -41,6 +41,8 @@
 
 [在边缘实现机器学习都需要什么？](https://www.infoq.cn/article/shdudgbwmho0ewwpmk5i)
 
+[边缘计算 | 在移动设备上部署深度学习模型的思路与注意点](https://www.cnblogs.com/showmeai/p/16627579.html)
+
 **The edge computing infrastructure:**
 
 ![The edge computing infrastructure](https://raw.githubusercontent.com/wangxb96/Awesome-Edge-Intelligence/main/Edge_computing_infrastructure.png)

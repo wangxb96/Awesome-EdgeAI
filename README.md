@@ -35,9 +35,7 @@
 Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data. This is expected to improve response times and save bandwidth.
 
 - [What is edge computing? Everything you need to know](https://www.techtarget.com/searchdatacenter/definition/edge-computing)
-
 - [Machine Learning at the Edge — μML](https://heartbeat.comet.ml/machine-learning-at-the-edge-%CE%BCml-2802f1af92de)
-
 
 ### 1.2. Edge AI
 - Edge AI refers to the deployment of artificial intelligence (AI) algorithms and models directly on edge devices, such as mobile phones, Internet of Things (IoT) devices, and other smart sensors. 
@@ -60,6 +58,7 @@ Edge computing is a distributed computing paradigm that brings computation and d
 
 ## 2. Surveys
 ### 2.1 Our Survey
+![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Framework.png)
 
 ### 2.2 Important Surveys on Edge AI (Related to edge inference and model deploy)
 - [Wang, X., Han, Y., Leung, V. C., Niyato, D., Yan, X., & Chen, X. (2020). Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)

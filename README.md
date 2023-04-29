@@ -57,7 +57,7 @@ Edge computing is a distributed computing paradigm that brings computation and d
 - [边缘计算 | 在移动设备上部署深度学习模型的思路与注意点](https://www.cnblogs.com/showmeai/p/16627579.html)
 
 ## 2. Surveys
-### 2.1 Our Survey
+### 2.1 Our Survey (To be released)
 ![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Framework.png)
 
 ### 2.2 Important Surveys on Edge AI (Related to edge inference and model deploy)

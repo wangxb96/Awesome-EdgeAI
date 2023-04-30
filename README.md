@@ -8,9 +8,7 @@
     - [1.1. Edge Computing](#11-edge-computing)
     - [1.2. Edge AI](#12-edge-ai)
       - [1.2.1. Blogs About Edge AI](#121-blogs-about-edge-ai)
-  - [2. Surveys](#2-surveys)
-    - [2.1. Our Survey](#21-our-survey)
-    - [2.2. Important Surveys on Edge AI (Related to edge inference and model deployment)](#22-important-surveys-on-edge-ai-related-to-edge-inference-and-model-deploy)
+  - [2. Our Survey](#2-our-survey)
   - [3. Efficient Computing Methods for Edge Intelligence](#3-efficient-computing-methods-for-edge-intelligence)
     - [3.1. Data Prepocessing](#31-data-prepocessing)
       - [3.1.1. Data Cleaning](#311-data-cleaning)
@@ -30,6 +28,8 @@
     - [3.4. Model Acceleration](#34-model-acceleration)
       - [3.4.1. AI Inference Framework](#341-ai-inference-framework)
       - [3.4.2. AI Model Accelerator](#342-ai-model-accelerator)
+   - [4. Important Surveys on Edge AI (Related to edge inference and model deployment)](#4-important-surveys-on-edge-ai-related-to-edge-inference-and-model-deploy)
+    
 ## 1. Background Knowledge
 ### 1.1. Edge Computing
 Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data. This is expected to improve response times and save bandwidth.
@@ -56,23 +56,9 @@ Edge computing is a distributed computing paradigm that brings computation and d
 - [在边缘实现机器学习都需要什么？](https://www.infoq.cn/article/shdudgbwmho0ewwpmk5i)
 - [边缘计算 | 在移动设备上部署深度学习模型的思路与注意点](https://www.cnblogs.com/showmeai/p/16627579.html)
 
-## 2. Surveys
-### 2.1 Our Survey (To be released)
+## 2. Our Survey (To be released)
 ![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Framework.png)
 
-### 2.2 Important Surveys on Edge AI (Related to edge inference and model deploy)
-- [Wang, X., Han, Y., Leung, V. C., Niyato, D., Yan, X., & Chen, X. (2020). Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/relation_ei_ie.png)
-- [Chen, J., & Ran, X. (2019). Deep learning with edge computing: A review. Proceedings of the IEEE, 107(8), 1655-1674.](https://ieeexplore.ieee.org/abstract/document/8763885/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/DNN_inference_speedup_methods.png)
-- [Murshed, M. S., Murphy, C., Hou, D., Khan, N., Ananthanarayanan, G., & Hussain, F. (2021). Machine learning at the network edge: A survey. ACM Computing Surveys (CSUR), 54(8), 1-37.](https://dl.acm.org/doi/abs/10.1145/3469029)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/ML_at_edge.png)
-- [Deng, S., Zhao, H., Fang, W., Yin, J., Dustdar, S., & Zomaya, A. Y. (2020). Edge intelligence: The confluence of edge computing and artificial intelligence. IEEE Internet of Things Journal, 7(8), 7457-7469.](https://ieeexplore.ieee.org/abstract/document/9052677/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/research_roadmap_edge_intelligence.png)
-- [Zhou, Z., Chen, X., Li, E., Zeng, L., Luo, K., & Zhang, J. (2019). Edge intelligence: Paving the last mile of artificial intelligence with edge computing. Proceedings of the IEEE, 107(8), 1738-1762.](https://ieeexplore.ieee.org/abstract/document/8736011/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/six_level_EI.png)
-- [Xu, D., Li, T., Li, Y., Su, X., Tarkoma, S., Jiang, T., ... & Hui, P. (2021). Edge intelligence: Empowering intelligence to the edge of network. Proceedings of the IEEE, 109(11), 1778-1837.](https://ieeexplore.ieee.org/abstract/document/9596610/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/classification_of_edge_ai.png)
 
 
 ##  3. Efficient Computing Methods for Edge Intelligence
@@ -321,6 +307,20 @@ Edge computing is a distributed computing paradigm that brings computation and d
 | [Kouris A, Venieris S I, Laskaridis S, et al. Fluid Batching: Exit-Aware Preemptive Serving of Early-Exit Neural Networks on Edge NPUs[J]. arXiv preprint arXiv:2209.13443, 2022.](https://arxiv.org/pdf/2209.13443.pdf) | Samsung AI Center, Cambridge | -- |
 | [Yang Q, Li H. BitSystolic: A 26.7 TOPS/W 2b~ 8b NPU with configurable data flows for edge devices[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2020, 68(3): 1134-1145.](https://ieeexplore.ieee.org/abstract/document/9301197/) | Duke University | -- |
 | [Wang Y, Deng D, Liu L, et al. PL-NPU: An Energy-Efficient Edge-Device DNN Training Processor With Posit-Based Logarithm-Domain Computing[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2022, 69(10): 4042-4055.](https://ieeexplore.ieee.org/abstract/document/9803862/) | Tsinghua University | -- |
+
+## 4. Important Surveys on Edge AI (Related to edge inference and model deploy)
+- [Wang, X., Han, Y., Leung, V. C., Niyato, D., Yan, X., & Chen, X. (2020). Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/relation_ei_ie.png)
+- [Chen, J., & Ran, X. (2019). Deep learning with edge computing: A review. Proceedings of the IEEE, 107(8), 1655-1674.](https://ieeexplore.ieee.org/abstract/document/8763885/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/DNN_inference_speedup_methods.png)
+- [Murshed, M. S., Murphy, C., Hou, D., Khan, N., Ananthanarayanan, G., & Hussain, F. (2021). Machine learning at the network edge: A survey. ACM Computing Surveys (CSUR), 54(8), 1-37.](https://dl.acm.org/doi/abs/10.1145/3469029)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/ML_at_edge.png)
+- [Deng, S., Zhao, H., Fang, W., Yin, J., Dustdar, S., & Zomaya, A. Y. (2020). Edge intelligence: The confluence of edge computing and artificial intelligence. IEEE Internet of Things Journal, 7(8), 7457-7469.](https://ieeexplore.ieee.org/abstract/document/9052677/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/research_roadmap_edge_intelligence.png)
+- [Zhou, Z., Chen, X., Li, E., Zeng, L., Luo, K., & Zhang, J. (2019). Edge intelligence: Paving the last mile of artificial intelligence with edge computing. Proceedings of the IEEE, 107(8), 1738-1762.](https://ieeexplore.ieee.org/abstract/document/8736011/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/six_level_EI.png)
+- [Xu, D., Li, T., Li, Y., Su, X., Tarkoma, S., Jiang, T., ... & Hui, P. (2021). Edge intelligence: Empowering intelligence to the edge of network. Proceedings of the IEEE, 109(11), 1778-1837.](https://ieeexplore.ieee.org/abstract/document/9596610/)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/classification_of_edge_ai.png)
 
 <!-- 
 ## 2. Papers 

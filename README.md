@@ -178,7 +178,7 @@ Edge computing is a distributed computing paradigm that brings computation and d
 | [Train big, then compress: Rethinking model size for efficient training and inference of transformers[C] ICML, 2020.](http://proceedings.mlr.press/v119/li20m.html) | UC Berkeley | -- |
 | [Hrank: Filter pruning using high-rank feature map[C]// CVPR, 2020.](http://openaccess.thecvf.com/content_CVPR_2020/html/Lin_HRank_Filter_Pruning_Using_High-Rank_Feature_Map_CVPR_2020_paper.html) |  Xiamen University | [Code](https://github.com/lmbxmu/HRank) | 
 | [Clip-q: Deep network compression learning by in-parallel pruning-quantization[C] CVPR, 2018.](http://openaccess.thecvf.com/content_cvpr_2018/html/Tung_CLIP-Q_Deep_Network_CVPR_2018_paper.html) | Simon Fraser University | -- |
-| Sparse: Sparse architecture search for cnns on resource-constrained microcontrollers[J]. NeurIPS, 2019.](https://proceedings.neurips.cc/paper/2019/hash/044a23cadb567653eb51d4eb40acaa88-Abstract.html) | Arm ML Research | -- |
+| [Sparse: Sparse architecture search for cnns on resource-constrained microcontrollers[J]. NeurIPS, 2019.](https://proceedings.neurips.cc/paper/2019/hash/044a23cadb567653eb51d4eb40acaa88-Abstract.html) | Arm ML Research | -- |
 | [Deepadapter: A collaborative deep learning framework for the mobile web using context-aware network pruning[C] INFOCOM, 2020.](https://ieeexplore.ieee.org/abstract/document/9155379/) |  Beijing University of Posts and Telecommunications | -- |
 | [SCANN: Synthesis of compact and accurate neural networks[J]. IEEE Trans. on Computer-Aided Design of Integrated Circuits and Systems, 2021.](https://ieeexplore.ieee.org/abstract/document/9552199/) | Princeton University | -- |
 | [Directx: Dynamic resource-aware cnn reconfiguration framework for real-time mobile applications[J]. IEEE Trans. on Computer-Aided Design of Integrated Circuits and Systems, 2020.](https://ieeexplore.ieee.org/abstract/document/9097286/) | George Mason University | -- |
@@ -198,7 +198,6 @@ Edge computing is a distributed computing paradigm that brings computation and d
 | [3D CNN acceleration on FPGA using hardware-aware pruning[C] DAC, 2020.](https://ieeexplore.ieee.org/abstract/document/9218571/) | Northeastern University, MA | -- |
 | [Width & depth pruning for vision transformers[C] AAAI, 2020.](https://ojs.aaai.org/index.php/AAAI/article/view/20222) | Institute of Computing Technology, Chinese Academy of Sciences | -- |
 | [Prive-hd: Privacy-preserved hyperdimensional computing[C] DAC, 2020.](https://ieeexplore.ieee.org/abstract/document/9218493/) | UC San Diego | -- |
-| [http://openaccess.thecvf.com/content/CVPR2021/html/Liu_Content-Aware_GAN_Compression_CVPR_2021_paper.html](http://openaccess.thecvf.com/content/CVPR2021/html/Liu_Content-Aware_GAN_Compression_CVPR_2021_paper.html) | Princeton University | -- |
 | [NestFL: efficient federated learning through progressive model pruning in heterogeneous edge computing[C] MobiCom, 2022.](https://dl.acm.org/doi/abs/10.1145/3495243.3558248) | Purple Mountain Laboratories, Nanjing | -- |
 
 

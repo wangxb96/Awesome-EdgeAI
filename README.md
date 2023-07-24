@@ -57,8 +57,14 @@ Edge computing is a distributed computing paradigm that brings computation and d
 - [边缘计算 | 在移动设备上部署深度学习模型的思路与注意点](https://www.cnblogs.com/showmeai/p/16627579.html)
 
 ## 2. Our Survey (To be released)
-![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Framework.png)
-
+### 2.1 The Taxonomy of the Discussed Topics
+![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/survey_structureV2.png)
+### 2.2 Edge AI Optimization Triad
+We propose a data-model-system optimization triad.
+![Scope](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/edge_ai_frameworks.png)
+### 2.3 The Edge AI Deployment Pipeline
+An overview of edge deployment. The figure shows a general pipeline from the three aspects of data, model and system. Note that not all steps are necessary in real applications.
+![Pipeline](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/edge_deployment_pipeline.png)
 
 
 ##  3. Efficient Computing Methods for Edge Intelligence

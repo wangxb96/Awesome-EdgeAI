@@ -217,7 +217,7 @@ An overview of model optimization operations. Model design involves creating lig
 | [NestFL: efficient federated learning through progressive model pruning in heterogeneous edge computing[C] MobiCom, 2022.](https://dl.acm.org/doi/abs/10.1145/3495243.3558248) | Purple Mountain Laboratories, Nanjing | -- |
 
 
-### 3.3.2.2. Parameter Sharing 
+### 3.2.2.2. Parameter Sharing 
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Deep k-means: Re-training and parameter sharing with harder cluster assignments for compressing deep convolutions[C] ICML, 2018.](http://proceedings.mlr.press/v80/wu18h.html) | Texas A&M University | [Code](https://github.com/Sandbox3aster/Deep-K-Means) |
@@ -230,7 +230,7 @@ An overview of model optimization operations. Model design involves creating lig
 | [Structured transforms for small-footprint deep learning[J]. NeurIPS, 2015.](https://proceedings.neurips.cc/paper/2015/hash/851300ee84c2b80ed40f51ed26d866fc-Abstract.html) | Google, New York | -- | 
 
 
-### 3.3.2.3. Model Quantization
+### 3.2.2.3. Model Quantization
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Fractrain: Fractionally squeezing bit savings both temporally and spatially for efficient dnn training[J]. NeurIPS, 2020.](https://proceedings.neurips.cc/paper_files/paper/2020/file/8dc5983b8c4ef1d8fcd5f325f9a65511-Paper.pdf) | Rice University | [Code](https://github.com/RICE-EIC/FracTrain) |
@@ -247,7 +247,7 @@ An overview of model optimization operations. Model design involves creating lig
 | [Similarity-Aware CNN for Efficient Video Recognition at the Edge[J]. TCAD, 2021.](https://ieeexplore.ieee.org/abstract/document/9656540/) | University of Southampton | -- |
 | [ Data-Free Network Compression via Parametric Non-uniform Mixed Precision Quantization[C] CVPR, 2022.](http://openaccess.thecvf.com/content/CVPR2022/html/Chikin_Data-Free_Network_Compression_via_Parametric_Non-Uniform_Mixed_Precision_Quantization_CVPR_2022_paper.html) | Huawei Noah's Ark Lab | -- |
 
-### 3.3.2.4. Knowledge Distillation
+### 3.2.2.4. Knowledge Distillation
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Be your own teacher: Improve the performance of convolutional neural networks via self distillation[C] ICCV, 2019.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Be_Your_Own_Teacher_Improve_the_Performance_of_Convolutional_Neural_ICCV_2019_paper.pdf) | Tsinghua University | [Code](https://github.com/ArchipLab-LinfengZhang/) |
@@ -265,18 +265,18 @@ An overview of model optimization operations. Model design involves creating lig
 | [Learning Efficient Vision Transformers via Fine-Grained Manifold Distillation[J]. NeurIPS, 2022.](https://proceedings.neurips.cc/paper_files/paper/2022/hash/3bd2d73b4e96b0ac5a319be58a96016c-Abstract-Conference.html) | Beijing Institute of Technology | [Code](https://github.com/Hao840/manifold-distillation) |
 | [Learning Accurate, Speedy, Lightweight CNNs via Instance-Specific Multi-Teacher Knowledge Distillation for Distracted Driver Posture Identification[J]. IEEE Trans. on Intelligent Transportation Systems, 2022.](https://ieeexplore.ieee.org/abstract/document/9750058/) | Hefei Institutes of Physical Science (HFIPS), Chinese Academy of Sciences | -- | 
 
-### 3.3.2.5. Low-rank Factorization
+### 3.2.2.5. Low-rank Factorization
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Learning low-rank deep neural networks via singular vector orthogonality regularization and singular value sparsification[C] CVPR workshops. 2020.](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w40/Yang_Learning_Low-Rank_Deep_Neural_Networks_via_Singular_Vector_Orthogonality_Regularization_CVPRW_2020_paper.pdf) | Duke University | -- |
 | [MicroNet: Towards image recognition with extremely low FLOPs[J]. arXiv, 2020.](https://arxiv.org/pdf/2011.12289.pdf) | UC San Diego | -- |
 | [Locality Sensitive Hash Aggregated Nonlinear Neighborhood Matrix Factorization for Online Sparse Big Data Analysis[J]. ACM/IMS Transactions on Data Science (TDS), 2022.](https://dl.acm.org/doi/abs/10.1145/3497749) | Hunan University | -- |
 
-### 3.4. System Optimization
+### 3.3. System Optimization
 An overview of system optimization operations. Software optimization involves developing frameworks for lightweight model training and inference, while hardware optimization focuses on accelerating models using hardware-based approaches to improve computational efficiency on edge devices.
 ![System](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/system_optimization.png)
 
-#### 3.4.1. Software Optimization
+#### 3.3.1. Software Optimization
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Hidet: Task-mapping programming paradigm for deep learning tensor programs[C] ASPLOS Conference, 2023.](https://dl.acm.org/doi/abs/10.1145/3575693.3575702) | University of Toronto | [Code](https://www.github.com/hidet-org/hidet) |
@@ -307,7 +307,7 @@ An overview of system optimization operations. Software optimization involves de
 | [Pasgcn: An reram-based pim design for gcn with adaptively sparsified graphs[J]. TCAD, 2022.](https://ieeexplore.ieee.org/abstract/document/9774869/) | Shanghai Jiao Tong University | -- |
 
 
-#### 3.4.2. Hardware Optimization
+#### 3.3.2. Hardware Optimization
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Ncpu: An embedded neural cpu architecture on resource-constrained low power devices for real-time end-to-end performance[C] MICRO, 2020.](https://ieeexplore.ieee.org/abstract/document/9251958/) | Northwestern Univeristy, Evanston, IL | -- |

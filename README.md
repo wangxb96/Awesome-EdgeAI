@@ -67,8 +67,11 @@ An overview of edge deployment. The figure shows a general pipeline from the thr
 ![Pipeline](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/edge_deployment_pipeline.png)
 
 
-##  3. Efficient Computing Methods for Edge Intelligence
-### 3.1. Data Prepocessing
+##  3. The Data-Model-System Optimization Triad
+### 3.1. Data Optimization
+An overview of data optimization operations. Data cleaning improves data quality by removing errors and inconsistencies in the raw data. Feature compression is used to eliminate irrelevant and redundant features. For scarce data, data augmentation is employed to increase the data size.
+![Data](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/data_optimization.png)
+
 #### 3.1.1. Data Cleaning
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
@@ -122,8 +125,12 @@ An overview of edge deployment. The figure shows a general pipeline from the thr
 | [Magicinput: Training-free multi-lingual finger input system using data augmentation based on mnists[C] ICIP, 2021.](https://dl.acm.org/doi/abs/10.1145/3412382.3458261) | Shanghai Jiao Tong University | -- |
 
 
-### 3.2. Efficient Model Architecture
-#### 3.2.1. Compact Architecture
+### 3.2. Model Optimization
+An overview of model optimization operations. Model design involves creating lightweight models through manual and automated techniques, including architecture selection, parameter tuning, and regularization. Model compression involves using various techniques, such as pruning, quantization, and knowledge distillation, to reduce the size of the model and obtain a compact model that requires fewer resources while maintaining high accuracy.
+![Model](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/model_optimization.png)
+
+#### 3.2.1. Model Design
+##### 3.2.1.1. Compact Architecture Design
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Mobilenets: Efficient convolutional neural networks for mobile vision applications[J]. arXiv, 2017.](https://arxiv.53yu.com/abs/1704.04861) | Google Inc. | [Code](https://github.com/Zehaos/MobileNet) |
@@ -161,7 +168,7 @@ An overview of edge deployment. The figure shows a general pipeline from the thr
 | [Triplet Attention: Rethinking the Similarity in Transformers[C] KDD, 2021.](https://dl.acm.org/doi/abs/10.1145/3447548.3467241) | Beihang University | [Code](https://github.com/zhouhaoyi/TripletAttention) |
 | [Resnest: Split-attention networks[C] CVPR, 2020.](https://openaccess.thecvf.com/content/CVPR2022W/ECV/papers/Zhang_ResNeSt_Split-Attention_Networks_CVPRW_2022_paper.pdf) | Meta | [Code](https://github.com/zhanghang1989/ResNeSt) |    
 
-#### 3.2.2. Neural Architecture Search (NAS)
+#### 3.2.1.2. Neural Architecture Search (NAS)
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [FTT-NAS: Discovering fault-tolerant convolutional neural architecture[J]. TODAES), 2021.](https://dl.acm.org/doi/abs/10.1145/3460288) | Tsinghua University | [Code](https://github.com/walkerning/aw_nas) |
@@ -176,8 +183,8 @@ An overview of edge deployment. The figure shows a general pipeline from the thr
 | [Automatic design of convolutional neural network architectures under resource constraints[J]. TNNLS, 2021.](https://ieeexplore.ieee.org/abstract/document/9609007/) | Sichuan University | -- |
 
 
-### 3.3. Model Compression
-#### 3.3.1. Pruning
+### 3.2.2. Model Compression
+#### 3.2.2.1. Model Pruning
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Supervised compression for resource-constrained edge computing systems[C] WACV, 2022.](https://openaccess.thecvf.com/content/WACV2022/html/Matsubara_Supervised_Compression_for_Resource-Constrained_Edge_Computing_Systems_WACV_2022_paper.html) | University of Pittsburgh | -- |
@@ -207,7 +214,7 @@ An overview of edge deployment. The figure shows a general pipeline from the thr
 | [NestFL: efficient federated learning through progressive model pruning in heterogeneous edge computing[C] MobiCom, 2022.](https://dl.acm.org/doi/abs/10.1145/3495243.3558248) | Purple Mountain Laboratories, Nanjing | -- |
 
 
-### 3.3.2. Parameter Sharing 
+### 3.3.2.2. Parameter Sharing 
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Deep k-means: Re-training and parameter sharing with harder cluster assignments for compressing deep convolutions[C] ICML, 2018.](http://proceedings.mlr.press/v80/wu18h.html) | Texas A&M University | [Code](https://github.com/Sandbox3aster/Deep-K-Means) |
@@ -220,7 +227,7 @@ An overview of edge deployment. The figure shows a general pipeline from the thr
 | [Structured transforms for small-footprint deep learning[J]. NeurIPS, 2015.](https://proceedings.neurips.cc/paper/2015/hash/851300ee84c2b80ed40f51ed26d866fc-Abstract.html) | Google, New York | -- | 
 
 
-### 3.3.3. Quantization
+### 3.3.2.3. Model Quantization
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Fractrain: Fractionally squeezing bit savings both temporally and spatially for efficient dnn training[J]. NeurIPS, 2020.](https://proceedings.neurips.cc/paper_files/paper/2020/file/8dc5983b8c4ef1d8fcd5f325f9a65511-Paper.pdf) | Rice University | [Code](https://github.com/RICE-EIC/FracTrain) |
@@ -237,7 +244,7 @@ An overview of edge deployment. The figure shows a general pipeline from the thr
 | [Similarity-Aware CNN for Efficient Video Recognition at the Edge[J]. TCAD, 2021.](https://ieeexplore.ieee.org/abstract/document/9656540/) | University of Southampton | -- |
 | [ Data-Free Network Compression via Parametric Non-uniform Mixed Precision Quantization[C] CVPR, 2022.](http://openaccess.thecvf.com/content/CVPR2022/html/Chikin_Data-Free_Network_Compression_via_Parametric_Non-Uniform_Mixed_Precision_Quantization_CVPR_2022_paper.html) | Huawei Noah's Ark Lab | -- |
 
-### 3.3.4. Knowledge Distillation
+### 3.3.2.4. Knowledge Distillation
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Be your own teacher: Improve the performance of convolutional neural networks via self distillation[C] ICCV, 2019.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Be_Your_Own_Teacher_Improve_the_Performance_of_Convolutional_Neural_ICCV_2019_paper.pdf) | Tsinghua University | [Code](https://github.com/ArchipLab-LinfengZhang/) |
@@ -255,17 +262,17 @@ An overview of edge deployment. The figure shows a general pipeline from the thr
 | [Learning Efficient Vision Transformers via Fine-Grained Manifold Distillation[J]. NeurIPS, 2022.](https://proceedings.neurips.cc/paper_files/paper/2022/hash/3bd2d73b4e96b0ac5a319be58a96016c-Abstract-Conference.html) | Beijing Institute of Technology | [Code](https://github.com/Hao840/manifold-distillation) |
 | [Learning Accurate, Speedy, Lightweight CNNs via Instance-Specific Multi-Teacher Knowledge Distillation for Distracted Driver Posture Identification[J]. IEEE Trans. on Intelligent Transportation Systems, 2022.](https://ieeexplore.ieee.org/abstract/document/9750058/) | Hefei Institutes of Physical Science (HFIPS), Chinese Academy of Sciences | -- | 
 
-### 3.3.5. Low-rank Factorization
+### 3.3.2.5. Low-rank Factorization
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Learning low-rank deep neural networks via singular vector orthogonality regularization and singular value sparsification[C] CVPR workshops. 2020.](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w40/Yang_Learning_Low-Rank_Deep_Neural_Networks_via_Singular_Vector_Orthogonality_Regularization_CVPRW_2020_paper.pdf) | Duke University | -- |
 | [MicroNet: Towards image recognition with extremely low FLOPs[J]. arXiv, 2020.](https://arxiv.org/pdf/2011.12289.pdf) | UC San Diego | -- |
 | [Locality Sensitive Hash Aggregated Nonlinear Neighborhood Matrix Factorization for Online Sparse Big Data Analysis[J]. ACM/IMS Transactions on Data Science (TDS), 2022.](https://dl.acm.org/doi/abs/10.1145/3497749) | Hunan University | -- |
 
+### 3.4. System Optimization
+An overview of system optimization operations. Software optimization involves developing frameworks for lightweight model training and inference, while hardware optimization focuses on accelerating models using hardware-based approaches to improve computational efficiency on edge devices.
+![System](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/system_optimization.png)
 
-
-
-### 3.4. Model Acceleration
 #### 3.4.1. AI Inference Framework
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 

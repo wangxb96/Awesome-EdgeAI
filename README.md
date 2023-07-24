@@ -63,7 +63,7 @@ Edge computing is a distributed computing paradigm that brings computation and d
 ### 2.1 The Taxonomy of the Discussed Topics
 ![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/survey_structureV2.png)
 ### 2.2 Edge AI Optimization Triad
-We propose a data-model-system optimization triad.
+We introduce a data-model-system optimization triad for edge deployment.
 ![Scope](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/edge_ai_frameworks.png)
 ### 2.3 The Edge AI Deployment Pipeline
 An overview of edge deployment. The figure shows a general pipeline from the three aspects of data, model and system. Note that not all steps are necessary in real applications.

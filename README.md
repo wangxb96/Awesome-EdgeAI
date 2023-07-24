@@ -9,25 +9,29 @@
     - [1.2. Edge AI](#12-edge-ai)
       - [1.2.1. Blogs About Edge AI](#121-blogs-about-edge-ai)
   - [2. Our Survey](#2-our-survey)
-  - [3. Efficient Computing Methods for Edge Intelligence](#3-efficient-computing-methods-for-edge-intelligence)
-    - [3.1. Data Prepocessing](#31-data-prepocessing)
+    - [2.1. The Taxonomy of the Discussed Topics](#21-the-taxonomy-of-the-discussed-topics)
+    - [2.2. Edge AI Optimization Triad](#22-edge-ai-optimization-triad)
+    - [2.3. The Edge AI Deployment Pipeline](#23-the-edge-ai-deployment-pipeline)
+  - [3. The Data-Model-System Optimization Triad](#3-the-data-model-system-optimization-triad)
+    - [3.1. Data Optimization](#31-data-optimization)
       - [3.1.1. Data Cleaning](#311-data-cleaning)
       - [3.1.2. Feature Compression](#312-feature-compression)
         - [3.1.2.1. Feature Selection](#3121-feature-selection)
         - [3.1.2.2. Feature Extraction](#3122-feature-extraction)
       - [3.1.3. Data Augmentation](#313-data-augmentation)
-    - [3.2. Efficient Model Architecture](#32-efficient-model-architecture)
-      - [3.2.1. Compact Architecture](#321-compact-architecture)
-      - [3.2.2. Neural Architecture Search (NAS)](#322-neural-architecture-search-nas)
-    - [3.3. Model Compression](#33-model-compression)
-      - [3.3.1. Pruning](#331-pruning)
-      - [3.3.2. Parameter Sharing](#332-parameter-sharing)
-      - [3.3.3. Quantization](#333-quantization)
-      - [3.3.4. Knowledge Distillation](#334-knowledge-distillation)
-      - [3.3.5. Low-rank Factorization](#335-low-rank-factorization)
-    - [3.4. Model Acceleration](#34-model-acceleration)
-      - [3.4.1. AI Inference Framework](#341-ai-inference-framework)
-      - [3.4.2. AI Model Accelerator](#342-ai-model-accelerator)
+    - [3.2. Model Optimization](#32-model-optimization)
+      - [3.2.1. Model Design](#321-model-design)
+        - [3.2.1.1. Compact Architecture Design](#3211-compact-architecture-design)
+        - [3.2.1.2. Neural Architecture Search (NAS)](#3212-neural-architecture-search-nas)
+      - [3.2.2. Model Compression](#322-model-compression)
+        - [3.2.2.1. Model Pruning](#3221-model-pruning)
+        - [3.2.2.2. Parameter Sharing](#3222-parameter-sharing)
+        - [3.2.2.3. Model Quantization](#3223-model-quantization)
+        - [3.2.2.4. Knowledge Distillation](#3224-knowledge-distillation)
+        - [3.2.2.5. Low-rank Factorization](#3225-low-rank-factorization)
+    - [3.3. System Optimization](#34-system-optimization)
+      - [3.3.1. Software Optimization](#331-software-optimization)
+      - [3.3.2. Hardware Optimization](#332-hardware-optimization)
    - [4. Important Surveys on Edge AI (Related to edge inference and model deployment)](#4-important-surveys-on-edge-ai-related-to-edge-inference-and-model-deploy)
     
 ## 1. Background Knowledge
@@ -41,7 +45,6 @@ Edge computing is a distributed computing paradigm that brings computation and d
 - Edge AI refers to the deployment of artificial intelligence (AI) algorithms and models directly on edge devices, such as mobile phones, Internet of Things (IoT) devices, and other smart sensors. 
 - By processing data locally on the device rather than relying on cloud-based algorithms, edge AI enables real-time decision-making and reduces the need for data to be transmitted to remote servers. This can lead to reduced latency, improved data privacy and security, and reduced bandwidth requirements. 
 - Edge AI has become increasingly important as the proliferation of edge devices continues to grow, and the need for intelligent and low-latency decision-making becomes more pressing.
-
 
 #### 1.2.1. Blogs About Edge AI
 - [Edge AI – What is it and how does it Work?](https://micro.ai/blog/edge-ai-what-is-it-and-how-does-it-work)
@@ -273,7 +276,7 @@ An overview of model optimization operations. Model design involves creating lig
 An overview of system optimization operations. Software optimization involves developing frameworks for lightweight model training and inference, while hardware optimization focuses on accelerating models using hardware-based approaches to improve computational efficiency on edge devices.
 ![System](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/system_optimization.png)
 
-#### 3.4.1. AI Inference Framework
+#### 3.4.1. Software Optimization
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Hidet: Task-mapping programming paradigm for deep learning tensor programs[C] ASPLOS Conference, 2023.](https://dl.acm.org/doi/abs/10.1145/3575693.3575702) | University of Toronto | [Code](https://www.github.com/hidet-org/hidet) |
@@ -304,7 +307,7 @@ An overview of system optimization operations. Software optimization involves de
 | [Pasgcn: An reram-based pim design for gcn with adaptively sparsified graphs[J]. TCAD, 2022.](https://ieeexplore.ieee.org/abstract/document/9774869/) | Shanghai Jiao Tong University | -- |
 
 
-#### 3.4.2. AI Model Accelerator
+#### 3.4.2. Hardware Optimization
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Ncpu: An embedded neural cpu architecture on resource-constrained low power devices for real-time end-to-end performance[C] MICRO, 2020.](https://ieeexplore.ieee.org/abstract/document/9251958/) | Northwestern Univeristy, Evanston, IL | -- |

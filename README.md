@@ -323,7 +323,7 @@ An overview of system optimization operations. Software optimization involves de
 | [BitSystolic: A 26.7 TOPS/W 2b~ 8b NPU with configurable data flows for edge devices[J]. IEEE Trans. on Circuits and Systems I: Regular Papers, 2020.](https://ieeexplore.ieee.org/abstract/document/9301197/) | Duke University | -- |
 | [PL-NPU: An Energy-Efficient Edge-Device DNN Training Processor With Posit-Based Logarithm-Domain Computing[J]. IEEE Trans. on Circuits and Systems I: Regular Papers, 2022.](https://ieeexplore.ieee.org/abstract/document/9803862/) | Tsinghua University | -- |
 
-## 4. Important Surveys on Edge AI (Related to edge inference and model deploy)
+## 4. Important Surveys on Edge AI (Related to edge inference and model deployment)
 - [Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
 ![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/relation_ei_ie.png)
 - [Deep learning with edge computing: A review. Proceedings of the IEEE, 107(8), 1655-1674.](https://ieeexplore.ieee.org/abstract/document/8763885/)

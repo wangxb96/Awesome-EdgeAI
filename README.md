@@ -61,19 +61,19 @@ Edge computing is a distributed computing paradigm that brings computation and d
 
 ## 2. Our Survey (To be released)
 ### 2.1 The Taxonomy of the Discussed Topics
-![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/survey_structureV2.png)
+![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/survey_structureV2.png)
 ### 2.2 Edge AI Optimization Triad
 We introduce a data-model-system optimization triad for edge deployment.
-![Scope](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/edge_ai_frameworks.png)
+![Scope](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/edge_ai_frameworks.png)
 ### 2.3 The Edge AI Deployment Pipeline
 An overview of edge deployment. The figure shows a general pipeline from the three aspects of data, model and system. Note that not all steps are necessary in real applications.
-![Pipeline](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/edge_deployment_pipeline.png)
+![Pipeline](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/edge_deployment_pipeline.png)
 
 
 ##  3. The Data-Model-System Optimization Triad
 ### 3.1. Data Optimization
 An overview of data optimization operations. Data cleaning improves data quality by removing errors and inconsistencies in the raw data. Feature compression is used to eliminate irrelevant and redundant features. For scarce data, data augmentation is employed to increase the data size.
-![Data](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/data_optimization.png)
+![Data](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/data_optimization.png)
 
 #### 3.1.1. Data Cleaning
 | Title & Basic Information | Affiliation | Code |
@@ -130,7 +130,7 @@ An overview of data optimization operations. Data cleaning improves data quality
 
 ### 3.2. Model Optimization
 An overview of model optimization operations. Model design involves creating lightweight models through manual and automated techniques, including architecture selection, parameter tuning, and regularization. Model compression involves using various techniques, such as pruning, quantization, and knowledge distillation, to reduce the size of the model and obtain a compact model that requires fewer resources while maintaining high accuracy.
-![Model](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/model_optimization.png)
+![Model](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/model_optimization.png)
 
 #### 3.2.1. Model Design
 ##### 3.2.1.1. Compact Architecture Design
@@ -274,7 +274,7 @@ An overview of model optimization operations. Model design involves creating lig
 
 ### 3.3. System Optimization
 An overview of system optimization operations. Software optimization involves developing frameworks for lightweight model training and inference, while hardware optimization focuses on accelerating models using hardware-based approaches to improve computational efficiency on edge devices.
-![System](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/system_optimization.png)
+![System](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/system_optimization.png)
 
 #### 3.3.1. Software Optimization
 | Title & Basic Information | Affiliation | Code |
@@ -325,17 +325,17 @@ An overview of system optimization operations. Software optimization involves de
 
 ## 4. Important Surveys on Edge AI (Related to edge inference and model deployment)
 - [Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/relation_ei_ie.png)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/Figures/relation_ei_ie.png)
 - [Deep learning with edge computing: A review. Proceedings of the IEEE, 107(8), 1655-1674.](https://ieeexplore.ieee.org/abstract/document/8763885/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/DNN_inference_speedup_methods.png)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/Figures/DNN_inference_speedup_methods.png)
 - [Machine learning at the network edge: A survey. ACM Computing Surveys (CSUR), 54(8), 1-37.](https://dl.acm.org/doi/abs/10.1145/3469029)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/ML_at_edge.png)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/Figures/ML_at_edge.png)
 - [Edge intelligence: The confluence of edge computing and artificial intelligence. IEEE Internet of Things Journal, 7(8), 7457-7469.](https://ieeexplore.ieee.org/abstract/document/9052677/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/research_roadmap_edge_intelligence.png)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/Figures/research_roadmap_edge_intelligence.png)
 - [Edge intelligence: Paving the last mile of artificial intelligence with edge computing. Proceedings of the IEEE, 107(8), 1738-1762.](https://ieeexplore.ieee.org/abstract/document/8736011/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/six_level_EI.png)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/Figures/six_level_EI.png)
 - [Edge intelligence: Empowering intelligence to the edge of network. Proceedings of the IEEE, 109(11), 1778-1837.](https://ieeexplore.ieee.org/abstract/document/9596610/)
-![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/classification_of_edge_ai.png)
+![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/Figures/classification_of_edge_ai.png)
 
 <!-- 
 ## 2. Papers 

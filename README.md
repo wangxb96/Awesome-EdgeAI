@@ -1,7 +1,19 @@
-# Enabling AI on the Edge
+<div align="center">
+<h1>Enabling AI on Edges: Techniques, Applications and Challenges</h1>
+
+[**Xubin Wang**](https://github.com/wangxb96)<sup>12</sup> · **Zhiqing Tang**<sup>1</sup> · **Jianxiong Guo**<sup>23</sup> · **Tianhui Meng**<sup>2</sup> · **Chenhao Wang**<sup>23</sup> · [**Tian Wang**](https://scholar.google.com/citations?user=f_91zmcAAAAJ&hl=zh-CN&oi=sra)<sup>23</sup> · [**Weijia Jia**](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>23*</sup>
+
+
+<sup>1</sup>Hong Kong Baptist University · <sup>2</sup>Beijing Normal University · <sup>3</sup>BNU-HKBU United International College  
+
+<sup>*</sup>corresponding authors
+
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![repo size](https://img.shields.io/github/repo-size/wangxb96/Awesome-Edge-Intelligence)](https://github.com/wangxb96/Awesome-Edge-Intelligence)
 ![License](https://img.shields.io/github/license/wangxb96/Awesome-Edge-Intelligence?color=blue) 
+
+</div>
+
 
 # Table of Contents
   - [1. Background Knowledge](#1-background-knowledge)

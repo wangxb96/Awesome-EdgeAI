@@ -44,7 +44,6 @@
     - [3.3. System Optimization](#34-system-optimization)
       - [3.3.1. Software Optimization](#331-software-optimization)
       - [3.3.2. Hardware Optimization](#332-hardware-optimization)
-   - [4. Important Surveys on Edge AI (Related to edge inference and model deployment)](#4-important-surveys-on-edge-ai-related-to-edge-inference-and-model-deploy)
     
 ## 1. Background Knowledge
 ### 1.1. Edge Computing
@@ -335,6 +334,7 @@ An overview of system optimization operations. Software optimization involves de
 | [BitSystolic: A 26.7 TOPS/W 2b~ 8b NPU with configurable data flows for edge devices[J]. IEEE Trans. on Circuits and Systems I: Regular Papers, 2020.](https://ieeexplore.ieee.org/abstract/document/9301197/) | Duke University | -- |
 | [PL-NPU: An Energy-Efficient Edge-Device DNN Training Processor With Posit-Based Logarithm-Domain Computing[J]. IEEE Trans. on Circuits and Systems I: Regular Papers, 2022.](https://ieeexplore.ieee.org/abstract/document/9803862/) | Tsinghua University | -- |
 
+<!-- 
 ## 4. Important Surveys on Edge AI (Related to edge inference and model deployment)
 - [Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
 ![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/Figures/relation_ei_ie.png)
@@ -349,7 +349,7 @@ An overview of system optimization operations. Software optimization involves de
 - [Edge intelligence: Empowering intelligence to the edge of network. Proceedings of the IEEE, 109(11), 1778-1837.](https://ieeexplore.ieee.org/abstract/document/9596610/)
 ![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/Figures/classification_of_edge_ai.png)
 
-<!-- 
+
 ## 2. Papers 
 
 ### 2.1. Edge Computing

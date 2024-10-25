@@ -1,5 +1,5 @@
 <div align="center">
-<h1>A Systematic Review of AI Deployment on Resource-Constrained Edge Devices: Challenges, Techniques, and Applications</h1>
+<h1>Survey on AI Integration at the Edge: Techniques, Applications, and Challenges</h1>
 
 [**Xubin Wang**](https://github.com/wangxb96)<sup>12</sup> · **Zhiqing Tang**<sup>2</sup> · **Jianxiong Guo**<sup>23</sup> · **Tianhui Meng**<sup>2</sup> · **Chenhao Wang**<sup>23</sup> · [**Tian Wang**](https://scholar.google.com/citations?user=f_91zmcAAAAJ&hl=zh-CN&oi=sra)<sup>23</sup> · [**Weijia Jia**](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>23*</sup>
 

@@ -1,7 +1,7 @@
 <div align="center">
-<h1>A Comprehensive Survey on AI Integration at the Edge: Techniques, Applications, and Challenges</h1>
+<h1>Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies</h1>
 
-[**Xubin Wang**](https://github.com/wangxb96)<sup>12</sup> · **Zhiqing Tang**<sup>2</sup> · **Jianxiong Guo**<sup>23</sup> · **Tianhui Meng**<sup>2</sup> · **Chenhao Wang**<sup>23</sup> · [**Tian Wang**](https://scholar.google.com/citations?user=f_91zmcAAAAJ&hl=zh-CN&oi=sra)<sup>23</sup> · [**Weijia Jia**](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>23*</sup>
+[**Xubin Wang**](https://github.com/wangxb96)<sup>1,2</sup> · [**Weijia Jia**](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>2,3*</sup>
 
 
 <sup>1</sup>Hong Kong Baptist University · <sup>2</sup>Beijing Normal University · <sup>3</sup>BNU-HKBU United International College  

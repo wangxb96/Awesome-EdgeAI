@@ -1,12 +1,12 @@
 # Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies
 
 **Authors:**
-- [Xubin Wang](https://github.com/wangxb96)<sup>1,2</sup>
+- [Xubin Wang](https://github.com/wangxb96)<sup>1,2,3</sup>
 - [Weijia Jia](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>2,3*</sup>
 
 <sup>1</sup> Hong Kong Baptist University  
 <sup>2</sup> Beijing Normal University  
-<sup>3</sup> BNU-HKBU United International College  
+<sup>3</sup> Beijing Normal-Hong Kong Baptist University 
 <sup>*</sup> Corresponding author
 
 ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)

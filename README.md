@@ -1,20 +1,27 @@
-<div align="center">
-<h1>Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies</h1>
+# Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies
 
-[**Xubin Wang**](https://github.com/wangxb96)<sup>1,2</sup> · [**Weijia Jia**](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>2,3*</sup>
+**Authors:**
+- [Xubin Wang](https://github.com/wangxb96)<sup>1,2</sup>
+- [Weijia Jia](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>2,3*</sup>
 
+<sup>1</sup> Hong Kong Baptist University  
+<sup>2</sup> Beijing Normal University  
+<sup>3</sup> BNU-HKBU United International College  
+<sup>*</sup> Corresponding author
 
-<sup>1</sup>Hong Kong Baptist University · <sup>2</sup>Beijing Normal University · <sup>3</sup>BNU-HKBU United International College  
+![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
+![Repo Size](https://img.shields.io/github/repo-size/wangxb96/Awesome-Edge-Intelligence)
+![License](https://img.shields.io/github/license/wangxb96/Awesome-Edge-Intelligence?color=blue)
 
-<sup>*</sup>corresponding authors
+**Paper:** [arXiv:2501.03265](https://arxiv.org/abs/2501.03265)
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![repo size](https://img.shields.io/github/repo-size/wangxb96/Awesome-Edge-Intelligence)](https://github.com/wangxb96/Awesome-Edge-Intelligence)
-![License](https://img.shields.io/github/license/wangxb96/Awesome-Edge-Intelligence?color=blue) 
+---
 
-</div>
+## Abstract
 
-Paper: https://arxiv.org/abs/2501.03265
+This repository presents a curated and comprehensive survey of recent advances in Edge Artificial Intelligence (Edge AI), with a focus on optimization strategies at the data, model, and system levels. It is designed as a resource for researchers, practitioners, and students interested in the deployment and optimization of AI at the edge. The structure and content are intended to facilitate academic research and practical reference, and the repository is regularly updated to reflect the latest developments in the field.
+
+---
 
 # Table of Contents
   - [1. Background Knowledge](#1-background-knowledge)
@@ -48,15 +55,13 @@ Paper: https://arxiv.org/abs/2501.03265
     
 ## 1. Background Knowledge
 ### 1.1. Edge Computing
-Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data. This is expected to improve response times and save bandwidth.
+Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data generation. This proximity is expected to improve response times, reduce bandwidth consumption, and enable real-time analytics.
 
 - [What is edge computing? Everything you need to know](https://www.techtarget.com/searchdatacenter/definition/edge-computing)
 - [Machine Learning at the Edge — μML](https://heartbeat.comet.ml/machine-learning-at-the-edge-%CE%BCml-2802f1af92de)
 
 ### 1.2. Edge AI
-- Edge AI refers to the deployment of artificial intelligence (AI) algorithms and models directly on edge devices, such as mobile phones, Internet of Things (IoT) devices, and other smart sensors. 
-- By processing data locally on the device rather than relying on cloud-based algorithms, edge AI enables real-time decision-making and reduces the need for data to be transmitted to remote servers. This can lead to reduced latency, improved data privacy and security, and reduced bandwidth requirements. 
-- Edge AI has become increasingly important as the proliferation of edge devices continues to grow, and the need for intelligent and low-latency decision-making becomes more pressing.
+Edge AI refers to the deployment of artificial intelligence (AI) algorithms and models directly on edge devices, such as mobile phones, Internet of Things (IoT) devices, and smart sensors. By processing data locally, Edge AI enables real-time decision-making, reduces the need for data transmission to remote servers, and enhances data privacy and security. The proliferation of edge devices and the demand for intelligent, low-latency applications have made Edge AI a critical area of research and development.
 
 #### 1.2.1. Blogs About Edge AI
 - [Edge AI – What is it and how does it Work?](https://micro.ai/blog/edge-ai-what-is-it-and-how-does-it-work)

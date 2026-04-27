@@ -13,8 +13,18 @@
 ![Repo Size](https://img.shields.io/github/repo-size/wangxb96/Awesome-Edge-Intelligence)
 ![License](https://img.shields.io/github/license/wangxb96/Awesome-Edge-Intelligence?color=blue)
 
-**Paper:** [arXiv:2501.03265](https://arxiv.org/abs/2501.03265)
+**Paper:** [arXiv:2501.03265](https://arxiv.org/abs/2501.03265v1)
 
+**Cite our paper:**
+```bibtex
+@article{wang2025optimizing,
+  title={Optimizing edge AI: A comprehensive survey on data, model, and system strategies},
+  author={Wang, Xubin and Jia, Weijia},
+  journal={arXiv e-prints},
+  pages={arXiv--2501},
+  year={2025}
+}
+```
 ---
 
 ## Abstract

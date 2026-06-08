@@ -351,6 +351,10 @@ An overview of system optimization operations. Software optimization involves de
 | [PL-NPU: An Energy-Efficient Edge-Device DNN Training Processor With Posit-Based Logarithm-Domain Computing[J]. IEEE Trans. on Circuits and Systems I: Regular Papers, 2022.](https://ieeexplore.ieee.org/abstract/document/9803862/) | Tsinghua University | -- |
 
 <!-- 
+## 4.1. Edge AI Deployment Tools & APIs
+
+- [TWZRD Agent Intel](https://intel.twzrd.xyz) - Trust scoring for AI agents on Solana. Verify agent wallet identity before x402 micropayments. Free MCP: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
+
 ## 4. Important Surveys on Edge AI (Related to edge inference and model deployment)
 - [Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
 ![](https://github.com/wangxb96/Awesome-Edge-Efficient-AI/blob/main/Figures/relation_ei_ie.png)

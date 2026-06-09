@@ -520,6 +520,19 @@ Selected papers & systems (2023–2026):
 - [KV Cache compression & paging papers](https://arxiv.org/abs/2309.06180) (2023–2025).
 - [EdgeLLM: A Highly Efficient CPU-based LLM Inference Engine](https://arxiv.org/abs/2403.02611) (2024).
 - [PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU](https://arxiv.org/abs/2312.12456) (2024, edge GPU).
+- [PowerInfer-2: Fast Large Language Model Inference on a Smartphone](https://arxiv.org/abs/2406.06282) (arXiv 2024) — strong phone-class LLM execution reference.
+- [EdgeLLM: Fast On-Device LLM Inference with Speculative Decoding](https://doi.org/10.1109/tmc.2024.3513457) (IEEE TMC 2024).
+- [SwapMoE: Serving Off-the-shelf MoE-based Large Language Models with Tunable Memory Budget](https://doi.org/10.18653/v1/2024.acl-long.363) (ACL 2024).
+- [Fast On-Device LLM Inference with NPUs](https://doi.org/10.1145/3669940.3707239) (ASPLOS 2025).
+- [Lincoln: Real-Time 50-100B LLM Inference on Consumer Devices with LPDDR-Interfaced, Compute-Enabled Flash Memory](https://doi.org/10.1109/hpca61900.2025.00128) (HPCA 2025).
+- [Marlin: Mixed-precision Auto-regressive Parallel Inference on Large Language Models](https://doi.org/10.1145/3710848.3710871) (PPoPP 2025).
+- [MobileQuant: Mobile-friendly Quantization for On-device Language Models](https://doi.org/10.18653/v1/2024.findings-emnlp.570) (EMNLP Findings 2024).
+- [EAGLE-2: Faster Inference of Language Models with Dynamic Draft Trees](https://doi.org/10.18653/v1/2024.emnlp-main.422) (EMNLP 2024).
+- [QSpec: Speculative Decoding with Complementary Quantization Schemes](https://arxiv.org/abs/2410.11305) (arXiv 2024).
+- [MiniCPM-V: A GPT-4V Level MLLM on Your Phone](https://arxiv.org/abs/2408.01800) (arXiv 2024) — notable on-phone multimodal deployment.
+- [MobileLLM-R1: Exploring the Limits of Sub-Billion Language Model Reasoners with Open Training Recipes](https://arxiv.org/abs/2509.24945) (arXiv 2025).
+- [Self-adapting Large Visual-Language Models to Edge Devices Across Visual Modalities](https://doi.org/10.1007/978-3-031-73390-1_18) (ECCV 2024).
+- [VaVLM: Toward Efficient Edge-Cloud Video Analytics With Vision-Language Models](https://doi.org/10.1109/tbc.2025.3549983) (IEEE TBC 2025).
 
 ## 5. AI Agents on Edge / On-Device Agents
 
@@ -537,6 +550,12 @@ Key works & projects:
 - [ReAct + Toolformer edge variants](https://arxiv.org/abs/2210.03629).
 - [Edge Agent benchmarks](https://arxiv.org/abs/2405.XXXX) (emerging 2024-2025).
 - [Local Agent frameworks](https://github.com/abi/screenshot-to-code) style on-device demos.
+- [Beyond Self-Talk: A Communication-Centric Survey of LLM-based Multi-Agent Systems](https://arxiv.org/abs/2502.14321) (arXiv 2025) — communication cost & topology for edge feasibility.
+- [Small Language Models are the Future of Agentic AI](https://arxiv.org/abs/2506.02153) (arXiv 2025) — SLM-first agents aligned with deployment constraints.
+- [A Survey of Self-Evolving Agents: On Path to Artificial Super Intelligence](https://arxiv.org/abs/2507.21046) (arXiv 2025).
+- [AIoT Smart Home via Autonomous LLM Agents](https://doi.org/10.1109/jiot.2024.3471904) (IEEE IoTJ 2024).
+- [LLM Multi-Agent Systems: Challenges and Open Problems](https://arxiv.org/abs/2402.03578) (arXiv 2024).
+- [Federated Black-box Prompt Tuning System for Large Language Models on the Edge](https://doi.org/10.1145/3636534.3698856) (MobiCom 2024).
 
 ## 6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)
 
@@ -558,6 +577,11 @@ Production-grade stacks for shipping models (including LLMs) to edge:
   - [RKNN](https://github.com/rockchip-linux/rknn-toolkit2) for Rockchip NPUs.
 - **Web / Browser**: ONNX Runtime Web, WebGPU + Transformers.js, llama.cpp WASM.
 - **Microcontroller**: TinyEngine, CMSIS-NN, Edge Impulse, Arduino Edge.
+- [DiSCo: Device-Server Collaborative LLM-Based Text Streaming Services](https://arxiv.org/abs/2502.11417) (arXiv 2025).
+- [CLONE: Customizing LLMs for Efficient Latency-Aware Inference at the Edge](https://arxiv.org/abs/2506.02847) (arXiv 2025).
+- [An Edge-Cloud Collaboration Framework for Generative AI Service Provision with Synergetic Big Cloud Model and Small Edge Models](https://doi.org/10.1109/mnet.2024.3420755) (IEEE Network 2024).
+- [EdgeShard: Efficient LLM Inference via Collaborative Edge Computing](https://doi.org/10.1109/jiot.2024.3524255) (IEEE IoTJ 2024).
+- [Quality-of-Service Aware LLM Routing for Edge Computing with Multiple Experts](https://doi.org/10.1109/tmc.2025.3590969) (IEEE TMC 2025).
 
 ## 7. Hardware Acceleration for Edge AI & LLMs
 
@@ -565,6 +589,12 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 - Edge GPUs: NVIDIA Jetson Orin Nano / AGX, AMD Ryzen AI, Intel NPU (Meteor Lake+), Hailo-8/10, Coral TPU.
 - Microcontrollers with AI accelerators: STM32N6, NXP i.MX RT, Renesas, GreenWaves GAP9, Syntiant NDP, etc.
 - 2024–2026 trend: dedicated LLM accelerators for phones (Gemini Nano NPU paths, Qualcomm AI 100, etc.).
+- [Cambricon-LLM: A Chiplet-based Hybrid Architecture for On-Device Inference of 70B LLM](https://doi.org/10.1109/micro61859.2024.00108) (MICRO 2024).
+- [PAISE: PIM-Accelerated Inference Scheduling Engine for Transformer-based LLM](https://doi.org/10.1109/hpca61900.2025.00126) (HPCA 2025).
+- [FACIL: Flexible DRAM Address Mapping for SoC-PIM Cooperative On-device LLM Inference](https://doi.org/10.1109/hpca61900.2025.00127) (HPCA 2025).
+- [T-MAC: CPU Renaissance via Table Lookup for Low-bit LLM Deployment on Edge](https://doi.org/10.1145/3689031.3696099) (EuroSys 2025).
+- [Understanding the Potential of FPGA-based Spatial Acceleration for Large Language Model Inference](https://doi.org/10.1145/3656177) (ACM TRETS 2024).
+- [Pushing up to the Limit of Memory Bandwidth and Capacity Utilization for Efficient LLM Decoding on Embedded FPGA](https://doi.org/10.23919/date64628.2025.10993087) (DATE 2025).
 
 ## 8. Benchmarks, Datasets & Tools (2023–2026 focus)
 
@@ -574,6 +604,10 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 - [LMSYS Chatbot Arena](https://chat.lmsys.org/) (includes on-device model tracks)
 - [Hugging Face Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard) + quantized subsets.
 - On-device power & latency measurement tools: Android AI Benchmark, Geekbench AI, UL Procyon, custom NPU profilers.
+- [MobileAIBench: Benchmarking LLMs/LMMs for On-Device Use Cases](https://arxiv.org/abs/2406.10290) (arXiv 2024).
+- [Understanding Large Language Models in Your Pockets: Performance Study on COTS Mobile Devices](https://arxiv.org/abs/2410.03613) (arXiv 2024).
+- [Mobile and Edge Evaluation of Large Language Models](https://doi.org/10.36227/techrxiv.172115025.57884352/v1) (TechRxiv / ICML ES-FoMo Workshop 2024).
+- [Laskaridis et al. works on realistic edge LLM benchmarking](https://doi.org/10.36227/techrxiv.172115025.57884352/v1).
 
 ## 9. Recent Surveys & Overviews (2023–2026)
 
@@ -581,9 +615,32 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 - Surveys on LLM quantization, speculative decoding, on-device RAG, edge agents (2023–2025 arXiv wave).
 - TinyML surveys updates (2023–2025).
 - Edge AI for 6G / embodied AI surveys (2024–2026).
+- Zheng et al., [A Review on Edge Large Language Models: Design, Execution, and Applications](https://doi.org/10.1145/3719664) (ACM CSUR 2025) — closest neighboring review focused on edge-side LLM execution.
+- [Lu et al., Small Language Models: Survey, Measurements, and Insights](https://arxiv.org/abs/2409.15790) (arXiv 2024).
+- [Yan et al., Beyond Self-Talk: A Communication-Centric Survey of LLM-based Multi-Agent Systems](https://arxiv.org/abs/2502.14321) (arXiv 2025).
+- [Belcak et al., Small Language Models are the Future of Agentic AI](https://arxiv.org/abs/2506.02153) (arXiv 2025).
 
 ---
 
-*This repository complements the dedicated companion repo for the 2025 Cognitive Edge Computing survey: [cognitive-edge-llm-agent-survey](https://github.com/wangxb96/cognitive-edge-llm-agent-survey).*
+**2024–2026 Top-tier Highlights (NeurIPS/ICLR/SOSP/HPCA/MICRO/ASPLOS/MobiCom/EMNLP/ECCV/ACL + IEEE TMC/IoTJ)** (added for completeness while preserving all legacy content):
 
-*Legacy Data-Model-System content (pre-2023 focus) is retained above for historical reference.*
+**Systems/Serving & Optimization** (see detailed lists in sections 4 & 6):
+- PowerInfer-2, EdgeLLM, SwapMoE, Marlin, EAGLE-2, QSpec, MobileQuant, etc.
+
+**Hardware-Aware & Acceleration**:
+- Cambricon-LLM (MICRO'24), PAISE/FACIL (HPCA'25), T-MAC (EuroSys'25), Lincoln (HPCA'25), FPGA spatial acceleration (ACM TRETS/DATE'24/25), Fast On-Device LLM with NPUs (ASPLOS'25).
+
+**Collaboration, Routing & Agentic**:
+- EdgeShard, QoS-Aware LLM Routing (IEEE TMC'25), CLONE, DiSCo, Federated Black-box Prompt Tuning (MobiCom'24), LLM Multi-Agent Systems surveys and case studies (AIoT Smart Home, V2V-LLM).
+
+**Multimodal & Applications**:
+- MiniCPM-V, Self-adapting VLMs (ECCV'24), MobileLLM-R1, VaVLM (IEEE TBC'25), Industrial IoT with LLMs (IEEE TMC'24).
+
+**Evaluation & Trust**:
+- MobileAIBench, pocket-scale performance studies, Mobile and Edge Evaluation of LLMs.
+
+For the exhaustive categorized map (Foundations, Challenges, Optimization, Agentic, Applications, Evaluation & Trust) and reproducibility artifacts, see the dedicated companion: https://github.com/wangxb96/cognitive-edge-llm-agent-survey
+
+---
+
+*This repository (Awesome-EdgeAI) is the broad curated collection that retains the complete legacy Data-Model-System content for historical reference while adding high-quality 2023–2026 top-tier literature. The detailed literature map and artifacts for the 2025 Cognitive Edge Computing survey live in its official companion repo: [cognitive-edge-llm-agent-survey](https://github.com/wangxb96/cognitive-edge-llm-agent-survey).*

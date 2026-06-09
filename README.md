@@ -58,42 +58,41 @@ It serves researchers, engineers, and students who want to deploy real intellige
 
 ---
 
+## New: Unified Architecture & Cognitive Edge (2023–2026)
+
+**Master Overview Figure** — the new Cognitive Edge Computing stack (Hardware → Runtimes → LLM Efficiency → Agentic/Cognitive Layer → Applications):
+
+![Cognitive Edge AI Architecture](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/cognitive_edge_ai_architecture.png)
+
+This diagram (redrawn with large readable text) unifies the evolution and shows why edge deployment is now a multi-objective co-design problem across all layers.
+
+See the full **Modern Era** section below for detailed 2023–2026 literature, frameworks, and the improved supporting figures (evolution timeline, LLM layers, on-device stack — all with significantly larger text than previous versions).
+
+---
+
 # Table of Contents
-  - [1. Background Knowledge](#1-background-knowledge)
-    - [1.1. Edge Computing](#11-edge-computing)
-    - [1.2. Edge AI](#12-edge-ai)
-      - [1.2.1. Blogs About Edge AI](#121-blogs-about-edge-ai)
-  - [2. Our Survey](#2-our-survey)
-    - [2.1. The Taxonomy of the Discussed Topics](#21-the-taxonomy-of-the-discussed-topics)
-    - [2.2. Edge AI Optimization Triad](#22-edge-ai-optimization-triad)
-    - [2.3. The Edge AI Deployment Pipeline](#23-the-edge-ai-deployment-pipeline)
-   - [3. The Data-Model-System Optimization Triad](#3-the-data-model-system-optimization-triad)
-     - [3.1. Data Optimization](#31-data-optimization)
-       - [3.1.1. Data Cleaning](#311-data-cleaning)
-       - [3.1.2. Feature Compression](#312-feature-compression)
-         - [3.1.2.1. Feature Selection](#3121-feature-selection)
-         - [3.1.2.2. Feature Extraction](#3122-feature-extraction)
-       - [3.1.3. Data Augmentation](#313-data-augmentation)
-     - [3.2. Model Optimization](#32-model-optimization)
-       - [3.2.1. Model Design](#321-model-design)
-         - [3.2.1.1. Compact Architecture Design](#3211-compact-architecture-design)
-         - [3.2.1.2. Neural Architecture Search (NAS)](#3212-neural-architecture-search-nas)
-       - [3.2.2. Model Compression](#322-model-compression)
-         - [3.2.2.1. Model Pruning](#3221-model-pruning)
-         - [3.2.2.2. Parameter Sharing](#3222-parameter-sharing)
-         - [3.2.2.3. Model Quantization](#3223-model-quantization)
-         - [3.2.2.4. Knowledge Distillation](#3224-knowledge-distillation)
-         - [3.2.2.5. Low-rank Factorization](#3225-low-rank-factorization)
-     - [3.3. System Optimization](#34-system-optimization)
-       - [3.3.1. Software Optimization](#331-software-optimization)
-       - [3.3.2. Hardware Optimization](#332-hardware-optimization)
-   - [4. Large Models (LLMs / SLMs / VLMs) on Edge](#4-large-models-llms--slms--vlms-on-edge)
-   - [5. AI Agents on Edge / On-Device Agents](#5-ai-agents-on-edge--on-device-agents)
-   - [6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)](#6-frameworks--runtimes-for-edge--on-device-deployment-2023-2026)
-   - [7. Hardware Acceleration for Edge AI & LLMs](#7-hardware-acceleration-for-edge-ai--llms)
-   - [8. Benchmarks, Datasets & Tools (2023–2026 focus)](#8-benchmarks-datasets--tools-2023-2026-focus)
-   - [9. Recent Surveys & Overviews (2023–2026)](#9-recent-surveys--overviews-2023-2026)
+  - [New: Unified Architecture & Cognitive Edge (2023–2026)](#new-unified-architecture--cognitive-edge-2023-2026)
+    - [Modern Era: Large Models, Agents & Cognitive Systems](#modern-era-large-models-agents--cognitive-systems-on-edge-2023-2026)
+    - [Large Models (LLMs/SLMs/VLMs) on Edge](#large-models-llmsslmsvlms-on-edge)
+    - [AI Agents on Edge](#ai-agents-on-edge--on-device-agents)
+    - [Frameworks & Runtimes (2023–2026)](#frameworks--runtimes-for-edge--on-device-deployment-2023-2026)
+    - [Hardware Acceleration](#hardware-acceleration-for-edge-ai--llms)
+    - [Benchmarks & Tools (2023–2026)](#benchmarks-datasets--tools-2023-2026-focus)
+    - [Recent Surveys & Highlights](#recent-surveys--overviews-2023-2026)
+  - [Historical Foundations (Legacy v1 Content — fully retained)](#historical-foundations-legacy-v1-content-fully-retained)
+    - [Background Knowledge](#1-background-knowledge)
+    - [Our Survey (v1) & Classic Taxonomy](#2-our-survey-v1--classic-taxonomy)
+    - [The Data-Model-System Optimization Triad (full tables)](#3-the-data-model-system-optimization-triad)
+  - [Contributing](#contributing)
     
+---
+
+## Historical Foundations (Legacy v1 Content — fully retained)
+
+**All previous papers, tables, and classic Data-Model-System content from the original v1 survey are preserved below without any deletions.**
+
+---
+
 ## 1. Background Knowledge
 ### 1.1. Edge Computing
 Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data generation. This proximity is expected to improve response times, reduce bandwidth consumption, and enable real-time analytics.

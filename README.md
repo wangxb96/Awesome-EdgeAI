@@ -1,21 +1,31 @@
-# Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies
+# Awesome Edge AI
 
-**Authors:**
+**From TinyML to Cognitive Edge Computing**  
+*Curated resources on data, model, system optimization + Large Models (LLMs/VLMs), Agents & On-Device AI (2016–2026)*
+
+**Maintainers / Survey Authors**
 - [Xubin Wang](https://github.com/wangxb96)<sup>1,2,3</sup>
 - [Weijia Jia](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>2,3*</sup>
 
 <sup>1</sup> Hong Kong Baptist University  
 <sup>2</sup> Beijing Normal University  
-<sup>3</sup> Beijing Normal-Hong Kong Baptist University 
+<sup>3</sup> Beijing Normal-Hong Kong Baptist University  
 <sup>*</sup> Corresponding author
 
 ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
-![Repo Size](https://img.shields.io/github/repo-size/wangxb96/Awesome-Edge-Intelligence)
-![License](https://img.shields.io/github/license/wangxb96/Awesome-Edge-Intelligence?color=blue)
+![Stars](https://img.shields.io/github/stars/wangxb96/Awesome-EdgeAI?style=social)
+![Forks](https://img.shields.io/github/forks/wangxb96/Awesome-EdgeAI?style=social)
+![License](https://img.shields.io/github/license/wangxb96/Awesome-EdgeAI?color=blue)
 
-**Paper:** [arXiv:2501.03265](https://arxiv.org/abs/2501.03265v1)
+**Core Survey (2025, v2) + Dedicated Repository**  
+- Paper: [Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment](https://arxiv.org/abs/2501.03265) (arXiv:2501.03265, v2 Nov 2025)
+- Focused literature map, reproducibility artifacts & benchmarks: **[cognitive-edge-llm-agent-survey](https://github.com/wangxb96/cognitive-edge-llm-agent-survey)** (the official companion repo for the new survey)
 
-**Cite our paper:**
+**Legacy Survey (v1) — retained here for historical completeness**  
+This repository continues to host and reference the original survey:  
+- [Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies](https://arxiv.org/abs/2501.03265v1)
+
+**Legacy citation (for the data-model-system triad paper):**
 ```bibtex
 @article{wang2025optimizing,
   title={Optimizing edge AI: A comprehensive survey on data, model, and system strategies},
@@ -29,39 +39,46 @@
 
 ## Abstract
 
-This repository presents a curated and comprehensive survey of recent advances in Edge Artificial Intelligence (Edge AI), with a focus on optimization strategies at the data, model, and system levels. It is designed as a resource for researchers, practitioners, and students interested in the deployment and optimization of AI at the edge. The structure and content are intended to facilitate academic research and practical reference, and the repository is regularly updated to reflect the latest developments in the field.
+This living repository curates the most important advances in **Edge AI**, spanning:
+
+- Classic **data / model / system** optimization for tiny deep learning (CNNs, RNNs, efficient architectures).
+- The new frontier: **on-device / edge Large Language Models (LLMs), Vision-Language Models (VLMs), Small Language Models (SLMs)**, efficient inference, quantization, speculative decoding, KV-cache optimization, on-device training, and **AI Agents** that run with tool use on phones, microcontrollers, and NPUs.
+
+It serves researchers, engineers, and students who want to deploy real intelligence at the extreme edge (KB–few GB memory, mW–few W power). The list is actively maintained and regularly enriched with 2023–2026 literature, frameworks, benchmarks, and hardware.
+
+**Cite the main survey (v2):**
+```bibtex
+@article{wang2025cognitive,
+  title={Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment},
+  author={Wang, Xubin and Li, Qing and Jia, Weijia},
+  journal={arXiv preprint arXiv:2501.03265},
+  year={2025}
+}
+```
 
 ---
 
 # Table of Contents
-  - [1. Background Knowledge](#1-background-knowledge)
-    - [1.1. Edge Computing](#11-edge-computing)
-    - [1.2. Edge AI](#12-edge-ai)
-      - [1.2.1. Blogs About Edge AI](#121-blogs-about-edge-ai)
-  - [2. Our Survey](#2-our-survey)
-    - [2.1. The Taxonomy of the Discussed Topics](#21-the-taxonomy-of-the-discussed-topics)
-    - [2.2. Edge AI Optimization Triad](#22-edge-ai-optimization-triad)
-    - [2.3. The Edge AI Deployment Pipeline](#23-the-edge-ai-deployment-pipeline)
-  - [3. The Data-Model-System Optimization Triad](#3-the-data-model-system-optimization-triad)
-    - [3.1. Data Optimization](#31-data-optimization)
-      - [3.1.1. Data Cleaning](#311-data-cleaning)
-      - [3.1.2. Feature Compression](#312-feature-compression)
-        - [3.1.2.1. Feature Selection](#3121-feature-selection)
-        - [3.1.2.2. Feature Extraction](#3122-feature-extraction)
-      - [3.1.3. Data Augmentation](#313-data-augmentation)
-    - [3.2. Model Optimization](#32-model-optimization)
-      - [3.2.1. Model Design](#321-model-design)
-        - [3.2.1.1. Compact Architecture Design](#3211-compact-architecture-design)
-        - [3.2.1.2. Neural Architecture Search (NAS)](#3212-neural-architecture-search-nas)
-      - [3.2.2. Model Compression](#322-model-compression)
-        - [3.2.2.1. Model Pruning](#3221-model-pruning)
-        - [3.2.2.2. Parameter Sharing](#3222-parameter-sharing)
-        - [3.2.2.3. Model Quantization](#3223-model-quantization)
-        - [3.2.2.4. Knowledge Distillation](#3224-knowledge-distillation)
-        - [3.2.2.5. Low-rank Factorization](#3225-low-rank-factorization)
-    - [3.3. System Optimization](#34-system-optimization)
-      - [3.3.1. Software Optimization](#331-software-optimization)
-      - [3.3.2. Hardware Optimization](#332-hardware-optimization)
+
+- [1. Background Knowledge](#1-background-knowledge)
+- [2. Our Surveys](#2-our-surveys)
+- [3. The Data–Model–System Optimization Triad (Classic + Modern)](#3-the-datamodelsystem-optimization-triad-classic--modern)
+  - [3.1 Data Optimization](#31-data-optimization)
+  - [3.2 Model Optimization](#32-model-optimization)
+  - [3.3 System Optimization](#33-system-optimization)
+- [4. Large Models on the Edge (LLMs, VLMs, SLMs) — 2023–2026 Focus](#4-large-models-on-the-edge-llms-vlms-slms--20232026-focus)
+  - [4.1 Efficient Architectures & Training for Edge LLMs](#41-efficient-architectures--training-for-edge-llms)
+  - [4.2 Quantization, Pruning & Compression for LLMs on Edge](#42-quantization-pruning--compression-for-llms-on-edge)
+  - [4.3 Inference Optimization (Speculative Decoding, KV Cache, FlashAttention variants, etc.)](#43-inference-optimization-speculative-decoding-kv-cache-flashattention-variants-etc)
+  - [4.4 On-Device Adaptation & Personalization (LoRA, QLoRA, federated, etc.)](#44-on-device-adaptation--personalization-lora-qlora-federated-etc)
+- [5. Edge AI Agents, Tool Use & Multi-Agent Systems](#5-edge-ai-agents-tool-use--multi-agent-systems)
+- [6. Modern Frameworks, Runtimes & Tooling (2023–2026)](#6-modern-frameworks-runtimes--tooling-20232026)
+- [7. Hardware & Accelerators for Edge AI (especially LLM-capable NPUs)](#7-hardware--accelerators-for-edge-ai-especially-llm-capable-npus)
+- [8. Benchmarks, Evaluation & Roadmaps](#8-benchmarks-evaluation--roadmaps)
+- [9. Key Recent Surveys & High-Impact Resources](#9-key-recent-surveys--high-impact-resources)
+- [Contributing](#contributing)
+- [Citation](#citation)
+- [License](#license)
     
 ## 1. Background Knowledge
 ### 1.1. Edge Computing
@@ -86,21 +103,43 @@ Edge AI refers to the deployment of artificial intelligence (AI) algorithms and 
 - [在边缘实现机器学习都需要什么？](https://www.infoq.cn/article/shdudgbwmho0ewwpmk5i)
 - [边缘计算 | 在移动设备上部署深度学习模型的思路与注意点](https://www.cnblogs.com/showmeai/p/16627579.html)
 
-## 2. Our Survey (To be released)
-### 2.1 The Taxonomy of the Discussed Topics
-![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/survey_structureV2.png)
-### 2.2 Edge AI Optimization Triad
-We introduce a data-model-system optimization triad for edge deployment.
-![Scope](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/edge_ai_frameworks.png)
-### 2.3 The Edge AI Deployment Pipeline
-An overview of edge deployment. The figure shows a general pipeline from the three aspects of data, model and system. Note that not all steps are necessary in real applications.
-![Pipeline](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/edge_deployment_pipeline.png)
+## 2. Our Surveys
+
+![Edge AI Evolution](Figures/edge_ai_evolution.png)
+
+### 2.1 Cognitive Edge Computing (2025, primary) — New Survey + Dedicated Repo
+**Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment**  
+arXiv:2501.03265 (v2 Nov 2025)
+
+- The **focused companion repository** (literature map, artifacts, benchmarks) lives at:  
+  **https://github.com/wangxb96/cognitive-edge-llm-agent-survey**
+- This Awesome-EdgeAI repository continues to serve as the **broad curated list** (classic + modern) and retains full references to the legacy survey.
+
+### 2.2 Legacy Survey (retained)
+The original "Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies" (arXiv v1) content and structure is preserved below and in the classic sections.
+
+This is the main evolving survey behind this repository. It provides a unified cognition-preserving framework covering:
+- Model optimization (quantization, sparsity, LoRA, distillation) that preserves multi-step reasoning under tight memory/compute.
+- System architecture (on-device inference, elastic offloading, cloud-edge collaboration).
+- Adaptive intelligence (context compression, dynamic routing, federated personalization) for agents and tool use.
+
+[Paper (latest)](https://arxiv.org/abs/2501.03265) | [PDF](https://arxiv.org/pdf/2501.03265)
+
+### 2.2 Legacy Survey (Data-Model-System Triad)
+The classic taxonomy and figures below are retained for historical value and because the fundamental data/model/system triad remains highly relevant even for LLM-era edge deployment.
+
+![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/survey_structureV2.png)
+![Scope](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_ai_frameworks.png)
+![Pipeline](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_deployment_pipeline.png)
 
 
-##  3. The Data-Model-System Optimization Triad
+## 3. The Data–Model–System Optimization Triad (Classic + Modern)
+
+The original triad remains foundational. We keep the high-quality curated tables from the legacy survey and continue to add modern entries (especially for transformers, LLMs, and agentic workloads).
+
 ### 3.1. Data Optimization
 An overview of data optimization operations. Data cleaning improves data quality by removing errors and inconsistencies in the raw data. Feature compression is used to eliminate irrelevant and redundant features. For scarce data, data augmentation is employed to increase the data size.
-![Data](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/data_optimization.png)
+![Data](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/data_optimization.png)
 
 #### 3.1.1. Data Cleaning
 | Title & Basic Information | Affiliation | Code |
@@ -157,7 +196,7 @@ An overview of data optimization operations. Data cleaning improves data quality
 
 ### 3.2. Model Optimization
 An overview of model optimization operations. Model design involves creating lightweight models through manual and automated techniques, including architecture selection, parameter tuning, and regularization. Model compression involves using various techniques, such as pruning, quantization, and knowledge distillation, to reduce the size of the model and obtain a compact model that requires fewer resources while maintaining high accuracy.
-![Model](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/model_optimization.png)
+![Model](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/model_optimization.png)
 
 #### 3.2.1. Model Design
 ##### 3.2.1.1. Compact Architecture Design
@@ -301,7 +340,7 @@ An overview of model optimization operations. Model design involves creating lig
 
 ### 3.3. System Optimization
 An overview of system optimization operations. Software optimization involves developing frameworks for lightweight model training and inference, while hardware optimization focuses on accelerating models using hardware-based approaches to improve computational efficiency on edge devices.
-![System](https://raw.githubusercontent.com/wangxb96/Awesome-AI-on-the-Edge/main/Figures/system_optimization.png)
+![System](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/system_optimization.png)
 
 #### 3.3.1. Software Optimization
 | Title & Basic Information | Affiliation | Code |
@@ -349,6 +388,150 @@ An overview of system optimization operations. Software optimization involves de
 | [Fluid Batching: Exit-Aware Preemptive Serving of Early-Exit Neural Networks on Edge NPUs[J]. arXiv, 2022.](https://arxiv.org/pdf/2209.13443.pdf) | Samsung AI Center, Cambridge | -- |
 | [BitSystolic: A 26.7 TOPS/W 2b~ 8b NPU with configurable data flows for edge devices[J]. IEEE Trans. on Circuits and Systems I: Regular Papers, 2020.](https://ieeexplore.ieee.org/abstract/document/9301197/) | Duke University | -- |
 | [PL-NPU: An Energy-Efficient Edge-Device DNN Training Processor With Posit-Based Logarithm-Domain Computing[J]. IEEE Trans. on Circuits and Systems I: Regular Papers, 2022.](https://ieeexplore.ieee.org/abstract/document/9803862/) | Tsinghua University | -- |
+
+---
+
+## 4. Large Models on the Edge (LLMs, VLMs, SLMs) — 2023–2026 Focus
+
+The explosion of interest in running capable language and multimodal models on phones, laptops, microcontrollers, and dedicated NPUs has produced an entirely new research and engineering layer on top of the classic Edge AI triad.
+
+### 4.1 Efficient Architectures & Training for Edge LLMs
+
+![LLM on Edge Optimization Layers](Figures/llm_on_edge_layers.png)
+
+| Year | Title & Info | Venue / Source | Code / Notes |
+|------|--------------|----------------|--------------|
+| 2022 | MCUNetV3: On-Device Training Under 256KB Memory | NeurIPS | [tiny-training](https://github.com/mit-han-lab/tiny-training), TinyEngine |
+| 2023+ | LiteRT-LM (Google) — High-performance on-device LLM inference framework | Production | [google-ai-edge/LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) |
+| 2024 | OnnxStream — Run SDXL and Mistral-class models on Raspberry Pi Zero / very low RAM | — | [vitoplantamura/OnnxStream](https://github.com/vitoplantamura/OnnxStream) |
+| 2024–25 | Apple MLX + Foundation Models (on-device) | Apple | MLX framework, Private Cloud Compute + on-device |
+| 2025 | Various Gemma / Qwen / Phi on-device ports (llama.cpp, ExecuTorch, QNN) | Community + vendors | High activity on Android (QNN, llama.cpp), iOS (MLX/Core ML) |
+
+### 4.2 Quantization, Pruning & Compression for LLMs on Edge
+Key directions: 4-bit / 2-bit weight-only, activation-aware, mixed-precision, hardware-aware (NPU-friendly), and "edge GPTQ/AWQ" variants. Many production deployments now target 4-bit or lower on mobile NPUs.
+
+### 4.3 Inference Optimization (Speculative Decoding, KV Cache, etc.)
+- Speculative decoding and draft models for mobile.
+- KV cache quantization / paging / offloading for long context on edge.
+- FlashAttention-style kernels adapted for NPUs and mobile GPUs.
+
+### 4.4 On-Device Adaptation & Personalization
+LoRA / QLoRA / DoRA on phones and laptops (MLX, PEFT mobile ports), federated personalization, and continual learning under memory constraints.
+
+**Selected high-impact / representative works & projects (2023–2026)**
+- Google LiteRT-LM and MediaPipe LLM inference stack
+- llama.cpp mobile / Android / iOS ports with GGUF + Q4_K_M etc.
+- ExecuTorch (PyTorch edge runtime) + LLM support
+- Qualcomm AI Hub + QNN for on-device LLMs
+- Apple Intelligence on-device foundation models + Private Cloud Compute
+- MCUNet / TinyEngine series updates for tiny transformers and on-device training
+- "On-Device Training Under 256KB Memory" (NeurIPS 2022) and follow-on tiny-training work
+
+---
+
+## 5. Edge AI Agents, Tool Use & Multi-Agent Systems
+
+A rapidly growing area: running (small) agents with tool calling, memory, planning, and multi-agent coordination directly on edge devices for privacy, latency, and offline capability.
+
+Notable directions:
+- On-device tool use / MCP (Model Context Protocol) on Android forks and custom launchers.
+- Local-first RAG + small LLM agents (no cloud vector DBs).
+- Voice / multimodal agents (Gemma + Whisper-style on-device pipelines).
+- Multi-agent simulation and orchestration that can partially run on edge + cloud fallback.
+
+Key public projects (from 2024–2026):
+- Various "Agentic Android" experiments (AAOSP, JibarOS-style forks with on-device LLM system services).
+- Local RAG engines designed for small LLMs (e.g., knolo-core style lexical/deterministic retrieval).
+- llama.cpp + tool-calling + voice loops on mobile.
+
+---
+
+## 6. Modern Frameworks, Runtimes & Tooling (2023–2026)
+
+| Framework / Runtime | Focus | Highlights | Link |
+|---------------------|-------|------------|------|
+
+![On-Device LLM Inference Stack](Figures/on_device_llm_stack.png)
+| LiteRT-LM (Google) | On-device LLM inference | Production-grade, KV cache, multimodal, high perf on Android | [google-ai-edge/LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) |
+| TinyEngine + MCUNet | TinyML (CNN + now transformers) | Extreme memory efficiency, on-device training <256KB | [mit-han-lab/tinyengine](https://github.com/mit-han-lab/tinyengine) |
+| llama.cpp (mobile ports) | GGUF inference everywhere | Best-in-class 4-bit/2-bit CPU + GPU offload, very broad device support | llama.cpp repo + community mobile builds |
+| MLX (Apple) | Apple Silicon (M-series, iPhone) | Unified memory, easy LoRA/fine-tuning on device | mlx-ml |
+| ExecuTorch (PyTorch Edge) | PyTorch models to edge | Growing LLM support, delegation to NPUs | pytorch/executorch |
+| ONNX Runtime Mobile / Web | Cross-platform | Good quantization story, WebGPU backend | ONNX Runtime |
+| TensorFlow Lite / LiteRT | Classic + LLM path | MediaPipe + new LiteRT-LM LLM stack | Google AI Edge |
+| emlearn / frugally-deep / deepC | Microcontroller inference | Random forests, tiny neural nets on MCUs | Various |
+
+Other notable: Cactus (low-latency mobile), OnnxStream, Z-Ant (Zig), Seeed Model Assistant, etc.
+
+---
+
+## 7. Hardware & Accelerators for Edge AI (especially LLM-capable NPUs)
+
+- **Mobile NPUs**: Qualcomm Hexagon (Snapdragon), MediaTek APU, Samsung NPU, Google Tensor, Apple Neural Engine (ANE).
+- **Dedicated edge AI chips**: Hailo, Coral (Edge TPU), Intel NPU (Meteor Lake+), AMD XDNA, various Chinese vendors.
+- **Microcontrollers with ML acceleration**: ARM Ethos-U, Kendryte K210 (legacy), new RISC-V + NPU combos, CH32V series for extreme tiny.
+- **Laptop / desktop edge**: Apple M-series unified memory (excellent for MLX), Intel/AMD NPUs in Windows on ARM and recent x86 laptops.
+
+Recent measured results and demos often appear in vendor AI Hub pages, MLPerf Tiny submissions, and community benchmarks (llama.cpp perf tables, etc.).
+
+---
+
+## 8. Benchmarks, Evaluation & Roadmaps
+
+- MLPerf Tiny / MLPerf Inference (edge categories)
+- On-device LLM specific benchmarks emerging (latency/token, energy/token, quality vs size on real devices)
+- "TinyML" courseware and the excellent [Machine Learning Systems](https://mlsysbook.ai) textbook (Harvard Edge / cs249r_book) — highly recommended companion reading.
+- Energy and sustainability reporting is becoming a first-class concern (see the 2025 Cognitive Edge Computing survey for recommended protocols).
+
+---
+
+## 9. Key Recent Surveys & High-Impact Resources (2023–2026)
+
+- Wang et al., **Cognitive Edge Computing** (arXiv:2501.03265, 2025) — primary reference for this repo's modern direction.
+- "Machine Learning Systems" textbook (open, actively maintained) — covers the full stack from tiny to datacenter.
+- MCUNet series (NeurIPS 2020/2021/2022) + TinyEngine papers.
+- Multiple 2024–2025 surveys on efficient LLMs, LLM quantization, on-device agents, and edge foundation models (search arXiv for "edge LLM survey", "on-device LLM", "tiny LLM").
+- TinyML ecosystem books, courses (Harvard CS249r, tinyMLx, etc.).
+
+---
+
+## Contributing
+
+Contributions are very welcome!
+
+- Add high-quality recent papers (2023–2026 preferred) with links to PDF + code when available.
+- Add important open-source projects, frameworks, or hardware that meaningfully advance on-device/edge AI.
+- Improve tables (fix dead links, add Year/Venue, better categorization).
+- Suggest new top-level sections or reorganizations.
+
+Please open a PR or issue. Try to keep entries high-signal (well-cited, reproducible, or from reputable groups/vendors).
+
+---
+
+## Citation
+
+If you use this repository or the associated survey in academic work, please cite:
+
+```bibtex
+@article{wang2025cognitive,
+  title={Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment},
+  author={Wang, Xubin and Li, Qing and Jia, Weijia},
+  journal={arXiv preprint arXiv:2501.03265},
+  year={2025}
+}
+```
+
+(Older v1 citation also available in the arXiv record.)
+
+---
+
+## License
+
+This repository is provided for research and educational purposes. Individual papers and codebases retain their own licenses.
+
+---
+
+*This README has been significantly refreshed in 2026 to reflect the shift toward Large Models, Agents, and Cognitive Edge Computing while preserving the valuable classic Data-Model-System literature.*
 
 <!-- 
 ## 4. Important Surveys on Edge AI (Related to edge inference and model deployment)

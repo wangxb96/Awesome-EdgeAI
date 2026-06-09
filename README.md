@@ -483,7 +483,11 @@ An overview of system optimization operations. Software optimization involves de
 
 ---
 
-## 4. Large Models (LLMs / SLMs / VLMs) on Edge
+## Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)
+
+**Unified Architecture Overview** (the new Cognitive Edge Computing stack):
+
+![Cognitive Edge AI Architecture](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/cognitive_edge_ai_architecture.png)
 
 **From TinyML to Cognitive Edge Computing** — evolution of on-device intelligence.
 

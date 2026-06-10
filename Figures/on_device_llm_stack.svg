@@ -27,7 +27,7 @@
   <text x="505" y="195" fill="#cbd5e1" font-size="11">· Step 5: KV-Cache config, Flash Attention</text>
   <text x="505" y="215" fill="#cbd5e1" font-size="11">· Step 6: Export to runtime format (MLX/CoreML/ONNX)</text>
   <text x="505" y="235" fill="#cbd5e1" font-size="11">· Step 7: On-device benchmark (perplexity, latency)</text>
-  <text x="505" y="255" fill="#cbd5e1" font-size="11">· Step 8: Package & deploy via OTA</text>
+  <text x="505" y="255" fill="#cbd5e1" font-size="11">· Step 8: Package &amp; deploy via OTA</text>
   <rect x="30" y="315" width="440" height="100" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="2" filter="url(#sh)"/>
   <rect x="30" y="315" width="440" height="35" rx="10" fill="#0891b2"/>
   <rect x="30" y="340" width="440" height="10" fill="#0891b2"/>

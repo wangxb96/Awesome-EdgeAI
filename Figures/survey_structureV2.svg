@@ -16,9 +16,9 @@
   <rect x="30" y="70" width="220" height="110" rx="12" fill="url(#sec1)"/><rect x="240" y="70" width="10" height="110" fill="#0f172a"/>
   <text x="140" y="112" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Section 1</text>
   <text x="140" y="140" text-anchor="middle" fill="#bfdbfe" font-size="12">Data Optimization</text>
-  <text x="260" y="105" fill="#cbd5e1" font-size="12">· Federated & Split Learning</text>
-  <text x="260" y="130" fill="#cbd5e1" font-size="12">· Data Augmentation & Distillation</text>
-  <text x="260" y="155" fill="#cbd5e1" font-size="12">· Compressed Sensing & Smart Caching</text>
+  <text x="260" y="105" fill="#cbd5e1" font-size="12">· Federated &amp; Split Learning</text>
+  <text x="260" y="130" fill="#cbd5e1" font-size="12">· Data Augmentation &amp; Distillation</text>
+  <text x="260" y="155" fill="#cbd5e1" font-size="12">· Compressed Sensing &amp; Smart Caching</text>
   <text x="260" y="175" fill="#64748b" font-size="10">Enables efficient on-device data handling without compromising privacy</text>
 
   <!-- Section 2 -->
@@ -27,7 +27,7 @@
   <text x="140" y="237" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Section 2</text>
   <text x="140" y="265" text-anchor="middle" fill="#cffafe" font-size="12">Model Optimization</text>
   <text x="260" y="230" fill="#cbd5e1" font-size="12">· Quantization · Pruning · Knowledge Distillation</text>
-  <text x="260" y="255" fill="#cbd5e1" font-size="12">· NAS & HW-Aware Architecture Design</text>
+  <text x="260" y="255" fill="#cbd5e1" font-size="12">· NAS &amp; HW-Aware Architecture Design</text>
   <text x="260" y="280" fill="#cbd5e1" font-size="12">· PEFT (LoRA/QLoRA) · Speculative Decoding</text>
   <text x="260" y="300" fill="#64748b" font-size="10">Compresses and adapts large models for resource-constrained edge devices</text>
 
@@ -55,10 +55,10 @@
   <rect x="30" y="570" width="940" height="110" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" filter="url(#sh)"/>
   <rect x="30" y="570" width="220" height="110" rx="12" fill="url(#sec5)"/><rect x="240" y="570" width="10" height="110" fill="#0f172a"/>
   <text x="140" y="612" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Section 5</text>
-  <text x="140" y="640" text-anchor="middle" fill="#e9d5ff" font-size="12">Agents & Cognitive Edge</text>
+  <text x="140" y="640" text-anchor="middle" fill="#e9d5ff" font-size="12">Agents &amp; Cognitive Edge</text>
   <text x="260" y="605" fill="#cbd5e1" font-size="12">· LLM Agents (ReAct, AutoGPT, CrewAI)</text>
   <text x="260" y="630" fill="#cbd5e1" font-size="12">· Tool Use, RAG, Multi-Agent Orchestration</text>
-  <text x="260" y="655" fill="#cbd5e1" font-size="12">· Planning & Reasoning · Embodied Edge AI</text>
+  <text x="260" y="655" fill="#cbd5e1" font-size="12">· Planning &amp; Reasoning · Embodied Edge AI</text>
   <text x="260" y="675" fill="#64748b" font-size="10">The next frontier: autonomous, context-aware edge intelligence</text>
 
   <!-- Bottom Summary -->

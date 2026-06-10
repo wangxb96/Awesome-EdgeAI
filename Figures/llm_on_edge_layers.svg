@@ -39,6 +39,6 @@
   <rect x="490" y="340" width="440" height="10" fill="#0891b2"/>
   <text x="710.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Application Layer</text>
   <text x="505" y="370" fill="#cbd5e1" font-size="11">· Apple Intelligence, Samsung Galaxy AI, on-device Siri</text>
-  <text x="505" y="390" fill="#cbd5e1" font-size="11">· AI coding assistants, document Q&A, live translation</text>
+  <text x="505" y="390" fill="#cbd5e1" font-size="11">· AI coding assistants, document Q&amp;A, live translation</text>
   <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
   <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">The full stack enabling multi-billion-parameter LLM inference on personal devices</text></svg>

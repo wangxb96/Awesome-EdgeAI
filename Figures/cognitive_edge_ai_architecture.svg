@@ -33,22 +33,20 @@
     </filter>
   </defs>
 
-  <!-- Background -->
   <rect width="1200" height="900" fill="url(#bg)"/>
   
-  <!-- Title -->
   <text x="600" y="50" text-anchor="middle" fill="#f8fafc" font-size="28" font-weight="700">Cognitive Edge AI — Unified Architecture</text>
   <text x="600" y="78" text-anchor="middle" fill="#94a3b8" font-size="14">Five-Layer Stack for Pervasive Edge Intelligence (2023–2026)</text>
 
-  <!-- Sidebar: Cross-cutting Concerns -->
+  <!-- Sidebar -->
   <rect x="20" y="110" width="200" height="730" rx="12" fill="url(#side)" stroke="#475569" stroke-width="2" filter="url(#shadow)"/>
   <text x="120" y="145" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700">Cross-cutting</text>
   
   <rect x="35" y="165" width="170" height="50" rx="8" fill="#1e293b"/>
-  <text x="120" y="196" text-anchor="middle" fill="#94a3b8" font-size="13">Security & Privacy</text>
+  <text x="120" y="196" text-anchor="middle" fill="#94a3b8" font-size="13">Security &amp; Privacy</text>
   
   <rect x="35" y="230" width="170" height="50" rx="8" fill="#1e293b"/>
-  <text x="120" y="261" text-anchor="middle" fill="#94a3b8" font-size="13">Benchmarks & Datasets</text>
+  <text x="120" y="261" text-anchor="middle" fill="#94a3b8" font-size="13">Benchmarks &amp; Datasets</text>
   
   <rect x="35" y="295" width="170" height="50" rx="8" fill="#1e293b"/>
   <text x="120" y="326" text-anchor="middle" fill="#94a3b8" font-size="13">Data Pipeline</text>
@@ -76,46 +74,37 @@
 
   <!-- Layer 5: Applications -->
   <rect x="245" y="110" width="935" height="130" rx="12" fill="url(#layer5)" stroke="#818cf8" stroke-width="2" filter="url(#shadow)"/>
-  <text x="712" y="148" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 5 — Applications & Use Cases</text>
-  <text x="712" y="176" text-anchor="middle" fill="#eef2ff" font-size="14">Healthcare & Wellness · Smart Home/IoT · Autonomous Driving · Industrial IoT · 6G Networks · AR/VR · Robotics</text>
+  <text x="712" y="148" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 5 — Applications &amp; Use Cases</text>
+  <text x="712" y="176" text-anchor="middle" fill="#eef2ff" font-size="14">Healthcare &amp; Wellness · Smart Home/IoT · Autonomous Driving · Industrial IoT · 6G Networks · AR/VR · Robotics</text>
   <text x="712" y="212" text-anchor="middle" fill="#c7d2fe" font-size="12">Real-time inference, on-device decision-making, multi-modal interaction, embodied intelligence</text>
-  <text x="1180" y="170" text-anchor="middle" fill="#fff" font-size="12" text-decoration="underline">User-Facing</text>
+  <text x="180" y="10" fill="none"/>
+  <text x="1180" y="170" text-anchor="middle" fill="#a5b4fc" font-size="12" font-weight="600">◈ User-Facing ◈</text>
 
   <!-- Layer 4: Agentic/Cognitive -->
   <rect x="245" y="255" width="935" height="130" rx="12" fill="url(#layer4)" stroke="#a78bfa" stroke-width="2" filter="url(#shadow)"/>
-  <text x="712" y="293" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 4 — Agentic & Cognitive Computing</text>
-  <text x="712" y="321" text-anchor="middle" fill="#f5f3ff" font-size="14">LLM Agents · Multi-Agent Orchestration · Tool Use / RAG · Chain-of-Thought · Planning & Reasoning</text>
+  <text x="712" y="293" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 4 — Agentic &amp; Cognitive Computing</text>
+  <text x="712" y="321" text-anchor="middle" fill="#f5f3ff" font-size="14">LLM Agents · Multi-Agent Orchestration · Tool Use / RAG · Chain-of-Thought · Planning &amp; Reasoning</text>
   <text x="712" y="357" text-anchor="middle" fill="#e0d5ff" font-size="12">Context-aware adaptive systems, intent understanding, autonomous task completion</text>
-  <text x="1180" y="315" text-anchor="middle" fill="#fff" font-size="12" text-decoration="underline">Decision Layer</text>
+  <text x="1180" y="315" text-anchor="middle" fill="#c4b5fd" font-size="12" font-weight="600">◈ Decision Layer ◈</text>
 
   <!-- Layer 3: Model Efficiency -->
   <rect x="245" y="400" width="935" height="130" rx="12" fill="url(#layer3)" stroke="#22d3ee" stroke-width="2" filter="url(#shadow)"/>
-  <text x="712" y="438" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 3 — Model Efficiency & Optimization</text>
+  <text x="712" y="438" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 3 — Model Efficiency &amp; Optimization</text>
   <text x="712" y="466" text-anchor="middle" fill="#ecfeff" font-size="14">Quantization · Pruning · Knowledge Distillation · Speculative Decoding · KV-Cache · LoRA/QLoRA</text>
   <text x="712" y="502" text-anchor="middle" fill="#cffafe" font-size="12">LLMs/SLMs/VLMs · Transformers · CNNs · Mixture of Experts · PEFT</text>
-  <text x="1180" y="460" text-anchor="middle" fill="#fff" font-size="12" text-decoration="underline">Algorithm Layer</text>
+  <text x="1180" y="460" text-anchor="middle" fill="#67e8f9" font-size="12" font-weight="600">◈ Algorithm Layer ◈</text>
 
   <!-- Layer 2: Runtimes -->
   <rect x="245" y="545" width="935" height="130" rx="12" fill="url(#layer2)" stroke="#fbbf24" stroke-width="2" filter="url(#shadow)"/>
-  <text x="712" y="583" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 2 — Runtimes & Frameworks</text>
+  <text x="712" y="583" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 2 — Runtimes &amp; Frameworks</text>
   <text x="712" y="611" text-anchor="middle" fill="#fefce8" font-size="14">llama.cpp · MLC-LLM · ExecuTorch · MediaPipe · TFLite · CoreML · ONNX Runtime · OpenVINO</text>
   <text x="712" y="647" text-anchor="middle" fill="#fef08a" font-size="12">Inference engines, graph optimizations, memory planners, hardware abstraction</text>
-  <text x="1180" y="605" text-anchor="middle" fill="#fff" font-size="12" text-decoration="underline">Software Layer</text>
+  <text x="1180" y="605" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="600">◈ Software Layer ◈</text>
 
   <!-- Layer 1: Hardware -->
   <rect x="245" y="690" width="935" height="130" rx="12" fill="url(#layer1)" stroke="#f87171" stroke-width="2" filter="url(#shadow)"/>
-  <text x="712" y="728" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 1 — Hardware & Accelerators</text>
+  <text x="712" y="728" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Layer 1 — Hardware &amp; Accelerators</text>
   <text x="712" y="756" text-anchor="middle" fill="#fef2f2" font-size="14">NPU · GPU · TPU · FPGA · ASIC · ARM Cortex-M · RISC-V · Qualcomm Hexagon · Apple Neural Engine</text>
   <text x="712" y="792" text-anchor="middle" fill="#fecaca" font-size="12">mW–few Watts · KB–few GB memory · Smartphones · MCUs · Wearables · Gateways</text>
-  <text x="1180" y="750" text-anchor="middle" fill="#fff" font-size="12" text-decoration="underline">Physical Layer</text>
-
-  <!-- Arrows between layers -->
-  <line x1="1180" y1="220" x2="1180" y2="255" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,4"/>
-  <line x1="1180" y1="370" x2="1180" y2="400" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="6,4"/>
-  <line x1="1180" y1="515" x2="1180" y2="545" stroke="#06b6d4" stroke-width="2" stroke-dasharray="6,4"/>
-  <line x1="1180" y1="660" x2="1180" y2="690" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4"/>
-
-  <!-- Data Flow arrows -->
-  <path d="M 225 160 Q 240 160 240 175 Q 240 310 240 310" stroke="#818cf8" stroke-width="2" fill="none" marker-end="url(#arrowDown)"/>
-  
+  <text x="1180" y="750" text-anchor="middle" fill="#fca5a5" font-size="12" font-weight="600">◈ Physical Layer ◈</text>
 </svg>

@@ -26,7 +26,7 @@
   <rect x="330" y="85" width="285" height="10" fill="#d97706"/>
   <text x="472.5" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">System-Level</text>
   <text x="345" y="115" fill="#cbd5e1" font-size="11">· Operator fusion / kernel tuning</text>
-  <text x="345" y="135" fill="#cbd5e1" font-size="11">· Memory planning & reuse</text>
+  <text x="345" y="135" fill="#cbd5e1" font-size="11">· Memory planning &amp; reuse</text>
   <text x="345" y="155" fill="#cbd5e1" font-size="11">· Graph-level optimization</text>
   <text x="345" y="175" fill="#cbd5e1" font-size="11">· Compiler auto-tuning (AutoTVM)</text>
   <text x="345" y="195" fill="#cbd5e1" font-size="11">· Parallelism (thread/vector)</text>

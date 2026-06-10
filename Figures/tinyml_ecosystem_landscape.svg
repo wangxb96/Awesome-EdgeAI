@@ -18,8 +18,8 @@
   <rect x="20" y="95" width="160" height="110" rx="10" fill="#7f1d1d"/>
   <rect x="170" y="95" width="10" height="110" fill="url(#bgG)"/>
   <text x="100" y="138" text-anchor="middle" fill="#fecaca" font-size="15" font-weight="700">Hardware</text>
-  <text x="100" y="165" text-anchor="middle" fill="#ef4444" font-size="22">🔌</text>
-  <text x="100" y="192" text-anchor="middle" fill="#f87171" font-size="10">Silicon & Boards</text>
+  <text x="100" y="165" text-anchor="middle" fill="#ef4444" font-size="22"></text>
+  <text x="100" y="192" text-anchor="middle" fill="#f87171" font-size="10">Silicon &amp; Boards</text>
 
   <rect x="190" y="110" width="140" height="40" rx="6" fill="#450a0a"/>
   <text x="260" y="136" text-anchor="middle" fill="#fca5a5" font-size="12">ARM Cortex-M0→M7</text>
@@ -47,13 +47,13 @@
   <rect x="940" y="155" width="140" height="40" rx="6" fill="#450a0a"/>
   <text x="1010" y="181" text-anchor="middle" fill="#fca5a5" font-size="12">Google Coral TPU</text>
 
-  <!-- Layer 2: Compilers & Runtimes -->
+  <!-- Layer 2: Compilers &amp; Runtimes -->
   <rect x="20" y="220" width="1160" height="110" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" filter="url(#sh)"/>
   <rect x="20" y="220" width="160" height="110" rx="10" fill="#78350f"/>
   <rect x="170" y="220" width="10" height="110" fill="url(#bgG)"/>
-  <text x="100" y="263" text-anchor="middle" fill="#fde68a" font-size="15" font-weight="700">Compilers & Runtimes</text>
-  <text x="100" y="290" text-anchor="middle" fill="#f59e0b" font-size="22">⚙️</text>
-  <text x="100" y="317" text-anchor="middle" fill="#fbbf24" font-size="10">IR & Kernels</text>
+  <text x="100" y="263" text-anchor="middle" fill="#fde68a" font-size="15" font-weight="700">Compilers &amp; Runtimes</text>
+  <text x="100" y="290" text-anchor="middle" fill="#f59e0b" font-size="22">️</text>
+  <text x="100" y="317" text-anchor="middle" fill="#fbbf24" font-size="10">IR &amp; Kernels</text>
 
   <rect x="190" y="235" width="150" height="40" rx="6" fill="#713f12"/>
   <text x="265" y="261" text-anchor="middle" fill="#fcd34d" font-size="12">TVM / MicroTVM</text>
@@ -80,7 +80,7 @@
   <rect x="20" y="345" width="160" height="110" rx="10" fill="#0c4a6e"/>
   <rect x="170" y="345" width="10" height="110" fill="url(#bgG)"/>
   <text x="100" y="388" text-anchor="middle" fill="#cffafe" font-size="15" font-weight="700">Frameworks</text>
-  <text x="100" y="415" text-anchor="middle" fill="#06b6d4" font-size="22">📦</text>
+  <text x="100" y="415" text-anchor="middle" fill="#06b6d4" font-size="22"></text>
   <text x="100" y="442" text-anchor="middle" fill="#22d3ee" font-size="10">ML Libraries</text>
 
   <rect x="190" y="360" width="150" height="40" rx="6" fill="#164e63"/>
@@ -105,9 +105,9 @@
   <rect x="20" y="470" width="1160" height="110" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="1.5" filter="url(#sh)"/>
   <rect x="20" y="470" width="160" height="110" rx="10" fill="#14532d"/>
   <rect x="170" y="470" width="10" height="110" fill="url(#bgG)"/>
-  <text x="100" y="513" text-anchor="middle" fill="#dcfce7" font-size="15" font-weight="700">Platforms & Tools</text>
-  <text x="100" y="540" text-anchor="middle" fill="#22c55e" font-size="22">🛠️</text>
-  <text x="100" y="567" text-anchor="middle" fill="#4ade80" font-size="10">Dev & MLOps</text>
+  <text x="100" y="513" text-anchor="middle" fill="#dcfce7" font-size="15" font-weight="700">Platforms &amp; Tools</text>
+  <text x="100" y="540" text-anchor="middle" fill="#22c55e" font-size="22">️</text>
+  <text x="100" y="567" text-anchor="middle" fill="#4ade80" font-size="10">Dev &amp; MLOps</text>
 
   <rect x="190" y="485" width="160" height="40" rx="6" fill="#166534"/>
   <text x="270" y="511" text-anchor="middle" fill="#86efac" font-size="12">Edge Impulse</text>
@@ -125,12 +125,12 @@
   <rect x="440" y="530" width="240" height="40" rx="6" fill="#166534"/>
   <text x="560" y="556" text-anchor="middle" fill="#86efac" font-size="12">Deeplite · OctoML</text>
 
-  <!-- Layer 5: Datasets & Benchmarks -->
+  <!-- Layer 5: Datasets &amp; Benchmarks -->
   <rect x="20" y="595" width="1160" height="110" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5" filter="url(#sh)"/>
   <rect x="20" y="595" width="160" height="110" rx="10" fill="#3b0764"/>
   <rect x="170" y="595" width="10" height="110" fill="url(#bgG)"/>
-  <text x="100" y="638" text-anchor="middle" fill="#e9d5ff" font-size="15" font-weight="700">Datasets & Benchmarks</text>
-  <text x="100" y="665" text-anchor="middle" fill="#8b5cf6" font-size="22">📊</text>
+  <text x="100" y="638" text-anchor="middle" fill="#e9d5ff" font-size="15" font-weight="700">Datasets &amp; Benchmarks</text>
+  <text x="100" y="665" text-anchor="middle" fill="#8b5cf6" font-size="22"></text>
   <text x="100" y="692" text-anchor="middle" fill="#a78bfa" font-size="10">Evaluation</text>
 
   <rect x="190" y="610" width="175" height="40" rx="6" fill="#4c1d95"/>
@@ -151,5 +151,5 @@
 
   <!-- Summary bar -->
   <rect x="100" y="735" width="1000" height="45" rx="10" fill="#1e293b" stroke="#334155" stroke-dasharray="4,2"/>
-  <text x="600" y="764" text-anchor="middle" fill="#94a3b8" font-size="13">End-to-End Workflow: Collect Data → Label → Train (AutoML) → Optimize → Deploy to MCU/NPU → Monitor & Update</text>
+  <text x="600" y="764" text-anchor="middle" fill="#94a3b8" font-size="13">End-to-End Workflow: Collect Data → Label → Train (AutoML) → Optimize → Deploy to MCU/NPU → Monitor &amp; Update</text>
 </svg>

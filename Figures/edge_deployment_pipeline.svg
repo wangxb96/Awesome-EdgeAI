@@ -101,5 +101,5 @@
   <!-- Bottom Bar: CI/CD -->
   <rect x="30" y="520" width="1042" height="55" rx="10" fill="#1e293b" stroke="#475569" stroke-dasharray="6,3"/>
   <text x="550" y="543" text-anchor="middle" fill="#cbd5e1" font-size="13">CI/CD Pipeline: GitHub Actions → Build → Unit Tests → Integration Tests → Edge-Sim Test → Canary Deploy → Full Rollout</text>
-  <text x="550" y="563" text-anchor="middle" fill="#64748b" font-size="10">MLOps Tools: Weights & Biases · MLflow · DVC · Docker + K3s · Edge Impulse · OctoML · AWS IoT Greengrass</text>
+  <text x="550" y="563" text-anchor="middle" fill="#64748b" font-size="10">MLOps Tools: Weights &amp; Biases · MLflow · DVC · Docker + K3s · Edge Impulse · OctoML · AWS IoT Greengrass</text>
 </svg>

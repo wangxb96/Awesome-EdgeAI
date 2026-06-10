@@ -40,15 +40,15 @@
 
   <!-- User / Environment Input -->
   <rect x="30" y="120" width="180" height="560" rx="14" fill="#0f172a" stroke="#22c55e" stroke-width="2" filter="url(#sh)"/>
-  <text x="120" y="160" text-anchor="middle" fill="#4ade80" font-size="16" font-weight="700">🌐 Environment</text>
+  <text x="120" y="160" text-anchor="middle" fill="#4ade80" font-size="16" font-weight="700"> Environment</text>
   <line x1="60" y1="175" x2="180" y2="175" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
-  <text x="55" y="210" fill="#94a3b8" font-size="12">📱 User Query</text>
-  <text x="55" y="245" fill="#94a3b8" font-size="12">🎤 Audio / Voice</text>
-  <text x="55" y="280" fill="#94a3b8" font-size="12">📷 Camera Input</text>
-  <text x="55" y="315" fill="#94a3b8" font-size="12">📍 Sensor Data</text>
-  <text x="55" y="350" fill="#94a3b8" font-size="12">📡 IoT Signals</text>
-  <text x="55" y="385" fill="#94a3b8" font-size="12">⌨️ Text / Gesture</text>
-  <text x="55" y="420" fill="#94a3b8" font-size="12">🔔 Push Notif.</text>
+  <text x="55" y="210" fill="#94a3b8" font-size="12"> User Query</text>
+  <text x="55" y="245" fill="#94a3b8" font-size="12"> Audio / Voice</text>
+  <text x="55" y="280" fill="#94a3b8" font-size="12"> Camera Input</text>
+  <text x="55" y="315" fill="#94a3b8" font-size="12"> Sensor Data</text>
+  <text x="55" y="350" fill="#94a3b8" font-size="12"> IoT Signals</text>
+  <text x="55" y="385" fill="#94a3b8" font-size="12">️ Text / Gesture</text>
+  <text x="55" y="420" fill="#94a3b8" font-size="12"> Push Notif.</text>
 
   <!-- Arrow from Env to Core -->
   <line x1="210" y1="400" x2="245" y2="400" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowBlue)"/>
@@ -59,7 +59,7 @@
 
   <!-- LLM Core -->
   <rect x="270" y="175" width="265" height="200" rx="12" fill="url(#llm)" filter="url(#sh)"/>
-  <text x="402" y="208" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">🧠 LLM / SLM Engine</text>
+  <text x="402" y="208" text-anchor="middle" fill="#fff" font-size="16" font-weight="700"> LLM / SLM Engine</text>
   <text x="290" y="242" fill="#ede9fe" font-size="11">· Llama 3.2 · Phi-3 · Gemma</text>
   <text x="290" y="265" fill="#ede9fe" font-size="11">· Qwen2 · Mistral · DeepSeek</text>
   <text x="290" y="288" fill="#ede9fe" font-size="11">· Speculative Decoding</text>
@@ -69,7 +69,7 @@
 
   <!-- Planning -->
   <rect x="560" y="175" width="270" height="200" rx="12" fill="url(#plan)" filter="url(#sh)"/>
-  <text x="695" y="208" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">🧩 Planning & Reasoning</text>
+  <text x="695" y="208" text-anchor="middle" fill="#fff" font-size="16" font-weight="700"> Planning &amp; Reasoning</text>
   <text x="580" y="242" fill="#fee2e2" font-size="11">· Chain-of-Thought (CoT)</text>
   <text x="580" y="265" fill="#fee2e2" font-size="11">· ReAct Loop</text>
   <text x="580" y="288" fill="#fee2e2" font-size="11">· Tree-of-Thought</text>
@@ -82,21 +82,21 @@
 
   <!-- Memory -->
   <rect x="270" y="395" width="265" height="140" rx="12" fill="url(#mem)" filter="url(#sh)"/>
-  <text x="402" y="428" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">💾 Memory & RAG</text>
+  <text x="402" y="428" text-anchor="middle" fill="#fff" font-size="16" font-weight="700"> Memory &amp; RAG</text>
   <text x="290" y="465" fill="#fef3c7" font-size="11">· Vector DB (Chroma, Qdrant)</text>
   <text x="290" y="488" fill="#fef3c7" font-size="11">· Short-term / Long-term Memory</text>
   <text x="290" y="511" fill="#fef3c7" font-size="11">· Context Window Management</text>
 
   <!-- Tool Use -->
   <rect x="560" y="395" width="270" height="140" rx="12" fill="url(#tool)" filter="url(#sh)"/>
-  <text x="695" y="428" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">🔧 Tool Use</text>
+  <text x="695" y="428" text-anchor="middle" fill="#fff" font-size="16" font-weight="700"> Tool Use</text>
   <text x="580" y="465" fill="#cffafe" font-size="11">· Function Calling</text>
   <text x="580" y="488" fill="#cffafe" font-size="11">· API Integration</text>
   <text x="580" y="511" fill="#cffafe" font-size="11">· Code Interpreter</text>
 
   <!-- Feedback Loop -->
   <rect x="270" y="555" width="560" height="100" rx="12" fill="#1e293b" stroke="#475569" stroke-width="2" filter="url(#sh)"/>
-  <text x="550" y="590" text-anchor="middle" fill="#cbd5e1" font-size="14" font-weight="700">🔄 Feedback & Refinement</text>
+  <text x="550" y="590" text-anchor="middle" fill="#cbd5e1" font-size="14" font-weight="700"> Feedback &amp; Refinement</text>
   <text x="550" y="618" text-anchor="middle" fill="#94a3b8" font-size="11">Verify Output → Self-Critique → Adjust Plan → Retry → Ground Truth Validation</text>
   <text x="550" y="642" text-anchor="middle" fill="#94a3b8" font-size="11">Metrics: Quality Score, Hallucination Rate, Task Completion Rate, Latency</text>
 
@@ -107,20 +107,20 @@
 
   <!-- Action Output -->
   <rect x="870" y="200" width="200" height="340" rx="14" fill="#0f172a" stroke="#ec4899" stroke-width="2"/>
-  <text x="970" y="235" text-anchor="middle" fill="#f472b6" font-size="14" font-weight="700">📤 Actions</text>
-  <text x="890" y="275" fill="#94a3b8" font-size="11">✅ Execute Task</text>
-  <text x="890" y="310" fill="#94a3b8" font-size="11">💬 Generate Response</text>
-  <text x="890" y="345" fill="#94a3b8" font-size="11">📊 Query Database</text>
-  <text x="890" y="380" fill="#94a3b8" font-size="11">📱 Control Device</text>
-  <text x="890" y="415" fill="#94a3b8" font-size="11">📡 Publish Message</text>
-  <text x="890" y="450" fill="#94a3b8" font-size="11">🖼️ Render UI</text>
-  <text x="890" y="485" fill="#94a3b8" font-size="11">⏸️ Wait & Listen</text>
+  <text x="970" y="235" text-anchor="middle" fill="#f472b6" font-size="14" font-weight="700"> Actions</text>
+  <text x="890" y="275" fill="#94a3b8" font-size="11"> Execute Task</text>
+  <text x="890" y="310" fill="#94a3b8" font-size="11"> Generate Response</text>
+  <text x="890" y="345" fill="#94a3b8" font-size="11"> Query Database</text>
+  <text x="890" y="380" fill="#94a3b8" font-size="11"> Control Device</text>
+  <text x="890" y="415" fill="#94a3b8" font-size="11"> Publish Message</text>
+  <text x="890" y="450" fill="#94a3b8" font-size="11">️ Render UI</text>
+  <text x="890" y="485" fill="#94a3b8" font-size="11">️ Wait &amp; Listen</text>
 
   <!-- Arrow to Actions -->
   <line x1="830" y1="370" x2="865" y2="370" stroke="#ec4899" stroke-width="2" marker-end="url(#arrowBlue)"/>
 
   <!-- Deployment bar -->
   <rect x="30" y="700" width="1040" height="55" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <text x="550" y="725" text-anchor="middle" fill="#cbd5e1" font-size="13">Deployment: Mobile 📱 | Wearables ⌚ | Smart Home 🏠 | Gateway 🖥️ | Vehicle 🚗 | MCU ⚙️</text>
+  <text x="550" y="725" text-anchor="middle" fill="#cbd5e1" font-size="13">Deployment: Mobile  | Wearables  | Smart Home  | Gateway ️ | Vehicle  | MCU ️</text>
   <text x="550" y="746" text-anchor="middle" fill="#64748b" font-size="10">Runtimes: llama.cpp · ExecuTorch · MLC-LLM · CoreML · ONNX Runtime · TensorRT</text>
 </svg>

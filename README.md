@@ -62,7 +62,7 @@ It serves researchers, engineers, and students who want to deploy real intellige
 
 **Master Overview Figure** — the Cognitive Edge Computing unified stack (Fig 1):
 
-![Cognitive Edge AI Architecture](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/cognitive_edge_ai_architecture.png)
+![Cognitive Edge AI Architecture](Figures/cognitive_edge_ai_architecture.png)
 
 > **Five-layer architecture**: **Hardware (NPU/GPU/MCU)** → **Runtimes (llama.cpp, MLC-LLM, ExecuTorch)** → **Model Efficiency (Quantization, Pruning, KD)** → **Agentic/Cognitive (LLM Agents, RAG, Planning)** → **Applications (Healthcare, Smart Home, Autonomous)** — with cross-cutting concerns (security, energy, benchmarks, data pipeline, feedback loops, networking, standardization) on the left. See the full **Modern Era** section below for detailed 2023–2026 literature and supporting figures.
 
@@ -95,6 +95,8 @@ It serves researchers, engineers, and students who want to deploy real intellige
 
 Federated Learning (FL) enables collaborative model training across distributed edge devices without centralizing raw data, crucial for privacy-preserving edge AI. Recent advances combine FL with LLMs, PEFT, and heterogeneous edge hardware.
 
+![Federated Learning on Edge](Figures/federated_learning_edge.png)
+
 ### Federated Learning Foundations & Systems
 
 | Title & Basic Information | Affiliation | Code |
@@ -125,6 +127,8 @@ Federated Learning (FL) enables collaborative model training across distributed 
 ## New: TinyML & Microcontroller AI
 
 TinyML pushes AI inference to ultra-low-power microcontrollers (MCUs) with KB-level memory and mW-level power budgets. The field has rapidly evolved from basic CNNs to on-device Transformers and small language models.
+
+![TinyML Ecosystem](Figures/tinyml_ecosystem_landscape.png)
 
 ### Foundational TinyML Papers
 
@@ -206,6 +210,8 @@ Beyond inference, enabling on-device training and fine-tuning allows models to a
 ## New: Multimodal & Embodied Edge AI
 
 Multimodal models (vision + language + audio) and embodied AI systems (robots, AR/VR, autonomous vehicles) running on edge devices represent the next frontier. Key challenges include fusing modalities under tight memory/power budgets.
+
+![Edge AI Agent Architecture](Figures/edge_ai_agent_architecture.png)
 
 ### Multimodal Models on Edge
 
@@ -296,6 +302,8 @@ Edge AI is transforming diverse industries. This section highlights real-world d
 ### 1.1. Edge Computing
 Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data generation. This proximity is expected to improve response times, reduce bandwidth consumption, and enable real-time analytics.
 
+![Edge Computing Infrastructure](Figures/Edge_computing_infrastructure.png)
+
 - [What is edge computing? Everything you need to know](https://www.techtarget.com/searchdatacenter/definition/edge-computing)
 - [Machine Learning at the Edge — μML](https://heartbeat.comet.ml/machine-learning-at-the-edge-%CE%BCml-2802f1af92de)
 
@@ -317,19 +325,28 @@ Edge AI refers to the deployment of artificial intelligence (AI) algorithms and 
 
 ## 2. Our Survey (To be released)
 ### 2.1 The Taxonomy of the Discussed Topics
-![Framework](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/survey_structureV2.png)
+![Framework](Figures/survey_structureV2.png)
+
+**Edge AI — Unified Taxonomy (New)**:
+
+![Edge AI Unified Taxonomy](Figures/Framework.png)
+
 ### 2.2 Edge AI Optimization Triad
 We introduce a data-model-system optimization triad for edge deployment.
-![Scope](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_ai_frameworks.png)
+![Scope](Figures/edge_ai_frameworks.png)
 ### 2.3 The Edge AI Deployment Pipeline
 An overview of edge deployment. The figure shows a general pipeline from the three aspects of data, model and system. Note that not all steps are necessary in real applications.
-![Pipeline](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_deployment_pipeline.png)
+![Pipeline](Figures/edge_deployment_pipeline.png)
+
+**Research Scope Overview — Edge AI**:
+
+![Research Scope](Figures/research_scope.png)
 
 
 ##  3. The Data-Model-System Optimization Triad
 ### 3.1. Data Optimization
 An overview of data optimization operations. Data cleaning improves data quality by removing errors and inconsistencies in the raw data. Feature compression is used to eliminate irrelevant and redundant features. For scarce data, data augmentation is employed to increase the data size.
-![Data](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/data_optimization.png)
+![Data](Figures/data_optimization.png)
 
 #### 3.1.1. Data Cleaning
 | Title & Basic Information | Affiliation | Code |
@@ -386,7 +403,7 @@ An overview of data optimization operations. Data cleaning improves data quality
 
 ### 3.2. Model Optimization
 An overview of model optimization operations. Model design involves creating lightweight models through manual and automated techniques, including architecture selection, parameter tuning, and regularization. Model compression involves using various techniques, such as pruning, quantization, and knowledge distillation, to reduce the size of the model and obtain a compact model that requires fewer resources while maintaining high accuracy.
-![Model](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/model_optimization.png)
+![Model](Figures/model_optimization.png)
 
 #### 3.2.1. Model Design
 ##### 3.2.1.1. Compact Architecture Design
@@ -530,7 +547,7 @@ An overview of model optimization operations. Model design involves creating lig
 
 ### 3.3. System Optimization
 An overview of system optimization operations. Software optimization involves developing frameworks for lightweight model training and inference, while hardware optimization focuses on accelerating models using hardware-based approaches to improve computational efficiency on edge devices.
-![System](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/system_optimization.png)
+![System](Figures/system_optimization.png)
 
 #### 3.3.1. Software Optimization
 | Title & Basic Information | Affiliation | Code |
@@ -582,17 +599,17 @@ An overview of system optimization operations. Software optimization involves de
 <!-- 
 ## 4. Important Surveys on Edge AI (Related to edge inference and model deployment)
 - [Convergence of edge computing and deep learning: A comprehensive survey. IEEE Communications Surveys & Tutorials, 22(2), 869-904.](https://ieeexplore.ieee.org/abstract/document/8976180/)
-![](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/relation_ei_ie.png)
+![](Figures/relation_ei_ie.png)
 - [Deep learning with edge computing: A review. Proceedings of the IEEE, 107(8), 1655-1674.](https://ieeexplore.ieee.org/abstract/document/8763885/)
-![](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/DNN_inference_speedup_methods.png)
+![](Figures/DNN_inference_speedup_methods.png)
 - [Machine learning at the network edge: A survey. ACM Computing Surveys (CSUR), 54(8), 1-37.](https://dl.acm.org/doi/abs/10.1145/3469029)
-![](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/ML_at_edge.png)
+![](Figures/ML_at_edge.png)
 - [Edge intelligence: The confluence of edge computing and artificial intelligence. IEEE Internet of Things Journal, 7(8), 7457-7469.](https://ieeexplore.ieee.org/abstract/document/9052677/)
-![](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/research_roadmap_edge_intelligence.png)
+![](Figures/research_roadmap_edge_intelligence.png)
 - [Edge intelligence: Paving the last mile of artificial intelligence with edge computing. Proceedings of the IEEE, 107(8), 1738-1762.](https://ieeexplore.ieee.org/abstract/document/8736011/)
-![](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/six_level_EI.png)
+![](Figures/six_level_EI.png)
 - [Edge intelligence: Empowering intelligence to the edge of network. Proceedings of the IEEE, 109(11), 1778-1837.](https://ieeexplore.ieee.org/abstract/document/9596610/)
-![](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/classification_of_edge_ai.png)
+![](Figures/classification_of_edge_ai.png)
 
 
 ## 2. Papers 
@@ -683,14 +700,14 @@ An overview of system optimization operations. Software optimization involves de
 
 ## Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)
 
-![Edge AI Evolution](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_ai_evolution.png)
+![Edge AI Evolution](Figures/edge_ai_evolution.png)
 
 > **Key insight**: From 2016 TinyML (KB-level MCU) to 2026 Agentic Edge (LLM+RAG+Tools), the field has evolved through five distinct eras — each unlocking new capabilities at the edge.
 
 
 **From TinyML to Cognitive Edge Computing** — evolution of on-device intelligence. The unified architecture above (see [top of this page](#new-unified-architecture--cognitive-edge-2023-2026)) shows the full five-layer stack from hardware to agentic applications.
 
-![Evolution](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_ai_evolution.png)
+![Evolution](Figures/edge_ai_evolution.png)
 
 Key research directions for running large models at the edge (phones, microcontrollers, NPUs, laptops with NPUs):
 
@@ -703,7 +720,11 @@ Key research directions for running large models at the edge (phones, microcontr
 
 **Layered optimization for LLMs on edge** (data, model, system, hardware co-design):
 
-![LLM Layers](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/llm_on_edge_layers.png)
+![LLM Layers](Figures/llm_on_edge_layers.png)
+
+**Comprehensive Edge LLM Optimization Taxonomy** (new figure):
+
+![Edge LLM Optimization Taxonomy](Figures/edge_llm_optimization_taxonomy.png)
 
 Selected papers & systems (2023–2026):
 
@@ -791,7 +812,11 @@ Key works & projects:
 
 Production-grade stacks for shipping models (including LLMs) to edge:
 
-![On-Device LLM Stack](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/on_device_llm_stack.png)
+![On-Device LLM Stack](Figures/on_device_llm_stack.png)
+
+**Detailed Edge Deployment Pipeline**:
+
+![Edge Deployment Pipeline](Figures/edge_deployment_pipeline_detailed.png)
 
 - **Google**: LiteRT (ex-TFLite) + LiteRT-LM, MediaPipe, Android AICore, Gemini Nano.
 - **PyTorch**: ExecuTorch + Torch Mobile, PyTorch Edge.
@@ -833,6 +858,8 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 
 ## 8. Benchmarks, Datasets & Tools (2023–2026 focus)
 
+![Edge Benchmark Comparison](Figures/edge_benchmark_comparison.png)
+
 - [MLPerf Inference Edge / Tiny](https://mlcommons.org/en/inference-edge/)
 - [Edge AI benchmarks from TinyML Foundation](https://tinyml.org/)
 - [MobileLLM / Phi-3 / Qwen2 on-device eval](https://huggingface.co/spaces)
@@ -851,6 +878,10 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 - [SUSTAINABLE LLM INFERENCE FOR EDGE AI: Evaluating Quantized LLMs for Energy Efficiency](https://dl.acm.org/) (ACM TOSEM 2025).
 
 ## 9. Recent Surveys & Overviews (2023–2026)
+
+**Edge AI Research Trends (2016-2026)** — how the field evolved from TinyML to Edge LLM to Edge Agents:
+
+![Edge AI Trends Timeline](Figures/edge_ai_trends_timeline.png)
 
 - Wang et al. (2025). Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment. arXiv:2501.03265 (v2).
 - Surveys on LLM quantization, speculative decoding, on-device RAG, edge agents (2023–2025 arXiv wave).

@@ -22,7 +22,7 @@
   <!-- Data Augmentation -->
   <rect x="500" y="65" width="470" height="195" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="2" filter="url(#sh)"/>
   <rect x="500" y="65" width="470" height="42" rx="12" fill="#0e7490"/><rect x="500" y="93" width="470" height="14" fill="#0e7490"/>
-  <text x="735" y="93" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Data Augmentation & Synthesis</text>
+  <text x="735" y="93" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Data Augmentation &amp; Synthesis</text>
   <text x="525" y="136" fill="#67e8f9" font-size="12" font-weight="600">Classical</text>
   <text x="525" y="160" fill="#94a3b8" font-size="11">· Random crop, flip, rotation</text>
   <text x="525" y="180" fill="#94a3b8" font-size="11">· SpecAugment, MixUp, CutMix</text>
@@ -39,7 +39,7 @@
   <!-- Compressed Sensing -->
   <rect x="30" y="275" width="450" height="195" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#sh)"/>
   <rect x="30" y="275" width="450" height="42" rx="12" fill="#d97706"/><rect x="30" y="303" width="450" height="14" fill="#d97706"/>
-  <text x="255" y="303" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Compressed Sensing & Feature Engineering</text>
+  <text x="255" y="303" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Compressed Sensing &amp; Feature Engineering</text>
   <text x="55" y="345" fill="#fde68a" font-size="12" font-weight="600">Sampling</text>
   <text x="55" y="368" fill="#94a3b8" font-size="11">· Sub-Nyquist sampling</text>
   <text x="55" y="388" fill="#94a3b8" font-size="11">· Sparse representation</text>
@@ -68,7 +68,7 @@
   <!-- Benchmarks -->
   <rect x="30" y="485" width="940" height="100" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2" filter="url(#sh)"/>
   <rect x="30" y="485" width="940" height="42" rx="12" fill="#15803d"/><rect x="30" y="513" width="940" height="14" fill="#15803d"/>
-  <text x="500" y="513" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Key Benchmarks & Datasets</text>
+  <text x="500" y="513" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Key Benchmarks &amp; Datasets</text>
   <text x="55" y="555" fill="#86efac" font-size="11" font-weight="600">Vision:</text>
   <text x="130" y="555" fill="#94a3b8" font-size="11">CIFAR-10/100 · ImageNet · Visual Wake Words · COCO Tiny · OpenImages V6</text>
   <text x="55" y="575" fill="#86efac" font-size="11" font-weight="600">Audio:</text>
@@ -77,7 +77,7 @@
   <text x="500" y="555" fill="#86efac" font-size="11" font-weight="600">NLP:</text>
   <text x="555" y="555" fill="#94a3b8" font-size="11">SST-2 · WMT · GLUE · OpenOrca · Alpaca</text>
   <text x="500" y="575" fill="#86efac" font-size="11" font-weight="600">Bench:</text>
-"555" y="575" fill="#94a3b8" font-size="11">MLPerf Tiny · TinyBench · Edge AI Bench · ET Benchmark</text>
+<text x="555" y="575" fill="#94a3b8" font-size="11">MLPerf Tiny · TinyBench · Edge AI Bench · ET Benchmark</text>
 
   <!-- Summary -->
   <rect x="120" y="610" width="760" height="55" rx="10" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>

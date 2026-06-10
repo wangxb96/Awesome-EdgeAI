@@ -33,20 +33,20 @@
   
   <!-- Title -->
   <text x="600" y="48" text-anchor="middle" fill="#f8fafc" font-size="26" font-weight="700">Edge AI — Unified Taxonomy</text>
-  <text x="600" y="78" text-anchor="middle" fill="#94a3b8" font-size="13">From Data & Model Optimization to LLM, Agents & Cognitive Systems — Five Interconnected Pillars</text>
+  <text x="600" y="78" text-anchor="middle" fill="#94a3b8" font-size="13">From Data &amp; Model Optimization to LLM, Agents &amp; Cognitive Systems — Five Interconnected Pillars</text>
 
   <!-- Pillar 1: Data -->
   <rect x="30" y="120" width="215" height="660" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#sh)"/>
   <rect x="30" y="120" width="215" height="50" rx="14" fill="url(#dataG)"/>
   <rect x="30" y="155" width="215" height="15" fill="url(#dataG)"/>
-  <text x="137" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">📊 Data</text>
+  <text x="137" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700"> Data</text>
   
   <text x="50" y="200" fill="#93c5fd" font-size="12" font-weight="600">Federated Learning</text>
   <text x="50" y="225" fill="#cbd5e1" font-size="10">· Horizontal / Vertical FL</text>
   <text x="50" y="245" fill="#cbd5e1" font-size="10">· Split Learning</text>
   <text x="50" y="265" fill="#cbd5e1" font-size="10">· Personalization</text>
   
-  <text x="50" y="305" fill="#93c5fd" font-size="12" font-weight="600">Synthetic & Augmentation</text>
+  <text x="50" y="305" fill="#93c5fd" font-size="12" font-weight="600">Synthetic &amp; Augmentation</text>
   <text x="50" y="330" fill="#cbd5e1" font-size="10">· Data Distillation</text>
   <text x="50" y="350" fill="#cbd5e1" font-size="10">· Generative Aug</text>
   <text x="50" y="370" fill="#cbd5e1" font-size="10">· Domain Adaptation</text>
@@ -60,11 +60,11 @@
   <text x="50" y="545" fill="#cbd5e1" font-size="10">· Streaming ETL</text>
   <text x="50" y="565" fill="#cbd5e1" font-size="10">· TinyML Signals</text>
 
-  <text x="50" y="610" fill="#93c5fd" font-size="12" font-weight="600">Data Quality & Annotation</text>
+  <text x="50" y="610" fill="#93c5fd" font-size="12" font-weight="600">Data Quality &amp; Annotation</text>
   <text x="50" y="635" fill="#cbd5e1" font-size="10">· Weak Supervision</text>
   <text x="50" y="655" fill="#cbd5e1" font-size="10">· Self-Supervised</text>
 
-  <text x="50" y="700" fill="#93c5fd" font-size="12" font-weight="600">Benchmarks & Datasets</text>
+  <text x="50" y="700" fill="#93c5fd" font-size="12" font-weight="600">Benchmarks &amp; Datasets</text>
   <text x="50" y="725" fill="#cbd5e1" font-size="10">· CIFAR-10/100 · ImageNet</text>
   <text x="50" y="745" fill="#cbd5e1" font-size="10">· Speech Commands</text>
   <text x="50" y="765" fill="#cbd5e1" font-size="10">· WMT · GLUE · OpenOrca</text>
@@ -73,7 +73,7 @@
   <rect x="260" y="120" width="215" height="660" rx="14" fill="#1e293b" stroke="#06b6d4" stroke-width="2" filter="url(#sh)"/>
   <rect x="260" y="120" width="215" height="50" rx="14" fill="url(#modelG)"/>
   <rect x="260" y="155" width="215" height="15" fill="url(#modelG)"/>
-  <text x="367" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">🧠 Model</text>
+  <text x="367" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700"> Model</text>
 
   <text x="280" y="200" fill="#67e8f9" font-size="12" font-weight="600">Compression</text>
   <text x="280" y="225" fill="#cbd5e1" font-size="10">· Quantization (INT8/INT4/INT2)</text>
@@ -107,9 +107,9 @@
   <rect x="490" y="120" width="215" height="660" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#sh)"/>
   <rect x="490" y="120" width="215" height="50" rx="14" fill="url(#systemG)"/>
   <rect x="490" y="155" width="215" height="15" fill="url(#systemG)"/>
-  <text x="597" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">⚙️ System</text>
+  <text x="597" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">️ System</text>
 
-  <text x="510" y="200" fill="#fde68a" font-size="12" font-weight="600">Runtimes & Frameworks</text>
+  <text x="510" y="200" fill="#fde68a" font-size="12" font-weight="600">Runtimes &amp; Frameworks</text>
   <text x="510" y="225" fill="#cbd5e1" font-size="10">· llama.cpp · MLC-LLM</text>
   <text x="510" y="245" fill="#cbd5e1" font-size="10">· ExecuTorch · TFLite</text>
   <text x="510" y="265" fill="#cbd5e1" font-size="10">· ONNX Runtime</text>
@@ -119,7 +119,7 @@
   <text x="510" y="350" fill="#cbd5e1" font-size="10">· TVM · MLIR · XLA</text>
   <text x="510" y="370" fill="#cbd5e1" font-size="10">· GLOW · TensorRT</text>
 
-  <text x="510" y="410" fill="#fde68a" font-size="12" font-weight="600">Memory & Compute</text>
+  <text x="510" y="410" fill="#fde68a" font-size="12" font-weight="600">Memory &amp; Compute</text>
   <text x="510" y="435" fill="#cbd5e1" font-size="10">· Memory Management</text>
   <text x="510" y="455" fill="#cbd5e1" font-size="10">· Operator Fusion</text>
   <text x="510" y="475" fill="#cbd5e1" font-size="10">· Pipelining</text>
@@ -141,7 +141,7 @@
   <rect x="720" y="120" width="215" height="660" rx="14" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#sh)"/>
   <rect x="720" y="120" width="215" height="50" rx="14" fill="url(#largeG)"/>
   <rect x="720" y="155" width="215" height="15" fill="url(#largeG)"/>
-  <text x="827" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">🦾 LLMs / VLMs</text>
+  <text x="827" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700"> LLMs / VLMs</text>
 
   <text x="740" y="200" fill="#fca5a5" font-size="12" font-weight="600">Edge LLM Families</text>
   <text x="740" y="225" fill="#cbd5e1" font-size="10">· Llama 2/3 · Phi-3/4</text>
@@ -167,14 +167,14 @@
   <text x="740" y="675" fill="#cbd5e1" font-size="10">· Perplexity · MMLU</text>
   <text x="740" y="695" fill="#cbd5e1" font-size="10">· HumanEval · IFEval</text>
 
-  <text x="740" y="745" fill="#fca5a5" font-size="12" font-weight="600">Safety & Alignment</text>
+  <text x="740" y="745" fill="#fca5a5" font-size="12" font-weight="600">Safety &amp; Alignment</text>
   <text x="740" y="770" fill="#cbd5e1" font-size="10">· RLHF · Guardrails</text>
 
   <!-- Pillar 5: Agents -->
   <rect x="950" y="120" width="220" height="660" rx="14" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" filter="url(#sh)"/>
   <rect x="950" y="120" width="220" height="50" rx="14" fill="url(#agentG)"/>
   <rect x="950" y="155" width="220" height="15" fill="url(#agentG)"/>
-  <text x="1060" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">🤖 Agents</text>
+  <text x="1060" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700"> Agents</text>
 
   <text x="970" y="200" fill="#c4b5fd" font-size="12" font-weight="600">Agent Architectures</text>
   <text x="970" y="225" fill="#cbd5e1" font-size="10">· ReAct · AutoGPT · CrewAI</text>
@@ -184,12 +184,12 @@
   <text x="970" y="315" fill="#cbd5e1" font-size="10">· MetaGPT · AutoGen</text>
   <text x="970" y="335" fill="#cbd5e1" font-size="10">· Swarm Intelligence</text>
 
-  <text x="970" y="380" fill="#c4b5fd" font-size="12" font-weight="600">Tool Use & RAG</text>
+  <text x="970" y="380" fill="#c4b5fd" font-size="12" font-weight="600">Tool Use &amp; RAG</text>
   <text x="970" y="405" fill="#cbd5e1" font-size="10">· Function Calling</text>
   <text x="970" y="425" fill="#cbd5e1" font-size="10">· Vector DB (Chroma)</text>
   <text x="970" y="445" fill="#cbd5e1" font-size="10">· LlamaIndex</text>
 
-  <text x="970" y="490" fill="#c4b5fd" font-size="12" font-weight="600">Planning & Reasoning</text>
+  <text x="970" y="490" fill="#c4b5fd" font-size="12" font-weight="600">Planning &amp; Reasoning</text>
   <text x="970" y="515" fill="#cbd5e1" font-size="10">· Chain-of-Thought</text>
   <text x="970" y="535" fill="#cbd5e1" font-size="10">· Tree-of-Thought</text>
   <text x="970" y="555" fill="#cbd5e1" font-size="10">· Graph-of-Thought</text>

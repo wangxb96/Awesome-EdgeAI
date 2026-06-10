@@ -22,7 +22,7 @@
   <text x="350" y="115" fill="#cbd5e1" font-size="11">· Speculative decoding (draft model)</text>
   <text x="350" y="135" fill="#cbd5e1" font-size="11">· Medusa heads (parallel decoding)</text>
   <text x="350" y="155" fill="#cbd5e1" font-size="11">· Lookahead decoding</text>
-  <text x="350" y="175" fill="#cbd5e1" font-size="11">· KV-Cache quantization & eviction</text>
+  <text x="350" y="175" fill="#cbd5e1" font-size="11">· KV-Cache quantization &amp; eviction</text>
   <text x="350" y="195" fill="#cbd5e1" font-size="11">· Flash Attention (fused kernel)</text>
   <text x="350" y="215" fill="#cbd5e1" font-size="11">· PagedAttention (virtual memory)</text>
   <text x="350" y="235" fill="#cbd5e1" font-size="11">· StreamingLLM, H2O attention</text>
@@ -31,7 +31,7 @@
   <rect x="640" y="85" width="290" height="10" fill="#0891b2"/>
   <text x="785.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">System Optimization</text>
   <text x="655" y="115" fill="#cbd5e1" font-size="11">· Operator fusion (TVM, MLIR)</text>
-  <text x="655" y="135" fill="#cbd5e1" font-size="11">· Memory planning & pooling</text>
+  <text x="655" y="135" fill="#cbd5e1" font-size="11">· Memory planning &amp; pooling</text>
   <text x="655" y="155" fill="#cbd5e1" font-size="11">· Graph-level optimization</text>
   <text x="655" y="175" fill="#cbd5e1" font-size="11">· CPU/GPU/NPU backend tuning</text>
   <text x="655" y="195" fill="#cbd5e1" font-size="11">· Batch processing (continuous batching)</text>
@@ -40,7 +40,7 @@
   <rect x="30" y="300" width="450" height="130" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
   <rect x="30" y="300" width="450" height="35" rx="10" fill="#6d28d9"/>
   <rect x="30" y="325" width="450" height="10" fill="#6d28d9"/>
-  <text x="255.0" y="323" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">PEFT & Adaptation</text>
+  <text x="255.0" y="323" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">PEFT &amp; Adaptation</text>
   <text x="45" y="355" fill="#cbd5e1" font-size="11">· LoRA/QLoRA — low-rank adapter fine-tuning</text>
   <text x="45" y="375" fill="#cbd5e1" font-size="11">· Adapter layers, Prefix tuning, Prompt tuning</text>
   <text x="45" y="395" fill="#cbd5e1" font-size="11">· On-device fine-tuning with minimal parameters</text>

@@ -8,7 +8,7 @@
   <rect x="30" y="60" width="290" height="35" rx="10" fill="#1d4ed8"/>
   <rect x="30" y="85" width="290" height="10" fill="#1d4ed8"/>
   <text x="175.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Data Optimization</text>
-  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Federated & Split Learning</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Federated &amp; Split Learning</text>
   <text x="45" y="135" fill="#cbd5e1" font-size="11">· Data Augmentation/Synthesis</text>
   <text x="45" y="155" fill="#cbd5e1" font-size="11">· Compressed Sensing</text>
   <text x="45" y="175" fill="#cbd5e1" font-size="11">· Smart On-Device Caching</text>
@@ -47,7 +47,7 @@
   <rect x="490" y="320" width="440" height="120" rx="10" fill="#1e293b" stroke="#15803d" stroke-width="2" filter="url(#sh)"/>
   <rect x="490" y="320" width="440" height="35" rx="10" fill="#15803d"/>
   <rect x="490" y="345" width="440" height="10" fill="#15803d"/>
-  <text x="710.0" y="343" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Agents & Cognitive Edge</text>
+  <text x="710.0" y="343" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Agents &amp; Cognitive Edge</text>
   <text x="505" y="375" fill="#cbd5e1" font-size="11">· LLM Agents (ReAct, AutoGPT, CrewAI)</text>
   <text x="505" y="395" fill="#cbd5e1" font-size="11">· Multi-Agent, RAG, Tool Use, Planning</text>
   <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>

@@ -95,8 +95,6 @@ It serves researchers, engineers, and students who want to deploy real intellige
 
 Federated Learning (FL) enables collaborative model training across distributed edge devices without centralizing raw data, crucial for privacy-preserving edge AI. Recent advances combine FL with LLMs, PEFT, and heterogeneous edge hardware.
 
-![Federated Learning on Edge](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/federated_learning_edge.png)
-
 ### Federated Learning Foundations & Systems
 
 | Title & Basic Information | Affiliation | Code |
@@ -127,8 +125,6 @@ Federated Learning (FL) enables collaborative model training across distributed 
 ## New: TinyML & Microcontroller AI
 
 TinyML pushes AI inference to ultra-low-power microcontrollers (MCUs) with KB-level memory and mW-level power budgets. The field has rapidly evolved from basic CNNs to on-device Transformers and small language models.
-
-![TinyML Ecosystem](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/tinyml_ecosystem_landscape.png)
 
 ### Foundational TinyML Papers
 
@@ -210,8 +206,6 @@ Beyond inference, enabling on-device training and fine-tuning allows models to a
 ## New: Multimodal & Embodied Edge AI
 
 Multimodal models (vision + language + audio) and embodied AI systems (robots, AR/VR, autonomous vehicles) running on edge devices represent the next frontier. Key challenges include fusing modalities under tight memory/power budgets.
-
-![Edge AI Agent Architecture](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_ai_agent_architecture.png)
 
 ### Multimodal Models on Edge
 
@@ -711,10 +705,6 @@ Key research directions for running large models at the edge (phones, microcontr
 
 ![LLM Layers](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/llm_on_edge_layers.png)
 
-**Comprehensive Edge LLM Optimization Taxonomy** (new figure):
-
-![Edge LLM Optimization Taxonomy](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_llm_optimization_taxonomy.png)
-
 Selected papers & systems (2023–2026):
 
 - [LiteRT-LM (Google AI Edge)](https://github.com/google-ai-edge/litert-lm) — on-device LLM inference optimized for mobile/NPU (2025+).
@@ -803,10 +793,6 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 
 ![On-Device LLM Stack](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/on_device_llm_stack.png)
 
-**End-to-End Edge AI Deployment Pipeline** (new detailed figure):
-
-![Edge Deployment Pipeline](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_deployment_pipeline_detailed.png)
-
 - **Google**: LiteRT (ex-TFLite) + LiteRT-LM, MediaPipe, Android AICore, Gemini Nano.
 - **PyTorch**: ExecuTorch + Torch Mobile, PyTorch Edge.
 - **Apple**: Core ML 6/7 + MLX + Neural Engine.
@@ -847,10 +833,6 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 
 ## 8. Benchmarks, Datasets & Tools (2023–2026 focus)
 
-**Edge LLM Inference Performance Comparison** (illustrative benchmark):
-
-![Edge Benchmark Comparison](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_benchmark_comparison.png)
-
 - [MLPerf Inference Edge / Tiny](https://mlcommons.org/en/inference-edge/)
 - [Edge AI benchmarks from TinyML Foundation](https://tinyml.org/)
 - [MobileLLM / Phi-3 / Qwen2 on-device eval](https://huggingface.co/spaces)
@@ -869,10 +851,6 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 - [SUSTAINABLE LLM INFERENCE FOR EDGE AI: Evaluating Quantized LLMs for Energy Efficiency](https://dl.acm.org/) (ACM TOSEM 2025).
 
 ## 9. Recent Surveys & Overviews (2023–2026)
-
-**Edge AI Research Trends (2016-2026)** — how the field evolved from TinyML to Edge LLM to Edge Agents:
-
-![Edge AI Trends Timeline](https://raw.githubusercontent.com/wangxb96/Awesome-EdgeAI/main/Figures/edge_ai_trends_timeline.png)
 
 - Wang et al. (2025). Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment. arXiv:2501.03265 (v2).
 - Surveys on LLM quantization, speculative decoding, on-device RAG, edge agents (2023–2025 arXiv wave).

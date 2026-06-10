@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1100" height="750" fill="url(#bg)"/>
+  <text x="550" y="40" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">Edge AI Frameworks — Production Landscape (2024–2026)</text>
+
+  <!-- Row 1: Meta -->
+  <rect x="20" y="70" width="200" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="120" y="105" text-anchor="middle" fill="#60a5fa" font-size="14" font-weight="700">PyTorch / ExecuTorch</text>
+  <text x="120" y="130" text-anchor="middle" fill="#94a3b8" font-size="10">Meta · Mobile · 2023</text>
+  <text x="120" y="150" text-anchor="middle" fill="#64748b" font-size="9">On-device training + inference</text>
+
+  <rect x="240" y="70" width="200" height="100" rx="10" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="340" y="105" text-anchor="middle" fill="#22d3ee" font-size="14" font-weight="700">llama.cpp / GGUF</text>
+  <text x="340" y="130" text-anchor="middle" fill="#94a3b8" font-size="10">Community · 2023</text>
+  <text x="340" y="150" text-anchor="middle" fill="#64748b" font-size="9">CPU-first LLM Inference</text>
+
+  <rect x="460" y="70" width="200" height="100" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="560" y="105" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="700">MLC-LLM</text>
+  <text x="560" y="130" text-anchor="middle" fill="#94a3b8" font-size="10">Apache TVM · 2024</text>
+  <text x="560" y="150" text-anchor="middle" fill="#64748b" font-size="9">Cross-platform LLM deploy</text>
+
+  <rect x="680" y="70" width="200" height="100" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="780" y="105" text-anchor="middle" fill="#a78bfa" font-size="14" font-weight="700">MediaPipe</text>
+  <text x="780" y="130" text-anchor="middle" fill="#94a3b8" font-size="10">Google · Multi-platform</text>
+  <text x="780" y="150" text-anchor="middle" fill="#64748b" font-size="9">Vision · Audio · Text</text>
+
+  <rect x="900" y="70" width="180" height="100" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="990" y="105" text-anchor="middle" fill="#f87171" font-size="14" font-weight="700">TFLite Micro</text>
+  <text x="990" y="130" text-anchor="middle" fill="#94a3b8" font-size="10">Google · MCU · 2019</text>
+  <text x="990" y="150" text-anchor="middle" fill="#64748b" font-size="9">KB-level models</text>
+
+  <!-- Row 2 -->
+  <rect x="20" y="190" width="200" height="100" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="120" y="225" text-anchor="middle" fill="#4ade80" font-size="14" font-weight="700">ONNX Runtime</text>
+  <text x="120" y="250" text-anchor="middle" fill="#94a3b8" font-size="10">Microsoft · 2021</text>
+  <text x="120" y="270" text-anchor="middle" fill="#64748b" font-size="9">Cross-framework optim.</text>
+
+  <rect x="240" y="190" width="200" height="100" rx="10" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="340" y="225" text-anchor="middle" fill="#f472b6" font-size="14" font-weight="700">CoreML / MLX</text>
+  <text x="340" y="250" text-anchor="middle" fill="#94a3b8" font-size="10">Apple · 2023</text>
+  <text x="340" y="270" text-anchor="middle" fill="#64748b" font-size="9">ANE-optimized inference</text>
+
+  <rect x="460" y="190" width="200" height="100" rx="10" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="560" y="225" text-anchor="middle" fill="#22d3ee" font-size="14" font-weight="700">OpenVINO</text>
+  <text x="560" y="250" text-anchor="middle" fill="#94a3b8" font-size="10">Intel · 2018</text>
+  <text x="560" y="270" text-anchor="middle" fill="#64748b" font-size="9">CPU/GPU/VPU optim.</text>
+
+  <rect x="680" y="190" width="200" height="100" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="780" y="225" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="700">TensorRT</text>
+  <text x="780" y="250" text-anchor="middle" fill="#94a3b8" font-size="10">NVIDIA · Jetson · 2017</text>
+  <text x="780" y="270" text-anchor="middle" fill="#64748b" font-size="9">GPU-optimized inference</text>
+
+  <rect x="900" y="190" width="180" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="990" y="225" text-anchor="middle" fill="#60a5fa" font-size="14" font-weight="700">Arm NN</text>
+  <text x="990" y="250" text-anchor="middle" fill="#94a3b8" font-size="10">Arm Ltd · 2018</text>
+  <text x="990" y="270" text-anchor="middle" fill="#64748b" font-size="9">Cortex-A/M optim.</text>
+
+  <!-- Row 3 -->
+  <rect x="20" y="310" width="200" height="100" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="120" y="345" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="700">IREE / MLIR</text>
+  <text x="120" y="370" text-anchor="middle" fill="#94a3b8" font-size="10">Google/LLVM · 2021</text>
+  <text x="120" y="390" text-anchor="middle" fill="#64748b" font-size="9">Compile once, run anywhere</text>
+
+  <rect x="240" y="310" width="200" height="100" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="340" y="345" text-anchor="middle" fill="#a78bfa" font-size="14" font-weight="700">Apache TVM</text>
+  <text x="340" y="370" text-anchor="middle" fill="#94a3b8" font-size="10">Apache · 2017</text>
+  <text x="340" y="390" text-anchor="middle" fill="#64748b" font-size="9">End-to-end deep learning</text>
+
+  <rect x="460" y="310" width="200" height="100" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="560" y="345" text-anchor="middle" fill="#f87171" font-size="14" font-weight="700">ncnn</text>
+  <text x="560" y="370" text-anchor="middle" fill="#94a3b8" font-size="10">Tencent · 2017</text>
+  <text x="560" y="390" text-anchor="middle" fill="#64748b" font-size="9">Mobile-optimized inference</text>
+
+  <rect x="680" y="310" width="200" height="100" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="780" y="345" text-anchor="middle" fill="#4ade80" font-size="14" font-weight="700">MNN</text>
+  <text x="780" y="370" text-anchor="middle" fill="#94a3b8" font-size="10">Alibaba · 2019</text>
+  <text x="780" y="390" text-anchor="middle" fill="#64748b" font-size="9">Lightweight NN inference</text>
+
+  <rect x="900" y="310" width="180" height="100" rx="10" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="990" y="345" text-anchor="middle" fill="#f472b6" font-size="14" font-weight="700">TNN</text>
+  <text x="990" y="370" text-anchor="middle" fill="#94a3b8" font-size="10">Tencent · 2020</text>
+  <text x="990" y="390" text-anchor="middle" fill="#64748b" font-size="9">High-performance mobile</text>
+
+  <!-- Summary Table -->
+  <rect x="20" y="435" width="1060" height="280" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="550" y="470" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700">Framework Selection Guide</text>
+
+  <rect x="40" y="490" width="200" height="35" rx="5" fill="#0f172a"/><text x="140" y="513" text-anchor="middle" fill="#94a3b8" font-size="11">Use Case</text>
+  <rect x="250" y="490" width="400" height="35" rx="5" fill="#0f172a"/><text x="450" y="513" text-anchor="middle" fill="#94a3b8" font-size="11">Recommended Framework</text>
+  <rect x="660" y="490" width="400" height="35" rx="5" fill="#0f172a"/><text x="860" y="513" text-anchor="middle" fill="#94a3b8" font-size="11">Target Hardware</text>
+
+  <rect x="40" y="535" width="200" height="30" rx="3" fill="#1e293b"/><text x="140" y="555" text-anchor="middle" fill="#cbd5e1" font-size="10">MCU TinyML (KB models)</text>
+  <rect x="250" y="535" width="400" height="30" rx="3" fill="#1e293b"/><text x="450" y="555" text-anchor="middle" fill="#cbd5e1" font-size="10">TFLite Micro · ExecuTorch · CMSIS-NN</text>
+  <rect x="660" y="535" width="400" height="30" rx="3" fill="#1e293b"/><text x="860" y="555" text-anchor="middle" fill="#cbd5e1" font-size="10">ARM Cortex-M, RISC-V</text>
+
+  <rect x="40" y="575" width="200" height="30" rx="3" fill="#1e293b"/><text x="140" y="595" text-anchor="middle" fill="#cbd5e1" font-size="10">Mobile LLM (1-7B params)</text>
+  <rect x="250" y="575" width="400" height="30" rx="3" fill="#1e293b"/><text x="450" y="595" text-anchor="middle" fill="#cbd5e1" font-size="10">llama.cpp · MLC-LLM · CoreML/MLX</text>
+  <rect x="660" y="575" width="400" height="30" rx="3" fill="#1e293b"/><text x="860" y="595" text-anchor="middle" fill="#cbd5e1" font-size="10">iPhone, Android, Laptop</text>
+
+  <rect x="40" y="615" width="200" height="30" rx="3" fill="#1e293b"/><text x="140" y="635" text-anchor="middle" fill="#cbd5e1" font-size="10">Edge Server/GPU</text>
+  <rect x="250" y="615" width="400" height="30" rx="3" fill="#1e293b"/><text x="450" y="635" text-anchor="middle" fill="#cbd5e1" font-size="10">TensorRT · OpenVINO · ONNX Runtime</text>
+  <rect x="660" y="615" width="400" height="30" rx="3" fill="#1e293b"/><text x="860" y="635" text-anchor="middle" fill="#cbd5e1" font-size="10">Jetson Orin, Intel CPU/GPU</text>
+
+  <rect x="40" y="655" width="200" height="30" rx="3" fill="#1e293b"/><text x="140" y="675" text-anchor="middle" fill="#cbd5e1" font-size="10">Cross-platform Mobile</text>
+  <rect x="250" y="655" width="400" height="30" rx="3" fill="#1e293b"/><text x="450" y="675" text-anchor="middle" fill="#cbd5e1" font-size="10">ONNX Runtime Mobile · ncnn · MNN</text>
+  <rect x="660" y="655" width="400" height="30" rx="3" fill="#1e293b"/><text x="860" y="675" text-anchor="middle" fill="#cbd5e1" font-size="10">Android, iOS, Embedded</text>
+</svg>

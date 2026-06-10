@@ -1,0 +1,63 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">DNN Inference Speedup Methods</text>
+
+  <rect x="30" y="60" width="285" height="230" rx="10" fill="#1e293b" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="285" height="35" rx="10" fill="#1d4ed8"/>
+  <rect x="30" y="85" width="285" height="10" fill="#1d4ed8"/>
+  <text x="172.5" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Model-Level</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Quantization (INT8/4/2)</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· Pruning (Structured/Unstructured)</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· Knowledge Distillation</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· Low-Rank Factorization</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· NAS/MNAS for efficiency</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· Compact architectures</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="11">· Weight sharing / hashing</text>
+  <rect x="330" y="60" width="285" height="230" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="330" y="60" width="285" height="35" rx="10" fill="#d97706"/>
+  <rect x="330" y="85" width="285" height="10" fill="#d97706"/>
+  <text x="472.5" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">System-Level</text>
+  <text x="345" y="115" fill="#cbd5e1" font-size="11">· Operator fusion / kernel tuning</text>
+  <text x="345" y="135" fill="#cbd5e1" font-size="11">· Memory planning & reuse</text>
+  <text x="345" y="155" fill="#cbd5e1" font-size="11">· Graph-level optimization</text>
+  <text x="345" y="175" fill="#cbd5e1" font-size="11">· Compiler auto-tuning (AutoTVM)</text>
+  <text x="345" y="195" fill="#cbd5e1" font-size="11">· Parallelism (thread/vector)</text>
+  <text x="345" y="215" fill="#cbd5e1" font-size="11">· Pipeline scheduling</text>
+  <text x="345" y="235" fill="#cbd5e1" font-size="11">· Quantized GEMM kernels</text>
+  <rect x="630" y="60" width="300" height="230" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+  <rect x="630" y="60" width="300" height="35" rx="10" fill="#dc2626"/>
+  <rect x="630" y="85" width="300" height="10" fill="#dc2626"/>
+  <text x="780.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Hardware-Level</text>
+  <text x="645" y="115" fill="#cbd5e1" font-size="11">· NPU / GPU / FPGA accelerators</text>
+  <text x="645" y="135" fill="#cbd5e1" font-size="11">· In-memory computing</text>
+  <text x="645" y="155" fill="#cbd5e1" font-size="11">· Approximate computing</text>
+  <text x="645" y="175" fill="#cbd5e1" font-size="11">· Dynamic voltage scaling</text>
+  <text x="645" y="195" fill="#cbd5e1" font-size="11">· Data path optimization</text>
+  <text x="645" y="215" fill="#cbd5e1" font-size="11">· Mixed-precision arithmetic</text>
+  <text x="645" y="235" fill="#cbd5e1" font-size="11">· Specialized ISA extensions</text>
+  <rect x="30" y="310" width="440" height="120" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="310" width="440" height="35" rx="10" fill="#0891b2"/>
+  <rect x="30" y="335" width="440" height="10" fill="#0891b2"/>
+  <text x="250.0" y="333" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Algorithmic Innovations</text>
+  <text x="45" y="365" fill="#cbd5e1" font-size="11">· Winograd convolution · FFT-based convolution</text>
+  <text x="45" y="385" fill="#cbd5e1" font-size="11">· Sparse computation · Lookup table methods</text>
+  <text x="45" y="405" fill="#cbd5e1" font-size="11">· Early-exit inference · Speculative decoding</text>
+  <rect x="490" y="310" width="440" height="120" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="310" width="440" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="490" y="335" width="440" height="10" fill="#6d28d9"/>
+  <text x="710.0" y="333" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">System+Algorithm Co-Design</text>
+  <text x="505" y="365" fill="#cbd5e1" font-size="11">· DNN partitioning (edge-cloud) · Adaptive offloading</text>
+  <text x="505" y="385" fill="#cbd5e1" font-size="11">· Cascade classifiers · Progressive inference</text>
+  <text x="505" y="405" fill="#cbd5e1" font-size="11">· HW-aware NAS · Joint optimization</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">2×–100× speedup achievable through combined optimization techniques</text>
+</svg>

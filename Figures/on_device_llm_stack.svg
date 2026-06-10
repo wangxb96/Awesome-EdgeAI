@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter></defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">On-Device LLM Stack</text>
+  <rect x="30" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="440" height="35" rx="10" fill="#1d4ed8"/>
+  <rect x="30" y="85" width="440" height="10" fill="#1d4ed8"/>
+  <text x="250.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Model Families</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Meta Llama 3.2 (1B, 3B)</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· Microsoft Phi-3/4 (3.8B, 14B)</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· Google Gemma 2 (2B, 9B)</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· Qwen2 (0.5B–7B)</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· Mistral (7B), Mixtral (8×7B MoE)</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· DeepSeek (1.3B–67B MoE)</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="11">· TinyLlama (1.1B), MobileLLM (125M)</text>
+  <text x="45" y="255" fill="#cbd5e1" font-size="11">· Apple OpenELM, DCLM</text>
+  <rect x="490" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="60" width="440" height="35" rx="10" fill="#d97706"/>
+  <rect x="490" y="85" width="440" height="10" fill="#d97706"/>
+  <text x="710.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Optimization Pipeline</text>
+  <text x="505" y="115" fill="#cbd5e1" font-size="11">· Step 1: Pre-train large model (cloud)</text>
+  <text x="505" y="135" fill="#cbd5e1" font-size="11">· Step 2: Quantize → GGUF/AWQ/GPTQ (INT4/INT8)</text>
+  <text x="505" y="155" fill="#cbd5e1" font-size="11">· Step 3: Apply PEFT (LoRA/QLoRA) for task</text>
+  <text x="505" y="175" fill="#cbd5e1" font-size="11">· Step 4: Speculative decoding setup (draft model)</text>
+  <text x="505" y="195" fill="#cbd5e1" font-size="11">· Step 5: KV-Cache config, Flash Attention</text>
+  <text x="505" y="215" fill="#cbd5e1" font-size="11">· Step 6: Export to runtime format (MLX/CoreML/ONNX)</text>
+  <text x="505" y="235" fill="#cbd5e1" font-size="11">· Step 7: On-device benchmark (perplexity, latency)</text>
+  <text x="505" y="255" fill="#cbd5e1" font-size="11">· Step 8: Package & deploy via OTA</text>
+  <rect x="30" y="315" width="440" height="100" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="315" width="440" height="35" rx="10" fill="#0891b2"/>
+  <rect x="30" y="340" width="440" height="10" fill="#0891b2"/>
+  <text x="250.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Deployment Runtimes</text>
+  <text x="45" y="370" fill="#cbd5e1" font-size="11">· llama.cpp — CPU, Metal, CUDA, Vulkan backends</text>
+  <text x="45" y="390" fill="#cbd5e1" font-size="11">· MLC-LLM — iOS, Android, WebGPU, OpenCL</text>
+  <rect x="490" y="315" width="440" height="100" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="315" width="440" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="490" y="340" width="440" height="10" fill="#6d28d9"/>
+  <text x="710.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Quality Metrics</text>
+  <text x="505" y="370" fill="#cbd5e1" font-size="11">· Perplexity (PPL) · MMLU score · Token/sec</text>
+  <text x="505" y="390" fill="#cbd5e1" font-size="11">· Time-to-First-Token (TTFT) · Memory footprint</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">Complete pipeline: model selection → optimization → deployment → monitoring on personal devices</text></svg>

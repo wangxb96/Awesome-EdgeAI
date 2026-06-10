@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter></defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">Federated Learning on Edge</text>
+  <rect x="30" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="440" height="35" rx="10" fill="#1d4ed8"/>
+  <rect x="30" y="85" width="440" height="10" fill="#1d4ed8"/>
+  <text x="250.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Core Paradigms</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Federated Averaging (FedAvg) — server aggregation</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· FedProx — handles heterogeneous clients</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· Split Learning — model partition across edge/cloud</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· Personalized FL — local adaptation per user</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· Vertical FL — feature-partitioned across orgs</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· Secure Aggregation — encrypted model updates</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="11">· Differential Privacy — noise injection for safety</text>
+  <text x="45" y="255" fill="#cbd5e1" font-size="11">· On-Device FL — no data leaves device</text>
+  <rect x="490" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="60" width="440" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="490" y="85" width="440" height="10" fill="#6d28d9"/>
+  <text x="710.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">LLM + FL</text>
+  <text x="505" y="115" fill="#cbd5e1" font-size="11">· Federated fine-tuning of LLMs with LoRA</text>
+  <text x="505" y="135" fill="#cbd5e1" font-size="11">· Federated prompt tuning — lightweight client</text>
+  <text x="505" y="155" fill="#cbd5e1" font-size="11">· Federated evaluation of on-device LLMs</text>
+  <text x="505" y="175" fill="#cbd5e1" font-size="11">· Split inference with privacy guarantees</text>
+  <text x="505" y="195" fill="#cbd5e1" font-size="11">· Communication-efficient FL for large models</text>
+  <text x="505" y="215" fill="#cbd5e1" font-size="11">· Heterogeneous edge device orchestration</text>
+  <text x="505" y="235" fill="#cbd5e1" font-size="11">· Federated RLHF for alignment</text>
+  <text x="505" y="255" fill="#cbd5e1" font-size="11">· Multi-task federated learning</text>
+  <rect x="30" y="315" width="440" height="100" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="315" width="440" height="35" rx="10" fill="#0891b2"/>
+  <rect x="30" y="340" width="440" height="10" fill="#0891b2"/>
+  <text x="250.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Challenges</text>
+  <text x="45" y="370" fill="#cbd5e1" font-size="11">· Non-IID data across clients</text>
+  <text x="45" y="390" fill="#cbd5e1" font-size="11">· Communication cost (gradient compression)</text>
+  <text x="45" y="410" fill="#cbd5e1" font-size="11">· System heterogeneity (compute, network)</text>
+  <rect x="490" y="315" width="440" height="100" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="315" width="440" height="35" rx="10" fill="#d97706"/>
+  <rect x="490" y="340" width="440" height="10" fill="#d97706"/>
+  <text x="710.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Applications</text>
+  <text x="505" y="370" fill="#cbd5e1" font-size="11">· Keyboard prediction (Gboard) · Health monitoring</text>
+  <text x="505" y="390" fill="#cbd5e1" font-size="11">· Smart home personalization · Autonomous fleet</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">Federated Learning enables collaborative model training while keeping data private on edge devices</text></svg>

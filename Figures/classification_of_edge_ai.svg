@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+    <linearGradient id="h1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#3b82f6"/><stop offset="100%" style="stop-color:#1d4ed8"/></linearGradient>
+    <linearGradient id="h2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#06b6d4"/><stop offset="100%" style="stop-color:#0e7490"/></linearGradient>
+    <linearGradient id="h3" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#8b5cf6"/><stop offset="100%" style="stop-color:#6d28d9"/></linearGradient>
+    <linearGradient id="h4" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#f59e0b"/><stop offset="100%" style="stop-color:#d97706"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1100" height="750" fill="url(#bg)"/>
+  <text x="550" y="45" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="700">Classification of Edge AI</text>
+  <text x="550" y="75" text-anchor="middle" fill="#94a3b8" font-size="13">Three dimensions: Architecture, Optimization Target, Application Domain</text>
+
+  <rect x="30" y="110" width="500" height="580" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="110" width="500" height="44" rx="12" fill="url(#h1)"/><rect x="30" y="140" width="500" height="14" fill="url(#h1)"/>
+  <text x="280" y="138" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">By Architecture</text>
+  <rect x="55" y="175" width="215" height="100" rx="8" fill="#1e3a5f"/><text x="162" y="205" text-anchor="middle" fill="#93c5fd" font-size="13" font-weight="700">Cloud-Assisted</text><text x="75" y="228" fill="#94a3b8" font-size="11">· DNN Partitioning</text><text x="75" y="248" fill="#94a3b8" font-size="11">· Split Computing</text><text x="75" y="268" fill="#94a3b8" font-size="11">· Early Exit / Distillation</text>
+  <rect x="285" y="175" width="215" height="100" rx="8" fill="#1e3a5f"/><text x="392" y="205" text-anchor="middle" fill="#93c5fd" font-size="13" font-weight="700">Edge-Only</text><text x="305" y="228" fill="#94a3b8" font-size="11">· TinyML (KB-MB, MCU)</text><text x="305" y="248" fill="#94a3b8" font-size="11">· On-Device LLM/VLM</text><text x="305" y="268" fill="#94a3b8" font-size="11">· Federated Learning</text>
+  <rect x="55" y="295" width="215" height="100" rx="8" fill="#1e3a5f"/><text x="162" y="325" text-anchor="middle" fill="#93c5fd" font-size="13" font-weight="700">Hierarchical Edge</text><text x="75" y="348" fill="#94a3b8" font-size="11">· End → Gateway → Cloud</text><text x="75" y="368" fill="#94a3b8" font-size="11">· KubeEdge / OpenYurt</text><text x="75" y="388" fill="#94a3b8" font-size="11">· Fog Computing</text>
+  <rect x="285" y="295" width="215" height="100" rx="8" fill="#1e3a5f"/><text x="392" y="325" text-anchor="middle" fill="#93c5fd" font-size="13" font-weight="700">Agentic / Cognitive</text><text x="305" y="348" fill="#94a3b8" font-size="11">· LLM Agents + RAG</text><text x="305" y="368" fill="#94a3b8" font-size="11">· Multi-Agent Systems</text><text x="305" y="388" fill="#94a3b8" font-size="11">· Embodied Edge AI</text>
+  <rect x="55" y="415" width="450" height="80" rx="8" fill="#1e3a5f"/><text x="280" y="445" text-anchor="middle" fill="#93c5fd" font-size="13" font-weight="700">Collaborative Edge</text><text x="75" y="468" fill="#94a3b8" font-size="11">· Swarm Learning · Device-to-Device Inference · Ensemble of Edge Models · Decentralized Agents</text>
+  <rect x="55" y="515" width="450" height="75" rx="8" fill="#1e3a5f"/><text x="280" y="545" text-anchor="middle" fill="#93c5fd" font-size="13" font-weight="700">Human-in-the-Loop</text><text x="75" y="568" fill="#94a3b8" font-size="11">· Interactive Learning · RLHF on Edge · Annotation-at-Edge · User Feedback</text>
+
+  <rect x="555" y="110" width="515" height="280" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="2" filter="url(#sh)"/>
+  <rect x="555" y="110" width="515" height="44" rx="12" fill="url(#h2)"/><rect x="555" y="140" width="515" height="14" fill="url(#h2)"/>
+  <text x="812" y="138" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">By Optimization Target</text>
+  <rect x="580" y="175" width="225" height="85" rx="8" fill="#0c4a6e"/><text x="692" y="205" text-anchor="middle" fill="#67e8f9" font-size="13" font-weight="700">Latency / Real-time</text><text x="600" y="228" fill="#94a3b8" font-size="11">· Sub-millisecond inference</text><text x="600" y="248" fill="#94a3b8" font-size="11">· Streaming / Online ML</text>
+  <rect x="820" y="175" width="225" height="85" rx="8" fill="#0c4a6e"/><text x="932" y="205" text-anchor="middle" fill="#67e8f9" font-size="13" font-weight="700">Energy Efficiency</text><text x="840" y="228" fill="#94a3b8" font-size="11">· Battery-constrained</text><text x="840" y="248" fill="#94a3b8" font-size="11">· Dynamic Voltage Scaling</text>
+  <rect x="580" y="275" width="225" height="85" rx="8" fill="#0c4a6e"/><text x="692" y="305" text-anchor="middle" fill="#67e8f9" font-size="13" font-weight="700">Memory Efficient</text><text x="600" y="328" fill="#94a3b8" font-size="11">· MCU (KB), Mobile (GB)</text><text x="600" y="348" fill="#94a3b8" font-size="11">· KV-Cache Optimization</text>
+  <rect x="820" y="275" width="225" height="85" rx="8" fill="#0c4a6e"/><text x="932" y="305" text-anchor="middle" fill="#67e8f9" font-size="13" font-weight="700">Accuracy-Preserving</text><text x="840" y="228" fill="#94a3b8" font-size="11">· Quantization-aware</text><text x="840" y="248" fill="#94a3b8" font-size="11">· Speculative Decoding</text>
+
+  <rect x="555" y="410" width="515" height="280" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" filter="url(#sh)"/>
+  <rect x="555" y="410" width="515" height="44" rx="12" fill="url(#h3)"/><rect x="555" y="440" width="515" height="14" fill="url(#h3)"/>
+  <text x="812" y="438" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">By Application Domain</text>
+  <rect x="580" y="475" width="150" height="60" rx="6" fill="#4c1d95"/><text x="655" y="500" text-anchor="middle" fill="#c4b5fd" font-size="11">Healthcare</text><text x="655" y="520" text-anchor="middle" fill="#a78bfa" font-size="9">Wearables · ECG</text>
+  <rect x="745" y="475" width="150" height="60" rx="6" fill="#4c1d95"/><text x="820" y="500" text-anchor="middle" fill="#c4b5fd" font-size="11">Smart Home</text><text x="820" y="520" text-anchor="middle" fill="#a78bfa" font-size="9">Voice · Presence</text>
+  <rect x="910" y="475" width="135" height="60" rx="6" fill="#4c1d95"/><text x="977" y="500" text-anchor="middle" fill="#c4b5fd" font-size="11">IIoT</text><text x="977" y="520" text-anchor="middle" fill="#a78bfa" font-size="9">Predictive</text>
+  <rect x="580" y="545" width="150" height="60" rx="6" fill="#4c1d95"/><text x="655" y="570" text-anchor="middle" fill="#c4b5fd" font-size="11">Autonomous</text><text x="655" y="590" text-anchor="middle" fill="#a78bfa" font-size="9">ADAS · Drone</text>
+  <rect x="745" y="545" width="150" height="60" rx="6" fill="#4c1d95"/><text x="820" y="570" text-anchor="middle" fill="#c4b5fd" font-size="11">Mobile AI Agents</text><text x="820" y="590" text-anchor="middle" fill="#a78bfa" font-size="9">Siri · Galaxy AI</text>
+  <rect x="910" y="545" width="135" height="60" rx="6" fill="#4c1d95"/><text x="977" y="570" text-anchor="middle" fill="#c4b5fd" font-size="11">AR/VR</text><text x="977" y="590" text-anchor="middle" fill="#a78bfa" font-size="9">Spatial AI</text>
+  <rect x="580" y="615" width="210" height="55" rx="6" fill="#4c1d95"/><text x="685" y="640" text-anchor="middle" fill="#c4b5fd" font-size="11">6G Networks · URLLC</text>
+  <rect x="805" y="615" width="240" height="55" rx="6" fill="#4c1d95"/><text x="925" y="640" text-anchor="middle" fill="#c4b5fd" font-size="11">Edge Agents · RAG · Tool Use</text>
+</svg>

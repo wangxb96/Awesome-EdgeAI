@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter></defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">Edge AI Deployment — Detailed Pipeline</text>
+  <rect x="30" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="440" height="35" rx="10" fill="#d97706"/>
+  <rect x="30" y="85" width="440" height="10" fill="#d97706"/>
+  <text x="250.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Training & Optimization</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Cloud: Pre-train large models (8B-175B params)</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· Optimization: Quantization (AWQ, GPTQ, GGUF)</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· Compression: Pruning, Distillation, LoRA merge</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· Format: Export to ONNX, CoreML, GGUF</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· Validation: On-device accuracy benchmarking</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· A/B testing: Compare with production model</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="11">· Signed & encrypted model artifacts</text>
+  <text x="45" y="255" fill="#cbd5e1" font-size="11">· Versioned in model registry (MLflow/DVC)</text>
+  <rect x="490" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="60" width="440" height="35" rx="10" fill="#0891b2"/>
+  <rect x="490" y="85" width="440" height="10" fill="#0891b2"/>
+  <text x="710.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Deploy & Serve</text>
+  <text x="505" y="115" fill="#cbd5e1" font-size="11">· Canary/Blue-Green deploy on edge fleet</text>
+  <text x="505" y="135" fill="#cbd5e1" font-size="11">· OTA (Over-The-Air) model updates</text>
+  <text x="505" y="155" fill="#cbd5e1" font-size="11">· Runtime: TFLite, ExecuTorch, CoreML, llama.cpp</text>
+  <text x="505" y="175" fill="#cbd5e1" font-size="11">· Hardware: MCU (KB), Phone (GB), Edge (TB)</text>
+  <text x="505" y="195" fill="#cbd5e1" font-size="11">· Monitor: Latency, throughput, energy, accuracy</text>
+  <text x="505" y="215" fill="#cbd5e1" font-size="11">· Telemetry: User feedback, drift detection</text>
+  <text x="505" y="235" fill="#cbd5e1" font-size="11">· Fallback: Cloud offload when edge confidence < thr.</text>
+  <text x="505" y="255" fill="#cbd5e1" font-size="11">· Auto-retrain trigger on accuracy degradation</text>
+  <rect x="30" y="315" width="440" height="100" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="315" width="440" height="35" rx="10" fill="#dc2626"/>
+  <rect x="30" y="340" width="440" height="10" fill="#dc2626"/>
+  <text x="250.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">CI/CD Pipeline</text>
+  <text x="45" y="370" fill="#cbd5e1" font-size="11">· GitHub Actions/GitLab CI → Build → Test</text>
+  <text x="45" y="390" fill="#cbd5e1" font-size="11">· Edge simulator testing, hardware-in-the-loop</text>
+  <rect x="490" y="315" width="440" height="100" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="315" width="440" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="490" y="340" width="440" height="10" fill="#6d28d9"/>
+  <text x="710.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">MLOps for Edge</text>
+  <text x="505" y="370" fill="#cbd5e1" font-size="11">· Weights & Biases, MLflow, DVC, TensorBoard</text>
+  <text x="505" y="390" fill="#cbd5e1" font-size="11">· K3s/KubeEdge orchestration, Docker containers</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">Production-grade edge AI deployment: from cloud training to on-device serving with continuous monitoring</text></svg>

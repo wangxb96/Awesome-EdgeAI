@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter></defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">Research Roadmap — Edge Intelligence (2016–2026)</text>
+  <rect x="30" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="440" height="35" rx="10" fill="#1d4ed8"/>
+  <rect x="30" y="85" width="440" height="10" fill="#1d4ed8"/>
+  <text x="250.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Phase 1: Foundation (2016-2020)</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Efficient architectures: MobileNet, EfficientNet</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· MCU inference: TFLite Micro, CMSIS-NN</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· Basic quantization (FP32→INT8)</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· TinyML: keyword spotting, wake-word</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· First benchmarks: MLPerf Tiny</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· On-device training: basic FL prototypes</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="11">· Edge compute: AWS Greengrass, Azure IoT</text>
+  <text x="45" y="255" fill="#cbd5e1" font-size="11">· Research questions: Feasibility of edge ML</text>
+  <rect x="490" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="60" width="440" height="35" rx="10" fill="#d97706"/>
+  <rect x="490" y="85" width="440" height="10" fill="#d97706"/>
+  <text x="710.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Phase 2: Scaling (2021-2023)</text>
+  <text x="505" y="115" fill="#cbd5e1" font-size="11">· Advanced optimization: NAS, HW-aware design</text>
+  <text x="505" y="135" fill="#cbd5e1" font-size="11">· Federated learning at scale (Gboard, Siri)</text>
+  <text x="505" y="155" fill="#cbd5e1" font-size="11">· Split computing: edge-cloud DNN partition</text>
+  <text x="505" y="175" fill="#cbd5e1" font-size="11">· 5G MEC integration: URLLC for edge AI</text>
+  <text x="505" y="195" fill="#cbd5e1" font-size="11">· ONNX Runtime, OpenVINO ecosystem</text>
+  <text x="505" y="215" fill="#cbd5e1" font-size="11">· Energy-efficient: dynamic scaling, sparsity</text>
+  <text x="505" y="235" fill="#cbd5e1" font-size="11">· Mobile BERT, lightweight transformers</text>
+  <text x="505" y="255" fill="#cbd5e1" font-size="11">· Research: Communication-efficient FL</text>
+  <rect x="30" y="315" width="440" height="140" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="315" width="440" height="35" rx="10" fill="#dc2626"/>
+  <rect x="30" y="340" width="440" height="10" fill="#dc2626"/>
+  <text x="250.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Phase 3: LLM Era (2024-2025)</text>
+  <text x="45" y="370" fill="#cbd5e1" font-size="11">· On-device LLM: llama.cpp, MLC-LLM, ExecuTorch</text>
+  <text x="45" y="390" fill="#cbd5e1" font-size="11">· 4-bit quantization: GGUF, AWQ, GPTQ</text>
+  <text x="45" y="410" fill="#cbd5e1" font-size="11">· Speculative decoding, Flash Attention</text>
+  <text x="45" y="430" fill="#cbd5e1" font-size="11">· PEFT: LoRA/QLoRA, on-device fine-tuning</text>
+  <rect x="490" y="315" width="440" height="140" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="315" width="440" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="490" y="340" width="440" height="10" fill="#6d28d9"/>
+  <text x="710.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Phase 4: Agents (2025-2026+)</text>
+  <text x="505" y="370" fill="#cbd5e1" font-size="11">· Edge AI Agents: ReAct, tool use, RAG</text>
+  <text x="505" y="390" fill="#cbd5e1" font-size="11">· Multi-agent systems, cognitive edge</text>
+  <text x="505" y="410" fill="#cbd5e1" font-size="11">· On-device VLMs, cross-modal reasoning</text>
+  <text x="505" y="430" fill="#cbd5e1" font-size="11">· 6G native AI, always-on intelligent assistants</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">A decade of progress: from KB-scale MCU models to multi-GB LLM agents on personal devices</text></svg>

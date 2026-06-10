@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter></defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">Edge LLM Optimization Taxonomy</text>
+  <rect x="30" y="60" width="290" height="220" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="290" height="35" rx="10" fill="#dc2626"/>
+  <rect x="30" y="85" width="290" height="10" fill="#dc2626"/>
+  <text x="175.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Model Compression</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Weight-only quantization (AWQ, GPTQ)</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· Activation-aware (SmoothQuant)</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· 4-bit/2-bit (GGUF, GPTQ)</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· Structured pruning (SparseGPT)</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· Unstructured pruning (Wanda)</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· Knowledge distillation to SLM</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="11">· Low-rank factorization</text>
+  <rect x="335" y="60" width="290" height="220" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="335" y="60" width="290" height="35" rx="10" fill="#d97706"/>
+  <rect x="335" y="85" width="290" height="10" fill="#d97706"/>
+  <text x="480.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Inference Acceleration</text>
+  <text x="350" y="115" fill="#cbd5e1" font-size="11">· Speculative decoding (draft model)</text>
+  <text x="350" y="135" fill="#cbd5e1" font-size="11">· Medusa heads (parallel decoding)</text>
+  <text x="350" y="155" fill="#cbd5e1" font-size="11">· Lookahead decoding</text>
+  <text x="350" y="175" fill="#cbd5e1" font-size="11">· KV-Cache quantization & eviction</text>
+  <text x="350" y="195" fill="#cbd5e1" font-size="11">· Flash Attention (fused kernel)</text>
+  <text x="350" y="215" fill="#cbd5e1" font-size="11">· PagedAttention (virtual memory)</text>
+  <text x="350" y="235" fill="#cbd5e1" font-size="11">· StreamingLLM, H2O attention</text>
+  <rect x="640" y="60" width="290" height="220" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="2" filter="url(#sh)"/>
+  <rect x="640" y="60" width="290" height="35" rx="10" fill="#0891b2"/>
+  <rect x="640" y="85" width="290" height="10" fill="#0891b2"/>
+  <text x="785.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">System Optimization</text>
+  <text x="655" y="115" fill="#cbd5e1" font-size="11">· Operator fusion (TVM, MLIR)</text>
+  <text x="655" y="135" fill="#cbd5e1" font-size="11">· Memory planning & pooling</text>
+  <text x="655" y="155" fill="#cbd5e1" font-size="11">· Graph-level optimization</text>
+  <text x="655" y="175" fill="#cbd5e1" font-size="11">· CPU/GPU/NPU backend tuning</text>
+  <text x="655" y="195" fill="#cbd5e1" font-size="11">· Batch processing (continuous batching)</text>
+  <text x="655" y="215" fill="#cbd5e1" font-size="11">· Prefill/Decode separation</text>
+  <text x="655" y="235" fill="#cbd5e1" font-size="11">· Power-aware scheduling</text>
+  <rect x="30" y="300" width="450" height="130" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="300" width="450" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="30" y="325" width="450" height="10" fill="#6d28d9"/>
+  <text x="255.0" y="323" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">PEFT & Adaptation</text>
+  <text x="45" y="355" fill="#cbd5e1" font-size="11">· LoRA/QLoRA — low-rank adapter fine-tuning</text>
+  <text x="45" y="375" fill="#cbd5e1" font-size="11">· Adapter layers, Prefix tuning, Prompt tuning</text>
+  <text x="45" y="395" fill="#cbd5e1" font-size="11">· On-device fine-tuning with minimal parameters</text>
+  <rect x="495" y="300" width="435" height="130" rx="10" fill="#1e293b" stroke="#15803d" stroke-width="2" filter="url(#sh)"/>
+  <rect x="495" y="300" width="435" height="35" rx="10" fill="#15803d"/>
+  <rect x="495" y="325" width="435" height="10" fill="#15803d"/>
+  <text x="712.5" y="323" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Hardware Acceleration</text>
+  <text x="510" y="355" fill="#cbd5e1" font-size="11">· Apple Neural Engine (ANE) — CoreML</text>
+  <text x="510" y="375" fill="#cbd5e1" font-size="11">· Qualcomm Hexagon NPU — Snapdragon AI Engine</text>
+  <text x="510" y="395" fill="#cbd5e1" font-size="11">· NVIDIA GPU — TensorRT-LLM</text>
+  <text x="510" y="415" fill="#cbd5e1" font-size="11">· Custom ASICs, FPGA accelerators</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">Multi-dimensional optimization enables deployable 1B-7B models on personal devices</text></svg>

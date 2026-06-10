@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter></defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">Edge AI Benchmark Comparison</text>
+  <rect x="30" y="60" width="290" height="200" rx="10" fill="#1e293b" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="290" height="35" rx="10" fill="#1d4ed8"/>
+  <rect x="30" y="85" width="290" height="10" fill="#1d4ed8"/>
+  <text x="175.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">MLPerf Tiny</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Standard MCU benchmark suite</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· 4 tasks: VWW, KW, IC, AD</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· Latency, Energy, Accuracy</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· 32-bit ARM, RISC-V targets</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· Reference implementations</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· Reproducible across devices</text>
+  <rect x="335" y="60" width="290" height="200" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="335" y="60" width="290" height="35" rx="10" fill="#d97706"/>
+  <rect x="335" y="85" width="290" height="10" fill="#d97706"/>
+  <text x="480.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">TFLite Benchmarks</text>
+  <text x="350" y="115" fill="#cbd5e1" font-size="11">· Model performance on mobile</text>
+  <text x="350" y="135" fill="#cbd5e1" font-size="11">· CPU/GPU/NPU measurements</text>
+  <text x="350" y="155" fill="#cbd5e1" font-size="11">· Image classification (MobileNet)</text>
+  <text x="350" y="175" fill="#cbd5e1" font-size="11">· Object detection (SSD/YOLO)</text>
+  <text x="350" y="195" fill="#cbd5e1" font-size="11">· NLP (BERT, MobileBERT)</text>
+  <text x="350" y="215" fill="#cbd5e1" font-size="11">· Segmentation, style transfer</text>
+  <rect x="640" y="60" width="290" height="200" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+  <rect x="640" y="60" width="290" height="35" rx="10" fill="#dc2626"/>
+  <rect x="640" y="85" width="290" height="10" fill="#dc2626"/>
+  <text x="785.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">LLM Edge Bench</text>
+  <text x="655" y="115" fill="#cbd5e1" font-size="11">· Perplexity (WikiText, C4)</text>
+  <text x="655" y="135" fill="#cbd5e1" font-size="11">· MMLU — multi-task reasoning</text>
+  <text x="655" y="155" fill="#cbd5e1" font-size="11">· HumanEval — code generation</text>
+  <text x="655" y="175" fill="#cbd5e1" font-size="11">· IFEval — instruction following</text>
+  <text x="655" y="195" fill="#cbd5e1" font-size="11">· Tokens/sec (throughput)</text>
+  <text x="655" y="215" fill="#cbd5e1" font-size="11">· TTFT — time-to-first-token</text>
+  <rect x="30" y="280" width="450" height="150" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="280" width="450" height="35" rx="10" fill="#0891b2"/>
+  <rect x="30" y="305" width="450" height="10" fill="#0891b2"/>
+  <text x="255.0" y="303" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Dataset Benchmarks</text>
+  <text x="45" y="335" fill="#cbd5e1" font-size="11">· Speech Commands — 35 words, 105K utterances</text>
+  <text x="45" y="355" fill="#cbd5e1" font-size="11">· Visual Wake Words — person/not-person, MS COCO</text>
+  <text x="45" y="375" fill="#cbd5e1" font-size="11">· CIFAR-10/100, ImageNet, Tiny ImageNet</text>
+  <text x="45" y="395" fill="#cbd5e1" font-size="11">· OpenOrca, OpenAssistant, Alpaca (LLM fine-tune)</text>
+  <rect x="495" y="280" width="435" height="150" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="495" y="280" width="435" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="495" y="305" width="435" height="10" fill="#6d28d9"/>
+  <text x="712.5" y="303" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Hardware Benchmarks</text>
+  <text x="510" y="335" fill="#cbd5e1" font-size="11">· ARM Cortex-M4/M7 — MLPerf Tiny standard</text>
+  <text x="510" y="355" fill="#cbd5e1" font-size="11">· Qualcomm Hexagon — Snapdragon NPU benchmarks</text>
+  <text x="510" y="375" fill="#cbd5e1" font-size="11">· Apple ANE — CoreML benchmark suite</text>
+  <text x="510" y="395" fill="#cbd5e1" font-size="11">· NVIDIA Jetson — Orin NX/AGX, TensorRT benchmarks</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">Standardized benchmarks enable fair comparison across hardware, frameworks, and optimization techniques</text></svg>

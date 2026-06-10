@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter></defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">Research Scope — Edge AI</text>
+  <rect x="30" y="60" width="290" height="240" rx="10" fill="#1e293b" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="290" height="35" rx="10" fill="#1d4ed8"/>
+  <rect x="30" y="85" width="290" height="10" fill="#1d4ed8"/>
+  <text x="175.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Data Optimization</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Federated & Split Learning</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· Data Augmentation/Synthesis</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· Compressed Sensing</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· Smart On-Device Caching</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· Data Quality, Weak Supervision</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· Benchmarks: CIFAR, Speech Comm.</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="11">· Privacy: DP, Secure Aggregation</text>
+  <rect x="335" y="60" width="290" height="240" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="335" y="60" width="290" height="35" rx="10" fill="#d97706"/>
+  <rect x="335" y="85" width="290" height="10" fill="#d97706"/>
+  <text x="480.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Model Optimization</text>
+  <text x="350" y="115" fill="#cbd5e1" font-size="11">· Quantization (PTQ, QAT, AWQ, GPTQ)</text>
+  <text x="350" y="135" fill="#cbd5e1" font-size="11">· Pruning (SparseGPT, Wanda)</text>
+  <text x="350" y="155" fill="#cbd5e1" font-size="11">· Knowledge Distillation</text>
+  <text x="350" y="175" fill="#cbd5e1" font-size="11">· NAS, HW-Aware Architecture</text>
+  <text x="350" y="195" fill="#cbd5e1" font-size="11">· PEFT: LoRA, QLoRA, Adapters</text>
+  <text x="350" y="215" fill="#cbd5e1" font-size="11">· Speculative Decoding, KV-Cache</text>
+  <text x="350" y="235" fill="#cbd5e1" font-size="11">· LLM Compression for Edge</text>
+  <rect x="640" y="60" width="290" height="240" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+  <rect x="640" y="60" width="290" height="35" rx="10" fill="#dc2626"/>
+  <rect x="640" y="85" width="290" height="10" fill="#dc2626"/>
+  <text x="785.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">System Optimization</text>
+  <text x="655" y="115" fill="#cbd5e1" font-size="11">· Runtimes: llama.cpp, MLC-LLM</text>
+  <text x="655" y="135" fill="#cbd5e1" font-size="11">· Compilers: TVM, MLIR, IREE</text>
+  <text x="655" y="155" fill="#cbd5e1" font-size="11">· Memory, Operator Fusion</text>
+  <text x="655" y="175" fill="#cbd5e1" font-size="11">· Edge-Cloud Offloading</text>
+  <text x="655" y="195" fill="#cbd5e1" font-size="11">· Hardware: NPU, GPU, MCU</text>
+  <text x="655" y="215" fill="#cbd5e1" font-size="11">· MLOps, CI/CD for Edge</text>
+  <text x="655" y="235" fill="#cbd5e1" font-size="11">· Power Management, Pipelining</text>
+  <rect x="30" y="320" width="440" height="120" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="320" width="440" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="30" y="345" width="440" height="10" fill="#6d28d9"/>
+  <text x="250.0" y="343" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">LLMs/VLMs on Edge</text>
+  <text x="45" y="375" fill="#cbd5e1" font-size="11">· Edge LLM Families (Llama, Phi, Gemma, Qwen)</text>
+  <text x="45" y="395" fill="#cbd5e1" font-size="11">· On-Device VLM, Multi-Modal</text>
+  <text x="45" y="415" fill="#cbd5e1" font-size="11">· Decoding Strategies, AWQ, GGUF, GPTQ</text>
+  <rect x="490" y="320" width="440" height="120" rx="10" fill="#1e293b" stroke="#15803d" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="320" width="440" height="35" rx="10" fill="#15803d"/>
+  <rect x="490" y="345" width="440" height="10" fill="#15803d"/>
+  <text x="710.0" y="343" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Agents & Cognitive Edge</text>
+  <text x="505" y="375" fill="#cbd5e1" font-size="11">· LLM Agents (ReAct, AutoGPT, CrewAI)</text>
+  <text x="505" y="395" fill="#cbd5e1" font-size="11">· Multi-Agent, RAG, Tool Use, Planning</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">Comprehensive scope spanning the full edge AI stack — from TinyML to cognitive agents</text></svg>

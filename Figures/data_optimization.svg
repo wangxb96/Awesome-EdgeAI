@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1000" height="720" fill="url(#bg)"/>
+  <text x="500" y="38" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">Data Optimization for Edge AI</text>
+
+  <!-- Federated Learning -->
+  <rect x="30" y="65" width="450" height="195" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="65" width="450" height="42" rx="12" fill="#1d4ed8"/><rect x="30" y="93" width="450" height="14" fill="#1d4ed8"/>
+  <text x="255" y="93" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Federated Learning</text>
+  <text x="55" y="136" fill="#93c5fd" font-size="12" font-weight="600">Core Paradigms</text>
+  <text x="55" y="160" fill="#94a3b8" font-size="11">· FedAvg — global model aggregation</text>
+  <text x="55" y="180" fill="#94a3b8" font-size="11">· FedProx — heterogeneous optimization</text>
+  <text x="55" y="200" fill="#94a3b8" font-size="11">· Split Learning — distributed DNN</text>
+  <text x="55" y="220" fill="#94a3b8" font-size="11">· Personalized FL — per-client fine-tuning</text>
+  <text x="55" y="240" fill="#94a3b8" font-size="11">· Vertical FL — feature-partitioned</text>
+
+  <rect x="55" y="255" fill="#1e3a5f" width="400" height="1"/>
+
+  <!-- Data Augmentation -->
+  <rect x="500" y="65" width="470" height="195" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="2" filter="url(#sh)"/>
+  <rect x="500" y="65" width="470" height="42" rx="12" fill="#0e7490"/><rect x="500" y="93" width="470" height="14" fill="#0e7490"/>
+  <text x="735" y="93" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Data Augmentation & Synthesis</text>
+  <text x="525" y="136" fill="#67e8f9" font-size="12" font-weight="600">Classical</text>
+  <text x="525" y="160" fill="#94a3b8" font-size="11">· Random crop, flip, rotation</text>
+  <text x="525" y="180" fill="#94a3b8" font-size="11">· SpecAugment, MixUp, CutMix</text>
+  <text x="525" y="200" fill="#94a3b8" font-size="11">· SMOTE for imbalance</text>
+  <text x="525" y="220" fill="#94a3b8" font-size="11">· Weak/Strong Augmentation</text>
+  <text x="525" y="240" fill="#67e8f9" font-size="12" font-weight="600">Generative</text>
+
+  <text x="770" y="160" fill="#94a3b8" font-size="11">· Data Distillation</text>
+  <text x="770" y="180" fill="#94a3b8" font-size="11">· Synthetic Data (LLMs)</text>
+  <text x="770" y="200" fill="#94a3b8" font-size="11">· GAN-based augmentation</text>
+  <text x="770" y="220" fill="#94a3b8" font-size="11">· Diffusion for images</text>
+  <text x="770" y="240" fill="#94a3b8" font-size="11">· Text-to-Speech synthesis</text>
+
+  <!-- Compressed Sensing -->
+  <rect x="30" y="275" width="450" height="195" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="275" width="450" height="42" rx="12" fill="#d97706"/><rect x="30" y="303" width="450" height="14" fill="#d97706"/>
+  <text x="255" y="303" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Compressed Sensing & Feature Engineering</text>
+  <text x="55" y="345" fill="#fde68a" font-size="12" font-weight="600">Sampling</text>
+  <text x="55" y="368" fill="#94a3b8" font-size="11">· Sub-Nyquist sampling</text>
+  <text x="55" y="388" fill="#94a3b8" font-size="11">· Sparse representation</text>
+  <text x="55" y="408" fill="#94a3b8" font-size="11">· On-device feature extraction</text>
+  <text x="55" y="428" fill="#94a3b8" font-size="11">· Early exit sampling</text>
+  <text x="55" y="448" fill="#94a3b8" font-size="11">· Dimensionality reduction</text>
+
+  <rect x="55" y="460" fill="#78350f" width="400" height="1"/>
+
+  <!-- On-Device Data -->
+  <rect x="500" y="275" width="470" height="195" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" filter="url(#sh)"/>
+  <rect x="500" y="275" width="470" height="42" rx="12" fill="#6d28d9"/><rect x="500" y="303" width="470" height="14" fill="#6d28d9"/>
+  <text x="735" y="303" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">On-Device Data Management</text>
+  <text x="525" y="345" fill="#c4b5fd" font-size="12" font-weight="600">Storage</text>
+  <text x="525" y="368" fill="#94a3b8" font-size="11">· Smart caching policies</text>
+  <text x="525" y="388" fill="#94a3b8" font-size="11">· Data prioritization</text>
+  <text x="525" y="408" fill="#94a3b8" font-size="11">· Streaming ETL pipelines</text>
+  <text x="525" y="428" fill="#94a3b8" font-size="11">· Time-series aggregation</text>
+
+  <text x="780" y="345" fill="#c4b5fd" font-size="12" font-weight="600">Quality</text>
+  <text x="780" y="368" fill="#94a3b8" font-size="11">· Weak supervision</text>
+  <text x="780" y="388" fill="#94a3b8" font-size="11">· Self-supervised labels</text>
+  <text x="780" y="408" fill="#94a3b8" font-size="11">· Active learning</text>
+  <text x="780" y="428" fill="#94a3b8" font-size="11">· Data drift detection</text>
+
+  <!-- Benchmarks -->
+  <rect x="30" y="485" width="940" height="100" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="485" width="940" height="42" rx="12" fill="#15803d"/><rect x="30" y="513" width="940" height="14" fill="#15803d"/>
+  <text x="500" y="513" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Key Benchmarks & Datasets</text>
+  <text x="55" y="555" fill="#86efac" font-size="11" font-weight="600">Vision:</text>
+  <text x="130" y="555" fill="#94a3b8" font-size="11">CIFAR-10/100 · ImageNet · Visual Wake Words · COCO Tiny · OpenImages V6</text>
+  <text x="55" y="575" fill="#86efac" font-size="11" font-weight="600">Audio:</text>
+  <text x="130" y="575" fill="#94a3b8" font-size="11">Speech Commands · LibriSpeech · FSD50K · AudioSet</text>
+
+  <text x="500" y="555" fill="#86efac" font-size="11" font-weight="600">NLP:</text>
+  <text x="555" y="555" fill="#94a3b8" font-size="11">SST-2 · WMT · GLUE · OpenOrca · Alpaca</text>
+  <text x="500" y="575" fill="#86efac" font-size="11" font-weight="600">Bench:</text>
+  <text x

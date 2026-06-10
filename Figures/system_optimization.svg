@@ -1,0 +1,64 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">System Optimization for Edge AI</text>
+
+  <rect x="30" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="440" height="35" rx="10" fill="#d97706"/>
+  <rect x="30" y="85" width="440" height="10" fill="#d97706"/>
+  <text x="250.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Runtimes & Frameworks</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· llama.cpp — CPU-first LLM inference (2023)</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· MLC-LLM — Cross-platform LLM deployment (2024)</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· ExecuTorch — PyTorch on mobile/edge (2023)</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· TFLite / MediaPipe — Vision & Audio pipelines</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· ONNX Runtime — Universal model serving</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· OpenVINO — Intel CPU/GPU optimization</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="11">· CoreML / MLX — Apple Neural Engine</text>
+  <text x="45" y="255" fill="#cbd5e1" font-size="11">· ncnn / MNN / TNN — Mobile-first Chinese stacks</text>
+  <rect x="490" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="60" width="440" height="35" rx="10" fill="#0891b2"/>
+  <rect x="490" y="85" width="440" height="10" fill="#0891b2"/>
+  <text x="710.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Compiler & Memory Stacks</text>
+  <text x="505" y="115" fill="#cbd5e1" font-size="11">· Apache TVM / MicroTVM — End-to-end compilation</text>
+  <text x="505" y="135" fill="#cbd5e1" font-size="11">· MLIR / IREE — Unified IR for all targets</text>
+  <text x="505" y="155" fill="#cbd5e1" font-size="11">· XLA — Accelerated Linear Algebra</text>
+  <text x="505" y="175" fill="#cbd5e1" font-size="11">· GLOW — Meta's NN compiler</text>
+  <text x="505" y="195" fill="#cbd5e1" font-size="11">· Memory Planning — Graph-level optimization</text>
+  <text x="505" y="215" fill="#cbd5e1" font-size="11">· Operator Fusion — Reduce kernel launch overhead</text>
+  <text x="505" y="235" fill="#cbd5e1" font-size="11">· TensorRT (NVIDIA) — GPU-specific optimization</text>
+  <text x="505" y="255" fill="#cbd5e1" font-size="11">· CMSIS-NN — ARM Cortex-M kernels</text>
+  <rect x="30" y="315" width="440" height="240" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="315" width="440" height="35" rx="10" fill="#dc2626"/>
+  <rect x="30" y="340" width="440" height="10" fill="#dc2626"/>
+  <text x="250.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Hardware Abstraction</text>
+  <text x="45" y="370" fill="#cbd5e1" font-size="11">· NPU / GPU / FPGA / ASIC backends</text>
+  <text x="45" y="390" fill="#cbd5e1" font-size="11">· ARM Cortex-M0→M7, RISC-V MCUs</text>
+  <text x="45" y="410" fill="#cbd5e1" font-size="11">· Qualcomm Hexagon DSP, Apple ANE</text>
+  <text x="45" y="430" fill="#cbd5e1" font-size="11">· Intel Movidius, Google Coral TPU</text>
+  <text x="45" y="450" fill="#cbd5e1" font-size="11">· NVIDIA Jetson Orin/AGX</text>
+  <text x="45" y="470" fill="#cbd5e1" font-size="11">· Memory: 64KB–32GB, Power: 1mW–15W</text>
+  <text x="45" y="490" fill="#cbd5e1" font-size="11">· Pipelining: Prefetch, double-buffering</text>
+  <text x="45" y="510" fill="#cbd5e1" font-size="11">· Benchmarking: MLPerf Tiny, TFLite Bench</text>
+  <rect x="490" y="315" width="440" height="240" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="315" width="440" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="490" y="340" width="440" height="10" fill="#6d28d9"/>
+  <text x="710.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Edge-Cloud Offloading</text>
+  <text x="505" y="370" fill="#cbd5e1" font-size="11">· DNN Partitioning — Split model across edge/cloud</text>
+  <text x="505" y="390" fill="#cbd5e1" font-size="11">· Early Exit — Use confidence to shortcut</text>
+  <text x="505" y="410" fill="#cbd5e1" font-size="11">· Ensemble Routing — Dynamic quality selection</text>
+  <text x="505" y="430" fill="#cbd5e1" font-size="11">· 5G MEC — Multi-access Edge Computing</text>
+  <text x="505" y="450" fill="#cbd5e1" font-size="11">· Serverless Edge — AWS Lambda@Edge</text>
+  <text x="505" y="470" fill="#cbd5e1" font-size="11">· KubeEdge / K3s — Lightweight Kubernetes</text>
+  <text x="505" y="490" fill="#cbd5e1" font-size="11">· Fog Computing — Hierarchical edge processing</text>
+  <text x="505" y="510" fill="#cbd5e1" font-size="11">· Bandwidth-aware adaptive offloading</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">System stack bridges model optimization to diverse edge hardware — from 64KB MCUs to multi-GPU edge servers</text>
+</svg>

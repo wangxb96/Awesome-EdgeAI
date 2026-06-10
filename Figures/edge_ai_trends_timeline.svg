@@ -1,0 +1,88 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/></filter>
+  </defs>
+  <rect width="1100" height="620" fill="url(#bg)"/>
+  <text x="550" y="38" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">Edge AI Trends — 2024 to 2026+</text>
+
+  <!-- Timeline bar -->
+  <line x1="60" y1="100" x2="1040" y2="100" stroke="#475569" stroke-width="3"/>
+
+  <!-- 2024 -->
+  <circle cx="170" cy="100" r="10" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+  <text x="170" y="80" text-anchor="middle" fill="#60a5fa" font-size="14" font-weight="700">2024</text>
+  <rect x="60" y="120" width="200" height="200" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="160" y="150" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600">On-Device LLM</text>
+  <text x="75" y="175" fill="#94a3b8" font-size="10">· Llama 3.2 on mobile</text>
+  <text x="75" y="195" fill="#94a3b8" font-size="10">· Phi-3 (3.8B) on phone</text>
+  <text x="75" y="215" fill="#94a3b8" font-size="10">· Apple Intelligence launch</text>
+  <text x="75" y="235" fill="#94a3b8" font-size="10">· Samsung Galaxy AI</text>
+  <text x="75" y="255" fill="#94a3b8" font-size="10">· ExecuTorch beta</text>
+  <text x="75" y="275" fill="#94a3b8" font-size="10">· GGUF format wide adoption</text>
+  <text x="75" y="295" fill="#94a3b8" font-size="10">· llama.cpp 10M+ downloads</text>
+
+  <!-- 2025 -->
+  <circle cx="370" cy="100" r="10" fill="#06b6d4" stroke="#fff" stroke-width="2"/>
+  <text x="370" y="80" text-anchor="middle" fill="#22d3ee" font-size="14" font-weight="700">2025</text>
+  <rect x="270" y="120" width="200" height="200" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="370" y="150" text-anchor="middle" fill="#67e8f9" font-size="12" font-weight="600">Agentic Edge</text>
+  <text x="285" y="175" fill="#94a3b8" font-size="10">· Edge LLM Agents</text>
+  <text x="285" y="195" fill="#94a3b8" font-size="10">· Multi-Agent Systems</text>
+  <text x="285" y="215" fill="#94a3b8" font-size="10">· RAG on-device</text>
+  <text x="285" y="235" fill="#94a3b8" font-size="10">· On-Device VLM</text>
+  <text x="285" y="255" fill="#94a3b8" font-size="10">· Speculative Decoding</text>
+  <text x="285" y="275" fill="#94a3b8" font-size="10">· 4-bit quantization SOTA</text>
+  <text x="285" y="295" fill="#94a3b8" font-size="10">· MLC-LLM iOS/Android</text>
+
+  <!-- 2026 -->
+  <circle cx="570" cy="100" r="10" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
+  <text x="570" y="80" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="700">2026</text>
+  <rect x="470" y="120" width="200" height="200" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="570" y="150" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="600">Autonomous Edge</text>
+  <text x="485" y="175" fill="#94a3b8" font-size="10">· Embodied edge agents</text>
+  <text x="485" y="195" fill="#94a3b8" font-size="10">· AR/VR with agents</text>
+  <text x="485" y="215" fill="#94a3b8" font-size="10">· Always-on assistant</text>
+  <text x="485" y="235" fill="#94a3b8" font-size="10">· Cross-app agents</text>
+  <text x="485" y="255" fill="#94a3b8" font-size="10">· 6G native AI</text>
+  <text x="485" y="275" fill="#94a3b8" font-size="10">· Federated LLM fine-tune</text>
+  <text x="485" y="295" fill="#94a3b8" font-size="10">· Standardized edge AI</text>
+
+  <!-- 6 More Months -->
+  <circle cx="770" cy="100" r="10" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+  <text x="770" y="80" text-anchor="middle" fill="#f87171" font-size="14" font-weight="700">H2 2026+</text>
+  <rect x="670" y="120" width="200" height="200" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="770" y="150" text-anchor="middle" fill="#fca5a5" font-size="12" font-weight="600">Cognitive Edge</text>
+  <text x="685" y="175" fill="#94a3b8" font-size="10">· Edge AGI prototypes</text>
+  <text x="685" y="195" fill="#94a3b8" font-size="10">· Auto-fine-tuning</text>
+  <text x="685" y="215" fill="#94a3b8" font-size="10">· Universal edge agent</text>
+  <text x="685" y="235" fill="#94a3b8" font-size="10">· Energy-harvesting AI</text>
+  <text x="685" y="255" fill="#94a3b8" font-size="10">· Biologically-inspired</text>
+  <text x="685" y="275" fill="#94a3b8" font-size="10">· Privacy-preserving AI</text>
+  <text x="685" y="295" fill="#94a3b8" font-size="10">· Neuromorphic chips</text>
+
+  <!-- Bottom boxes -->
+  <rect x="80" y="345" width="210" height="60" rx="6" fill="#1e293b" stroke="#475569"/>
+  <text x="185" y="368" text-anchor="middle" fill="#cbd5e1" font-size="11">Hardware: ARMv9, RISC-V NPU</text>
+  <text x="185" y="388" text-anchor="middle" fill="#cbd5e1" font-size="11">5nm→3nm, 10 TOPS/W</text>
+
+  <rect x="310" y="345" width="210" height="60" rx="6" fill="#1e293b" stroke="#475569"/>
+  <text x="415" y="368" text-anchor="middle" fill="#cbd5e1" font-size="11">Models: 1B→7B on phone</text>
+  <text x="415" y="388" text-anchor="middle" fill="#cbd5e1" font-size="11">VLM + Audio + Text multi-modal</text>
+
+  <rect x="540" y="345" width="210" height="60" rx="6" fill="#1e293b" stroke="#475569"/>
+  <text x="645" y="368" text-anchor="middle" fill="#cbd5e1" font-size="11">Software: llama.cpp 3.0</text>
+  <text x="645" y="388" text-anchor="middle" fill="#cbd5e1" font-size="11">ExecuTorch, MLX, MLC-LLM</text>
+
+  <rect x="770" y="345" width="210" height="60" rx="6" fill="#1e293b" stroke="#475569"/>
+  <text x="875" y="368" text-anchor="middle" fill="#cbd5e1" font-size="11">Ecosystem: Open Models</text>
+  <text x="875" y="388" text-anchor="middle" fill="#cbd5e1" font-size="11">Hugging Face, GGUF, ONNX</text>
+
+  <!-- Key takeaway -->
+  <rect x="150" y="430" width="800" height="55" rx="10" fill="#1e293b" stroke="#a78bfa" stroke-dasharray="4,2"/>
+  <text x="550" y="455" text-anchor="middle" fill="#cbd5e1" font-size="13">From 2016 TinyML (KB) → 2024 On-Device LLM (GB) → 2026 Cognitive Edge Agents (LLM+RAG+Tools)</text>
+  <text x="550" y="475" text-anchor="middle" fill="#64748b" font-size="10">Convergence of hardware, algorithms, frameworks, and applications enables true pervasive intelligence</text>
+</svg>

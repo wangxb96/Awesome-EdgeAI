@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#020617"/>
+    </radialGradient>
+    <linearGradient id="t1" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+    <linearGradient id="t2" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="t3" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0e7490"/>
+    </linearGradient>
+    <linearGradient id="t4" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="t5" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#b91c1c"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+  
+  <text x="600" y="50" text-anchor="middle" fill="#f8fafc" font-size="26" font-weight="700">Edge AI Evolution — 10-Year Roadmap (2016–2026)</text>
+
+  <!-- Timeline Line -->
+  <line x1="80" y1="320" x2="1120" y2="320" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Era 1 -->
+  <rect x="70" y="150" width="200" height="300" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="70" y="150" width="200" height="44" rx="12" fill="url(#t1)"/>
+  <rect x="70" y="180" width="200" height="14" fill="url(#t1)"/>
+  <text x="170" y="178" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Era 1: TinyML</text>
+  <text x="170" y="220" text-anchor="middle" fill="#cbd5e1" font-size="12">2016–2020</text>
+  <text x="100" y="255" fill="#94a3b8" font-size="11">· TFLite Micro</text>
+  <text x="100" y="278" fill="#94a3b8" font-size="11">· ARM CMSIS-NN</text>
+  <text x="100" y="301" fill="#94a3b8" font-size="11">· MCU-based MCUs</text>
+  <text x="100" y="324" fill="#94a3b8" font-size="11">· Keyword Spotting</text>
+  <text x="100" y="347" fill="#94a3b8" font-size="11">· Wake-word Detection</text>
+  <text x="100" y="370" fill="#94a3b8" font-size="11">· Anomaly Detection</text>
+  <text x="100" y="393" fill="#94a3b8" font-size="11">· Speech Commands</text>
+  <text x="100" y="416" fill="#94a3b8" font-size="11">· Sensor Fusion</text>
+  <circle cx="170" cy="320" r="12" fill="#64748b" stroke="#fff" stroke-width="2"/>
+  <text x="170" y="460" text-anchor="middle" fill="#64748b" font-size="10">KB-level models</text>
+
+  <!-- Era 2 -->
+  <rect x="290" y="150" width="200" height="300" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="290" y="150" width="200" height="44" rx="12" fill="url(#t2)"/>
+  <rect x="290" y="180" width="200" height="14" fill="url(#t2)"/>
+  <text x="390" y="178" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Era 2: Efficient DL</text>
+  <text x="390" y="220" text-anchor="middle" fill="#cbd5e1" font-size="12">2019–2022</text>
+  <text x="320" y="255" fill="#94a3b8" font-size="11">· MobileNet v3</text>
+  <text x="320" y="278" fill="#94a3b8" font-size="11">· EfficientNet</text>
+  <text x="320" y="301" fill="#94a3b8" font-size="11">· ONNX Runtime</text>
+  <text x="320" y="324" fill="#94a3b8" font-size="11">· NAS / AutoML</text>
+  <text x="320" y="347" fill="#94a3b8" font-size="11">· Quantization (INT8)</text>
+  <text x="320" y="370" fill="#94a3b8" font-size="11">· Pruning / KD</text>
+  <text x="320" y="393" fill="#94a3b8" font-size="11">· TensorRT / OpenVINO</text>
+  <text x="320" y="416" fill="#94a3b8" font-size="11">· Mobile BERT</text>
+  <circle cx="390" cy="320" r="12" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+  <text x="390" y="460" text-anchor="middle" fill="#3b82f6" font-size="10">MB-level models</text>
+
+  <!-- Era 3 -->
+  <rect x="510" y="150" width="200" height="300" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="510" y="150" width="200" height="44" rx="12" fill="url(#t3)"/>
+  <rect x="510" y="180" width="200" height="14" fill="url(#t3)"/>
+  <text x="610" y="178" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Era 3: Edge-Cloud</text>
+  <text x="610" y="220" text-anchor="middle" fill="#cbd5e1" font-size="12">2021–2023</text>
+  <text x="540" y="255" fill="#94a3b8" font-size="11">· Federated Learning</text>
+  <text x="540" y="278" fill="#94a3b8" font-size="11">· Split Computing</text>
+  <text x="540" y="301" fill="#94a3b8" font-size="11">· DNN Partitioning</text>
+  <text x="540" y="324" fill="#94a3b8" font-size="11">· Edge-Cloud Sync</text>
+  <text x="540" y="347" fill="#94a3b8" font-size="11">· 5G MEC/Edge Servers</text>
+  <text x="540" y="370" fill="#94a3b8" font-size="11">· Serverless Edge</text>
+  <text x="540" y="393" fill="#94a3b8" font-size="11">· KubeEdge / K3s</text>
+  <circle cx="610" cy="320" r="12" fill="#06b6d4" stroke="#fff" stroke-width="2"/>
+  <text x="610" y="460" text-anchor="middle" fill="#06b6d4" font-size="10">GB-level models</text>
+
+  <!-- Era 4 -->
+  <rect x="730" y="150" width="200" height="300" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="730" y="150" width="200" height="44" rx="12" fill="url(#t4)"/>
+  <rect x="730" y="180" width="200" height="14" fill="url(#t4)"/>
+  <text x="830" y="178" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Era 4: On-Device LLM</text>
+  <text x="830" y="220" text-anchor="middle" fill="#cbd5e1" font-size="12">2023–2025</text>
+  <text x="760" y="255" fill="#94a3b8" font-size="11">· Llama.cpp</text>
+  <text x="760" y="278" fill="#94a3b8" font-size="11">· MLC-LLM</text>
+  <text x="760" y="301" fill="#94a3b8" font-size="11">· GGUF / AWQ / GPTQ</text>
+  <text x="760" y="324" fill="#94a3b8" font-size="11">· Phi-3 / Gemini Nano</text>
+  <text x="760" y="347" fill="#94a3b8" font-size="11">· Speculative Decoding</text>
+  <text x="760" y="370" fill="#94a3b8" font-size="11">· PEFT (LoRA)</text>
+  <text x="760" y="393" fill="#94a3b8" font-size="11">· ExecuTorch</text>
+  <circle cx="830" cy="320" r="12" fill="#8b5cf6" stroke="#fff" stroke-width="2"/>
+  <text x="830" y="460" text-anchor="middle" fill="#8b5cf6" font-size="10">1–7B params</text>
+
+  <!-- Era 5 -->
+  <rect x="950" y="150" width="200" height="300" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="950" y="150" width="200" height="44" rx="12" fill="url(#t5)"/>
+  <rect x="950" y="180" width="200" height="14" fill="url(#t5)"/>
+  <text x="1050" y="178" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Era 5: Cognitive Edge</text>
+  <text x="1050" y="220" text-anchor="middle" fill="#cbd5e1" font-size="12">2025–2026+</text>
+  <text x="980" y="255" fill="#94a3b8" font-size="11">· Edge AI Agents</text>
+  <text x="980" y="278" fill="#94a3b8" font-size="11">· Multi-Agent Systems</text>
+  <text x="980" y="301" fill="#94a3b8" font-size="11">· RAG + Tool Use</text>
+  <text x="980" y="324" fill="#94a3b8" font-size="11">· On-Device VLMs</text>
+  <text x="980" y="347" fill="#94a3b8" font-size="11">· Embodied AI</text>
+  <text x="980" y="370" fill="#94a3b8" font-size="11">· 6G Native AI</text>
+  <text x="980" y="393" fill="#94a3b8" font-size="11">· AR/VR Intelligence</text>
+  <circle cx="1050" cy="320" r="12" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+  <text x="1050" y="460" text-anchor="middle" fill="#ef4444" font-size="10">Agents + RAG</text>
+
+  <!-- Connecting arcs -->
+  <path d="M 270 320 Q 280 290 290 320" stroke="#64748b" stroke-width="1.5" fill="none"/>
+  <path d="M 490 320 Q 500 290 510 320" stroke="#3b82f6" stroke-width="1.5" fill="none"/>
+  <path d="M 710 320 Q 720 290 730 320" stroke="#06b6d4" stroke-width="1.5" fill="none"/>
+  <path d="M 930 320 Q 940 290 950 320" stroke="#8b5cf6" stroke-width="1.5" fill="none"/>
+
+  <!-- Key milestones below -->
+  <text x="600" y="520" text-anchor="middle" fill="#f8fafc" font-size="18" font-weight="700">Key Milestones</text>
+
+  <rect x="80" y="545" width="190" height="28" rx="6" fill="#334155"/>
+  <text x="175" y="564" text-anchor="middle" fill="#cbd5e1" font-size="11">2017 — TFLite released</text>
+  <rect x="80" y="580" width="190" height="28" rx="6" fill="#334155"/>
+  <text x="175" y="599" text-anchor="middle" fill="#cbd5e1" font-size="11">2019 — MobileNet v3 ✦</text>
+
+  <rect x="285" y="545" width="190" height="28" rx="6" fill="#1e3a5f"/>
+  <text x="380" y="564" text-anchor="middle" fill="#cbd5e1" font-size="11">2020 — ONNX Runtime Edge</text>
+  <rect x="285" y="580" width="190" height="28" rx="6" fill="#1e3a5f"/>
+  <text x="380" y="599" text-anchor="middle" fill="#cbd5e1" font-size="11">2021 — TVM / MicroTVM</text>
+
+  <rect x="490" y="545" width="190" height="28" rx="6" fill="#0c4a6e"/>
+  <text x="585" y="564" text-anchor="middle" fill="#cbd5e1" font-size="11">2022 — Edge-Cloud Sync</text>
+  <rect x="490" y="580" width="190" height="28" rx="6" fill="#0c4a6e"/>
+  <text x="585" y="599" text-anchor="middle" fill="#cbd5e1" font-size="11">2023 — FedAvg / SplitNN</text>
+
+  <rect x="700" y="545" width="190" height="28" rx="6" fill="#2e1065"/>
+  <text x="795" y="564" text-anchor="middle" fill="#cbd5e1" font-size="11">2023 — Llama 3.2 on edge</text>
+  <rect x="700" y="580" width="190" height="28" rx="6" fill="#2e1065"/>
+  <text x="795" y="599" text-anchor="middle" fill="#cbd5e1" font-size="11">2024 — ExecuTorch / GGUF</text>
+
+  <rect x="910" y="545" width="190" height="28" rx="6" fill="#450a0a"/>
+  <text x="1005" y="564" text-anchor="middle" fill="#cbd5e1" font-size="11">2024 — Apple Intelligence</text>
+  <rect x="910" y="580" width="190" height="28" rx="6" fill="#450a0a"/>
+  <text x="1005" y="599" text-anchor="middle" fill="#cbd5e1" font-size="11">2025 — Agents + RAG Edge</text>
+
+  <text x="600" y="660" text-anchor="middle" fill="#475569" font-size="11">From KB-sized MCU models to multi-billion-parameter LLMs with agentic reasoning on personal devices</text>
+</svg>

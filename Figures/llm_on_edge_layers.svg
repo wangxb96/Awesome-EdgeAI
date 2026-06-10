@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter></defs>
+  <rect width="960" height="620" fill="url(#bg)"/>
+
+  <text x="480" y="36" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700">LLM on Edge — Layered Stack</text>
+  <rect x="30" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="60" width="440" height="35" rx="10" fill="#dc2626"/>
+  <rect x="30" y="85" width="440" height="10" fill="#dc2626"/>
+  <text x="250.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Hardware Layer</text>
+  <text x="45" y="115" fill="#cbd5e1" font-size="11">· Apple Neural Engine (ANE) — 35 TOPS</text>
+  <text x="45" y="135" fill="#cbd5e1" font-size="11">· Qualcomm Hexagon NPU — 45 TOPS</text>
+  <text x="45" y="155" fill="#cbd5e1" font-size="11">· ARM Cortex-A78AE + Mali GPU</text>
+  <text x="45" y="175" fill="#cbd5e1" font-size="11">· NVIDIA Jetson Orin — 275 TOPS</text>
+  <text x="45" y="195" fill="#cbd5e1" font-size="11">· AMD Ryzen AI — XDNA NPU</text>
+  <text x="45" y="215" fill="#cbd5e1" font-size="11">· Google Tensor G3 — Edge TPU</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="11">· Samsung Exynos NPU — 20 TOPS</text>
+  <text x="45" y="255" fill="#cbd5e1" font-size="11">· Intel Meteor Lake — NPU built-in</text>
+  <rect x="490" y="60" width="440" height="240" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="60" width="440" height="35" rx="10" fill="#d97706"/>
+  <rect x="490" y="85" width="440" height="10" fill="#d97706"/>
+  <text x="710.0" y="83" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Runtime Layer</text>
+  <text x="505" y="115" fill="#cbd5e1" font-size="11">· llama.cpp — GGUF optimized kernels</text>
+  <text x="505" y="135" fill="#cbd5e1" font-size="11">· MLC-LLM — iOS, Android, WebGPU</text>
+  <text x="505" y="155" fill="#cbd5e1" font-size="11">· CoreML + MLX — Apple Silicon optimized</text>
+  <text x="505" y="175" fill="#cbd5e1" font-size="11">· ExecuTorch — PyTorch on edge devices</text>
+  <text x="505" y="195" fill="#cbd5e1" font-size="11">· ONNX Runtime — cross-platform inference</text>
+  <text x="505" y="215" fill="#cbd5e1" font-size="11">· MediaPipe — Google's edge-first pipeline</text>
+  <text x="505" y="235" fill="#cbd5e1" font-size="11">· vLLM (edge adaptation) — PagedAttention</text>
+  <text x="505" y="255" fill="#cbd5e1" font-size="11">· LM Studio / Ollama — desktop LLM runners</text>
+  <rect x="30" y="315" width="440" height="100" rx="10" fill="#1e293b" stroke="#6d28d9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="315" width="440" height="35" rx="10" fill="#6d28d9"/>
+  <rect x="30" y="340" width="440" height="10" fill="#6d28d9"/>
+  <text x="250.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Model Layer</text>
+  <text x="45" y="370" fill="#cbd5e1" font-size="11">· Quantized: Llama 3.2 (1B/3B), Phi-3 (3.8B)</text>
+  <text x="45" y="390" fill="#cbd5e1" font-size="11">· Gemma (2B), Qwen2 (0.5B), DeepSeek (1.3B)</text>
+  <rect x="490" y="315" width="440" height="100" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="315" width="440" height="35" rx="10" fill="#0891b2"/>
+  <rect x="490" y="340" width="440" height="10" fill="#0891b2"/>
+  <text x="710.0" y="338" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Application Layer</text>
+  <text x="505" y="370" fill="#cbd5e1" font-size="11">· Apple Intelligence, Samsung Galaxy AI, on-device Siri</text>
+  <text x="505" y="390" fill="#cbd5e1" font-size="11">· AI coding assistants, document Q&A, live translation</text>
+  <rect x="60" y="565" width="840" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="480" y="591" text-anchor="middle" fill="#94a3b8" font-size="12">The full stack enabling multi-billion-parameter LLM inference on personal devices</text></svg>

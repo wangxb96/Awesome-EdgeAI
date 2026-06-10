@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1e"/>
+      <stop offset="50%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#0c1a2b"/>
+    </linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgG)"/>
+
+  <text x="600" y="40" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="700">TinyML Ecosystem Landscape</text>
+  <text x="600" y="65" text-anchor="middle" fill="#94a3b8" font-size="12">From silicon to software — the complete end-to-end TinyML value chain</text>
+
+  <!-- Layer 1: Hardware -->
+  <rect x="20" y="95" width="1160" height="110" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="20" y="95" width="160" height="110" rx="10" fill="#7f1d1d"/>
+  <rect x="170" y="95" width="10" height="110" fill="url(#bgG)"/>
+  <text x="100" y="138" text-anchor="middle" fill="#fecaca" font-size="15" font-weight="700">Hardware</text>
+  <text x="100" y="165" text-anchor="middle" fill="#ef4444" font-size="22">🔌</text>
+  <text x="100" y="192" text-anchor="middle" fill="#f87171" font-size="10">Silicon & Boards</text>
+
+  <rect x="190" y="110" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="260" y="136" text-anchor="middle" fill="#fca5a5" font-size="12">ARM Cortex-M0→M7</text>
+  <rect x="340" y="110" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="410" y="136" text-anchor="middle" fill="#fca5a5" font-size="12">RISC-V (ESP32-C3)</text>
+  <rect x="490" y="110" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="560" y="136" text-anchor="middle" fill="#fca5a5" font-size="12">Arduino Nano BLE</text>
+  <rect x="640" y="110" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="710" y="136" text-anchor="middle" fill="#fca5a5" font-size="12">NXP i.MX RT</text>
+  <rect x="790" y="110" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="860" y="136" text-anchor="middle" fill="#fca5a5" font-size="12">Sony Spresense</text>
+  <rect x="940" y="110" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="1010" y="136" text-anchor="middle" fill="#fca5a5" font-size="12">Raspberry Pi Pico</text>
+
+  <rect x="190" y="155" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="260" y="181" text-anchor="middle" fill="#fca5a5" font-size="12">STM32 Nucleo</text>
+  <rect x="340" y="155" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="410" y="181" text-anchor="middle" fill="#fca5a5" font-size="12">Syntiant NDP</text>
+  <rect x="490" y="155" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="560" y="181" text-anchor="middle" fill="#fca5a5" font-size="12">Himax WE-I Plus</text>
+  <rect x="640" y="155" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="710" y="181" text-anchor="middle" fill="#fca5a5" font-size="12">GreenWaves GAP9</text>
+  <rect x="790" y="155" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="860" y="181" text-anchor="middle" fill="#fca5a5" font-size="12">Alif Ensemble</text>
+  <rect x="940" y="155" width="140" height="40" rx="6" fill="#450a0a"/>
+  <text x="1010" y="181" text-anchor="middle" fill="#fca5a5" font-size="12">Google Coral TPU</text>
+
+  <!-- Layer 2: Compilers & Runtimes -->
+  <rect x="20" y="220" width="1160" height="110" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="20" y="220" width="160" height="110" rx="10" fill="#78350f"/>
+  <rect x="170" y="220" width="10" height="110" fill="url(#bgG)"/>
+  <text x="100" y="263" text-anchor="middle" fill="#fde68a" font-size="15" font-weight="700">Compilers & Runtimes</text>
+  <text x="100" y="290" text-anchor="middle" fill="#f59e0b" font-size="22">⚙️</text>
+  <text x="100" y="317" text-anchor="middle" fill="#fbbf24" font-size="10">IR & Kernels</text>
+
+  <rect x="190" y="235" width="150" height="40" rx="6" fill="#713f12"/>
+  <text x="265" y="261" text-anchor="middle" fill="#fcd34d" font-size="12">TVM / MicroTVM</text>
+  <rect x="350" y="235" width="150" height="40" rx="6" fill="#713f12"/>
+  <text x="425" y="261" text-anchor="middle" fill="#fcd34d" font-size="12">TF Lite for Micro</text>
+  <rect x="510" y="235" width="150" height="40" rx="6" fill="#713f12"/>
+  <text x="585" y="261" text-anchor="middle" fill="#fcd34d" font-size="12">ONNX Runtime</text>
+  <rect x="670" y="235" width="150" height="40" rx="6" fill="#713f12"/>
+  <text x="745" y="261" text-anchor="middle" fill="#fcd34d" font-size="12">ExecuTorch</text>
+  <rect x="830" y="235" width="150" height="40" rx="6" fill="#713f12"/>
+  <text x="905" y="261" text-anchor="middle" fill="#fcd34d" font-size="12">MLIR / IREE</text>
+  <rect x="990" y="235" width="150" height="40" rx="6" fill="#713f12"/>
+  <text x="1065" y="261" text-anchor="middle" fill="#fcd34d" font-size="12">CMSIS-NN</text>
+
+  <rect x="190" y="280" width="240" height="40" rx="6" fill="#713f12"/>
+  <text x="310" y="306" text-anchor="middle" fill="#fcd34d" font-size="12">GLOW (Meta) · uTensor · NNoM</text>
+  <rect x="440" y="280" width="240" height="40" rx="6" fill="#713f12"/>
+  <text x="560" y="306" text-anchor="middle" fill="#fcd34d" font-size="12">STM32Cube.AI · eIQ Toolkit</text>
+  <rect x="690" y="280" width="240" height="40" rx="6" fill="#713f12"/>
+  <text x="810" y="306" text-anchor="middle" fill="#fcd34d" font-size="12">Edge Impulse Linux SDK</text>
+
+  <!-- Layer 3: Frameworks -->
+  <rect x="20" y="345" width="1160" height="110" rx="10" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="20" y="345" width="160" height="110" rx="10" fill="#0c4a6e"/>
+  <rect x="170" y="345" width="10" height="110" fill="url(#bgG)"/>
+  <text x="100" y="388" text-anchor="middle" fill="#cffafe" font-size="15" font-weight="700">Frameworks</text>
+  <text x="100" y="415" text-anchor="middle" fill="#06b6d4" font-size="22">📦</text>
+  <text x="100" y="442" text-anchor="middle" fill="#22d3ee" font-size="10">ML Libraries</text>
+
+  <rect x="190" y="360" width="150" height="40" rx="6" fill="#164e63"/>
+  <text x="265" y="386" text-anchor="middle" fill="#67e8f9" font-size="12">TensorFlow Lite</text>
+  <rect x="350" y="360" width="150" height="40" rx="6" fill="#164e63"/>
+  <text x="425" y="386" text-anchor="middle" fill="#67e8f9" font-size="12">PyTorch Mobile</text>
+  <rect x="510" y="360" width="150" height="40" rx="6" fill="#164e63"/>
+  <text x="585" y="386" text-anchor="middle" fill="#67e8f9" font-size="12">MediaPipe</text>
+  <rect x="670" y="360" width="150" height="40" rx="6" fill="#164e63"/>
+  <text x="745" y="386" text-anchor="middle" fill="#67e8f9" font-size="12">OpenCV for Edge</text>
+  <rect x="830" y="360" width="150" height="40" rx="6" fill="#164e63"/>
+  <text x="905" y="386" text-anchor="middle" fill="#67e8f9" font-size="12">MLX (Apple)</text>
+  <rect x="990" y="360" width="150" height="40" rx="6" fill="#164e63"/>
+  <text x="1065" y="386" text-anchor="middle" fill="#67e8f9" font-size="12">llama.cpp</text>
+
+  <rect x="190" y="405" width="220" height="40" rx="6" fill="#164e63"/>
+  <text x="300" y="432" text-anchor="middle" fill="#67e8f9" font-size="12">MLC-LLM · llama.rn · MNN</text>
+  <rect x="420" y="405" width="220" height="40" rx="6" fill="#164e63"/>
+  <text x="530" y="432" text-anchor="middle" fill="#67e8f9" font-size="12">ncnn · TNN · Arm NN</text>
+
+  <!-- Layer 4: Platforms -->
+  <rect x="20" y="470" width="1160" height="110" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="20" y="470" width="160" height="110" rx="10" fill="#14532d"/>
+  <rect x="170" y="470" width="10" height="110" fill="url(#bgG)"/>
+  <text x="100" y="513" text-anchor="middle" fill="#dcfce7" font-size="15" font-weight="700">Platforms & Tools</text>
+  <text x="100" y="540" text-anchor="middle" fill="#22c55e" font-size="22">🛠️</text>
+  <text x="100" y="567" text-anchor="middle" fill="#4ade80" font-size="10">Dev & MLOps</text>
+
+  <rect x="190" y="485" width="160" height="40" rx="6" fill="#166534"/>
+  <text x="270" y="511" text-anchor="middle" fill="#86efac" font-size="12">Edge Impulse</text>
+  <rect x="360" y="485" width="160" height="40" rx="6" fill="#166534"/>
+  <text x="440" y="511" text-anchor="middle" fill="#86efac" font-size="12">SensiML</text>
+  <rect x="530" y="485" width="160" height="40" rx="6" fill="#166534"/>
+  <text x="610" y="511" text-anchor="middle" fill="#86efac" font-size="12">Qeexo / TDK</text>
+  <rect x="700" y="485" width="160" height="40" rx="6" fill="#166534"/>
+  <text x="780" y="511" text-anchor="middle" fill="#86efac" font-size="12">Neuton.AI</text>
+  <rect x="870" y="485" width="160" height="40" rx="6" fill="#166534"/>
+  <text x="950" y="511" text-anchor="middle" fill="#86efac" font-size="12">Edge ML Lab</text>
+
+  <rect x="190" y="530" width="240" height="40" rx="6" fill="#166534"/>
+  <text x="310" y="556" text-anchor="middle" fill="#86efac" font-size="12">NanoEdge AI · Imagimob</text>
+  <rect x="440" y="530" width="240" height="40" rx="6" fill="#166534"/>
+  <text x="560" y="556" text-anchor="middle" fill="#86efac" font-size="12">Deeplite · OctoML</text>
+
+  <!-- Layer 5: Datasets & Benchmarks -->
+  <rect x="20" y="595" width="1160" height="110" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="20" y="595" width="160" height="110" rx="10" fill="#3b0764"/>
+  <rect x="170" y="595" width="10" height="110" fill="url(#bgG)"/>
+  <text x="100" y="638" text-anchor="middle" fill="#e9d5ff" font-size="15" font-weight="700">Datasets & Benchmarks</text>
+  <text x="100" y="665" text-anchor="middle" fill="#8b5cf6" font-size="22">📊</text>
+  <text x="100" y="692" text-anchor="middle" fill="#a78bfa" font-size="10">Evaluation</text>
+
+  <rect x="190" y="610" width="175" height="40" rx="6" fill="#4c1d95"/>
+  <text x="277" y="636" text-anchor="middle" fill="#c4b5fd" font-size="12">MLPerf Tiny</text>
+  <rect x="375" y="610" width="175" height="40" rx="6" fill="#4c1d95"/>
+  <text x="462" y="636" text-anchor="middle" fill="#c4b5fd" font-size="12">TinyBench</text>
+  <rect x="560" y="610" width="175" height="40" rx="6" fill="#4c1d95"/>
+  <text x="647" y="636" text-anchor="middle" fill="#c4b5fd" font-size="12">Speech Commands</text>
+  <rect x="745" y="610" width="175" height="40" rx="6" fill="#4c1d95"/>
+  <text x="832" y="636" text-anchor="middle" fill="#c4b5fd" font-size="12">Visual Wake Words</text>
+  <rect x="930" y="610" width="175" height="40" rx="6" fill="#4c1d95"/>
+  <text x="1017" y="636" text-anchor="middle" fill="#c4b5fd" font-size="12">Tiny ImageNet</text>
+
+  <rect x="190" y="655" width="240" height="40" rx="6" fill="#4c1d95"/>
+  <text x="310" y="681" text-anchor="middle" fill="#c4b5fd" font-size="12">OpenOrca · OpenAssistant</text>
+  <rect x="440" y="655" width="240" height="40" rx="6" fill="#4c1d95"/>
+  <text x="560" y="681" text-anchor="middle" fill="#c4b5fd" font-size="12">CIFAR-10 · COCO Tiny</text>
+
+  <!-- Summary bar -->
+  <rect x="100" y="735" width="1000" height="45" rx="10" fill="#1e293b" stroke="#334155" stroke-dasharray="4,2"/>
+  <text x="600" y="764" text-anchor="middle" fill="#94a3b8" font-size="13">End-to-End Workflow: Collect Data → Label → Train (AutoML) → Optimize → Deploy to MCU/NPU → Monitor & Update</text>
+</svg>

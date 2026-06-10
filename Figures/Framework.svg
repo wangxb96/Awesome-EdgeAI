@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="dataG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="modelG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    <linearGradient id="systemG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="largeG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="agentG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="850" fill="url(#bgg)"/>
+  
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" fill="#f8fafc" font-size="26" font-weight="700">Edge AI — Unified Taxonomy</text>
+  <text x="600" y="78" text-anchor="middle" fill="#94a3b8" font-size="13">From Data & Model Optimization to LLM, Agents & Cognitive Systems — Five Interconnected Pillars</text>
+
+  <!-- Pillar 1: Data -->
+  <rect x="30" y="120" width="215" height="660" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="120" width="215" height="50" rx="14" fill="url(#dataG)"/>
+  <rect x="30" y="155" width="215" height="15" fill="url(#dataG)"/>
+  <text x="137" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">📊 Data</text>
+  
+  <text x="50" y="200" fill="#93c5fd" font-size="12" font-weight="600">Federated Learning</text>
+  <text x="50" y="225" fill="#cbd5e1" font-size="10">· Horizontal / Vertical FL</text>
+  <text x="50" y="245" fill="#cbd5e1" font-size="10">· Split Learning</text>
+  <text x="50" y="265" fill="#cbd5e1" font-size="10">· Personalization</text>
+  
+  <text x="50" y="305" fill="#93c5fd" font-size="12" font-weight="600">Synthetic & Augmentation</text>
+  <text x="50" y="330" fill="#cbd5e1" font-size="10">· Data Distillation</text>
+  <text x="50" y="350" fill="#cbd5e1" font-size="10">· Generative Aug</text>
+  <text x="50" y="370" fill="#cbd5e1" font-size="10">· Domain Adaptation</text>
+
+  <text x="50" y="410" fill="#93c5fd" font-size="12" font-weight="600">Compressed Sensing</text>
+  <text x="50" y="435" fill="#cbd5e1" font-size="10">· Feature Compression</text>
+  <text x="50" y="455" fill="#cbd5e1" font-size="10">· Early Exit Sampling</text>
+
+  <text x="50" y="500" fill="#93c5fd" font-size="12" font-weight="600">On-Device Data</text>
+  <text x="50" y="525" fill="#cbd5e1" font-size="10">· Smart Caching</text>
+  <text x="50" y="545" fill="#cbd5e1" font-size="10">· Streaming ETL</text>
+  <text x="50" y="565" fill="#cbd5e1" font-size="10">· TinyML Signals</text>
+
+  <text x="50" y="610" fill="#93c5fd" font-size="12" font-weight="600">Data Quality & Annotation</text>
+  <text x="50" y="635" fill="#cbd5e1" font-size="10">· Weak Supervision</text>
+  <text x="50" y="655" fill="#cbd5e1" font-size="10">· Self-Supervised</text>
+
+  <text x="50" y="700" fill="#93c5fd" font-size="12" font-weight="600">Benchmarks & Datasets</text>
+  <text x="50" y="725" fill="#cbd5e1" font-size="10">· CIFAR-10/100 · ImageNet</text>
+  <text x="50" y="745" fill="#cbd5e1" font-size="10">· Speech Commands</text>
+  <text x="50" y="765" fill="#cbd5e1" font-size="10">· WMT · GLUE · OpenOrca</text>
+
+  <!-- Pillar 2: Model -->
+  <rect x="260" y="120" width="215" height="660" rx="14" fill="#1e293b" stroke="#06b6d4" stroke-width="2" filter="url(#sh)"/>
+  <rect x="260" y="120" width="215" height="50" rx="14" fill="url(#modelG)"/>
+  <rect x="260" y="155" width="215" height="15" fill="url(#modelG)"/>
+  <text x="367" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">🧠 Model</text>
+
+  <text x="280" y="200" fill="#67e8f9" font-size="12" font-weight="600">Compression</text>
+  <text x="280" y="225" fill="#cbd5e1" font-size="10">· Quantization (INT8/INT4/INT2)</text>
+  <text x="280" y="245" fill="#cbd5e1" font-size="10">· Pruning (Sparse/Structured)</text>
+  <text x="280" y="265" fill="#cbd5e1" font-size="10">· KD (Logit/Feature)</text>
+  <text x="280" y="285" fill="#cbd5e1" font-size="10">· Low-Rank Factorization</text>
+
+  <text x="280" y="325" fill="#67e8f9" font-size="12" font-weight="600">NAS / HW-Aware</text>
+  <text x="280" y="350" fill="#cbd5e1" font-size="10">· MobileNet · EfficientNet</text>
+  <text x="280" y="370" fill="#cbd5e1" font-size="10">· Once-for-All (OFA)</text>
+  <text x="280" y="390" fill="#cbd5e1" font-size="10">· AutoML for Edge</text>
+
+  <text x="280" y="430" fill="#67e8f9" font-size="12" font-weight="600">Architecture</text>
+  <text x="280" y="455" fill="#cbd5e1" font-size="10">· CNNs (MobileNet, YOLO-Nano)</text>
+  <text x="280" y="475" fill="#cbd5e1" font-size="10">· Transformers (MobileBERT)</text>
+  <text x="280" y="495" fill="#cbd5e1" font-size="10">· Mamba/SSM · RNN/LSTM</text>
+
+  <text x="280" y="540" fill="#67e8f9" font-size="12" font-weight="600">PEFT / Adaptation</text>
+  <text x="280" y="565" fill="#cbd5e1" font-size="10">· LoRA · QLoRA · Adapter</text>
+  <text x="280" y="585" fill="#cbd5e1" font-size="10">· Prompt Tuning</text>
+
+  <text x="280" y="630" fill="#67e8f9" font-size="12" font-weight="600">Edge LLM Inference</text>
+  <text x="280" y="655" fill="#cbd5e1" font-size="10">· Speculative Decoding</text>
+  <text x="280" y="675" fill="#cbd5e1" font-size="10">· KV-Cache Optimization</text>
+  <text x="280" y="695" fill="#cbd5e1" font-size="10">· MoE · Sparsity</text>
+
+  <text x="280" y="740" fill="#67e8f9" font-size="12" font-weight="600">VLM / Multi-Modal</text>
+  <text x="280" y="765" fill="#cbd5e1" font-size="10">· Phi-3-Vision · MobileVLM</text>
+
+  <!-- Pillar 3: System -->
+  <rect x="490" y="120" width="215" height="660" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#sh)"/>
+  <rect x="490" y="120" width="215" height="50" rx="14" fill="url(#systemG)"/>
+  <rect x="490" y="155" width="215" height="15" fill="url(#systemG)"/>
+  <text x="597" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">⚙️ System</text>
+
+  <text x="510" y="200" fill="#fde68a" font-size="12" font-weight="600">Runtimes & Frameworks</text>
+  <text x="510" y="225" fill="#cbd5e1" font-size="10">· llama.cpp · MLC-LLM</text>
+  <text x="510" y="245" fill="#cbd5e1" font-size="10">· ExecuTorch · TFLite</text>
+  <text x="510" y="265" fill="#cbd5e1" font-size="10">· ONNX Runtime</text>
+  <text x="510" y="285" fill="#cbd5e1" font-size="10">· CoreML · OpenVINO</text>
+
+  <text x="510" y="325" fill="#fde68a" font-size="12" font-weight="600">Compiler Stacks</text>
+  <text x="510" y="350" fill="#cbd5e1" font-size="10">· TVM · MLIR · XLA</text>
+  <text x="510" y="370" fill="#cbd5e1" font-size="10">· GLOW · TensorRT</text>
+
+  <text x="510" y="410" fill="#fde68a" font-size="12" font-weight="600">Memory & Compute</text>
+  <text x="510" y="435" fill="#cbd5e1" font-size="10">· Memory Management</text>
+  <text x="510" y="455" fill="#cbd5e1" font-size="10">· Operator Fusion</text>
+  <text x="510" y="475" fill="#cbd5e1" font-size="10">· Pipelining</text>
+
+  <text x="510" y="520" fill="#fde68a" font-size="12" font-weight="600">Edge-Cloud Offloading</text>
+  <text x="510" y="545" fill="#cbd5e1" font-size="10">· DNN Partitioning</text>
+  <text x="510" y="565" fill="#cbd5e1" font-size="10">· Early Exit</text>
+  <text x="510" y="585" fill="#cbd5e1" font-size="10">· Ensemble Routing</text>
+
+  <text x="510" y="630" fill="#fde68a" font-size="12" font-weight="600">Hardware</text>
+  <text x="510" y="655" fill="#cbd5e1" font-size="10">· NPU · GPU · FPGA · ASIC</text>
+  <text x="510" y="675" fill="#cbd5e1" font-size="10">· ARM Cortex-M · RISC-V</text>
+  <text x="510" y="695" fill="#cbd5e1" font-size="10">· Qualcomm · Apple ANE</text>
+
+  <text x="510" y="740" fill="#fde68a" font-size="12" font-weight="600">Deployment / CI-CD</text>
+  <text x="510" y="765" fill="#cbd5e1" font-size="10">· MLOps for Edge · Docker</text>
+
+  <!-- Pillar 4: Large Models -->
+  <rect x="720" y="120" width="215" height="660" rx="14" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#sh)"/>
+  <rect x="720" y="120" width="215" height="50" rx="14" fill="url(#largeG)"/>
+  <rect x="720" y="155" width="215" height="15" fill="url(#largeG)"/>
+  <text x="827" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">🦾 LLMs / VLMs</text>
+
+  <text x="740" y="200" fill="#fca5a5" font-size="12" font-weight="600">Edge LLM Families</text>
+  <text x="740" y="225" fill="#cbd5e1" font-size="10">· Llama 2/3 · Phi-3/4</text>
+  <text x="740" y="245" fill="#cbd5e1" font-size="10">· Gemma · Qwen2</text>
+  <text x="740" y="265" fill="#cbd5e1" font-size="10">· Mistral · DeepSeek</text>
+  <text x="740" y="285" fill="#cbd5e1" font-size="10">· TinyLlama · MobileLLM</text>
+
+  <text x="740" y="330" fill="#fca5a5" font-size="12" font-weight="600">On-Device Optimization</text>
+  <text x="740" y="355" fill="#cbd5e1" font-size="10">· AWQ · GPTQ · GGUF</text>
+  <text x="740" y="375" fill="#cbd5e1" font-size="10">· 4-bit / 2-bit Inference</text>
+  <text x="740" y="395" fill="#cbd5e1" font-size="10">· Flash Attention</text>
+
+  <text x="740" y="440" fill="#fca5a5" font-size="12" font-weight="600">VLM on Device</text>
+  <text x="740" y="465" fill="#cbd5e1" font-size="10">· MobileVLM · Qwen2-VL</text>
+  <text x="740" y="485" fill="#cbd5e1" font-size="10">· Phi-3-Vision</text>
+
+  <text x="740" y="535" fill="#fca5a5" font-size="12" font-weight="600">Decoding Strategies</text>
+  <text x="740" y="560" fill="#cbd5e1" font-size="10">· Speculative Decoding</text>
+  <text x="740" y="580" fill="#cbd5e1" font-size="10">· Medusa · Lookahead</text>
+  <text x="740" y="600" fill="#cbd5e1" font-size="10">· Mixture-of-Experts</text>
+
+  <text x="740" y="650" fill="#fca5a5" font-size="12" font-weight="600">Evaluation</text>
+  <text x="740" y="675" fill="#cbd5e1" font-size="10">· Perplexity · MMLU</text>
+  <text x="740" y="695" fill="#cbd5e1" font-size="10">· HumanEval · IFEval</text>
+
+  <text x="740" y="745" fill="#fca5a5" font-size="12" font-weight="600">Safety & Alignment</text>
+  <text x="740" y="770" fill="#cbd5e1" font-size="10">· RLHF · Guardrails</text>
+
+  <!-- Pillar 5: Agents -->
+  <rect x="950" y="120" width="220" height="660" rx="14" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" filter="url(#sh)"/>
+  <rect x="950" y="120" width="220" height="50" rx="14" fill="url(#agentG)"/>
+  <rect x="950" y="155" width="220" height="15" fill="url(#agentG)"/>
+  <text x="1060" y="152" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">🤖 Agents</text>
+
+  <text x="970" y="200" fill="#c4b5fd" font-size="12" font-weight="600">Agent Architectures</text>
+  <text x="970" y="225" fill="#cbd5e1" font-size="10">· ReAct · AutoGPT · CrewAI</text>
+  <text x="970" y="245" fill="#cbd5e1" font-size="10">· LangChain · Semantic Kernel</text>
+
+  <text x="970" y="290" fill="#c4b5fd" font-size="12" font-weight="600">Multi-Agent</text>
+  <text x="970" y="315" fill="#cbd5e1" font-size="10">· MetaGPT · AutoGen</text>
+  <text x="970" y="335" fill="#cbd5e1" font-size="10">· Swarm Intelligence</text>
+
+  <text x="970" y="380" fill="#c4b5fd" font-size="12" font-weight="600">Tool Use & RAG</text>
+  <text x="970" y="405" fill="#cbd5e1" font-size="10">· Function Calling</text>
+  <text x="970" y="425" fill="#cbd5e1" font-size="10">· Vector DB (Chroma)</text>
+  <text x="970" y="445" fill="#cbd5e1" font-size="10">· LlamaIndex</text>
+
+  <text x="970" y="490" fill="#c4b5fd" font-size="12" font-weight="600">Planning & Reasoning</text>
+  <text x="970" y="515" fill="#cbd5e1" font-size="10">· Chain-of-Thought</text>
+  <text x="970" y="535" fill="#cbd5e1" font-size="10">· Tree-of-Thought</text>
+  <text x="970" y="555" fill="#cbd5e1" font-size="10">· Graph-of-Thought</text>
+
+  <text x="970" y="600" fill="#c4b5fd" font-size="12" font-weight="600">Cognitive Edge</text>
+  <text x="970" y="625" fill="#cbd5e1" font-size="10">· Adaptive Policies</text>
+  <text x="970" y="645" fill="#cbd5e1" font-size="10">· Continual Learning</text>
+  <text x="970" y="665" fill="#cbd5e1" font-size="10">· Context-Aware</text>
+  <text x="970" y="685" fill="#cbd5e1" font-size="10">· Embodied AI</text>
+
+  <text x="970" y="730" fill="#c4b5fd" font-size="12" font-weight="600">Mobile / IoT Agents</text>
+  <text x="970" y="755" fill="#cbd5e1" font-size="10">· Apple Intelligence</text>
+  <text x="970" y="775" fill="#cbd5e1" font-size="10">· Samsung Galaxy AI</text>
+
+  <!-- Bottom note -->
+  <text x="600" y="830" text-anchor="middle" fill="#64748b" font-size="11">Comprehensive taxonomy covering the full stack — data, model, system, LLM/VLM, and agentic layers — as of 2024–2026 literature</text>
+</svg>

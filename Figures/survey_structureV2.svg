@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+    <linearGradient id="sec1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#3b82f6"/><stop offset="100%" style="stop-color:#1d4ed8"/></linearGradient>
+    <linearGradient id="sec2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#06b6d4"/><stop offset="100%" style="stop-color:#0e7490"/></linearGradient>
+    <linearGradient id="sec3" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#f59e0b"/><stop offset="100%" style="stop-color:#d97706"/></linearGradient>
+    <linearGradient id="sec4" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#ef4444"/><stop offset="100%" style="stop-color:#dc2626"/></linearGradient>
+    <linearGradient id="sec5" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#8b5cf6"/><stop offset="100%" style="stop-color:#6d28d9"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1000" height="800" fill="url(#bg)"/>
+  <text x="500" y="40" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="700">Survey Structure — Edge AI: From TinyML to Cognitive Computing</text>
+
+  <!-- Section 1 -->
+  <rect x="30" y="70" width="940" height="110" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="70" width="220" height="110" rx="12" fill="url(#sec1)"/><rect x="240" y="70" width="10" height="110" fill="#0f172a"/>
+  <text x="140" y="112" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Section 1</text>
+  <text x="140" y="140" text-anchor="middle" fill="#bfdbfe" font-size="12">Data Optimization</text>
+  <text x="260" y="105" fill="#cbd5e1" font-size="12">· Federated & Split Learning</text>
+  <text x="260" y="130" fill="#cbd5e1" font-size="12">· Data Augmentation & Distillation</text>
+  <text x="260" y="155" fill="#cbd5e1" font-size="12">· Compressed Sensing & Smart Caching</text>
+  <text x="260" y="175" fill="#64748b" font-size="10">Enables efficient on-device data handling without compromising privacy</text>
+
+  <!-- Section 2 -->
+  <rect x="30" y="195" width="940" height="110" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="195" width="220" height="110" rx="12" fill="url(#sec2)"/><rect x="240" y="195" width="10" height="110" fill="#0f172a"/>
+  <text x="140" y="237" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Section 2</text>
+  <text x="140" y="265" text-anchor="middle" fill="#cffafe" font-size="12">Model Optimization</text>
+  <text x="260" y="230" fill="#cbd5e1" font-size="12">· Quantization · Pruning · Knowledge Distillation</text>
+  <text x="260" y="255" fill="#cbd5e1" font-size="12">· NAS & HW-Aware Architecture Design</text>
+  <text x="260" y="280" fill="#cbd5e1" font-size="12">· PEFT (LoRA/QLoRA) · Speculative Decoding</text>
+  <text x="260" y="300" fill="#64748b" font-size="10">Compresses and adapts large models for resource-constrained edge devices</text>
+
+  <!-- Section 3 -->
+  <rect x="30" y="320" width="940" height="110" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="320" width="220" height="110" rx="12" fill="url(#sec3)"/><rect x="240" y="320" width="10" height="110" fill="#0f172a"/>
+  <text x="140" y="362" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Section 3</text>
+  <text x="140" y="390" text-anchor="middle" fill="#fef3c7" font-size="12">System Optimization</text>
+  <text x="260" y="355" fill="#cbd5e1" font-size="12">· Runtimes: llama.cpp · MLC-LLM · ExecuTorch</text>
+  <text x="260" y="380" fill="#cbd5e1" font-size="12">· Compiler Stacks: TVM · MLIR · IREE</text>
+  <text x="260" y="405" fill="#cbd5e1" font-size="12">· Edge-Cloud Offloading · Memory Management</text>
+  <text x="260" y="425" fill="#64748b" font-size="10">Software stack that bridges model optimizations to hardware accelerators</text>
+
+  <!-- Section 4 -->
+  <rect x="30" y="445" width="940" height="110" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="445" width="220" height="110" rx="12" fill="url(#sec4)"/><rect x="240" y="445" width="10" height="110" fill="#0f172a"/>
+  <text x="140" y="487" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Section 4</text>
+  <text x="140" y="515" text-anchor="middle" fill="#fecaca" font-size="12">LLMs/VLMs on Edge</text>
+  <text x="260" y="480" fill="#cbd5e1" font-size="12">· Edge LLM Families (Llama, Phi, Gemma, Qwen)</text>
+  <text x="260" y="505" fill="#cbd5e1" font-size="12">· On-Device VLM Optimization</text>
+  <text x="260" y="530" fill="#cbd5e1" font-size="12">· Inference Acceleration: AWQ · GPTQ · KV-Cache</text>
+  <text x="260" y="550" fill="#64748b" font-size="10">Deploying multi-billion parameter models on personal devices</text>
+
+  <!-- Section 5 -->
+  <rect x="30" y="570" width="940" height="110" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="570" width="220" height="110" rx="12" fill="url(#sec5)"/><rect x="240" y="570" width="10" height="110" fill="#0f172a"/>
+  <text x="140" y="612" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Section 5</text>
+  <text x="140" y="640" text-anchor="middle" fill="#e9d5ff" font-size="12">Agents & Cognitive Edge</text>
+  <text x="260" y="605" fill="#cbd5e1" font-size="12">· LLM Agents (ReAct, AutoGPT, CrewAI)</text>
+  <text x="260" y="630" fill="#cbd5e1" font-size="12">· Tool Use, RAG, Multi-Agent Orchestration</text>
+  <text x="260" y="655" fill="#cbd5e1" font-size="12">· Planning & Reasoning · Embodied Edge AI</text>
+  <text x="260" y="675" fill="#64748b" font-size="10">The next frontier: autonomous, context-aware edge intelligence</text>
+
+  <!-- Bottom Summary -->
+  <rect x="100" y="710" width="800" height="60" rx="10" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="500" y="738" text-anchor="middle" fill="#cbd5e1" font-size="13">10-Year Evolution: TinyML (2016) → Efficient DL (2020) → Edge-Cloud (2022) → On-Device LLM (2024) → Cognitive Edge Agents (2025+)</text>
+  <text x="500" y="758" text-anchor="middle" fill="#64748b" font-size="10">Covering key challenges, benchmarks, hardware platforms, and future research directions</text>
+</svg>

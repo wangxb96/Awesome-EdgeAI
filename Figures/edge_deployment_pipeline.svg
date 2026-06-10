@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" font-family="'Segoe UI', -apple-system, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1100" height="600" fill="url(#bg)"/>
+  <text x="550" y="38" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">Edge AI Deployment Pipeline</text>
+
+  <!-- Step 1 -->
+  <rect x="30" y="70" width="185" height="420" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#sh)"/>
+  <rect x="30" y="70" width="185" height="45" rx="14" fill="#1d4ed8"/><rect x="30" y="100" width="185" height="15" fill="#1d4ed8"/>
+  <text x="122" y="100" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">1. Data Collection</text>
+  <text x="50" y="146" fill="#93c5fd" font-size="11" font-weight="600">Sources</text>
+  <text x="50" y="168" fill="#94a3b8" font-size="10">· On-device sensors</text>
+  <text x="50" y="188" fill="#94a3b8" font-size="10">· User interactions</text>
+  <text x="50" y="208" fill="#94a3b8" font-size="10">· Telemetry logs</text>
+  <text x="50" y="228" fill="#94a3b8" font-size="10">· Microphones</text>
+  <text x="50" y="265" fill="#93c5fd" font-size="11" font-weight="600">Privacy</text>
+  <text x="50" y="287" fill="#94a3b8" font-size="10">· On-device only</text>
+  <text x="50" y="307" fill="#94a3b8" font-size="10">· Differential Privacy</text>
+  <text x="50" y="344" fill="#93c5fd" font-size="11" font-weight="600">Storage</text>
+  <text x="50" y="366" fill="#94a3b8" font-size="10">· Local cache</text>
+  <text x="50" y="386" fill="#94a3b8" font-size="10">· Streaming buffer</text>
+  <text x="50" y="406" fill="#94a3b8" font-size="10">· Edge DB (SQLite)</text>
+
+  <!-- Arrow -->
+  <polygon points="223,280 240,250 240,310" fill="#475569"/>
+
+  <!-- Step 2 -->
+  <rect x="248" y="70" width="185" height="420" rx="14" fill="#1e293b" stroke="#06b6d4" stroke-width="2" filter="url(#sh)"/>
+  <rect x="248" y="70" width="185" height="45" rx="14" fill="#0e7490"/><rect x="248" y="100" width="185" height="15" fill="#0e7490"/>
+  <text x="340" y="100" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">2. Preprocessing</text>
+  <text x="268" y="146" fill="#67e8f9" font-size="11" font-weight="600">Cleaning</text>
+  <text x="268" y="168" fill="#94a3b8" font-size="10">· Noise removal</text>
+  <text x="268" y="188" fill="#94a3b8" font-size="10">· Outlier detection</text>
+  <text x="268" y="208" fill="#94a3b8" font-size="10">· Normalization</text>
+  <text x="268" y="245" fill="#67e8f9" font-size="11" font-weight="600">Feature Extraction</text>
+  <text x="268" y="267" fill="#94a3b8" font-size="10">· MFCC (audio)</text>
+  <text x="268" y="287" fill="#94a3b8" font-size="10">· Embeddings (text)</text>
+  <text x="268" y="307" fill="#94a3b8" font-size="10">· Patches (vision)</text>
+  <text x="268" y="344" fill="#67e8f9" font-size="11" font-weight="600">Augmentation</text>
+  <text x="268" y="366" fill="#94a3b8" font-size="10">· SpecAugment</text>
+  <text x="268" y="386" fill="#94a3b8" font-size="10">· Synthetic gen.</text>
+
+  <!-- Arrow -->
+  <polygon points="441,280 458,250 458,310" fill="#475569"/>
+
+  <!-- Step 3 -->
+  <rect x="466" y="70" width="185" height="420" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#sh)"/>
+  <rect x="466" y="70" width="185" height="45" rx="14" fill="#d97706"/><rect x="466" y="100" width="185" height="15" fill="#d97706"/>
+  <text x="558" y="100" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">3. Model Training</text>
+  <text x="486" y="146" fill="#fde68a" font-size="11" font-weight="600">Training Setup</text>
+  <text x="486" y="168" fill="#94a3b8" font-size="10">· Transfer Learning</text>
+  <text x="486" y="188" fill="#94a3b8" font-size="10">· FL (Federated)</text>
+  <text x="486" y="208" fill="#94a3b8" font-size="10">· PEFT (LoRA)</text>
+  <text x="486" y="245" fill="#fde68a" font-size="11" font-weight="600">AutoML</text>
+  <text x="486" y="267" fill="#94a3b8" font-size="10">· NAS for Edge</text>
+  <text x="486" y="287" fill="#94a3b8" font-size="10">· Hyperparameter opt</text>
+  <text x="486" y="344" fill="#fde68a" font-size="11" font-weight="600">Validation</text>
+  <text x="486" y="366" fill="#94a3b8" font-size="10">· On-device bench</text>
+  <text x="486" y="386" fill="#94a3b8" font-size="10">· Accuracy/Latency</text>
+  <text x="486" y="406" fill="#94a3b8" font-size="10">· MLPerf Tiny</text>
+
+  <!-- Arrow -->
+  <polygon points="659,280 676,250 676,310" fill="#475569"/>
+
+  <!-- Step 4 -->
+  <rect x="684" y="70" width="185" height="420" rx="14" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#sh)"/>
+  <rect x="684" y="70" width="185" height="45" rx="14" fill="#dc2626"/><rect x="684" y="100" width="185" height="15" fill="#dc2626"/>
+  <text x="776" y="100" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">4. Optimization</text>
+  <text x="704" y="146" fill="#fca5a5" font-size="11" font-weight="600">Compression</text>
+  <text x="704" y="168" fill="#94a3b8" font-size="10">· Quantization (INT8→4)</text>
+  <text x="704" y="188" fill="#94a3b8" font-size="10">· Pruning · Distillation</text>
+  <text x="704" y="245" fill="#fca5a5" font-size="11" font-weight="600">Compiler</text>
+  <text x="704" y="267" fill="#94a3b8" font-size="10">· TVM · MLIR</text>
+  <text x="704" y="287" fill="#94a3b8" font-size="10">· Operator Fusion</text>
+  <text x="704" y="307" fill="#94a3b8" font-size="10">· Memory Planning</text>
+  <text x="704" y="344" fill="#fca5a5" font-size="11" font-weight="600">Format</text>
+  <text x="704" y="366" fill="#94a3b8" font-size="10">· GGUF (llama.cpp)</text>
+  <text x="704" y="386" fill="#94a3b8" font-size="10">· ONNX · CoreML</text>
+
+  <!-- Arrow -->
+  <polygon points="877,280 894,250 894,310" fill="#475569"/>
+
+  <!-- Step 5 -->
+  <rect x="902" y="70" width="170" height="420" rx="14" fill="#1e293b" stroke="#22c55e" stroke-width="2" filter="url(#sh)"/>
+  <rect x="902" y="70" width="170" height="45" rx="14" fill="#15803d"/><rect x="902" y="100" width="170" height="15" fill="#15803d"/>
+  <text x="987" y="100" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">5. Deploy</text>
+  <text x="922" y="146" fill="#86efac" font-size="11" font-weight="600">Target</text>
+  <text x="922" y="168" fill="#94a3b8" font-size="10">· MCU / NPU</text>
+  <text x="922" y="188" fill="#94a3b8" font-size="10">· Smartphone</text>
+  <text x="922" y="208" fill="#94a3b8" font-size="10">· Gateway / Server</text>
+  <text x="922" y="245" fill="#86efac" font-size="11" font-weight="600">Runtime</text>
+  <text x="922" y="267" fill="#94a3b8" font-size="10">· TFLite · ExecuTorch</text>
+  <text x="922" y="287" fill="#94a3b8" font-size="10">· llama.cpp</text>
+  <text x="922" y="344" fill="#86efac" font-size="11" font-weight="600">Monitoring</text>
+  <text x="922" y="366" fill="#94a3b8" font-size="10">· A/B Testing</text>
+  <text x="922" y="386" fill="#94a3b8" font-size="10">· Telemetry</text>
+  <text x="922" y="406" fill="#94a3b8" font-size="10">· OTA Updates</text>
+
+  <!-- Bottom Bar: CI/CD -->
+  <rect x="30" y="520" width="1042" height="55" rx="10" fill="#1e293b" stroke="#475569" stroke-dasharray="6,3"/>
+  <text x="550" y="543" text-anchor="middle" fill="#cbd5e1" font-size="13">CI/CD Pipeline: GitHub Actions → Build → Unit Tests → Integration Tests → Edge-Sim Test → Canary Deploy → Full Rollout</text>
+  <text x="550" y="563" text-anchor="middle" fill="#64748b" font-size="10">MLOps Tools: Weights & Biases · MLflow · DVC · Docker + K3s · Edge Impulse · OctoML · AWS IoT Greengrass</text>
+</svg>

@@ -77,4 +77,9 @@
   <text x="500" y="555" fill="#86efac" font-size="11" font-weight="600">NLP:</text>
   <text x="555" y="555" fill="#94a3b8" font-size="11">SST-2 · WMT · GLUE · OpenOrca · Alpaca</text>
   <text x="500" y="575" fill="#86efac" font-size="11" font-weight="600">Bench:</text>
-  <text x
+"555" y="575" fill="#94a3b8" font-size="11">MLPerf Tiny · TinyBench · Edge AI Bench · ET Benchmark</text>
+
+  <!-- Summary -->
+  <rect x="120" y="610" width="760" height="55" rx="10" fill="#1e293b" stroke="#475569" stroke-dasharray="4,2"/>
+  <text x="500" y="643" text-anchor="middle" fill="#cbd5e1" font-size="12">Data optimization reduces communication cost, preserves privacy, and enables efficient edge learning</text>
+</svg>

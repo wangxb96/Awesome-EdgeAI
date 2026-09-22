@@ -145,6 +145,8 @@ TinyML pushes AI inference to ultra-low-power microcontrollers (MCUs) with KB-le
 
 ### TinyML Frameworks & Tools
 
+- [Mandelbrot Fractal Neural Synthesis & WERR](https://github.com/pCwOrM/mandelbrot-fractal-neural-synthesis) - Zero-memory procedural parameter derivation and deterministic sub-2ms System-1 decision kernel from non-linear dynamical boundaries for extreme edge systems.
+
 - [TensorFlow Lite for Microcontrollers (TFLM)](https://github.com/tensorflow/tflite-micro) — Google's framework for MCU inference.
 - [CMSIS-NN](https://github.com/ARM-software/CMSIS-NN) — ARM's optimized NN kernels for Cortex-M.
 - [Edge Impulse](https://www.edgeimpulse.com/) — End-to-end TinyML development platform.

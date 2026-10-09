@@ -39,7 +39,7 @@ This repository continues to host and reference the original survey:
 
 ## Abstract
 
-- **WerreduR**: Procedural Fractal Cognitive Reflex Engine for Adaptive Educational AI on edge devices. 24-byte zero-storage parameterization, 30.4 μs latency, Lean 4 formal verification. [[Zenodo](https://doi.org/10.5281/zenodo.23128224)] [[Code](https://github.com/pCwOrM/WerreduR)]
+- **WerreduR**: Procedural Fractal Cognitive Reflex Engine for Adaptive Educational AI on edge devices. 24-byte zero-storage parameterization, 30.4 μs latency, Lean 4 formal verification. [[Zenodo](https://doi.org/10.5281/zenodo.23128224)] [[Code](https://github.com/jesmaat/WerreduR)]
 
 This living repository curates the most important advances in **Edge AI**, spanning:
 

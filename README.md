@@ -807,6 +807,7 @@ Key works & projects:
 - [Secure Multi-LLM Agentic AI and Agentification for Edge General Intelligence by Zero-Trust](https://arxiv.org/abs/2508.19870) (arXiv 2025).
 - [CORE: Collaborative Orchestration Role at Edge for 6G Intelligence via LLM Agents](https://arxiv.org/abs/2601.21822) (IEEE Comm. Mag. 2026).
 - [Toward Agentic Environments: GenAI and the Convergence of AI, Sustainability, and Human-Centric Spaces](https://arxiv.org/abs/2512.15787) (Sustainable Development 2025).
+- [Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution](https://arxiv.org/abs/2610.17816) (arXiv 2026) — EC²-Bench (EC2-Bench): 128 executable digital-workspace agent tasks jointly measuring task performance, cloud cost and privacy exposure to compare edge–cloud collaboration strategies.
 
 ## 6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)
 

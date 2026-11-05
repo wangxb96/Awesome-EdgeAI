@@ -39,6 +39,8 @@ This repository continues to host and reference the original survey:
 
 ## Abstract
 
+- **WerreduR**: Procedural Fractal Cognitive Reflex Engine for Adaptive Educational AI on edge devices. 24-byte zero-storage parameterization, 30.4 μs latency, Lean 4 formal verification. [[Zenodo](https://doi.org/10.5281/zenodo.23128224)] [[Code](https://github.com/jesmaat/WerreduR)]
+
 This living repository curates the most important advances in **Edge AI**, spanning:
 
 - Classic **data / model / system** optimization for tiny deep learning (CNNs, RNNs, efficient architectures).
@@ -144,6 +146,8 @@ TinyML pushes AI inference to ultra-low-power microcontrollers (MCUs) with KB-le
 | [TinyEngine: Efficient Training and Inference on Microcontrollers](https://github.com/mit-han-lab/tinyengine) (2023) | MIT HAN Lab | [Code](https://github.com/mit-han-lab/tinyengine) |
 
 ### TinyML Frameworks & Tools
+
+- [Mandelbrot Fractal Neural Synthesis & WERR](https://github.com/pCwOrM/mandelbrot-fractal-neural-synthesis) - Zero-memory procedural parameter derivation and deterministic sub-2ms System-1 decision kernel from non-linear dynamical boundaries for extreme edge systems.
 
 - [TensorFlow Lite for Microcontrollers (TFLM)](https://github.com/tensorflow/tflite-micro) — Google's framework for MCU inference.
 - [CMSIS-NN](https://github.com/ARM-software/CMSIS-NN) — ARM's optimized NN kernels for Cortex-M.

@@ -4,13 +4,15 @@
 *Curated resources on data, model, system optimization + Large Models (LLMs/VLMs), Agents & On-Device AI (2016–2026)*
 
 **Maintainers / Survey Authors**
-- [Xubin Wang](https://github.com/wangxb96)<sup>1,2,3</sup>
-- [Weijia Jia](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>2,3*</sup>
+- [Xubin Wang](https://github.com/wangxb96)<sup>1</sup>
+- [Qing Li](https://scholar.google.com/citations?user=D1LEg-YAAAAJ&hl=zh-CN)<sup>2</sup>
+- [Weijia Jia](https://scholar.google.com/citations?user=jtvFB20AAAAJ&hl=zh-CN&oi=ao)<sup>3,4</sup>
 
-<sup>1</sup> Hong Kong Baptist University  
-<sup>2</sup> Beijing Normal University  
-<sup>3</sup> Beijing Normal-Hong Kong Baptist University  
-<sup>*</sup> Corresponding author
+<sup>1</sup> East China University of Science and Technology
+<sup>2</sup> The Hong Kong Polytechnic University
+<sup>3</sup> Beijing Normal University  
+<sup>4</sup> Beijing Normal-Hong Kong Baptist University  
+
 
 ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
 ![Stars](https://img.shields.io/github/stars/wangxb96/Awesome-EdgeAI?style=social)

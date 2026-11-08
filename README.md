@@ -776,6 +776,7 @@ Selected papers & systems (2023–2026):
 - [Hardware-Efficient Softmax and Layer Normalization with Guaranteed Normalization for Edge Devices](https://arxiv.org/abs/2604.23647) (ISCAS 2026) — up to 14x area reduction.
 - [Punching Above Precision: Small Quantized Model Distillation with Learnable Regularizer](https://arxiv.org/abs/2509.20854) (arXiv 2025).
 - [Energy Efficient Software Hardware CoDesign for Machine Learning: From TinyML to LLMs](https://arxiv.org/abs/2603.23668) (ASPLOS EMC2 Workshop 2026).
+- [MAPLE: Manifold-Activated Pruning of Latent Experts for Sub-2-BPW Mixture-of-Experts Language Models](https://doi.org/10.5281/zenodo.24042480) (Preprint 2026) [Code](https://github.com/AmSach/maple) [Weights](https://huggingface.co/AmSach/Gemma-4-26B-A4B-MAPLE-Sub5GB-GGUF) - Post-training compression excising 80 dormant experts per layer on Gemma 4 26B-A4B via activation profiling, reaching 1.48 BPW (4.75 GB) and 45.4 TPS on 6GB edge GPUs.
 
 ## 5. AI Agents on Edge / On-Device Agents
 

@@ -1,0 +1,911 @@
+{
+  "generated_by": "survey/verify_repos.py",
+  "source_document": "README.md",
+  "verification_method": "git ls-remote <repo>.git HEAD",
+  "counts": {
+    "unique_repositories": 123,
+    "ok": 123,
+    "missing": 0,
+    "error": 0
+  },
+  "not_ok": [],
+  "section_distribution": {
+    "3.2. Model Optimization": 30,
+    "B. Inference engines & runtimes (official repositories)": 15,
+    "C. Quantization, compression & PEFT tooling": 9,
+    "A. On-device / small model families (2024–2026)": 7,
+    "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)": 7,
+    "On-Device Training & Fine-tuning": 6,
+    "3.1. Data Optimization": 6,
+    "3.2.2. Model Compression": 6,
+    "6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)": 6,
+    "3.2.2.2. Parameter Sharing": 5,
+    "3.2.2.4. Knowledge Distillation": 5,
+    "D. TinyML / MCU toolchain": 4,
+    "Foundational TinyML Papers": 4,
+    "Multimodal Models on Edge": 3,
+    "3.3. System Optimization": 3,
+    "New: 2026 Additions (verified Nov 2026)": 2,
+    "TinyML Frameworks & Tools": 2,
+    "3.2.2.3. Model Quantization": 2,
+    "5. AI Agents on Edge / On-Device Agents": 2,
+    "Awesome Edge AI": 1,
+    "9. Recent Surveys & Overviews (2023–2026)": 1,
+    "Contributing": 1,
+    "Federated Learning Foundations & Systems": 1,
+    "Privacy-Preserving Edge AI": 1,
+    "Embodied AI & Robotics on Edge": 1
+  },
+  "status": {
+    "abi/screenshot-to-code": "OK",
+    "Alibaba-MIIL/HardCoReNAS": "OK",
+    "alibaba/MNN": "OK",
+    "apache/tvm": "OK",
+    "apple/ml-cvnets": "OK",
+    "ArchipLab-LinfengZhang/pytorch-scalable-neural-networks": "OK",
+    "ARM-software/CMSIS-NN": "OK",
+    "artidoro/qlora": "OK",
+    "AutoGPTQ/AutoGPTQ": "OK",
+    "BangguWu/ECANet": "OK",
+    "bitsandbytes-foundation/bitsandbytes": "OK",
+    "conan7882/GoogLeNet-Inception": "OK",
+    "d-li14/mobilenetv2.pytorch": "OK",
+    "dmlc/tvm": "OK",
+    "EMCLab-Sinica/Intermittent-aware-NAS": "OK",
+    "emlearn/emlearn": "OK",
+    "errahulm/LRNL_approach": "OK",
+    "espressif/esp-tflite-micro": "OK",
+    "exo-explore/exo": "OK",
+    "facebookresearch/mobile-vision": "OK",
+    "forresti/SqueezeNet": "OK",
+    "ggerganov/llama.cpp": "OK",
+    "ggml-org/ggml": "OK",
+    "ggml-org/llama.cpp": "OK",
+    "google-ai-edge/ai-edge-torch": "OK",
+    "google-ai-edge/LiteRT-LM": "OK",
+    "google-ai-edge/litert-lm": "OK",
+    "google-ai-edge/mediapipe": "OK",
+    "google-ai-edge/model-explorer": "OK",
+    "google-deepmind/gemma": "OK",
+    "google/automl": "OK",
+    "Hao840/CDFKD-MFS": "OK",
+    "Hao840/manifold-distillation": "OK",
+    "haotian-liu/LLaVA": "OK",
+    "harvard-acc/EdgeBERT": "OK",
+    "hidet-org/hidet": "OK",
+    "houqb/CoordAttention": "OK",
+    "huawei-noah/ghostnet": "OK",
+    "huawei-noah/Pretrained-Language-Model": "OK",
+    "huggingface/optimum": "OK",
+    "huggingface/smollm": "OK",
+    "IMCL-PolyLink/PolyLink": "OK",
+    "intel/neural-compressor": "OK",
+    "InternLM/lmdeploy": "OK",
+    "IST-DASLab/gptq": "OK",
+    "jianghaojun/CondenseNetV2": "OK",
+    "KarenUllrich/Tutorial-SoftWeightSharingForNNCompression": "OK",
+    "kimihe/Octo": "OK",
+    "kvcache-ai/ktransformers": "OK",
+    "litian96/FedProx": "OK",
+    "lmbxmu/HRank": "OK",
+    "LongguangWang/SMSR": "OK",
+    "lukemelas/EfficientNet-PyTorch": "OK",
+    "mechanicalsea/sugar": "OK",
+    "megvii-model/ShuffleNet-Series": "OK",
+    "Meituan-AutoML/MobileVLM": "OK",
+    "meta-llama/llama-models": "OK",
+    "microsoft/BitNet": "OK",
+    "Microsoft/ELL": "OK",
+    "microsoft/InnerEye-DeepLearning": "OK",
+    "microsoft/LoRA": "OK",
+    "microsoft/onnxruntime": "OK",
+    "microsoft/onnxruntime-genai": "OK",
+    "microsoft/Phi-3CookBook": "OK",
+    "mit-han-lab/lite-transformer": "OK",
+    "mit-han-lab/llm-awq": "OK",
+    "mit-han-lab/mcunet": "OK",
+    "mit-han-lab/smoothquant": "OK",
+    "mit-han-lab/tiny-training": "OK",
+    "mit-han-lab/tinyengine": "OK",
+    "mit-han-lab/tinyML": "OK",
+    "ml-explore/mlx": "OK",
+    "ml-explore/mlx-lm": "OK",
+    "mlc-ai/mlc-llm": "OK",
+    "mlcommons/inference": "OK",
+    "mlcommons/tiny": "OK",
+    "mudler/LocalAI": "OK",
+    "nace-ai/kapitsa": "OK",
+    "navervision/mlsd": "OK",
+    "NVIDIA/TensorRT-LLM": "OK",
+    "NVlabs/DoRA": "OK",
+    "OAID/Tengine": "OK",
+    "octo-models/octo": "OK",
+    "ollama/ollama": "OK",
+    "OpenBMB/MiniCPM": "OK",
+    "OpenBMB/MiniCPM-V": "OK",
+    "OpenDevin/OpenDevin": "OK",
+    "OpenGVLab/OmniQuant": "OK",
+    "pytorch/executorch": "OK",
+    "QwenLM/Qwen3": "OK",
+    "RICE-EIC/FracTrain": "OK",
+    "RICE-EIC/ShiftAddNAS": "OK",
+    "Robert-JunWang/Pelee": "OK",
+    "rockchip-linux/rknn-toolkit2": "OK",
+    "sacmehta/ESPNet": "OK",
+    "sacmehta/ESPNetv2": "OK",
+    "Sandbox3aster/Deep-K-Means": "OK",
+    "shanglianlm0525/PyTorch-Networks": "OK",
+    "shaojiawei07/Edge_Inference_three-step_framework": "OK",
+    "ShichenLiu/CondenseNet": "OK",
+    "siat-nlp/CpRec": "OK",
+    "SJTU-IPADS/PowerInfer": "OK",
+    "tanchongmin/DropNet": "OK",
+    "Tencent/ncnn": "OK",
+    "Tencent/TNN": "OK",
+    "tensorflow/tflite-micro": "OK",
+    "tensorflow/tpu": "OK",
+    "Timen/squeezenext-tensorflow": "OK",
+    "timlee0212/PENNI": "OK",
+    "unslothai/unsloth": "OK",
+    "walkerning/aw_nas": "OK",
+    "wangxb96/cognitive-edge-llm-agent-survey": "OK",
+    "weiaicunzai/pytorch-cifar100": "OK",
+    "wofmanaf/SA-Net": "OK",
+    "WoosukKwon/retraining-free-pruning": "OK",
+    "xiaolai-sqlai/mobilenetv3": "OK",
+    "xiaxin1998/OD-Rec": "OK",
+    "yoshitomo-matsubara/supervised-compression": "OK",
+    "Zehaos/MobileNet": "OK",
+    "zhanghang1989/ResNeSt": "OK",
+    "zhoudaquan/rethinking_bottleneck_design": "OK",
+    "zhouhaoyi/TripletAttention": "OK",
+    "ZSusskind/BTHOWeN": "OK"
+  },
+  "repos": {
+    "abi/screenshot-to-code": {
+      "sections": [
+        "5. AI Agents on Edge / On-Device Agents"
+      ],
+      "status": "OK"
+    },
+    "Alibaba-MIIL/HardCoReNAS": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "alibaba/MNN": {
+      "sections": [
+        "6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "apache/tvm": {
+      "sections": [
+        "6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "apple/ml-cvnets": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "ArchipLab-LinfengZhang/pytorch-scalable-neural-networks": {
+      "sections": [
+        "3.2.2.4. Knowledge Distillation"
+      ],
+      "status": "OK"
+    },
+    "ARM-software/CMSIS-NN": {
+      "sections": [
+        "TinyML Frameworks & Tools"
+      ],
+      "status": "OK"
+    },
+    "artidoro/qlora": {
+      "sections": [
+        "On-Device Training & Fine-tuning"
+      ],
+      "status": "OK"
+    },
+    "AutoGPTQ/AutoGPTQ": {
+      "sections": [
+        "C. Quantization, compression & PEFT tooling"
+      ],
+      "status": "OK"
+    },
+    "BangguWu/ECANet": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "bitsandbytes-foundation/bitsandbytes": {
+      "sections": [
+        "C. Quantization, compression & PEFT tooling"
+      ],
+      "status": "OK"
+    },
+    "conan7882/GoogLeNet-Inception": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "d-li14/mobilenetv2.pytorch": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "dmlc/tvm": {
+      "sections": [
+        "3.3. System Optimization"
+      ],
+      "status": "OK"
+    },
+    "EMCLab-Sinica/Intermittent-aware-NAS": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "emlearn/emlearn": {
+      "sections": [
+        "D. TinyML / MCU toolchain"
+      ],
+      "status": "OK"
+    },
+    "errahulm/LRNL_approach": {
+      "sections": [
+        "3.1. Data Optimization"
+      ],
+      "status": "OK"
+    },
+    "espressif/esp-tflite-micro": {
+      "sections": [
+        "D. TinyML / MCU toolchain"
+      ],
+      "status": "OK"
+    },
+    "exo-explore/exo": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "facebookresearch/mobile-vision": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "forresti/SqueezeNet": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "ggerganov/llama.cpp": {
+      "sections": [
+        "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "ggml-org/ggml": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "ggml-org/llama.cpp": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "google-ai-edge/ai-edge-torch": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "google-ai-edge/LiteRT-LM": {
+      "sections": [
+        "New: 2026 Additions (verified Nov 2026)"
+      ],
+      "status": "OK"
+    },
+    "google-ai-edge/litert-lm": {
+      "sections": [
+        "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "google-ai-edge/mediapipe": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "google-ai-edge/model-explorer": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "google-deepmind/gemma": {
+      "sections": [
+        "A. On-device / small model families (2024–2026)"
+      ],
+      "status": "OK"
+    },
+    "google/automl": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "Hao840/CDFKD-MFS": {
+      "sections": [
+        "3.2.2.4. Knowledge Distillation"
+      ],
+      "status": "OK"
+    },
+    "Hao840/manifold-distillation": {
+      "sections": [
+        "3.2.2.4. Knowledge Distillation"
+      ],
+      "status": "OK"
+    },
+    "haotian-liu/LLaVA": {
+      "sections": [
+        "Multimodal Models on Edge"
+      ],
+      "status": "OK"
+    },
+    "harvard-acc/EdgeBERT": {
+      "sections": [
+        "3.2.2. Model Compression"
+      ],
+      "status": "OK"
+    },
+    "hidet-org/hidet": {
+      "sections": [
+        "3.3. System Optimization"
+      ],
+      "status": "OK"
+    },
+    "houqb/CoordAttention": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "huawei-noah/ghostnet": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "huawei-noah/Pretrained-Language-Model": {
+      "sections": [
+        "3.2.2.4. Knowledge Distillation"
+      ],
+      "status": "OK"
+    },
+    "huggingface/optimum": {
+      "sections": [
+        "C. Quantization, compression & PEFT tooling"
+      ],
+      "status": "OK"
+    },
+    "huggingface/smollm": {
+      "sections": [
+        "A. On-device / small model families (2024–2026)"
+      ],
+      "status": "OK"
+    },
+    "IMCL-PolyLink/PolyLink": {
+      "sections": [
+        "Privacy-Preserving Edge AI"
+      ],
+      "status": "OK"
+    },
+    "intel/neural-compressor": {
+      "sections": [
+        "C. Quantization, compression & PEFT tooling"
+      ],
+      "status": "OK"
+    },
+    "InternLM/lmdeploy": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "IST-DASLab/gptq": {
+      "sections": [
+        "C. Quantization, compression & PEFT tooling"
+      ],
+      "status": "OK"
+    },
+    "jianghaojun/CondenseNetV2": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "KarenUllrich/Tutorial-SoftWeightSharingForNNCompression": {
+      "sections": [
+        "3.2.2.2. Parameter Sharing"
+      ],
+      "status": "OK"
+    },
+    "kimihe/Octo": {
+      "sections": [
+        "On-Device Training & Fine-tuning",
+        "3.2.2.3. Model Quantization"
+      ],
+      "status": "OK"
+    },
+    "kvcache-ai/ktransformers": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "litian96/FedProx": {
+      "sections": [
+        "Federated Learning Foundations & Systems"
+      ],
+      "status": "OK"
+    },
+    "lmbxmu/HRank": {
+      "sections": [
+        "3.2.2. Model Compression"
+      ],
+      "status": "OK"
+    },
+    "LongguangWang/SMSR": {
+      "sections": [
+        "3.2.2. Model Compression"
+      ],
+      "status": "OK"
+    },
+    "lukemelas/EfficientNet-PyTorch": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "mechanicalsea/sugar": {
+      "sections": [
+        "3.2.2.2. Parameter Sharing"
+      ],
+      "status": "OK"
+    },
+    "megvii-model/ShuffleNet-Series": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "Meituan-AutoML/MobileVLM": {
+      "sections": [
+        "Multimodal Models on Edge"
+      ],
+      "status": "OK"
+    },
+    "meta-llama/llama-models": {
+      "sections": [
+        "A. On-device / small model families (2024–2026)"
+      ],
+      "status": "OK"
+    },
+    "microsoft/BitNet": {
+      "sections": [
+        "A. On-device / small model families (2024–2026)",
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "Microsoft/ELL": {
+      "sections": [
+        "3.1. Data Optimization"
+      ],
+      "status": "OK"
+    },
+    "microsoft/InnerEye-DeepLearning": {
+      "sections": [
+        "3.1. Data Optimization"
+      ],
+      "status": "OK"
+    },
+    "microsoft/LoRA": {
+      "sections": [
+        "On-Device Training & Fine-tuning"
+      ],
+      "status": "OK"
+    },
+    "microsoft/onnxruntime": {
+      "sections": [
+        "6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "microsoft/onnxruntime-genai": {
+      "sections": [
+        "New: 2026 Additions (verified Nov 2026)"
+      ],
+      "status": "OK"
+    },
+    "microsoft/Phi-3CookBook": {
+      "sections": [
+        "A. On-device / small model families (2024–2026)"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/lite-transformer": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/llm-awq": {
+      "sections": [
+        "C. Quantization, compression & PEFT tooling"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/mcunet": {
+      "sections": [
+        "Foundational TinyML Papers"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/smoothquant": {
+      "sections": [
+        "C. Quantization, compression & PEFT tooling"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/tiny-training": {
+      "sections": [
+        "Foundational TinyML Papers",
+        "On-Device Training & Fine-tuning"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/tinyengine": {
+      "sections": [
+        "Foundational TinyML Papers",
+        "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/tinyML": {
+      "sections": [
+        "Foundational TinyML Papers",
+        "On-Device Training & Fine-tuning"
+      ],
+      "status": "OK"
+    },
+    "ml-explore/mlx": {
+      "sections": [
+        "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "ml-explore/mlx-lm": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "mlc-ai/mlc-llm": {
+      "sections": [
+        "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "mlcommons/inference": {
+      "sections": [
+        "D. TinyML / MCU toolchain"
+      ],
+      "status": "OK"
+    },
+    "mlcommons/tiny": {
+      "sections": [
+        "D. TinyML / MCU toolchain"
+      ],
+      "status": "OK"
+    },
+    "mudler/LocalAI": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "nace-ai/kapitsa": {
+      "sections": [
+        "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "navervision/mlsd": {
+      "sections": [
+        "3.1. Data Optimization"
+      ],
+      "status": "OK"
+    },
+    "NVIDIA/TensorRT-LLM": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "NVlabs/DoRA": {
+      "sections": [
+        "On-Device Training & Fine-tuning"
+      ],
+      "status": "OK"
+    },
+    "OAID/Tengine": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "octo-models/octo": {
+      "sections": [
+        "Embodied AI & Robotics on Edge"
+      ],
+      "status": "OK"
+    },
+    "ollama/ollama": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "OpenBMB/MiniCPM": {
+      "sections": [
+        "A. On-device / small model families (2024–2026)"
+      ],
+      "status": "OK"
+    },
+    "OpenBMB/MiniCPM-V": {
+      "sections": [
+        "Multimodal Models on Edge"
+      ],
+      "status": "OK"
+    },
+    "OpenDevin/OpenDevin": {
+      "sections": [
+        "5. AI Agents on Edge / On-Device Agents"
+      ],
+      "status": "OK"
+    },
+    "OpenGVLab/OmniQuant": {
+      "sections": [
+        "C. Quantization, compression & PEFT tooling"
+      ],
+      "status": "OK"
+    },
+    "pytorch/executorch": {
+      "sections": [
+        "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "QwenLM/Qwen3": {
+      "sections": [
+        "A. On-device / small model families (2024–2026)"
+      ],
+      "status": "OK"
+    },
+    "RICE-EIC/FracTrain": {
+      "sections": [
+        "3.2.2.3. Model Quantization"
+      ],
+      "status": "OK"
+    },
+    "RICE-EIC/ShiftAddNAS": {
+      "sections": [
+        "3.2.2.2. Parameter Sharing"
+      ],
+      "status": "OK"
+    },
+    "Robert-JunWang/Pelee": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "rockchip-linux/rknn-toolkit2": {
+      "sections": [
+        "6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "sacmehta/ESPNet": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "sacmehta/ESPNetv2": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "Sandbox3aster/Deep-K-Means": {
+      "sections": [
+        "3.2.2.2. Parameter Sharing"
+      ],
+      "status": "OK"
+    },
+    "shanglianlm0525/PyTorch-Networks": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "shaojiawei07/Edge_Inference_three-step_framework": {
+      "sections": [
+        "3.1. Data Optimization"
+      ],
+      "status": "OK"
+    },
+    "ShichenLiu/CondenseNet": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "siat-nlp/CpRec": {
+      "sections": [
+        "3.2.2.2. Parameter Sharing"
+      ],
+      "status": "OK"
+    },
+    "SJTU-IPADS/PowerInfer": {
+      "sections": [
+        "B. Inference engines & runtimes (official repositories)"
+      ],
+      "status": "OK"
+    },
+    "tanchongmin/DropNet": {
+      "sections": [
+        "3.2.2. Model Compression"
+      ],
+      "status": "OK"
+    },
+    "Tencent/ncnn": {
+      "sections": [
+        "6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "Tencent/TNN": {
+      "sections": [
+        "6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)"
+      ],
+      "status": "OK"
+    },
+    "tensorflow/tflite-micro": {
+      "sections": [
+        "TinyML Frameworks & Tools"
+      ],
+      "status": "OK"
+    },
+    "tensorflow/tpu": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "Timen/squeezenext-tensorflow": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "timlee0212/PENNI": {
+      "sections": [
+        "3.2.2. Model Compression"
+      ],
+      "status": "OK"
+    },
+    "unslothai/unsloth": {
+      "sections": [
+        "C. Quantization, compression & PEFT tooling"
+      ],
+      "status": "OK"
+    },
+    "walkerning/aw_nas": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "wangxb96/cognitive-edge-llm-agent-survey": {
+      "sections": [
+        "Awesome Edge AI",
+        "9. Recent Surveys & Overviews (2023–2026)",
+        "Contributing"
+      ],
+      "status": "OK"
+    },
+    "weiaicunzai/pytorch-cifar100": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "wofmanaf/SA-Net": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "WoosukKwon/retraining-free-pruning": {
+      "sections": [
+        "3.2.2. Model Compression"
+      ],
+      "status": "OK"
+    },
+    "xiaolai-sqlai/mobilenetv3": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "xiaxin1998/OD-Rec": {
+      "sections": [
+        "3.2.2.4. Knowledge Distillation"
+      ],
+      "status": "OK"
+    },
+    "yoshitomo-matsubara/supervised-compression": {
+      "sections": [
+        "3.1. Data Optimization"
+      ],
+      "status": "OK"
+    },
+    "Zehaos/MobileNet": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "zhanghang1989/ResNeSt": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "zhoudaquan/rethinking_bottleneck_design": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "zhouhaoyi/TripletAttention": {
+      "sections": [
+        "3.2. Model Optimization"
+      ],
+      "status": "OK"
+    },
+    "ZSusskind/BTHOWeN": {
+      "sections": [
+        "3.3. System Optimization"
+      ],
+      "status": "OK"
+    }
+  }
+}

@@ -140,7 +140,7 @@ text(48,74.4,"Reasoning capability within a resource budget",7.6,weight="bold")
 rounded(3,64.2,89,6.6,LIGHT,r=1.4)
 for x,label,kind,c in [(13,"Memory","memory",BLUE),(35,"Energy","energy",AMBER),(57,"Deadline","deadline",BLUE),(79,"Link","link",TEAL)]:
     budget_icon(kind,x-6,67.5,c)
-    text(x-2,67.5,label,6.3,ha="left")
+    text(x-2,67.5,label,6.6,ha="left")
 arrow((47.5,63.9),(47.5,61.0),INK,.8)
 
 # Three policy levers form one controller, not three exclusive deployment paths.
@@ -152,7 +152,7 @@ for x,w,c,fill,name,detail,draw in [
     rounded(x,37.0,w,19.7,fill,r=1.6)
     draw(x+w/2,50.6,.79,c)
     text(x+w/2,44.4,name,7.0,weight="bold")
-    text(x+w/2,40.0,detail,5.9,color=MUTED,linespacing=1.18)
+    text(x+w/2,40.0,detail,6.6,color=MUTED,linespacing=1.18)
 line([16.75,16.75,78,78],[36.8,34.8,34.8,36.8],STROKE,.65)
 line([47.25,47.25],[37.0,34.8],STROKE,.65)
 arrow((47.5,34.8),(47.5,32.5),INK,.8)
@@ -172,7 +172,7 @@ arrow((47.5,12.1),(47.5,9.9),INK,.8)
 # Metrics are observations. Their return path updates the controller.
 rounded(3,2.6,89,7.0,PALE_TEAL,r=1.4)
 text(47.5,7.5,"Observe quality, cost and safety",6.8,weight="bold")
-text(47.5,4.4,"Reasoning fidelity · p95 latency · J/token · Safety",5.9,color=MUTED)
+text(47.5,4.4,"Reasoning fidelity · p95 latency · J/token · Safety",6.4,color=MUTED)
 line([92.3,96.7,96.7],[6.2,6.2,59.3],TEAL,.85)
 arrow((96.7,59.3),(92.2,59.3),TEAL,.85)
 

@@ -229,55 +229,89 @@ def couplings():
     export(fig,'cross_layer_couplings')
 
 def workflow():
-    fig,axis=plt.subplots(figsize=(7.12,2.56));setup(fig,axis,180,65)
-    line([116,116],[3,59],STROKE,.55)
-    text(3,62,'a  Instrument the complete task',8.1,weight='bold',ha='left')
-    entries=[(13,'Queue',sheet,BLUE,PALE_BLUE),(35,'Prefill',chip,BLUE,PALE_BLUE),(57,'Decode',cache,TEAL,PALE_TEAL),(79,'Tool I/O',tool,AMBER,PALE_AMBER),(101,'Resume',agent,TEAL,PALE_TEAL)]
-    for x,label,draw,c,fill in entries:
-        rounded(x-9,31,18,23,fill,r=1.2);draw(x,44,.73,c);text(x,34,label,7.0,weight='bold')
-    for x in (22.3,44.3,66.3,88.3):arrow((x,43),(x+3.1,43),TEAL,.65,scale=5)
-    text(5,57,'Start',6.7,ha='left');text(39,57,'First token',6.7,ha='left');text(109,57,'Terminal event',6.7,ha='right')
-    line([4,4,48,48],[28,25,25,28],BLUE,.8);text(26,21,'Request TTFT',7.0,weight='bold')
-    line([4,4,110,110],[16,13,13,16],TEAL,.8);text(57,9,'Task completion / termination',7.0,weight='bold')
-    text(57,3,'Declare devices, energy window and idle policy',6.7)
-    text(120,62,'b  Retain every task episode',8.1,weight='bold',ha='left')
-    rounded(121,43,57,13,PALE_BLUE,r=1.2)
-    sheet(128,49.5,.8,BLUE);text(153,49.5,'All attempted episodes A',7.1,weight='bold')
-    arrow((138,42.5),(134,36),TEAL,.75)
-    arrow((163,42.5),(168,36),AMBER,.75)
-    rounded(121,20,26,15,PALE_TEAL,r=1.2);check(134,29,.85,TEAL);text(134,22.5,'Complete',7.0,weight='bold')
-    rounded(152,20,26,15,PALE_AMBER,r=1.2);stop(165,29,.85,AMBER);text(165,22.5,'Fail / timeout',6.8,weight='bold')
-    text(134,15,'Success subset S',6.7);text(165,15,'Remain in A',6.7)
-    rounded(121,3,57,8,LIGHT,r=1.1);text(149.5,7,'S/A + failures; label conditional efficiency',6.7)
+    fig,axis=plt.subplots(figsize=(7.12,3.00));setup(fig,axis,180,76)
+    line([116,116],[2,71],STROKE,.55)
+    text(3,73,'a  Link calls to one complete task episode',8.0,weight='bold',ha='left')
+    text(57,67.5,'Episode e: one user goal, including internal retries',7.0)
+    # This serial trace is an illustrative dependency pattern, not a time scale.
+    line([5,5,58,58],[60,62,62,60],BLUE,.65)
+    text(31.5,64.5,'Model request r1',6.7)
+    text(71,61,'Tool t1',6.7)
+    text(97,61,'Request r2',6.7)
+    nodes=[(5,15,'Queue',sheet,BLUE,PALE_BLUE),
+           (22,17,'Prefill',chip,BLUE,PALE_BLUE),
+           (41,17,'Decode',cache,TEAL,PALE_TEAL),
+           (62,18,'Tool I/O',tool,AMBER,PALE_AMBER),
+           (84,26,'Resume',agent,TEAL,PALE_TEAL)]
+    for x,w,label,draw,c,fill in nodes:
+        rounded(x,44,w,13,fill,r=1.0)
+        draw(x+w/2,52.5,.40,c);text(x+w/2,46.7,label,6.6,weight='bold')
+    for x1,x2 in [(20.3,21.7),(39.3,40.7),(58.3,61.7),(80.3,83.7)]:
+        arrow((x1,50.5),(x2,50.5),TEAL,.6,scale=4.5)
+    text(50,39.7,'First token of r1',6.6)
+    line([5,5,41,41],[40,36.5,36.5,40],BLUE,.75)
+    text(23,32.5,'TTFT(r1)',7.1,weight='bold')
+    line([5,5,110,110],[28,24.5,24.5,28],TEAL,.75)
+    text(57.5,20.5,'Task completion / termination',7.2,weight='bold')
+    rounded(5,8,105,8,PALE_AMBER,r=1.1)
+    budget_icon('energy',11,12,AMBER)
+    text(61,12,'Integrate power over declared devices and task window',6.8)
+    text(57.5,3.3,'Link episode_id, request_id and parent_request_id',6.7)
+
+    text(120,73,'b  Fix outcomes and denominators',8.0,weight='bold',ha='left')
+    rounded(120,59,58,9,PALE_BLUE,r=1.1)
+    text(149,63.5,'A = all attempted task episodes',7.1,weight='bold')
+    for x,w,label,fill,c in [(120,18,'Success\nS',PALE_TEAL,TEAL),
+                            (140,18,'Completed,\nunsuccessful',LIGHT,BLUE),
+                            (160,18,'Fail /\ntimeout',PALE_AMBER,AMBER)]:
+        rounded(x,41,w,12,fill,r=1.0)
+        text(x+w/2,47,label,6.7,weight='bold',linespacing=1.15)
+        arrow((149,58.5),(x+w/2,53.5),c,.65,scale=5)
+    text(149,36.3,'Task success = S/A, including all failures in A',6.7)
+    rounded(120,22,58,10,PALE_TEAL,r=1.1)
+    text(149,28.5,'Deadline rate = (successful by D) / A',6.8,weight='bold')
+    text(149,24.3,'Early failure is not fast successful completion',6.6)
+    rounded(120,9,58,10,LIGHT,r=1.1)
+    text(149,15.5,'Report request and task tails separately',6.8,weight='bold')
+    text(149,11.3,'Timeout duration is a censoring bound',6.6)
+    text(149,3.3,'Keep failed-task energy; label success-only metrics',6.6)
     export(fig,'workflow_evaluation')
 
 def patterns():
-    fig,axis=plt.subplots(figsize=(6.27,4.40));setup(fig,axis,160,112)
-    text(80,108,'What crosses the device boundary?',8.3,weight='bold')
-    # Full-request delegation sends input/output rather than model-layer state.
-    rounded(3,72,154,29,LIGHT,r=1.5)
-    text(7,97,'a  Whole-request delegation',7.6,weight='bold',ha='left')
-    phone(24,84,.9);server(137,84,.9)
-    text(24,74,'Client',6.9,weight='bold');text(137,74,'Edge / cloud',6.9,weight='bold')
-    arrow((36,88),(125,88),BLUE,.8);text(80,91.5,'Prompt / selected evidence',7.0)
-    arrow((125,80),(36,80),TEAL,.8);text(80,76,'Generated output',7.0)
-    # A single model is physically sharded across participants.
-    rounded(3,38,154,29,LIGHT,r=1.5)
-    text(7,63,'b  Layer partitioning of one model',7.6,weight='bold',ha='left')
-    for x,label,c,fill in [(25,'Client shard',BLUE,PALE_BLUE),(80,'Edge shard',TEAL,PALE_TEAL),(135,'Remote shard',AMBER,PALE_AMBER)]:
-        chip(x,52,.85,c);text(x,41,label,6.9,weight='bold')
-    arrow((33,52),(70,52),BLUE,.8);text(52,56,'Activations',7.0)
-    arrow((88,52),(125,52),TEAL,.8);text(107,56,'Activations',7.0)
-    # A gate chooses between complete models, not consecutive model layers.
-    rounded(3,3,154,30,LIGHT,r=1.5)
-    text(7,29,'c  Large–small model cascade',7.6,weight='bold',ha='left')
-    phone(22,16,.9);text(22,6,'Local SLM',6.9,weight='bold')
-    rounded(62,12,36,10,PALE_BLUE,BLUE,r=1.1)
-    text(80,17,'Validated routing gate',6.9,weight='bold')
-    arrow((32,17),(61,17),BLUE,.8);text(47,21,'Local result',6.7)
-    server(136,16,.9);text(136,6,'Larger model',6.9,weight='bold')
-    arrow((98.5,17),(125,17),AMBER,.8);text(113,22,'Escalate',6.8)
-    line([80,80],[11.7,6.5],TEAL,.7);check(80,5.5,.55,TEAL);text(97,6,'Accept locally',6.7)
+    fig,axis=plt.subplots(figsize=(3.48,3.34));setup(fig,axis,100,96)
+    # Each compact row shows payload, ownership and a distinguishing driver.
+    rounded(2,64,96,30,LIGHT,r=1.4)
+    text(5,91,'a  Whole-request delegation',7.4,weight='bold',ha='left')
+    phone(12,80,.54);server(87,80,.60)
+    arrow((23,81.5),(77,81.5),BLUE,.7,scale=5)
+    arrow((77,78.5),(23,78.5),TEAL,.7,scale=5)
+    text(50,85.5,'Prompt / evidence',6.6)
+    text(50,74.8,'Generated output',6.6)
+    text(50,69.5,'KV: remote; disclose input/output residency',6.5)
+    text(50,65.8,'Driver: transfers + queue + generation',6.5)
+
+    rounded(2,32,96,30,LIGHT,r=1.4)
+    text(5,59,'b  Layer partitioning of one model',7.4,weight='bold',ha='left')
+    for x,label,c in [(13,'Client',BLUE),(50,'Edge',TEAL),(87,'Remote',AMBER)]:
+        chip(x,49.5,.60,c);text(x,43.5,label,6.4,weight='bold')
+    arrow((20,49.5),(42,49.5),BLUE,.7,scale=5)
+    arrow((57,49.5),(79,49.5),TEAL,.7,scale=5)
+    text(31,54,'Act.',6.5);text(68,54,'Act.',6.5)
+    text(50,38,'KV: node-local; payload: activations',6.5)
+    text(50,34,'Driver: link delay + decode synchronization',6.5)
+
+    rounded(2,0,96,30,LIGHT,r=1.4)
+    text(5,27,'c  Large-small model cascade',7.4,weight='bold',ha='left')
+    phone(12,18.5,.54);server(87,18.5,.60)
+    rounded(36,15,31,7,PALE_BLUE,BLUE,r=1.0)
+    text(51.5,18.5,'Validated gate',6.5,weight='bold')
+    arrow((23,18.5),(35.5,18.5),BLUE,.7,scale=5)
+    arrow((67.5,18.5),(77,18.5),AMBER,.7,scale=5)
+    text(29,23,'Result',6.4);text(74,23,'Escalate',6.4)
+    line([51.5,51.5],[14.7,11.2],TEAL,.65)
+    check(51.5,10.3,.50,TEAL);text(67.5,11,'Accept locally',6.4)
+    text(50,6,'KV: model-local; payload: selected context',6.5)
+    text(50,2,'Risk: misrouting and wasted local work',6.5)
     export(fig,'collaboration_patterns')
 
 if __name__=='__main__':

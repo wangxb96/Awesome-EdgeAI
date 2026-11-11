@@ -3,7 +3,7 @@
 **From TinyML to Cognitive Edge Computing**  
 *Curated resources on data, model, system optimization + Large Models (LLMs/VLMs), Agents & On-Device AI (2016–2026)*
 
-**Last refresh: 11 November 2026** — 40 verified papers were added across the two 2026 refreshes (see [2026 Additions](#new-2026-additions-verified-nov-2026)), plus 30+ official repositories in the [On-Device Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index). All 135 pre-existing arXiv identifiers were re-validated against the arXiv API; mismatched IDs, dead links and withdrawn preprints were corrected or flagged.
+**Last refresh: 11 November 2026** — 39 verified papers were added across the two 2026 refreshes (see [2026 Additions](#new-2026-additions-verified-nov-2026)), plus 30+ official repositories in the [On-Device Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index). All 135 pre-existing arXiv identifiers were re-validated against the arXiv API; mismatched IDs, dead links and withdrawn preprints were corrected or flagged.
 
 **Maintainers / Survey Authors**
 - [Xubin Wang](https://github.com/wangxb96)<sup>1</sup>
@@ -114,10 +114,10 @@ The manuscript and this repository are maintained together: the paper cites this
 | Official tool/model repository audit (live Git HEAD) | [`survey/verify_repos.py`](survey/verify_repos.py), [`survey/repos_manifest.json`](survey/repos_manifest.json) |
 | Benchmark reporting protocol, energy boundary, failed-batch policy | [`survey/benchmark_protocol.md`](survey/benchmark_protocol.md), [`survey/compute_ci.py`](survey/compute_ci.py) |
 | Figure 1 schematic source and editable/vector/raster exports | [`survey/figures/cognitive_edge_overview.py`](survey/figures/cognitive_edge_overview.py), [`survey/figures/cognitive_edge_overview.pdf`](survey/figures/cognitive_edge_overview.pdf), [`survey/figures/cognitive_edge_overview.svg`](survey/figures/cognitive_edge_overview.svg) |
-| 2025–2026 literature refresh (40 verified papers) | [2026 Additions](#new-2026-additions-verified-nov-2026) |
+| 2025–2026 literature refresh (39 verified papers) | [2026 Additions](#new-2026-additions-verified-nov-2026) |
 | On-device model families and 30+ official tool repositories | [Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index) |
 
-**Reproducible corpus census (10 Nov 2026).** `survey/verify_corpus.py` resolves **148/148** unique arXiv identifiers against the arXiv Atom API with **0 unresolved** and **0 withdrawn** preprints; 140 Markdown link labels are title-audited (11 low-similarity labels are abbreviations, bibliographic citation labels, or version-title changes, all manually inspected). Year distribution: 2023–2026 accounts for **126/148 (85.1%)** of the corpus. `survey/verify_repos.py` confirms **123/123** linked GitHub repositories resolve to a live HEAD. These are regenerable numbers, not hand-entered estimates:
+**Reproducible corpus census (10 Nov 2026).** `survey/verify_corpus.py` resolves **145/145** unique arXiv identifiers against the arXiv Atom API with **0 unresolved** and **0 withdrawn** preprints; 137 Markdown link labels are title-audited (9 low-similarity labels are abbreviations, bibliographic citation labels, or version-title changes, all manually inspected). Year distribution: 2023–2026 accounts for **123/145 (84.8%)** of the corpus. `survey/verify_repos.py` confirms **123/123** linked GitHub repositories resolve to a live HEAD. These are regenerable numbers, not hand-entered estimates:
 
 ```bash
 python3 survey/verify_corpus.py
@@ -125,21 +125,6 @@ python3 survey/verify_repos.py
 ```
 
 **Benchmark boundary (important).** The manuscript's artifact-backed measurements are a **controlled server-side reference benchmark** on a `4×RTX 4090 D` server (5 models, 4 context budgets 512–4096, 10 micro-tasks). They are *not* edge-device measurements: absolute latency, throughput, and J/token values must **not** be extrapolated to phones, MCUs, or NPUs. Their purpose is to demonstrate that no single model jointly dominates quality, throughput, tail latency, and energy under one controlled stack, and to motivate multi-metric evaluation. Energy scope is GPU-board power only (no wall-plug, host CPU, cooling, or idle overhead). Historical per-trial traces and repetition counts were not retained, so the manuscript reports only the available context-averaged values and across-context views, with no trial-level confidence intervals.
-
-
-| Reference | Venue / source | Verification |
-|---|---|---|
-| N. Yang, M. Fan, W. Wang, H. Zhang, "Decision-Making Large Language Model for Wireless Communication: A Comprehensive Survey on Key Techniques" | IEEE Commun. Surveys & Tutorials, vol. 28, pp. 3055–3088, 2026 | [doi:10.1109/COMST.2025.3614494](https://doi.org/10.1109/COMST.2025.3614494) |
-| N. Yang, S. Chen, H. Zhang, R. A. Berry, "Beyond the Edge: An Advanced Exploration of Reinforcement Learning for Mobile Edge Computing, Its Applications, and Future Research Trajectories" | IEEE Commun. Surveys & Tutorials, vol. 27, no. 1, pp. 546–594, 2025 | [doi:10.1109/COMST.2024.3405075](https://doi.org/10.1109/COMST.2024.3405075) |
-| L. Cai, W. Fu, Y. Huang, R. Zhang, Y. Liu, J. Kang, Z. Xiong, T. Jiang, D. Niyato, X. Wang, S. Mao, X. Shen, "Tutorial on Large Language Model-Enhanced Reinforcement Learning for Wireless Networks" | arXiv:2512.03722, 3 Dec 2025 | [arXiv:2512.03722](https://arxiv.org/abs/2512.03722) |
-| R. Zhang, G. Liu, Y. Liu, C. Zhao, J. Wang, Y. Xu, D. Niyato, J. Kang, Y. Li, S. Mao, S. Sun, X. Shen, D. I. Kim, "Toward Edge General Intelligence with Agentic AI and Agentification: Concepts, Technologies, and Future Directions" | arXiv:2508.18725, 26 Aug 2025 | [arXiv:2508.18725](https://arxiv.org/abs/2508.18725) |
-
-**Two additional recent papers from overlapping author teams** were added to extend the agentic-edge and future-trends discussion:
-
-| Reference | Venue / source | Verification |
-|---|---|---|
-| M. Luo, R. Zhang, X. Hou, J. Du, C. Jiang, Y. Ren, S. Mao, "Resource-Aware Agentic AI Reasoning for Mobile Edge General Intelligence" | IEEE Wireless Communications, 2026 | [doi:10.1109/MWC.2026.3740386](https://doi.org/10.1109/MWC.2026.3740386) |
-| C. Zhao, G. Liu, R. Zhang, Y. Liu, J. Wang, J. Kang, D. Niyato, Z. Li, X. Shen, Z. Han, S. Sun, C. Yuen, D. I. Kim, "Edge General Intelligence Through World Models, Large Language Models, and Agentic AI: Fundamentals, Solutions, and Challenges" | IEEE Transactions on Cognitive Communications and Networking, vol. 12, pp. 5649–5675, 2026 | [doi:10.1109/TCCN.2026.3658762](https://doi.org/10.1109/TCCN.2026.3658762) |
 
 **Manuscript-side revision deliverables** are kept in a standalone revision package, `paper_10_Cognitive_EC/TMC_Revision_2026-11-10/`: `Summary of Changes.pdf` (the separate point-by-point response), black-text `[submission identifier removed]-main.tex/pdf` and `[submission identifier removed]-supp.tex/pdf`, plus separate color-coded review copies. Figure 1 is a compact closed-loop schematic with original vector pictograms for the model, runtime, agent, device/edge/cloud tiers, and evaluation metrics. The design takes a restrained hierarchical-flow approach; the marks are conceptual categories, not vendor or product logos. The original May 2026 submission package `TMC_Submission_2026/` is preserved byte-for-byte.
 
@@ -162,7 +147,6 @@ python3 survey/verify_repos.py
 - [Nexus: An Execution Fabric for AI Agents Across Cloud, Edge, and Devices](https://arxiv.org/abs/2610.05709) (arXiv, Oct 2026) — OpenWrt-based persistent-task runtime with run-scoped delegation, journaling and permission revocation for cross-device agent services.
 - [EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation](https://arxiv.org/abs/2610.17560) (arXiv, Oct 2026, v2) — SLM on device as primary solver with step-level RL delegation; matches pure-LLM execution while cutting inference cost up to 62% (SWE-Rebench) and 34% (Terminal-Bench 2.1).
 - [Diffusion Language Models for Mobile Edge Agentic AI: Foundations, Applications, and Challenges](https://arxiv.org/abs/2609.04778) (arXiv, Sep 2026) — survey of non-autoregressive DLMs for edge agents (parallel refinement, early exit, quality–latency elasticity).
-- [Toward Edge General Intelligence with Agentic AI and Agentification: Concepts, Technologies, and Future Directions](https://arxiv.org/abs/2508.18725) (arXiv, Aug 2025) — survey of agentification for 6G / edge general intelligence, including enabling techniques and open-source platforms (missing from the 2025 list, added here).
 - [Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution](https://arxiv.org/abs/2610.17816) (arXiv, Oct 2026) — EC²-Bench: 128 executable long-horizon tasks jointly measuring performance, cloud cost and privacy exposure (see also [Section 5](#5-ai-agents-on-edge--on-device-agents)).
 
 **3) Federated learning & on-device training** — see [Federated Learning](#new-federated-learning-on-edge) and [On-Device Training](#new-on-device-training--personalization)
@@ -971,8 +955,6 @@ Key works & projects:
 - [LLM Multi-Agent Systems: Challenges and Open Problems](https://arxiv.org/abs/2402.03578) (arXiv 2024).
 - [Federated Black-box Prompt Tuning System for Large Language Models on the Edge](https://doi.org/10.1145/3636534.3698856) (MobiCom 2024).
 - [When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems](https://arxiv.org/abs/2605.30102) (ICML AIWILD Workshop 2026) — systematic study of SLM + LLM hybrid agent design space.
-- [Resource-Aware Agentic AI Reasoning for Mobile Edge General Intelligence](https://doi.org/10.1109/MWC.2026.3740386) (IEEE Wireless Communications 2026; [earlier arXiv version](https://arxiv.org/abs/2509.23248)) — adaptive reasoning depth coupled with edge resources and distributed MoE.
-- [Edge General Intelligence Through World Models, Large Language Models, and Agentic AI](https://doi.org/10.1109/TCCN.2026.3658762) (IEEE TCCN 2026) — world-model-supported foresight and imagination-based planning for agentic edge systems.
 - [EmoMAS: Emotion-Aware Multi-Agent System for High-Stakes Edge-Deployable Negotiation](https://arxiv.org/abs/2604.07003) (arXiv 2026) — Bayesian multi-agent framework for edge negotiation.
 - [EQ-Negotiator: Dynamic Emotional Personas Empower SLMs for Edge-Deployable Credit Negotiation](https://arxiv.org/abs/2511.03370) (arXiv 2025).
 - [SolidGPT: An Edge-Cloud Hybrid AI Agent Framework for Smart App Development](https://arxiv.org/abs/2512.08286) (2025) — privacy-first edge assistant for code & workspace.
@@ -1077,7 +1059,6 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 - [A Survey of Self-Evolving Agents: On Path to Artificial Super Intelligence](https://arxiv.org/abs/2507.21046) (arXiv 2025).
 
 **Added in the Nov 2026 refresh** (full annotations in [2026 Additions](#new-2026-additions-verified-nov-2026)):
-- [Toward Edge General Intelligence with Agentic AI and Agentification](https://arxiv.org/abs/2508.18725) (arXiv 2025).
 - [What changes after deployment? A survey on On-device Learning in TinyML](https://arxiv.org/abs/2605.31226) (arXiv 2026).
 - [Protecting On-Device AI Inference: A Systematic Review of Attacks and Defence Mechanisms](https://arxiv.org/abs/2605.29450) (arXiv 2026).
 - [LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey](https://arxiv.org/abs/2607.16066) (arXiv 2026).
@@ -1086,7 +1067,7 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 
 ---
 
-> **Nov 2026 refresh:** 40 verified papers are grouped by theme in [2026 Additions](#new-2026-additions-verified-nov-2026), and 30+ official repositories / model reports are indexed in [On-Device Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index). The highlights below are preserved unchanged for continuity.
+> **Nov 2026 refresh:** 39 verified papers are grouped by theme in [2026 Additions](#new-2026-additions-verified-nov-2026), and 30+ official repositories / model reports are indexed in [On-Device Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index). The highlights below are preserved unchanged for continuity.
 
 **2024–2026 Top-tier Highlights (NeurIPS/ICLR/ICML/SOSP/HPCA/MICRO/ASPLOS/MobiCom/EMNLP/ECCV/ACL + IEEE TMC/IoTJ)** (added for completeness while preserving all legacy content):
 

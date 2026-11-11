@@ -114,20 +114,20 @@ README.md (living curated corpus)
 
 | Stage | Rule | Count (10 Nov 2026) |
 |---|---|---|
-| S0 Candidate records | arXiv identifiers and GitHub repositories linked in `README.md` (not all papers in the manuscript bibliography) | 148 arXiv IDs + 123 repositories |
-| S1 Deduplication | Unique identifiers / repository roots | 148 + 123 |
-| S2 Primary-source resolution | arXiv Atom API; `git ls-remote` | 148/148 resolved; 123/123 live |
+| S0 Candidate records | arXiv identifiers and GitHub repositories linked in `README.md` (not all papers in the manuscript bibliography) | 145 arXiv IDs + 123 repositories |
+| S1 Deduplication | Unique identifiers / repository roots | 145 + 123 |
+| S2 Primary-source resolution | arXiv Atom API; `git ls-remote` | 145/145 resolved; 123/123 live |
 | S3 Withdrawn / dead-link exclusion | Automated withdrawal flag; repository HEAD check | 0 withdrawn; 0 dead repositories (one historical dead link repaired) |
-| S4 Title↔ID audit | Compare README link label to authoritative title | 11 low-similarity labels among 140 labelled links; all inspected and attributed to short names, descriptive bibliographic labels (relevant references), or version-title changes |
-| S5 Final audited set | Retained, graded and mapped items in the living README corpus | **148 arXiv records + 123 verified repositories** |
+| S4 Title↔ID audit | Compare README link label to authoritative title | 9 low-similarity labels among 137 labelled links; all inspected and attributed to short names, descriptive bibliographic labels, or version-title changes |
+| S5 Final audited set | Retained, graded and mapped items in the living README corpus | **145 arXiv records + 123 verified repositories** |
 
 **Corpus composition (from `corpus_manifest.json`):** 2015: 1, 2016: 2,
-2017: 2, 2018: 2, 2020: 5, 2021: 2, 2022: 8, 2023: 11, 2024: 19, 2025: 40,
-2026: 56. Hence **126/148 (85.1%) are from 2023–2026**, consistent with the
+2017: 2, 2018: 2, 2020: 5, 2021: 2, 2022: 8, 2023: 11, 2024: 19, 2025: 37,
+2026: 56. Hence **123/145 (84.8%) are from 2023–2026**, consistent with the
 manuscript's emphasis on recent work while retaining foundational references.
 The manuscript BibTeX file (`references.bib`, 260 records) also includes
 archival venue records, standards, and hardware documentation outside this
-arXiv/repository census. The 148-record census is therefore not the total
+arXiv/repository census. The 145-record census is therefore not the total
 number of studies cited or screened for the manuscript.
 
 ---

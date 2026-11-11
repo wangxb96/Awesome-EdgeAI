@@ -88,6 +88,22 @@ def pictogram(ax, kind, x, y, color, scale=1.0):
                (x+.06*scale,y-.015*scale),(x,y-.10*scale),(x-.06*scale,y-.015*scale)]
         ax.add_patch(Polygon(pts, closed=True, facecolor="white", edgecolor=color, lw=.8, zorder=5))
         line(ax, [x-.03*scale,x,x+.04*scale], [y-.005*scale,y-.04*scale,y+.03*scale], color, .8)
+    elif kind == "target":
+        for radius in (.095, .048):
+            ax.add_patch(Circle((x, y), radius*scale, facecolor="white", edgecolor=color, lw=.75, zorder=5))
+        line(ax, [x+.01*scale, x+.105*scale], [y+.01*scale, y+.105*scale], color, .8)
+    elif kind == "memory":
+        ax.add_patch(Rectangle((x-.10*scale,y-.075*scale),.20*scale,.15*scale,
+                               facecolor="white",edgecolor=color,lw=.75,zorder=5))
+        for dx in (-.04, .02):
+            for dy in (-.035, .025):
+                ax.add_patch(Rectangle((x+dx*scale,y+dy*scale),.035*scale,.035*scale,
+                                       facecolor=color,edgecolor=color,lw=.3,zorder=6))
+    elif kind == "link":
+        pts=[(x-.085*scale,y-.035*scale),(x,y+.07*scale),(x+.085*scale,y-.035*scale)]
+        line(ax,[pts[0][0],pts[1][0],pts[2][0]],[pts[0][1],pts[1][1],pts[2][1]],color,.8)
+        for px,py in pts:
+            ax.add_patch(Circle((px,py),.028*scale,facecolor="white",edgecolor=color,lw=.8,zorder=6))
 
 
 def box(ax, x, y, w, h, title, body, edge, face, title_color=INK, icon=None):
@@ -99,8 +115,8 @@ def box(ax, x, y, w, h, title, body, edge, face, title_color=INK, icon=None):
     ax.add_patch(patch)
     title_x = x + w / 2
     if icon:
-        pictogram(ax, icon, x + .44, y + h * .76, edge, scale=.72)
-        title_x += .12
+        pictogram(ax, icon, x + .50, y + h * .76, edge, scale=1.35)
+        title_x += .27
     ax.text(title_x, y + h * 0.76, title, ha="center", va="center",
             color=title_color, weight="bold", fontsize=7.0)
     if body:
@@ -126,9 +142,13 @@ ax.axis("off")
 
 # Task and system budgets enter a closed-loop policy.
 box(ax, 2.15, 5.05, 5.7, 0.93,
-    "EDGE TASK + BUDGETS",
-    "reasoning goal  ·  latency · energy · memory · link",
-    BLUE, PALE_BLUE)
+    "TASK + RESOURCE BUDGETS", "", BLUE, PALE_BLUE)
+budget_items=((2.72,"target","reasoning",BLUE),(3.80,"clock","p95",BLUE),
+              (4.88,"energy","energy",GOLD),(5.96,"memory","memory",TEAL),
+              (7.04,"link","link",TEAL))
+for xx, kind, label, color in budget_items:
+    pictogram(ax,kind,xx,5.40,color,scale=.82 if kind == "energy" else 1.05)
+    ax.text(xx,5.17,label,ha="center",va="center",color=MUTED,fontsize=5.8)
 
 ax.text(5, 4.75, "CROSS-LAYER ADAPTATION", ha="center", va="center",
         color=INK, fontsize=7.0, weight="bold")
@@ -143,7 +163,7 @@ box(ax, 1.02, 1.94, 7.96, 1.10,
 for xx, kind, label, color in ((2.35,"phone","DEVICE",BLUE),
                                (5.0,"server","EDGE",TEAL),
                                (7.65,"cloud","CLOUD",GOLD)):
-    pictogram(ax, kind, xx - .22, 2.25, color, scale=.82)
+    pictogram(ax, kind, xx - .22, 2.25, color, scale=1.22)
     ax.text(xx + .05, 2.25, label, ha="left", va="center", color=INK,
             fontsize=5.8, weight="bold")
 arrow(ax, (3.38,2.25), (4.27,2.25), color=LINE, lw=.9, ms=7)
@@ -158,7 +178,7 @@ box(ax, 1.02, 0.39, 7.96, 1.10,
 outcomes = ((2.0,"quality","quality",TEAL),(4.0,"clock","p95 latency",BLUE),
             (6.0,"energy","energy / token",GOLD),(8.0,"shield","safety",TEAL))
 for xx, kind, label, color in outcomes:
-    pictogram(ax, kind, xx, .79, color, scale=.78)
+    pictogram(ax, kind, xx, .85, color, scale=1.10)
     ax.text(xx, .55, label, ha="center", va="center", color=MUTED, fontsize=5.8)
 arrow(ax, (5, 1.91), (5, 1.52), color=GOLD, lw=1.1)
 

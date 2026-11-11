@@ -3,12 +3,12 @@
   "source_document": "README.md",
   "verification_source": "https://export.arxiv.org/api/query",
   "counts": {
-    "unique_arxiv_ids": 148,
-    "resolved_by_arxiv_api": 148,
+    "unique_arxiv_ids": 145,
+    "resolved_by_arxiv_api": 145,
     "unresolved": 0,
     "withdrawn": 0,
-    "markdown_link_labels_checked": 140,
-    "title_mismatches_below_0_62": 11
+    "markdown_link_labels_checked": 137,
+    "title_mismatches_below_0_62": 9
   },
   "unresolved_ids": [],
   "withdrawn_ids": [],
@@ -22,13 +22,13 @@
     "2022": 8,
     "2023": 11,
     "2024": 19,
-    "2025": 40,
+    "2025": 37,
     "2026": 56
   },
   "section_distribution_of_links": {
     "New: 2026 Additions (verified Nov 2026)": 34,
     "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)": 25,
-    "5. AI Agents on Edge / On-Device Agents": 12,
+    "5. AI Agents on Edge / On-Device Agents": 11,
     "A. On-device / small model families (2024–2026)": 8,
     "Privacy-Preserving Edge AI": 7,
     "Federated Learning for LLMs & Edge Models": 7,
@@ -45,7 +45,6 @@
     "Foundational TinyML Papers": 2,
     "8. Benchmarks, Datasets & Tools (2023–2026 focus)": 2,
     "6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)": 2,
-    "Public Research Artifact Repository": 2,
     "Healthcare & Wellness": 2,
     "Smart Home & IoT": 2,
     "3.2.2.2. Parameter Sharing": 1,
@@ -56,10 +55,10 @@
     "Autonomous Driving & Transportation": 1
   },
   "section_distribution_of_papers": {
-    "New: 2026 Additions (verified Nov 2026)": 35,
+    "New: 2026 Additions (verified Nov 2026)": 34,
     "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)": 30,
-    "5. AI Agents on Edge / On-Device Agents": 18,
-    "9. Recent Surveys & Overviews (2023–2026)": 14,
+    "5. AI Agents on Edge / On-Device Agents": 17,
+    "9. Recent Surveys & Overviews (2023–2026)": 13,
     "A. On-device / small model families (2024–2026)": 8,
     "Federated Learning for LLMs & Edge Models": 7,
     "Privacy-Preserving Edge AI": 7,
@@ -72,7 +71,6 @@
     "7. Hardware Acceleration for Edge AI & LLMs": 4,
     "Security & Adversarial Robustness": 3,
     "Smart Home & IoT": 3,
-    "Public Research Artifact Repository": 2,
     "Federated Learning Foundations & Systems": 2,
     "Foundational TinyML Papers": 2,
     "Healthcare & Wellness": 2,
@@ -87,18 +85,6 @@
     "3.2.2.5. Low-rank Factorization": 1
   },
   "title_mismatches": [
-    {
-      "id": "2508.18725",
-      "similarity": 0.048,
-      "readme_label": "arXiv:2508.18725",
-      "arxiv_title": "Toward Edge General Intelligence with Agentic AI and Agentification: Concepts, Technologies, and Future Directions"
-    },
-    {
-      "id": "2512.03722",
-      "similarity": 0.061,
-      "readme_label": "arXiv:2512.03722",
-      "arxiv_title": "Tutorial on Large Language Model-Enhanced Reinforcement Learning for Wireless Networks"
-    },
     {
       "id": "2410.11845",
       "similarity": 0.093,
@@ -929,20 +915,6 @@
         "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)"
       ]
     },
-    "2508.18725": {
-      "title": "Toward Edge General Intelligence with Agentic AI and Agentification: Concepts, Technologies, and Future Directions",
-      "published": "2025-08-26",
-      "year": 2025,
-      "comment": "",
-      "withdrawn": false,
-      "source": "arXiv Atom API",
-      "readme_label": "arXiv:2508.18725",
-      "sections": [
-        "Public Research Artifact Repository",
-        "New: 2026 Additions (verified Nov 2026)",
-        "9. Recent Surveys & Overviews (2023–2026)"
-      ]
-    },
     "2508.18803": {
       "title": "A Survey on Cloud-Edge-Terminal Collaborative Intelligence in AIoT Networks",
       "published": "2025-08-26",
@@ -1015,18 +987,6 @@
       "readme_label": "Punching Above Precision: Small Quantized Model Distillation with Learnable Regularizer",
       "sections": [
         "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)"
-      ]
-    },
-    "2509.23248": {
-      "title": "Resource-Aware LLM Reasoning for Mobile Edge General Intelligence",
-      "published": "2025-09-27",
-      "year": 2025,
-      "comment": "",
-      "withdrawn": false,
-      "source": "arXiv Atom API",
-      "readme_label": "Agentic AI Reasoning for Mobile Edge General Intelligence",
-      "sections": [
-        "5. AI Agents on Edge / On-Device Agents"
       ]
     },
     "2509.24945": {
@@ -1203,18 +1163,6 @@
         "Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)",
         "7. Hardware Acceleration for Edge AI & LLMs",
         "8. Benchmarks, Datasets & Tools (2023–2026 focus)"
-      ]
-    },
-    "2512.03722": {
-      "title": "Tutorial on Large Language Model-Enhanced Reinforcement Learning for Wireless Networks",
-      "published": "2025-12-03",
-      "year": 2025,
-      "comment": "30 pages, 12 figures, survey paper",
-      "withdrawn": false,
-      "source": "arXiv Atom API",
-      "readme_label": "arXiv:2512.03722",
-      "sections": [
-        "Public Research Artifact Repository"
       ]
     },
     "2512.08286": {

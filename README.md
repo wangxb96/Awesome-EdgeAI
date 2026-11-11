@@ -23,7 +23,7 @@
 
 **Core Survey (2025, v2) + Official Repository**
 - Paper: [Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment](https://arxiv.org/abs/2501.03265) (arXiv:2501.03265, v2 Nov 2025)
-- **This repository (`wangxb96/Awesome-EdgeAI`) is the official artifact repository** of the TMC manuscript *Cognitive Edge Computing: A Survey on Optimizing Large Language Models and Autonomous Agents for the Edge* ([submission identifier removed], revision). See [Public Research Artifact Repository](#official-repository-for-[submission identifier removed]) for the reproducible survey protocol, verified corpus manifests, and revision crosswalk.
+- **This repository (`wangxb96/Awesome-EdgeAI`) is the official artifact repository** of the TMC manuscript *Cognitive Edge Computing: A Survey on Optimizing Large Language Models and Autonomous Agents for the Edge* ([submission identifier removed], revision). See [Public Research Artifact Repository](#official-repository-for-[submission identifier removed]) for the scoped survey protocol, frozen retained-link manifests, and revision crosswalk.
 - Earlier focused companion repository (historical, superseded as the official artifact): [cognitive-edge-llm-agent-survey](https://github.com/wangxb96/cognitive-edge-llm-agent-survey).
 
 **Legacy Survey (v1) — retained here for historical completeness**  
@@ -104,27 +104,35 @@ This repository is the **official artifact repository** for the IEEE TMC revisio
 
 > *Cognitive Edge Computing: A Survey on Optimizing Large Language Models and Autonomous Agents for the Edge* (Manuscript `[submission identifier removed]`, [editorial dates removed]).
 
-The manuscript and this repository are maintained together: the paper cites this repository as its public artifact, and the repository maintains the verified literature corpus, tool-repository index, and reproducible protocol behind the paper's methodology and evidence grading.
+The manuscript and this repository are maintained together: the paper cites this repository as its public artifact, and the repository maintains the retained-link census, tool-repository index, and inspectable protocol behind the paper's methodology and evidence grading. Historical search/screening logs are incomplete; the census does not establish exhaustive literature coverage.
 
 | Manuscript claim / section | Verifiable artifact here |
 |---|---|
 | Survey source classes, query-concept families, inclusion/exclusion and retained-corpus audit (with historical search-log limitations) | [`survey/protocol.md`](survey/protocol.md) |
-| Evidence grading (E1/E2/E3) and corpus composition | [`survey/corpus_manifest.json`](survey/corpus_manifest.json) |
+| Result-level evidence definitions (publication status recorded separately) | [`survey/protocol.md`](survey/protocol.md), Section 3 |
+| Frozen retained-link census, commit `82b6110` | [`survey/corpus_manifest.json`](/wangxb96/Awesome-EdgeAI/blob/82b6110/survey/corpus_manifest.json), [`survey/repos_manifest.json`](/wangxb96/Awesome-EdgeAI/blob/82b6110/survey/repos_manifest.json) |
 | Literature-link audit (arXiv ID ↔ authoritative title, withdrawn check) | [`survey/verify_corpus.py`](survey/verify_corpus.py) |
-| Official tool/model repository audit (live Git HEAD) | [`survey/verify_repos.py`](survey/verify_repos.py), [`survey/repos_manifest.json`](survey/repos_manifest.json) |
-| Benchmark reporting protocol, energy boundary, failed-batch policy | [`survey/benchmark_protocol.md`](survey/benchmark_protocol.md), [`survey/compute_ci.py`](survey/compute_ci.py) |
+| Linked tool/model repository reachability audit (live Git HEAD, not ownership verification) | [`survey/verify_repos.py`](survey/verify_repos.py), [`survey/repos_manifest.json`](survey/repos_manifest.json) |
+| Future benchmark logging, energy/failure boundaries, and descriptive analysis helper | [`survey/benchmark_protocol.md`](survey/benchmark_protocol.md), [`survey/compute_ci.py`](survey/compute_ci.py) |
 | Figure 1 schematic source and editable/vector/raster exports | [`survey/figures/cognitive_edge_overview.py`](survey/figures/cognitive_edge_overview.py), [`survey/figures/cognitive_edge_overview.pdf`](survey/figures/cognitive_edge_overview.pdf), [`survey/figures/cognitive_edge_overview.svg`](survey/figures/cognitive_edge_overview.svg) |
+| Analytical weight/KV memory illustration and formula-generated values | [`survey/figures/memory_budget.py`](survey/figures/memory_budget.py), [`PDF`](survey/figures/memory_budget.pdf), [`CSV`](survey/figures/memory_budget_analytical.csv) |
 | 2025–2026 literature refresh (39 verified papers) | [2026 Additions](#new-2026-additions-verified-nov-2026) |
 | On-device model families and 30+ official tool repositories | [Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index) |
 
-**Reproducible corpus census (10 Nov 2026).** `survey/verify_corpus.py` resolves **145/145** unique arXiv identifiers against the arXiv Atom API with **0 unresolved** and **0 withdrawn** preprints; 137 Markdown link labels are title-audited (9 low-similarity labels are abbreviations, bibliographic citation labels, or version-title changes, all manually inspected). Year distribution: 2023–2026 accounts for **123/145 (84.8%)** of the corpus. `survey/verify_repos.py` confirms **123/123** linked GitHub repositories resolve to a live HEAD. These are regenerable numbers, not hand-entered estimates:
+**Frozen retained-link census (11 Nov 2026, commit `82b6110`; literature coverage through 10 Nov).** The archived manifests contain **145/145** resolved arXiv identifiers, **0 unresolved** and **0 withdrawal flags**; **137** selected Markdown labels were title-audited, with **9** low-similarity flags manually inspected. The 137 labels are one selected label per labelled arXiv ID, not all link occurrences. Records from 2023-2026 account for **123/145 (84.8%)**. The repository audit records **123/123** linked GitHub roots with a live HEAD at the audit date. These are different counting units, not a study-screening flow, and live HEAD does not establish official ownership or replication support. Recompute the dated counts in a disposable clone:
 
 ```bash
-python3 survey/verify_corpus.py
-python3 survey/verify_repos.py
+# In a disposable clone of this repository:
+git checkout --detach 82b6110
+python3 survey/verify_corpus.py --offline
+python3 survey/verify_repos.py --offline
 ```
 
-**Benchmark boundary (important).** The manuscript's artifact-backed measurements are a **controlled server-side reference benchmark** on a `4×RTX 4090 D` server (5 models, 4 context budgets 512–4096, 10 micro-tasks). They are *not* edge-device measurements: absolute latency, throughput, and J/token values must **not** be extrapolated to phones, MCUs, or NPUs. Their purpose is to demonstrate that no single model jointly dominates quality, throughput, tail latency, and energy under one controlled stack, and to motivate multi-metric evaluation. Energy scope is GPU-board power only (no wall-plug, host CPU, cooling, or idle overhead). Historical per-trial traces and repetition counts were not retained, so the manuscript reports only the available context-averaged values and across-context views, with no trial-level confidence intervals.
+The archived commands reuse saved results and rewrite manifests in that checkout; they do not check current network state. Running without `--offline` performs a new live audit, whose date and commit must be reported separately. The updated protocol and helper on the current branch are separate from the frozen census snapshot; cite their own Git revision when using them.
+
+**Historical benchmark boundary.** Supplement S1 retains incomplete summaries from a `4xRTX 4090 D` server (5 models, 4 nominal context budgets, 10 micro-tasks). These are **E3 exploratory records**, not reproducible validation or a validated within-stack ranking/Pareto frontier. Exact prompts, settings, raw outputs, repetitions, failure denominators, and power attribution were not retained and cannot be restored. Successful-complete-batch selection has unknown bias; averaged context-specific p95 values are not pooled request percentiles. Reported GPU-board J/token is an unverified power/throughput approximation, with unknown four-board attribution and sampling integration; it is not system or edge-device energy. These summaries do not derive the survey recommendations.
+
+**Future-run reporting.** The linked protocol specifies new request-level observations, all failure outcomes, prompt/scorer/configuration provenance, and device/power timing boundaries. The helper reports logged task/batch denominators, unconditional task-attempt success, explicitly conditional status-ok numeric summaries, and empirical request p95. Bootstrap intervals are off by default and require an independently justified repetition grouping. It summarizes supplied energy fields rather than validating power integration, and refuses to synthesize missing inputs. Future logging cannot reconstruct historical measurements.
 
 **Manuscript-side revision deliverables** are kept in a standalone revision package, `paper_10_Cognitive_EC/TMC_Revision_2026-11-10/`: `Summary of Changes.pdf` (the separate point-by-point response), black-text `[submission identifier removed]-main.tex/pdf` and `[submission identifier removed]-supp.tex/pdf`, plus separate color-coded review copies. Figure 1 is a compact closed-loop schematic with original vector pictograms for the model, runtime, agent, device/edge/cloud tiers, and evaluation metrics. The design takes a restrained hierarchical-flow approach; the marks are conceptual categories, not vendor or product logos. The original May 2026 submission package `TMC_Submission_2026/` is preserved byte-for-byte.
 

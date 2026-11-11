@@ -116,6 +116,7 @@ The manuscript and this repository are maintained together: the paper cites this
 | Future benchmark logging, energy/failure boundaries, and descriptive analysis helper | [`survey/benchmark_protocol.md`](survey/benchmark_protocol.md), [`survey/compute_ci.py`](survey/compute_ci.py) |
 | Figure 1 schematic source and editable/vector/raster exports | [`survey/figures/cognitive_edge_overview.py`](survey/figures/cognitive_edge_overview.py), [`survey/figures/cognitive_edge_overview.pdf`](survey/figures/cognitive_edge_overview.pdf), [`survey/figures/cognitive_edge_overview.svg`](survey/figures/cognitive_edge_overview.svg) |
 | Analytical weight/KV memory illustration and formula-generated values | [`survey/figures/memory_budget.py`](survey/figures/memory_budget.py), [`PDF`](survey/figures/memory_budget.pdf), [`CSV`](survey/figures/memory_budget_analytical.csv) |
+| Deployment feasibility, resource coupling, and workflow evaluation diagrams | [`Python source`](survey/figures/deployment_reasoning.py), [`Placement`](survey/figures/placement_decision.pdf), [`Couplings`](survey/figures/cross_layer_couplings.pdf), [`Workflow`](survey/figures/workflow_evaluation.pdf) |
 | 2025–2026 literature refresh (39 verified papers) | [2026 Additions](#new-2026-additions-verified-nov-2026) |
 | On-device model families and 30+ official tool repositories | [Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index) |
 

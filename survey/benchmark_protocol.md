@@ -33,6 +33,7 @@ unlogged work or certify batch-roster completeness.
 |---|---|
 | `run_id`, `request_id` | Campaign ID and request ID unique within that campaign. Required for counting. |
 | `model`, `context`, `task` | Exact model tag, nominal context budget, and suite task ID. `model` and `context` are required grouping keys. |
+| `episode_id`, `parent_request_id` | Optional linking metadata for a separate workflow ledger. The helper does not aggregate episodes or infer goal completion. |
 | `repetition_id`, `batch_id` | Independent experimental repetition and batch within it. `batch_id` is required. A repetition can contain multiple dependent requests/batches. |
 | `status`, `failure_reason` | `ok`, `timeout`, `empty`, `unparseable`, or `incomplete`; record the failure reason. `ok` means a parseable completed request, not necessarily a correct answer. |
 | `correct` | `0` or `1` under the fixed scorer for `ok` requests. Failed requests contribute zero to unconditional task-attempt success. |
@@ -52,6 +53,14 @@ when the helper can count its rows. Missing structural counting keys, unknown
 statuses, duplicate request IDs, or missing binary correctness for completed
 requests are rejected. Archive the CSV, roster, prompts, scorer, traces, code,
 configuration, and their hashes.
+
+A task episode may contain several model/tool requests, retries, and fallback actions.
+Keep its success criterion, start/termination timestamps, deadline, and energy
+boundary in a separate episode ledger linked to the request traces. A new
+user-level restart is a new episode. Do not mix episode rows with constituent
+request rows in one helper analysis. Episode success and deadline satisfaction
+require a separate task-level analysis; a failed episode's finite termination
+time is not successful completion time. Record its incurred cost regardless.
 
 ## 3. Failures, denominators, and latency
 

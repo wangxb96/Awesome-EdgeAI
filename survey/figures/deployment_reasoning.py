@@ -105,3 +105,8 @@ def workflow():
 
 if __name__=='__main__':
  placement();couplings();workflow()
+
+# Normalize serializer whitespace without changing vector geometry.
+for stem in ("placement_decision", "cross_layer_couplings", "workflow_evaluation"):
+    svg_path = OUT / (stem + ".svg")
+    svg_path.write_text("\n".join(line.rstrip() for line in svg_path.read_text().splitlines()) + "\n")

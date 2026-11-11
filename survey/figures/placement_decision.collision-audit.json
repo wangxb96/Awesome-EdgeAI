@@ -3,15 +3,15 @@
   "auditable": true,
   "verdict": "PASS",
   "page_count": 1,
-  "visible_text_box_count": 18,
-  "text_trace_count": 18,
-  "stroke_path_count": 16,
-  "filled_region_count": 13,
+  "visible_text_box_count": 17,
+  "text_trace_count": 17,
+  "stroke_path_count": 94,
+  "filled_region_count": 58,
   "image_region_count": 0,
   "summary": {
     "fail": 0,
     "warn": 0,
-    "contained_fill_overlays": 14,
+    "contained_fill_overlays": 11,
     "contained_image_overlays": 0
   },
   "thresholds": {

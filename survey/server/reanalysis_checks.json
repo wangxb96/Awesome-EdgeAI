@@ -14,6 +14,7 @@
   "primary_canonical_summary_uses_one_campaign": true,
   "followup_never_pooled_with_main": true,
   "statistical_unit": "Repeated requests on ten fixed tasks; repetition indices are not independently restarted sessions.",
+  "repeat_dispersion": "Sample SD across repeat-index aggregates for containment, strict-string score, latency mean, decode-rate mean and endpoint-proxy J/token. Descriptive repeat variation, not independent-run uncertainty or energy accuracy.",
   "confidence_intervals": "Not inferred: independence and population sampling are not established.",
   "energy_boundary": "Endpoint GPU-power proxy, not integrated energy; board IDs and sampler/server alignment unrecorded.",
   "legacy_score_name_corrected": "Answer containment, not strict exact match.",

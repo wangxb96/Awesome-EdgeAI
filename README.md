@@ -321,7 +321,7 @@ The [optimization](#optimization-under-deployment-budgets), [agent](#agents-and-
 
 ## Research artifacts and figures
 
-Read the [supplementary material](survey/supplement/[submission identifier removed]-supp.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. Its [LaTeX source and build instructions](survey/supplement/README.md), [bibliographic database](survey/references.bib), figure inputs and runnable format examples are included here. The complete public artifact edition is pinned to [tag `supplement-2026-11-13-v3`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v3).
+Read the [supplementary material](survey/supplement/[submission identifier removed]-supp.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. Its [LaTeX source and build instructions](survey/supplement/README.md), [bibliographic database](survey/references.bib), figure inputs and runnable format examples are included here. The complete public artifact edition is pinned to [tag `supplement-2026-11-13-v4`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v4).
 
 | Artifact | Purpose |
 |---|---|
@@ -331,13 +331,14 @@ Read the [supplementary material](survey/supplement/[submission identifier remov
 | [Public-file inventory](survey/public_artifacts.json) / [closure check](survey/check_public_artifacts.py) | All distributed files, supplement dependencies and optional anonymous access checks |
 | [Historical server record](survey/server/README.md) | Recovered requests, task definitions, all-campaign ledger, descriptive reanalysis and measurement-boundary figures |
 | [Synthetic request example](survey/examples/README.md) | Runnable CSV and expected JSON for checking the helper's format and denominators; no measured performance |
-| [Survey protocol](survey/protocol.md) | Scope, source verification, E1/E2/E3 replication support and search-record limitations |
+| [Survey protocol](survey/protocol.md) | Scope, source verification, E1/E2/E3 publication/artifact qualification and search-record limitations |
+| [Cited-reference index](survey/cited_reference_index.json) | Exact main/supplement reference entries and numbering, distinct from the broader bibliography and frozen census |
 | [Benchmark protocol](survey/benchmark_protocol.md) | Request/episode boundaries, failure accounting and energy attribution |
 | [Descriptive analysis helper](survey/compute_ci.py) | Summaries of supplied request records; does not infer complete-task success |
 | [Literature audit](survey/verify_corpus.py) / [repository audit](survey/verify_repos.py) | Check the linked resources in this README |
 | [Editable figure catalogue](survey/figures/README.md) | Sources, vector exports, analytical data and rebuild commands |
 
-The manuscript's retained-link census is pinned to [commit `82b6110`](https://github.com/wangxb96/Awesome-EdgeAI/tree/82b6110), with 145 arXiv identifiers, 137 title-audited labels and 123 repository roots. These are different link units, not a study-screening flow. This living README and its `current_*` manifests are separate from that frozen snapshot. The [protocol](survey/protocol.md#reproduce-the-frozen-census) explains how to reproduce it.
+The manuscript's retained-link census is pinned to [commit `82b6110`](https://github.com/wangxb96/Awesome-EdgeAI/tree/82b6110), with 145 arXiv identifiers, 137 title-audited labels and 123 distinct recorded repository URL-root strings (122 after case folding). These are link units, not a study-screening flow; normalization does not resolve redirects or aliases. This living README and its `current_*` manifests are separate from that frozen snapshot. The [protocol](survey/protocol.md#reproduce-the-frozen-census) explains how to reproduce it.
 
 For this README:
 

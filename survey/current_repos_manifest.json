@@ -3,10 +3,11 @@
   "source_documents": [
     "README.md"
   ],
-  "generated_at_utc": "2026-11-13T05:22:55.268429+00:00",
-  "verification_mode": "live git ls-remote HEAD",
+  "generated_at_utc": "2026-11-13T08:14:55.380324+00:00",
+  "verification_mode": "cached HEAD status; no live revalidation",
   "frozen_census_revision": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
   "verification_method": "git ls-remote <repo>.git HEAD",
+  "repository_key_normalization": "Case-folded owner/repository URL roots; redirects, renames and aliases are not resolved. Frozen manifests are not rewritten.",
   "counts": {
     "unique_repositories": 31,
     "ok": 31,
@@ -26,18 +27,18 @@
     "README.md: Research artifacts and figures": 1
   },
   "status": {
-    "alibaba/MNN": "OK",
+    "alibaba/mnn": "OK",
     "apple/ml-fastvlm": "OK",
-    "ARM-software/CMSIS-NN": "OK",
+    "arm-software/cmsis-nn": "OK",
     "bitsandbytes-foundation/bitsandbytes": "OK",
     "emlearn/emlearn": "OK",
     "ggml-org/llama.cpp": "OK",
-    "google-ai-edge/LiteRT": "OK",
-    "google-ai-edge/LiteRT-LM": "OK",
+    "google-ai-edge/litert": "OK",
+    "google-ai-edge/litert-lm": "OK",
     "huggingface/peft": "OK",
     "huggingface/transformers.js": "OK",
-    "IST-DASLab/gptq": "OK",
-    "microsoft/BitNet": "OK",
+    "ist-daslab/gptq": "OK",
+    "microsoft/bitnet": "OK",
     "microsoft/onnxruntime": "OK",
     "microsoft/onnxruntime-genai": "OK",
     "mit-han-lab/llm-awq": "OK",
@@ -48,18 +49,18 @@
     "mlc-ai/mlc-llm": "OK",
     "mlcommons/inference": "OK",
     "mlcommons/tiny": "OK",
-    "NVIDIA/TensorRT-LLM": "OK",
-    "OpenBMB/MiniCPM-V": "OK",
-    "OpenGVLab/OmniQuant": "OK",
+    "nvidia/tensorrt-llm": "OK",
+    "openbmb/minicpm-v": "OK",
+    "opengvlab/omniquant": "OK",
     "pytorch/executorch": "OK",
-    "SqueezeAILab/TinyAgent": "OK",
-    "Tencent/ncnn": "OK",
+    "squeezeailab/tinyagent": "OK",
+    "tencent/ncnn": "OK",
     "tensorflow/tflite-micro": "OK",
-    "wangxb96/Awesome-EdgeAI": "OK",
+    "wangxb96/awesome-edgeai": "OK",
     "wangxb96/cognitive-edge-llm-agent-survey": "OK"
   },
   "repos": {
-    "alibaba/MNN": {
+    "alibaba/mnn": {
       "sections": [
         "README.md: Generative inference stacks"
       ],
@@ -71,7 +72,7 @@
       ],
       "status": "OK"
     },
-    "ARM-software/CMSIS-NN": {
+    "arm-software/cmsis-nn": {
       "sections": [
         "README.md: MCU and embedded inference"
       ],
@@ -95,13 +96,13 @@
       ],
       "status": "OK"
     },
-    "google-ai-edge/LiteRT": {
+    "google-ai-edge/litert": {
       "sections": [
         "README.md: Generative inference stacks"
       ],
       "status": "OK"
     },
-    "google-ai-edge/LiteRT-LM": {
+    "google-ai-edge/litert-lm": {
       "sections": [
         "README.md: Generative inference stacks"
       ],
@@ -119,13 +120,13 @@
       ],
       "status": "OK"
     },
-    "IST-DASLab/gptq": {
+    "ist-daslab/gptq": {
       "sections": [
         "README.md: Adaptation and federated learning"
       ],
       "status": "OK"
     },
-    "microsoft/BitNet": {
+    "microsoft/bitnet": {
       "sections": [
         "README.md: Role-matched model artifacts"
       ],
@@ -191,19 +192,19 @@
       ],
       "status": "OK"
     },
-    "NVIDIA/TensorRT-LLM": {
+    "nvidia/tensorrt-llm": {
       "sections": [
         "README.md: Generative inference stacks"
       ],
       "status": "OK"
     },
-    "OpenBMB/MiniCPM-V": {
+    "openbmb/minicpm-v": {
       "sections": [
         "README.md: Role-matched model artifacts"
       ],
       "status": "OK"
     },
-    "OpenGVLab/OmniQuant": {
+    "opengvlab/omniquant": {
       "sections": [
         "README.md: Adaptation and federated learning"
       ],
@@ -215,13 +216,13 @@
       ],
       "status": "OK"
     },
-    "SqueezeAILab/TinyAgent": {
+    "squeezeailab/tinyagent": {
       "sections": [
         "README.md: Role-matched model artifacts"
       ],
       "status": "OK"
     },
-    "Tencent/ncnn": {
+    "tencent/ncnn": {
       "sections": [
         "README.md: Generative inference stacks"
       ],
@@ -233,7 +234,7 @@
       ],
       "status": "OK"
     },
-    "wangxb96/Awesome-EdgeAI": {
+    "wangxb96/awesome-edgeai": {
       "sections": [
         "README.md: Awesome Edge AI",
         "README.md: Survey versions and repositories",
@@ -246,13 +247,6 @@
         "README.md: Survey versions and repositories"
       ],
       "status": "OK"
-    }
-  },
-  "rechecked_after_transient_failure": {
-    "mit-han-lab/smoothquant": {
-      "head": "c61476d728e42ae0d8a35e7e78494edcac3237b5",
-      "checked_at_utc": "2026-11-13T05:26:02.596654+00:00",
-      "method": "git ls-remote HEAD"
     }
   }
 }

@@ -35,7 +35,7 @@ def extract() -> dict[str, list[str]]:
     repos: dict[str, list[str]] = defaultdict(list)
     for section, line in resource_lines():
         for owner_repo in REPO_RE.findall(line):
-            key = owner_repo.rstrip(".,);")
+            key = owner_repo.rstrip(".,);").casefold()
             if section not in repos[key]:
                 repos[key].append(section)
     return dict(repos)
@@ -70,7 +70,8 @@ def main() -> int:
     if args.offline:
         status = {}
         for cache in [FROZEN_CACHE, args.out]:
-            if cache.exists():status.update(json.loads(cache.read_text(encoding="utf-8")).get("status", {}))
+            if cache.exists():
+                status.update({key.casefold():value for key,value in json.loads(cache.read_text(encoding="utf-8")).get("status", {}).items()})
         status = {name: status[name] for name in names if name in status}
     else:
         with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
@@ -85,6 +86,7 @@ def main() -> int:
         "verification_mode": "cached HEAD status; no live revalidation" if args.offline else "live git ls-remote HEAD",
         "frozen_census_revision": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
         "verification_method": "git ls-remote <repo>.git HEAD",
+        "repository_key_normalization": "Case-folded owner/repository URL roots; redirects, renames and aliases are not resolved. Frozen manifests are not rewritten.",
         "counts": {
             "unique_repositories": len(names),
             "ok": counts.get("OK", 0),

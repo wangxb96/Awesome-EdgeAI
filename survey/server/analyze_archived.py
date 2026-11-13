@@ -35,6 +35,15 @@ def summarize(rows,run,model,context='all'):
     prompt=[int(r['prompt_tokens']) for r in rows]
     repeats=sorted(set(r['repeat'] for r in rows))
     repeat_means=[st.mean(float(r['wall_latency_ms']) for r in rows if r['repeat']==rep) for rep in repeats]
+    repeat_groups=[[r for r in rows if r['repeat']==rep] for rep in repeats]
+    repeat_containment=[st.mean(int(r['quality_hit']) for r in group) for group in repeat_groups]
+    repeat_strict=[st.mean(not r['error'] and normalized(r['prediction'])==normalized(r['answer']) for r in group) for group in repeat_groups]
+    repeat_decode=[st.mean(float(r['decode_tps']) for r in group) for group in repeat_groups]
+    repeat_proxy=[sum(float(r['energy_j']) for r in group)/sum(int(r['decode_tokens']) for r in group)
+                  for group in repeat_groups
+                  if all(r.get('energy_j','')!='' for r in group) and sum(int(r['decode_tokens']) for r in group)>0]
+    def sample_sd(values):
+        return st.stdev(values) if len(values)>1 else None
     energy=[float(r['energy_j']) for r in rows if r.get('energy_j','')!='']
     energy_ratio=sum(energy)/sum(tokens) if len(energy)==n and sum(tokens)>0 else None
     return {'campaign':run,'model':model,'context':context,'n_logged':n,
@@ -42,12 +51,16 @@ def summarize(rows,run,model,context='all'):
             'empty_responses':sum(not r['prediction'].strip() for r in rows),
             'answer_containment':st.mean(int(r['quality_hit']) for r in rows),
             'strict_string_audit':st.mean(not r['error'] and normalized(r['prediction'])==normalized(r['answer']) for r in rows),
+            'repeat_answer_containment_sd':sample_sd(repeat_containment),
+            'repeat_strict_string_sd':sample_sd(repeat_strict),
             'latency_median_ms':st.median(lat),'latency_p95_linear_ms':quantile(lat,.95),
             'latency_p95_nearest_rank_ms':sorted(lat)[math.ceil(.95*n)-1],
             'latency_mean_ms':st.mean(lat),'latency_request_sd_ms':st.stdev(lat) if n>1 else 0,
             'repeat_latency_mean_sd_ms':st.stdev(repeat_means) if len(repeat_means)>1 else 0,
             'decode_tps_mean':st.mean(rate),'decode_tps_request_sd':st.stdev(rate) if n>1 else 0,
+            'repeat_decode_tps_mean_sd':sample_sd(repeat_decode),
             'endpoint_gpu_energy_proxy_j_per_token':energy_ratio,
+            'repeat_endpoint_proxy_j_per_token_sd':sample_sd(repeat_proxy) if len(repeat_proxy)==len(repeats) else None,
             'decoded_min':min(tokens),'decoded_max':max(tokens),
             'decoded_at_128':tokens.count(128),'decoded_at_256':tokens.count(256),
             'prompt_tokens_min':min(prompt),'prompt_tokens_max':max(prompt)}
@@ -110,6 +123,7 @@ def main():
             'endpoint_proxy_cells_with_missing_power_fields':energy_unverifiable,
             'primary_canonical_summary_uses_one_campaign':True,'followup_never_pooled_with_main':True,
             'statistical_unit':'Repeated requests on ten fixed tasks; repetition indices are not independently restarted sessions.',
+            'repeat_dispersion':'Sample SD across repeat-index aggregates for containment, strict-string score, latency mean, decode-rate mean and endpoint-proxy J/token. Descriptive repeat variation, not independent-run uncertainty or energy accuracy.',
             'confidence_intervals':'Not inferred: independence and population sampling are not established.',
             'energy_boundary':'Endpoint GPU-power proxy, not integrated energy; board IDs and sampler/server alignment unrecorded.',
             'legacy_score_name_corrected':'Answer containment, not strict exact match.',

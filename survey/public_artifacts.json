@@ -1,6 +1,6 @@
 {
   "repository": "wangxb96/Awesome-EdgeAI",
-  "edition": "supplement-2026-11-13-v3",
+  "edition": "supplement-2026-11-13-v4",
   "scope": "Public supplement with independent references and readable template, result-specific study ledger, empirical archive/reanalysis, figure sources, protocols and distinct synthetic examples.",
   "frozen_census": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
   "request_helper_revision": "24d5442",
@@ -12,6 +12,7 @@
     "survey/benchmark_protocol.md",
     "survey/check_docs.py",
     "survey/check_public_artifacts.py",
+    "survey/cited_reference_index.json",
     "survey/compute_ci.py",
     "survey/corpus_manifest.json",
     "survey/current_corpus_manifest.json",

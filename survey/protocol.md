@@ -28,17 +28,20 @@ For example: `("on-device" OR "edge") AND ("LLM" OR "agentic") AND ("quantizatio
 
 These are reproducible query concepts. Historical database-specific queries, exact run dates, initial hit totals and screening/exclusion counts were not retained. Exhaustive coverage and PRISMA-style selection are therefore not claimed.
 
+
+The [cited-reference index](cited_reference_index.json) identifies all 96 references in the compiled main paper and the 30 used by the supplement (a subset of those 96). These include primary studies, surveys and documentation; they are not a count of independent experiments or all eligible literature. The 275-entry bibliographic database is broader, and the seventeen matrix records are purposive synthesis examples.
+
 ## Evidence support and deployment interpretation
 
-Grades apply to the representative result, separately from publication status, model quality or runtime confidence. Public artifacts were inspected rather than independently rerun for every study.
+Grades apply to the representative result and combine publication maturity with artifact support; E1 requires archival publication. Publication type is also displayed explicitly. Grades do not measure model quality or runtime confidence. Public artifacts were inspected rather than independently rerun for every study.
 
-| Grade | Replication support | Permitted use |
+| Grade | Publication and replication basis | Permitted use |
 |---|---|---|
-| E1 | Archival quantitative study with public implementation/evaluation artifacts supporting a rerun in principle | Result-specific comparison under the reported platform/workload conditions |
+| E1 | Archival quantitative finding with result-linked implementation, workload/configuration, comparator where needed, and scoring/measurement route supporting a rerun in principle | Result-specific comparison under the reported platform/workload conditions |
 | E2 | Inspectable quantitative evidence with incomplete replication support, regardless of publication status | Qualified findings with missing conditions stated |
 | E3 | Exploratory or incomplete summaries whose quantitative comparison cannot be reconstructed | Historical disclosure or open questions; no numerical deployment recommendation |
 
-The [result-specific ledger](evidence_ledger.json) follows the seventeen examples in the manuscript matrices. Selection purposively spans controls, execution tiers and outcome types; it is neither exhaustive nor a reconstructed screening flow. Each entry records the source version, result being graded, dated artifact snapshot, visible execution/scoring components, missing or unverified links, independent-rerun status and mobile-transfer limit. Current HEADs are inspection snapshots, not inferred historical experiment revisions. FastTTS uses its paper-linked Zenodo evaluation archive; inference/export or throughput demos alone do not establish a matching task-score reproduction path.
+The [result-specific ledger](evidence_ledger.json) follows the seventeen examples in the manuscript matrices. Selection purposively spans controls, execution tiers and outcome types; it is neither exhaustive nor a reconstructed screening flow. Each entry records the source version, result being graded, dated artifact snapshot, visible execution/scoring components, missing or unverified links, independent-rerun status and mobile-transfer limit. Composite rows take the least-established replication path among their material outcomes. A generic engine benchmark does not identify the workload or comparator for a specific published result. Current HEADs are inspection snapshots, not inferred historical experiment revisions. FastTTS uses its paper-linked Zenodo evaluation archive; inference/export or throughput demos alone do not establish a matching task-score reproduction path.
 
 Direct task outcomes, language-model quality proxies and execution-efficiency measurements are another axis. Code availability does not turn a token-throughput result into complete-agent validation. Source-specific hardware, scorer, precision, context, power and failure boundaries must accompany transferred claims. Conditional deployment guidance does not establish a universally optimal combination.
 
@@ -56,7 +59,7 @@ python3 survey/verify_repos.py
 
 Run these from the repository root. `check_docs.py` checks local targets, heading anchors, canonical arXiv placement and obsolete internal pointers. The literature audit extracts linked arXiv IDs, source titles, dates and withdrawal flags; title similarity below 0.62 is a human-review flag, not automatic exclusion. Repository checks use `git ls-remote HEAD`, which establishes reachability only.
 
-Current results are written to `survey/current_corpus_manifest.json` and `survey/current_repos_manifest.json`. They record input files, generation time and live/cached mode. Offline mode never calls the network: it reuses cached records and reports any missing IDs/status. Cached metadata is not a current live revalidation. Running the literature audit without `--offline` queries the arXiv API. Inspect changed titles, versions and flags before accepting a refresh.
+The living repository extractor case-folds owner/repository roots before deduplication and cache lookup; it does not resolve redirects, renamed projects or aliases. Current results are written to `survey/current_corpus_manifest.json` and `survey/current_repos_manifest.json`. They record input files, generation time and live/cached mode. Offline mode never calls the network: it reuses cached records and reports any missing IDs/status. Cached metadata is not a current live revalidation. Running the literature audit without `--offline` queries the arXiv API. Inspect changed titles, versions and flags before accepting a refresh.
 
 ## Reproduce the frozen census
 
@@ -67,9 +70,10 @@ The manuscript uses immutable [commit `82b6110`](https://github.com/wangxb96/Awe
 | Unique arXiv identifiers | 145 resolved, 0 unresolved, 0 withdrawal flags |
 | Selected title-audited labels | 137; 9 low-similarity flags manually inspected |
 | Records from 2023–2026 | 123/145 (84.8%) |
-| Linked repository roots | 123 with a live HEAD at the audit date |
+| Distinct recorded repository URL-root strings | 123 with a live HEAD at the audit date |
+| Case-folded repository roots (separate recount) | 122; capitalization variants collapse, redirects/aliases remain unresolved |
 
-The 137 count is one selected label per labelled ID, not every Markdown occurrence. Repository roots and arXiv IDs are distinct units, not successive screening stages. Title flags reflect abbreviations, descriptive labels or version-title changes. Link deduplication does not resolve DOI/preprint identity at the study level. The manuscript bibliography also includes archival records and documentation outside this census.
+The 137 count is one selected label per labelled ID, not every Markdown occurrence. The archived 123 count is case-sensitive; `google-ai-edge/LiteRT-LM` and `google-ai-edge/litert-lm` are two recorded spellings of one normalized root. The frozen manifest remains unchanged. Repository URL strings and arXiv IDs are distinct units, not successive screening stages. Title flags reflect abbreviations, descriptive labels or version-title changes. Link deduplication does not resolve DOI/preprint identity at the study level. The manuscript bibliography also includes archival records and documentation outside this census.
 
 Use a disposable checkout because the archived scripts rewrite their manifests:
 
@@ -91,7 +95,7 @@ Supplement S1 preserves the original server aggregate and provides a [recovered-
 
 ## Artifact map
 
-The [public supplement](supplement/[submission identifier removed]-supp.pdf), [source/build helper](supplement/README.md), [bibliographic database](references.bib) and all files in the [public inventory](public_artifacts.json) are distributed at [tag `supplement-2026-11-13-v3`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v3). Run `python3 survey/check_public_artifacts.py` for local file/dependency closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
+The [public supplement](supplement/[submission identifier removed]-supp.pdf), [source/build helper](supplement/README.md), [bibliographic database](references.bib) and all files in the [public inventory](public_artifacts.json) are distributed at [tag `supplement-2026-11-13-v4`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v4). Run `python3 survey/check_public_artifacts.py` for local file/dependency closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
 
 | Scientific purpose | Location |
 |---|---|

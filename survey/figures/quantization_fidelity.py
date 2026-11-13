@@ -5,14 +5,21 @@ Llama-3-8B-Instruct with Atom quantization. This is a literature replot,
 not a new measurement; the source table does not supply uncertainty estimates.
 """
 from pathlib import Path
+import csv
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 OUT=Path(__file__).resolve().parent
 mpl.rcParams.update({"font.family":"sans-serif","font.sans-serif":["Arial","Helvetica","DejaVu Sans"],"font.size":7,"pdf.fonttype":42,"svg.fonttype":"none","axes.spines.top":False,"axes.spines.right":False,"axes.linewidth":.6})
-labels=['PIQA\n10-shot','MBPP\n0-shot','GSM8K\n8-shot']
 names=['W16A16','W4A16','W4A4']
-values=np.array([[78.6,77.5,75.6],[42.0,41.5,30.5],[79.0,73.4,54.2]])
+with (OUT/'quantization_fidelity_source.csv').open(newline='') as source:
+    rows=list(csv.DictReader(source))
+if len(rows)!=3 or len({row['benchmark'] for row in rows})!=3:
+    raise ValueError('Expected three distinct benchmark rows in the source CSV')
+labels=[f"{row['benchmark']}\n{int(row['shots'])}-shot" for row in rows]
+values=np.array([[float(row[name+'_EM_pct']) for name in names] for row in rows])
+if not np.isfinite(values).all() or ((values<0)|(values>100)).any():
+    raise ValueError('Exact-match percentages must be finite and in [0,100]')
 colors=['#5B7FA0','#4F9C91','#D0A269']
 fig,ax=plt.subplots(figsize=(3.48,2.10))
 fig.subplots_adjust(left=.15,right=.98,bottom=.22,top=.80)
@@ -28,7 +35,6 @@ fig.savefig(OUT/'quantization_fidelity.pdf',bbox_inches='tight',pad_inches=.025)
 fig.savefig(OUT/'quantization_fidelity.svg',bbox_inches='tight',pad_inches=.025)
 fig.savefig(OUT/'quantization_fidelity.tiff',dpi=600,bbox_inches='tight',pad_inches=.025,pil_kwargs={'compression':'tiff_lzw'})
 fig.savefig(OUT/'quantization_fidelity.png',dpi=300,bbox_inches='tight',pad_inches=.025)
-(OUT/'quantization_fidelity_source.csv').write_text('benchmark,shots,W16A16_EM_pct,W4A16_EM_pct,W4A4_EM_pct\nPIQA,10,78.6,77.5,75.6\nMBPP,0,42.0,41.5,30.5\nGSM8K,8,79.0,73.4,54.2\n')
 plt.close(fig)
 svg = OUT/'quantization_fidelity.svg'
 svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')

@@ -321,11 +321,12 @@ The [optimization](#optimization-under-deployment-budgets), [agent](#agents-and-
 
 ## Research artifacts and figures
 
-Read the [supplementary material](survey/supplement/[submission identifier removed]-supp.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. Its [LaTeX source and build instructions](survey/supplement/README.md), [bibliographic database](survey/references.bib), figure inputs and runnable format examples are included here. The complete public artifact edition is pinned to [tag `supplement-2026-11-13-v2`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v2).
+Read the [supplementary material](survey/supplement/[submission identifier removed]-supp.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. Its [LaTeX source and build instructions](survey/supplement/README.md), [bibliographic database](survey/references.bib), figure inputs and runnable format examples are included here. The complete public artifact edition is pinned to [tag `supplement-2026-11-13-v3`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v3).
 
 | Artifact | Purpose |
 |---|---|
 | [Supplement PDF and source](survey/supplement/README.md) | Section directory, readable extended evidence, source locators and deployment contracts |
+| [Study evidence ledger](survey/evidence_ledger.json) | Seventeen result-specific publication/artifact snapshots, evaluation paths and transfer limits |
 | [Bibliographic database](survey/references.bib) | The survey's reference records; broader than the printed reference list |
 | [Public-file inventory](survey/public_artifacts.json) / [closure check](survey/check_public_artifacts.py) | All distributed files, supplement dependencies and optional anonymous access checks |
 | [Historical server record](survey/server/README.md) | Recovered requests, task definitions, all-campaign ledger, descriptive reanalysis and measurement-boundary figures |

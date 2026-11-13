@@ -1,0 +1,316 @@
+{
+  "scope": "Seventeen result-specific representative records in main Tables IV–V; current artifact inspection is distinct from historical experiment identity.",
+  "e1_threshold": "Archival quantitative result with public implementation and identifiable evaluation/benchmark path supporting rerun in principle; no independent rerun is implied.",
+  "e2_threshold": "Inspectable quantitative result with incomplete or unverified result-specific replication path, irrespective of publication.",
+  "selection": "Purposive coverage of controls, execution tiers and outcome types; not exhaustive or a reconstructed screening flow.",
+  "records": [
+    {
+      "order": 1,
+      "study": "AWQ",
+      "grade": "E1",
+      "publication_version": "MLSys 2024, Secs.4–5, Figs.9–10",
+      "result_graded": "W4A16 quality and supported-GPU execution",
+      "artifact_repository": "https://github.com/mit-han-lab/llm-awq",
+      "inspection_revision": "d6e797a42b9ef7778de8ee2352116e0f48a78d61",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "awq/entry.py",
+        "awq/utils/lm_eval_adaptor.py",
+        "tinychat/benchmark.py"
+      ],
+      "components_established": "Search/model-zoo links and evaluation instructions present; current TinyChat 2.0 is later than paper.",
+      "missing_or_unverified": "Historical checkpoint/backend and paper-era revision not established.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Quality and speed separate; no generic phone-agent validation."
+    },
+    {
+      "order": 2,
+      "study": "MobileQuant",
+      "grade": "E1",
+      "publication_version": "EMNLP Findings 2024, Sec.5.6, Tables5–6",
+      "result_graded": "TinyLLaMA LAMBADA proxy and S24 HTP forward-pass cost",
+      "artifact_repository": "https://github.com/saic-fi/MobileQuant",
+      "inspection_revision": "8964f919ff3aa3fcc21236dff21aa31111891a5a",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "eval/simple_eval.py",
+        "eval/harness_eval.py",
+        "device/calibrate.py",
+        "device/export.py"
+      ],
+      "components_established": "Checkpoint links, PTQ experiment configs, AIMET/QNN setup present.",
+      "missing_or_unverified": "Exact paper sustained-power protocol not reconstructed; vendor SDK/hardware required.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Last-token quality and forward-pass cost do not establish full agent energy."
+    },
+    {
+      "order": 3,
+      "study": "FlashAttention-2",
+      "grade": "E1",
+      "publication_version": "ICLR 2024, Sec.4",
+      "result_graded": "Attention numerical correctness and kernel throughput",
+      "artifact_repository": "https://github.com/Dao-AILab/flash-attention",
+      "inspection_revision": "f63c472c4dc19237c0635d6a629df065ff64796e",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "tests/test_flash_attn.py",
+        "benchmarks/benchmark_flash_attention.py"
+      ],
+      "components_established": "Reference numerical tests and shape/hardware benchmark instructions present.",
+      "missing_or_unverified": "Current tree includes FA3/FA4; exact FA2 paper environment not pinned.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Kernel speed is not cognition or mobile KV capacity."
+    },
+    {
+      "order": 4,
+      "study": "PagedAttention/vLLM",
+      "grade": "E1",
+      "publication_version": "SOSP 2023, Secs.6–7, Table1",
+      "result_graded": "Concurrent serving throughput under reported latency",
+      "artifact_repository": "https://github.com/vllm-project/vllm",
+      "inspection_revision": "aee2b208af6b116db3f6b2085b3d2c9823cdb13f",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "benchmarks/benchmark_serving.py",
+        "benchmarks/benchmark_latency.py",
+        "benchmarks/benchmark_throughput.py"
+      ],
+      "components_established": "Serving implementation and benchmark paths present.",
+      "missing_or_unverified": "2026 HEAD is not the SOSP 2023 historical stack; original baseline linkage unverified.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Server concurrency does not establish single-client mobile gain."
+    },
+    {
+      "order": 5,
+      "study": "PowerInfer-2",
+      "grade": "E2",
+      "publication_version": "arXiv:2406.06282v2, Sec.7",
+      "result_graded": "Sparse-model rooted-phone generation speed",
+      "artifact_repository": "https://powerinfer.ai/v2/",
+      "inspection_revision": null,
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [],
+      "components_established": "Paper/model/project record inspectable.",
+      "missing_or_unverified": "Matching smartphone runtime/evaluation artifact not established; desktop PowerInfer is a different implementation.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "No independent task-quality retention or general phone compatibility established."
+    },
+    {
+      "order": 6,
+      "study": "FastVLM",
+      "grade": "E2",
+      "publication_version": "CVPR 2025, Fig.1 and evaluation settings",
+      "result_graded": "M1 TTFT and VLM benchmark comparison",
+      "artifact_repository": "https://github.com/apple-aiml-research/ml-fastvlm",
+      "inspection_revision": "6f7b13179bbc81e6aa7d921bc7c6335c43904778",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "predict.py",
+        "get_models.sh",
+        "model_export/README.md",
+        "app/README.md"
+      ],
+      "components_established": "Checkpoints, inference and export/application paths present.",
+      "missing_or_unverified": "Dedicated full VLM benchmark-scoring or paper-result driver not established in inspected complete tree.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Apple demo/export is distinct from paper M1 measurements."
+    },
+    {
+      "order": 7,
+      "study": "TI-DPO",
+      "grade": "E2",
+      "publication_version": "ICLR 2026, Sec.5/Table1; arXiv:2505.19653v3",
+      "result_graded": "Six-task aggregate across three base models",
+      "artifact_repository": "https://github.com/gracefulning/TIDPO",
+      "inspection_revision": "e04a0926869a8f9fe9c9e9ce395394fd2c697fe2",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "train.py",
+        "trainers.py",
+        "preference_datasets.py"
+      ],
+      "components_established": "Training and preference evaluation plus demo configuration present.",
+      "missing_or_unverified": "README delegates paper benchmarks to separate harnesses; complete six-task scoring pipeline and trained tensor weights not found in inspected repo/supplement.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Adaptation quality is distinct from phone latency/energy."
+    },
+    {
+      "order": 8,
+      "study": "QSpec",
+      "grade": "E2",
+      "publication_version": "EMNLP 2025, Table1/Sec.4",
+      "result_graded": "Published task-fidelity and draft/verifier execution comparison",
+      "artifact_repository": "https://github.com/hku-netexplo-lab/QSpec",
+      "inspection_revision": "1d8124fbb4e4950d69dc35b6fe963d4e559c1104",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "demo.py",
+        "benchmarks/benchmark_throughput.py",
+        "README_VLLM.md"
+      ],
+      "components_established": "Throughput demo/checkpoint, inherited vLLM benchmark/tests and GPU setup present.",
+      "missing_or_unverified": "QSpec-specific paper task-fidelity table driver not established; inherited generic benchmarks do not supply this correspondence.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Defined GPU verifier precision is not phone-energy evidence."
+    },
+    {
+      "order": 9,
+      "study": "StreamingLLM",
+      "grade": "E1",
+      "publication_version": "ICLR 2024, Sec.4.5; arXiv:2309.17453",
+      "result_graded": "Stable bounded-window streaming/perplexity",
+      "artifact_repository": "https://github.com/mit-han-lab/streaming-llm",
+      "inspection_revision": "2e5042606d69933d88fbf909bd77907456b9b4dd",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "examples/eval_long_ppl.py",
+        "examples/run_streaming_llama.py"
+      ],
+      "components_established": "Model/dataset parameters, start/recent cache and perplexity code present.",
+      "missing_or_unverified": "StreamEval dataset/evaluation remains unreleased in README; it is not the basis of this E1 streaming-perplexity result.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Stable generation does not retain every evicted fact."
+    },
+    {
+      "order": 10,
+      "study": "InfLLM",
+      "grade": "E1",
+      "publication_version": "NeurIPS 2024, AppendixC.1; arXiv:2402.04617",
+      "result_graded": "LongBench/InfiniteBench selected-memory task evaluation",
+      "artifact_repository": "https://github.com/thunlp/InfLLM",
+      "inspection_revision": "12b70798f56e56ebb23c53c7018091a3f540a028",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "scripts/longbench.sh",
+        "scripts/infinitebench.sh",
+        "benchmark/pred.py",
+        "benchmark/eval.py"
+      ],
+      "components_established": "Dataset-download, scorer and model/attention YAML paths present.",
+      "missing_or_unverified": "April 2024 code and earlier-title citation are not proof of every later archival setting.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "External memory/retrieval costs need target-device measurement."
+    },
+    {
+      "order": 11,
+      "study": "SGLang",
+      "grade": "E1",
+      "publication_version": "NeurIPS 2024, Sec.6; arXiv:2312.07104",
+      "result_graded": "Prefix/program execution efficiency under fixed calls",
+      "artifact_repository": "https://github.com/sgl-project/sglang",
+      "inspection_revision": "75ca91a03cdc79f1928c36cc2c6afb49a68704c7",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "benchmark/",
+        "python/sglang/benchmark/",
+        "test/run_suite.py"
+      ],
+      "components_established": "Runtime, benchmark/profiling interfaces and tests present.",
+      "missing_or_unverified": "Current 2026 tools are not an identified historical replay trace; exact paper workload/revision correspondence unverified.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Replay efficiency does not validate live planning or phone energy."
+    },
+    {
+      "order": 12,
+      "study": "EdgeShard",
+      "grade": "E2",
+      "publication_version": "IoTJ 12(10),13119–13131,2025; author arXiv:2405.14371v1",
+      "result_graded": "Physical Jetson/RTX3090 partition/link experiment",
+      "artifact_repository": null,
+      "inspection_revision": null,
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [],
+      "components_established": "Paper experimental setting inspectable.",
+      "missing_or_unverified": "Matching official implementation was not established.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Link/source-node dependent; no complete agent task measurement."
+    },
+    {
+      "order": 13,
+      "study": "AutoGen",
+      "grade": "E2",
+      "publication_version": "COLM 2024; inspected author arXiv:2308.08155v2",
+      "result_graded": "API-backed multi-agent task outcomes",
+      "artifact_repository": "https://github.com/microsoft/autogen",
+      "inspection_revision": null,
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [],
+      "components_established": "Public framework and author paper.",
+      "missing_or_unverified": "Historical code revision/API/model/tool/prompts matching published outcomes not established.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Framework availability is not device cost or action safety."
+    },
+    {
+      "order": 14,
+      "study": "FastTTS",
+      "grade": "E1",
+      "publication_version": "ASPLOS 2026; arXiv:2509.00195v2, Sec.6/AppendixB",
+      "result_graded": "RTX4090 precise goodput and reasoning accuracy",
+      "artifact_repository": "https://zenodo.org/records/17943373",
+      "inspection_revision": "Zenodo v1; SHA256 08f84e5bed0801d99f67982a65e02ad1598cc24f34777ca16c1b033e64e718a9",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "run_all_experiments.py",
+        "benchmarks/run_benchmarks.py",
+        "benchmarks/configs/",
+        "accuracy_evaluation/evaluation/evaluate.py",
+        "environment.yml"
+      ],
+      "components_established": "Paper-linked archive checksum verified; 456 configs plus scorer/model/dataset paths. Primary PDF displays ACM artifact badges.",
+      "missing_or_unverified": "Default driver selects 1.5B/1.5B AIME subset; external downloads and full-grid correspondence not executed/verified. GitHub library is separate and incomplete.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Beam token-length/time goodput is not successful goals/s or phone energy."
+    },
+    {
+      "order": 15,
+      "study": "Agent-X",
+      "grade": "E2",
+      "publication_version": "MobiSys 2026; arXiv:2605.10380v1, Secs.5.1/5.4–5.5",
+      "result_graded": "TinyAgent deterministic-tool pipeline latency/accuracy",
+      "artifact_repository": null,
+      "inspection_revision": null,
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [],
+      "components_established": "Author paper/configuration inspectable.",
+      "missing_or_unverified": "Matching implementation not established.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "64GB M4Pro Mac mini is not a phone; unrestricted action safety untested."
+    },
+    {
+      "order": 16,
+      "study": "Cooperative caching",
+      "grade": "E2",
+      "publication_version": "TMC 25(10),16651–16663,2026; arXiv:2602.13307v2",
+      "result_graded": "Learned cache-action network utility in simulation",
+      "artifact_repository": "https://github.com/gracefulning/CoopLLM-Cache",
+      "inspection_revision": "2b243fab753bf3d4876f279f0807802631d55648",
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [
+        "llm/evaluate_unified.py",
+        "llm/train_sft.py",
+        "llm/train_grpo.py",
+        "cache_env/",
+        "sac_baseline_B5/"
+      ],
+      "components_established": "Unified evaluation, simulation/training and SAC checkpoints present.",
+      "missing_or_unverified": "Learned SFT/GRPO adapter tensors and exact paper-run traces/results absent from inspected tree; trained-policy/original-run linkage unverified.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Controller deadlines/energy and decentralization are separate unvalidated transfers."
+    },
+    {
+      "order": 17,
+      "study": "FunctionGemma/Mobile Actions",
+      "grade": "E2",
+      "publication_version": "Official model card and Mobile Actions post, inspected13Nov2026",
+      "result_graded": "Call accuracy plus separate S25Ultra CPU profile",
+      "artifact_repository": "https://ai.google.dev/gemma/docs/functiongemma/model_card",
+      "inspection_revision": null,
+      "inspection_date": "2026-11-13",
+      "visible_entrypoints": [],
+      "components_established": "First-party model card, tuning and demo paths.",
+      "missing_or_unverified": "Not archival replication; task/device populations differ, table context1024 versus prose512prefill+32decode; no uncertainty/task energy.",
+      "independent_rerun": "not performed",
+      "mobile_transfer_limit": "Function-calling component is not unrestricted autonomous-agent validation."
+    }
+  ]
+}

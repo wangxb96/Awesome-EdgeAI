@@ -7,3 +7,5 @@ survey/supplement/*.out
 survey/supplement/*.toc
 survey/supplement/*.synctex.gz
 request_summary_local.json
+survey/supplement/*.bbl
+survey/supplement/*.blg

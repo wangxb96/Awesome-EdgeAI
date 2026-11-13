@@ -38,6 +38,8 @@ Grades apply to the representative result, separately from publication status, m
 | E2 | Inspectable quantitative evidence with incomplete replication support, regardless of publication status | Qualified findings with missing conditions stated |
 | E3 | Exploratory or incomplete summaries whose quantitative comparison cannot be reconstructed | Historical disclosure or open questions; no numerical deployment recommendation |
 
+The [result-specific ledger](evidence_ledger.json) follows the seventeen examples in the manuscript matrices. Selection purposively spans controls, execution tiers and outcome types; it is neither exhaustive nor a reconstructed screening flow. Each entry records the source version, result being graded, dated artifact snapshot, visible execution/scoring components, missing or unverified links, independent-rerun status and mobile-transfer limit. Current HEADs are inspection snapshots, not inferred historical experiment revisions. FastTTS uses its paper-linked Zenodo evaluation archive; inference/export or throughput demos alone do not establish a matching task-score reproduction path.
+
 Direct task outcomes, language-model quality proxies and execution-efficiency measurements are another axis. Code availability does not turn a token-throughput result into complete-agent validation. Source-specific hardware, scorer, precision, context, power and failure boundaries must accompany transferred claims. Conditional deployment guidance does not establish a universally optimal combination.
 
 ## Living resource guide
@@ -89,7 +91,7 @@ Supplement S1 preserves the original server aggregate and provides a [recovered-
 
 ## Artifact map
 
-The [public supplement](supplement/[submission identifier removed]-supp.pdf), [source/build helper](supplement/README.md), [bibliographic database](references.bib) and all files in the [public inventory](public_artifacts.json) are distributed at [tag `supplement-2026-11-13-v2`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v2). Run `python3 survey/check_public_artifacts.py` for local file/dependency closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
+The [public supplement](supplement/[submission identifier removed]-supp.pdf), [source/build helper](supplement/README.md), [bibliographic database](references.bib) and all files in the [public inventory](public_artifacts.json) are distributed at [tag `supplement-2026-11-13-v3`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v3). Run `python3 survey/check_public_artifacts.py` for local file/dependency closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
 
 | Scientific purpose | Location |
 |---|---|

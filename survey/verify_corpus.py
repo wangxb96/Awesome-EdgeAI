@@ -4,10 +4,10 @@
 This script is the executable counterpart of ``survey/protocol.md`` and of
 Sec. ``Survey Methodology and Evidence Grading'' in [submission identifier removed].
 
-It extracts every arXiv identifier linked from the repository README, resolves
+It extracts every arXiv identifier linked from the README and topic guides, resolves
 each identifier against the official arXiv Atom API, records the authoritative
 title / submission date / withdrawal status, and emits a machine-readable
-manifest plus the aggregate counts used in the manuscript.
+manifest for the living guides. The manuscript census remains frozen at 82b6110.
 
 Usage (from the repository root)::
 
@@ -31,11 +31,13 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
+from doc_sources import resource_documents, resource_lines
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-README = ROOT / "README.md"
-DEFAULT_OUT = ROOT / "survey" / "corpus_manifest.json"
+DEFAULT_OUT = ROOT / "survey" / "current_corpus_manifest.json"
+FROZEN_CACHE = ROOT / "survey" / "corpus_manifest.json"
 API = "https://export.arxiv.org/api/query"
 NS = {"a": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
 
@@ -46,23 +48,18 @@ LINK_RE = re.compile(
 ANY_RE = re.compile(
     r"https?://(?:www\.|export\.)?arxiv\.org/(?:abs|pdf)/([0-9]{4}\.[0-9]{4,5})"
 )
-SECTION_RE = re.compile(r"^#{1,3}\s+(.+?)\s*$")
 
 
 def extract() -> tuple[list[str], dict[str, str], dict[str, list[str]]]:
-    """Return sorted arXiv ids, {id: link_label}, {id: [sections]} from README.
+    """Return sorted arXiv ids, {id: link_label}, {id: [sections]} from the README and topic guides.
 
     Both Markdown links and bare arXiv URLs are captured, so the manifest is a
-    complete census of the corpus rather than a subset of one link style.
+    complete link inventory of these inputs rather than a study-selection count.
     """
     labels: dict[str, str] = {}
     ids: set[str] = set()
     sections: dict[str, list[str]] = defaultdict(list)
-    section = "(preamble)"
-    for line in README.read_text(encoding="utf-8").splitlines():
-        m = SECTION_RE.match(line)
-        if m:
-            section = m.group(1).strip()
+    for section, line in resource_lines():
         line_ids = set(ANY_RE.findall(line))
         for label, aid in LINK_RE.findall(line):
             labels.setdefault(aid, label.strip())
@@ -125,11 +122,16 @@ def main() -> int:
     args = ap.parse_args()
 
     ids, labels, sections = extract()
-    print(f"README arXiv identifiers (unique, all URL styles): {len(ids)}")
+    print(f"Resource-guide arXiv identifiers (unique, all URL styles): {len(ids)}")
 
-    if args.offline and args.out.exists():
-        manifest = json.loads(args.out.read_text(encoding="utf-8"))
-        records = manifest.get("records", {})
+    cache_sources = []
+    if args.offline:
+        records = {}
+        for cache in [FROZEN_CACHE, args.out]:
+            if cache.exists():
+                records.update(json.loads(cache.read_text(encoding="utf-8")).get("records", {}))
+                cache_sources.append(str(cache.relative_to(ROOT)) if cache.is_relative_to(ROOT) else str(cache))
+        records = {aid: records[aid] for aid in ids if aid in records}
     else:
         records = fetch(ids)
 
@@ -155,7 +157,11 @@ def main() -> int:
 
     out = {
         "generated_by": "survey/verify_corpus.py",
-        "source_document": "README.md",
+        "source_documents": [str(p.relative_to(ROOT)) for p in resource_documents()],
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "verification_mode": "cached metadata; no live revalidation" if args.offline else "live arXiv API",
+        "cache_sources": cache_sources,
+        "frozen_census_revision": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
         "verification_source": "https://export.arxiv.org/api/query",
         "counts": {
             "unique_arxiv_ids": len(ids),
@@ -191,7 +197,7 @@ def main() -> int:
           f"withdrawn={c['withdrawn']} title-mismatches={c['title_mismatches_below_0_62']}")
     print("year distribution:", dict(sorted(years.items())))
     print(f"manifest -> {args.out}")
-    return 0
+    return 1 if missing or withdrawn else 0
 
 
 if __name__ == "__main__":

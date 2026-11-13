@@ -1,0 +1,247 @@
+{
+  "generated_by": "survey/verify_repos.py",
+  "source_documents": [
+    "README.md",
+    "docs/agents-and-applications.md",
+    "docs/evaluation-and-trust.md",
+    "docs/foundations-and-surveys.md",
+    "docs/models-and-runtimes.md",
+    "docs/optimization.md"
+  ],
+  "generated_at_utc": "2026-11-13T05:01:28.316268+00:00",
+  "verification_mode": "live git ls-remote HEAD",
+  "frozen_census_revision": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
+  "verification_method": "git ls-remote <repo>.git HEAD",
+  "counts": {
+    "unique_repositories": 30,
+    "ok": 30,
+    "missing": 0,
+    "error": 0,
+    "unknown": 0
+  },
+  "not_ok": [],
+  "section_distribution": {
+    "docs/models-and-runtimes.md: Generative inference stacks": 13,
+    "docs/optimization.md: Adaptation and federated learning": 6,
+    "docs/models-and-runtimes.md: Role-matched model artifacts": 4,
+    "docs/models-and-runtimes.md: MCU and embedded inference": 4,
+    "docs/evaluation-and-trust.md: Device and sustained-session studies": 2,
+    "README.md: Awesome Edge AI": 1,
+    "README.md: Research artifacts": 1
+  },
+  "status": {
+    "alibaba/MNN": "OK",
+    "apple/ml-fastvlm": "OK",
+    "ARM-software/CMSIS-NN": "OK",
+    "bitsandbytes-foundation/bitsandbytes": "OK",
+    "emlearn/emlearn": "OK",
+    "ggml-org/llama.cpp": "OK",
+    "google-ai-edge/LiteRT": "OK",
+    "google-ai-edge/LiteRT-LM": "OK",
+    "huggingface/peft": "OK",
+    "huggingface/transformers.js": "OK",
+    "IST-DASLab/gptq": "OK",
+    "microsoft/BitNet": "OK",
+    "microsoft/onnxruntime": "OK",
+    "microsoft/onnxruntime-genai": "OK",
+    "mit-han-lab/llm-awq": "OK",
+    "mit-han-lab/smoothquant": "OK",
+    "mit-han-lab/tinyengine": "OK",
+    "ml-explore/mlx": "OK",
+    "ml-explore/mlx-lm": "OK",
+    "mlc-ai/mlc-llm": "OK",
+    "mlcommons/inference": "OK",
+    "mlcommons/tiny": "OK",
+    "NVIDIA/TensorRT-LLM": "OK",
+    "OpenBMB/MiniCPM-V": "OK",
+    "OpenGVLab/OmniQuant": "OK",
+    "pytorch/executorch": "OK",
+    "SqueezeAILab/TinyAgent": "OK",
+    "Tencent/ncnn": "OK",
+    "tensorflow/tflite-micro": "OK",
+    "wangxb96/Awesome-EdgeAI": "OK"
+  },
+  "repos": {
+    "alibaba/MNN": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "apple/ml-fastvlm": {
+      "sections": [
+        "docs/models-and-runtimes.md: Role-matched model artifacts"
+      ],
+      "status": "OK"
+    },
+    "ARM-software/CMSIS-NN": {
+      "sections": [
+        "docs/models-and-runtimes.md: MCU and embedded inference"
+      ],
+      "status": "OK"
+    },
+    "bitsandbytes-foundation/bitsandbytes": {
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ],
+      "status": "OK"
+    },
+    "emlearn/emlearn": {
+      "sections": [
+        "docs/models-and-runtimes.md: MCU and embedded inference"
+      ],
+      "status": "OK"
+    },
+    "ggml-org/llama.cpp": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "google-ai-edge/LiteRT": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "google-ai-edge/LiteRT-LM": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "huggingface/peft": {
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ],
+      "status": "OK"
+    },
+    "huggingface/transformers.js": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "IST-DASLab/gptq": {
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ],
+      "status": "OK"
+    },
+    "microsoft/BitNet": {
+      "sections": [
+        "docs/models-and-runtimes.md: Role-matched model artifacts"
+      ],
+      "status": "OK"
+    },
+    "microsoft/onnxruntime": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "microsoft/onnxruntime-genai": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/llm-awq": {
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/smoothquant": {
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ],
+      "status": "OK"
+    },
+    "mit-han-lab/tinyengine": {
+      "sections": [
+        "docs/models-and-runtimes.md: MCU and embedded inference"
+      ],
+      "status": "OK"
+    },
+    "ml-explore/mlx": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "ml-explore/mlx-lm": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "mlc-ai/mlc-llm": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "mlcommons/inference": {
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ],
+      "status": "OK"
+    },
+    "mlcommons/tiny": {
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ],
+      "status": "OK"
+    },
+    "NVIDIA/TensorRT-LLM": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "OpenBMB/MiniCPM-V": {
+      "sections": [
+        "docs/models-and-runtimes.md: Role-matched model artifacts"
+      ],
+      "status": "OK"
+    },
+    "OpenGVLab/OmniQuant": {
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ],
+      "status": "OK"
+    },
+    "pytorch/executorch": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "SqueezeAILab/TinyAgent": {
+      "sections": [
+        "docs/models-and-runtimes.md: Role-matched model artifacts"
+      ],
+      "status": "OK"
+    },
+    "Tencent/ncnn": {
+      "sections": [
+        "docs/models-and-runtimes.md: Generative inference stacks"
+      ],
+      "status": "OK"
+    },
+    "tensorflow/tflite-micro": {
+      "sections": [
+        "docs/models-and-runtimes.md: MCU and embedded inference"
+      ],
+      "status": "OK"
+    },
+    "wangxb96/Awesome-EdgeAI": {
+      "sections": [
+        "README.md: Awesome Edge AI",
+        "README.md: Research artifacts"
+      ],
+      "status": "OK"
+    }
+  }
+}

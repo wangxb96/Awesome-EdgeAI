@@ -1,0 +1,1199 @@
+{
+  "generated_by": "survey/verify_corpus.py",
+  "source_documents": [
+    "README.md",
+    "docs/agents-and-applications.md",
+    "docs/evaluation-and-trust.md",
+    "docs/foundations-and-surveys.md",
+    "docs/models-and-runtimes.md",
+    "docs/optimization.md"
+  ],
+  "generated_at_utc": "2026-11-13T05:01:16.964561+00:00",
+  "verification_mode": "cached metadata; no live revalidation",
+  "cache_sources": [
+    "survey/corpus_manifest.json",
+    "survey/current_corpus_manifest.json"
+  ],
+  "frozen_census_revision": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
+  "verification_source": "https://export.arxiv.org/api/query",
+  "counts": {
+    "unique_arxiv_ids": 93,
+    "resolved_by_arxiv_api": 93,
+    "unresolved": 0,
+    "withdrawn": 0,
+    "markdown_link_labels_checked": 93,
+    "title_mismatches_below_0_62": 0
+  },
+  "unresolved_ids": [],
+  "withdrawn_ids": [],
+  "year_distribution": {
+    "2016": 1,
+    "2021": 1,
+    "2022": 4,
+    "2023": 6,
+    "2024": 14,
+    "2025": 25,
+    "2026": 42
+  },
+  "section_distribution_of_links": {
+    "docs/evaluation-and-trust.md: Device and sustained-session studies": 11,
+    "docs/optimization.md: Adaptation and federated learning": 10,
+    "docs/models-and-runtimes.md: Model reports": 8,
+    "docs/agents-and-applications.md: Application-specific boundaries": 8,
+    "docs/optimization.md: Runtime, scheduling and hardware mapping": 7,
+    "docs/optimization.md: Precision and model structure": 6,
+    "docs/foundations-and-surveys.md: Edge language models and collaborative intelligence": 5,
+    "docs/agents-and-applications.md: Delegation and distributed execution": 5,
+    "docs/evaluation-and-trust.md: Security and privacy": 5,
+    "docs/agents-and-applications.md: Planning, execution and state": 4,
+    "docs/optimization.md: Decoding and test-time work": 4,
+    "docs/optimization.md: Context, state and memory": 4,
+    "docs/foundations-and-surveys.md: Cognitive network control and agentification": 4,
+    "docs/agents-and-applications.md: LLMs controlling edge networks": 4,
+    "docs/foundations-and-surveys.md: Constrained learning foundations": 3,
+    "docs/agents-and-applications.md: Retrieval-augmented workflows": 2,
+    "docs/foundations-and-surveys.md: Edge foundations": 1,
+    "README.md: Research artifacts": 1,
+    "docs/evaluation-and-trust.md: Complete-task outcomes": 1
+  },
+  "section_distribution_of_papers": {
+    "docs/evaluation-and-trust.md: Device and sustained-session studies": 11,
+    "docs/optimization.md: Adaptation and federated learning": 10,
+    "docs/agents-and-applications.md: Application-specific boundaries": 8,
+    "docs/models-and-runtimes.md: Model reports": 8,
+    "docs/optimization.md: Runtime, scheduling and hardware mapping": 7,
+    "docs/optimization.md: Precision and model structure": 6,
+    "docs/agents-and-applications.md: Delegation and distributed execution": 5,
+    "docs/evaluation-and-trust.md: Security and privacy": 5,
+    "docs/foundations-and-surveys.md: Edge language models and collaborative intelligence": 5,
+    "docs/agents-and-applications.md: Planning, execution and state": 4,
+    "docs/agents-and-applications.md: LLMs controlling edge networks": 4,
+    "docs/foundations-and-surveys.md: Cognitive network control and agentification": 4,
+    "docs/optimization.md: Context, state and memory": 4,
+    "docs/optimization.md: Decoding and test-time work": 4,
+    "docs/foundations-and-surveys.md: Constrained learning foundations": 3,
+    "docs/agents-and-applications.md: Retrieval-augmented workflows": 2,
+    "README.md: Research artifacts": 1,
+    "docs/evaluation-and-trust.md: Complete-task outcomes": 1,
+    "docs/foundations-and-surveys.md: Edge foundations": 1
+  },
+  "title_mismatches": [],
+  "records": {
+    "1607.00133": {
+      "title": "Deep Learning with Differential Privacy",
+      "published": "2016-07-01",
+      "year": 2016,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Deep Learning with Differential Privacy",
+      "sections": [
+        "docs/foundations-and-surveys.md: Edge foundations"
+      ]
+    },
+    "2106.09685": {
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "published": "2021-06-17",
+      "year": 2021,
+      "comment": "Draft V2 includes better baselines, experiments on GLUE, and more on adapter latency",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    },
+    "2206.15472": {
+      "title": "On-Device Training Under 256KB Memory",
+      "published": "2022-06-30",
+      "year": 2022,
+      "comment": "NeurIPS 2022",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "On-Device Training Under 256KB Memory",
+      "sections": [
+        "docs/foundations-and-surveys.md: Constrained learning foundations"
+      ]
+    },
+    "2210.03629": {
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "published": "2022-10-06",
+      "year": 2022,
+      "comment": "v3 is the ICLR camera ready version with some typos fixed. Project site with code: https://react-lm.github.io",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "sections": [
+        "docs/agents-and-applications.md: Planning, execution and state"
+      ]
+    },
+    "2210.17323": {
+      "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+      "published": "2022-10-31",
+      "year": 2022,
+      "comment": "ICLR 2023",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+      "sections": [
+        "docs/optimization.md: Precision and model structure"
+      ]
+    },
+    "2211.10438": {
+      "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+      "published": "2022-11-18",
+      "year": 2022,
+      "comment": "ICML 2023. First two authors contributed equally to this work",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+      "sections": [
+        "docs/optimization.md: Precision and model structure"
+      ]
+    },
+    "2302.01318": {
+      "title": "Accelerating Large Language Model Decoding with Speculative Sampling",
+      "published": "2023-02-02",
+      "year": 2023,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Accelerating Large Language Model Decoding with Speculative Sampling",
+      "sections": [
+        "docs/optimization.md: Decoding and test-time work"
+      ]
+    },
+    "2306.00978": {
+      "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+      "published": "2023-06-01",
+      "year": 2023,
+      "comment": "MLSys 2024 Best Paper Award. Code available at: https://github.com/mit-han-lab/llm-awq",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+      "sections": [
+        "docs/optimization.md: Precision and model structure"
+      ]
+    },
+    "2309.06180": {
+      "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+      "published": "2023-09-12",
+      "year": 2023,
+      "comment": "SOSP 2023",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+      "sections": [
+        "docs/optimization.md: Context, state and memory"
+      ]
+    },
+    "2310.08560": {
+      "title": "MemGPT: Towards LLMs as Operating Systems",
+      "published": "2023-10-12",
+      "year": 2023,
+      "comment": "Code and data available at https://research.memgpt.ai",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "MemGPT: Towards LLMs as Operating Systems",
+      "sections": [
+        "docs/agents-and-applications.md: Planning, execution and state"
+      ]
+    },
+    "2310.15080": {
+      "title": "Federated Learning of Large Language Models with Parameter-Efficient Prompt Tuning and Adaptive Optimization",
+      "published": "2023-10-23",
+      "year": 2023,
+      "comment": "18 pages, accepted by EMNLP 2023",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Federated Learning of Large Language Models with Parameter-Efficient Prompt Tuning and Adaptive Optimization",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    },
+    "2312.12456": {
+      "title": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+      "published": "2023-12-16",
+      "year": 2023,
+      "comment": "SOSP 2024",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+      "sections": [
+        "docs/optimization.md: Runtime, scheduling and hardware mapping"
+      ]
+    },
+    "2402.09353": {
+      "title": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+      "published": "2024-02-14",
+      "year": 2024,
+      "comment": "ICML2024(Oral)",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    },
+    "2402.14905": {
+      "title": "MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases",
+      "published": "2024-02-22",
+      "year": 2024,
+      "comment": "ICML 2024. Code is available at https://github.com/facebookresearch/MobileLLM",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases",
+      "sections": [
+        "docs/models-and-runtimes.md: Model reports"
+      ]
+    },
+    "2402.17764": {
+      "title": "The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits",
+      "published": "2024-02-27",
+      "year": 2024,
+      "comment": "Work in progress",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits",
+      "sections": [
+        "docs/optimization.md: Precision and model structure"
+      ]
+    },
+    "2403.19076": {
+      "title": "Tiny Machine Learning: Progress and Futures",
+      "published": "2024-03-28",
+      "year": 2024,
+      "comment": "arXiv admin note: text overlap with arXiv:2206.15472",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Tiny Machine Learning: Progress and Futures",
+      "sections": [
+        "docs/foundations-and-surveys.md: Constrained learning foundations"
+      ]
+    },
+    "2405.12213": {
+      "title": "Octo: An Open-Source Generalist Robot Policy",
+      "published": "2024-05-20",
+      "year": 2024,
+      "comment": "Project website: https://octo-models.github.io",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Octo: An Open-Source Generalist Robot Policy",
+      "sections": [
+        "docs/agents-and-applications.md: Application-specific boundaries"
+      ]
+    },
+    "2406.06282": {
+      "title": "PowerInfer-2: Fast Large Language Model Inference on a Smartphone",
+      "published": "2024-06-10",
+      "year": 2024,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "PowerInfer-2: Fast Large Language Model Inference on a Smartphone",
+      "sections": [
+        "docs/optimization.md: Runtime, scheduling and hardware mapping"
+      ]
+    },
+    "2406.10290": {
+      "title": "MobileAIBench: Benchmarking LLMs and LMMs for On-Device Use Cases",
+      "published": "2024-06-12",
+      "year": 2024,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "MobileAIBench: Benchmarking LLMs and LMMs for On-Device Use Cases",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2408.01800": {
+      "title": "MiniCPM-V: A GPT-4V Level MLLM on Your Phone",
+      "published": "2024-08-03",
+      "year": 2024,
+      "comment": "preprint",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "MiniCPM-V: A GPT-4V Level MLLM on Your Phone",
+      "sections": [
+        "docs/models-and-runtimes.md: Model reports"
+      ]
+    },
+    "2409.00088": {
+      "title": "On-Device Language Models: A Comprehensive Review",
+      "published": "2024-08-26",
+      "year": 2024,
+      "comment": "38 pages, 6 figures",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "On-Device Language Models: A Comprehensive Review",
+      "sections": [
+        "docs/foundations-and-surveys.md: Edge language models and collaborative intelligence"
+      ]
+    },
+    "2409.15790": {
+      "title": "Small Language Models: Survey, Measurements, and Insights",
+      "published": "2024-09-24",
+      "year": 2024,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Small Language Models: Survey, Measurements, and Insights",
+      "sections": [
+        "docs/foundations-and-surveys.md: Edge language models and collaborative intelligence"
+      ]
+    },
+    "2410.03613": {
+      "title": "Understanding Large Language Models in Your Pockets: Performance Study on COTS Mobile Devices",
+      "published": "2024-10-04",
+      "year": 2024,
+      "comment": "Corrected a typographical error on page 12: \"4604%\" has been corrected to \"60%.\"",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Understanding Large Language Models in Your Pockets: Performance Study on COTS Mobile Devices",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2410.11305": {
+      "title": "QSpec: Speculative Decoding with Complementary Quantization Schemes",
+      "published": "2024-10-15",
+      "year": 2024,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "QSpec: Speculative Decoding with Complementary Quantization Schemes",
+      "sections": [
+        "docs/optimization.md: Decoding and test-time work"
+      ]
+    },
+    "2410.11845": {
+      "title": "A Review on Edge Large Language Models: Design, Execution, and Applications",
+      "published": "2024-09-29",
+      "year": 2024,
+      "comment": "Accepted by ACM Computing Surveys(CSUR)",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "A Review on Edge Large Language Models: Design, Execution, and Applications",
+      "sections": [
+        "docs/foundations-and-surveys.md: Edge language models and collaborative intelligence"
+      ]
+    },
+    "2410.24164": {
+      "title": "$π_0$: A Vision-Language-Action Flow Model for General Robot Control",
+      "published": "2024-10-31",
+      "year": 2024,
+      "comment": "See project website for videos: https://physicalintelligence.company/blog/pi0 Published in RSS 2025",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "π_0: A Vision-Language-Action Flow Model for General Robot Control",
+      "sections": [
+        "docs/agents-and-applications.md: Application-specific boundaries"
+      ]
+    },
+    "2501.03265": {
+      "title": "Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment",
+      "published": "2025-01-04",
+      "year": 2025,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment",
+      "sections": [
+        "README.md: Research artifacts"
+      ]
+    },
+    "2502.11417": {
+      "title": "DiSCo: Device-Server Collaborative LLM-Based Text Streaming Services",
+      "published": "2025-02-17",
+      "year": 2025,
+      "comment": "ACL 2025",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "DiSCo: Device-Server Collaborative LLM-Based Text Streaming Services",
+      "sections": [
+        "docs/agents-and-applications.md: Delegation and distributed execution"
+      ]
+    },
+    "2502.14321": {
+      "title": "Beyond Self-Talk: A Communication-Centric Survey of LLM-Based Multi-Agent Systems",
+      "published": "2025-02-20",
+      "year": 2025,
+      "comment": "The article has been accepted by Frontiers of Computer Science (FCS), with the DOI: {10.1007/s11704-026-50857-y}",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Beyond Self-Talk: A Communication-Centric Survey of LLM-Based Multi-Agent Systems",
+      "sections": [
+        "docs/foundations-and-surveys.md: Edge language models and collaborative intelligence"
+      ]
+    },
+    "2503.19786": {
+      "title": "Gemma 3 Technical Report",
+      "published": "2025-03-25",
+      "year": 2025,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Gemma 3 Technical Report",
+      "sections": [
+        "docs/models-and-runtimes.md: Model reports"
+      ]
+    },
+    "2504.12285": {
+      "title": "BitNet b1.58 2B4T Technical Report",
+      "published": "2025-04-16",
+      "year": 2025,
+      "comment": "Work in progress",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "BitNet b1.58 2B4T Technical Report",
+      "sections": [
+        "docs/models-and-runtimes.md: Model reports"
+      ]
+    },
+    "2505.09388": {
+      "title": "Qwen3 Technical Report",
+      "published": "2025-05-14",
+      "year": 2025,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Qwen3 Technical Report",
+      "sections": [
+        "docs/models-and-runtimes.md: Model reports"
+      ]
+    },
+    "2506.02153": {
+      "title": "Small Language Models are the Future of Agentic AI",
+      "published": "2025-06-02",
+      "year": 2025,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Small Language Models are the Future of Agentic AI",
+      "sections": [
+        "docs/agents-and-applications.md: Planning, execution and state"
+      ]
+    },
+    "2506.02847": {
+      "title": "CLONE: Customizing LLMs for Efficient Latency-Aware Inference at the Edge",
+      "published": "2025-06-03",
+      "year": 2025,
+      "comment": "Accepted by USENIX ATC 2025",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "CLONE: Customizing LLMs for Efficient Latency-Aware Inference at the Edge",
+      "sections": [
+        "docs/agents-and-applications.md: Delegation and distributed execution"
+      ]
+    },
+    "2506.07900": {
+      "title": "MiniCPM4: Ultra-Efficient LLMs on End Devices",
+      "published": "2025-06-09",
+      "year": 2025,
+      "comment": "MiniCPM4 Technical Report",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "MiniCPM4: Ultra-Efficient LLMs on End Devices",
+      "sections": [
+        "docs/models-and-runtimes.md: Model reports"
+      ]
+    },
+    "2508.18803": {
+      "title": "A Survey on Cloud-Edge-Terminal Collaborative Intelligence in AIoT Networks",
+      "published": "2025-08-26",
+      "year": 2025,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "A Survey on Cloud-Edge-Terminal Collaborative Intelligence in AIoT Networks",
+      "sections": [
+        "docs/foundations-and-surveys.md: Edge language models and collaborative intelligence"
+      ]
+    },
+    "2508.19870": {
+      "title": "Secure Multi-LLM Agentic AI and Agentification for Edge General Intelligence by Zero-Trust: A Survey",
+      "published": "2025-08-27",
+      "year": 2025,
+      "comment": "35 pages",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Secure Multi-LLM Agentic AI and Agentification for Edge General Intelligence by Zero-Trust: A Survey",
+      "sections": [
+        "docs/foundations-and-surveys.md: Cognitive network control and agentification"
+      ]
+    },
+    "2509.00195": {
+      "title": "FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning",
+      "published": "2025-08-29",
+      "year": 2025,
+      "comment": "Accepted at ASPLOS 2026",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning",
+      "sections": [
+        "docs/optimization.md: Decoding and test-time work"
+      ]
+    },
+    "2509.08995": {
+      "title": "When FinTech Meets Privacy: Securing Financial LLMs with Differential Private Fine-Tuning",
+      "published": "2025-09-10",
+      "year": 2025,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "When FinTech Meets Privacy: Securing Financial LLMs with Differential Private Fine-Tuning",
+      "sections": [
+        "docs/evaluation-and-trust.md: Security and privacy"
+      ]
+    },
+    "2509.24945": {
+      "title": "MobileLLM-R1: Exploring the Limits of Sub-Billion Language Model Reasoners with Open Training Recipes",
+      "published": "2025-09-29",
+      "year": 2025,
+      "comment": "ICLR 2026",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "MobileLLM-R1: Exploring the Limits of Sub-Billion Language Model Reasoners with Open Training Recipes",
+      "sections": [
+        "docs/models-and-runtimes.md: Model reports"
+      ]
+    },
+    "2510.16418": {
+      "title": "FourierCompress: Layer-Aware Spectral Activation Compression for Efficient and Accurate Collaborative LLM Inference",
+      "published": "2025-10-18",
+      "year": 2025,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "FourierCompress: Layer-Aware Spectral Activation Compression for Efficient and Accurate Collaborative LLM Inference",
+      "sections": [
+        "docs/optimization.md: Runtime, scheduling and hardware mapping"
+      ]
+    },
+    "2510.18544": {
+      "title": "SLICE: SLO-Driven Scheduling for LLM Inference on Edge Computing Devices",
+      "published": "2025-10-21",
+      "year": 2025,
+      "comment": "This work has been submitted to the IEEE for possible publication. This version is temporarily hosted anonymously for double-blind review",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "SLICE: SLO-Driven Scheduling for LLM Inference on Edge Computing Devices",
+      "sections": [
+        "docs/optimization.md: Runtime, scheduling and hardware mapping"
+      ]
+    },
+    "2510.19979": {
+      "title": "SecureInfer: Heterogeneous TEE-GPU Architecture for Privacy-Critical Tensors for Large Language Model Deployment",
+      "published": "2025-10-22",
+      "year": 2025,
+      "comment": "Accepted at IEEE Intelligent Computing and Systems at the Edge (ICEdge) 2025",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "SecureInfer: Heterogeneous TEE-GPU Architecture for Privacy-Critical Tensors for Large Language Model Deployment",
+      "sections": [
+        "docs/evaluation-and-trust.md: Security and privacy"
+      ]
+    },
+    "2510.27107": {
+      "title": "A Memory-Efficient Retrieval Architecture for RAG-Enabled Wearable Medical LLMs-Agents",
+      "published": "2025-10-31",
+      "year": 2025,
+      "comment": "Accepted by BioCAS2025",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "A Memory-Efficient Retrieval Architecture for RAG-Enabled Wearable Medical LLMs-Agents",
+      "sections": [
+        "docs/agents-and-applications.md: Retrieval-augmented workflows"
+      ]
+    },
+    "2511.00603": {
+      "title": "EPARA: Parallelizing Categorized AI Inference in Edge Clouds",
+      "published": "2025-11-01",
+      "year": 2025,
+      "comment": "15 pages,20 figures",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "EPARA: Parallelizing Categorized AI Inference in Edge Clouds",
+      "sections": [
+        "docs/optimization.md: Runtime, scheduling and hardware mapping"
+      ]
+    },
+    "2511.07425": {
+      "title": "An Evaluation of LLMs Inference on Popular Single-board Computers",
+      "published": "2025-10-20",
+      "year": 2025,
+      "comment": "9 pages, 3 figures",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "An Evaluation of LLMs Inference on Popular Single-board Computers",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2511.11585": {
+      "title": "Parameter-Efficient and Personalized Federated Training of Generative Models at the Edge",
+      "published": "2025-10-11",
+      "year": 2025,
+      "comment": "37 pages, 8 figures",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Parameter-Efficient and Personalized Federated Training of Generative Models at the Edge",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    },
+    "2511.11624": {
+      "title": "Characterizing and Understanding Energy Footprint and Efficiency of Small Language Model on Edges",
+      "published": "2025-11-07",
+      "year": 2025,
+      "comment": "Submitted version; 9 pages, 5 figures; presented at IEEE MASS 2025 (online publication pending)",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Characterizing and Understanding Energy Footprint and Efficiency of Small Language Model on Edges",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2511.11811": {
+      "title": "Lessons Learned from Developing a Privacy-Preserving Multimodal Wearable for Local Voice-and-Vision Inference",
+      "published": "2025-11-14",
+      "year": 2025,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Lessons Learned from Developing a Privacy-Preserving Multimodal Wearable for Local Voice-and-Vision Inference",
+      "sections": [
+        "docs/agents-and-applications.md: Application-specific boundaries"
+      ]
+    },
+    "2511.22334": {
+      "title": "Edge Deployment of Small Language Models, a comprehensive comparison of CPU, GPU and NPU backends",
+      "published": "2025-11-27",
+      "year": 2025,
+      "comment": "8 pages, 9 figures",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Edge Deployment of Small Language Models, a comprehensive comparison of CPU, GPU and NPU backends",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2512.20623": {
+      "title": "BitRL-Light: 1-bit LLM Agents with Deep Reinforcement Learning for Energy-Efficient Smart Home Lighting Optimization",
+      "published": "2025-11-23",
+      "year": 2025,
+      "comment": "Presented as poster in IPCCC 2025 at Austin",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "BitRL-Light: 1-bit LLM Agents with Deep Reinforcement Learning for Energy-Efficient Smart Home Lighting Optimization",
+      "sections": [
+        "docs/agents-and-applications.md: Application-specific boundaries"
+      ]
+    },
+    "2601.14343": {
+      "title": "Rethinking On-Device LLM Reasoning: Why Analogical Mapping Outperforms Abstract Thinking for IoT DDoS Detection",
+      "published": "2026-01-20",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Rethinking On-Device LLM Reasoning: Why Analogical Mapping Outperforms Abstract Thinking for IoT DDoS Detection",
+      "sections": [
+        "docs/agents-and-applications.md: Application-specific boundaries"
+      ]
+    },
+    "2601.21822": {
+      "title": "CORE:Toward Ubiquitous 6G Intelligence Through Collaborative Orchestration of Large Language Model Agents Over Hierarchical Edge",
+      "published": "2026-01-29",
+      "year": 2026,
+      "comment": "Accepted by IEEE Communications Magazine",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "CORE:Toward Ubiquitous 6G Intelligence Through Collaborative Orchestration of Large Language Model Agents Over Hierarchical Edge",
+      "sections": [
+        "docs/agents-and-applications.md: LLMs controlling edge networks"
+      ]
+    },
+    "2602.13069": {
+      "title": "Memory-Efficient Structured Backpropagation for On-Device LLM Fine-Tuning",
+      "published": "2026-02-13",
+      "year": 2026,
+      "comment": "ACL2026",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Memory-Efficient Structured Backpropagation for On-Device LLM Fine-Tuning",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    },
+    "2602.18397": {
+      "title": "How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf",
+      "published": "2026-02-20",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2602.22374": {
+      "title": "VoiceAlign: A Shimming Layer for Enhancing the Usability of Legacy Voice User Interface Systems",
+      "published": "2026-02-25",
+      "year": 2026,
+      "comment": "Accepted at IUI'26",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "VoiceAlign: A Shimming Layer for Enhancing the Usability of Legacy Voice User Interface Systems",
+      "sections": [
+        "docs/agents-and-applications.md: Application-specific boundaries"
+      ]
+    },
+    "2603.09511": {
+      "title": "TrainDeeploy: Hardware-Accelerated Parameter-Efficient Fine-Tuning of Small Transformer Models at the Extreme Edge",
+      "published": "2026-03-10",
+      "year": 2026,
+      "comment": "Accepted at DATE 2026 (Design, Automation and Test in Europe). 7 pages, 6 figures",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "TrainDeeploy: Hardware-Accelerated Parameter-Efficient Fine-Tuning of Small Transformer Models at the Extreme Edge",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    },
+    "2603.23640": {
+      "title": "LLM Inference at the Edge: Mobile, NPU, and GPU Performance Efficiency Trade-offs Under Sustained Load",
+      "published": "2026-03-24",
+      "year": 2026,
+      "comment": "14 pages, 5 figures, 10 tables",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "LLM Inference at the Edge: Mobile, NPU, and GPU Performance Efficiency Trade-offs Under Sustained Load",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2604.15622": {
+      "title": "AdaDINO: Context-Adaptive DINO-Distilled Vision Foundation Models for Efficient Open-Vocabulary Edge Inference",
+      "published": "2026-04-17",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "AdaDINO: Context-Adaptive DINO-Distilled Vision Foundation Models for Efficient Open-Vocabulary Edge Inference",
+      "sections": [
+        "docs/agents-and-applications.md: Application-specific boundaries"
+      ]
+    },
+    "2604.18655": {
+      "title": "Unlocking the Edge deployment and ondevice acceleration of multi-LoRA enabled one-for-all foundational LLM",
+      "published": "2026-04-20",
+      "year": 2026,
+      "comment": "Accepted at ACL 2026",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Unlocking the Edge deployment and ondevice acceleration of multi-LoRA enabled one-for-all foundational LLM",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    },
+    "2604.21399": {
+      "title": "A Task Decomposition and Planning Framework for Efficient LLM Inference in AI-Enabled WiFi-Offload Networks",
+      "published": "2026-04-23",
+      "year": 2026,
+      "comment": "7 pages, 4 figures, conference version",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "A Task Decomposition and Planning Framework for Efficient LLM Inference in AI-Enabled WiFi-Offload Networks",
+      "sections": [
+        "docs/agents-and-applications.md: LLMs controlling edge networks"
+      ]
+    },
+    "2604.24785": {
+      "title": "Cloud to Edge: Benchmarking LLM Inference On Hardware-Accelerated Single-Board Computers",
+      "published": "2026-04-24",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Cloud to Edge: Benchmarking LLM Inference On Hardware-Accelerated Single-Board Computers",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2604.25421": {
+      "title": "FED-FSTQ: Fisher-Guided Token Quantization for Communication-Efficient Federated Fine-Tuning of LLMs on Edge Devices",
+      "published": "2026-04-28",
+      "year": 2026,
+      "comment": "18 pages, 14 figures",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "FED-FSTQ: Fisher-Guided Token Quantization for Communication-Efficient Federated Fine-Tuning of LLMs on Edge Devices",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    },
+    "2604.26557": {
+      "title": "DUAL-BLADE: Dual-Path NVMe-Direct KV-Cache Offloading for Edge LLM Inference",
+      "published": "2026-04-29",
+      "year": 2026,
+      "comment": "To appear in IEEE International Conference on Distributed Computing Systems (ICDCS) 2026",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "DUAL-BLADE: Dual-Path NVMe-Direct KV-Cache Offloading for Edge LLM Inference",
+      "sections": [
+        "docs/optimization.md: Context, state and memory"
+      ]
+    },
+    "2604.27393": {
+      "title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+      "published": "2026-04-30",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+      "sections": [
+        "docs/models-and-runtimes.md: Model reports"
+      ]
+    },
+    "2605.01546": {
+      "title": "6G Needs Agents: Toward Agentic AI-Native Networks for Autonomous Intelligence",
+      "published": "2026-05-02",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "6G Needs Agents: Toward Agentic AI-Native Networks for Autonomous Intelligence",
+      "sections": [
+        "docs/agents-and-applications.md: LLMs controlling edge networks"
+      ]
+    },
+    "2605.10124": {
+      "title": "GELATO: Generative Entropy- and Lyapunov-based Adaptive Token Offloading for Device-Edge Speculative LLM Inference",
+      "published": "2026-05-11",
+      "year": 2026,
+      "comment": "This work has been submitted to the IEEE for possible publication",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "GELATO: Generative Entropy- and Lyapunov-based Adaptive Token Offloading for Device-Edge Speculative LLM Inference",
+      "sections": [
+        "docs/agents-and-applications.md: Delegation and distributed execution"
+      ]
+    },
+    "2605.13221": {
+      "title": "An Agentic AI Framework with Large Language Models and Chain-of-Thought for UAV-Assisted Logistics Scheduling with Mobile Edge Computing",
+      "published": "2026-05-13",
+      "year": 2026,
+      "comment": "37 pages",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "An Agentic AI Framework with Large Language Models and Chain-of-Thought for UAV-Assisted Logistics Scheduling with Mobile Edge Computing",
+      "sections": [
+        "docs/agents-and-applications.md: Application-specific boundaries"
+      ]
+    },
+    "2605.17707": {
+      "title": "Speed Kills: Exploring Confused Deputy Attacks Through Edge AI Accelerators",
+      "published": "2026-05-18",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Speed Kills: Exploring Confused Deputy Attacks Through Edge AI Accelerators",
+      "sections": [
+        "docs/evaluation-and-trust.md: Security and privacy"
+      ]
+    },
+    "2605.29450": {
+      "title": "Protecting On-Device AI Inference: A Systematic Review of Attacks and Defence Mechanisms",
+      "published": "2026-05-28",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Protecting On-Device AI Inference: A Systematic Review of Attacks and Defence Mechanisms",
+      "sections": [
+        "docs/foundations-and-surveys.md: Cognitive network control and agentification"
+      ]
+    },
+    "2605.30102": {
+      "title": "When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems",
+      "published": "2026-05-28",
+      "year": 2026,
+      "comment": "30 pages, 16 figures. Accepted to the Second Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD) at ICML 2026",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems",
+      "sections": [
+        "docs/agents-and-applications.md: Delegation and distributed execution"
+      ]
+    },
+    "2605.31226": {
+      "title": "What changes after deployment? A survey on On-device Learning in TinyML",
+      "published": "2026-05-29",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "What changes after deployment? A survey on On-device Learning in TinyML",
+      "sections": [
+        "docs/foundations-and-surveys.md: Constrained learning foundations"
+      ]
+    },
+    "2606.11257": {
+      "title": "Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite",
+      "published": "2026-06-09",
+      "year": 2026,
+      "comment": "9 pages, 2 figures, 6 tables",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite",
+      "sections": [
+        "docs/agents-and-applications.md: Retrieval-augmented workflows"
+      ]
+    },
+    "2606.21428": {
+      "title": "Does Mixture-of-Experts Actually Help Inference on Consumer and Edge Hardware? An Empirical Study",
+      "published": "2026-06-19",
+      "year": 2026,
+      "comment": "18 pages, 7 tables, 4 figures. Submitted to FAIEMA 2026. Code available at https://github.com/Analytics-Everywhere-Lab/edge-moe",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Does Mixture-of-Experts Actually Help Inference on Consumer and Edge Hardware? An Empirical Study",
+      "sections": [
+        "docs/optimization.md: Precision and model structure"
+      ]
+    },
+    "2606.23001": {
+      "title": "EnerInfer: Energy-Aware On-Device LLM Inference",
+      "published": "2026-06-22",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "EnerInfer: Energy-Aware On-Device LLM Inference",
+      "sections": [
+        "docs/optimization.md: Runtime, scheduling and hardware mapping"
+      ]
+    },
+    "2606.27906": {
+      "title": "Phase Matters: Characterizing Heterogeneous Vision-Language Inference on a Mobile SoC",
+      "published": "2026-06-26",
+      "year": 2026,
+      "comment": "6 pages, 5 figures. Published in MobiSys Workshop '26",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Phase Matters: Characterizing Heterogeneous Vision-Language Inference on a Mobile SoC",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2607.16066": {
+      "title": "LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization",
+      "published": "2026-07-17",
+      "year": 2026,
+      "comment": "35 pages, 4 figures, Under review",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization",
+      "sections": [
+        "docs/foundations-and-surveys.md: Cognitive network control and agentification"
+      ]
+    },
+    "2608.03148": {
+      "title": "Lightweight Chunk Selection for Mobile Retrieval-Augmented Generation",
+      "published": "2026-08-04",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Lightweight Chunk Selection for Mobile Retrieval-Augmented Generation",
+      "sections": [
+        "docs/optimization.md: Context, state and memory"
+      ]
+    },
+    "2608.05303": {
+      "title": "EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding",
+      "published": "2026-08-05",
+      "year": 2026,
+      "comment": "Accepted at the 59th IEEE/ACM International Symposium on Microarchitecture (MICRO 2026)",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding",
+      "sections": [
+        "docs/optimization.md: Runtime, scheduling and hardware mapping"
+      ]
+    },
+    "2608.15693": {
+      "title": "Large Models for Small Devices: Recent Advances and Empirical Analysis of Edge AI Deployment",
+      "published": "2026-08-16",
+      "year": 2026,
+      "comment": "Parts of this work were presented at the IEEE Consumer Communications & Networking Conference (CCNC), Las Vegas, NV, USA, January 2026",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Large Models for Small Devices: Recent Advances and Empirical Analysis of Edge AI Deployment",
+      "sections": [
+        "docs/optimization.md: Precision and model structure"
+      ]
+    },
+    "2608.21172": {
+      "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+      "published": "2026-08-21",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    },
+    "2609.04778": {
+      "title": "Diffusion Language Models for Mobile Edge Agentic AI: Foundations, Applications, and Challenges",
+      "published": "2026-09-04",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Diffusion Language Models for Mobile Edge Agentic AI: Foundations, Applications, and Challenges",
+      "sections": [
+        "docs/foundations-and-surveys.md: Cognitive network control and agentification"
+      ]
+    },
+    "2609.10117": {
+      "title": "Understanding the Security Boundary of Obfuscation-based On-Device LLM Protection",
+      "published": "2026-09-09",
+      "year": 2026,
+      "comment": "16 pages. Accepted to ACM CCS 2026 (Cycle B)",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Understanding the Security Boundary of Obfuscation-based On-Device LLM Protection",
+      "sections": [
+        "docs/evaluation-and-trust.md: Security and privacy"
+      ]
+    },
+    "2609.10714": {
+      "title": "From Semantic to Token Communication: The Next Paradigm for Large-Model-Driven 6G Intelligent Connectivity",
+      "published": "2026-09-09",
+      "year": 2026,
+      "comment": "39 pages, 10 figures, 10 tables, 182 references. Submitted to Science China Information Sciences",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "From Semantic to Token Communication: The Next Paradigm for Large-Model-Driven 6G Intelligent Connectivity",
+      "sections": [
+        "docs/agents-and-applications.md: LLMs controlling edge networks"
+      ]
+    },
+    "2609.21704": {
+      "title": "SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference",
+      "published": "2026-09-18",
+      "year": 2026,
+      "comment": "5 pages, 1 figure. Published in the 2026 Fifth International Conference on Power, Control and Computing Technologies (ICPC2T)",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference",
+      "sections": [
+        "docs/optimization.md: Decoding and test-time work"
+      ]
+    },
+    "2610.05709": {
+      "title": "Nexus: An Execution Fabric for AI Agents Across Cloud, Edge, and Devices",
+      "published": "2026-10-05",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Nexus: An Execution Fabric for AI Agents Across Cloud, Edge, and Devices",
+      "sections": [
+        "docs/agents-and-applications.md: Planning, execution and state"
+      ]
+    },
+    "2610.17560": {
+      "title": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation",
+      "published": "2026-10-13",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation",
+      "sections": [
+        "docs/agents-and-applications.md: Delegation and distributed execution"
+      ]
+    },
+    "2610.17816": {
+      "title": "Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution",
+      "published": "2026-10-13",
+      "year": 2026,
+      "comment": "23 pages, 5 figures, 12 tables",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution",
+      "sections": [
+        "docs/evaluation-and-trust.md: Complete-task outcomes"
+      ]
+    },
+    "2610.21565": {
+      "title": "BiShield-TEE: On the (In-)Security of Unilateral Weight Obfuscation in On-Device TEE-Shielded LLM Partition",
+      "published": "2026-10-15",
+      "year": 2026,
+      "comment": "Accepted at NeurIPS 2026",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "BiShield-TEE: On the (In-)Security of Unilateral Weight Obfuscation in On-Device TEE-Shielded LLM Partition",
+      "sections": [
+        "docs/evaluation-and-trust.md: Security and privacy"
+      ]
+    },
+    "2610.22579": {
+      "title": "MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches",
+      "published": "2026-10-15",
+      "year": 2026,
+      "comment": "To be published in IEEE/ACM MICRO 2026",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches",
+      "sections": [
+        "docs/optimization.md: Context, state and memory"
+      ]
+    },
+    "2610.34717": {
+      "title": "VLA-HWBench: Where the Time Goes When VLA Models Run on Edge Hardware",
+      "published": "2026-10-26",
+      "year": 2026,
+      "comment": "",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "VLA-HWBench: Where the Time Goes When VLA Models Run on Edge Hardware",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2610.40039": {
+      "title": "How Far Are We From On-Device VLM Inference? A Measurement Study on Edge NPUs",
+      "published": "2026-10-29",
+      "year": 2026,
+      "comment": "26 pages, including references and appendices",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "How Far Are We From On-Device VLM Inference? A Measurement Study on Edge NPUs",
+      "sections": [
+        "docs/evaluation-and-trust.md: Device and sustained-session studies"
+      ]
+    },
+    "2611.04797": {
+      "title": "Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates",
+      "published": "2026-11-03",
+      "year": 2026,
+      "comment": "27 pages, 11 figures, 15 tables",
+      "withdrawn": false,
+      "source": "arXiv Atom API",
+      "readme_label": "Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates",
+      "sections": [
+        "docs/optimization.md: Adaptation and federated learning"
+      ]
+    }
+  }
+}

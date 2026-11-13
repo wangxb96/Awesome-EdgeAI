@@ -1,157 +1,77 @@
-# Survey Protocol and Reproducible Corpus — [submission identifier removed]
+# Survey protocol and source verification
 
-This document is the executable methodology companion to
+This repository accompanies *Cognitive Edge Computing: A Survey on Optimizing Large Language Models and Autonomous Agents for the Edge*. The organizing question is which deployment choices preserve a declared cognitive task capability within memory, latency, energy, thermal, connectivity and trust budgets.
 
-> X. Wang, Q. Li, and W. Jia, *Cognitive Edge Computing: A Survey on Optimizing
-> Large Language Models and Autonomous Agents for the Edge*, IEEE Transactions
-> on Mobile Computing, revision, manuscript **[submission identifier removed]**.
+The living resource guides, the manuscript bibliography and the frozen retained-link census are different objects. None is a reconstructed systematic study-screening flow.
 
-It is the canonical statement of the search, screening, verification, and
-evidence-grading protocol summarized in Sec. *Survey Methodology and Evidence
-Grading* of the revised manuscript. **This repository
-(`wangxb96/Awesome-EdgeAI`) is the official artifact repository of that
-manuscript.** Protocol revision 11 November 2026. The dated census uses the
-archived README and manifests at immutable Git commit `82b6110`. This protocol
-and the future benchmark helper are updated separately; the older protocol at
-that census commit is not the current evidence-grading policy.
+## Scope and source selection
 
----
+Included work addresses constrained LLM/SLM/VLM execution, context and memory, model/runtime efficiency, adaptation, device–edge–cloud collaboration, tool-using agents, measurement or security at a stated deployment boundary. Foundational serving and TinyML mechanisms are retained when their transfer limits are clear. A server result does not establish mobile performance.
 
-## 1. Scope and scientific question
+Conventional perception without an LLM/agent connection, cloud-only training without a deployment role, unverifiable product claims, unrepaired placeholders and withdrawn records are outside the survey scope. The broader foundations guide provides selected prerequisites without counting them as new cognitive-edge validation.
 
-The survey asks a *capability-under-budget* question: which combinations of
-model-, runtime-, and agent-loop optimizations preserve reasoning quality on
-resource-constrained edge and mobile devices while remaining within latency,
-energy, memory, thermal, privacy, and wireless-bandwidth budgets?
-
-Included: reasoning-capable LLM/SLM/VLM deployment at the edge; on-device
-inference and training; compression and efficient architectures; runtime,
-KV-cache, scheduling, offloading, and device–edge–cloud serving; autonomous
-agents, tool use, and multi-agent coordination under intermittent
-connectivity; measurement, benchmarking, energy, security/TEE, and 6G/token
-communication aspects tied to those deployments; and foundational runtime/TinyML mechanisms whose transfer to that setting
-is explicitly bounded. Inclusion of a server mechanism does not establish
-mobile performance.
-
-Excluded: conventional edge perception without LLM/agent components;
-cloud-only training with no edge-facing deployment decision; isolated hardware
-design that does not interact with model serving or data/context management;
-non-technical product announcements; and withdrawn preprints.
-
----
-
-## 2. Sources and search window
-
-| Dimension | Value |
+| Dimension | Source boundary |
 |---|---|
-| Bibliographic sources | arXiv, IEEE Xplore, ACM Digital Library, Google Scholar (forward/backward snowballing), SpringerLink and publisher DOI landing pages for archival verification |
-| Artifact sources | Official GitHub organizations (project repositories, model cards, benchmark suites), MLCommons, vendor technical reports |
-| Coverage window | 2015–10 Nov 2026, with emphasis on 2023–2026 |
-| Census snapshot date | 11 Nov 2026; frozen README/manifests at `82b6110`; literature coverage ends 10 Nov |
-| Language | English-language publications and technical reports |
+| Literature | arXiv, IEEE Xplore, ACM Digital Library, Google Scholar for citation discovery, SpringerLink and publisher DOI records |
+| Artifacts | Primary project/publisher documentation, model cards, official code and benchmark suites |
+| Manuscript coverage | 2015–13 November 2026, emphasizing recent deployment mechanisms; targeted primary-source updates are distinct from the frozen census |
+| Frozen link coverage | Through 10 November 2026; snapshot recorded 11 November at `82b6110` |
 
-The four query families below describe the search concepts (tier × model family
-× optimization lever × evaluation), with backward/forward snowballing from the
-seed set and recent surveys. The database-specific query logs, exact run dates
-for each source, initial hit totals, and screening/exclusion counts were not
-retained. The strings below are therefore a reproducible search template, not a
-verbatim record of every historical database query:
+Search concepts combine deployment tier, model/agent role, optimization mechanism and evaluation constraint:
 
-1. **Deployment tier:** `("edge" OR "on-device" OR "mobile" OR "MEC" OR "edge-cloud" OR "device-edge-cloud")`
-2. **Model / agent family:** `("LLM" OR "large language model" OR "SLM" OR "VLM" OR "multimodal" OR "agentic" OR "autonomous agent" OR "tool use" OR "function calling")`
-3. **Optimization lever:** `("quantization" OR "pruning" OR "distillation" OR "sparsity" OR "KV cache" OR "speculative decoding" OR "offloading" OR "partitioning" OR "serving" OR "LoRA" OR "on-device training" OR "federated")`
-4. **Evaluation / constraint:** `("latency" OR "energy-per-token" OR "J/token" OR "thermal" OR "memory footprint" OR "p95" OR "reasoning fidelity" OR "benchmark" OR "reproducibility")`
+1. Tier: edge, on-device, mobile, MEC, device–edge–cloud.
+2. Capability: language/multimodal models, reasoning, context memory, planning, tool use.
+3. Mechanism: quantization, distillation, KV management, decoding, partitioning, offloading, adaptation.
+4. Constraint: latency, memory, energy, thermal state, connectivity, task quality, reproducibility.
 
-Example composite string:
-`("on-device" OR "edge") AND ("LLM" OR "agentic") AND ("quantization" OR "KV cache") AND ("energy" OR "latency")`.
+For example: `("on-device" OR "edge") AND ("LLM" OR "agentic") AND ("quantization" OR "KV cache") AND ("energy" OR "latency")`.
 
----
+These are reproducible query concepts. Historical database-specific queries, exact run dates, initial hit totals and screening/exclusion counts were not retained. Exhaustive coverage and PRISMA-style selection are therefore not claimed.
 
-## 3. Inclusion / exclusion and evidence grading
+## Evidence support and deployment interpretation
 
-**Inclusion.** (I1) The work addresses constrained LLM/agent execution or a
-mechanism transferable to that setting, with server-to-device limits stated. (I2) It
-provides a method, system, measurement, or critical synthesis with enough
-detail to be classified. (I3) Its primary source resolves to an authoritative
-record (arXiv abstract page, publisher DOI, or official repository HEAD).
+Grades apply to the representative result, separately from publication status, model quality or runtime confidence. Public artifacts were inspected rather than independently rerun for every study.
 
-**Exclusion.** Conventional perception without an LLM/agent connection, cloud-only
-training, unverifiable/non-technical claims, withdrawn preprints, and unrepaired
-source placeholders. Census deduplication is by arXiv ID and repository root; it
-is not study-level DOI/preprint deduplication or a recovered screening flow.
-
-**Evidence grades** apply to the representative result used, not a whole method
-family. Publication status is recorded separately. Public artifacts were
-inspected, not independently rerun for every result.
-
-| Grade | Definition | Permitted interpretation |
+| Grade | Replication support | Permitted use |
 |---|---|---|
-| **E1** | Archival quantitative study with public implementation/evaluation artifacts supporting a rerun in principle | Result-specific comparisons within the reported platform/workload boundary |
-| **E2** | Inspectable quantitative study with incomplete replication support, irrespective of publication status | Qualified findings with the missing replication conditions stated |
-| **E3** | Exploratory claims or incomplete summaries whose quantitative comparison cannot be reconstructed | Open questions or explicitly historical records; no numerical deployment recommendation or validated superiority claim |
+| E1 | Archival quantitative study with public implementation/evaluation artifacts supporting a rerun in principle | Result-specific comparison under the reported platform/workload conditions |
+| E2 | Inspectable quantitative evidence with incomplete replication support, regardless of publication status | Qualified findings with missing conditions stated |
+| E3 | Exploratory or incomplete summaries whose quantitative comparison cannot be reconstructed | Historical disclosure or open questions; no numerical deployment recommendation |
 
-The main study-level matrix records the result, hardware, capability proxy,
-artifact boundary, and qualified implication. Conflicting measurements retain
-their different conditions; they are not averaged or resolved by a blanket
-family grade. Deployment rules labelled as heuristics are not empirical
-optimality claims, and research evidence grade is not runtime confidence in an
-agent's context. The historical server summaries are E3 and do not derive the
-survey's recommendations.
+Direct task outcomes, language-model quality proxies and execution-efficiency measurements are another axis. Code availability does not turn a token-throughput result into complete-agent validation. Source-specific hardware, scorer, precision, context, power and failure boundaries must accompany transferred claims. Conditional deployment guidance does not establish a universally optimal combination.
 
-Withdrawn preprints are excluded by construction (an automated check on the
-arXiv `comment` and abstract fields), e.g. the withdrawn *SplitLite* preprint
-was removed from the 2026 refresh.
+## Living resource guides
 
----
+The [resource map](../README.md) links five topic guides. Each paper has one canonical topic entry; related topics cross-link rather than repeat the same record. Entries identify a deployment role, with a primary source and bounded interpretation. Superseded duplicates, placeholders, unsupported artifact associations and context-free performance rankings are removed during curation.
 
-## 4. Screening and verification workflow
+Both link-audit tools read `README.md` and `docs/*.md` through `doc_sources.py`:
 
-The final corpus is a **machine-checkable census**, not an unverifiable
-narrative count. We deliberately publish the extraction and verification code
-rather than a claimed database-hit total that cannot be independently
-recomputed.
-
-```
-README.md (living curated corpus)
-   │
-   ├─ survey/verify_corpus.py  ──► arXiv Atom API ──► survey/corpus_manifest.json
-   │     • extract all arXiv IDs (Markdown links + bare URLs)
-   │     • resolve authoritative title / date / withdrawal status
-   │     • flag title↔ID mismatches (SequenceMatcher < 0.62)
-   │     • emit year and topic-section distributions
-   │
-   └─ survey/verify_repos.py   ──► git ls-remote HEAD ──► survey/repos_manifest.json
-         • extract all github.com/<owner>/<repo> links
-         • confirm every linked repository resolves to a live HEAD
+```sh
+python3 survey/check_docs.py
+python3 survey/verify_corpus.py --offline
+python3 survey/verify_repos.py
 ```
 
-| Stage | Rule | Count (11 Nov 2026 snapshot) |
-|---|---|---|
-| S0 Candidate records | arXiv identifiers and GitHub repositories linked in `README.md` (not all papers in the manuscript bibliography) | 145 arXiv IDs + 123 repositories |
-| S1 Deduplication | Unique identifiers / repository roots | 145 + 123 |
-| S2 Primary-source resolution | arXiv Atom API; `git ls-remote` | 145/145 resolved; 123/123 live |
-| S3 Withdrawn / dead-link exclusion | Automated withdrawal flag; repository HEAD check | 0 withdrawn; 0 dead repositories (one historical dead link repaired) |
-| S4 Title↔ID audit | Compare README link label to authoritative title | 9 low-similarity labels among 137 labelled links; all inspected and attributed to short names, descriptive bibliographic labels, or version-title changes |
-| S5 Retained audited links | Distinct identifiers and repository roots, not evidence-graded study screening | **145 arXiv records + 123 verified repositories** |
+Run these from the repository root. `check_docs.py` checks local targets, heading anchors, canonical arXiv placement and obsolete internal pointers. The literature audit extracts linked arXiv IDs, source titles, dates and withdrawal flags; title similarity below 0.62 is a human-review flag, not automatic exclusion. Repository checks use `git ls-remote HEAD`, which establishes reachability only.
 
-**Corpus composition (from `corpus_manifest.json`):** 2015: 1, 2016: 2,
-2017: 2, 2018: 2, 2020: 5, 2021: 2, 2022: 8, 2023: 11, 2024: 19, 2025: 37,
-2026: 56. Hence **123/145 (84.8%) are from 2023–2026**, consistent with the
-manuscript's emphasis on recent work while retaining foundational references.
-The manuscript BibTeX file (`references.bib`, 260 records) also includes
-archival venue records, standards, and hardware documentation outside this
-arXiv/repository census. The 145-record census is therefore not the total
-number of studies cited or screened for the manuscript.
+Current results are written to `survey/current_corpus_manifest.json` and `survey/current_repos_manifest.json`. They record input files, generation time and live/cached mode. Offline mode never calls the network: it reuses cached records and reports any missing IDs/status. Cached metadata is not a current live revalidation. Running the literature audit without `--offline` queries the arXiv API. Inspect changed titles, versions and flags before accepting a refresh.
 
----
+## Reproduce the frozen census
 
-## 5. Reproducing the census
+The manuscript uses immutable [commit `82b6110`](https://github.com/wangxb96/Awesome-EdgeAI/tree/82b6110), not the current guides. Its archived README and manifests contain:
 
-The reproducible object is the archived census at commit `82b6110`, not the
-changing default branch. In a disposable checkout (Python 3.9+, standard library
-only; `git` required):
+| Unit | Archived result |
+|---|---:|
+| Unique arXiv identifiers | 145 resolved, 0 unresolved, 0 withdrawal flags |
+| Selected title-audited labels | 137; 9 low-similarity flags manually inspected |
+| Records from 2023–2026 | 123/145 (84.8%) |
+| Linked repository roots | 123 with a live HEAD at the audit date |
 
-```bash
+The 137 count is one selected label per labelled ID, not every Markdown occurrence. Repository roots and arXiv IDs are distinct units, not successive screening stages. Title flags reflect abbreviations, descriptive labels or version-title changes. Link deduplication does not resolve DOI/preprint identity at the study level. The manuscript bibliography also includes archival records and documentation outside this census.
+
+Use a disposable checkout because the archived scripts rewrite their manifests:
+
+```sh
 git clone https://github.com/wangxb96/Awesome-EdgeAI.git
 cd Awesome-EdgeAI
 git checkout --detach 82b6110
@@ -159,51 +79,23 @@ python3 survey/verify_corpus.py --offline
 python3 survey/verify_repos.py --offline
 ```
 
-These offline commands recompute counts from the frozen README and saved API/HEAD
-results. The scripts rewrite their output manifests, so use a disposable checkout
-if preserving a clean working tree matters. For a strictly read-only check, load
-the archived script, README and manifest contents using `git show` and intercept
-output writes in memory. The outputs are 145 identifiers, 137 labelled IDs,
-9 title flags, and 123 repository roots with archived OK status. They do not
-revalidate today's source state or replay historical searches. The 137 count is
-one selected Markdown label per unique arXiv ID, not all label occurrences.
+These commands replay saved metadata and HEAD status. They do not check today's source state or recover historical searches. Root files `corpus_manifest.json` and `repos_manifest.json` under `survey/` remain the frozen inputs; the living audits use separate `current_*` outputs.
 
-Running the scripts without `--offline` performs a **new live audit** and may
-change counts and manifests; record its date and commit separately. A live HEAD
-checks reachability, not official ownership, source-paper association, or
-experimental replicability. The 260-entry bibliography count is a separate
-manuscript-input count, not a value computed by these link-audit scripts.
+## Measurement and historical limits
 
----
+The [benchmark protocol](benchmark_protocol.md) specifies new request logs, task-episode linkage, failures, repetition and power boundaries. The [analysis helper](compute_ci.py) summarizes supplied request observations; it cannot infer complete-task success, certify logging completeness, validate power integration or recover missing inputs. Its analysis revision must be pinned separately from the census.
 
-## 6. Artifact ↔ manuscript crosswalk
+The manuscript's Supplement S1 retains incomplete historical server summaries as E3. Missing prompts, exact configurations, outputs, repetitions, failure denominators and power attribution cannot be restored. Those summaries establish neither mobile energy/performance nor a validated model ranking. Context-averaged p95 values are not pooled request percentiles, and an unverified board power/throughput ratio is not integrated system energy. No recommendation depends on those historical numbers.
 
-| Manuscript element | Artifact in this repository |
+## Artifact map
+
+| Scientific purpose | Location |
 |---|---|
-| Source/query concepts and retained-census limitations | `survey/protocol.md` (this file) |
-| E1/E2/E3 grading definitions | Section 3 of this protocol and the main study-level matrix |
-| Frozen retained-link counts | `survey/corpus_manifest.json`, `survey/repos_manifest.json` at `82b6110` |
-| Topic-organized literature, distinct from the frozen census | `README.md` → model, agent, hardware, application and survey sections |
-| On-device model families and 30+ official tool repositories | `README.md` → *On-Device Model Families & Tool Repository Index* |
-| Exploratory historical benchmark limitations | `README.md` → *[submission identifier removed] Official Repository* |
-| Literature-link and repository-link audits | `survey/verify_corpus.py`, `survey/verify_repos.py` |
-| Benchmark reporting protocol, energy boundary, failed-batch policy | `survey/benchmark_protocol.md` |
-| Failure denominators, conditional summaries, pooled request p95, optional repetition intervals | `survey/compute_ci.py` |
+| Task-to-resource and cross-tier argument | [Overview, placement and coupling diagrams](figures/README.md) |
+| Analytical weight/KV illustration | [Source](figures/memory_budget.py), [CSV](figures/memory_budget_analytical.csv) |
+| Communication/state boundaries | [Collaboration diagram](figures/collaboration_patterns.pdf) |
+| Failure-aware request/episode accounting | [Workflow diagram](figures/workflow_evaluation.pdf), [benchmark protocol](benchmark_protocol.md) |
+| Permissioned assistant example | [Editable source](figures/assistant_workflow.py), [diagram](figures/assistant_workflow.pdf) |
+| Primary model and runtime artifacts | [Models and runtimes](../docs/models-and-runtimes.md) |
 
----
-
-## 7. Limitations of the protocol
-
-This is a reproducibility-oriented *census* protocol, not a PRISMA-style
-systematic review. The database-specific query logs, exact per-source search
-dates, initial hit totals, and counts at the screening/exclusion stages were
-not retained, so the scripts cannot reproduce the original selection process
-or selection-bias estimates. Search-engine result counts are also unstable
-across time, personalization, and indexing. The audit instead verifies the
-retained corpus: every retained arXiv item is resolvable to a primary source,
-and archived link counts can be recomputed at the pinned snapshot. Title
-similarity is a heuristic that flags abbreviations and version renames for
-human inspection rather than an automatic exclusion rule. Publication/source class alone does not establish evidence strength; incomplete
-comparisons remain E3 regardless of source class and cannot establish
-quantitative superiority. This limitation is stated explicitly in the manuscript's
-*Threats to Validity* section.
+The main manuscript retains the scientific argument, representative evidence and acceptance criteria. Extended identifiers, configuration locators, reporting schemas and prospective traces are supplementary detail. Missing historical search and measurement records remain limitations rather than reconstructed evidence.

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Reproducible artifact-repository verification for the Cognitive Edge survey.
 
-Extracts every ``github.com/<owner>/<repo>`` link from README.md, checks that
+Extracts every ``github.com/<owner>/<repo>`` link from the README and topic guides, checks that
 the repository resolves to a live Git HEAD via ``git ls-remote`` (no GitHub API
-token, no rate limit), and emits ``survey/repos_manifest.json``.
+token), and emits ``survey/current_repos_manifest.json``.
 
 Usage (from the repository root)::
 
@@ -21,26 +21,21 @@ import os
 import re
 import subprocess
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
+from doc_sources import resource_documents, resource_lines
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-README = ROOT / "README.md"
-DEFAULT_OUT = ROOT / "survey" / "repos_manifest.json"
+DEFAULT_OUT = ROOT / "survey" / "current_repos_manifest.json"
+FROZEN_CACHE = ROOT / "survey" / "repos_manifest.json"
 REPO_RE = re.compile(r"github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)")
-SECTION_RE = re.compile(r"^#{1,3}\s+(.+?)\s*$")
 
 
 def extract() -> dict[str, list[str]]:
     repos: dict[str, list[str]] = defaultdict(list)
-    section = "(preamble)"
-    for line in README.read_text(encoding="utf-8").splitlines():
-        m = SECTION_RE.match(line)
-        if m:
-            section = m.group(1).strip()
+    for section, line in resource_lines():
         for owner_repo in REPO_RE.findall(line):
-            owner_repo = owner_repo.rstrip(".,);")
-            # README also links to file-level anchors; keep the repo root only.
-            key = "/".join(owner_repo.split("/")[:2])
+            key = owner_repo.rstrip(".,);")
             if section not in repos[key]:
                 repos[key].append(section)
     return dict(repos)
@@ -70,10 +65,13 @@ def main() -> int:
 
     repos = extract()
     names = sorted(repos, key=str.lower)
-    print(f"README GitHub repositories (unique): {len(names)}")
+    print(f"Resource-guide GitHub repositories (unique): {len(names)}")
 
-    if args.offline and args.out.exists():
-        status = json.loads(args.out.read_text(encoding="utf-8")).get("status", {})
+    if args.offline:
+        status = {}
+        for cache in [FROZEN_CACHE, args.out]:
+            if cache.exists():status.update(json.loads(cache.read_text(encoding="utf-8")).get("status", {}))
+        status = {name: status[name] for name in names if name in status}
     else:
         with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
             status = dict(pool.map(lambda r: check(r, args.timeout), names))
@@ -82,13 +80,17 @@ def main() -> int:
     sections = Counter(s for secs in repos.values() for s in secs)
     out = {
         "generated_by": "survey/verify_repos.py",
-        "source_document": "README.md",
+        "source_documents": [str(p.relative_to(ROOT)) for p in resource_documents()],
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "verification_mode": "cached HEAD status; no live revalidation" if args.offline else "live git ls-remote HEAD",
+        "frozen_census_revision": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
         "verification_method": "git ls-remote <repo>.git HEAD",
         "counts": {
             "unique_repositories": len(names),
             "ok": counts.get("OK", 0),
             "missing": counts.get("MISSING", 0),
             "error": counts.get("ERR", 0),
+            "unknown": counts.get("UNKNOWN", 0),
         },
         "not_ok": [r for r in names if status.get(r) != "OK"],
         "section_distribution": dict(sorted(sections.items(), key=lambda kv: -kv[1])),
@@ -102,7 +104,7 @@ def main() -> int:
     print(out["counts"])
     print("not OK:", out["not_ok"])
     print(f"manifest -> {args.out}")
-    return 0
+    return 1 if out["not_ok"] else 0
 
 
 if __name__ == "__main__":

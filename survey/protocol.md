@@ -2,13 +2,13 @@
 
 This repository accompanies *Cognitive Edge Computing: A Survey on Optimizing Large Language Models and Autonomous Agents for the Edge*. The organizing question is which deployment choices preserve a declared cognitive task capability within memory, latency, energy, thermal, connectivity and trust budgets.
 
-The living resource guides, the manuscript bibliography and the frozen retained-link census are different objects. None is a reconstructed systematic study-screening flow.
+The living README, the manuscript bibliography and the frozen retained-link census are different objects. None is a reconstructed systematic study-screening flow.
 
 ## Scope and source selection
 
 Included work addresses constrained LLM/SLM/VLM execution, context and memory, model/runtime efficiency, adaptation, device–edge–cloud collaboration, tool-using agents, measurement or security at a stated deployment boundary. Foundational serving and TinyML mechanisms are retained when their transfer limits are clear. A server result does not establish mobile performance.
 
-Conventional perception without an LLM/agent connection, cloud-only training without a deployment role, unverifiable product claims, unrepaired placeholders and withdrawn records are outside the survey scope. The broader foundations guide provides selected prerequisites without counting them as new cognitive-edge validation.
+Conventional perception without an LLM/agent connection, cloud-only training without a deployment role, unverifiable product claims, unrepaired placeholders and withdrawn records are outside the survey scope. The foundations section provides selected prerequisites without counting them as new cognitive-edge validation.
 
 | Dimension | Source boundary |
 |---|---|
@@ -40,11 +40,11 @@ Grades apply to the representative result, separately from publication status, m
 
 Direct task outcomes, language-model quality proxies and execution-efficiency measurements are another axis. Code availability does not turn a token-throughput result into complete-agent validation. Source-specific hardware, scorer, precision, context, power and failure boundaries must accompany transferred claims. Conditional deployment guidance does not establish a universally optimal combination.
 
-## Living resource guides
+## Living resource guide
 
-The [resource map](../README.md) links five topic guides. Each paper has one canonical topic entry; related topics cross-link rather than repeat the same record. Entries identify a deployment role, with a primary source and bounded interpretation. Superseded duplicates, placeholders, unsupported artifact associations and context-free performance rankings are removed during curation.
+The [README](../README.md) contains all five topic sections in one reading flow. Each paper has one canonical topic entry in the README; related topics cross-link rather than repeat the same record. Entries identify a deployment role, with a primary source and bounded interpretation. Superseded duplicates, placeholders, unsupported artifact associations and context-free performance rankings are removed during curation.
 
-Both link-audit tools read `README.md` and `docs/*.md` through `doc_sources.py`:
+Both link-audit tools read `README.md` through `doc_sources.py`:
 
 ```sh
 python3 survey/check_docs.py
@@ -58,7 +58,7 @@ Current results are written to `survey/current_corpus_manifest.json` and `survey
 
 ## Reproduce the frozen census
 
-The manuscript uses immutable [commit `82b6110`](https://github.com/wangxb96/Awesome-EdgeAI/tree/82b6110), not the current guides. Its archived README and manifests contain:
+The manuscript uses immutable [commit `82b6110`](https://github.com/wangxb96/Awesome-EdgeAI/tree/82b6110), not the current README. Its archived README and manifests contain:
 
 | Unit | Archived result |
 |---|---:|
@@ -96,6 +96,6 @@ The manuscript's Supplement S1 retains incomplete historical server summaries as
 | Communication/state boundaries | [Collaboration diagram](figures/collaboration_patterns.pdf) |
 | Failure-aware request/episode accounting | [Workflow diagram](figures/workflow_evaluation.pdf), [benchmark protocol](benchmark_protocol.md) |
 | Permissioned assistant example | [Editable source](figures/assistant_workflow.py), [diagram](figures/assistant_workflow.pdf) |
-| Primary model and runtime artifacts | [Models and runtimes](../docs/models-and-runtimes.md) |
+| Primary model and runtime artifacts | [Models and runtimes](../README.md#models-and-runtimes) |
 
 The main manuscript retains the scientific argument, representative evidence and acceptance criteria. Extended identifiers, configuration locators, reporting schemas and prospective traces are supplementary detail. Missing historical search and measurement records remain limitations rather than reconstructed evidence.

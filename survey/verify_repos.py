@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reproducible artifact-repository verification for the Cognitive Edge survey.
 
-Extracts every ``github.com/<owner>/<repo>`` link from the README and topic guides, checks that
+Extracts every ``github.com/<owner>/<repo>`` link from the README, checks that
 the repository resolves to a live Git HEAD via ``git ls-remote`` (no GitHub API
 token), and emits ``survey/current_repos_manifest.json``.
 

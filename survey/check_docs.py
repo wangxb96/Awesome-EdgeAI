@@ -23,7 +23,7 @@ def anchors(path):
     return result
 
 def main():
-    paths=[ROOT/'README.md',ROOT/'CONTRIBUTING.md',*sorted((ROOT/'docs').glob('*.md')),
+    paths=[ROOT/'README.md',ROOT/'CONTRIBUTING.md',
            ROOT/'survey/protocol.md',ROOT/'survey/benchmark_protocol.md',ROOT/'survey/figures/README.md']
     failures=[];count=0
     for path in paths:
@@ -36,7 +36,7 @@ def main():
             if not local.exists():failures.append(f'{path.relative_to(ROOT)}: missing {target}')
             elif u.fragment and local.suffix=='.md' and unquote(u.fragment) not in anchors(local):
                 failures.append(f'{path.relative_to(ROOT)}: missing heading {target}')
-        for stale in ['To be released','publisher link pending verification','Figures/','cognitive-edge-llm-agent-survey','relevant']:
+        for stale in ['To be released','publisher link pending verification','Figures/','relevant']:
             if stale in source:failures.append(f'{path.relative_to(ROOT)}: obsolete pointer/placeholder {stale}')
     locations=defaultdict(set)
     for path in resource_documents():

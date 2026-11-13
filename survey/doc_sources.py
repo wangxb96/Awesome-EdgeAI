@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 def resource_documents():
-    return [ROOT / 'README.md', *sorted((ROOT / 'docs').glob('*.md'))]
+    return [ROOT / 'README.md']
 
 def resource_lines():
     for path in resource_documents():

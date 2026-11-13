@@ -1,6 +1,6 @@
 # Contributing
 
-Place each paper in one canonical topic guide. Cross-link to that guide when another topic needs it.
+Place each paper in one canonical topic section of `README.md`. Cross-link to that section when another topic needs it.
 
 - Use a primary DOI, arXiv abstract page or official model/project source. Match the title, authors, year and archival venue to the linked version.
 - Label a preprint as a preprint unless formal publication is verified. Keep model cards, demonstrations and quantitative studies distinguishable.

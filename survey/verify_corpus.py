@@ -4,10 +4,10 @@
 This script is the executable counterpart of ``survey/protocol.md`` and of
 Sec. ``Survey Methodology and Evidence Grading'' in [submission identifier removed].
 
-It extracts every arXiv identifier linked from the README and topic guides, resolves
+It extracts every arXiv identifier linked from the README, resolves
 each identifier against the official arXiv Atom API, records the authoritative
 title / submission date / withdrawal status, and emits a machine-readable
-manifest for the living guides. The manuscript census remains frozen at 82b6110.
+manifest for the living README. The manuscript census remains frozen at 82b6110.
 
 Usage (from the repository root)::
 
@@ -51,7 +51,7 @@ ANY_RE = re.compile(
 
 
 def extract() -> tuple[list[str], dict[str, str], dict[str, list[str]]]:
-    """Return sorted arXiv ids, {id: link_label}, {id: [sections]} from the README and topic guides.
+    """Return sorted arXiv ids, {id: link_label}, {id: [sections]} from the README.
 
     Both Markdown links and bare arXiv URLs are captured, so the manifest is a
     complete link inventory of these inputs rather than a study-selection count.

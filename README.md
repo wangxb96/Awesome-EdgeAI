@@ -405,6 +405,9 @@ Edge AI is transforming diverse industries. This section highlights real-world d
 
 ### Edge AI in 6G Networks
 
+- [Large Language Model-Enhanced Deep Reinforcement Learning for Secure Data Collection in Low-Altitude Economy Networking](https://doi.org/10.1109/TMC.2026.3665241) (IEEE TMC 25(7), 10636–10650, 2026) — LLM-assisted state, reward and simulated-feedback design for UAV data collection.
+- [Intelligent Mobile AI-Generated Content Services via Interactive Prompt Engineering and Dynamic Service Provisioning](https://doi.org/10.1109/TMC.2026.3668214) (IEEE TMC 25(8), 12074–12091, 2026) — prompt refinement jointly considered with inference trials and transmit-power allocation.
+
 - [From Semantic to Token Communication: The Next Paradigm for Large-Model-Driven 6G Intelligent Connectivity](https://arxiv.org/abs/2609.10714) (arXiv, Sep 2026) — proposes the LM *token* as a universal semantic unit above the bit level, enabling importance assignment and resource allocation at token granularity for AI-native 6G.
 - [LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization](https://arxiv.org/abs/2607.16066) (arXiv, Jul 2026) — tutorial/survey mapping agentic capabilities onto 5G/6G control planes, evaluation and standardization.
 
@@ -827,6 +830,8 @@ An overview of system optimization operations. Software optimization involves de
 
 ## Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)
 
+- [Token-Importance Guided Direct Preference Optimization](https://proceedings.iclr.cc/paper_files/paper/2026/hash/172fe9f8cc55953bad5c24774bf0142b-Abstract-Conference.html) (ICLR 2026) — behavioral alignment through token weighting and a triplet objective; deployment costs require separate evaluation.
+
 - [Large Models for Small Devices: Recent Advances and Empirical Analysis of Edge AI Deployment](https://arxiv.org/abs/2608.15693) (arXiv, Aug 2026; parts at IEEE CCNC 2026) — real-hardware study on GPU/CPU/Raspberry Pi showing that *what compresses well need not deploy well*: quantization wins for QA while pruning wins for segmentation, and pruning can inflate the deployed artifact by 21–49% by breaking k-quant super-block alignment.
 - [EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding](https://arxiv.org/abs/2608.05303) (MICRO 2026) — 28nm SW/HW co-designed accelerator that reconciles MoE with speculative decoding via prompt-wise expert reuse and depth-aware expert coalescing; up to 56.3% latency and 44.1% energy reduction.
 - [SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference](https://arxiv.org/abs/2609.21704) (ICPC2T 2026) — training-free INT4/FP8/FP16 variants derived from shared weights with query-complexity routing; 35–43% speedups within 2% accuracy.
@@ -894,7 +899,7 @@ Selected papers & systems (2023–2026):
 - [MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction](https://arxiv.org/abs/2604.27393) (arXiv 2026) — 9B params, runs on edge with <12GB RAM, full-duplex omni-modal.
 - [DUAL-BLADE: Dual-Path NVMe-Direct KV-Cache Offloading for Edge LLM Inference](https://arxiv.org/abs/2604.26557) (ICDCS 2026).
 - [Unlocking the Edge deployment and ondevice acceleration of multi-LoRA enabled one-for-all foundational LLM](https://arxiv.org/abs/2604.18655) (ACL 2026) — Samsung Galaxy S24/S25, INT4, Dynamic Self-Speculative Decoding, 4-6x improvement.
-- [FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning](https://arxiv.org/abs/2509.00195) (ASPLOS 2026) — 2.2x goodput improvement on edge GPUs.
+- [FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning](https://arxiv.org/abs/2509.00195) (ASPLOS 2026, 732–748; [DOI](https://doi.org/10.1145/3779212.3790161)) — verifier-guided reasoning search; its beam-level precise goodput is not completed goals per second.
 - [CSGO: Generalized Optimization for Cold Start in Wireless Collaborative Edge LLM Systems](https://arxiv.org/abs/2508.11287) (arXiv 2025).
 - [FourierCompress: Layer-Aware Spectral Activation Compression for Collaborative LLM Inference](https://arxiv.org/abs/2510.16418) (arXiv 2025) — 7.6x activation size reduction, <0.3% accuracy loss.
 - [SLICE: SLO-Driven Scheduling for LLM Inference on Edge Computing Devices](https://arxiv.org/abs/2510.18544) (arXiv 2025) — up to 35x higher SLO attainment.
@@ -909,6 +914,9 @@ Selected papers & systems (2023–2026):
 - [Energy Efficient Software Hardware CoDesign for Machine Learning: From TinyML to LLMs](https://arxiv.org/abs/2603.23668) (ASPLOS EMC2 Workshop 2026).
 
 ## 5. AI Agents on Edge / On-Device Agents
+
+- [Agent-X: Full Pipeline Acceleration of On-device AI Agents](https://doi.org/10.1145/3745756.3809195) (MobiSys 2026, 144–157) — prompt/cache and lightweight drafting co-design for TinyAgent on an M4 Pro Mac mini; no smartphone energy transfer is implied.
+- [Cooperative Edge Caching With Large Language Model in Wireless Networks](https://doi.org/10.1109/TMC.2026.3687739) (IEEE TMC 25(10), 16651–16663, 2026) — constrained text-to-action network control; content-cache utility is distinct from LLM KV-cache efficiency.
 
 - [Nexus: An Execution Fabric for AI Agents Across Cloud, Edge, and Devices](https://arxiv.org/abs/2610.05709) (arXiv, Oct 2026) — OpenWrt-based persistent-task runtime with run-scoped delegation, journaling and permission revocation for cross-device agent services.
 - [EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation](https://arxiv.org/abs/2610.17560) (arXiv, Oct 2026, v2) — SLM on device as primary solver with step-level RL delegation; matches pure-LLM execution while cutting inference cost up to 62% (SWE-Rebench) and 34% (Terminal-Bench 2.1).
@@ -1024,6 +1032,11 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 - [SUSTAINABLE LLM INFERENCE FOR EDGE AI: Evaluating Quantized LLMs for Energy Efficiency](https://scholar.google.com/scholar?q=%22Sustainable+LLM+Inference+for+Edge+AI%22) (ACM TOSEM 2025; publisher link pending verification).
 
 ## 9. Recent Surveys & Overviews (2023–2026)
+
+- [Decision-Making Large Language Model for Wireless Communication: A Comprehensive Survey on Key Techniques](https://doi.org/10.1109/COMST.2025.3614494) (IEEE COMST 28, 3055–3088, 2026) — LLM decision pipelines for wireless systems.
+- [Beyond the Edge: An Advanced Exploration of Reinforcement Learning for Mobile Edge Computing, Its Applications, and Future Research Trajectories](https://doi.org/10.1109/COMST.2024.3405075) (IEEE COMST 27(1), 546–594, 2025) — RL policies and mobile-edge resource control.
+- [Tutorial on Large Language Model-Enhanced Reinforcement Learning for Wireless Networks](https://doi.org/10.1109/COMST.2026.3712862) (IEEE COMST 28, 6665–6693, 2026) — LLM roles in state perception, reward design, decision-making and generation.
+- [Toward Edge General Intelligence With Agentic AI and Agentification: Concepts, Technologies, and Future Directions](https://doi.org/10.1109/COMST.2026.3651702) (IEEE COMST 28, 4285–4318, 2026) — agent capabilities, deployment budgets and edge-network architectures.
 
 **Edge AI Research Trends (2016-2026)** — how the field evolved from TinyML to Edge LLM to Edge Agents:
 

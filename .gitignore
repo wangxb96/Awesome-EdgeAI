@@ -9,3 +9,8 @@ survey/supplement/*.synctex.gz
 request_summary_local.json
 survey/supplement/*.bbl
 survey/supplement/*.blg
+# Editable manuscript sources and TeX build inputs stay outside this public repository.
+*.tex
+*.sty
+*.bst
+survey/supplement/build.py

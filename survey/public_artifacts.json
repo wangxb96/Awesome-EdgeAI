@@ -1,7 +1,7 @@
 {
   "repository": "wangxb96/Awesome-EdgeAI",
-  "edition": "supplement-2026-11-13-v4",
-  "scope": "Public supplement with independent references and readable template, result-specific study ledger, empirical archive/reanalysis, figure sources, protocols and distinct synthetic examples.",
+  "edition": "public-artifacts-2026-11-13-v5",
+  "scope": "Public guide, final supplementary PDF, bibliography, protocols, released analytical data, and reproducibility code. Editable submission manuscripts and TeX build inputs are excluded.",
   "frozen_census": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
   "request_helper_revision": "24d5442",
   "files": [
@@ -130,12 +130,8 @@
     "survey/server/rebuild_clean_server_artifacts.py",
     "survey/server/run_ollama_server_suite.py",
     "survey/server/task_roster.json",
-    "survey/supplement/IEEEtran.bst",
     "survey/supplement/README.md",
-    "survey/supplement/[submission identifier removed]-supp.pdf",
-    "survey/supplement/[submission identifier removed]-supp.tex",
-    "survey/supplement/build.py",
-    "survey/supplement/cognitive_supplement.sty",
+    "survey/supplement/cognitive_edge_supplement.pdf",
     "survey/verify_corpus.py",
     "survey/verify_repos.py"
   ]

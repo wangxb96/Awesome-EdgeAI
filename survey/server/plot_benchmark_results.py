@@ -16,8 +16,7 @@ MODEL_DISPLAY_NAMES = {
 }
 
 DEVICE_LABELS = {
-    "server": "4x RTX 4090 D server",
-    "server": "4x RTX 4090 D server",
+    "server": "reported server",
 }
 
 

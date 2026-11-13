@@ -1,4 +1,4 @@
-# Benchmark reporting protocol - [submission identifier removed]
+# Benchmark reporting protocol
 
 Reporting contract established 11 November 2026; public example and file navigation updated 13 November 2026. This document specifies **future runs**;
 it contains no measurements and cannot reconstruct the historical server run.

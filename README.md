@@ -326,7 +326,7 @@ The repository follows the reading guide above. For files, use this directory ma
 ```text
 README.md                 Integrated literature and deployment guide
 survey/
-  supplement/             Supplement PDF, LaTeX and build helper
+  supplement/             Final supplementary PDF and reading guide
   server/                 Recovered requests, provenance and offline reanalysis
   figures/                Editable sources, inputs and publication exports
   examples/               Synthetic request-format examples
@@ -336,18 +336,18 @@ survey/
   *_protocol.md, protocol.md  Scope and measurement contracts
 ```
 
-Read the [supplementary material](survey/supplement/[submission identifier removed]-supp.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. Its [LaTeX source and build instructions](survey/supplement/README.md), [bibliographic database](survey/references.bib), figure inputs and runnable format examples are included here. The complete public artifact edition is pinned to [tag `supplement-2026-11-13-v4`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v4).
+Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. The repository includes the [bibliographic database](survey/references.bib), figure inputs, protocols and runnable format examples. Editable manuscript sources and author-local build files are not distributed. The current public artifact edition is pinned to [tag `public-artifacts-2026-11-13-v5`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-13-v5).
 
 | Artifact | Purpose |
 |---|---|
-| [Supplement PDF and source](survey/supplement/README.md) | Section directory, readable extended evidence, source locators and deployment contracts |
+| [Supplement PDF](survey/supplement/README.md) | Section directory, extended evidence, source locators and deployment contracts |
 | [Study evidence ledger](survey/evidence_ledger.json) | Seventeen result-specific publication/artifact snapshots, evaluation paths and transfer limits |
 | [Bibliographic database](survey/references.bib) | The survey's reference records; broader than the printed reference list |
 | [Public-file inventory](survey/public_artifacts.json) / [closure check](survey/check_public_artifacts.py) | All distributed files, supplement dependencies and optional anonymous access checks |
 | [Historical server record](survey/server/README.md) | Recovered requests, task definitions, all-campaign ledger, descriptive reanalysis and measurement-boundary figures |
 | [Synthetic request example](survey/examples/README.md) | Runnable CSV and expected JSON for checking the helper's format and denominators; no measured performance |
 | [Survey protocol](survey/protocol.md) | Scope, source verification, E1/E2/E3 publication/artifact qualification and search-record limitations |
-| [Cited-reference index](survey/cited_reference_index.json) | Exact main/supplement reference entries and numbering, distinct from the broader bibliography and frozen census |
+| [Reference database](survey/references.bib) | Bibliographic records for both survey versions and the current guide |
 | [Benchmark protocol](survey/benchmark_protocol.md) | Request/episode boundaries, failure accounting and energy attribution |
 | [Descriptive analysis helper](survey/compute_ci.py) | Summaries of supplied request records; does not infer complete-task success |
 | [Literature audit](survey/verify_corpus.py) / [repository audit](survey/verify_repos.py) | Check the linked resources in this README |

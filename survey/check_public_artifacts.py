@@ -21,6 +21,10 @@ def main():
     paths = manifest['files']
     failures = []
     tracked = set(subprocess.check_output(['git', 'ls-files'], cwd=ROOT, text=True).splitlines())
+    for rel in tracked:
+        path = Path(rel)
+        if path.suffix in {'.tex', '.sty', '.bst'} or rel == 'survey/supplement/build.py':
+            failures.append('Editable TeX submission source must not be public: '+rel)
     for rel in paths:
         p = (ROOT/rel).resolve()
         if not p.is_relative_to(ROOT) or not p.is_file():
@@ -41,15 +45,6 @@ def main():
                     failures.append(f'{doc.relative_to(ROOT)}: linked file omitted from inventory {target}')
         if re.search(r'/Users/|file://|\.codex/|localhost', text):
             failures.append(f'{doc.relative_to(ROOT)}: non-public local pointer')
-    tex = (ROOT/'survey/supplement/[submission identifier removed]-supp.tex').read_text()
-    for rel in re.findall(r'\\artifact\{([^}]+)\}', tex):
-        if rel not in paths:
-            failures.append('Supplement references unlisted file: '+rel)
-    for figure in re.findall(r'\\includegraphics(?:\[[^\]]*\])?\{([^}]+)\}', tex):
-        if 'survey/figures/'+figure not in paths:
-            failures.append('Supplement has unpublished figure dependency: '+figure)
-    if re.search(r'/Users/|file://|\.codex/|localhost', tex):
-        failures.append('Supplement contains a local-only pointer')
     remote = []
     if args.online and not failures:
         def check(rel):

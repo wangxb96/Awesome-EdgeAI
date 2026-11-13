@@ -1,4 +1,8 @@
-MIT License
+## License scope
+
+The MIT License below applies to software and code files in this repository. It does not grant rights to the survey narrative, publication PDFs, original artwork, bibliographic records, or third-party material; those remain subject to their respective rights and licenses.
+
+## MIT License
 
 Copyright (c) 2023 wangxb
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Reproducible literature-corpus verification for the Cognitive Edge Computing survey.
 
-This script is the executable counterpart of ``survey/protocol.md`` and of
-Sec. ``Survey Methodology and Evidence Grading'' in [submission identifier removed].
+This script is the executable counterpart of ``survey/protocol.md`` and the
+survey's methodology for source verification and evidence grading.
 
 It extracts every arXiv identifier linked from the README, resolves
 each identifier against the official arXiv Atom API, records the authoritative

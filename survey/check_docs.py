@@ -35,7 +35,7 @@ def main():
             if not local.exists():failures.append(f'{path.relative_to(ROOT)}: missing {target}')
             elif u.fragment and local.suffix=='.md' and unquote(u.fragment) not in anchors(local):
                 failures.append(f'{path.relative_to(ROOT)}: missing heading {target}')
-        for stale in ['To be released','publisher link pending verification','Figures/','relevant']:
+        for stale in ['To be released','publisher link pending verification','Figures/']:
             if stale in source:failures.append(f'{path.relative_to(ROOT)}: obsolete pointer/placeholder {stale}')
     locations=defaultdict(set)
     for path in resource_documents():

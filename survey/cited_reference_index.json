@@ -1,7 +1,6 @@
 {
-  "manuscript": "[submission identifier removed]",
   "edition_date": "2026-11-13",
-  "scope": "Exact cited-reference inventory of the compiled main and supplement. Entries include studies, surveys and documentation; counts are not a study-selection flow or completeness estimate. BibTeX strings retain source markup.",
+  "scope": "Reference inventory for the survey guide and supplement. Entries include studies, surveys and documentation; counts are not a study-selection flow or completeness estimate. BibTeX strings retain source markup.",
   "counts": {
     "main_references": 96,
     "supplement_references": 30,
@@ -69,8 +68,7 @@
       "title_bibtex": "Optimizing Edge {AI}: A Comprehensive Survey on Data, Model, and System Strategies",
       "author_bibtex": "Wang, Xubin and Jia, Weijia",
       "year_bibtex": "2025",
-      "journal_bibtex": "arXiv preprint arXiv:2501.03265v1",
-      "note_bibtex": "Initial preprint version of the present manuscript"
+      "journal_bibtex": "arXiv preprint arXiv:2501.03265v1"
     },
     {
       "citekey": "wang2026awesome",
@@ -80,8 +78,7 @@
       "title_bibtex": "{Awesome-EdgeAI}: Official Artifact Repository and Reproducible Survey Corpus for Cognitive Edge Computing",
       "author_bibtex": "Wang, Xubin and Li, Qing and Jia, Weijia",
       "year_bibtex": "2026",
-      "howpublished_bibtex": "\\url{https://github.com/wangxb96/Awesome-EdgeAI}",
-      "note_bibtex": "[submission identifier removed] official artifact repository: survey/protocol.md, survey/verify\\_corpus.py, survey/verify\\_repos.py"
+      "howpublished_bibtex": "\\url{https://github.com/wangxb96/Awesome-EdgeAI}"
     },
     {
       "citekey": "zheng2025review",
@@ -728,8 +725,7 @@
       "author_bibtex": "Shi, Zeru and Jiang, Jindong and Hachiuma, Ryo and Fu, Yonggan and Lee, Byung-Kwan and Belcak, Peter and Muralidharan, Saurav and Agarwal, Ayush and Tang, Ruixiang and Dantrey, Ambrish and Molchanov, Pavlo and Patney, Anjul and Radhakrishnan, Subhashree",
       "year_bibtex": "2026",
       "url_bibtex": "https://arxiv.org/abs/2610.17560v2",
-      "journal_bibtex": "arXiv preprint arXiv:2610.17560",
-      "note_bibtex": "Version 2, October 15, 2026"
+      "journal_bibtex": "arXiv preprint arXiv:2610.17560"
     },
     {
       "citekey": "huang2026edgeagents",
@@ -740,8 +736,7 @@
       "author_bibtex": "Huang, Pengcheng and Liu, Zhenghao and Ren, Shixin and Yu, Shi and Yao, Sijia and Yan, Yukun and Xiao, Chaojun and Sun, Maosong",
       "year_bibtex": "2026",
       "url_bibtex": "https://arxiv.org/abs/2610.17816v2",
-      "journal_bibtex": "arXiv preprint arXiv:2610.17816",
-      "note_bibtex": "Version 2, October 18, 2026"
+      "journal_bibtex": "arXiv preprint arXiv:2610.17816"
     },
     {
       "citekey": "chen2026fasttts",
@@ -783,8 +778,7 @@
       "entry_type": "misc",
       "title_bibtex": "{FunctionGemma} Model Card",
       "author_bibtex": "{Google}",
-      "howpublished_bibtex": "\\url{https://ai.google.dev/gemma/docs/functiongemma/model_card}",
-      "note_bibtex": "Official documentation, version inspected November 13, 2026"
+      "howpublished_bibtex": "\\url{https://ai.google.dev/gemma/docs/functiongemma/model_card}"
     },
     {
       "citekey": "google2026mobileactions",
@@ -794,8 +788,7 @@
       "title_bibtex": "On-Device Function Calling in {Google AI Edge Gallery}",
       "author_bibtex": "Zheng, Alice and Ferev, Milen and Law, Wai Hon",
       "year_bibtex": "2026",
-      "howpublished_bibtex": "\\url{https://developers.googleblog.com/on-device-function-calling-in-google-ai-edge-gallery/}",
-      "note_bibtex": "February 26; accessed November 13, 2026"
+      "howpublished_bibtex": "\\url{https://developers.googleblog.com/on-device-function-calling-in-google-ai-edge-gallery/}"
     },
     {
       "citekey": "liu2026prompt",
@@ -827,8 +820,7 @@
       "title_bibtex": "{Qwen3}: Think Deeper, Act Faster",
       "author_bibtex": "{Qwen Team}",
       "year_bibtex": "2025",
-      "howpublished_bibtex": "\\url{https://qwenlm.github.io/blog/qwen3/}",
-      "note_bibtex": "Official release, April 29; accessed November 13, 2026"
+      "howpublished_bibtex": "\\url{https://qwenlm.github.io/blog/qwen3/}"
     },
     {
       "citekey": "meta2024llama32",
@@ -838,8 +830,7 @@
       "title_bibtex": "{Llama 3.2}: Official Model Card",
       "author_bibtex": "{Meta AI}",
       "year_bibtex": "2024",
-      "howpublished_bibtex": "\\url{https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct}",
-      "note_bibtex": "Text-model release, September 25; accessed November 13, 2026"
+      "howpublished_bibtex": "\\url{https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct}"
     },
     {
       "citekey": "google2025gemma3n",
@@ -849,8 +840,7 @@
       "title_bibtex": "{Gemma 3n} Model Overview",
       "author_bibtex": "{Google}",
       "year_bibtex": "2025",
-      "howpublished_bibtex": "\\url{https://ai.google.dev/gemma/docs/gemma-3n}",
-      "note_bibtex": "Official documentation; accessed November 13, 2026"
+      "howpublished_bibtex": "\\url{https://ai.google.dev/gemma/docs/gemma-3n}"
     },
     {
       "citekey": "hf2026smollm2card",
@@ -859,8 +849,7 @@
       "entry_type": "misc",
       "title_bibtex": "{SmolLM2-1.7B-Instruct}: Official Model Card",
       "author_bibtex": "{Hugging Face}",
-      "howpublished_bibtex": "\\url{https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct}",
-      "note_bibtex": "Publisher model card, version inspected November 13, 2026"
+      "howpublished_bibtex": "\\url{https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct}"
     },
     {
       "citekey": "cai2026secure",

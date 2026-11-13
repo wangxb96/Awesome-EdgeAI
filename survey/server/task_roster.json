@@ -1,0 +1,55 @@
+{
+  "provenance": "Recovered source-code task definitions; exact historical HTTP payloads were not archived.",
+  "tasks": [
+    {
+      "id": "arith_add",
+      "prompt": "Compute 27 + 15. Return only the integer.",
+      "answer": "42"
+    },
+    {
+      "id": "arith_div",
+      "prompt": "Compute 144 / 12. Return only the integer.",
+      "answer": "12"
+    },
+    {
+      "id": "logic_set",
+      "prompt": "All roses are flowers. Some flowers fade quickly. Can we conclude all roses fade quickly? Answer Yes or No only.",
+      "answer": "No"
+    },
+    {
+      "id": "count_chars",
+      "prompt": "How many letters are in the word EDGE? Return only the integer.",
+      "answer": "4"
+    },
+    {
+      "id": "calendar",
+      "prompt": "If tomorrow is Wednesday, what day is today? Return only the day name.",
+      "answer": "Tuesday"
+    },
+    {
+      "id": "step_cost",
+      "prompt": "A pen costs 3 dollars. You buy 4 pens and use a 2 dollar coupon. Final cost? Return only the integer.",
+      "answer": "10"
+    },
+    {
+      "id": "reverse",
+      "prompt": "Reverse this string: abcde. Return only the reversed string.",
+      "answer": "edcba"
+    },
+    {
+      "id": "compare",
+      "prompt": "Which is larger, 0.125 or 0.5? Return only one value exactly as written.",
+      "answer": "0.5"
+    },
+    {
+      "id": "short_reason",
+      "prompt": "A train travels 60 km in 1.5 hours. What is the average speed in km/h? Return only the integer.",
+      "answer": "40"
+    },
+    {
+      "id": "boolean",
+      "prompt": "Is 11 a prime number? Answer Yes or No only.",
+      "answer": "Yes"
+    }
+  ]
+}

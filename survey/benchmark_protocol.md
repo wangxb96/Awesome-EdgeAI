@@ -8,16 +8,9 @@ its older benchmark protocol does not define the current reporting policy.
 
 ## 1. Historical boundary
 
-Supplement S1 retains incomplete summaries from a `4x RTX 4090 D` server.
-They are **E3, exploratory and incomplete**, not reproducible validation.
-Prompts, exact model/runtime/precision settings, outputs, repetitions, failure
-denominators, and power attribution were not retained and cannot be restored.
-The summaries establish neither model-capability/efficiency rankings nor a
-validated within-stack Pareto frontier, and do not derive survey recommendations.
-Their arithmetic mean of context-specific p95 summaries is not a pooled request
-p95. Their reported power/throughput ratio is an unverified GPU-board
-approximation, not system or edge-device energy. No future-run schema supplies
-missing historical observations or confidence intervals.
+Supplement S1 preserves the reported `4x RTX 4090 D` summaries and now provides a [recovered historical archive](server/README.md). Its thirteen campaigns contain 2350 logged requests with 189 recorded errors; the main 1200-request campaign and 200-request Qwen follow-up are analyzed separately. Replaying scores and raw-request summaries is reproducible, while exact checkpoint/precision/runtime/placement/command-line metadata remains unrecorded. This supports E2 descriptive reanalysis, not a matched model comparison or edge validation; unsupported E3 legacy interpretations remain withdrawn.
+
+The historical score is answer containment, not strict exact match. Nominal context ceilings are not observed input lengths. The old `ttft_ms` field is prompt-evaluation duration, not end-to-end TTFT. Historical energy is the mean of two endpoint GPU-power readings times wall-request duration, divided by output tokens; it is not a sampled power integral or a ratio of context-averaged power to decode rate. Technical repeat indices permit descriptive spread, not independently restarted campaign intervals. These historical definitions are documented separately from the prospective contract below. The synthetic helper fixture supplies no historical observation.
 
 ## 2. Request log and provenance
 

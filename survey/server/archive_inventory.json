@@ -1,0 +1,119 @@
+{
+  "scope": "All 13 recovered server-suite CSV/summary pairs. Pilot and failed campaigns are retained separately and never silently pooled. Source-code defaults do not establish archived command-line settings.",
+  "files": [
+    {
+      "csv": "archived/server_suite_raw_1777118193.csv",
+      "source_sha256": "adb057578c9e0ab0bf0cadcec6f1216a0b05a7495c77fa883367902a50fae5c0",
+      "published_sha256": "16fe3b572b20b1a0ee45fb8d9eb56ac78456dcf7cb0c7d0f9fd874d157841bea",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777118193.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777118556.csv",
+      "source_sha256": "67fd51edadb448dec4460ddc6abffd435bf574111e8ac90c4ee22c30fed707c3",
+      "published_sha256": "1d5394c2a7bdd0bdbe08fe4b4121cc61cab5776ccc5b543616a4494c8840a118",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777118556.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777118887.csv",
+      "source_sha256": "d013378564aae19f1d39657c6636ea3008eca124893d94b7765d7199a72b7d90",
+      "published_sha256": "2453043153f62094d58c7856060513b1878c58dff418ac77c466ee2cfed86abf",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777118887.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777121713.csv",
+      "source_sha256": "535af0d24097acd1d35f68c7a09cf0a36d25ee8c151d16df7ccad3f34ce6ac73",
+      "published_sha256": "db667dd0c1a50f600172d19324448dd5546665729e94ce960a628ff854ce06c7",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777121713.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777277731.csv",
+      "source_sha256": "3b0a7c3f6a385b831a6eb285d09db6edac5fb6b4fbe68ed6249708cd177fa42b",
+      "published_sha256": "49edbb4b6d28d325fe387234ce36306df763f2e82ac2360ebe4a9bda020a763a",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777277731.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777277772.csv",
+      "source_sha256": "f2694c763ff6088d7ae1c5110a766130f4c4e93fc58d068bf958f10706b556b3",
+      "published_sha256": "f130fb00fe1d3cbd6dd6af3711e86e587f5c56467f7897231b2b6fd80569cee0",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777277772.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777278829.csv",
+      "source_sha256": "2404aa5e953fe576ee1694cb572702faf9d2e666d43d7488fdfd6f76a843316a",
+      "published_sha256": "b72ea9201a0d1037658507ca13e18a7496d2ef21f647c54241b688c8c3ce8249",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777278829.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777278830.csv",
+      "source_sha256": "8c7473e55f162f57583d27c86461a9c1a80a2f49e28d9ae65f976b7a39883e75",
+      "published_sha256": "7447b8d0f842d3b6342b6d1ae2982f9ea37359549804ea492bf2a55a475591e4",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777278830.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777287710.csv",
+      "source_sha256": "6ae6fe3dfd810c19bb7cac26bc4ed13f0965710624a2790ecb403e865cb7cd2a",
+      "published_sha256": "79a7e8317061362e2a7d52b431cede957f2d3c06f06ee663fc6fc7bd010ebeee",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777287710.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777288165.csv",
+      "source_sha256": "23f5d870400d533e1e8f2ec6c4850ec993ff91865695c472a49b203dfeef0d19",
+      "published_sha256": "d8c5d3e4b68bf7f6e40a2ec110c6298e3d4d2d04e31e99e968ab6204d18da788",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777288165.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777292810.csv",
+      "source_sha256": "9730653520f39c610cb221a8d501f24842654dd68f3b7f86956e8abe8b647147",
+      "published_sha256": "ca3c3ee3e2471c089aad2456f6b9bca19159ab948fe2f6d16299d9d694f5cf31",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777292810.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777294821.csv",
+      "source_sha256": "0f22717f1f0a831729f1e1f7b6c9e87ec93f82e32e42781c0c0f5eba0adb9ad6",
+      "published_sha256": "3a07dabc268fe6814a838c5c693b946cc40db9d4e17d68f45e165385eed8bda2",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777294821.json"
+    },
+    {
+      "csv": "archived/server_suite_raw_1777295563.csv",
+      "source_sha256": "617968d59560b0cd433c43cd13b0b7f4d011f687f519ff7beb98ed8a47b7c41a",
+      "published_sha256": "bcb9be2192aed7e51a37ad89313df51904ddf182e915aa3d8d80b666808dd596",
+      "normalization": "CRLF to LF only",
+      "summary": "archived/server_suite_summary_1777295563.json"
+    }
+  ],
+  "source_code": [
+    {
+      "file": "run_ollama_server_suite.py",
+      "sha256": "9a325746842dfbf56965df35dd3c08e38039063a4a63d79385431990905fddeb",
+      "scope": "Surviving source snapshot, not an execution-time commit pin."
+    },
+    {
+      "file": "rebuild_clean_server_artifacts.py",
+      "sha256": "d85f4281879d847cd5bb3d07d1fa0889cc517360a9077d1b5cde27384d5bb996",
+      "scope": "Surviving source snapshot, not an execution-time commit pin."
+    },
+    {
+      "file": "plot_benchmark_results.py",
+      "sha256": "c61871ecf4f20f1b42f196780a329c66261813f9a5c5284c3dcf9f5bdcb83397",
+      "scope": "Surviving source snapshot, not an execution-time commit pin."
+    }
+  ],
+  "legacy_plot_aggregate": {
+    "file": "archived/legacy_plot_aggregates.csv",
+    "source_sha256": "a2846f1288c8fe9a66447682678297773fee74abbecdb284b916da6ea39cd222",
+    "published_sha256": "9d05f283f6f1f61f54e6d21d5a9ae1c16ac39dbcfe7c235f70da3cdce2e02ab7",
+    "normalization": "CRLF to LF only"
+  }
+}

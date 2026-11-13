@@ -1,0 +1,11 @@
+model,context_len,task_id,repeat,wall_latency_ms,ttft_ms,decode_tokens,decode_tps,prompt_tokens,avg_power_w,energy_j,quality_hit,prediction,answer,error
+qwen3:8b,4096,arith_add,0,0.6098747253417969,0.0,0,0.0,0,,,0,,42,URL error: [Errno 61] Connection refused
+qwen3:8b,4096,arith_div,0,0.5259513854980469,0.0,0,0.0,0,,,0,,12,URL error: [Errno 61] Connection refused
+qwen3:8b,4096,logic_set,0,1.3971328735351562,0.0,0,0.0,0,,,0,,No,URL error: [Errno 61] Connection refused
+qwen3:8b,4096,count_chars,0,0.5400180816650391,0.0,0,0.0,0,,,0,,4,URL error: [Errno 61] Connection refused
+qwen3:8b,4096,calendar,0,0.5922317504882812,0.0,0,0.0,0,,,0,,Tuesday,URL error: [Errno 61] Connection refused
+qwen3:8b,4096,step_cost,0,0.5471706390380859,0.0,0,0.0,0,,,0,,10,URL error: [Errno 61] Connection refused
+qwen3:8b,4096,reverse,0,0.7681846618652344,0.0,0,0.0,0,,,0,,edcba,URL error: [Errno 61] Connection refused
+qwen3:8b,4096,compare,0,0.5550384521484375,0.0,0,0.0,0,,,0,,0.5,URL error: [Errno 61] Connection refused
+qwen3:8b,4096,short_reason,0,0.5269050598144531,0.0,0,0.0,0,,,0,,40,URL error: [Errno 61] Connection refused
+qwen3:8b,4096,boolean,0,0.46181678771972656,0.0,0,0.0,0,,,0,,Yes,URL error: [Errno 61] Connection refused

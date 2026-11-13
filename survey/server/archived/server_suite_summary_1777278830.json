@@ -1,0 +1,20 @@
+[
+  {
+    "run_id": "server_suite_1777278830_qwen3_4b_512",
+    "date": "2026-04-27",
+    "model": "qwen3:4b",
+    "quantization": "runtime-default",
+    "context_len": 512,
+    "prompt_tokens": 29,
+    "gen_tokens": 32,
+    "ttft_ms": 249.0525456,
+    "p50_latency_ms": 2585.5716466903687,
+    "p95_latency_ms": 3253.031587600707,
+    "tokens_per_sec": 15.994662298959737,
+    "avg_power_w": null,
+    "energy_per_token_j": 0.0,
+    "quality_value": 0.0,
+    "oom_or_fail": 0,
+    "notes": "server_suite via Ollama API"
+  }
+]

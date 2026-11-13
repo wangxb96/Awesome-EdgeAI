@@ -85,14 +85,15 @@ These commands replay saved metadata and HEAD status. They do not check today's 
 
 The [benchmark protocol](benchmark_protocol.md) specifies new request logs, task-episode linkage, failures, repetition and power boundaries. The [analysis helper](compute_ci.py) summarizes supplied request observations; it cannot infer complete-task success, certify logging completeness, validate power integration or recover missing inputs. Its analysis revision must be pinned separately from the census.
 
-The manuscript's Supplement S1 retains incomplete historical server summaries as E3. Missing prompts, exact configurations, outputs, repetitions, failure denominators and power attribution cannot be restored. Those summaries establish neither mobile energy/performance nor a validated model ranking. Context-averaged p95 values are not pooled request percentiles, and an unverified board power/throughput ratio is not integrated system energy. No recommendation depends on those historical numbers.
+Supplement S1 preserves the original server aggregate and provides a [recovered-record reanalysis](server/README.md). Thirteen campaigns contain 2350 logged requests and 189 recorded errors. The complete five-model campaign (1200 requests) and later Qwen follow-up (200 requests) remain separate. Scorer replay and raw-request percentiles are recalculable, giving E2 descriptive support. The old score was answer containment, actual prompts were short, an old TTFT field was prompt-evaluation duration, and energy used two endpoint-power samples. Exact execution settings remain unrecorded; unsupported E3 matched-capability/edge claims are withdrawn. The synthetic format example is separate from these observations. No recommendation depends on a numerical server ranking.
 
 ## Artifact map
 
-The [public supplement](supplement/[submission identifier removed]-supp.pdf), [source/build helper](supplement/README.md), [bibliographic database](references.bib) and all files in the [public inventory](public_artifacts.json) are distributed at [tag `supplement-2026-11-13`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13). Run `python3 survey/check_public_artifacts.py` for local file/dependency closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
+The [public supplement](supplement/[submission identifier removed]-supp.pdf), [source/build helper](supplement/README.md), [bibliographic database](references.bib) and all files in the [public inventory](public_artifacts.json) are distributed at [tag `supplement-2026-11-13-v2`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v2). Run `python3 survey/check_public_artifacts.py` for local file/dependency closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
 
 | Scientific purpose | Location |
 |---|---|
+| Historical empirical record | [Archive, failure ledger and reproducible analysis](server/README.md) |
 | Task-to-resource and cross-tier argument | [Overview, placement and coupling diagrams](figures/README.md) |
 | Published quantization scores | [QSpec replot](figures/quantization_fidelity.py), [reported source values](figures/quantization_fidelity_source.csv) |
 | Analytical weight/KV illustration | [Source](figures/memory_budget.py), [CSV](figures/memory_budget_analytical.csv) |

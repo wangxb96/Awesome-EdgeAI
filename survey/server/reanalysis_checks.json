@@ -1,0 +1,21 @@
+{
+  "archive_campaigns": 13,
+  "archive_logged_requests": 2350,
+  "archive_logged_errors": 189,
+  "main_campaign": "1777121713",
+  "main_logged_requests": 1200,
+  "followup_campaign": "1777295563",
+  "followup_logged_requests": 200,
+  "source_scorer_replayed_for_every_logged_row": true,
+  "saved_successful_summary_scores_and_linear_p95_reproduced": true,
+  "saved_decode_means_reproduced": true,
+  "endpoint_proxy_cells_verified": 24,
+  "endpoint_proxy_cells_with_missing_power_fields": 5,
+  "primary_canonical_summary_uses_one_campaign": true,
+  "followup_never_pooled_with_main": true,
+  "statistical_unit": "Repeated requests on ten fixed tasks; repetition indices are not independently restarted sessions.",
+  "confidence_intervals": "Not inferred: independence and population sampling are not established.",
+  "energy_boundary": "Endpoint GPU-power proxy, not integrated energy; board IDs and sampler/server alignment unrecorded.",
+  "legacy_score_name_corrected": "Answer containment, not strict exact match.",
+  "old_plot_conflict": "Legacy plot aggregates use the earlier Qwen run; submitted table uses the later Qwen run. Do not fuse their values."
+}

@@ -12,9 +12,11 @@ The diagrams use a shared blue, teal and amber palette. Pictograms denote concep
 | Collaboration patterns | Payload, KV ownership and state boundaries | [Python](deployment_reasoning.py) | [PDF](collaboration_patterns.pdf), [SVG](collaboration_patterns.svg) |
 | Cross-layer couplings | Shared memory, compute and workflow amplification | [Python](deployment_reasoning.py) | [PDF](cross_layer_couplings.pdf), [SVG](cross_layer_couplings.svg) |
 | Workflow evaluation | Request timing and failure-aware task accounting | [Python](deployment_reasoning.py) | [PDF](workflow_evaluation.pdf), [SVG](workflow_evaluation.svg) |
+| Server request results | Separate historical score, request timing, decoding and endpoint-energy boundaries | [Python](server_reanalysis.py), [empirical archive](../server/README.md) | [PDF](server_results_reanalysis.pdf), [SVG](server_results_reanalysis.svg) |
+| Server measurement checks | Actual context/response fields and endpoint-power procedure | [Python](server_reanalysis.py), [empirical archive](../server/README.md) | [PDF](server_measurement_boundaries.pdf), [SVG](server_measurement_boundaries.svg) |
 | Assistant workflow | Permission, execution and recovery boundaries | [Python](assistant_workflow.py) | [PDF](assistant_workflow.pdf), [SVG](assistant_workflow.svg) |
 
-The memory panel is formula-generated with stated model assumptions; it is not a measured device-fit claim. The quantization panel replots reported QSpec exact-match scores for one stated model/quantizer setting; the source table supplies no uncertainty estimates. Other figures are conceptual schematics. The assistant is a prospective synthesis example, not an executed application benchmark. Dashed task-quality feedback in the overview can be offline or delayed validation.
+The memory panel is formula-generated with stated model assumptions; it is not a measured device-fit claim. The quantization panel replots reported QSpec exact-match scores for one stated model/quantizer setting; the source table supplies no uncertainty estimates. The server panels derive from recovered requests, except for the explicitly conceptual endpoint-power diagram. Remaining figures are conceptual schematics. The assistant is a prospective synthesis example, not an executed application benchmark. Dashed task-quality feedback in the overview can be offline or delayed validation.
 
 ## Rebuild
 
@@ -27,6 +29,8 @@ python3 survey/figures/memory_budget.py
 python3 survey/figures/quantization_fidelity.py
 python3 survey/figures/deployment_reasoning.py
 python3 survey/figures/assistant_workflow.py
+python3 survey/server/analyze_archived.py
+python3 survey/figures/server_reanalysis.py
 ```
 
 `resource_map.py` and `assistant_workflow.py` reuse the included vector primitives in `deployment_reasoning.py`. Exports include editable PDF/SVG, PNG previews and 600-dpi TIFF. Collision-audit JSON files accompany the rendered figures; a geometry audit is additional to visual and scientific review.

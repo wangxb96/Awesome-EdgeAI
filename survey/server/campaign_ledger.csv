@@ -1,0 +1,14 @@
+campaign,n_logged,models,contexts,repeat_indices,logged_errors,error_counts,role
+1777118193,40,deepseek-r1:1.5b;qwen3:4b,512;2048,1,40,"{""URL error: [Errno 61] Connection refused"": 40}",pilot or connectivity probe; not pooled
+1777118556,120,deepseek-r1:14b;gemma3:4b;llama2:7b,512;2048,2,0,{},pilot or connectivity probe; not pooled
+1777118887,600,deepseek-r1:14b;gemma3:4b;gpt-oss:20b;llama2:7b;qwen3:8b,512;1024;2048;4096,3,0,{},pilot or connectivity probe; not pooled
+1777121713,1200,deepseek-r1:14b;gemma3:4b;gpt-oss:20b;llama2:7b;qwen3:8b,512;1024;2048;4096,6,0,{},main campaign
+1777277731,40,qwen3:8b,512;1024;2048;4096,1,40,"{""URL error: [Errno 61] Connection refused"": 40}",pilot or connectivity probe; not pooled
+1777277772,40,qwen3:8b,512;1024;2048;4096,1,40,"{""URL error: [Errno 61] Connection refused"": 40}",pilot or connectivity probe; not pooled
+1777278829,10,qwen3:8b,512,1,10,"{""HTTP 404"": 10}",pilot or connectivity probe; not pooled
+1777278830,10,qwen3:4b,512,1,0,{},pilot or connectivity probe; not pooled
+1777287710,10,qwen3:8b,512,1,0,{},pilot or connectivity probe; not pooled
+1777288165,30,qwen3:8b,1024;2048;4096,1,9,"{""Exception: RemoteDisconnected: Remote end closed connection without response"": 1, ""URL error: [Errno 61] Connection refused"": 8}",pilot or connectivity probe; not pooled
+1777292810,10,qwen3:8b,4096,1,10,"{""URL error: [Errno 61] Connection refused"": 10}",pilot or connectivity probe; not pooled
+1777294821,40,qwen3:8b,512;1024;2048;4096,1,40,"{""URL error: [Errno 61] Connection refused"": 40}",pilot or connectivity probe; not pooled
+1777295563,200,qwen3:8b,512;1024;2048;4096,5,0,{},Qwen follow-up

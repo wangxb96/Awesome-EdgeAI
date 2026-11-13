@@ -321,13 +321,14 @@ The [optimization](#optimization-under-deployment-budgets), [agent](#agents-and-
 
 ## Research artifacts and figures
 
-Read the [supplementary material](survey/supplement/[submission identifier removed]-supp.pdf) for source locators, extended deployment checks and the worked assistant contract. Its [LaTeX source and build instructions](survey/supplement/README.md), [bibliographic database](survey/references.bib), figure inputs and runnable format examples are included here. The complete public artifact edition is pinned to [tag `supplement-2026-11-13`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13).
+Read the [supplementary material](survey/supplement/[submission identifier removed]-supp.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. Its [LaTeX source and build instructions](survey/supplement/README.md), [bibliographic database](survey/references.bib), figure inputs and runnable format examples are included here. The complete public artifact edition is pinned to [tag `supplement-2026-11-13-v2`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v2).
 
 | Artifact | Purpose |
 |---|---|
 | [Supplement PDF and source](survey/supplement/README.md) | Section directory, readable extended evidence, source locators and deployment contracts |
 | [Bibliographic database](survey/references.bib) | The survey's reference records; broader than the printed reference list |
 | [Public-file inventory](survey/public_artifacts.json) / [closure check](survey/check_public_artifacts.py) | All distributed files, supplement dependencies and optional anonymous access checks |
+| [Historical server record](survey/server/README.md) | Recovered requests, task definitions, all-campaign ledger, descriptive reanalysis and measurement-boundary figures |
 | [Synthetic request example](survey/examples/README.md) | Runnable CSV and expected JSON for checking the helper's format and denominators; no measured performance |
 | [Survey protocol](survey/protocol.md) | Scope, source verification, E1/E2/E3 replication support and search-record limitations |
 | [Benchmark protocol](survey/benchmark_protocol.md) | Request/episode boundaries, failure accounting and energy attribution |
@@ -367,9 +368,10 @@ The output matches [the supplied synthetic summary](survey/examples/request_summ
 | Analytical weight/KV budget | [Python](survey/figures/memory_budget.py), [CSV](survey/figures/memory_budget_analytical.csv) | [PDF](survey/figures/memory_budget.pdf), [SVG](survey/figures/memory_budget.svg) |
 | Reported quantization / task-score trade-offs | [Python](survey/figures/quantization_fidelity.py), [source CSV](survey/figures/quantization_fidelity_source.csv) | [PDF](survey/figures/quantization_fidelity.pdf), [SVG](survey/figures/quantization_fidelity.svg) |
 | Placement, collaboration, shared resources and workflow accounting | [Python](survey/figures/deployment_reasoning.py) | [Placement](survey/figures/placement_decision.pdf), [Collaboration](survey/figures/collaboration_patterns.pdf), [Couplings](survey/figures/cross_layer_couplings.pdf), [Workflow](survey/figures/workflow_evaluation.pdf) |
+| Historical server results and interpretation | [Python](survey/figures/server_reanalysis.py), [record analysis](survey/server/analyze_archived.py), [CSV](survey/server/reanalysis_by_run.csv) | [Results PDF](survey/figures/server_results_reanalysis.pdf), [boundary-check PDF](survey/figures/server_measurement_boundaries.pdf) |
 | Permissioned assistant | [Python](survey/figures/assistant_workflow.py) | [PDF](survey/figures/assistant_workflow.pdf), [SVG](survey/figures/assistant_workflow.svg) |
 
-The memory illustration is formula-generated under stated assumptions. The quantization panel replots nine published QSpec scores, with no new trials or uncertainty estimates. The remaining figures are conceptual: geometry encodes no measured performance, and pictograms denote roles. The prospective assistant is a synthesis example. Sources share a restrained palette and export editable PDF/SVG plus PNG and 600-dpi TIFF.
+The memory illustration is formula-generated under stated assumptions. The quantization panel replots nine published QSpec scores, with no new trials or uncertainty estimates. The two server-record figures use recovered requests and an explicitly conceptual endpoint-power diagram. Remaining figures are conceptual: geometry encodes no measured performance, and pictograms denote roles. The prospective assistant is a synthesis example. Sources share a restrained palette and export editable PDF/SVG plus PNG and 600-dpi TIFF.
 
 ## Citation
 

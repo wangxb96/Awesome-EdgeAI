@@ -1,0 +1,11 @@
+model,context_len,task_id,repeat,wall_latency_ms,ttft_ms,decode_tokens,decode_tps,prompt_tokens,avg_power_w,energy_j,quality_hit,prediction,answer,error
+qwen3:8b,512,arith_add,0,3.075838088989258,0.0,0,0.0,0,,,0,,42,HTTP 404
+qwen3:8b,512,arith_div,0,6.13093376159668,0.0,0,0.0,0,,,0,,12,HTTP 404
+qwen3:8b,512,logic_set,0,4.271745681762695,0.0,0,0.0,0,,,0,,No,HTTP 404
+qwen3:8b,512,count_chars,0,4.706144332885742,0.0,0,0.0,0,,,0,,4,HTTP 404
+qwen3:8b,512,calendar,0,3.9598941802978516,0.0,0,0.0,0,,,0,,Tuesday,HTTP 404
+qwen3:8b,512,step_cost,0,2.7658939361572266,0.0,0,0.0,0,,,0,,10,HTTP 404
+qwen3:8b,512,reverse,0,3.003835678100586,0.0,0,0.0,0,,,0,,edcba,HTTP 404
+qwen3:8b,512,compare,0,13.50092887878418,0.0,0,0.0,0,,,0,,0.5,HTTP 404
+qwen3:8b,512,short_reason,0,2.8150081634521484,0.0,0,0.0,0,,,0,,40,HTTP 404
+qwen3:8b,512,boolean,0,2.766132354736328,0.0,0,0.0,0,,,0,,Yes,HTTP 404

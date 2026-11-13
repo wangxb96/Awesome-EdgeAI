@@ -321,6 +321,21 @@ The [optimization](#optimization-under-deployment-budgets), [agent](#agents-and-
 
 ## Research artifacts and figures
 
+The repository follows the reading guide above. For files, use this directory map; the server archive and synthetic examples have separate entry points.
+
+```text
+README.md                 Integrated literature and deployment guide
+survey/
+  supplement/             Supplement PDF, LaTeX and build helper
+  server/                 Recovered requests, provenance and offline reanalysis
+  figures/                Editable sources, inputs and publication exports
+  examples/               Synthetic request-format examples
+  references.bib          Bibliographic source records
+  cited_reference_index.json  Exact main/supplement citation inventory
+  evidence_ledger.json     Result-specific evidence and artifact boundaries
+  *_protocol.md, protocol.md  Scope and measurement contracts
+```
+
 Read the [supplementary material](survey/supplement/[submission identifier removed]-supp.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. Its [LaTeX source and build instructions](survey/supplement/README.md), [bibliographic database](survey/references.bib), figure inputs and runnable format examples are included here. The complete public artifact edition is pinned to [tag `supplement-2026-11-13-v4`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13-v4).
 
 | Artifact | Purpose |

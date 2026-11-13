@@ -2,6 +2,12 @@
 
 The reported four-RTX-4090-D experiments remain part of the survey's supplementary record. This archive separates what can be recalculated from what cannot be inferred about model capability or mobile deployment. It contains recovered empirical records, not the [synthetic helper fixture](../examples/README.md).
 
+## Source provenance and reading route
+
+The original [focused survey repository](https://github.com/wangxb96/cognitive-edge-llm-agent-survey/tree/a858d5349d82afa1791d00091baf4a288f07ccd2) retains benchmark script snapshots. At that inspected revision, its [runner](https://github.com/wangxb96/cognitive-edge-llm-agent-survey/blob/a858d5349d82afa1791d00091baf4a288f07ccd2/assets/reproducibility/scripts/run_ollama_server_suite.py) and [selector](https://github.com/wangxb96/cognitive-edge-llm-agent-survey/blob/a858d5349d82afa1791d00091baf4a288f07ccd2/assets/reproducibility/scripts/rebuild_clean_server_artifacts.py) are byte-identical to the copies here. This establishes public code provenance, not the exact options used during execution. The older repository contains no request CSVs or summary JSONs at that revision; the recovered data and supported analysis entry point are supplied below.
+
+Read the campaign definitions before comparing plotted values. Use the offline analysis command to recalculate the record. Consult the metric boundaries before interpreting a score, TTFT label or energy value. The older README's synchronized-benchmark and capability-ranking interpretation is not used as evidence for this record.
+
 | Resource | Contents |
 |---|---|
 | [Archive inventory](archive_inventory.json) | All thirteen CSV/summary pairs, original and published hashes; CSV line endings alone are normalized from CRLF to LF |

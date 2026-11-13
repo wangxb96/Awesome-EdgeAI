@@ -366,7 +366,7 @@ python3 survey/verify_repos.py
 
 The literature command reuses cached primary metadata and reports missing records; the repository command checks live reachability. Version-specific records above were checked against their primary arXiv pages. A successful link check does not establish official ownership, experimental replication or suitability for a particular device.
 
-To build the supplement, run `python3 survey/supplement/build.py` with pdfLaTeX installed. To check the analysis format without collecting measurements:
+The supplement is distributed as a rendered PDF; editable manuscript sources and TeX build inputs are not part of this repository. To check the analysis format without collecting measurements:
 
 ```sh
 python3 survey/compute_ci.py \

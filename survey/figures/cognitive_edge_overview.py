@@ -21,9 +21,9 @@ MUTED = "#000000"
 BLUE, TEAL, AMBER = "#497BA6", "#318D85", "#B9823C"
 PALE_BLUE, PALE_TEAL, PALE_AMBER = "#EDF3F8", "#EDF6F3", "#FAF3E9"
 STROKE, LIGHT = "#BCCBD3", "#F5F7F9"
-fig, ax = plt.subplots(figsize=(3.48, 2.70))
+fig, ax = plt.subplots(figsize=(3.48, 3.22))
 fig.subplots_adjust(left=0, right=1, bottom=0, top=1)
-ax.set(xlim=(0,100), ylim=(0,78))
+ax.set(xlim=(0,100), ylim=(0,93))
 ax.axis("off")
 
 def line(xs,ys,color=STROKE,lw=.8,z=3,style="-"):
@@ -135,46 +135,46 @@ def budget_icon(kind,x,y,c):
             line([x,xx],[y+1,yy],c,.5,5)
             ax.add_patch(Circle((xx,yy),.45,fc=c,ec="none",zorder=6))
 
-# Supplied constraints enter the controller independently of feedback.
-text(48,74.4,"Reasoning capability within a resource budget",7.6,weight="bold")
-rounded(3,64.2,89,6.6,LIGHT,r=1.4)
-for x,label,kind,c in [(13,"Memory","memory",BLUE),(35,"Energy","energy",AMBER),(57,"Deadline","deadline",BLUE),(79,"Link","link",TEAL)]:
-    budget_icon(kind,x-6,67.5,c)
-    text(x-2,67.5,label,6.6,ha="left")
-arrow((47.5,63.9),(47.5,61.0),INK,.8)
+# The task loop exposes the cognitive work that the resource policy controls.
+text(49,90.5,"Cognitive capability under a deployment budget",7.0,weight="bold")
+rounded(5,82,87,5.5,LIGHT,r=1.0)
+text(48.5,84.75,"One user goal / task episode",6.8,weight="bold")
+arrow((48.5,81.6),(48.5,79.2),INK,.7)
+for x,name,draw,c,fill in [(6,"Context / memory",cache,BLUE,PALE_BLUE),(36,"Reason / plan",chip,TEAL,PALE_TEAL),(66,"Act / check",agent,AMBER,PALE_AMBER)]:
+    rounded(x,64,27,15,fill,r=1.4)
+    draw(x+13.5,73.5,.64,c)
+    text(x+13.5,66.5,name,6.5,weight="bold")
+arrow((33.2,72),(35.5,72),TEAL,.7,scale=5)
+arrow((63.2,72),(65.5,72),TEAL,.7,scale=5)
+line([79.5,79.5,19.5],[63.7,61,61],TEAL,.65)
+arrow((19.5,61),(19.5,63.8),TEAL,.65,scale=5)
 
-# Three policy levers form one controller, not three exclusive deployment paths.
-text(47.5,59.3,"Joint model, runtime and agent adaptation",7.1,weight="bold")
-for x,w,c,fill,name,detail,draw in [
-    (3,27.5,BLUE,PALE_BLUE,"Model","Precision · size\nExpert activation",chip),
-    (33.5,27.5,TEAL,PALE_TEAL,"Runtime","KV state · scheduling\nOffload policy",cache),
-    (64,28,AMBER,PALE_AMBER,"Agent","Context · tool use\nReasoning depth",agent)]:
-    rounded(x,37.0,w,19.7,fill,r=1.6)
-    draw(x+w/2,50.6,.79,c)
-    text(x+w/2,44.4,name,7.0,weight="bold")
-    text(x+w/2,40.0,detail,6.6,color=MUTED,linespacing=1.18)
-line([16.75,16.75,78,78],[36.8,34.8,34.8,36.8],STROKE,.65)
-line([47.25,47.25],[37.0,34.8],STROKE,.65)
-arrow((47.5,34.8),(47.5,32.5),INK,.8)
-
-# Recognisable flat vector illustrations make the physical execution tiers clear.
-rounded(3,12.2,89,19.5,LIGHT,r=2)
-phone(16,23.0,.80)
-server(47,23.0,.80)
-cloud(78,22.7,.78)
-arrow((25.0,23.1),(37.5,23.1),TEAL,.9,both=True)
-arrow((58.0,23.1),(68.5,23.1),TEAL,.9,both=True)
-text(17,15.4,"Device",6.8,weight="bold")
-text(47.3,15.4,"Edge",6.8,weight="bold")
-text(78,15.4,"Cloud",6.8,weight="bold")
-arrow((47.5,12.1),(47.5,9.9),INK,.8)
-
-# Metrics are observations. Their return path updates the controller.
-rounded(3,2.6,89,7.0,PALE_TEAL,r=1.4)
-text(47.5,7.5,"Observe quality, cost and safety",6.8,weight="bold")
-text(47.5,4.4,"Reasoning fidelity · p95 latency · J/token · Safety",6.4,color=MUTED)
-line([92.3,96.7,96.7],[6.2,6.2,59.3],TEAL,.85)
-arrow((96.7,59.3),(92.2,59.3),TEAL,.85)
+# Resource state is observable online; true semantic quality need not be.
+rounded(5,51,87,7,LIGHT,r=1.2)
+for x,label,kind,c in [(14,"RAM","memory",BLUE),(35,"Energy","energy",AMBER),(59,"Deadline","deadline",BLUE),(81,"Link","link",TEAL)]:
+    budget_icon(kind,x-6,54.5,c);text(x-2,54.5,label,6.3,ha="left")
+arrow((49,50.7),(49,48.3),INK,.7)
+rounded(5,39,87,9,PALE_BLUE,BLUE,r=1.3)
+text(48.5,45,"Resource-aware execution policy",6.8,weight="bold")
+text(48.5,41.3,"Context · precision · depth · placement",6.4)
+# The policy acts on task execution, not on the externally specified budget.
+line([4.7,2,2],[43.5,43.5,71.7],BLUE,.65)
+arrow((2,71.7),(5.6,71.7),BLUE,.65,scale=5)
+arrow((49,38.7),(49,36.7),INK,.7)
+rounded(5,16,87,20,LIGHT,r=1.6)
+phone(19,27,.69);server(49,27,.69);cloud(79,26.8,.65)
+arrow((27,27),(41,27),TEAL,.8,both=True)
+arrow((58,27),(70,27),TEAL,.8,both=True)
+text(20,18.5,"Device",6.6,weight="bold")
+text(49,18.5,"Edge",6.6,weight="bold")
+text(79,18.5,"Cloud",6.6,weight="bold")
+arrow((49,15.7),(49,13.7),INK,.7)
+rounded(5,3,87,10,PALE_TEAL,r=1.2)
+text(48.5,10,"Verify complete-task outcomes",6.8,weight="bold")
+text(48.5,5.7,"Success · deadline · task energy · safety",6.3)
+# Dashed return path denotes offline/delayed task validation, not a runtime oracle.
+line([92.3,97,97],[8,8,43.5],TEAL,.7,style="--")
+arrow((97,43.5),(92.3,43.5),TEAL,.7,scale=5)
 
 fig.savefig(OUT/"cognitive_edge_overview.pdf",bbox_inches="tight",pad_inches=.025)
 fig.savefig(OUT/"cognitive_edge_overview.svg",bbox_inches="tight",pad_inches=.025)

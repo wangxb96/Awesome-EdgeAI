@@ -3,7 +3,7 @@
 **From TinyML to Cognitive Edge Computing**  
 *Curated resources on data, model, system optimization + Large Models (LLMs/VLMs), Agents & On-Device AI (2016–2026)*
 
-**Last refresh: 11 November 2026** — 39 verified papers were added across the two 2026 refreshes (see [2026 Additions](#new-2026-additions-verified-nov-2026)), plus 30+ official repositories in the [On-Device Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index). All 135 pre-existing arXiv identifiers were re-validated against the arXiv API; mismatched IDs, dead links and withdrawn preprints were corrected or flagged.
+**Last updated: 13 November 2026.** Resources are organized by deployment role and topic. The dated retained-link census and verification limits are documented below.
 
 **Maintainers / Survey Authors**
 - [Xubin Wang](https://github.com/wangxb96)<sup>1</sup>
@@ -63,7 +63,7 @@ It serves researchers, engineers, and students who want to deploy real intellige
 
 ---
 
-## New: Unified Architecture & Cognitive Edge (2023–2026)
+## Unified Architecture & Cognitive Edge (2023–2026)
 
 **Master Overview Figure** — the Cognitive Edge Computing unified stack (Fig 1):
 
@@ -75,21 +75,20 @@ It serves researchers, engineers, and students who want to deploy real intellige
 
 # Table of Contents
   - [Public Research Artifact Repository](#official-repository-for-[submission identifier removed])
-  - [New: 2026 Additions (verified Nov 2026)](#new-2026-additions-verified-nov-2026)
-  - [New: On-Device Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index)
-  - [New: Unified Architecture & Cognitive Edge (2023–2026)](#new-unified-architecture--cognitive-edge-20232026)
+  - [On-Device Model Families & Tool Repository Index](#on-device-model-families--tool-repository-index)
+  - [Unified Architecture & Cognitive Edge (2023–2026)](#unified-architecture--cognitive-edge-20232026)
     - [Modern Era: Large Models, Agents & Cognitive Systems](#modern-era-large-models-agents--cognitive-systems-on-edge-20232026)
     - [AI Agents on Edge](#5-ai-agents-on-edge--on-device-agents)
     - [Frameworks & Runtimes (2023–2026)](#6-frameworks--runtimes-for-edge--on-device-deployment-20232026)
     - [Hardware Acceleration](#7-hardware-acceleration-for-edge-ai--llms)
     - [Benchmarks & Tools (2023–2026)](#8-benchmarks-datasets--tools-20232026-focus)
     - [Recent Surveys & Highlights](#9-recent-surveys--overviews-20232026)
-  - [New: Federated Learning on Edge](#new-federated-learning-on-edge)
-  - [New: TinyML & Microcontroller AI](#new-tinyml--microcontroller-ai)
-  - [New: Edge AI Security & Privacy](#new-edge-ai-security--privacy)
-  - [New: On-Device Training & Personalization](#new-on-device-training--personalization)
-  - [New: Multimodal & Embodied Edge AI](#new-multimodal--embodied-edge-ai)
-  - [New: Real-World Applications & Case Studies](#new-real-world-applications--case-studies)
+  - [Federated Learning on Edge](#federated-learning-on-edge)
+  - [TinyML & Microcontroller AI](#tinyml--microcontroller-ai)
+  - [Edge AI Security & Privacy](#edge-ai-security--privacy)
+  - [On-Device Training & Personalization](#on-device-training--personalization)
+  - [Multimodal & Embodied Edge AI](#multimodal--embodied-edge-ai)
+  - [Real-World Applications & Case Studies](#real-world-applications--case-studies)
   - [Historical Foundations (Legacy v1 Content — fully retained)](#historical-foundations-legacy-v1-content--fully-retained)
     - [Background Knowledge](#1-background-knowledge)
     - [2. Our Survey (To be released)](#2-our-survey-to-be-released)
@@ -117,8 +116,8 @@ The manuscript and this repository are maintained together: the paper cites this
 | Figure 1 schematic source and editable/vector/raster exports | [`survey/figures/cognitive_edge_overview.py`](survey/figures/cognitive_edge_overview.py), [`survey/figures/cognitive_edge_overview.pdf`](survey/figures/cognitive_edge_overview.pdf), [`survey/figures/cognitive_edge_overview.svg`](survey/figures/cognitive_edge_overview.svg) |
 | Analytical weight/KV memory illustration and formula-generated values | [`survey/figures/memory_budget.py`](survey/figures/memory_budget.py), [`PDF`](survey/figures/memory_budget.pdf), [`CSV`](survey/figures/memory_budget_analytical.csv) |
 | Deployment feasibility, resource coupling, and workflow evaluation diagrams | [`Python source`](survey/figures/deployment_reasoning.py), [`Placement`](survey/figures/placement_decision.pdf), [`Couplings`](survey/figures/cross_layer_couplings.pdf), [`Workflow`](survey/figures/workflow_evaluation.pdf), [`Communication patterns`](survey/figures/collaboration_patterns.pdf) |
-| 2025–2026 literature refresh (39 verified papers) | [2026 Additions](#new-2026-additions-verified-nov-2026) |
-| On-device model families and 30+ official tool repositories | [Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index) |
+| Prospective private-assistant component and permission boundaries | [`Python source`](survey/figures/assistant_workflow.py), [`PDF`](survey/figures/assistant_workflow.pdf), [`SVG`](survey/figures/assistant_workflow.svg); uses the shared [`vector drawing module`](survey/figures/deployment_reasoning.py) |
+| On-device model families and 30+ official tool repositories | [Model Families & Tool Repository Index](#on-device-model-families--tool-repository-index) |
 
 **Frozen retained-link census (11 Nov 2026, commit `82b6110`; literature coverage through 10 Nov).** The archived manifests contain **145/145** resolved arXiv identifiers, **0 unresolved** and **0 withdrawal flags**; **137** selected Markdown labels were title-audited, with **9** low-similarity flags manually inspected. The 137 labels are one selected label per labelled arXiv ID, not all link occurrences. Records from 2023-2026 account for **123/145 (84.8%)**. The repository audit records **123/123** linked GitHub roots with a live HEAD at the audit date. These are different counting units, not a study-screening flow, and live HEAD does not establish official ownership or replication support. Recompute the dated counts in a disposable clone:
 
@@ -139,73 +138,7 @@ The archived commands reuse saved results and rewrite manifests in that checkout
 
 ---
 
-## New: 2026 Additions (verified Nov 2026)
-
-> **Scope.** Entries below were added in the November 2026 refresh. Papers are checked against their primary source (arXiv abstract page or publisher DOI record) for title, authors, date, and venue; withdrawn preprints are excluded (e.g. *SplitLite*, arXiv:2608.23018, withdrawn Sep 2026). They complement — not replace — the topic sections below, which retain the full legacy and 2023–2026 collections.
-
-**1) On-device LLM inference, compression & energy** — see [Modern Era](#modern-era-large-models-agents--cognitive-systems-on-edge-20232026) and [Hardware Acceleration](#7-hardware-acceleration-for-edge-ai--llms)
-
-- [Large Models for Small Devices: Recent Advances and Empirical Analysis of Edge AI Deployment](https://arxiv.org/abs/2608.15693) (arXiv, Aug 2026; parts at IEEE CCNC 2026) — real-hardware study on GPU/CPU/Raspberry Pi showing that *what compresses well need not deploy well*: quantization wins for QA while pruning wins for segmentation, and pruning can inflate the deployed artifact by 21–49% by breaking k-quant super-block alignment.
-- [EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding](https://arxiv.org/abs/2608.05303) (MICRO 2026) — 28nm SW/HW co-designed accelerator that reconciles MoE with speculative decoding via prompt-wise expert reuse and depth-aware expert coalescing; up to 56.3% latency and 44.1% energy reduction.
-- [SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference](https://arxiv.org/abs/2609.21704) (ICPC2T 2026) — training-free INT4/FP8/FP16 variants derived from shared weights with query-complexity routing; 35–43% speedups within 2% accuracy.
-- [EnerInfer: Energy-Aware On-Device LLM Inference](https://arxiv.org/abs/2606.23001) (arXiv, Jun 2026) — jointly manages NPU/DDR frequency for energy efficiency, throughput and thermal comfort; up to 65% better energy efficiency on phones without QoE violations.
-- [Does Mixture-of-Experts Actually Help Inference on Consumer and Edge Hardware? An Empirical Study](https://arxiv.org/abs/2606.21428) (arXiv, Jun 2026) — on bandwidth-bound Jetson-class hardware, inference cost tracks *total* parameters rather than active ones: OLMoE trails dense baselines by ~31% at 2.1× energy per token.
-
-**2) Edge agents & edge–cloud collaboration** — see [AI Agents on Edge](#5-ai-agents-on-edge--on-device-agents)
-
-- [Nexus: An Execution Fabric for AI Agents Across Cloud, Edge, and Devices](https://arxiv.org/abs/2610.05709) (arXiv, Oct 2026) — OpenWrt-based persistent-task runtime with run-scoped delegation, journaling and permission revocation for cross-device agent services.
-- [EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation](https://arxiv.org/abs/2610.17560) (arXiv, Oct 2026, v2) — SLM on device as primary solver with step-level RL delegation; matches pure-LLM execution while cutting inference cost up to 62% (SWE-Rebench) and 34% (Terminal-Bench 2.1).
-- [Diffusion Language Models for Mobile Edge Agentic AI: Foundations, Applications, and Challenges](https://arxiv.org/abs/2609.04778) (arXiv, Sep 2026) — survey of non-autoregressive DLMs for edge agents (parallel refinement, early exit, quality–latency elasticity).
-- [Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution](https://arxiv.org/abs/2610.17816) (arXiv, Oct 2026) — EC²-Bench: 128 executable long-horizon tasks jointly measuring performance, cloud cost and privacy exposure (see also [Section 5](#5-ai-agents-on-edge--on-device-agents)).
-
-**3) Federated learning & on-device training** — see [Federated Learning](#new-federated-learning-on-edge) and [On-Device Training](#new-on-device-training--personalization)
-
-- [Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI](https://arxiv.org/abs/2608.21172) (arXiv, Aug 2026) — device temperature as an active control signal for LoRA training plus Byzantine-robust aggregation (TERRA), validated on a Jetson testbed.
-- [Just Talk Once: Communication-Efficient Split Federated LLM Fine-Tuning on Edge Devices](https://arxiv.org/abs/2609.01457) (MobiHoc 2026) — L-shaped SFT removes the bidirectional split-loop bottleneck; one-shot activation upload lets clients go offline while the server keeps optimizing.
-- [Fed-FSTQ: Fisher-Guided Token Quantization for Communication-Efficient Federated Fine-Tuning of LLMs on Edge Devices](https://arxiv.org/abs/2604.25421) (arXiv, Apr 2026, v3) — token-level Fisher sensitivity for mixed-precision adapter updates; 46× less cumulative uplink traffic and 6.16× per-round speedup.
-- [Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates](https://arxiv.org/abs/2611.04797) (arXiv, 3 Nov 2026) — MobileSpec trains 1–5 MB forward-only specialists from verifiable rewards, adapts INT4 models without changing weights, and fine-tunes a personalized 8B model on an iPhone 16 Pro overnight.
-- [Memory-Efficient Structured Backpropagation for On-Device LLM Fine-Tuning](https://arxiv.org/abs/2602.13069) (ACL 2026) — MeSP derives mathematically identical LoRA gradients with 49% less memory (361 MB → 136 MB on Qwen2.5-0.5B).
-- [TrainDeeploy: Hardware-Accelerated Parameter-Efficient Fine-Tuning of Small Transformer Models at the Extreme Edge](https://arxiv.org/abs/2603.09511) (DATE 2026) — first complete CNN + Transformer on-device training pipeline on a RISC-V heterogeneous ultra-low-power SoC, with selective layer-wise tuning and LoRA.
-
-**4) TinyML & microcontrollers** — see [TinyML](#new-tinyml--microcontroller-ai)
-
-- [What changes after deployment? A survey on On-device Learning in TinyML](https://arxiv.org/abs/2605.31226) (arXiv, May 2026) — ~70 on-device-learning works organized by distribution-change regime; documents the gap between methodological benchmarks and real deployments.
-- [AutoMCU: Feasibility-First MCU Neural Network Customization via LLM-based Multi-Agent Systems](https://arxiv.org/abs/2605.21560) (arXiv, May 2026) — hardware-in-the-loop LLM agents filter infeasible designs via vendor-toolchain feedback before training; 1–2 h customization validated on STM32 boards.
-- [Ariel-ML: Computing Parallelization with Embedded Rust for Neural Networks on Heterogeneous Multi-core Microcontrollers](https://arxiv.org/abs/2512.09800) (ISIoT 2026; arXiv v2 May 2026) — open-source Rust toolkit for parallel TinyML inference across Arm Cortex-M, RISC-V and ESP32 multicore MCUs.
-
-**5) Security & privacy** — see [Edge AI Security & Privacy](#new-edge-ai-security--privacy)
-
-- [Understanding the Security Boundary of Obfuscation-based On-Device LLM Protection](https://arxiv.org/abs/2609.10117) (ACM CCS 2026) — formalizes obfuscation primitives, exposes a shared vulnerability in top-tier TEE-shielded LLM partition schemes, and extends the security boundary.
-- [BiShield-TEE: On the (In-)Security of Unilateral Weight Obfuscation in On-Device TEE-Shielded LLM Partition](https://arxiv.org/abs/2610.21565) (NeurIPS 2026) — bilateral input/output obfuscation inducing ambiguous solutions, closing the "solution determinacy" vulnerability.
-- [Protecting On-Device AI Inference: A Systematic Review of Attacks and Defence Mechanisms](https://arxiv.org/abs/2605.29450) (arXiv, May 2026) — first review dedicated to on-device *inference* threats; documents an attack/defence asymmetry (e.g. ~1/3 of attack literature has no corresponding defence).
-
-**6) Multimodal VLMs, embodied AI & hardware measurements** — see [Multimodal & Embodied Edge AI](#new-multimodal--embodied-edge-ai) and [Benchmarks](#8-benchmarks-datasets--tools-20232026-focus)
-
-- [How Far Are We From On-Device VLM Inference? A Measurement Study on Edge NPUs](https://arxiv.org/abs/2610.40039) (arXiv, Oct 2026) — 6 VLMs × 3 edge platforms × 10 multimodal benchmarks; challenges softmax/linear-attention assumptions and identifies task-specific "sweet resolutions".
-- [Phase Matters: Characterizing Heterogeneous Vision-Language Inference on a Mobile SoC](https://arxiv.org/abs/2606.27906) (MobiSys Workshop 2026) — Snapdragon 8 Elite study: NPU gives 1.64× on prefill but only 1.18× on decode, with 2.52× lower energy and 10.47 °C lower steady-state temperature.
-- [VLA-HWBench: Where the Time Goes When VLA Models Run on Edge Hardware](https://arxiv.org/abs/2610.34717) (arXiv, Oct 2026) — 18 open VLA models on Jetson AGX Thor / Ryzen AI Max+ with a seven-stage latency breakdown; action-generation strategy dominates model size.
-- [Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference](https://arxiv.org/abs/2608.04428) (arXiv, Aug 2026) — temporal bit-sparsity + speculative data loading + systolic bit-serial accelerator; up to 34.2× speedup over mobile GPUs.
-- [LLM Inference at the Edge: Mobile, NPU, and GPU Performance Efficiency Trade-offs Under Sustained Load](https://arxiv.org/abs/2603.23640) (arXiv, Mar 2026, v2 Jun 2026) — Qwen2.5-1.5B INT4 across RPi 5 + Hailo-10H, Galaxy S24 Ultra, iPhone 16 Pro and RTX 4050; thermal throttling supersedes peak compute on phones.
-
-**7) 6G, networks & surveys** — see [Edge AI in 6G Networks](#edge-ai-in-6g-networks) and [Recent Surveys](#9-recent-surveys--overviews-20232026)
-
-- [From Semantic to Token Communication: The Next Paradigm for Large-Model-Driven 6G Intelligent Connectivity](https://arxiv.org/abs/2609.10714) (arXiv, Sep 2026) — proposes the LM *token* as a universal semantic unit above the bit level, enabling importance assignment and resource allocation at token granularity for AI-native 6G.
-- [LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization](https://arxiv.org/abs/2607.16066) (arXiv, Jul 2026) — tutorial/survey mapping agentic capabilities onto 5G/6G control planes, evaluation and standardization.
-
-**8) Newly covered topics: on-device RAG & speech** — these directions were previously only a bullet in [Section 5](#5-ai-agents-on-edge--on-device-agents); they now have primary literature.
-
-- [Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite](https://arxiv.org/abs/2606.11257) (arXiv, Jun 2026) — full embedding / retrieval / reranking / generation pipeline on the Hexagon NPU, benchmarked against CPU and GPU for energy and latency.
-- [Lightweight Chunk Selection for Mobile Retrieval-Augmented Generation](https://arxiv.org/abs/2608.03148) (arXiv, Aug 2026) — retains only the most useful retrieved chunk to cut mobile prefill compute and memory.
-- [MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches](https://arxiv.org/abs/2610.22579) (arXiv, Oct 2026) — moves precomputed RAG KV caches into storage to remove the edge prefill bottleneck over a narrow interconnect.
-- [Depth through Recurrence: Towards Ultra-Efficient On-Device ASR](https://arxiv.org/abs/2610.37833) (arXiv, Oct 2026) — weight-sharing recurrent blocks retain ASR model depth at a fraction of the parameters for watches and glasses.
-- [Offline AI Modules: Voice-First Offline Architecture, Hardware Reference Stack, Quantization and Benchmarking](https://arxiv.org/abs/2610.07026) (arXiv, Oct 2026) — fully offline, low-power voice-first stack with a hardware reference design and benchmarks.
-- [SSEmb: Training a Generalizable Speech Retrieval Model Using Only Automatic Speech Recognition Data](https://arxiv.org/abs/2610.17813) (arXiv, Oct 2026) — speech-to-text retrieval without spoken query–document pairs, relevant to on-device voice agents.
-
-**Framework / runtime progress (2026).** Two open-source runtimes complement [Section 6](#6-frameworks--runtimes-for-edge--on-device-deployment-20232026): Google's [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) (cross-platform orchestration for on-device LLM inference with GPU/NPU acceleration, already listed above) and Microsoft's [ONNX Runtime GenAI](https://github.com/microsoft/onnxruntime-genai) (generative-AI loop, logits processing, sampling and KV-cache management for ONNX models across CPU/GPU/NPU backends).
-
----
-
-## New: On-Device Model Families & Tool Repository Index
+## On-Device Model Families & Tool Repository Index
 
 > **Why this section.** The tables above catalogue *papers*; this section catalogues the *artifacts* needed to reproduce or deploy them. Every GitHub link below was verified to resolve (via `git ls-remote` against the repository HEAD) on 10 November 2026. Model reports were checked against their arXiv abstract pages; entries without an arXiv report link to official model cards / developer docs instead. Two stale paths (`OpenSparseLLM/OmniQuant`, `ARM-software/ethos-u-vela`) were excluded — OmniQuant is linked at its current home, `OpenGVLab/OmniQuant`.
 
@@ -253,11 +186,11 @@ This extends the Section 4 roster (MobileLLM / Phi-3 / Qwen2 / MiniCPM-V, all 20
 - [espressif/esp-tflite-micro](https://github.com/espressif/esp-tflite-micro) — TFLM port for ESP32-class boards.
 - [emlearn/emlearn](https://github.com/emlearn/emlearn) — classical-ML / tiny-NN inference in C for microcontrollers.
 
-Existing entries in [TinyML Frameworks & Tools](#new-tinyml--microcontroller-ai) (TFLM, CMSIS-NN, microTVM, TinyEngine, MCUNet, Edge Impulse) are retained there.
+Existing entries in [TinyML Frameworks & Tools](#tinyml--microcontroller-ai) (TFLM, CMSIS-NN, microTVM, TinyEngine, MCUNet, Edge Impulse) are retained there.
 
 ---
 
-## New: Federated Learning on Edge
+## Federated Learning on Edge
 
 Federated Learning (FL) enables collaborative model training across distributed edge devices without centralizing raw data, crucial for privacy-preserving edge AI. Recent advances combine FL with LLMs, PEFT, and heterogeneous edge hardware.
 
@@ -276,6 +209,10 @@ Federated Learning (FL) enables collaborative model training across distributed 
 
 ### Federated Learning for LLMs & Edge Models
 
+- [Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI](https://arxiv.org/abs/2608.21172) (arXiv, Aug 2026) — device temperature as an active control signal for LoRA training plus Byzantine-robust aggregation (TERRA), validated on a Jetson testbed.
+- [Just Talk Once: Communication-Efficient Split Federated LLM Fine-Tuning on Edge Devices](https://arxiv.org/abs/2609.01457) (MobiHoc 2026) — L-shaped SFT removes the bidirectional split-loop bottleneck; one-shot activation upload lets clients go offline while the server keeps optimizing.
+- [Fed-FSTQ: Fisher-Guided Token Quantization for Communication-Efficient Federated Fine-Tuning of LLMs on Edge Devices](https://arxiv.org/abs/2604.25421) (arXiv, Apr 2026, v3) — token-level Fisher sensitivity for mixed-precision adapter updates; 46× less cumulative uplink traffic and 6.16× per-round speedup.
+
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [Federated Learning of Large Language Models with Parameter-Efficient Prompt Tuning and Adaptive Optimization (FedPepTAO)](https://arxiv.org/abs/2310.15080) (EMNLP 2023) | -- | -- |
@@ -290,13 +227,17 @@ Federated Learning (FL) enables collaborative model training across distributed 
 
 ---
 
-## New: TinyML & Microcontroller AI
+## TinyML & Microcontroller AI
 
 TinyML pushes AI inference to ultra-low-power microcontrollers (MCUs) with KB-level memory and mW-level power budgets. The field has rapidly evolved from basic CNNs to on-device Transformers and small language models.
 
 ![TinyML Ecosystem](Figures/tinyml_ecosystem_landscape.png)
 
 ### Foundational TinyML Papers
+
+- [What changes after deployment? A survey on On-device Learning in TinyML](https://arxiv.org/abs/2605.31226) (arXiv, May 2026) — ~70 on-device-learning works organized by distribution-change regime; documents the gap between methodological benchmarks and real deployments.
+- [AutoMCU: Feasibility-First MCU Neural Network Customization via LLM-based Multi-Agent Systems](https://arxiv.org/abs/2605.21560) (arXiv, May 2026) — hardware-in-the-loop LLM agents filter infeasible designs via vendor-toolchain feedback before training; 1–2 h customization validated on STM32 boards.
+- [Ariel-ML: Computing Parallelization with Embedded Rust for Neural Networks on Heterogeneous Multi-core Microcontrollers](https://arxiv.org/abs/2512.09800) (ISIoT 2026; arXiv v2 May 2026) — open-source Rust toolkit for parallel TinyML inference across Arm Cortex-M, RISC-V and ESP32 multicore MCUs.
 
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
@@ -320,7 +261,11 @@ TinyML pushes AI inference to ultra-low-power microcontrollers (MCUs) with KB-le
 
 ---
 
-## New: Edge AI Security & Privacy
+## Edge AI Security & Privacy
+
+- [Understanding the Security Boundary of Obfuscation-based On-Device LLM Protection](https://arxiv.org/abs/2609.10117) (ACM CCS 2026) — formalizes obfuscation primitives, exposes a shared vulnerability in top-tier TEE-shielded LLM partition schemes, and extends the security boundary.
+- [BiShield-TEE: On the (In-)Security of Unilateral Weight Obfuscation in On-Device TEE-Shielded LLM Partition](https://arxiv.org/abs/2610.21565) (NeurIPS 2026) — bilateral input/output obfuscation inducing ambiguous solutions, closing the "solution determinacy" vulnerability.
+- [Protecting On-Device AI Inference: A Systematic Review of Attacks and Defence Mechanisms](https://arxiv.org/abs/2605.29450) (arXiv, May 2026) — first review dedicated to on-device *inference* threats; documents an attack/defence asymmetry (e.g. ~1/3 of attack literature has no corresponding defence).
 
 As edge devices handle increasingly sensitive data with on-device LLMs, security and privacy have become paramount. Key topics include adversarial robustness, model extraction defense, differential privacy, and TEE-based secure inference.
 
@@ -351,11 +296,15 @@ As edge devices handle increasingly sensitive data with on-device LLMs, security
 
 ---
 
-## New: On-Device Training & Personalization
+## On-Device Training & Personalization
 
 Beyond inference, enabling on-device training and fine-tuning allows models to adapt to user-specific data and changing environments without privacy leakage.
 
 ### On-Device Training & Fine-tuning
+
+- [Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates](https://arxiv.org/abs/2611.04797) (arXiv, 3 Nov 2026) — MobileSpec trains 1–5 MB forward-only specialists from verifiable rewards, adapts INT4 models without changing weights, and fine-tunes a personalized 8B model on an iPhone 16 Pro overnight.
+- [Memory-Efficient Structured Backpropagation for On-Device LLM Fine-Tuning](https://arxiv.org/abs/2602.13069) (ACL 2026) — MeSP derives mathematically identical LoRA gradients with 49% less memory (361 MB → 136 MB on Qwen2.5-0.5B).
+- [TrainDeeploy: Hardware-Accelerated Parameter-Efficient Fine-Tuning of Small Transformer Models at the Extreme Edge](https://arxiv.org/abs/2603.09511) (DATE 2026) — first complete CNN + Transformer on-device training pipeline on a RISC-V heterogeneous ultra-low-power SoC, with selective layer-wise tuning and LoRA.
 
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
@@ -373,7 +322,13 @@ Beyond inference, enabling on-device training and fine-tuning allows models to a
 
 ---
 
-## New: Multimodal & Embodied Edge AI
+## Multimodal & Embodied Edge AI
+
+- [How Far Are We From On-Device VLM Inference? A Measurement Study on Edge NPUs](https://arxiv.org/abs/2610.40039) (arXiv, Oct 2026) — 6 VLMs × 3 edge platforms × 10 multimodal benchmarks; challenges softmax/linear-attention assumptions and identifies task-specific "sweet resolutions".
+- [Phase Matters: Characterizing Heterogeneous Vision-Language Inference on a Mobile SoC](https://arxiv.org/abs/2606.27906) (MobiSys Workshop 2026) — Snapdragon 8 Elite study: NPU gives 1.64× on prefill but only 1.18× on decode, with 2.52× lower energy and 10.47 °C lower steady-state temperature.
+- [Depth through Recurrence: Towards Ultra-Efficient On-Device ASR](https://arxiv.org/abs/2610.37833) (arXiv, Oct 2026) — weight-sharing recurrent blocks retain ASR model depth at a fraction of the parameters for watches and glasses.
+- [Offline AI Modules: Voice-First Offline Architecture, Hardware Reference Stack, Quantization and Benchmarking](https://arxiv.org/abs/2610.07026) (arXiv, Oct 2026) — fully offline, low-power voice-first stack with a hardware reference design and benchmarks.
+- [SSEmb: Training a Generalizable Speech Retrieval Model Using Only Automatic Speech Recognition Data](https://arxiv.org/abs/2610.17813) (arXiv, Oct 2026) — speech-to-text retrieval without spoken query–document pairs, relevant to on-device voice agents.
 
 Multimodal models (vision + language + audio) and embodied AI systems (robots, AR/VR, autonomous vehicles) running on edge devices represent the next frontier. Key challenges include fusing modalities under tight memory/power budgets.
 
@@ -394,6 +349,9 @@ Multimodal models (vision + language + audio) and embodied AI systems (robots, A
 
 ### Embodied AI & Robotics on Edge
 
+- [VLA-HWBench: Where the Time Goes When VLA Models Run on Edge Hardware](https://arxiv.org/abs/2610.34717) (arXiv, Oct 2026) — 18 open VLA models on Jetson AGX Thor / Ryzen AI Max+ with a seven-stage latency breakdown; action-generation strategy dominates model size.
+- [Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference](https://arxiv.org/abs/2608.04428) (arXiv, Aug 2026) — temporal bit-sparsity + speculative data loading + systolic bit-serial accelerator; up to 34.2× speedup over mobile GPUs.
+
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
 | [VLA-Perf: How Fast Can I Run My VLA? Demystifying VLA Inference Performance](https://arxiv.org/abs/2602.18397) (arXiv 2026) | Stanford | -- |
@@ -404,7 +362,7 @@ Multimodal models (vision + language + audio) and embodied AI systems (robots, A
 
 ---
 
-## New: Real-World Applications & Case Studies
+## Real-World Applications & Case Studies
 
 Edge AI is transforming diverse industries. This section highlights real-world deployments and application-focused research.
 
@@ -446,6 +404,9 @@ Edge AI is transforming diverse industries. This section highlights real-world d
 | [Rethinking On-Device LLM Reasoning for IoT DDoS Detection](https://arxiv.org/abs/2601.14343) (arXiv 2026) | -- | -- |
 
 ### Edge AI in 6G Networks
+
+- [From Semantic to Token Communication: The Next Paradigm for Large-Model-Driven 6G Intelligent Connectivity](https://arxiv.org/abs/2609.10714) (arXiv, Sep 2026) — proposes the LM *token* as a universal semantic unit above the bit level, enabling importance assignment and resource allocation at token granularity for AI-native 6G.
+- [LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization](https://arxiv.org/abs/2607.16066) (arXiv, Jul 2026) — tutorial/survey mapping agentic capabilities onto 5G/6G control planes, evaluation and standardization.
 
 | Title & Basic Information | Affiliation | Code |
 | ---- | ---- | ---- | 
@@ -866,12 +827,18 @@ An overview of system optimization operations. Software optimization involves de
 
 ## Modern Era: Large Models, Agents & Cognitive Systems on Edge (2023–2026)
 
+- [Large Models for Small Devices: Recent Advances and Empirical Analysis of Edge AI Deployment](https://arxiv.org/abs/2608.15693) (arXiv, Aug 2026; parts at IEEE CCNC 2026) — real-hardware study on GPU/CPU/Raspberry Pi showing that *what compresses well need not deploy well*: quantization wins for QA while pruning wins for segmentation, and pruning can inflate the deployed artifact by 21–49% by breaking k-quant super-block alignment.
+- [EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding](https://arxiv.org/abs/2608.05303) (MICRO 2026) — 28nm SW/HW co-designed accelerator that reconciles MoE with speculative decoding via prompt-wise expert reuse and depth-aware expert coalescing; up to 56.3% latency and 44.1% energy reduction.
+- [SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference](https://arxiv.org/abs/2609.21704) (ICPC2T 2026) — training-free INT4/FP8/FP16 variants derived from shared weights with query-complexity routing; 35–43% speedups within 2% accuracy.
+- [EnerInfer: Energy-Aware On-Device LLM Inference](https://arxiv.org/abs/2606.23001) (arXiv, Jun 2026) — jointly manages NPU/DDR frequency for energy efficiency, throughput and thermal comfort; up to 65% better energy efficiency on phones without QoE violations.
+- [Does Mixture-of-Experts Actually Help Inference on Consumer and Edge Hardware? An Empirical Study](https://arxiv.org/abs/2606.21428) (arXiv, Jun 2026) — on bandwidth-bound Jetson-class hardware, inference cost tracks *total* parameters rather than active ones: OLMoE trails dense baselines by ~31% at 2.1× energy per token.
+
 ![Edge AI Evolution](Figures/edge_ai_evolution.png)
 
 > **Key insight**: From 2016 TinyML (KB-level MCU) to 2026 Agentic Edge (LLM+RAG+Tools), the field has evolved through five distinct eras — each unlocking new capabilities at the edge.
 
 
-**From TinyML to Cognitive Edge Computing** — evolution of on-device intelligence. The unified architecture above (see [top of this page](#new-unified-architecture--cognitive-edge-20232026)) shows the full five-layer stack from hardware to agentic applications.
+**From TinyML to Cognitive Edge Computing** — evolution of on-device intelligence. The unified architecture above (see [top of this page](#unified-architecture--cognitive-edge-20232026)) shows the full five-layer stack from hardware to agentic applications.
 
 ![Evolution](Figures/edge_ai_evolution.png)
 
@@ -943,6 +910,14 @@ Selected papers & systems (2023–2026):
 
 ## 5. AI Agents on Edge / On-Device Agents
 
+- [Nexus: An Execution Fabric for AI Agents Across Cloud, Edge, and Devices](https://arxiv.org/abs/2610.05709) (arXiv, Oct 2026) — OpenWrt-based persistent-task runtime with run-scoped delegation, journaling and permission revocation for cross-device agent services.
+- [EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation](https://arxiv.org/abs/2610.17560) (arXiv, Oct 2026, v2) — SLM on device as primary solver with step-level RL delegation; matches pure-LLM execution while cutting inference cost up to 62% (SWE-Rebench) and 34% (Terminal-Bench 2.1).
+- [Diffusion Language Models for Mobile Edge Agentic AI: Foundations, Applications, and Challenges](https://arxiv.org/abs/2609.04778) (arXiv, Sep 2026) — survey of non-autoregressive DLMs for edge agents (parallel refinement, early exit, quality–latency elasticity).
+- [Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution](https://arxiv.org/abs/2610.17816) (arXiv, Oct 2026) — EC²-Bench: 128 executable long-horizon tasks jointly measuring performance, cloud cost and privacy exposure (see also [Section 5](#5-ai-agents-on-edge--on-device-agents)).
+- [Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite](https://arxiv.org/abs/2606.11257) (arXiv, Jun 2026) — full embedding / retrieval / reranking / generation pipeline on the Hexagon NPU, benchmarked against CPU and GPU for energy and latency.
+- [Lightweight Chunk Selection for Mobile Retrieval-Augmented Generation](https://arxiv.org/abs/2608.03148) (arXiv, Aug 2026) — retains only the most useful retrieved chunk to cut mobile prefill compute and memory.
+- [MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches](https://arxiv.org/abs/2610.22579) (arXiv, Oct 2026) — moves precomputed RAG KV caches into storage to remove the edge prefill bottleneck over a narrow interconnect.
+
 Running autonomous agents (tool use, memory, planning) with LLMs entirely or partially on edge devices.
 
 - Tool calling & function calling under memory constraints.
@@ -976,6 +951,8 @@ Key works & projects:
 - [Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution](https://arxiv.org/abs/2610.17816) (arXiv 2026) — EC²-Bench (EC2-Bench): 128 executable digital-workspace agent tasks jointly measuring task performance, cloud cost and privacy exposure to compare edge–cloud collaboration strategies.
 
 ## 6. Frameworks & Runtimes for Edge / On-Device Deployment (2023–2026)
+
+**Generative inference runtimes.** Google's [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) (cross-platform orchestration for on-device LLM inference with GPU/NPU acceleration) and Microsoft's [ONNX Runtime GenAI](https://github.com/microsoft/onnxruntime-genai) (generative-AI loop, logits processing, sampling and KV-cache management for ONNX models across CPU/GPU/NPU backends).
 
 Production-grade stacks for shipping models (including LLMs) to edge:
 
@@ -1025,6 +1002,8 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 
 ## 8. Benchmarks, Datasets & Tools (2023–2026 focus)
 
+- [LLM Inference at the Edge: Mobile, NPU, and GPU Performance Efficiency Trade-offs Under Sustained Load](https://arxiv.org/abs/2603.23640) (arXiv, Mar 2026, v2 Jun 2026) — Qwen2.5-1.5B INT4 across RPi 5 + Hailo-10H, Galaxy S24 Ultra, iPhone 16 Pro and RTX 4050; thermal throttling supersedes peak compute on phones.
+
 ![Edge Benchmark Comparison](Figures/edge_benchmark_comparison.png)
 
 - [MLPerf Inference Edge / Tiny](https://mlcommons.org/en/inference-edge/)
@@ -1067,7 +1046,7 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 - [Energy Efficient Software Hardware CoDesign for ML: From TinyML to LLMs](https://arxiv.org/abs/2603.23668) (ASPLOS EMC2 2026).
 - [A Survey of Self-Evolving Agents: On Path to Artificial Super Intelligence](https://arxiv.org/abs/2507.21046) (arXiv 2025).
 
-**Added in the Nov 2026 refresh** (full annotations in [2026 Additions](#new-2026-additions-verified-nov-2026)):
+**Related topic surveys:**
 - [What changes after deployment? A survey on On-device Learning in TinyML](https://arxiv.org/abs/2605.31226) (arXiv 2026).
 - [Protecting On-Device AI Inference: A Systematic Review of Attacks and Defence Mechanisms](https://arxiv.org/abs/2605.29450) (arXiv 2026).
 - [LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey](https://arxiv.org/abs/2607.16066) (arXiv 2026).
@@ -1076,9 +1055,8 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 
 ---
 
-> **Nov 2026 refresh:** 39 verified papers are grouped by theme in [2026 Additions](#new-2026-additions-verified-nov-2026), and 30+ official repositories / model reports are indexed in [On-Device Model Families & Tool Repository Index](#new-on-device-model-families--tool-repository-index). The highlights below are preserved unchanged for continuity.
 
-**2024–2026 Top-tier Highlights (NeurIPS/ICLR/ICML/SOSP/HPCA/MICRO/ASPLOS/MobiCom/EMNLP/ECCV/ACL + IEEE TMC/IoTJ)** (added for completeness while preserving all legacy content):
+**2024–2026 Top-tier Highlights (NeurIPS/ICLR/ICML/SOSP/HPCA/MICRO/ASPLOS/MobiCom/EMNLP/ECCV/ACL + IEEE TMC/IoTJ)**:
 
 **Systems/Serving & Optimization** (see detailed lists in sections 4 & 6):
 - PowerInfer-2, EdgeLLM, SwapMoE, Marlin, EAGLE-2, QSpec, MobileQuant, FastTTS (ASPLOS'26), DUAL-BLADE (ICDCS'26), FourierCompress, SLICE, EPARA, GELATO, CSGO, DiSCo, CLONE.
@@ -1110,7 +1088,7 @@ Production-grade stacks for shipping models (including LLMs) to edge:
 - Blockchain-based decentralized edge AI platforms (PolyLink)
 - Emotion-aware strategic agents for edge negotiation
 
-**Emerging Trends identified in the Nov 2026 refresh** (see [2026 Additions](#new-2026-additions-verified-nov-2026) for papers):
+**Emerging research directions:**
 - **Long-horizon edge agents with selective cloud delegation** — step-level RL routing and edge–cloud benchmarks that trade off performance, cloud cost and privacy (EdgeWise, EC²-Bench, Nexus).
 - **Energy / thermal-aware on-device inference** — NPU/DDR frequency control and thermally-aware federated fine-tuning replace pure latency optimization (EnerInfer, Thermo-FL).
 - **Formal security boundaries for TEE-shielded on-device LLMs** — obfuscation primitives, provable attacks and bilateral defenses (CCS'26, NeurIPS'26).
@@ -1130,10 +1108,10 @@ Additions are welcome. To keep the list verifiable:
 - Link the **primary source** (arXiv abstract page, DOI, or official repository) rather than a secondary aggregator.
 - Check title, authors, year and venue against that source; exclude withdrawn preprints.
 - Prefer official GitHub repositories for code and verify they resolve before linking.
-- Place an entry in its matching thematic section (or in [2026 Additions](#new-2026-additions-verified-nov-2026) for recent work), and keep one canonical entry per paper.
+- Place an entry in its matching thematic section and keep one canonical entry per paper.
 - Avoid placeholder identifiers and publisher home-page links; explicitly flag publisher pages that are still unverified.
 
-The November 2026 refresh re-validated every arXiv identifier in this list through the arXiv API and every newly added repository through `git ls-remote`; please preserve that standard in new pull requests.
+Use the arXiv API and `git ls-remote` to verify primary identifiers and repository reachability; record the date and scope of each audit.
 
 ---
 

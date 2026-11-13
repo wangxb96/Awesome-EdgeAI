@@ -105,6 +105,15 @@ not establish system or device efficiency. The helper **summarizes supplied
 numeric fields**; it does not integrate power, verify attribution/window alignment,
 validate scoring, or infer energy when these records are missing.
 
+For a separately collected task-episode ledger, let `A` be all attempted episodes,
+`S` verified successes and `E_i` the energy of episode `i` under the declared
+boundary. Mean energy per attempt is `sum_all(E_i) / A`. Amortized energy per
+success is `sum_all(E_i) / S` for `S > 0`, and is undefined when `S = 0`.
+Both numerators include failed episodes and internal retries. If reporting
+`sum_successful(E_i) / S`, label it a successful-episode conditional mean;
+it excludes failure energy. These episode estimands require a separate analysis:
+the request-level helper does not construct them from constituent requests.
+
 ## 5. Descriptive helper and optional repetition intervals
 
 After collecting new observations:

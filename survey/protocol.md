@@ -183,7 +183,7 @@ manuscript-input count, not a value computed by these link-audit scripts.
 | Source/query concepts and retained-census limitations | `survey/protocol.md` (this file) |
 | E1/E2/E3 grading definitions | Section 3 of this protocol and the main study-level matrix |
 | Frozen retained-link counts | `survey/corpus_manifest.json`, `survey/repos_manifest.json` at `82b6110` |
-| Living literature refresh, distinct from the frozen census | `README.md` → *New: 2026 Additions* |
+| Topic-organized literature, distinct from the frozen census | `README.md` → model, agent, hardware, application and survey sections |
 | On-device model families and 30+ official tool repositories | `README.md` → *On-Device Model Families & Tool Repository Index* |
 | Exploratory historical benchmark limitations | `README.md` → *[submission identifier removed] Official Repository* |
 | Literature-link and repository-link audits | `survey/verify_corpus.py`, `survey/verify_repos.py` |

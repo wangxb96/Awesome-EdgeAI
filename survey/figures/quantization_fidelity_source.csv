@@ -1,0 +1,4 @@
+benchmark,shots,W16A16_EM_pct,W4A16_EM_pct,W4A4_EM_pct
+PIQA,10,78.6,77.5,75.6
+MBPP,0,42.0,41.5,30.5
+GSM8K,8,79.0,73.4,54.2

@@ -1,0 +1,3 @@
+# Tested figure-rebuild environment; audits need only the standard library.
+matplotlib==3.11.0
+numpy==2.5.1

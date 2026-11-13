@@ -1,0 +1,10 @@
+example_kind,run_id,model,context,request_id,batch_id,repetition_id,status,failure_reason,correct,request_latency_ms,ttft_ms,generation_time_s,tok_per_s,j_per_tok
+synthetic_format_only,SYNTHETIC_DEMO,SYNTHETIC_NOT_A_MODEL,512,r1,b1,UNRECORDED,ok,,1,100,20,0.08,100,
+synthetic_format_only,SYNTHETIC_DEMO,SYNTHETIC_NOT_A_MODEL,512,r2,b1,UNRECORDED,ok,,0,140,20,0.12,100,
+synthetic_format_only,SYNTHETIC_DEMO,SYNTHETIC_NOT_A_MODEL,512,r3,b1,UNRECORDED,timeout,synthetic_timeout,,1000,,,,
+synthetic_format_only,SYNTHETIC_DEMO,SYNTHETIC_NOT_A_MODEL,512,r4,b2,UNRECORDED,ok,,1,160,20,0.14,100,
+synthetic_format_only,SYNTHETIC_DEMO,SYNTHETIC_NOT_A_MODEL,512,r5,b2,UNRECORDED,empty,synthetic_empty,,80,,,,
+synthetic_format_only,SYNTHETIC_DEMO,SYNTHETIC_NOT_A_MODEL,512,r6,b2,UNRECORDED,unparseable,synthetic_parse_failure,,90,,,,
+synthetic_format_only,SYNTHETIC_DEMO,SYNTHETIC_NOT_A_MODEL,512,r7,b3,UNRECORDED,ok,,1,180,20,0.16,100,
+synthetic_format_only,SYNTHETIC_DEMO,SYNTHETIC_NOT_A_MODEL,512,r8,b3,UNRECORDED,incomplete,synthetic_interruption,,500,,,,
+synthetic_format_only,SYNTHETIC_DEMO,SYNTHETIC_NOT_A_MODEL,512,r9,b4,UNRECORDED,ok,,1,120,20,0.1,100,

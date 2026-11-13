@@ -1,3 +1,9 @@
 .DS_Store
 __pycache__/
 *.py[cod]
+survey/supplement/*.aux
+survey/supplement/*.log
+survey/supplement/*.out
+survey/supplement/*.toc
+survey/supplement/*.synctex.gz
+request_summary_local.json

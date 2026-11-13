@@ -89,13 +89,17 @@ The manuscript's Supplement S1 retains incomplete historical server summaries as
 
 ## Artifact map
 
+The [public supplement](supplement/[submission identifier removed]-supp.pdf), [source/build helper](supplement/README.md), [bibliographic database](references.bib) and all files in the [public inventory](public_artifacts.json) are distributed at [tag `supplement-2026-11-13`](https://github.com/wangxb96/Awesome-EdgeAI/tree/supplement-2026-11-13). Run `python3 survey/check_public_artifacts.py` for local file/dependency closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
+
 | Scientific purpose | Location |
 |---|---|
 | Task-to-resource and cross-tier argument | [Overview, placement and coupling diagrams](figures/README.md) |
+| Published quantization scores | [QSpec replot](figures/quantization_fidelity.py), [reported source values](figures/quantization_fidelity_source.csv) |
 | Analytical weight/KV illustration | [Source](figures/memory_budget.py), [CSV](figures/memory_budget_analytical.csv) |
 | Communication/state boundaries | [Collaboration diagram](figures/collaboration_patterns.pdf) |
 | Failure-aware request/episode accounting | [Workflow diagram](figures/workflow_evaluation.pdf), [benchmark protocol](benchmark_protocol.md) |
 | Permissioned assistant example | [Editable source](figures/assistant_workflow.py), [diagram](figures/assistant_workflow.pdf) |
+| Request-log format and expected output | [Clearly labelled synthetic fixture](examples/README.md), not a measurement archive |
 | Primary model and runtime artifacts | [Models and runtimes](../README.md#models-and-runtimes) |
 
 The main manuscript retains the scientific argument, representative evidence and acceptance criteria. Extended identifiers, configuration locators, reporting schemas and prospective traces are supplementary detail. Missing historical search and measurement records remain limitations rather than reconstructed evidence.

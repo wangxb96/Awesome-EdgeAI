@@ -1,0 +1,131 @@
+{
+  "generated_by": "survey/compute_ci.py",
+  "source": "survey/examples/request_records_synthetic.csv",
+  "policy": "All logged attempts define denominators. Numeric means are conditional on status=ok; this is not the historical whole-batch filter.",
+  "coverage_limit": "Counts cover logged attempts only. The logger must retain every attempted request and interrupted batch; omitted attempts cannot be detected or reconstructed.",
+  "energy_limit": "Provided j_per_tok values are summarized, not validated. Power/device/window integration and scoring are outside this helper.",
+  "bootstrap": {
+    "unit": null,
+    "resamples": 0,
+    "seed": null,
+    "estimand": "mean of independent repetition-specific means, equally weighted; no percentile CI or independence validation"
+  },
+  "audit": {
+    "attempted_tasks": 9,
+    "completed_tasks": 5,
+    "failed_tasks": 4,
+    "attempted_batches": 4,
+    "completed_batches": 1,
+    "failed_batches": 3,
+    "status_counts": {
+      "empty": 1,
+      "incomplete": 1,
+      "ok": 5,
+      "timeout": 1,
+      "unparseable": 1
+    },
+    "failure_reasons": {
+      "synthetic_empty": 1,
+      "synthetic_interruption": 1,
+      "synthetic_parse_failure": 1,
+      "synthetic_timeout": 1
+    }
+  },
+  "groups": [
+    {
+      "run_id": "SYNTHETIC_DEMO",
+      "model": "SYNTHETIC_NOT_A_MODEL",
+      "context": "512",
+      "counts": {
+        "attempted_tasks": 9,
+        "completed_tasks": 5,
+        "failed_tasks": 4,
+        "attempted_batches": 4,
+        "completed_batches": 1,
+        "failed_batches": 3,
+        "status_counts": {
+          "empty": 1,
+          "incomplete": 1,
+          "ok": 5,
+          "timeout": 1,
+          "unparseable": 1
+        },
+        "failure_reasons": {
+          "synthetic_empty": 1,
+          "synthetic_interruption": 1,
+          "synthetic_parse_failure": 1,
+          "synthetic_timeout": 1
+        }
+      },
+      "unconditional_task_success": {
+        "successful_tasks": 4,
+        "attempted_tasks": 9,
+        "rate": 0.4444444444444444
+      },
+      "conditional_status_ok_request_metrics": {
+        "correct": {
+          "n_observed": 5,
+          "n_missing": 0,
+          "mean": 0.8,
+          "std": 0.4472135954999579,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "request_latency_ms": {
+          "n_observed": 5,
+          "n_missing": 0,
+          "mean": 140.0,
+          "std": 31.622776601683793,
+          "min": 100.0,
+          "max": 180.0
+        },
+        "ttft_ms": {
+          "n_observed": 5,
+          "n_missing": 0,
+          "mean": 20.0,
+          "std": 0.0,
+          "min": 20.0,
+          "max": 20.0
+        },
+        "generation_time_s": {
+          "n_observed": 5,
+          "n_missing": 0,
+          "mean": 0.12,
+          "std": 0.0316227766016838,
+          "min": 0.08,
+          "max": 0.16
+        },
+        "tok_per_s": {
+          "n_observed": 5,
+          "n_missing": 0,
+          "mean": 100.0,
+          "std": 0.0,
+          "min": 100.0,
+          "max": 100.0
+        },
+        "j_per_tok": {
+          "n_observed": 0,
+          "n_missing": 5,
+          "mean": null,
+          "std": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "request_latency_percentiles": {
+        "method": "empirical nearest-rank p95 from request_latency_ms; no p95_ms input used",
+        "recorded_elapsed_all_statuses": {
+          "n": 9,
+          "n_missing": 0,
+          "p95_ms": 1000.0
+        },
+        "conditional_status_ok": {
+          "n": 5,
+          "n_missing": 0,
+          "p95_ms": 180.0
+        },
+        "censoring_note": "Timeout/incomplete elapsed values are censoring bounds, not completed-response latencies. No unconditional completion-latency p95 is inferred."
+      }
+    }
+  ]
+}

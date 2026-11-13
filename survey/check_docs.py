@@ -23,8 +23,7 @@ def anchors(path):
     return result
 
 def main():
-    paths=[ROOT/'README.md',ROOT/'CONTRIBUTING.md',
-           ROOT/'survey/protocol.md',ROOT/'survey/benchmark_protocol.md',ROOT/'survey/figures/README.md']
+    paths=[ROOT/'README.md',ROOT/'CONTRIBUTING.md',*sorted((ROOT/'survey').rglob('*.md'))]
     failures=[];count=0
     for path in paths:
         source=visible(path.read_text())

@@ -1,6 +1,6 @@
 # Benchmark reporting protocol - [submission identifier removed]
 
-Protocol revision 11 November 2026. This document specifies **future runs**;
+Reporting contract established 11 November 2026; public example and file navigation updated 13 November 2026. This document specifies **future runs**;
 it contains no measurements and cannot reconstruct the historical server run.
 Use the Git commit containing the protocol and helper as the analysis revision.
 The separate census snapshot `82b6110` anchors archived link manifests only;
@@ -22,7 +22,7 @@ missing historical observations or confidence intervals.
 ## 2. Request log and provenance
 
 Write one row per **attempted task request**, including failed and interrupted
-requests, to `per_trial.csv`. Retries receive distinct request IDs. Counts are
+requests, to your newly collected `per_trial.csv`. A [header-only template](examples/request_log_template.csv) is supplied; it contains no observations. This user-created log is not a distributed measurement file. Retries receive distinct request IDs. Counts are
 attempt counts, not unique user goals or completed multi-request workflows.
 Log every attempt before executing it and finalize its status even when a batch
 is interrupted. Include the expected task/batch roster in the campaign manifest
@@ -116,7 +116,17 @@ the request-level helper does not construct them from constituent requests.
 
 ## 5. Descriptive helper and optional repetition intervals
 
-After collecting new observations:
+For a runnable format check, use the [synthetic input](examples/request_records_synthetic.csv) and compare with the [expected output](examples/request_summary_synthetic.json):
+
+```bash
+python3 survey/compute_ci.py \
+  --input survey/examples/request_records_synthetic.csv \
+  --out request_summary_local.json
+```
+
+The nine invented requests have five status-ok completions, four correct answers and four failures. Thus the unconditional request-attempt success rate is `4/9`, while the conditional status-ok correctness mean is `4/5`. Power and energy are absent. These records exercise the schema and failure denominators only; they do not establish model quality, throughput, energy, uncertainty or experimental independence. Legacy JSON keys containing `task` count request attempts, not the task episodes defined above. See [example notes](examples/README.md).
+
+After collecting new observations in your own `per_trial.csv`:
 
 ```bash
 python3 survey/compute_ci.py --input per_trial.csv --out ci_report.json

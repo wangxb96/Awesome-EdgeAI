@@ -106,6 +106,7 @@ The [analytical memory illustration](survey/figures/memory_budget.pdf) separates
 - [DUAL-BLADE: Dual-Path NVMe-Direct KV-Cache Offloading for Edge LLM Inference](https://arxiv.org/abs/2604.26557) (arXiv 2026) — Storage-backed KV transfer and edge execution.
 - [MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches](https://arxiv.org/abs/2610.22579) (arXiv 2026) — Precomputed RAG state and storage/compute interaction.
 - [Lightweight Chunk Selection for Mobile Retrieval-Augmented Generation](https://arxiv.org/abs/2608.03148) (arXiv 2026) — Selection of retrieved context before mobile generation.
+- [WERR: Fractal Neural Synthesis for Zero-Storage Cognitive Reflex](https://doi.org/10.5281/zenodo.22867426) (Zenodo 2026) — Zero-storage procedural parameter derivation from non-linear dynamical boundaries and deterministic sub-2ms System-1 decision reflexes for air-gapped edge devices.
 
 ### Precision and model structure
 
@@ -229,6 +230,7 @@ Running a model on an edge device and using an LLM to control a network are comp
 - [AdaDINO: Context-Adaptive DINO-Distilled Vision Foundation Models for Efficient Open-Vocabulary Edge Inference](https://arxiv.org/abs/2604.15622) (arXiv 2026) — Context-adaptive visual inference.
 - [Octo: An Open-Source Generalist Robot Policy](https://arxiv.org/abs/2405.12213) (arXiv 2024) — Generalist robot policy; validate action timing and physical safety for each target.
 - [π_0: A Vision-Language-Action Flow Model for General Robot Control](https://arxiv.org/abs/2410.24164) (arXiv 2024) — Vision-language-action modeling and continuous control.
+- [WerreduR: Procedural Fractal Cognitive Reflex Engine for Adaptive Educational AI](https://doi.org/10.5281/zenodo.23128224) (Zenodo 2026) — 24-byte zero-storage difficulty controller and 30.4 μs edge reflex engine with Lean 4 formal verification proofs.
 
 A healthcare-oriented model or a smart-home prototype is not, by itself, a validated clinical or production deployment. State the environment, permitted actions, human confirmation and failure handling. The [evaluation guide](#evaluation-and-trust) distinguishes these outcomes from token-level quality and runtime speed.
 

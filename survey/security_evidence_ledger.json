@@ -1,0 +1,48 @@
+{
+  "scope": "Two C4 security records supplement, rather than enlarge, the seventeen performance-matrix records. Source and implementation inspection, not an independent experiment.",
+  "inspection_date": "2026-11-17",
+  "records": [
+    {
+      "study": "InjecAgent",
+      "grade": "E2",
+      "publication": "Findings of ACL 2024, pp.10471–10506",
+      "primary_source": "https://aclanthology.org/2024.findings-acl.624/",
+      "artifact_repository": "https://github.com/uiuc-kang-lab/InjecAgent",
+      "inspection_revision": "f19c9f2c79a41046eb13c03c51a24c567a8ffa07",
+      "threat_boundary": "Attacker-controlled tool content redirects a tool-integrated agent into harmful actions or data exfiltration.",
+      "observed_result": "The primary study reports susceptibility under its model/prompt/attack settings. The released benchmark defines 1054 test cases, 17 user tools and 62 attacker tools; these are suite sizes, not a mobile risk rate.",
+      "visible_entrypoints": [
+        "data/test_cases_dh_base.json",
+        "data/test_cases_ds_base.json",
+        "src/evaluate_prompted_agent.py",
+        "src/evaluate_finetuned_agent.py",
+        "src/output_parsing.py"
+      ],
+      "replication_support": "Task records, agent prompting, model adapters, parsing and evaluation scripts are visible.",
+      "missing_or_unverified": "External model endpoints and exact paper-era responses/configurations were not rerun or established as invariant.",
+      "mobile_transfer_limit": "No matched phone execution, local tool authorization, or complete-task energy measurement is established.",
+      "independent_rerun": "not performed"
+    },
+    {
+      "study": "AgentDojo",
+      "grade": "E2",
+      "publication": "NeurIPS 2024; inspected author version arXiv:2406.13352v3",
+      "primary_source": "https://arxiv.org/abs/2406.13352v3",
+      "artifact_repository": "https://github.com/ethz-spylab/agentdojo",
+      "inspection_revision": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+      "threat_boundary": "Untrusted tool outputs attempt to redirect a multi-step agent; utility and adversarial success have separate task checks.",
+      "observed_result": "The primary study reports benign-task failures and incomplete protection across tested attacks and defenses. Its published environment has 97 user tasks and 629 security test cases; counts are not a common denominator with InjecAgent.",
+      "visible_entrypoints": [
+        "src/agentdojo/scripts/benchmark.py",
+        "src/agentdojo/task_suite/task_suite.py",
+        "src/agentdojo/agent_pipeline/tool_execution.py",
+        "src/agentdojo/agent_pipeline/pi_detector.py",
+        "src/agentdojo/attacks/attack_registry.py"
+      ],
+      "replication_support": "Suite/task definitions, attack/defense options and benchmark entry point are visible.",
+      "missing_or_unverified": "Model/API drift and exact paper-era suite/environment behavior remain unverified; no independent rerun.",
+      "mobile_transfer_limit": "API-backed tool environments do not establish permission-enforcement or energy guarantees on a client device.",
+      "independent_rerun": "not performed"
+    }
+  ]
+}

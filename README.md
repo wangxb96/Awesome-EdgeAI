@@ -336,7 +336,7 @@ survey/
   *_protocol.md, protocol.md  Scope and measurement contracts
 ```
 
-Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. The repository includes the [bibliographic database](survey/references.bib), figure inputs, protocols and runnable format examples. Editable manuscript sources and author-local build files are not distributed. The current public artifact edition is pinned to [tag `public-artifacts-2026-11-13-v5`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-13-v5).
+Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. The repository includes the [bibliographic database](survey/references.bib), figure inputs, protocols and runnable format examples. Editable manuscript sources and author-local build files are not distributed. The current public artifact edition is pinned to [tag `public-artifacts-2026-11-17-v6`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-17-v6).
 
 | Artifact | Purpose |
 |---|---|
@@ -353,7 +353,7 @@ Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) fo
 | [Literature audit](survey/verify_corpus.py) / [repository audit](survey/verify_repos.py) | Check the linked resources in this README |
 | [Editable figure catalogue](survey/figures/README.md) | Sources, vector exports, analytical data and rebuild commands |
 
-The manuscript's retained-link census is pinned to [commit `82b6110`](https://github.com/wangxb96/Awesome-EdgeAI/tree/82b6110), with 145 arXiv identifiers, 137 title-audited labels and 123 distinct recorded repository URL-root strings (122 after case folding). These are link units, not a study-screening flow; normalization does not resolve redirects or aliases. This living README and its `current_*` manifests are separate from that frozen snapshot. The [protocol](survey/protocol.md#reproduce-the-frozen-census) explains how to reproduce it.
+The manuscript's retained-link census is pinned to [commit `3dd39bd`](https://github.com/wangxb96/Awesome-EdgeAI/tree/3dd39bd), with 145 arXiv identifiers, 137 title-audited labels and 123 distinct recorded repository URL-root strings (122 after case folding). These are link units, not a study-screening flow; normalization does not resolve redirects or aliases. This living README and its `current_*` manifests are separate from that frozen snapshot. The [protocol](survey/protocol.md#reproduce-the-frozen-census) explains how to reproduce it. A separate [dated identification update](survey/search_update_2026-11-17/README.md) preserves bounded queries and screening decisions, and the [security ledger](survey/security_evidence_ledger.json) qualifies the C4 examples.
 
 For this README:
 

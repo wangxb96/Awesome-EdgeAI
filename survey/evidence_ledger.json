@@ -23,7 +23,13 @@
       "missing_or_unverified": "Historical checkpoints/backend and paper-era speed figures not reproduced. Current TinyChat uses later optimization and initializes timing models; grade covers the qualitative quality/execution mechanism, not joint historical quality/timing or a numerical speedup.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Quality and speed separate; no generic phone-agent validation.",
-      "result_to_artifact_mapping": "Llama-2 WikiText-2 search/export/evaluation and W4A16/W16A16 separate timing paths."
+      "result_to_artifact_mapping": "Llama-2 WikiText-2 search/export/evaluation and W4A16/W16A16 separate timing paths.",
+      "selection_role": {
+        "control": "weight precision",
+        "execution_tier": "supported GPU",
+        "outcome_type": "quality proxy and separate execution",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 2,
@@ -44,7 +50,13 @@
       "missing_or_unverified": "Public acquisition/conversion/aggregation route for the quoted sustained battery energy was not established. export.py profiles 100 inferences and latency; it does not identify that energy path. The combined quality/latency/energy row therefore takes E2.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Last-token quality and forward-pass cost do not establish full agent energy.",
-      "result_to_artifact_mapping": "LAMBADA and device profiling identified; Table6 energy acquisition/aggregation path unestablished."
+      "result_to_artifact_mapping": "LAMBADA and device profiling identified; Table6 energy acquisition/aggregation path unestablished.",
+      "selection_role": {
+        "control": "activation precision",
+        "execution_tier": "phone HTP",
+        "outcome_type": "last-token proxy and sustained forward cost",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 3,
@@ -63,7 +75,13 @@
       "missing_or_unverified": "Matched standalone FA1 comparator behind the quoted approximately 2x comparison was not established. The xformers.f branch is a FA2 wrapper; the inspected v1.0.9 benchmark uses different shapes. E2 qualifies the combined row, not a claim that numerical correctness tests are absent.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Kernel speed is not cognition or mobile KV capacity.",
-      "result_to_artifact_mapping": "Correctness/FA2 shape tests identified; matched FA1 comparator for imported 2x result unestablished."
+      "result_to_artifact_mapping": "Correctness/FA2 shape tests identified; matched FA1 comparator for imported 2x result unestablished.",
+      "selection_role": {
+        "control": "attention execution",
+        "execution_tier": "server GPU",
+        "outcome_type": "numerical correctness and kernel rate",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 4,
@@ -83,7 +101,13 @@
       "missing_or_unverified": "Original reported comparison baseline/workload/latency-constraint linkage remains unverified. Further v0.2.0 benchmark inspection identifies generic serving and TGI/ShareGPT paths but not the complete paper comparator route; neither software age nor modern engine availability closes this gap.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Server concurrency does not establish single-client mobile gain.",
-      "result_to_artifact_mapping": "Generic serving interface identified; paper baseline/workload linkage unestablished."
+      "result_to_artifact_mapping": "Generic serving interface identified; paper baseline/workload linkage unestablished.",
+      "selection_role": {
+        "control": "KV allocation",
+        "execution_tier": "server GPU",
+        "outcome_type": "serving throughput",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 5,
@@ -99,7 +123,13 @@
       "missing_or_unverified": "Matching smartphone runtime/evaluation artifact not established; desktop PowerInfer is a different implementation.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "No independent task-quality retention or general phone compatibility established.",
-      "result_to_artifact_mapping": "Paper setting identified; matching phone runtime absent from inspected evidence."
+      "result_to_artifact_mapping": "Paper setting identified; matching phone runtime absent from inspected evidence.",
+      "selection_role": {
+        "control": "sparse activation/offload",
+        "execution_tier": "smartphone-oriented",
+        "outcome_type": "decode efficiency",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 6,
@@ -120,7 +150,13 @@
       "missing_or_unverified": "Dedicated full VLM benchmark-scoring or paper-result driver not established in inspected complete tree.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Apple demo/export is distinct from paper M1 measurements.",
-      "result_to_artifact_mapping": "Inference/export identified; benchmark scoring route unestablished."
+      "result_to_artifact_mapping": "Inference/export identified; benchmark scoring route unestablished.",
+      "selection_role": {
+        "control": "vision architecture",
+        "execution_tier": "device-oriented",
+        "outcome_type": "visual tasks and prefill",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 7,
@@ -140,7 +176,13 @@
       "missing_or_unverified": "README delegates paper benchmarks to separate harnesses; complete six-task scoring pipeline and trained tensor weights not found in inspected repo/supplement. Primary Table1 task averages do not fully reconcile with TablesB5-B7; exact scorer variants are incompletely specified. No revised aggregate is inferred.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Adaptation quality is distinct from phone latency/energy.",
-      "result_to_artifact_mapping": "Training identified; six-task scorer route and aggregate reconciliation unresolved."
+      "result_to_artifact_mapping": "Training identified; six-task scorer route and aggregate reconciliation unresolved.",
+      "selection_role": {
+        "control": "alignment/token importance",
+        "execution_tier": "model evaluation",
+        "outcome_type": "heterogeneous task outcomes",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 8,
@@ -160,7 +202,13 @@
       "missing_or_unverified": "QSpec-specific paper task-fidelity table driver not established; inherited generic benchmarks do not supply this correspondence.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Defined GPU verifier precision is not phone-energy evidence.",
-      "result_to_artifact_mapping": "Throughput demo identified; paper task-score driver unestablished."
+      "result_to_artifact_mapping": "Throughput demo identified; paper task-score driver unestablished.",
+      "selection_role": {
+        "control": "complementary draft precision",
+        "execution_tier": "server GPU",
+        "outcome_type": "task proxy and speculative execution",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 9,
@@ -180,7 +228,13 @@
       "missing_or_unverified": "StreamEval dataset/evaluation remains unreleased in README; it is not the basis of this E1 streaming-perplexity result.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Stable generation does not retain every evicted fact.",
-      "result_to_artifact_mapping": "Named language-model data, cache/window comparator and perplexity scorer identified; excludes unreleased StreamEval."
+      "result_to_artifact_mapping": "Named language-model data, cache/window comparator and perplexity scorer identified; excludes unreleased StreamEval.",
+      "selection_role": {
+        "control": "bounded context",
+        "execution_tier": "server GPU",
+        "outcome_type": "streaming perplexity",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 10,
@@ -203,7 +257,13 @@
       "missing_or_unverified": "April 2024 code and earlier-title citation are not proof of every later archival setting.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "External memory/retrieval costs need target-device measurement.",
-      "result_to_artifact_mapping": "Named task datasets, model/retrieval/comparison configurations and scorers identified."
+      "result_to_artifact_mapping": "Named task datasets, model/retrieval/comparison configurations and scorers identified.",
+      "selection_role": {
+        "control": "retrieved context",
+        "execution_tier": "server GPU",
+        "outcome_type": "distant-fact task proxy",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 11,
@@ -224,7 +284,13 @@
       "missing_or_unverified": "No independent execution or live planning success is established. External generative-agent traces were not retrieved; those are not the E1 basis. Exact complete historical environment remains unverified.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Replay efficiency does not validate live planning or phone energy.",
-      "result_to_artifact_mapping": "Bundled fixed ReAct trace, Llama-2-7B commands and SGLang/vLLM comparison drivers identified."
+      "result_to_artifact_mapping": "Bundled fixed ReAct trace, Llama-2-7B commands and SGLang/vLLM comparison drivers identified.",
+      "selection_role": {
+        "control": "structured call execution",
+        "execution_tier": "server GPU",
+        "outcome_type": "replayed agent-call efficiency",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 12,
@@ -240,7 +306,13 @@
       "missing_or_unverified": "Matching official implementation was not established.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Link/source-node dependent; no complete agent task measurement.",
-      "result_to_artifact_mapping": "Physical experiment described; matching official code unestablished."
+      "result_to_artifact_mapping": "Physical experiment described; matching official code unestablished.",
+      "selection_role": {
+        "control": "layer partition",
+        "execution_tier": "Jetson/server",
+        "outcome_type": "perplexity and request cost",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 13,
@@ -256,7 +328,13 @@
       "missing_or_unverified": "Historical code revision/API/model/tool/prompts matching published outcomes not established.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Framework availability is not device cost or action safety.",
-      "result_to_artifact_mapping": "Framework available; matching external-model/task experiment path incomplete."
+      "result_to_artifact_mapping": "Framework available; matching external-model/task experiment path incomplete.",
+      "selection_role": {
+        "control": "agent orchestration",
+        "execution_tier": "API-backed",
+        "outcome_type": "task outcome",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 14,
@@ -278,7 +356,13 @@
       "missing_or_unverified": "Default driver selects 1.5B/1.5B AIME subset; external downloads and full-grid correspondence not executed/verified. GitHub library is separate and incomplete.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Beam token-length/time goodput is not successful goals/s or phone energy.",
-      "result_to_artifact_mapping": "Paper-linked archive maps models/datasets, baseline and FastTTS configurations, precise-goodput aggregation and accuracy scorer; default subset requires explicit config selection."
+      "result_to_artifact_mapping": "Paper-linked archive maps models/datasets, baseline and FastTTS configurations, precise-goodput aggregation and accuracy scorer; default subset requires explicit config selection.",
+      "selection_role": {
+        "control": "test-time scaling",
+        "execution_tier": "server GPU",
+        "outcome_type": "reasoning task and goodput",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 15,
@@ -294,7 +378,13 @@
       "missing_or_unverified": "Matching implementation not established.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "64GB M4Pro Mac mini is not a phone; unrestricted action safety untested.",
-      "result_to_artifact_mapping": "Author configuration inspected; matching implementation unestablished."
+      "result_to_artifact_mapping": "Author configuration inspected; matching implementation unestablished.",
+      "selection_role": {
+        "control": "agent-pipeline allocation",
+        "execution_tier": "workstation",
+        "outcome_type": "deterministic-tool workflow",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 16,
@@ -316,7 +406,13 @@
       "missing_or_unverified": "Learned SFT/GRPO adapter tensors and exact paper-run traces/results absent from inspected tree; trained-policy/original-run linkage unverified.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Controller deadlines/energy and decentralization are separate unvalidated transfers.",
-      "result_to_artifact_mapping": "Simulator/training/evaluation present; learned adapter and original-run linkage unestablished."
+      "result_to_artifact_mapping": "Simulator/training/evaluation present; learned adapter and original-run linkage unestablished.",
+      "selection_role": {
+        "control": "network cache control",
+        "execution_tier": "network simulation",
+        "outcome_type": "network utility",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     },
     {
       "order": 17,
@@ -332,8 +428,15 @@
       "missing_or_unverified": "Not archival replication; task/device populations differ, table context1024 versus prose512prefill+32decode; no uncertainty/task energy.",
       "independent_rerun": "not performed",
       "mobile_transfer_limit": "Function-calling component is not unrestricted autonomous-agent validation.",
-      "result_to_artifact_mapping": "First-party task and device profiles have different populations and incomplete context correspondence."
+      "result_to_artifact_mapping": "First-party task and device profiles have different populations and incomplete context correspondence.",
+      "selection_role": {
+        "control": "specialized tool caller",
+        "execution_tier": "phone-oriented",
+        "outcome_type": "call quality and separate CPU profile",
+        "selection_basis": "Purposive mechanism contrast with an inspectable primary result; not a representative sample or exhaustive ranking."
+      }
     }
   ],
-  "composite_row_rule": "A row invoking several material outcomes takes the least-established replication path among them. Publication maturity is part of the grade; task outcome type and mobile transfer are assessed separately."
+  "composite_row_rule": "A row invoking several material outcomes takes the least-established replication path among them. Publication maturity is part of the grade; task outcome type and mobile transfer are assessed separately.",
+  "security_records": "security_evidence_ledger.json contains two separate C4 records; these do not change the seventeen performance-matrix entries."
 }

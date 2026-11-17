@@ -3,7 +3,7 @@
 Reporting contract established 11 November 2026; public example and file navigation updated 13 November 2026. This document specifies **future runs**;
 it contains no measurements and cannot reconstruct the historical server run.
 Use the Git commit containing the protocol and helper as the analysis revision.
-The separate census snapshot `82b6110` anchors archived link manifests only;
+The separate census snapshot `3dd39bd` anchors archived link manifests only;
 its older benchmark protocol does not define the current reporting policy.
 
 ## 1. Historical boundary

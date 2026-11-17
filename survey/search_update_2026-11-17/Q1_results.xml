@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/jqHW0AeqIIezWzGlTAnvi6Ajld8</id>
+  <title>arXiv Query: search_query=(ti:edge OR ti:mobile OR ti:"on-device") AND (ti:"language model" OR ti:LLM OR ti:agent) AND (all:memory OR all:latency OR all:energy) AND submittedDate:"202601010000 TO 202611172359"&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-11-17T08:09:32Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(ti:edge+OR+(ti:mobile+OR+ti:%22on-device%22))+AND+((ti:%22language+model%22+OR+(ti:LLM+OR+ti:agent))+AND+((all:memory+OR+(all:latency+OR+all:energy))+AND+submittedDate:%22202601010000+TO+202611172359%22))&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>311</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2611.20915v1</id>
+    <title>Multi-LLM Agentic AI at the Edge: Joint Agent Scheduling and Resource Allocation</title>
+    <updated>2026-11-16T11:27:01Z</updated>
+    <link href="https://arxiv.org/abs/2611.20915v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.20915v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, an edge-enabled multi-large language model (LLM) agentic AI architecture is proposed, where one supervisor AI agent and multiple worker AI agents cooperatively execute users' requests at the edge. The supervisor AI agent decouples the user request into a series of sub-tasks and dynamically dispatches them to LLM-equipped worker AI agents via two agentic workflows, i.e., parallel and serial workflows, with a two-level retry mechanism to enhance execution reliability. To prolong the service duration of worker AI agents, the energy minimization problems are formulated by jointly considering AI agent selection and resource allocation, subject to task execution latency and quality of service (QoS) constraints. A resource allocation scheme based on alternating optimization (AO) is proposed. Specifically, for the parallel workflow, the scheme decouples the original problem into bandwidth allocation, retrieval selection and AI agent selection sub-problems, which are iteratively solved by the proposed successive convex approximation (SCA), Lagrangian relaxation (LR), and Gale-Shapley (GS) or LLM-based algorithms, respectively. For the serial workflow, the problem is similarly decoupled into service time allocation, retrieval selection and AI agent selection sub-problems; the optimal service time allocation is obtained via Karush-Kuhn-Tucker (KKT) conditions, while the latter two sub-problems are addressed by extending the proposed algorithms to the serial scenario. Simulation results show that the proposed resource allocation scheme can reduce system energy consumption compared with other benchmarks, while experiments on a multi-LLM agentic AI system based on Qwen and Llama demonstrate improved task execution success rates.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-16T11:27:01Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yuanyan Song</name>
+    </author>
+    <author>
+      <name>Kezhi Wang</name>
+    </author>
+    <author>
+      <name>Xinmian Xu</name>
+    </author>
+    <author>
+      <name>Yongmin Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.20772v1</id>
+    <title>Building Fully On-Device GUI Agents with Mobile NPUs</title>
+    <updated>2026-11-16T09:21:59Z</updated>
+    <link href="https://arxiv.org/abs/2611.20772v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.20772v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Mobile GUI agents are increasingly used to automate everyday smartphone tasks, but most existing systems still rely on cloud-hosted models or remote inference, introducing repeated communication latency, privacy exposure, and dependence on network availability. Modern smartphones integrate neural processing units (NPUs) that provide an attractive substrate for fully on-device LLM inference. However, directly deploying conventional GUI-agent pipelines on mobile NPUs is inefficient. GUI-agent inference is fundamentally a long-input, short-output workload, yet conventional agents spend substantial time on autoregressive reasoning and action generation, while mobile NPUs provide much higher throughput for prompt prefill than token-by-token decoding. Meanwhile, dynamically varying GUI-agent contexts conflict with the fixed context profiles required by statically compiled NPU runtimes.
+  We present DroidPrefill, a prefill-centric inference architecture that reshapes the GUI-agent workload around mobile-NPU execution. DroidPrefill combines Prefill-Centric Inference to reduce unnecessary autoregressive decoding with Efficient Context Management to preserve decision-critical information within a fixed compiled context budget. Experiments on commercial smartphones show that, in controlled comparisons with the autoregressive T3A+ baseline, DroidPrefill reduces per-step inference latency by up to 85.0%, while improving task success rate by up to 24.6%.</summary>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-16T09:21:59Z</published>
+    <arxiv:primary_category term="cs.AR"/>
+    <author>
+      <name>Zhe Dong</name>
+    </author>
+    <author>
+      <name>Guanyu Cai</name>
+    </author>
+    <author>
+      <name>Yuchen Jiang</name>
+    </author>
+    <author>
+      <name>Jiliang Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.20753v1</id>
+    <title>UIAnchor: Anchoring UI Perception and Action Execution for Reliable Service-Composed Mobile Task Automation with GUI Agents</title>
+    <updated>2026-11-16T09:01:47Z</updated>
+    <link href="https://arxiv.org/abs/2611.20753v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.20753v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Mobile task automation aims to streamline multi-step, cross-app interactions on smartphones and in-vehicle systems. Recent LLM-based GUI agents have advanced rapidly, yet reliability remains limited because modern mobile workflows are increasingly service-composed (app switching, forms, pop-ups/permissions, copy-paste), requiring fine-grained operations on dense, dynamic, and heterogeneous UIs, often in distraction-sensitive contexts (e.g., hands-busy or attention-limited use). Through an in-the-wild failure analysis of deployable GUI agents, we identify two dominant bottlenecks: agents often miss or misread actionable UI elements, and they execute actions without verifying target correctness or outcomes. We present UIAnchor, a modular multi-agent system that improves mobile GUI automation by anchoring both perception and execution. UIAnchor combines a two-stage UI parser for high-recall element capture and context-aware semantics with a meta-controller that performs pre-action verification, post-action outcome perception, per-step state tracking, and targeted recovery. We further introduce an L1-L5 task taxonomy based on step length, cross-app scope, and UI granularity, showing that L5 remains beyond today's practical frontier. On the hardest practical tier, L4 tasks (20-30 steps, multi-app, targets &lt; 100 x 100 px, ~5 mm on typical phones), UIAnchor improves success by 31.5% over GPT-4o and 16.6% over Mobile-Agent-v3. With edge/cloud assistance, UIAnchor runs at ~2 s per step, comparable to human operation, while reducing per-step latency by up to 75.5% and energy by 52.4%. It also generalizes to unseen apps and cross-platform GUIs.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-16T09:01:47Z</published>
+    <arxiv:primary_category term="cs.HC"/>
+    <arxiv:journal_ref>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, Volume 10, Issue 3, Article 197 (2026), Pages 1-30</arxiv:journal_ref>
+    <author>
+      <name>Wentao Zhou</name>
+    </author>
+    <author>
+      <name>Sicong Liu</name>
+    </author>
+    <author>
+      <name>Zimu Zhou</name>
+    </author>
+    <author>
+      <name>Yimeng Duan</name>
+    </author>
+    <author>
+      <name>Yongyan Cai</name>
+    </author>
+    <author>
+      <name>Weiye Wu</name>
+    </author>
+    <author>
+      <name>Teng Li</name>
+    </author>
+    <author>
+      <name>Daqing Zhang</name>
+    </author>
+    <author>
+      <name>Zhiwen Yu</name>
+    </author>
+    <arxiv:doi>10.1145/3832008</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3832008" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.20686v1</id>
+    <title>UbiHearo: Bringing Scenario-Aware Sound Guidance to DHH Users with Mobile Agents</title>
+    <updated>2026-11-16T07:51:11Z</updated>
+    <link href="https://arxiv.org/abs/2611.20686v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.20686v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For Deaf and Hard-of-Hearing (DHH) users, effective sound awareness goes beyond detecting \emph{what} sound occurs; it requires understanding \emph{what it means}, \emph{how urgent it is}, and \emph{what to do}. However, existing mobile assistants largely reduce acoustic scenes to isolated labels or generic alerts, failing to provide contextual guidance when the same sound implies different risks across scenarios. We present \sysname, a mobile hearing assistant agent that closes the sensing--reasoning--action loop for \textit{scenario-aware} and \textit{personalized} DHH assistance. \sysname adopts a \textit{neuro-symbolic} design that transforms continuous acoustic and physical context streams into structured intermediate representations (IRs) for controllable reasoning and guidance. It introduces three key mechanisms. \textit{First}, a perception-thresholded sensing mechanism enables energy-efficient always-on awareness by activating processing only for perceptually meaningful events while preserving safety-critical cues through deterministic overrides. \textit{Second}, a staged neuro-symbolic reasoning framework performs promptless scenario understanding by conditioning an on-device audio-language model on structured IRs instead of user-authored context descriptions. \textit{Third}, a bounded human-in-the-loop personalization mechanism adapts user-specific guidance through lightweight on-device decision-boundary updates while preserving population-aligned reasoning. We evaluate \sysname on smartphones and in-vehicle systems across diverse scenarios. It achieves favorable accuracy--latency--energy tradeoffs and personalized guidance.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-16T07:51:11Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Fengmin Wu</name>
+    </author>
+    <author>
+      <name>Sicong Liu</name>
+    </author>
+    <author>
+      <name>Zimu Zhou</name>
+    </author>
+    <author>
+      <name>Chenren Xu</name>
+    </author>
+    <author>
+      <name>Wanbing Zhao</name>
+    </author>
+    <author>
+      <name>Peiwen Sun</name>
+    </author>
+    <author>
+      <name>Zhiwen Yu</name>
+    </author>
+    <arxiv:doi>10.1145/3832010</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3832010" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.20119v1</id>
+    <title>CECAR: Cache &amp; Expert Co-Aware Routing Accelerates On-Device Inference of MoE LLMs</title>
+    <updated>2026-11-15T16:47:29Z</updated>
+    <link href="https://arxiv.org/abs/2611.20119v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.20119v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite growing interest in on-device LLM deployment, large-scale Mixture-of-Experts (MoE) models remain impractical on resource-constrained devices, as sparse expert activation still requires all expert weights to be memory-resident. To address this, we identify three key observations for on-device MoE inference: (a) cache hit rates are fundamentally bounded even under Belady's optimal policy; (b) these bounds are insufficient for low-latency on-device inference; and (c) prior cache-aware routing based on binary cache presence can induce routing instability. Based on these insights, we propose CECAR (Cache &amp; Expert Co-Aware Routing), a MoE inference system that jointly considers expert routing and cache management. Unlike prior cache-aware routing methods, CECAR uses an ML-based cache policy to predict the expected reuse distance of each expert and prioritizes routing and execution toward experts with smaller predicted reuse distances. On the Qwen3-30B-A3B model, CECAR achieves 12.5 tokens/s on a consumer-grade GPU with only 16 GB of VRAM, where non-resident experts are fetched from SSD, delivering a 4.5x speedup over conventional MoE inference and exceeding the decode speed of baselines that keep the entire model fully resident in DRAM. Code is available at https://github.com/hoonki2002/CECAR.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-15T16:47:29Z</published>
+    <arxiv:comment>Accepted to NeurIPS 2026. 24 pages, 5 figures, 19 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Byeongju Kim</name>
+    </author>
+    <author>
+      <name>Hoonki Lee</name>
+    </author>
+    <author>
+      <name>Byungjun Kim</name>
+    </author>
+    <author>
+      <name>Inyul Ra</name>
+    </author>
+    <author>
+      <name>Yongjin Kim</name>
+    </author>
+    <author>
+      <name>Yongseong Lee</name>
+    </author>
+    <author>
+      <name>Sangyeob Kim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.17108v2</id>
+    <title>LazyWeights: Decode-on-Demand Edge LLMs</title>
+    <updated>2026-11-13T12:43:24Z</updated>
+    <link href="https://arxiv.org/abs/2611.17108v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.17108v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Memory decides which LLMs an edge device runs, and how fast: capacity on a 4 GB Jetson Nano, bandwidth on an 8 GB Jetson Orin Nano Super. Deployed formats (GPTQ, AWQ, llama.cpp's K- and I-quants) spend equal bits on every integer code of a matrix, although the codes are far from uniform. LazyWeights keeps these formats but tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At 1% and 3.5% perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are 5.7-31.4% smaller than the best llama.cpp format. A bit-exact 0.21 mm^2 ASIC decoder unit (1 GHz, 7 nm) cuts Orin latency and energy per token by up to 36% and 38% (54% and 44% with prompt-lookup speculation). On the Nano, LazyWeights needs 58-64% less time and 53-57% less energy per token than CPU llama.cpp, and runs a streamed Mistral-7B 6.6x faster at 3.89 bits per weight. A Huffman decoder beats an rANS decoder in rate and area at equal throughput; the ASIC decoder unit runs bit-exact on a Zynq UltraScale+ FPGA (AMD ZCU102).</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-12T17:03:40Z</published>
+    <arxiv:comment>6 pages, 1 reference page, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Arnab Sanyal</name>
+    </author>
+    <author>
+      <name>Gourav Datta</name>
+    </author>
+    <author>
+      <name>Sandeep P. Chinchali</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.15231v1</id>
+    <title>TQIR: Trellis Quantization with Integer Reconstruction for Bandwidth-Efficient Edge LLM Acceleration</title>
+    <updated>2026-11-11T09:23:10Z</updated>
+    <link href="https://arxiv.org/abs/2611.15231v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.15231v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autoregressive large language model (LLM) inference is often limited by external-memory bandwidth, while existing ultra-low-bit trellis quantization reconstructs floating-point weights and leaves runtime Hadamard-transform and decoder costs unresolved. This paper presents TQIR, an algorithm--hardware co-design that decouples storage precision ($S$) from decoded-weight ($W$) and activation ($A$) compute precisions, enabling a better accuracy--hardware trade-off. TQIR performs trellis matching with floating-point candidates offline while constraining each candidate to an INT8 or INT4 codeword that can be reproduced exactly for integer GEMM at runtime. To reduce transform cost while preserving the integer weight path, TQIR relocates the reverse Hadamard transform to the activation side and employs an $H_{128}$ Subspace Hadamard Transform, together with a subspace-aligned $128\times2$ trellis tile that preserves the original 256-weight sequence length. The configurable decoder, synthesized in a TSMC 16-nm process, delivers 307.2~Gweights/s in 0.0509~mm$^2$ and achieves 13.93$\times$ and 1.52$\times$ the normalized decoder-area efficiency of Ecco and Codeword Decomposition, respectively. These results show that fixed-rate trellis compression can reduce weight traffic while sustaining an integer-GEMM datapath matched to the evaluated memory and PE rates.</summary>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-11T09:23:10Z</published>
+    <arxiv:comment>submitted to IEEE transactions on circuits and systems for AI</arxiv:comment>
+    <arxiv:primary_category term="cs.AR"/>
+    <author>
+      <name>Kuang-Ting Huang</name>
+    </author>
+    <author>
+      <name>Tian-Sheuan Chang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.10469v1</id>
+    <title>Hibana: Fast Agentic Inference on Unified-Memory Devices</title>
+    <updated>2026-11-07T04:38:35Z</updated>
+    <link href="https://arxiv.org/abs/2611.10469v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.10469v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Local AI promises capable personal assistants that run on users' own devices, keeping data and computation under their control. Open-weight models that fit on local devices can now handle practical tasks such as coding. Yet current inference engines fall short. Popular engines such as vLLM and SGLang target datacenter GPUs with dedicated host memory, while local engines underuse the memory hierarchy of unified-memory devices. We present Hibana, an inference engine for unified-memory devices that co-optimizes model representation, memory management, and decoding strategy. Model surgery, the process of editing a trained model's architecture to suit its hardware, changes how the model computes, shrinking its memory footprint and data movement. Unified-memory management preserves each agent's state across turns, so long-running agents can resume instantly instead of recomputing their state. Adaptive speculation generates several tokens per step. Hibana codesigns these features around the shared memory capacity and limited bandwidth of unified-memory systems-on-chip to support local multi-agent workloads. On a single DGX Spark serving Qwen and Nemotron models of up to 125B parameters, Hibana completes up to 3.4$\times$ more agentic tasks per hour and delivers up to 3.9$\times$ higher decoding throughput than other established frameworks such as vLLM, NVIDIA Flare, llama.cpp, and TensorFold. Code is available at https://github.com/sharar-project/hibana.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-07T04:38:35Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yahya Emara</name>
+    </author>
+    <author>
+      <name>Chi-Chih Chang</name>
+    </author>
+    <author>
+      <name>Anthony Fei</name>
+    </author>
+    <author>
+      <name>Ahmed F. AbouElhamayed</name>
+    </author>
+    <author>
+      <name>Chong-Yan Chen</name>
+    </author>
+    <author>
+      <name>Hung-Yueh Chiang</name>
+    </author>
+    <author>
+      <name>Kai-Chiang Wu</name>
+    </author>
+    <author>
+      <name>Mohamed S. Abdelfattah</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.09075v1</id>
+    <title>Large Language Model Deployment on Resource-Constrained Edge Devices: A Practitioners Survey</title>
+    <updated>2026-11-06T07:01:48Z</updated>
+    <link href="https://arxiv.org/abs/2611.09075v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.09075v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have transformed many areas of artificial intelligence (AI), but their substantial resource requirements limit their deployment on mobile and edge devices. Although LLMs have demonstrated impressive capabilities in various applications, the next challenge is deploying these models on resource-limited edge devices. Recent innovations in software optimizations and specialized hardware have made it feasible to deploy LLMs on edge devices. Edge deployment offers benefits including local data processing, cost savings, reduced latency, and personalized responses. This paper reviews the latest techniques that make the deployment of LLMs on edge devices feasible.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-06T07:01:48Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Rahul Maliakkal</name>
+    </author>
+    <author>
+      <name>Yashasvi Makin</name>
+    </author>
+    <author>
+      <name>Plawan Rath</name>
+    </author>
+    <author>
+      <name>Rohit Jain</name>
+    </author>
+    <author>
+      <name>Ankur Sadhoo</name>
+    </author>
+    <arxiv:doi>10.1109/CCWC67433.2026.11393769</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/CCWC67433.2026.11393769" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.18699v1</id>
+    <title>Where Does an On-Device Prescription Reader Lose Medications? A Frozen-Replay Study, from a 270M Language Model to a 2B Vision-Language Model</title>
+    <updated>2026-11-05T11:52:16Z</updated>
+    <link href="https://arxiv.org/abs/2611.18699v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.18699v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>On-device models let a phone read a prescription without sending the photograph anywhere, but small models fail in ways that are hard to attribute: to the camera, the OCR, the model, or the rules around it. We study a phone-based pipeline that reads a prescription photograph with PaddleOCR, extracts medications with a 270M-parameter language model, and filters the result with a deterministic backstop before showing suggestions. Replaying identical frozen inputs through each configuration, with deterministic generation verified, we compare configurations with paired document-level intervals on 49 captures of 15 synthetic prescriptions (6 typed, 9 handwritten by one writer). Production recall is 8%, and 0 of 45 on handwriting. The backstop removes no correct medication and cuts unsafe outputs from 45 to 1. On handwriting nearly all medications never reach the model in readable form; on typed sheets the model mostly picks the wrong text. We trace much of the handwriting floor to a defect in our own crop step, then replace the pipeline: rotated-box crops, a 2B-parameter vision-language model that re-reads prescription lines and extracts the medications, and per-line numeric grounding. On the same captures recall rises from 8% to 67% (paired +59 points, 95% CI +40 to +78): typed 19% to 100%, handwritten 0 to 20 of 45, with no unsafe output. Rotated crops account for most of the reading gain and the model for most of the recall gain, and the OCR confidence gate is now the main limit. The cost is 61 s per photograph against about 12 s, and about 1.9 GB of memory. An earlier claim that better OCR lowered recall does not survive the controlled comparison, and we withdraw it. All results are in-sample, from one writer and one device.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-05T11:52:16Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Ilan Sezhiyan Jayaraman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.06554v1</id>
+    <title>RAGAM-AI: A Hybrid Reinforcement Learning based Agentic approach powered by Generative AI for Edge Resource Management</title>
+    <updated>2026-11-04T14:18:07Z</updated>
+    <link href="https://arxiv.org/abs/2611.06554v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.06554v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Resource management for distributed edge networks hosting different services has been handled efficiently using Reinforcement learning (RL). Reward generalization in complex workflows is still an open issue within the RL realm. Therefore, this work proposes RAGAM-AI, a hybrid framework that combines the capabilities of RL algorithms and Generative-AI (Gen-AI) for powering an Agentic AI workflow that optimizes resource allocation at the Multi-access Edge Computing (MEC) units. This framework further resolves the reward generalization issue by utilizing Large Language Model (LLM) for feedback. A Multi- Agent Soft-Actor Critic (MASAC) using MathΣtral as a reward oracle is implemented for managing resource allocations at the MEC. RAGAM-AI interprets system state information and evaluates multi-objective trade-offs guiding the resource orchestration loop over distributed edge server agents. The complexity of the framework is further brought down by incorporating surrogate reward model. The overall performance is evaluated against the single agent SAC, REINFORCE and random policies for benchmarking. On using RAGAM-AI, lower allocation deviations for CPU, memory and bandwidth resources are reported while minimizing the latency and data rate costs. A scalable AI as a feedback (AIAF) solution optimizing network resources with significant performance improvement is thus presented.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-04T14:18:07Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Shreya K. Chari</name>
+    </author>
+    <author>
+      <name>John S. Vardakas</name>
+    </author>
+    <author>
+      <name>Kostas Ramantas</name>
+    </author>
+    <author>
+      <name>Christos Verikoukis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.06169v1</id>
+    <title>CARE-FL: Federated Fine-Tuning of Multimodal LLMs in Resource-Constrained Edge Networks</title>
+    <updated>2026-11-04T08:48:41Z</updated>
+    <link href="https://arxiv.org/abs/2611.06169v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.06169v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Domain-specific adaptation of Multimodal Large Language Models (MLLMs) in privacy-sensitive edge environments requires federated fine-tuning, yet client selection remains challenging due to heterogeneous multimodal data and modality availability, dynamic system conditions, and evolving client utility during training. We propose Constraint-Aware Reinforcement Learning for Efficient Federated Fine-Tuning (CARE-FL), a constrained online client-selection framework for federated MLLM Low-Rank Adaptation (LoRA) fine-tuning. CARE-FL formulates client participation as a sequential decision process and employs Q-value decomposition to address the large combinatorial joint action space through scalable client-level long-term utility estimation. These utilities are learned online using a modified Double Deep Q-Learning (DDQL) scheme, while constraint-aware $ε$-greedy execution selects feasible client subsets under per-round latency and bandwidth constraints. Complementing client selection, an adaptive aggregation mechanism further controls potentially unstable global updates and places greater weight on the previous model when needed. Experiments on the CrisisMMD disaster-response task in emulated heterogeneous wireless edge environments show that CARE-FL achieves higher and more stable test accuracy than the compared client-selection baselines across different system settings, while satisfying the imposed latency and bandwidth constraints.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-04T08:48:41Z</published>
+    <arxiv:comment>13 pages, submitted in TCCN</arxiv:comment>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Tianqi Zong</name>
+    </author>
+    <author>
+      <name>Baosheng Li</name>
+    </author>
+    <author>
+      <name>Nuocheng Yang</name>
+    </author>
+    <author>
+      <name>Binbin Chen</name>
+    </author>
+    <author>
+      <name>Marie Siew</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.05873v1</id>
+    <title>Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing</title>
+    <updated>2026-11-04T03:04:37Z</updated>
+    <link href="https://arxiv.org/abs/2611.05873v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.05873v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Repeated mobile GUI tests can reuse routes, locators, and recovery strategies from earlier executions. However, a route that worked in one workflow or app version may be irrelevant or misleading in another. We study how an LLM-based tester can retain useful experience while withholding entries contradicted by current observations. We present a maintenance contract for AdaptiTest in which reusable experience has an explicit applicability scope, trace provenance, and a lifecycle for confirmation, revalidation, and withdrawal. The contract reserves persistence for a Reflector role and treats recalled experience as advice. The archived implementation does not establish end-to-end enforcement of every specified mechanism. The design changes retrieved context, not model weights. The evaluation uses read-only Android workflows and archived internal comparisons. A six-task, three-repeat ready subset reports 18/18 completed runs with memory versus 3/18 without it, but a grounded single-agent control also solves the earlier hard-task slice. A separate cross-session probe is excluded from efficacy conclusions because of confounded route schedules and unvalidated state labels. We examine 13 selected real-update hazard records across nine subjects, distinguishing stale-locator observations from policy-based withholding and offline retrieval diagnostics. The latter do not measure live-device failures or actions saved. These events are UI changes, not confirmed regression bugs. The evidence supports a bounded design and case study; it does not establish general efficacy, superiority over independent GUI-agent systems, or unrestricted exploration.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-04T03:04:37Z</published>
+    <arxiv:comment>12 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Zimu Liu</name>
+    </author>
+    <author>
+      <name>Xiaoxi Guo</name>
+    </author>
+    <author>
+      <name>Xiaolu Tang</name>
+    </author>
+    <author>
+      <name>Liang Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.03557v1</id>
+    <title>PlantVLM-Edge: Quantized Vision-Language Models for On-Device Crop Health Diagnosis</title>
+    <updated>2026-11-02T18:19:19Z</updated>
+    <link href="https://arxiv.org/abs/2611.03557v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.03557v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Timely and accurate crop health diagnosis is essential for sustainable agricultural production, yet accurate diagnosis often requires expert knowledge that is not readily available. Recent vision-language models (VLMs) have demonstrated remarkable capabilities in visual understanding, reasoning, and natural-language interaction, creating new opportunities for intelligent crop health assessment. However, deploying VLMs on resource-constrained devices remains challenging due to their substantial computational and memory requirements. This paper presents PlantVLM-Edge, a quantized vision-language framework for conversational crop health diagnosis that can run entirely on resource-constrained edge devices. PlantVLM-Edge combines agricultural domain adaptation, post-training quantization, and on-device serving with an offline chat interface, allowing growers to ask open-ended questions and receive diagnoses, symptom explanations, and management guidance without cloud connectivity. The framework is backbone-agnostic: we validate it with two different VLM types with varying scale and architecture (Qwen3-VL-2B and LLaVA-1.5-7B), four quantization schemes, and two diagnostic domains (plant diseases and insect pests), and we deploy all variants on an NVIDIA Jetson AGX Orin. Eight-bit quantization affects answer quality minimally relative to the full-precision model, and 4-bit activation-aware weight quantization (AWQ) retains 98.6% of full-precision answer quality on both domains while reducing the weight memory of the 2B backbone by 49%. In its most compact form, PlantVLM-Edge requires 2.01 GiB of weight memory, returns its first token in about 0.12 s, and completes a 64-token diagnostic response in 0.78 s. These results demonstrate that timely and accurate crop health diagnosis is practical on edge devices, providing a foundation for next-generation crop monitoring and decision support systems.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-02T18:19:19Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Gaurab Wagle</name>
+    </author>
+    <author>
+      <name>Bishal Adhikari</name>
+    </author>
+    <author>
+      <name>Jiajia Li</name>
+    </author>
+    <author>
+      <name>Xiaolei Huang</name>
+    </author>
+    <author>
+      <name>Dong Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.02644v1</id>
+    <title>Coati: Host-Grounded Execution for Installable Mobile GUI Agents</title>
+    <updated>2026-11-02T07:06:26Z</updated>
+    <link href="https://arxiv.org/abs/2611.02644v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.02644v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Mobile GUI agents can carry out tasks across apps, yet most run on a separate computer that drives a phone over the Android Debug Bridge (ADB), out of reach of ordinary users and of the apps through which most people reach Web services. We present Coati, a source-available agent that users install as an Android app. Its runtime on the phone, the host, records what a model alone cannot see: the effect of each action at its target, result screens across apps, and the progress of repeated steps. VerifyLoop checks action outcomes and completion claims against host evidence and reports a completion it cannot audit as unverified. AppMemory builds per-app procedural memory from observations that the interface supports and reuses it on later visits. A routed fast executor lets a lightweight selection model take simple, confident steps and lets the host repeat loops of simple steps that the large model plans once. On all 116 AndroidWorld tasks, with Gemini 3.8 Flash as every agent's backbone, Coati succeeds on 86.5% of the tasks over three trials, ahead of the strongest open-source agent Artemis (77.6% with the same accessibility-only access, 76.5% even when allowed ADB) and far ahead of FinalRun and Midscene (about 59%), and VerifyLoop cuts false completion claims by about a third at comparable success. In everyday use, the fast executor cuts the median time of phone tasks by 39% at comparable success and runs three of four loop tasks 2.8-5.4x faster with 6-9x fewer model tokens, while AppMemory shortens a repeated deep route in an unfamiliar app from 18.5 steps to 6-7. On an Android 16 phone, routed execution completes all 27 benchmark runs with 76% fewer Reasoning calls on the critical path. Host evidence, not model self-assessment, makes an installable agent reliable and fast.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-02T07:06:26Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Yudou Ying</name>
+    </author>
+    <author>
+      <name>Pu Shi</name>
+    </author>
+    <author>
+      <name>Hanlei Shi</name>
+    </author>
+    <author>
+      <name>Yuhua Zheng</name>
+    </author>
+  </entry>
+</feed>

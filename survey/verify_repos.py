@@ -84,7 +84,7 @@ def main() -> int:
         "source_documents": [str(p.relative_to(ROOT)) for p in resource_documents()],
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "verification_mode": "cached HEAD status; no live revalidation" if args.offline else "live git ls-remote HEAD",
-        "frozen_census_revision": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
+        "frozen_census_revision": "3dd39bd5bf53632de12f891c1b848f1e2c96a561",
         "verification_method": "git ls-remote <repo>.git HEAD",
         "repository_key_normalization": "Case-folded owner/repository URL roots; redirects, renames and aliases are not resolved. Frozen manifests are not rewritten.",
         "counts": {

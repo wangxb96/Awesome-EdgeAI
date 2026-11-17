@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/iIg9uyISkO2640OQa0Nm2xXNSfw</id>
+  <title>arXiv Query: search_query=(ti:"KV cache" OR ti:streaming OR ti:"long context") AND (all:edge OR all:"on-device" OR all:mobile) AND submittedDate:"202601010000 TO 202611172359"&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-11-17T08:09:54Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(ti:%22KV+cache%22+OR+(ti:streaming+OR+ti:%22long+context%22))+AND+((all:edge+OR+(all:%22on-device%22+OR+all:mobile))+AND+submittedDate:%22202601010000+TO+202611172359%22)&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>220</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2611.21294v1</id>
+    <title>Constant-Factor Matching-Size Estimation in Random-Order Streams</title>
+    <updated>2026-11-16T15:56:30Z</updated>
+    <link href="https://arxiv.org/abs/2611.21294v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.21294v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We give a one-pass algorithm that estimates the maximum matching size of an arbitrary simple graph within a constant factor using $O(\log^2 n)$ bits of space. The edges arrive exactly once in uniformly random order. The algorithm succeeds with probability at least $2/3$, does not require the number of edges in advance, and has worst-case total running time $O((m+1)\log(n+2))$ on a word RAM.
+  Kapralov, Khanna, and Sudan (SODA 2014) obtained a polylogarithmic approximation in polylogarithmic space. Kapralov, Mitrović, Norouzi-Fard, and Tardos (SODA 2020) subsequently gave a constant-factor approximation from independent uniform edge samples and an $O(\log^2 n)$-approximation in random order. We obtain a constant factor in the latter model with the same $O(\log^2 n)$ space bound.
+  The main ingredient is a comparison between the memory states of a recursive sampling algorithm under sampling with and without replacement. We account jointly for the sampled edges retained by the recursion and the positions at which they arrived. Randomized thresholds limit the additional information stored in numerical counters. A bound on the expected work of the entire recursion then removes the loss from its logarithmic depth. The resulting estimator repeatedly improves a coarse estimate while storing only one recursion stack.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-16T15:56:30Z</published>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Alireza Farhadi</name>
+    </author>
+    <author>
+      <name>Mohammad Hajiaghayi</name>
+    </author>
+    <author>
+      <name>Morteza Monemizadeh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.20975v1</id>
+    <title>STORMGUIDE-FL: Stochastic Remote Guidance for Efficient Mining of Federated Streaming Data</title>
+    <updated>2026-11-16T12:10:52Z</updated>
+    <link href="https://arxiv.org/abs/2611.20975v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.20975v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Federated Learning enables collaborative model training across distributed edge devices ("clients") while preserving data privacy. However, real-world deployments involve clients that observe continuous data streams from evolving environments while operating under strict resource limitations. Existing solutions still face two major challenges: local concept drift, where each client's data distribution shifts over time, and global client drift, arising from asynchronous engagement and imbalanced contributions across heterogeneous training participants, formally described as dual client heterogeneity. We propose STORMGUIDE-FL, a federated optimization and data-mining framework that mitigates both types of drift using a server-guided pipeline for data acquisition and local training. For data acquisition, a lightweight client-side sampling strategy incrementally selects informative and diverse instances from non-stationary, non-IID local streams under bounded memory, compute, and labeling budget. For local training, the server's remote guidance is embedded directly into local optimization as an update-level correction, counteracting client drift without discarding scarce labeled samples. We empirically verify the effectiveness of the proposed sampling strategy on federated data streams across gradual, sudden, and recurring concept drift, and demonstrate that its gains compound with the update-level drift correction. Experimental results further show improved speed and robustness of global model convergence under resource-constrained, heterogeneous conditions.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-16T12:10:52Z</published>
+    <arxiv:comment>21 pages, 7 figures, 4 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Manuel Röder</name>
+    </author>
+    <author>
+      <name>Frank-Michael Schleif</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.19998v1</id>
+    <title>MoViC: Real-Time Humanoid Whole-Body Control from Monocular Video Streams</title>
+    <updated>2026-11-15T13:14:52Z</updated>
+    <link href="https://arxiv.org/abs/2611.19998v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.19998v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Real-time whole-body imitation from monocular video requires both a robust universal tracker and high-quality real-time reconstruction. We present MoViC, a framework that uses live RGB video as a control signal for humanoid robots without wearable tracking devices. The framework combines monocular human motion reconstruction, robot retargeting, and a transformer-based behavior foundation model. The policy receives proprioceptive history, a single explicit next-step reference, and a compact frequency-domain motion representation that supplies temporal context without explicitly stacking future reference frames, which reduces the input dimension and network size. During deployment, our extrapolation method bridges the 10-Hz visual estimation with 50-Hz controller, enabling asynchronous visual processing and policy execution. Hardware experiments further demonstrate highly dynamic motion tracking and device-free teleoperation of bimanual and single-arm manipulation tasks from live monocular RGB input. Project page: https://movicproject.github.io/ .</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-15T13:14:52Z</published>
+    <arxiv:comment>16 pages, 10 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Yimin Han</name>
+    </author>
+    <author>
+      <name>Jiahui Zhang</name>
+    </author>
+    <author>
+      <name>Wanyue Li</name>
+    </author>
+    <author>
+      <name>Zeren Luo</name>
+    </author>
+    <author>
+      <name>Yeke Chen</name>
+    </author>
+    <author>
+      <name>Liu Zhao</name>
+    </author>
+    <author>
+      <name>Peizhuo Li</name>
+    </author>
+    <author>
+      <name>Xiaoyu Ji</name>
+    </author>
+    <author>
+      <name>Shihao Dong</name>
+    </author>
+    <author>
+      <name>Xuechao Chen</name>
+    </author>
+    <author>
+      <name>Zhangguo Yu</name>
+    </author>
+    <author>
+      <name>Annan Tang</name>
+    </author>
+    <author>
+      <name>Peng Lu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.19349v1</id>
+    <title>SMELL: Sparsity-aware Memory Efficient Federated Fine-tuning for Long-context LLMs</title>
+    <updated>2026-11-14T11:40:22Z</updated>
+    <link href="https://arxiv.org/abs/2611.19349v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.19349v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Federated fine-tuning enables Large Language Models (LLMs) to collaboratively adapt to distributed private data. However, long-context fine-tuning on resource-constrained devices faces substantial challenges arising from excessive activation memory, heterogeneous token-importance patterns across clients, and communication overhead. To address these challenges, we propose SMELL, a Sparsity-aware and Memory-Efficient federated fine-tuning framework for Long-context LLMs. SMELL integrates three complementary mechanisms: Local Sparse-Forward Adaptation (LSFA), Consensus-Anchored Sparsity Coordination (CASC), and Communication-Efficient Progressive Update Recovery (CPUR). These mechanisms jointly enable memory-efficient local adaptation, heterogeneity-aware sparsity coordination, and lightweight model-update transmission. Experiments on OPT-350M and LLaMA2-7B demonstrate that SMELL reduces peak memory consumption by up to 88.35% compared with conventional fine-tuning and 13.25% compared with forward-only LoRA fine-tuning at a 16K context length. Furthermore, SMELL improves fine-tuning performance under certain non-IID settings and supports compact update transmission with progressive reconstruction, demonstrating its potential for resource-efficient federated long-context LLM adaptation.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-14T11:40:22Z</published>
+    <arxiv:comment>14 pages, 5 figures, 5 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yin Xu</name>
+    </author>
+    <author>
+      <name>Yongbo Yang</name>
+    </author>
+    <author>
+      <name>He Sun</name>
+    </author>
+    <author>
+      <name>Miao Sun</name>
+    </author>
+    <author>
+      <name>Mingjun Xiao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.19284v1</id>
+    <title>LC-ISP Benchmark: Learning Advanced ISP with Live and Capture Streams</title>
+    <updated>2026-11-14T09:28:21Z</updated>
+    <link href="https://arxiv.org/abs/2611.19284v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.19284v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>High-quality paired RAW-to-sRGB datasets are essential for data-driven ISP, yet existing datasets often rely on cross-device collection, causing misalignment and failing to faithfully reflect real capture conditions. We therefore introduce LC-ISP, a large-scale benchmark built from the intrinsic gap between a camera's live preview and offline capture streams. LC-ISP contains 53.9k spatially aligned groups, each comprising live RAW/live sRGB and multi-frame fused RGB/capture sRGB, and covers day, night, indoor, outdoor, and HDR scenes. It also provides capture-stream intermediates for modular supervision. We further develop a compact two-stage baseline that uses these intermediates as auxiliary targets. Under a 2.5-GFLOP budget for 448$\times$448 RAW inputs, it outperforms the strongest single-frame baseline by over 2 dB PSNR while improving texture, denoising, and color reproduction. LC-ISP supports realistic benchmarking, the design of supervision strategies, and the development of lightweight ISP models.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-14T09:28:21Z</published>
+    <arxiv:comment>Code: https://github.com/CVL-UESTC/LC-ISP</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Kai Chen</name>
+    </author>
+    <author>
+      <name>Junyu Lou</name>
+    </author>
+    <author>
+      <name>Jinhua Zhang</name>
+    </author>
+    <author>
+      <name>Weiyi You</name>
+    </author>
+    <author>
+      <name>Shuhang Gu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.19136v1</id>
+    <title>Low-Latency LLM-Based Streaming Multi-Talker ASR with Verifiable Rewards</title>
+    <updated>2026-11-14T03:56:26Z</updated>
+    <link href="https://arxiv.org/abs/2611.19136v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.19136v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based architectures offer strong generalization and instruction-following capabilities for streaming automatic speech recognition (ASR), but multi-talker use introduces coupled transcription, attribution, and latency challenges. Our wearable setting requires real-time transcription of a conversation between a near-field device wearer and a far-field partner. Because partial hypotheses are rendered on persistent sides of a dialogue UI, speaker roles cannot be permuted and each speaker tag must precede its turn. These sparse tags are weakly optimized by supervised fine-tuning (SFT), while committing to a leading tag can delay the text that follows. We therefore post-train a streaming LLM-based ASR model with reinforcement learning with verifiable rewards (RLVR), combining a fixed-role Speaker-Attributed WER (SA-WER) grader with a turn-level onset-delay reward. On an eight-direction multi-talker cohort, SA-WER RL reduces SA-WER from $20.51\%$ for SFT to $13.14\%$. Adding the delay objective reduces onset $p50$ by $65\%$ (from $0.918\,\text{s}$ to $0.320\,\text{s}$) and $p90$ by $44\%$ (from $1.389\,\text{s}$ to $0.780\,\text{s}$) relative to SA-WER-only RL, while achieving $12.70\%$ SA-WER. These results demonstrate that fixed-role recognition quality and streaming responsiveness can be improved jointly.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-14T03:56:26Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jing Pan</name>
+    </author>
+    <author>
+      <name>Ruizhi Li</name>
+    </author>
+    <author>
+      <name>Ju Lin</name>
+    </author>
+    <author>
+      <name>Jing Zheng</name>
+    </author>
+    <author>
+      <name>Florian Metze</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.17852v1</id>
+    <title>PADSNet: Physics-Aware Dual-Stream Network with Biomechanical Priors for Laryngeal Lesion Classification</title>
+    <updated>2026-11-13T07:36:54Z</updated>
+    <link href="https://arxiv.org/abs/2611.17852v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.17852v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Precise classification of laryngeal lesions is clinically crucial yet highly challenging, as inter-class visual differences are often subtle. While abnormalities in vocal fold vibratory dynamics provide complementary discriminative information, existing deep learning models predominantly rely on visual appearance and lack explicit mechanisms for modeling clinically meaningful vibratory dynamics. To address this, we propose PADSNet, a Physics-Aware Dual-Stream Network for laryngeal lesion classification that integrates visual representations with explicit biomechanical reasoning. Specifically, a Wavelet-Attention Enhancement Module (WAEM) is designed to bridge the spectral-semantic gap, enabling complementary learning of spatial texture and dynamic frequency representations. Meanwhile, a Knowledge Computing Module (KCM) extracts interpretable biomechanical indices from temporal glottal distance waveforms, including indicators of mobility, symmetry, glottal closure, and vibration stability. These descriptors are subsequently incorporated into a Physics-Aware Gating Module (PAGM) as biomechanical priors to adaptively recalibrate visual feature toward pathology-relevant vibratory patterns. Extensive experiments on a clinical dataset demonstrate that PADSNet achieves an accuracy of 0.8452, an F1-score of 0.8090, a sensitivity of 0.7953, and a specificity of 0.8866. These results indicate that explicitly integrating biomechanical priors with deep visual representations provides a more accurate, robust, and clinically interpretable framework for automated laryngeal lesion classification.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-13T07:36:54Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Zhenzhen You</name>
+    </author>
+    <author>
+      <name>Weifeng Yu</name>
+    </author>
+    <author>
+      <name>Zhenghao Shi</name>
+    </author>
+    <author>
+      <name>Shuangli Du</name>
+    </author>
+    <author>
+      <name>Minghua Zhao</name>
+    </author>
+    <author>
+      <name>Yingcheng Zhao</name>
+    </author>
+    <author>
+      <name>Xinhong Hei</name>
+    </author>
+    <author>
+      <name>Demin Kong</name>
+    </author>
+    <author>
+      <name>Xiaoyong Ren</name>
+    </author>
+    <author>
+      <name>Jin Hou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.17248v1</id>
+    <title>Matching in Random-Order Streams via Historical Deletion Bounds</title>
+    <updated>2026-11-12T18:36:30Z</updated>
+    <link href="https://arxiv.org/abs/2611.17248v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.17248v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study maximum matching when the edges of a fixed graph arrive in a uniformly random order. For any fixed $\varepsilon&gt;0$, we give a one-pass algorithm that achieves, with high probability over the arrival order, approximation ratios of $0.71295$ for unweighted graphs and $0.71295-\varepsilon$ for weighted graphs, using near-linear space with an explicit charge for weight precision. Both approximation ratios hold for bipartite and general graphs. The algorithm does not require the stream length or the weight range in advance. The main structural ingredient is a historical deletion inequality for weighted matchings. The deletion price of a vertex set is the decrease in maximum matching weight when that set is removed. We bound the sum of these prices for pairwise disjoint vertex sets, even when each price is evaluated at a different stage as edges are added to the graph. Applied to the usual unfolding of integer weights, it transfers a bipartite cardinality certificate to an original weighted matching, even when the original graph is not bipartite. This transfer preserves the approximation coefficient. We combine this transfer with a refined analysis of fractional matchings in the two auxiliary graphs arising in the transfer theorem. An exact rational linear-programming certificate proves the stated constant for every feasible graph profile. The approximation guarantees and the new structural results are formally verified in Lean.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-12T18:36:30Z</published>
+    <arxiv:comment>38 pages, including appendices</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Alireza Farhadi</name>
+      <arxiv:affiliation>Profound</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mohammadtaghi Hajiaghayi</name>
+      <arxiv:affiliation>University of Maryland, College Park</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mohammad Mahdavi</name>
+      <arxiv:affiliation>University of Maryland, College Park</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.18743v1</id>
+    <title>Recognizing Events Is Not Enough: Why Streaming VLMs Struggle in Compositional Instruction Triggering</title>
+    <updated>2026-11-11T07:37:45Z</updated>
+    <link href="https://arxiv.org/abs/2611.18743v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.18743v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recognizing individual events does not guarantee correct execution of compositional instructions in streaming video. For example, given the request "Notify me when the pot boils after someone turns on the stove and leaves the kitchen", existing models may recognize the individual events yet notify too early or miss the intended moment, failing to track how their temporal conditions are satisfied over time. To evaluate this gap, we introduce CoTriggerBench, which composes annotated video events into temporally constrained instructions and verifies notification timing and silence through executable event plans and source-event replay. To address this challenge, we propose a real-time VLM agent, TEMPI. TEMPI decomposes instructions into atomic event queries and temporal constraints, and uses Scenario Memory to continuously maintain task progress as event evidence arrives, allowing earlier observations to support subsequent decisions beyond the detector's visual window. Even when no notification is required, relevant events continue to update the scenario state. On CoTriggerBench, TEMPI achieves 44.4% instruction-level success, outperforming the strongest closed-source and fine-tuned open-source VLM baselines by 15.6 (Qwen3.8-Omni-Flash-Realtime) and 18.1 (MOSS-VL-Realtime) percentage points, respectively. To support efficient on-device streaming inference, we further optimize the streaming inference pipeline by overlapping partial visual encoding and LLM prefix prefill with frame arrival. On an 8 GB RTX 5060, our optimized detector implementation achieves a 4.90$\times$ speedup.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-11T07:37:45Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yehua Huang</name>
+    </author>
+    <author>
+      <name>Penglei Sun</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <author>
+      <name>Jinhao Zhou</name>
+    </author>
+    <author>
+      <name>Jiawen Wen</name>
+    </author>
+    <author>
+      <name>Qingqing Xiao</name>
+    </author>
+    <author>
+      <name>Zihan Yang</name>
+    </author>
+    <author>
+      <name>Wenqi Wang</name>
+    </author>
+    <author>
+      <name>Haolan Chen</name>
+    </author>
+    <author>
+      <name>Yu Xu</name>
+    </author>
+    <author>
+      <name>Xiaowen Chu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.13243v3</id>
+    <title>GigaEdge Spench: An SDK for Practical Streaming Speech Enhancement</title>
+    <updated>2026-11-13T05:06:49Z</updated>
+    <link href="https://arxiv.org/abs/2611.13243v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.13243v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present GigaEdge Spench, an open-source SDK for streaming speech enhancement on CPU servers, mobile devices, and in browsers. Applications can build enhancement channels from neural denoising, normalization and dynamics blocks, sample-rate conversion, and acoustic echo cancellation where supported. These stages can be combined, while normalization can also run without a neural model. The release includes an 8 kHz INT8 denoiser and discriminative and hybrid 48 kHz FP32 models. A shared C++ core supports ONNX Runtime and TensorFlow Lite through native interfaces, Android and iOS SDKs, and WebAssembly integration. Independent stream contexts share model resources, and consecutive frames from one stream can be processed in a single inference call. We evaluate the released models on EARS-WHAM v2 and compare their quality and processing costs with RNNoise and DPDFNet2. All tested native and Web configurations process files faster than real time, although larger chunks require more time to collect input. We also measure how many streams a shared model can process on a CPU. Our contribution is a configurable deployment system and an experimental study of how model choice, chunk size, and execution environment affect its use. All reported SDK timing uses ONNX Runtime. Index Terms: speech enhancement, streaming inference, cross-platform deployment, temporal frame grouping, computational efficiency</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-09T21:14:56Z</published>
+    <arxiv:comment>Additional checking required</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Artem Sokolov</name>
+    </author>
+    <author>
+      <name>Artem Khaidarov</name>
+    </author>
+    <author>
+      <name>Yana Lysova</name>
+    </author>
+    <author>
+      <name>Alexander Gladkikh</name>
+    </author>
+    <author>
+      <name>Vitaliy Yulis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.09598v1</id>
+    <title>Transformer-FSQ: Discrete Latents for Extreme KV-Cache Compression</title>
+    <updated>2026-11-06T15:27:24Z</updated>
+    <link href="https://arxiv.org/abs/2611.09598v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.09598v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Private, personalised language models must run on local consumer devices, where large, frontier models cannot fit, and retaining long contexts is non-trivial. Sequential memory---the key-value (KV) cache---grows linearly with context length, quickly dwarfing the model itself: for Qwen3-1.7B-Base, 200,000 retained entries require 21 GiB, 6.6 times more than the model weights. Yet the KV-cache compression methods we measured fail beyond moderate compression ratios. We introduce Transformer-FSQ, addressing extreme KV-cache compression by replacing standard key and value projections with a finite scalar quantisation bottleneck. Our cache stores a packed vector of discrete integer codes per token, with no per-token quantisation metadata. Converting a pretrained transformer trains only these projections on 0.25 tokens per original parameter. We evaluate Transformer-FSQ against five baseline families on models from 0.6B to 8B parameters. On long-context retrieval (RULER), from 12$\times$ to 97.5$\times$ Transformer-FSQ is the most accurate method we evaluate, across scales. A fused Triton kernel decodes directly from the integer codes; with baselines given their authors' kernels where available, it decodes at $1.01\times$ (95% interval $0.98$--$1.05$) the throughput of native SDPA attention on the uncompressed Qwen3-8B-Base at $32\times$ and $1.54\times$ at $97.5\times$. Extreme KV-cache compression is therefore a practical way to extend how much context a fixed device can hold.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-06T15:27:24Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Andras Szecsenyi</name>
+    </author>
+    <author>
+      <name>Thomas L. Lee</name>
+    </author>
+    <author>
+      <name>Vaisakh Shaj</name>
+    </author>
+    <author>
+      <name>Elliot J. Crowley</name>
+    </author>
+    <author>
+      <name>Amos Storkey</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.10035v2</id>
+    <title>Ninada: Sub-Clause Split-Graph VITS Streaming and Capability-Routed 24 kHz Speech Synthesis Across Twelve Scripts</title>
+    <updated>2026-11-10T09:19:58Z</updated>
+    <link href="https://arxiv.org/abs/2611.10035v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.10035v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>End-to-end VITS text-to-speech models synthesize natural speech in a single forward pass, yet standard ONNX exports execute monolithically over an entire clause, delaying Time-To-First-Audio (TTFA) to several seconds and spiking activation memory. Client-side deployment across Indic scripts faces four further bottlenecks: 138.8 MB float32 checkpoints per language strain browser caches, mobile WebGPU stalls for 6-14 s compiling convolution shaders while still running slower than real time ($1.44\times$ RTF), small WebAssembly pthread pools stall at barriers on big-LITTLE mobile CPUs, and mobile Web Audio pipelines drop frames or mute output under AudioWorklet contention and iOS WKWebView rules.
+  We present Ninada, an open-source 24 kHz TTS system covering English, Classical Sanskrit, and ten Indian languages (sa, en, hi, kn, mr, bn, ta, te, ml, gu, pa, or) across a capability-routed 48-checkpoint fleet: 24 studio HiFi-GAN v1 specialists (27.9 MB W8A32+FP16 ONNX) for desktop/WebGPU and 24 distilled c8c8_384 iSTFTNet specialists (21.7 MB ONNX, $2.64\times$ fewer vocoder MACs via an exact NOLA dual-window ConvTranspose1d inverse STFT with zero complex ops) for mobile WASM, plus a 0.0 MB zero-dependency Klatt fallback. At runtime, Ninada splits a single ONNX file in memory in $&lt; 15$ ms into prior, flow, and windowed vocoder sub-sessions streaming 12-frame halos with raised-cosine crossfades. On $N = 480$ held-out 24 kHz studio utterances, Ninada achieves 3.22 dB 0-8 kHz MCD (3.09 dB mobile iSTFTNet; 1.33 dB 24-voice distillation MCD, vs. 5.17 dB for the 1,526.8 MB 16 kHz Meta MMS fleet) and 6.07 dB 8-12 kHz error, delivering 89-155 ms audible startup on desktop WebGPU and 538-649 ms zero-underrun streaming at 0.75-0.76x RTF on a physical Google Pixel 10 Pro XL.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-05T15:07:05Z</published>
+    <arxiv:comment>6 pages, 2 figures, 3 tables. Open-source browser, NodeJS, and Python implementation with interactive demo at https://hemanth.github.io/ninada/ and https://github.com/hemanth/ninada</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Hemanth HM</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.07542v1</id>
+    <title>FlashOffloading: Low-Latency KV Cache Offloading for Long-Context LLM Serving</title>
+    <updated>2026-11-05T06:50:05Z</updated>
+    <link href="https://arxiv.org/abs/2611.07542v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.07542v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In large language model (LLM) serving systems, the key-value (KV) cache grows linearly with sequence length and concurrency, so long-context inference easily hits the high-bandwidth memory (HBM) capacity wall and results in low concurrency. Offloading the KV cache to host dynamic random-access memory (DRAM) frees HBM space and raises concurrency, but the additional cache management and host-to-device (H2D) load overhead inflates inference latency, higher concurrency fails to translate into effective throughput. We present FlashOffloading, a host-DRAM-centric inference architecture that fully offloads the KV cache in both the prefill and decode phases. FlashOffloading builds rolling HBM cache for prefill, a hot cache for decode, a reverse sparse index with zero extra miss-lookup overhead, and a compute--load overlapped kernel, optimizing KV offloading latency across the entire pipeline and delivering throughput gains under a time-per-output-token (TPOT) service-level objective (SLO). In experiments deploying GLM-5.2 with multi-token prediction (MTP3) speculative decoding on an Ascend910C prefill--decode (PD)-disaggregated platform, FlashOffloading improves prefill throughput by up to 1.38\(\times\) and decode throughput by up to 1.91\(\times\) under a 30 ms TPOT constraint. FlashOffloading is integrated into an open-source serving framework: https://github.com/vllm-project/vllm-ascend/tree/releases/v0.30.0.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-05T06:50:05Z</published>
+    <arxiv:comment>13 pages including references,13 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xuan Wang</name>
+    </author>
+    <author>
+      <name>Zhuanhao Wu</name>
+    </author>
+    <author>
+      <name>Tingzhu Fang</name>
+    </author>
+    <author>
+      <name>Xushi Li</name>
+    </author>
+    <author>
+      <name>Sicheng Zhang</name>
+    </author>
+    <author>
+      <name>Zhenyu Yang</name>
+    </author>
+    <author>
+      <name>Feng Liu</name>
+    </author>
+    <author>
+      <name>Zhaohui Fan</name>
+    </author>
+    <author>
+      <name>Qiang Xie</name>
+    </author>
+    <author>
+      <name>Huayi Zou</name>
+    </author>
+    <author>
+      <name>Yuncong Liu</name>
+    </author>
+    <author>
+      <name>Zeyu Song</name>
+    </author>
+    <author>
+      <name>Ke Zhu</name>
+    </author>
+    <author>
+      <name>Yanjia Zeng</name>
+    </author>
+    <author>
+      <name>Jingchun Gao</name>
+    </author>
+    <author>
+      <name>Yan Shi</name>
+    </author>
+    <author>
+      <name>Kui Luo</name>
+    </author>
+    <author>
+      <name>Gezi Li</name>
+    </author>
+    <author>
+      <name>Liangjun Feng</name>
+    </author>
+    <author>
+      <name>Cheng Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.06856v1</id>
+    <title>LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis</title>
+    <updated>2026-11-04T18:11:56Z</updated>
+    <link href="https://arxiv.org/abs/2611.06856v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.06856v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce LongBanana, to our knowledge the first expert-designed and expert-verified benchmark for long-context multi-reference image synthesis in the age of agent-driven image generation. The task requires retrieving dispersed visual evidence, rejecting distractors, binding entities and relations, and composing one coherent final image from multiple references. LongBanana contains 90 carefully designed tasks organized by a 3-by-3 taxonomy; each task includes about 32 reference images, 20 constraints, and 50 evaluation items, yielding 4,670 expert-specified atomic evaluation items in total. Its graph-grounded evaluation design instantiates each task with reference images and an entity-relation graph, then converts node, edge, and whole-graph obligations into checklist items for Content Fidelity, Relational Binding, and Global Constraint Satisfaction. Reviewed expert labels include a 15% double-labeled subset with 89.4% exact agreement and 0.83 quadratic weighted kappa. We further introduce LongBanana-Gen, an agent-harness framework for long-horizon image generation; experiments show that minimal agent harnesses improve over direct generation, while a ReAct-Plan-Exec-Reflect (RPR) workflow yields harness-dependent gains by strengthening evidence grounding and repair. Together, LongBanana provides an auditable testbed for measuring dense visual evidence use and a shared target for developing stronger agent-driven image-generation systems. Code and data are available at the project page: https://long-banana.com/.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-04T18:11:56Z</published>
+    <arxiv:comment>NeurIPS 2026 Evaluations and Datasets Track. Project page: https://long-banana.com/</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Haoxiang Cao</name>
+    </author>
+    <author>
+      <name>Yuxuan Zhang</name>
+    </author>
+    <author>
+      <name>Penghui Du</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+    <author>
+      <name>Jiajiong Cao</name>
+    </author>
+    <author>
+      <name>Yingying Fan</name>
+    </author>
+    <author>
+      <name>Zimeng Wu</name>
+    </author>
+    <author>
+      <name>Yifu Luo</name>
+    </author>
+    <author>
+      <name>Mingzhe Zheng</name>
+    </author>
+    <author>
+      <name>Junwen Miao</name>
+    </author>
+    <author>
+      <name>Huaisong Zhang</name>
+    </author>
+    <author>
+      <name>Yang Yao</name>
+    </author>
+    <author>
+      <name>Yu Wang</name>
+    </author>
+    <author>
+      <name>Dongfu Jiang</name>
+    </author>
+    <author>
+      <name>Ping Nie</name>
+    </author>
+    <author>
+      <name>Wenhu Chen</name>
+    </author>
+    <author>
+      <name>Chaoqun Wang</name>
+    </author>
+    <author>
+      <name>Changqian Yu</name>
+    </author>
+    <author>
+      <name>Kelsey R. Allen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.05061v1</id>
+    <title>Semi-Streaming Reachability and Shortest Paths in $n^{1/3+o(1)}$ Passes</title>
+    <updated>2026-11-03T15:25:08Z</updated>
+    <link href="https://arxiv.org/abs/2611.05061v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.05061v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the semi-streaming model, the edges of an $n$-vertex graph arrive in a stream, and an algorithm makes multiple passes over that stream while using only $\widetilde{O}(n)$ space. The number of passes needed to compute single-source reachability in directed graphs is a long-standing open question in streaming algorithms, going back to Henzinger, Raghavan, and Rajagopalan (1998). The best known semi-streaming algorithm uses $n^{1/2+o(1)}$ passes due to Jambulapati, Liu, and Sidford (2019), while the best lower bound is $Ω(\log n/\log\log n)$ passes due to Guruswami and Onak (2016).
+  We give streaming algorithms for computing single-source reachability and shortest paths on $n$-vertex directed graphs using $\widetilde{O}(n)$ space and $n^{1/3+o(1)}$ passes. Our algorithms are based on implicit hopsets, which are large hopsets that can be represented implicitly in $\widetilde{O}(n)$ space. We introduce this notion and give new constructions for implicit hopsets with small hopbound. Along the way, we obtain new work-depth tradeoffs for parallel shortest paths in directed graphs, improving the recent result of Ashvinkumar, Bernstein, Probst Gutenberg, and Saranurak (2026).</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-03T15:25:08Z</published>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Gary Hoppenworth</name>
+    </author>
+    <author>
+      <name>George Z. Li</name>
+    </author>
+    <author>
+      <name>Sepideh Mahabadi</name>
+    </author>
+    <author>
+      <name>Jakub Tarnawski</name>
+    </author>
+  </entry>
+</feed>

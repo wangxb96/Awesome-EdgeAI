@@ -7,7 +7,7 @@ survey's methodology for source verification and evidence grading.
 It extracts every arXiv identifier linked from the README, resolves
 each identifier against the official arXiv Atom API, records the authoritative
 title / submission date / withdrawal status, and emits a machine-readable
-manifest for the living README. The manuscript census remains frozen at 82b6110.
+manifest for the living README. The manuscript census remains frozen at 3dd39bd.
 
 Usage (from the repository root)::
 
@@ -161,7 +161,7 @@ def main() -> int:
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "verification_mode": "cached metadata; no live revalidation" if args.offline else "live arXiv API",
         "cache_sources": cache_sources,
-        "frozen_census_revision": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
+        "frozen_census_revision": "3dd39bd5bf53632de12f891c1b848f1e2c96a561",
         "verification_source": "https://export.arxiv.org/api/query",
         "counts": {
             "unique_arxiv_ids": len(ids),

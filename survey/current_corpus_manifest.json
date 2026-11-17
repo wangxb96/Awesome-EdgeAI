@@ -9,7 +9,7 @@
     "survey/corpus_manifest.json",
     "survey/current_corpus_manifest.json"
   ],
-  "frozen_census_revision": "82b611089654cd2fef28a9cfb96b907d3c89dee5",
+  "frozen_census_revision": "3dd39bd5bf53632de12f891c1b848f1e2c96a561",
   "verification_source": "https://export.arxiv.org/api/query",
   "counts": {
     "unique_arxiv_ids": 93,

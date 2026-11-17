@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/WWk4XjStTdRHJsmnQlCG+mJvIn0</id>
+  <title>arXiv Query: search_query=(ti:agent OR ti:"language model") AND (ti:injection OR ti:security OR ti:authorization) AND submittedDate:"202401010000 TO 202611172359"&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-11-17T08:09:45Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(ti:agent+OR+ti:%22language+model%22)+AND+((ti:injection+OR+(ti:security+OR+ti:authorization))+AND+submittedDate:%22202401010000+TO+202611172359%22)&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>1147</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2611.21259v1</id>
+    <title>Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks</title>
+    <updated>2026-11-16T15:33:50Z</updated>
+    <link href="https://arxiv.org/abs/2611.21259v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.21259v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic AI systems extend large language models with tools, memory, and multi-agent collaboration, introducing security risks at orchestration boundaries. These risks depend on how identities are represented, operations are authorized, and instructions or information propagate between components. We evaluate LangChain, LangGraph, AutoGen, and OpenClaw through twelve experiments mapped to the OWASP Top 10 for Agentic Applications using a common LLM (gpt-4o-mini). The experiments cover prompt injection, unauthorized resource access and command execution, memory poisoning, and inter-agent trust and identity attacks. Adversarial inputs induced unauthorized tool invocation, while tool chaining, stale filesystem validation, encoded instructions, and inter-agent delegation exposed weaknesses in authorization across component boundaries. Memory poisoning showed that untrusted state can influence responses, a risk distinct from conventional access-control violations. In the evaluated protected configurations, explicit authorization, controlled capability assignment, filesystem containment, and execution safeguards prevented specific unauthorized operations. The findings emphasize preserving authorization and information-trust boundaries throughout agentic workflows rather than treating framework capabilities or model-level instructions as sufficient security guarantees.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-16T15:33:50Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Sahaya Jestus Lazer</name>
+    </author>
+    <author>
+      <name>Kshitiz Aryal</name>
+    </author>
+    <author>
+      <name>Maanak Gupta</name>
+    </author>
+    <author>
+      <name>Elisa Bertino</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.20045v1</id>
+    <title>Security of Deep Research Agents: Attack Surface, Defenses, Benchmarks, and Agenda Seeding against Research Planning</title>
+    <updated>2026-11-15T14:44:28Z</updated>
+    <link href="https://arxiv.org/abs/2611.20045v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.20045v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deep research and agentic search agents autonomously retrieve content from the open web and generate reports with citations, and their outputs are often taken directly as research conclusions. This paper systematizes security research in this area along four stages, namely retrieval, planning, evidence integration, and report generation. We present a unified threat model, a taxonomy of attacks and defenses, and a review of evaluation benchmarks, and we align the area dimension by dimension with retrieval-augmented generation (RAG) poisoning, prompt injection, and generative engine optimization (GEO). Coding 34 primary studies shows that only 26.5% of them involve the planning stage, and none performs an end-to-end poisoning evaluation on commercial products. To address this gap, we propose the agenda seeding attack, in which the attacker writes no instructions and only introduces a fictitious evaluation metric. Across 3,520 sandboxed research runs under the same budget, GEO and prompt injection are nearly ineffective, whereas agenda seeding makes the attacker's target the top pick in 16% to 28% of reports. Injection detection and query anchoring fail against it, verification prompting hurts utility, and our proposed provenance tagging preserves utility but can be bypassed by multi-site bait. Finally, we propose eight research directions.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-15T14:44:28Z</published>
+    <arxiv:comment>31 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yang Luo</name>
+      <arxiv:affiliation>Peking University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Guangpu Chen</name>
+      <arxiv:affiliation>Peking University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yichen Liu</name>
+      <arxiv:affiliation>Peking University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Zhaoyu Chen</name>
+      <arxiv:affiliation>Peking University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yifeng Gao</name>
+      <arxiv:affiliation>Peking University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Zhiyang Ding</name>
+      <arxiv:affiliation>Peking University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Qingni Shen</name>
+      <arxiv:affiliation>Peking University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Zhonghai Wu</name>
+      <arxiv:affiliation>Peking University</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.19598v1</id>
+    <title>Protecting the System, Stranding the User: The Limits of Multi-Agent Authorization</title>
+    <updated>2026-11-14T20:05:17Z</updated>
+    <link href="https://arxiv.org/abs/2611.19598v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.19598v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current multi-agent authorization architectures prioritize system integrity over human outcomes. While recent models successfully prevent privilege escalation, they externalize the cost of failure onto the human operator. Re-centering authorization around human impact exposes four structural vulnerabilities in current paradigms. First, calling an agent's understanding of user intent verified is misleading. Intent has no formal definition, so no check against it can be definitive. Systems should instead report an openly probabilistic estimate and scale their caution with the risk of the action. Second, we argue that dynamic trust scores do not survive multi-agent handoffs; transmitting algorithmic judgment across a company boundary without underlying evidence risks violating Contextual Integrity. Third, treating a safely halted workflow as a successful refusal is a category error if it strands the user; compensating actions must be bound directly to the capability token, not only to the planning layer. Finally, we hypothesize that frictionless automated recovery introduces a moral hazard, disincentivizing developers from building robust initial intent checks. We conclude by proposing an architectural synthesis to bridge the gap between deterministic security and human outcomes, alongside the fundamental theoretical limits that remain unresolved.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-14T20:05:17Z</published>
+    <arxiv:comment>11 pages. Accepted as a poster at HAIPS: 2nd Workshop on Human-Centered Privacy and Security for Language Models, held in conjunction with COLM 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Gurpriya Bhatia</name>
+    </author>
+    <author>
+      <name>Clifford Neuman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.19237v1</id>
+    <title>Auditable Authorization for LLM Agents: Empirical Evidence Across Model, Harness, and Workflow Layers</title>
+    <updated>2026-11-14T08:04:57Z</updated>
+    <link href="https://arxiv.org/abs/2611.19237v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.19237v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Human approval provides effective control only if rejected work stops and authorized work completes. We formalize refusal safety and bounded authorization completeness, and audit three execution boundaries: the model selects a call, the harness schedules and resumes it, and the workflow routes the decision to a protected effect. Paired decisions, exact traces, and native business-state witnesses support experiments with three models, five prompt arms, four runtime approval designs, two additional framework replays, and 100 public workflow sources.
+  The paired model panel leaves seven of 300 approvals unfinished despite zero denied effects; parallel confirmation loses an approved branch in three tasks per model, restoration omits 336/672 CrewAI approvals, and four of 59 comparable n8n workflows execute after Reject. Comparing intent, generated calls, dispatch, and native effects identifies the first observable divergence and its repair target. This yields a practical audit contract that makes both refusal safety and authorization completeness independently verifiable, converting human approval from a procedural formality into an enforceable control boundary between intent and real-world effect.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-14T08:04:57Z</published>
+    <arxiv:comment>6 pages, 4 figures, 4 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Bangjie Deng</name>
+    </author>
+    <author>
+      <name>Xiaoxuan Lu</name>
+    </author>
+    <author>
+      <name>Wenjun Chen</name>
+    </author>
+    <author>
+      <name>Chengge Wen</name>
+    </author>
+    <author>
+      <name>Yulin Wang</name>
+    </author>
+    <author>
+      <name>Jiayue Meng</name>
+    </author>
+    <author>
+      <name>Yao Yu</name>
+    </author>
+    <author>
+      <name>Liying Liang</name>
+    </author>
+    <author>
+      <name>Weijia Han</name>
+    </author>
+    <author>
+      <name>Ziwei Hong</name>
+    </author>
+    <author>
+      <name>Zidong Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.18999v1</id>
+    <title>Agent-ZTA: A chain-Aware Zero Trust Model for Bidirectional Security-State Propagation and Runtime Containment in Multi-Agent Delegation</title>
+    <updated>2026-11-13T22:55:26Z</updated>
+    <link href="https://arxiv.org/abs/2611.18999v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.18999v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems increasingly delegate tasks and permissions across chains of autonomous agents that invoke protected tools. Although agent identities and delegated credentials may remain valid throughout a workflow, the security condition of any agent along the chain can deteriorate during runtime execution-either through upstream compromise or downstream ingestion of untrusted inputs. Authorization models based solely on the immediate caller and its static delegated scope fail to account for these mid-execution state changes. This paper develops Agent-ZTA, a chain-aware Zero Trust authorization and containment model that links runtime security-state changes across multi-agent delegation graphs. The model distinguishes an agent's path-specific delegated authority bound from the effective permissions currently exercisable under trusted policy. It defines an architecture featuring independently enforced policy decisions, authenticated delegation provenance, a dynamic chain-state view, and explicit fail-safe handling of missing or stale authorization signals. Furthermore, Agent-ZTA defines bidirectional security state propagation, allowing downstream security events to affect relevant upstream workflow states, and specifies adaptive branch-scoped containment through restricted permissions and a sandbox ("jail") execution mode where an isolation boundary is available. The deterministic decision procedure, five stated security properties, and worked authorization traces show how accepted security-state changes constrain affected operations while preserving original delegation bounds and separating unrelated workflow branches under the defined policies. Finally, the paper states its trust assumptions and the exact scope of its security properties.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-13T22:55:26Z</published>
+    <arxiv:comment>Conference version</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Asadullah Abdullah Khan</name>
+    </author>
+    <author>
+      <name>Toqeer Ali Syed</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.18887v1</id>
+    <title>We Have All the Cards: Securing Agent Cards at the Operational Trust Boundary of the Agent2Agent Protocol</title>
+    <updated>2026-11-13T19:46:07Z</updated>
+    <link href="https://arxiv.org/abs/2611.18887v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.18887v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI agent interoperability protocols enable orchestrators to discover and invoke external agents using machine-readable metadata. In the Agent2Agent (A2A) protocol, Agent Cards contain attacker-controllable natural-language fields that may influence agent selection before a provider is invoked, creating a pre-invocation trust problem. We characterize this discovery-time attack surface through a taxonomy of ten Agent Card manipulation attacks and present SECCARD, a layered validation framework combining protocol checks, deterministic analysis, and LLM-based semantic reasoning. We measure the emerging public A2A ecosystem by probing 36.1 million Internet domains and collecting 310 deployed Agent Cards. Two annotators independently label the corpus with 96.8% agreement. We then construct a 660-card real-card perturbation benchmark with matched benign controls and a 260-card synthetic adversarial benchmark spanning all ten attack categories. On controlled attacks injected into real Agent Cards, the strongest semantic judge achieves 97.0% security recall at a 1.7% false-positive rate. Across nine LLM judges on the synthetic benchmark, security recall ranges from 25.8% to 92.3%, demonstrating substantial model-dependent variation. These results show that SECCARD effectively identifies Agent Card manipulations spanning all ten discovery-time attack classes while preserving benign Agent Cards, but also reveal that its effectiveness depends critically on the choice of the underlying LLM judge.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-13T19:46:07Z</published>
+    <arxiv:comment>To be published at the Workshop on Agentic AI in Offensive and Defensive Cyber Operations (AIDC'26) proceedings co-located with the IEEE Annual Computer Security Applications Conference (ACSAC)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Miguel A. Guirao Aguilera</name>
+    </author>
+    <author>
+      <name>Satyajayant Misra</name>
+    </author>
+    <author>
+      <name>Efren Lopez-Morales</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.18133v1</id>
+    <title>Forget the Lineage: Forward-Secure, Lineage-Complete Cryptographic Erasure for LLM-Agent Memory</title>
+    <updated>2026-11-13T13:01:47Z</updated>
+    <link href="https://arxiv.org/abs/2611.18133v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.18133v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents keep a long-term memory that the model itself writes: summaries, extracted facts and embeddings derived from what users said. Deleting a message is therefore not enough: its derivatives, storage residue and backups survive. We define lineage-complete forward-secure erasure: after a forget request, an adversary that later obtains all storage and the agent's current keys learns nothing about the forgotten input or any memory derived from it. We present LinEra, which encrypts each memory under a key derived from its parents' keys along the derivation graph; source keys come from a puncturable pseudorandom function, so forgetting is a single puncture and every descendant becomes unreadable without being located. A sound lineage rule records as parents everything the writer saw, which confines all influence of a source to its descendants. We prove security and lineage integrity and integrate LinEra with mem0. With real LLMs from two families (1.5B to 7B parameters) writing the memory of LoCoMo conversations, an attacker holding every file and the current keys recovers, on all ten conversations written by the largest model, 70 of 71 forgotten secrets after logical deletion, 67 with per-object or epoch keys, and none with LinEra; the same holds for every writer tested. The price is a larger forgetting radius, which follows a simple law in the writer's fan-in: forgetting 1% of turns erases 73.0% of derived memories with session-level summaries but only 3.8% with four-turn windows, which also answer better; re-deriving restores what is lost.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-13T13:01:47Z</published>
+    <arxiv:comment>14 pages, 2 figures. Submitted to the Journal of Information Security and Applications. Code and LLM-call logs: https://github.com/yulliwasameur/linera (archived at https://doi.org/10.5281/zenodo.24166476)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yulliwas Ameur</name>
+    </author>
+    <author>
+      <name>Billal Mokhtari</name>
+    </author>
+    <author>
+      <name>Samia Bouzefrane</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.17883v1</id>
+    <title>Securing Multi-Agent Systems by Design</title>
+    <updated>2026-11-13T08:22:06Z</updated>
+    <link href="https://arxiv.org/abs/2611.17883v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.17883v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems solve complex tasks by decomposing them into subtasks, delegating the subtasks to agents, and aggregating the agents' responses using an aggregation rule. Malicious agents can manipulate the final solution by providing malicious responses to their assigned subtasks. In this paper, we first propose response manipulation attacks (ReMA), which iteratively optimize malicious responses to maximize attack effectiveness. Specifically, we formulate untargeted and targeted attacks as optimization problems and develop an approach to approximately solve these problems by iteratively refining malicious responses based on feedback from a surrogate multi-agent system. To defend against such attacks, we further propose SecMAS, a secure aggregation rule that leverages the semantic similarities among agent responses to select the response that is most consistent with a sufficiently large subset of the other responses. We theoretically establish security guarantees for SecMAS against both untargeted and targeted attacks. Extensive evaluations demonstrate that existing aggregation rules are vulnerable to ReMA, whereas SecMAS effectively defends against all evaluated attacks, including adaptive variants of ReMA, while maintaining utility comparable to that of existing aggregation rules.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-13T08:22:06Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Xilong Wang</name>
+    </author>
+    <author>
+      <name>Xiaoxing Chen</name>
+    </author>
+    <author>
+      <name>Neil Gong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.17115v1</id>
+    <title>CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts</title>
+    <updated>2026-11-12T17:07:22Z</updated>
+    <link href="https://arxiv.org/abs/2611.17115v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.17115v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enforcement defenses against prompt injection, such as CaMeL, Progent, IPIGuard and DRIFT, ask the agent's own model to write a security artifact (a program, a privilege policy, a dependency graph or a constraint list) that code then enforces. We ask whether small language model (SLM) agents can be trusted to write these artifacts. Across 15 open-weight models, 13 of them between 1.7B and 12B parameters, they cannot: the policies, graphs and constraints that the agent's model writes admit attacks on 14 (Progent), 13 (IPIGuard) and 11 (DRIFT) of the models, and CaMeL's programs fail to run in up to 68% of episodes. We present CapLite, which derives its policy from the tool schemas, commits the write calls before any tool result is read, and admits a write only if every argument that decides whom or what it affects is stated in the user's request. This guarantees write integrity: injected text cannot add a write, and no write reaches a recipient, amount, object or destination that the user did not state. No attack succeeds in 13,935 attacked AgentDojo episodes. CapLite reaches utility under attack comparable to CaMeL's (29.0% vs. 27.2%) with fewer tokens than every other enforcement defense and than the undefended agent: 17.1k per episode, 18% of CaMeL's, and the highest utility per token of all enforcement defenses.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-12T17:07:22Z</published>
+    <arxiv:comment>19 pages, 11 figures, 9 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zimo Xu</name>
+    </author>
+    <author>
+      <name>Wenzhuo Liu</name>
+    </author>
+    <author>
+      <name>Hideki Nakayama</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.16744v1</id>
+    <title>Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents</title>
+    <updated>2026-11-12T12:57:11Z</updated>
+    <link href="https://arxiv.org/abs/2611.16744v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.16744v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual content in multimedia systems may be resized, compressed, or re-rendered before it is interpreted by a vision-language model. We study a security failure mode in which these transformations change the machine-readable semantics of an image: a textual instruction is not recovered at a $512\times512$ presentation resolution under our evaluation protocol but becomes recoverable after aggressive downsampling. We formulate this behavior as Scale-Induced Semantic Shift (SISS) and develop a closed-loop black-box framework that combines dual-scale verification, selective self-hardening, shallow-layer low-rank adaptation, and pixel-space noise regularization. On a fixed 300-case benchmark, the third SISS refinement round obtains a $58.75\%$ average attack success rate across four closed-source vision-language models, compared with $41.08\%$ for the strongest generation baseline. A controlled sweep bounds the effect to aggressive compression: average success decreases to $17.68\%$, $6.85\%$, and $5.60\%$ at $128\times128$, $224\times224$, and $336\times336$, respectively. In a downstream web-agent study, the generated images increase hidden-instruction perception, but absolute behavioral compromise remains about $4\%$. Generic input transformations provide little protection in a separate defense protocol, whereas the proposed ScaleGuard consistency detector reduces non-adaptive success from $61.4\%$ to $24.3\%$ and one-round defense-aware success from $42.5\%$ to $15.0\%$, with no observed rejection among matched clean controls. The results characterize a bounded but reproducible semantic inconsistency in multimedia preprocessing and motivate scale-consistent visual-language inference.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-12T12:57:11Z</published>
+    <arxiv:comment>14 pages, 10 figures, including supplementary material</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yiheng Zhao</name>
+    </author>
+    <author>
+      <name>Runze Ji</name>
+    </author>
+    <author>
+      <name>Chenyu Yi</name>
+    </author>
+    <author>
+      <name>Yi Yu</name>
+    </author>
+    <author>
+      <name>Bingquan Shen</name>
+    </author>
+    <author>
+      <name>Alex Kot</name>
+    </author>
+    <author>
+      <name>Xudong Jiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.16693v1</id>
+    <title>MobileProbe: Adaptive Security Evaluation of Mobile Agents via Trajectory-Aware Injection</title>
+    <updated>2026-11-12T12:08:43Z</updated>
+    <link href="https://arxiv.org/abs/2611.16693v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.16693v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Mobile GUI agents read the screen of a phone and operate apps on a user's behalf to complete multi-step tasks such as online shopping or messaging. Because the agent acts on whatever the screen shows, an attacker can embed malicious instructions into ordinary UI content and redirect its actions. We refer to this threat as environmental injection attack (EIA). Existing benchmarks measure this risk by pinning hand-crafted payloads to a fixed step of a fixed task. This approach faces two limitations. First, each payload is bound to one task in one app and does not transfer without manual redesign. Second, agents given the same task may follow different routes, so an agent that never reaches the injected page is recorded as safe without being tested. This insufficient test coverage can cause fixed-point benchmarks to underestimate the security risk of deployed mobile agents.
+  In this work, we propose MobileProbe, a trajectory-aware red-teaming framework that evaluates mobile agents adaptively. MobileProbe discovers attacker-controllable content surfaces through automated pentesting, localizes vulnerable decision points along the agent's trajectory, and iteratively refines context-aware payloads through a surrogate-filtered evolutionary loop. We construct a benchmark of 83 long-horizon attack instances spanning 12 mobile applications. Each is annotated with a Confidentiality, Integrity, or Availability (CIA) attack goal to cover the principal categories of security threats facing mobile agents. On three representative agent architectures, MobileProbe attains higher attack success rates than human-written, zero-shot LLM, and prior automated red-teaming baselines adapted to the mobile domain. MobileProbe can serve as a pre-deployment auditing tool to systematically uncover vulnerabilities and inform security hardening of mobile agents.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-12T12:08:43Z</published>
+    <arxiv:comment>Accepted at NDSS 2027</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yingbin Jin</name>
+    </author>
+    <author>
+      <name>Ji'an Wang</name>
+    </author>
+    <author>
+      <name>HaoYang Chai</name>
+    </author>
+    <author>
+      <name>Hanjun Luo</name>
+    </author>
+    <author>
+      <name>Li Hu</name>
+    </author>
+    <author>
+      <name>Xinfeng Li</name>
+    </author>
+    <author>
+      <name>Huadi Zheng</name>
+    </author>
+    <author>
+      <name>PeiZhao Hu</name>
+    </author>
+    <author>
+      <name>Qingqing Ye</name>
+    </author>
+    <author>
+      <name>Haibo Hu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.15170v1</id>
+    <title>An Experience Report on Teaching Students to Evaluate AI Agent Skills as Authorization Decisions</title>
+    <updated>2026-11-11T08:07:29Z</updated>
+    <link href="https://arxiv.org/abs/2611.15170v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.15170v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Cultivating a security mindset has long been a goal of computing education, and students now need it when deciding whether to trust an AI agent skill. Skills are add-ons that can shape an agent's behavior through natural language instructions and configuration settings, not just executable code. To prepare students to evaluate skills as authorization decisions, we designed a classroom activity and taught it in a senior undergraduate and a graduate cybersecurity-focused course. Students inspected three example skills, each pairing a real workflow task with one agent-specific authority, such as acting without asking for user consent before each action. The activity guided them to make initial authorization recommendations and then use a static security scanner to test and revise their recommendations. We observed in class that students needed guidance to extend their security review from a skill's code to what they would be authorizing the agent to do through the skill. Pre/post surveys from 11 volunteer respondents in this preliminary pilot showed greater self-reported confidence in evaluating skills, and post-activity responses placed more emphasis on the authority that skills carry. We release all activity materials for reuse.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-11T08:07:29Z</published>
+    <arxiv:comment>Preprint version. To appear in SIGCSE TS 2027</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Zikai Alex Wen</name>
+    </author>
+    <author>
+      <name>Donald Chinn</name>
+    </author>
+    <author>
+      <name>Yan Bai</name>
+    </author>
+    <arxiv:doi>10.1145/3857222.3860190</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3857222.3860190" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.13960v1</id>
+    <title>From Attack Surface to Defense Architecture: Compositional Security for Agentic Coding Harnesses</title>
+    <updated>2026-11-10T11:52:40Z</updated>
+    <link href="https://arxiv.org/abs/2611.13960v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.13960v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI coding harnesses couple language models to shells, filesystems, and network sockets, turning the harness into an automated Living-off-the-Land (LotL) platform: once an adversary injects instructions into retrieved content, dual-use binaries such as bash, curl, and find become the payload. We argue that security in agentic systems is a structural property of the cognitive architecture and permission composition rather than an emergent property of individual models. Static regex blacklists miss structural evasions, whereas LLM-as-a-Judge guardrails incur high latency while over-blocking benign work.
+  We present ActiveSecHarness, a neurosymbolic reference-monitor architecture built around Separation of Intelligence and Authority. It combines (1) Macaroon-inspired HMAC capability tokens across four Trust and Authority Rings, (2) a 2D product taint lattice $\mathcal{L} = \mathcal{L}_{\mathrm{trust}} \times \mathcal{L}_{\mathrm{sens}}$ and a workspace provenance ledger that prevents secret laundering across disk, (3) deterministic Ring-0 OS/tool guards, and (4) bytecode certificates, split-horizon audit logs, self-healing security test synthesis, and an adaptive UserWikiManager.
+  Across $N=252$ fixtures ($120$ attack, $120$ benign, $12$ kill chains), a live local LLM judge (qwen3:4b) refuses $98.3\%$ of benign work at $142.3\,\mathrm{ms}$ latency, whereas Ring 0 achieves $\mathrm{ABR}=1.000$ and $\mathrm{FPR}=0.000$ in $12.7\,μ\mathrm{s}$ ($11{,}200\times$ faster). In a multi-step trajectory ablation, an oracle Conseca-style stateless policy misses $4/12$ kill chains ($\mathrm{ABR}=0.667$) and coarse Boolean taint blocks $83.3\%$ of benign workflows, while our 2D product lattice achieves $\mathrm{ABR}=1.000$ and $\mathrm{FPR}=0.000$ at $\approx 20\,μ\mathrm{s}$ per step.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-10T11:52:40Z</published>
+    <arxiv:comment>21 pages, 3 figuers, 1 sublement</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Simon Hegelich</name>
+    </author>
+    <author>
+      <name>Bardh Prenkaj</name>
+    </author>
+    <author>
+      <name>Habiba Sarhan</name>
+    </author>
+    <author>
+      <name>Morteza Shahrezaye</name>
+    </author>
+    <author>
+      <name>Kolja Hegelich</name>
+    </author>
+    <author>
+      <name>Christian Montag</name>
+    </author>
+    <author>
+      <name>Ralf Schneider</name>
+    </author>
+    <author>
+      <name>Erik Cambria</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.13696v1</id>
+    <title>On Private Knowledge Retrieval and Private Inference for secure multi-agent systems</title>
+    <updated>2026-11-10T07:43:02Z</updated>
+    <link href="https://arxiv.org/abs/2611.13696v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.13696v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems provide a convenient framework for the massive deployment of agents based on Large Language Models (LLMs). It provides a sound framework where agents can interact with existing software to perform actions in an autonomous way. Agentic AI is the new term to denote these AI-based autonomous systems.
+  In real multi-agent systems, agents need to deal with malicious agents some of which can exploit security vulnerabilities to do harm. A memory poisoning attack is an example of exploiting a vulnerability to modify agents knowledge and, thus, affect its behavior. In an agent, there are different types of memory systems (semantic, episodic, and short-term) which have their own characteristics and for which different memory poisoning attacks may be developed.
+  In this paper we focus on semantic memory, we discuss its attack, and mitigation strategies. We introduce private knowledge retrieval and private inference. We propose a signature system in the knowledge base to prevent from undesired manipulation. This should avoid memory poisoning attacks by introducing security by design in the construction of the semantic memory. In our architecture, an agent contains a local Prolog-like inference system (i.e., using Horn clauses to represent knowledge) which accesses an external knowledge base to get the required knowledge. This externally signed knowledge base is accessed privately. We provide different implementations in Python using different privacy levels including k-anonymity and information-theoretical privacy (IT-PIR).</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-10T07:43:02Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Vicenç Torra</name>
+    </author>
+    <author>
+      <name>Maria Bras-Amorós</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.13246v1</id>
+    <title>ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Engineering Tasks in Unfamiliar Codebases</title>
+    <updated>2026-11-09T21:20:57Z</updated>
+    <link href="https://arxiv.org/abs/2611.13246v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.13246v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>ExpertCrowd-SWE (EC-SWE) is a benchmark of 100 expert-authored, multi-file software engineering tasks for evaluating autonomous coding agents in large, unfamiliar codebases. Each task is a change request written by a practising engineer against a pinned commit of a real repository, paired with a sealed reference solution and a task-specific grader whose weighted, mostly executable criteria award partial credit; must-pass blockers and pass/fail gates encode what a maintainer would refuse to merge. The tasks span 87 open-source projects and 11 languages. The median ticket is 148 words, while the median reference solution changes 471 lines. Every task image is calibrated before release so that the reference solution scores 1.0 and both the untouched repository and an inert change score 0; nearly half of the tasks also ship alternative, lazy and adversarial control patches that the grader must classify correctly. The final 100 tasks were selected for difficulty against current frontier models. We evaluate seven frontier models, five runs each (3,495 scored runs), in a single platform harness that gives each model its provider-native tool interface. Claude Opus 5.5 (67.3%) and GPT-6 Astra (63.7%) lead without a statistically significant gap, followed by Claude Fable 5.1 (46.5%), Gemini 3.8 Flash (40.0%), and a statistically indistinguishable group of Qwen 3.8 Max, DeepSeek V4.1 Flash and Grok 4.6 (32-34%). No task is fully solved by every model, and on 80 tasks no model earns full credit on all five runs. Scores span 35 points. Depending on the model, agents take a median of 33 to 166 steps per run, with little relation to score. We release 24 tasks with their environments, graders and results, and hold out 76 to limit contamination.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-09T21:20:57Z</published>
+    <arxiv:comment>17 pages, 5 figures, 6 tables. Dataset: https://huggingface.co/datasets/ExpertCrowd/ec-swe ; leaderboard: https://www.toptal.com/expertcrowd/benchmarks/expertcrowd-swe-benchmark</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Josip Vrdoljak</name>
+    </author>
+    <author>
+      <name>Akash Singh</name>
+    </author>
+    <author>
+      <name>Bas Steunebrink</name>
+    </author>
+    <author>
+      <name>Alex Yarotsky</name>
+    </author>
+    <author>
+      <name>John Lorenzo</name>
+    </author>
+    <author>
+      <name>Achille Nicoletti</name>
+    </author>
+    <author>
+      <name>Sam Pigott</name>
+    </author>
+  </entry>
+</feed>

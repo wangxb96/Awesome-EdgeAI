@@ -96,18 +96,27 @@
   "source_code": [
     {
       "file": "run_ollama_server_suite.py",
-      "sha256": "9a325746842dfbf56965df35dd3c08e38039063a4a63d79385431990905fddeb",
-      "scope": "Surviving source snapshot, not an execution-time commit pin."
+      "sha256": "e7c68da2b89661e4340c03edbf14a2c3cab6e1a1f64b0fac0b517b7c0317487d",
+      "scope": "Surviving source snapshot, not an execution-time commit pin.",
+      "source_sha256": "9a325746842dfbf56965df35dd3c08e38039063a4a63d79385431990905fddeb",
+      "publication_normalization": "Generic device-label default; plotting label dictionary is also generalized. All other parsed Python nodes match the inspected legacy snapshot.",
+      "normalized_ast_equal": true
     },
     {
       "file": "rebuild_clean_server_artifacts.py",
-      "sha256": "d85f4281879d847cd5bb3d07d1fa0889cc517360a9077d1b5cde27384d5bb996",
-      "scope": "Surviving source snapshot, not an execution-time commit pin."
+      "sha256": "00aaa2448fefe0592fcd8af7301dc9f2e2d4a56e4c3610968892cdc7090a9092",
+      "scope": "Surviving source snapshot, not an execution-time commit pin.",
+      "source_sha256": "d85f4281879d847cd5bb3d07d1fa0889cc517360a9077d1b5cde27384d5bb996",
+      "publication_normalization": "Generic device-label default; plotting label dictionary is also generalized. All other parsed Python nodes match the inspected legacy snapshot.",
+      "normalized_ast_equal": true
     },
     {
       "file": "plot_benchmark_results.py",
-      "sha256": "c61871ecf4f20f1b42f196780a329c66261813f9a5c5284c3dcf9f5bdcb83397",
-      "scope": "Surviving source snapshot, not an execution-time commit pin."
+      "sha256": "662eedf52381286bbaa4e892bac8a92fc71fd4c2f3e694d22d605092d06a16a1",
+      "scope": "Surviving source snapshot, not an execution-time commit pin.",
+      "source_sha256": "c61871ecf4f20f1b42f196780a329c66261813f9a5c5284c3dcf9f5bdcb83397",
+      "publication_normalization": "Generic device-label default; plotting label dictionary is also generalized. All other parsed Python nodes match the inspected legacy snapshot.",
+      "normalized_ast_equal": true
     }
   ],
   "legacy_plot_aggregate": {

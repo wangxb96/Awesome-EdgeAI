@@ -101,7 +101,7 @@ Supplement S1 preserves the original server aggregate and provides a [recovered-
 
 ## Artifact map
 
-The [public supplement PDF](supplement/cognitive_edge_supplement.pdf), [bibliographic database](references.bib) and files in the [public inventory](public_artifacts.json) are distributed at [tag `public-artifacts-2026-11-18-v9`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v9). Editable manuscript sources and TeX build inputs are intentionally excluded. Run `python3 survey/check_public_artifacts.py` for local file closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
+The [public supplement PDF](supplement/cognitive_edge_supplement.pdf), [bibliographic database](references.bib) and files in the [public inventory](public_artifacts.json) are distributed at [tag `public-artifacts-2026-11-18-v10`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v10). Editable manuscript sources and TeX build inputs are intentionally excluded. Run `python3 survey/check_public_artifacts.py` for local file closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
 
 | Scientific purpose | Location |
 |---|---|

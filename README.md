@@ -31,7 +31,7 @@ The current public preprint is [Cognitive Edge Computing: A Comprehensive Survey
 | **v1 · 4 January 2025** | **Xubin Wang and Weijia Jia.** [Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies](https://arxiv.org/abs/2501.03265v1). arXiv:2501.03265v1. | [Awesome-EdgeAI](https://github.com/wangxb96/Awesome-EdgeAI): the data–model–system resource collection, now maintained here together with the cognitive-edge material. |
 | **v2 · 7 November 2025** | **Xubin Wang, Qing Li and Weijia Jia.** [Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment](https://arxiv.org/abs/2501.03265v2). arXiv:2501.03265v2. | [cognitive-edge-llm-agent-survey](https://github.com/wangxb96/cognitive-edge-llm-agent-survey): focused LLM/agent literature map; [Awesome-EdgeAI](https://github.com/wangxb96/Awesome-EdgeAI): this consolidated guide and the current protocol, census and editable figures. |
 
-The associated journal manuscript is titled *Cognitive Edge Computing: A Survey on Optimizing Large Language Models and Autonomous Agents for the Edge*. Its current reproducibility artifacts are maintained in this repository. Version-specific BibTeX records are provided under [Citation](#citation).
+The associated journal manuscript is titled *Cognitive Edge Computing: A Survey on Optimizing Large Language Models and Autonomous Agents for the Edge*. Its current reproducibility artifacts are maintained in this repository. The arXiv v2 record is the public citation for that preprint; the root [CITATION.cff](CITATION.cff) gives a separate, version-pinned citation for reusing this repository edition. The journal record should replace the preprint citation once publication metadata is available.
 
 ## Deployment framework
 
@@ -336,7 +336,7 @@ survey/
   *_protocol.md, protocol.md  Scope and measurement contracts
 ```
 
-Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. The repository includes the [bibliographic database](survey/references.bib), figure inputs, protocols and runnable format examples. Editable manuscript sources and author-local build files are not distributed. The current public artifact edition is pinned to [tag `public-artifacts-2026-11-18-v9`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v9).
+Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. The repository includes the [bibliographic database](survey/references.bib), figure inputs, protocols and runnable format examples. Editable manuscript sources and author-local build files are not distributed. The current public artifact edition is pinned to [tag `public-artifacts-2026-11-18-v10`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v10).
 
 | Artifact | Purpose |
 |---|---|
@@ -415,6 +415,10 @@ Use the version corresponding to the material being cited.
   author={Wang, Xubin and Li, Qing and Jia, Weijia},
   journal={arXiv preprint arXiv:2501.03265v2},
   year={2025},
+  doi={10.48550/arXiv.2501.03265},
+  eprint={2501.03265},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
   note={Version 2, November 7, 2025},
   url={https://arxiv.org/abs/2501.03265v2}
 }

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: >-
+  To cite this artifact release, use the citation metadata below. For the survey article,
+  use the version-specific arXiv record in README.md; cite this repository release when
+  reusing its code, figures, data, or protocols.
+type: software
+title: "Awesome-EdgeAI: Cognitive Edge Computing Survey Artifacts"
+authors:
+  - family-names: Wang
+    given-names: Xubin
+  - family-names: Li
+    given-names: Qing
+  - family-names: Jia
+    given-names: Weijia
+version: "public-artifacts-2026-11-18-v10"
+date-released: 2026-11-18
+url: "https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v10"
+repository-code: "https://github.com/wangxb96/Awesome-EdgeAI"
+abstract: >-
+  A versioned companion collection for the cognitive edge computing survey, including
+  literature references, figure sources and exports, a retained-link census, measurement
+  protocols, and reproducibility scripts. Manuscript submission sources are not included.

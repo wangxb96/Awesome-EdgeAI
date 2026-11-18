@@ -719,7 +719,7 @@
       "supplement_reference_number": 4,
       "entry_type": "inproceedings",
       "title_bibtex": "{FastVLM}: Efficient vision encoding for vision language models",
-      "author_bibtex": "Vasu, Pavan Kumar Anasosalu and Faghri, Fartash and Li, Chun-Liang and Koc, Cem and True, Nate and Antony, Albert and Santhanam, Gokula and Gabriel, James and Grasch, Peter and Tuzel, Oncel and others",
+      "author_bibtex": "Vasu, Pavan Kumar Anasosalu and Faghri, Fartash and Li, Chun-Liang and Koc, Cem and True, Nate and Antony, Albert and Santhanam, Gokul and Gabriel, James and Grasch, Peter and Tuzel, Oncel and others",
       "booktitle_bibtex": "Proceedings of the Computer Vision and Pattern Recognition Conference",
       "pages_bibtex": "19769--19780",
       "year_bibtex": "2025"
@@ -1125,7 +1125,8 @@
       "author_bibtex": "Xu, Han and Wang, Xingyuan and Ji, Shihao",
       "booktitle_bibtex": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
       "pages_bibtex": "5570--5571",
-      "year_bibtex": "2024"
+      "year_bibtex": "2024",
+      "doi_bibtex": "10.1145/3627673.3679068"
     },
     {
       "citekey": "zhang2025amp4ec",
@@ -1134,10 +1135,11 @@
       "entry_type": "inproceedings",
       "title_bibtex": "{AMP4EC}: Adaptive Model Partitioning Framework for Efficient Deep Learning Inference in Edge Computing Environments",
       "author_bibtex": "Zhang, Guilin and Guo, Wulan and Tan, Ziqi and Jiang, Hailong",
-      "booktitle_bibtex": "FMEC 2025",
+      "booktitle_bibtex": "2025 10th International Conference on Fog and Mobile Edge Computing (FMEC)",
       "pages_bibtex": "97--104",
       "year_bibtex": "2025",
-      "publisher_bibtex": "IEEE"
+      "publisher_bibtex": "IEEE",
+      "doi_bibtex": "10.1109/FMEC65595.2025.11119384"
     }
   ]
 }

@@ -12,9 +12,9 @@ authors:
     given-names: Qing
   - family-names: Jia
     given-names: Weijia
-version: "public-artifacts-2026-11-18-v10"
+version: "public-artifacts-2026-11-18-v11"
 date-released: 2026-11-18
-url: "https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v10"
+url: "https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v11"
 repository-code: "https://github.com/wangxb96/Awesome-EdgeAI"
 abstract: >-
   A versioned companion collection for the cognitive edge computing survey, including

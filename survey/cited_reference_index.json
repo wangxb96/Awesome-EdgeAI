@@ -297,7 +297,7 @@
       "main_reference_number": 24,
       "supplement_reference_number": 21,
       "entry_type": "inproceedings",
-      "title_bibtex": "Autogen: Enabling next-gen {LLM} applications via multi-agent conversations",
+      "title_bibtex": "{AutoGen}: Enabling next-gen {LLM} applications via multi-agent conversations",
       "author_bibtex": "Wu, Qingyun and Bansal, Gagan and Zhang, Jieyu and Wu, Yiran and Li, Beibin and Zhu, Erkang and Jiang, Li and Zhang, Xiaoyun and Zhang, Shaokun and Liu, Jiale and others",
       "booktitle_bibtex": "First Conference on Language Modeling",
       "year_bibtex": "2024"
@@ -393,7 +393,7 @@
       "supplement_reference_number": 16,
       "entry_type": "inproceedings",
       "title_bibtex": "Efficient memory management for large language model serving with pagedattention",
-      "author_bibtex": "Kwon, Woosuk and Li, Zhuohan and Zhuang, Siyuan and Sheng, Ying and Zheng, Lianmin and Yu, Cody Hao and Gonzalez, Joseph and Zhang, Hao and Stoica, Ion",
+      "author_bibtex": "Kwon, Woosuk and Li, Zhuohan and Zhuang, Siyuan and Sheng, Ying and Zheng, Lianmin and Yu, Cody Hao and Gonzalez, Joseph E. and Zhang, Hao and Stoica, Ion",
       "booktitle_bibtex": "Proceedings of the 29th symposium on operating systems principles",
       "pages_bibtex": "611--626",
       "year_bibtex": "2023"
@@ -730,7 +730,7 @@
       "supplement_reference_number": 20,
       "entry_type": "article",
       "title_bibtex": "{SGLang}: Efficient execution of structured language model programs",
-      "author_bibtex": "Zheng, Lianmin and Yin, Liangsheng and Xie, Zhiqiang and Sun, Chuyue Livia and Huang, Jeff and Yu, Cody Hao and Cao, Shiyi and Kozyrakis, Christos and Stoica, Ion and Gonzalez, Joseph E and others",
+      "author_bibtex": "Zheng, Lianmin and Yin, Liangsheng and Xie, Zhiqiang and Sun, Chuyue and Huang, Jeff and Yu, Cody Hao and Cao, Shiyi and Kozyrakis, Christos and Stoica, Ion and Gonzalez, Joseph E. and others",
       "journal_bibtex": "Advances in neural information processing systems",
       "volume_bibtex": "37",
       "pages_bibtex": "62557--62583",

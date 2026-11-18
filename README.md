@@ -336,7 +336,7 @@ survey/
   *_protocol.md, protocol.md  Scope and measurement contracts
 ```
 
-Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. The repository includes the [bibliographic database](survey/references.bib), figure inputs, protocols and runnable format examples. Editable manuscript sources and author-local build files are not distributed. The current public artifact edition is pinned to [tag `public-artifacts-2026-11-17-v7`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-17-v7).
+Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. The repository includes the [bibliographic database](survey/references.bib), figure inputs, protocols and runnable format examples. Editable manuscript sources and author-local build files are not distributed. The current public artifact edition is pinned to [tag `public-artifacts-2026-11-18-v8`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v8).
 
 | Artifact | Purpose |
 |---|---|

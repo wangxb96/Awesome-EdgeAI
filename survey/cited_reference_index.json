@@ -1,5 +1,5 @@
 {
-  "edition_date": "2026-11-17",
+  "edition_date": "2026-11-18",
   "scope": "Reference inventory for the survey guide and supplement. Entries include studies, surveys and documentation; counts are not a study-selection flow or completeness estimate. BibTeX strings retain source markup.",
   "counts": {
     "main_references": 96,
@@ -11,8 +11,18 @@
   },
   "records": [
     {
-      "citekey": "zhou2019edge",
+      "citekey": "xiaoefficient",
       "main_reference_number": 1,
+      "supplement_reference_number": 7,
+      "entry_type": "inproceedings",
+      "title_bibtex": "Efficient Streaming Language Models with Attention Sinks",
+      "author_bibtex": "Xiao, Guangxuan and Tian, Yuandong and Chen, Beidi and Han, Song and Lewis, Mike",
+      "booktitle_bibtex": "The Twelfth International Conference on Learning Representations",
+      "year_bibtex": "2024"
+    },
+    {
+      "citekey": "zhou2019edge",
+      "main_reference_number": 2,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Edge intelligence: Paving the last mile of artificial intelligence with edge computing",
@@ -26,7 +36,7 @@
     },
     {
       "citekey": "deng2020edge",
-      "main_reference_number": 2,
+      "main_reference_number": 3,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Edge intelligence: The confluence of edge computing and artificial intelligence",
@@ -40,17 +50,17 @@
     },
     {
       "citekey": "han2024llm",
-      "main_reference_number": 3,
+      "main_reference_number": 4,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "{LLM} multi-agent systems: Challenges and open problems",
       "author_bibtex": "Han, Shanshan and Zhang, Qifan and Yao, Yuhang and Jin, Weizhao and Xu, Zhaozhuo",
-      "journal_bibtex": "arXiv preprint arXiv:2402.03578",
-      "year_bibtex": "2024"
+      "journal_bibtex": "arXiv preprint arXiv:2402.03578v2",
+      "year_bibtex": "2025"
     },
     {
       "citekey": "shi2016edge",
-      "main_reference_number": 4,
+      "main_reference_number": 5,
       "supplement_reference_number": 12,
       "entry_type": "article",
       "title_bibtex": "Edge computing: Vision and challenges",
@@ -64,7 +74,7 @@
     },
     {
       "citekey": "wang2025empowering",
-      "main_reference_number": 5,
+      "main_reference_number": 6,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Empowering edge intelligence: A comprehensive survey on on-device {AI} models",
@@ -78,7 +88,7 @@
     },
     {
       "citekey": "wang2025optimizing",
-      "main_reference_number": 6,
+      "main_reference_number": 7,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Optimizing Edge {AI}: A Comprehensive Survey on Data, Model, and System Strategies",
@@ -89,7 +99,7 @@
     },
     {
       "citekey": "wang2026awesome",
-      "main_reference_number": 7,
+      "main_reference_number": 8,
       "supplement_reference_number": null,
       "entry_type": "misc",
       "title_bibtex": "{Awesome-EdgeAI}: Official Artifact Repository and Reproducible Survey Corpus for Cognitive Edge Computing",
@@ -100,7 +110,7 @@
     },
     {
       "citekey": "zheng2025review",
-      "main_reference_number": 8,
+      "main_reference_number": 9,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "A review on edge large language models: Design, execution, and applications",
@@ -114,7 +124,7 @@
     },
     {
       "citekey": "xu2024device",
-      "main_reference_number": 9,
+      "main_reference_number": 10,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "On-device language models: A comprehensive review",
@@ -124,7 +134,7 @@
     },
     {
       "citekey": "yang2026decision",
-      "main_reference_number": 10,
+      "main_reference_number": 11,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Decision-Making Large Language Model for Wireless Communication: A Comprehensive Survey on Key Techniques",
@@ -137,7 +147,7 @@
     },
     {
       "citekey": "yang2025beyondedge",
-      "main_reference_number": 11,
+      "main_reference_number": 12,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Beyond the Edge: An Advanced Exploration of Reinforcement Learning for Mobile Edge Computing, Its Applications, and Future Research Trajectories",
@@ -151,7 +161,7 @@
     },
     {
       "citekey": "cai2025tutorial",
-      "main_reference_number": 12,
+      "main_reference_number": 13,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Tutorial on Large Language Model-Enhanced Reinforcement Learning for Wireless Networks",
@@ -164,7 +174,7 @@
     },
     {
       "citekey": "zhang2025edgegi",
-      "main_reference_number": 13,
+      "main_reference_number": 14,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Toward Edge General Intelligence With Agentic {AI} and Agentification: Concepts, Technologies, and Future Directions",
@@ -177,7 +187,7 @@
     },
     {
       "citekey": "luo2026resource",
-      "main_reference_number": 14,
+      "main_reference_number": 15,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Resource-Aware Agentic {AI} Reasoning for Mobile Edge General Intelligence",
@@ -188,7 +198,7 @@
     },
     {
       "citekey": "zhao2026world",
-      "main_reference_number": 15,
+      "main_reference_number": 16,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Edge General Intelligence Through World Models, Large Language Models, and Agentic {AI}: Fundamentals, Solutions, and Challenges",
@@ -201,7 +211,7 @@
     },
     {
       "citekey": "lin2024awq",
-      "main_reference_number": 16,
+      "main_reference_number": 17,
       "supplement_reference_number": 13,
       "entry_type": "article",
       "title_bibtex": "{AWQ}: Activation-aware weight quantization for on-device {LLM} compression and acceleration",
@@ -213,23 +223,13 @@
     },
     {
       "citekey": "tan2024mobilequant",
-      "main_reference_number": 17,
+      "main_reference_number": 18,
       "supplement_reference_number": 14,
       "entry_type": "inproceedings",
       "title_bibtex": "MobileQuant: Mobile-friendly Quantization for On-device Language Models",
       "author_bibtex": "Tan, Fuwen and Lee, Royson and Dudziak, {\\L}ukasz and Hu, Shell Xu and Bhattacharya, Sourav and Hospedales, Timothy and Tzimiropoulos, Georgios and Martinez, Brais",
       "booktitle_bibtex": "Findings of the Association for Computational Linguistics: EMNLP 2024",
       "pages_bibtex": "9761--9771",
-      "year_bibtex": "2024"
-    },
-    {
-      "citekey": "xiaoefficient",
-      "main_reference_number": 18,
-      "supplement_reference_number": 7,
-      "entry_type": "inproceedings",
-      "title_bibtex": "Efficient Streaming Language Models with Attention Sinks",
-      "author_bibtex": "Xiao, Guangxuan and Tian, Yuandong and Chen, Beidi and Han, Song and Lewis, Mike",
-      "booktitle_bibtex": "The Twelfth International Conference on Learning Representations",
       "year_bibtex": "2024"
     },
     {
@@ -347,8 +347,8 @@
       "main_reference_number": 29,
       "supplement_reference_number": null,
       "entry_type": "article",
-      "title_bibtex": "Minicpm4: Ultra-efficient {LLMs} on end devices",
-      "author_bibtex": "Team, MiniCPM and Xiao, Chaojun and Li, Yuxuan and Han, Xu and Bai, Yuzhuo and Cai, Jie and Chen, Haotian and Chen, Wentong and Cong, Xin and Cui, Ganqu and others",
+      "title_bibtex": "{MiniCPM4}: Ultra-efficient {LLMs} on end devices",
+      "author_bibtex": "{MiniCPM Team} and Xiao, Chaojun and Li, Yuxuan and Han, Xu and Bai, Yuzhuo and Cai, Jie and Chen, Haotian and Chen, Wentong and Cong, Xin and Cui, Ganqu and others",
       "journal_bibtex": "arXiv preprint arXiv:2506.07900",
       "year_bibtex": "2025"
     },
@@ -361,7 +361,8 @@
       "author_bibtex": "Yao, Yuan and Yu, Tianyu and Zhang, Ao and Wang, Chongyi and Cui, Junbo and Zhu, Hongji and Cai, Tianchi and Chen, Chi and Li, Haoyu and Zhao, Weilin and He, Zhihui and others",
       "journal_bibtex": "Nature Communications",
       "volume_bibtex": "16",
-      "number_bibtex": "5509",
+      "number_bibtex": "1",
+      "pages_bibtex": "5509",
       "year_bibtex": "2025",
       "doi_bibtex": "10.1038/s41467-025-61040-5"
     },
@@ -417,7 +418,7 @@
       "booktitle_bibtex": "International conference on machine learning",
       "pages_bibtex": "8748--8763",
       "year_bibtex": "2021",
-      "organization_bibtex": "PmLR"
+      "organization_bibtex": "PMLR"
     },
     {
       "citekey": "ramesh2022hierarchical",
@@ -500,19 +501,33 @@
       "year_bibtex": "2025"
     },
     {
-      "citekey": "ignatov2021real",
+      "citekey": "henderson2020energy",
       "main_reference_number": 43,
+      "supplement_reference_number": 6,
+      "entry_type": "article",
+      "title_bibtex": "Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning",
+      "author_bibtex": "Henderson, Peter and Hu, Jieru and Romoff, Joshua and Brunskill, Emma and Jurafsky, Dan and Pineau, Joelle",
+      "journal_bibtex": "Journal of Machine Learning Research",
+      "volume_bibtex": "21",
+      "number_bibtex": "248",
+      "pages_bibtex": "1--43",
+      "year_bibtex": "2020",
+      "url_bibtex": "https://jmlr.org/papers/v21/20-312.html"
+    },
+    {
+      "citekey": "ignatov2021real",
+      "main_reference_number": 44,
       "supplement_reference_number": null,
       "entry_type": "inproceedings",
       "title_bibtex": "Real-time quantized image super-resolution on mobile {NPUs}, mobile {AI} 2021 challenge: Report",
       "author_bibtex": "Ignatov, Andrey and Timofte, Radu and Denna, Maurizio and Younes, Abdel",
-      "booktitle_bibtex": "Proceedings of the IEEE/CVF conference on computer vision and pattern recognition",
+      "booktitle_bibtex": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops",
       "pages_bibtex": "2525--2534",
       "year_bibtex": "2021"
     },
     {
       "citekey": "hu2022lora",
-      "main_reference_number": 44,
+      "main_reference_number": 45,
       "supplement_reference_number": 27,
       "entry_type": "inproceedings",
       "title_bibtex": "{LoRA}: Low-Rank Adaptation of Large Language Models",
@@ -523,7 +538,7 @@
     },
     {
       "citekey": "houlsby2019parameter",
-      "main_reference_number": 45,
+      "main_reference_number": 46,
       "supplement_reference_number": null,
       "entry_type": "inproceedings",
       "title_bibtex": "Parameter-efficient transfer learning for {NLP}",
@@ -532,16 +547,6 @@
       "pages_bibtex": "2790--2799",
       "year_bibtex": "2019",
       "organization_bibtex": "PMLR"
-    },
-    {
-      "citekey": "le2024exploring",
-      "main_reference_number": 46,
-      "supplement_reference_number": null,
-      "entry_type": "article",
-      "title_bibtex": "Exploring the practicality of federated learning: A survey towards the communication perspective",
-      "author_bibtex": "Le, Khiem and Luong-Ha, Nhan and Nguyen-Duc, Manh and Le-Phuoc, Danh and Do, Cuong and Wong, Kok-Seng",
-      "journal_bibtex": "arXiv preprint arXiv:2405.20431",
-      "year_bibtex": "2024"
     },
     {
       "citekey": "shen2023hugginggpt",
@@ -561,7 +566,7 @@
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "The algorithmic foundations of differential privacy",
-      "author_bibtex": "Dwork, Cynthia and Roth, Aaron and others",
+      "author_bibtex": "Dwork, Cynthia and Roth, Aaron",
       "journal_bibtex": "Foundations and trends{\\textregistered} in theoretical computer science",
       "volume_bibtex": "9",
       "number_bibtex": "3--4",
@@ -597,7 +602,7 @@
       "supplement_reference_number": null,
       "entry_type": "inproceedings",
       "title_bibtex": "Fr-spec: Accelerating large-vocabulary language models via frequency-ranked speculative sampling",
-      "author_bibtex": "Zhao, Weilin and Pan, Tengyu and Han, Xu and Zhang, Yudi and Ao, Sun and Huang, Yuxiang and Zhang, Kaihuo and Zhao, Weilun and Li, Yuxuan and Zhou, Jie and others",
+      "author_bibtex": "Zhao, Weilin and Pan, Tengyu and Han, Xu and Zhang, Yudi and Sun, Ao and Huang, Yuxiang and Zhang, Kaihuo and Zhao, Weilun and Li, Yuxuan and Zhou, Jie and others",
       "booktitle_bibtex": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
       "pages_bibtex": "3909--3921",
       "year_bibtex": "2025"
@@ -748,8 +753,8 @@
       "main_reference_number": 64,
       "supplement_reference_number": null,
       "entry_type": "misc",
-      "author_bibtex": "G. Gerganov et al.",
-      "title_bibtex": "\\texttt{llama.cpp}: Local Inference of {LLMs} on Diverse Hardware",
+      "author_bibtex": "Gerganov, Georgi and others",
+      "title_bibtex": "\\texttt{llama.cpp}: {LLM} Inference in {C/C++}",
       "howpublished_bibtex": "\\url{https://github.com/ggml-org/llama.cpp}",
       "year_bibtex": "2023"
     },
@@ -879,6 +884,7 @@
       "entry_type": "misc",
       "author_bibtex": "{Google}",
       "title_bibtex": "{FunctionGemma} Model Card",
+      "year_bibtex": "2026",
       "howpublished_bibtex": "\\url{https://ai.google.dev/gemma/docs/functiongemma/model_card}",
       "note_bibtex": "Official documentation, version inspected November 13, 2026"
     },
@@ -908,22 +914,8 @@
       "doi_bibtex": "10.1109/TMC.2026.3668214"
     },
     {
-      "citekey": "henderson2020energy",
-      "main_reference_number": 78,
-      "supplement_reference_number": 6,
-      "entry_type": "article",
-      "title_bibtex": "Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning",
-      "author_bibtex": "Henderson, Peter and Hu, Jieru and Romoff, Joshua and Brunskill, Emma and Jurafsky, Dan and Pineau, Joelle",
-      "journal_bibtex": "Journal of Machine Learning Research",
-      "volume_bibtex": "21",
-      "number_bibtex": "248",
-      "pages_bibtex": "1--43",
-      "year_bibtex": "2020",
-      "url_bibtex": "https://jmlr.org/papers/v21/20-312.html"
-    },
-    {
       "citekey": "qwen2025qwen3",
-      "main_reference_number": 79,
+      "main_reference_number": 78,
       "supplement_reference_number": 1,
       "entry_type": "misc",
       "author_bibtex": "{Qwen Team}",
@@ -934,7 +926,7 @@
     },
     {
       "citekey": "meta2024llama32",
-      "main_reference_number": 80,
+      "main_reference_number": 79,
       "supplement_reference_number": null,
       "entry_type": "misc",
       "author_bibtex": "{Meta AI}",
@@ -945,7 +937,7 @@
     },
     {
       "citekey": "google2025gemma3n",
-      "main_reference_number": 81,
+      "main_reference_number": 80,
       "supplement_reference_number": 29,
       "entry_type": "misc",
       "author_bibtex": "{Google}",
@@ -956,17 +948,18 @@
     },
     {
       "citekey": "hf2026smollm2card",
-      "main_reference_number": 82,
+      "main_reference_number": 81,
       "supplement_reference_number": null,
       "entry_type": "misc",
       "author_bibtex": "{Hugging Face}",
       "title_bibtex": "{SmolLM2-1.7B-Instruct}: Official Model Card",
+      "year_bibtex": "2026",
       "howpublished_bibtex": "\\url{https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct}",
       "note_bibtex": "Publisher model card, version inspected November 13, 2026"
     },
     {
       "citekey": "cai2026secure",
-      "main_reference_number": 83,
+      "main_reference_number": 82,
       "supplement_reference_number": 24,
       "entry_type": "article",
       "title_bibtex": "Large Language Model-Enhanced Deep Reinforcement Learning for Secure Data Collection in Low-Altitude Economy Networking",
@@ -980,7 +973,7 @@
     },
     {
       "citekey": "joshi2025neuro",
-      "main_reference_number": 84,
+      "main_reference_number": 83,
       "supplement_reference_number": null,
       "entry_type": "inproceedings",
       "title_bibtex": "Neuro-LIFT: A neuromorphic, {LLM}-based interactive framework for autonomous drone flight at the edge",
@@ -993,7 +986,7 @@
     },
     {
       "citekey": "li2025next",
-      "main_reference_number": 85,
+      "main_reference_number": 84,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "What is next for {LLMs}? Pushing the boundaries of next-gen {AI} computing hardware with photonic chips",
@@ -1007,7 +1000,7 @@
     },
     {
       "citekey": "kudithipudi2025neuromorphic",
-      "main_reference_number": 86,
+      "main_reference_number": 85,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Neuromorphic computing at scale",
@@ -1021,7 +1014,7 @@
     },
     {
       "citekey": "andong2025federated",
-      "main_reference_number": 87,
+      "main_reference_number": 86,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Federated Multi-Agent Reinforcement Learning for Privacy-Preserving and Energy-Aware Resource Management in 6G Edge Networks",
@@ -1031,7 +1024,7 @@
     },
     {
       "citekey": "sun2025disco",
-      "main_reference_number": 88,
+      "main_reference_number": 87,
       "supplement_reference_number": null,
       "entry_type": "inproceedings",
       "title_bibtex": "DiSCo: Device-Server Collaborative {LLM}-Based Text Streaming Services",
@@ -1043,7 +1036,7 @@
     },
     {
       "citekey": "tran2025multi",
-      "main_reference_number": 89,
+      "main_reference_number": 88,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Multi-agent collaboration mechanisms: A survey of {LLMs}",
@@ -1053,7 +1046,7 @@
     },
     {
       "citekey": "lu2024federated",
-      "main_reference_number": 90,
+      "main_reference_number": 89,
       "supplement_reference_number": null,
       "entry_type": "article",
       "title_bibtex": "Federated learning with non-iid data: A survey",
@@ -1067,13 +1060,26 @@
     },
     {
       "citekey": "fang2025federated",
-      "main_reference_number": 91,
+      "main_reference_number": 90,
       "supplement_reference_number": null,
       "entry_type": "inproceedings",
       "title_bibtex": "{Federated Sketching LoRA}: A Flexible Framework for Heterogeneous Collaborative Fine-Tuning of {LLMs}",
       "author_bibtex": "Fang, Wenzhi and Han, Dong-Jun and Yuan, Liangqi and Hosseinalipour, Seyyedali and Brinton, Christopher G",
-      "booktitle_bibtex": "ICML 2026",
+      "booktitle_bibtex": "Proc. 43rd Int. Conf. Mach. Learn. (ICML)",
+      "series_bibtex": "PMLR",
+      "volume_bibtex": "306",
+      "pages_bibtex": "29060--29092",
       "year_bibtex": "2026"
+    },
+    {
+      "citekey": "le2024exploring",
+      "main_reference_number": 91,
+      "supplement_reference_number": null,
+      "entry_type": "article",
+      "title_bibtex": "Exploring the practicality of federated learning: A survey towards the communication perspective",
+      "author_bibtex": "Le, Khiem and Luong-Ha, Nhan and Nguyen-Duc, Manh and Le-Phuoc, Danh and Do, Cuong and Wong, Kok-Seng",
+      "journal_bibtex": "arXiv preprint arXiv:2405.20431",
+      "year_bibtex": "2024"
     },
     {
       "citekey": "liu2025towards",
@@ -1082,7 +1088,7 @@
       "entry_type": "article",
       "title_bibtex": "Towards Harnessing the Collaborative Power of Large and Small Models for Domain Tasks",
       "author_bibtex": "Liu, Yang and Yan, Bingjie and Zou, Tianyuan and Zhang, Jianqing and Gu, Zixuan and Ding, Jianbing and Wang, Xidong and Li, Jingyi and Ye, Xiaozhou and Ouyang, Ye and others",
-      "journal_bibtex": "arXiv preprint arXiv:2504.17421",
+      "journal_bibtex": "arXiv preprint arXiv:2504.17421v1",
       "year_bibtex": "2025"
     },
     {

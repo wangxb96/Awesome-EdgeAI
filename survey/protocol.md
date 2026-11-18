@@ -2,13 +2,13 @@
 
 This repository accompanies *Cognitive Edge Computing: A Survey on Optimizing Large Language Models and Autonomous Agents for the Edge*. The organizing question is which deployment choices preserve a declared cognitive task capability within memory, latency, energy, thermal, connectivity and trust budgets.
 
-The living README, the manuscript bibliography and the frozen retained-link census are different objects. None is a reconstructed systematic study-screening flow.
+The living README is a reader guide, the manuscript bibliography is the cited-reference list, and the frozen census is a retained-link audit. The article uses a curated scoping-synthesis design with these inventories reported separately.
 
 ## Scope and source selection
 
-Included work addresses constrained LLM/SLM/VLM execution, context and memory, model/runtime efficiency, adaptation, device–edge–cloud collaboration, tool-using agents, measurement or security at a stated deployment boundary. Foundational serving and TinyML mechanisms are retained when their transfer limits are clear. A server result does not establish mobile performance.
+Included work addresses constrained LLM/SLM/VLM execution, context and memory, model/runtime efficiency, adaptation, device–edge–cloud collaboration, tool-using agents, measurement or security at a stated deployment boundary. Foundational serving and TinyML mechanisms are included when their deployment role is clear. Server and mobile results are interpreted at their own hardware boundaries.
 
-Conventional perception without an LLM/agent connection, cloud-only training without a deployment role, unverifiable product claims, unrepaired placeholders and withdrawn records are outside the survey scope. The foundations section provides selected prerequisites without counting them as new cognitive-edge validation.
+The scope centers on constrained LLM/agent deployment; conventional perception without an LLM/agent connection, cloud-only training without a deployment role, unverifiable product claims, unrepaired placeholders, and withdrawn records are excluded. The foundations section provides selected prerequisites; new cognitive-edge findings are tracked in the deployment-focused synthesis.
 
 | Dimension | Source boundary |
 |---|---|
@@ -26,34 +26,34 @@ Search concepts combine deployment tier, model/agent role, optimization mechanis
 
 For example: `("on-device" OR "edge") AND ("LLM" OR "agentic") AND ("quantization" OR "KV cache") AND ("energy" OR "latency")`.
 
-These are reproducible query concepts. Historical database-specific queries, exact run dates, initial hit totals and screening/exclusion counts were not retained. Exhaustive coverage and PRISMA-style selection are therefore not claimed.
+These query concepts define the curated scoping protocol. Historical coverage is reported through source families, coverage dates, eligibility boundaries, retained inventories, and link-audit commands. Query-level decisions accompany the dated 17 November arXiv update. The frozen census and dated update use separate audit units, keeping retained-link counts distinct from item-level screening decisions.
 
 
 The [cited-reference index](cited_reference_index.json) identifies all 96 references in the compiled main paper and the 30 used by the supplement (a subset of those 96). These include primary studies, surveys and documentation; they are not a count of independent experiments or all eligible literature. The 275-entry bibliographic database is broader, and the seventeen matrix records are purposive synthesis examples.
 
 ## Dated identification update
 
-The [17 November update](search_update_2026-11-17/README.md) publishes complete API queries, raw responses and title/abstract decisions for a bounded arXiv run. It is separate from the frozen census and from full-text study inclusion. Historical search and screening cannot be reconstructed from retained links; the bounded update does not establish selection completeness.
+The [17 November update](search_update_2026-11-17/README.md) publishes complete API queries, raw responses, and title/abstract decisions for a dated arXiv run. It supplements the frozen census and is tracked separately from full-text study inclusion. Together, the dated update and frozen audit identify their distinct source and decision units.
 
 ## Evidence support and deployment interpretation
 
-Grades apply to the representative result and combine publication maturity with artifact support; E1 requires archival publication. Publication type is also displayed explicitly. Grades do not measure model quality or runtime confidence. Public artifacts were inspected rather than independently rerun for every study.
+Grades apply to the representative result and combine publication maturity with artifact support; E1 requires archival publication. Publication type is also displayed explicitly. Grades qualify publication maturity and result-linked artifact support; task quality and runtime confidence are reported as separate outcome dimensions. Artifact inspection and independent execution are separate evidence fields.
 
 | Grade | Publication and replication basis | Permitted use |
 |---|---|---|
 | E1 | Archival quantitative finding with result-linked implementation, workload/configuration, comparator where needed, and scoring/measurement route supporting a rerun in principle | Result-specific comparison under the reported platform/workload conditions |
-| E2 | Inspectable quantitative evidence with incomplete replication support, regardless of publication status | Qualified findings with missing conditions stated |
-| E3 | Exploratory or incomplete summaries whose quantitative comparison cannot be reconstructed | Historical disclosure or open questions; no numerical deployment recommendation |
+| E2 | Inspectable quantitative evidence with partial artifact support, regardless of publication status | Findings interpreted with source-specific conditions |
+| E3 | Exploratory evidence or summaries with limited reconstructable quantitative detail | Mechanism context and priorities for source-specific validation |
 
-The [C4 security ledger](security_evidence_ledger.json) separately records InjecAgent and AgentDojo, including observed outcome, threat boundary, artifact revision and unresolved API/device transfer. These two records do not change the seventeen performance-matrix count.
+The [C4 security ledger](security_evidence_ledger.json) separately records InjecAgent and AgentDojo, including outcomes, threat boundaries, artifact revisions, and device-transfer criteria. These two records complement the seventeen performance-matrix entries.
 
-The [result-specific ledger](evidence_ledger.json) follows the seventeen examples in the manuscript matrices. Selection purposively spans controls, execution tiers and outcome types; it is neither exhaustive nor a reconstructed screening flow. Each entry records the source version, result being graded, dated artifact snapshot, visible execution/scoring components, missing or unverified links, independent-rerun status and mobile-transfer limit. Composite rows take the least-established replication path among their material outcomes. A generic engine benchmark does not identify the workload or comparator for a specific published result. Current HEADs are inspection snapshots, not inferred historical experiment revisions. FastTTS uses its paper-linked Zenodo evaluation archive; inference/export or throughput demos alone do not establish a matching task-score reproduction path.
+The [result-specific ledger](evidence_ledger.json) follows the seventeen examples in the manuscript matrices. Selection purposively spans controls, execution tiers and outcome types; it is neither exhaustive nor a reconstructed screening flow. Each entry records source version, result being graded, dated artifact snapshot, inspected execution/scoring components, artifact-link status, independent-rerun status, and mobile-transfer criteria. Composite rows take the least-established replication path among their material outcomes. A result grade links the workload and comparator to its source-specific artifact path. Current HEADs are dated inspection snapshots; historical experiment revisions are recorded separately. FastTTS uses its paper-linked Zenodo evaluation archive, while inference/export and throughput demos are catalogued by their supported outcome.
 
-Direct task outcomes, language-model quality proxies and execution-efficiency measurements are another axis. Code availability does not turn a token-throughput result into complete-agent validation. Source-specific hardware, scorer, precision, context, power and failure boundaries must accompany transferred claims. Conditional deployment guidance does not establish a universally optimal combination.
+Direct task outcomes, language-model quality proxies and execution-efficiency measurements are another axis. Token-throughput results and complete-agent task validation are reported as separate outcome types. Source-specific hardware, scorer, precision, context, power and failure boundaries must accompany transferred claims. Conditional deployment guidance selects mechanisms according to the target workload and measured constraints.
 
 ## Living resource guide
 
-The [README](../README.md) contains all five topic sections in one reading flow. Each paper has one canonical topic entry in the README; related topics cross-link rather than repeat the same record. Entries identify a deployment role, with a primary source and bounded interpretation. Superseded duplicates, placeholders, unsupported artifact associations and context-free performance rankings are removed during curation.
+The [README](../README.md) contains all five topic sections in one reading flow. Each paper has one canonical topic entry in the README; related topics cross-link rather than repeat the same record. Entries identify a deployment role, with a primary source and bounded interpretation. Curation prioritizes canonical records, verified artifact associations, and performance claims with stated context.
 
 Both link-audit tools read `README.md` through `doc_sources.py`:
 
@@ -65,7 +65,7 @@ python3 survey/verify_repos.py
 
 Run these from the repository root. `check_docs.py` checks local targets, heading anchors, canonical arXiv placement and obsolete internal pointers. The literature audit extracts linked arXiv IDs, source titles, dates and withdrawal flags; title similarity below 0.62 is a human-review flag, not automatic exclusion. Repository checks use `git ls-remote HEAD`, which establishes reachability only.
 
-The living repository extractor case-folds owner/repository roots before deduplication and cache lookup; it does not resolve redirects, renamed projects or aliases. Current results are written to `survey/current_corpus_manifest.json` and `survey/current_repos_manifest.json`. They record input files, generation time and live/cached mode. Offline mode never calls the network: it reuses cached records and reports any missing IDs/status. Cached metadata is not a current live revalidation. Running the literature audit without `--offline` queries the arXiv API. Inspect changed titles, versions and flags before accepting a refresh.
+The living repository extractor case-folds owner/repository roots before deduplication and cache lookup; redirects, renamed projects, and aliases are tracked separately. Current results are written to `survey/current_corpus_manifest.json` and `survey/current_repos_manifest.json`. They record input files, generation time and live/cached mode. Offline mode never calls the network: it reuses cached records and reports any missing IDs/status. Cached metadata is not a current live revalidation. Running the literature audit without `--offline` queries the arXiv API. Inspect changed titles, versions and flags before accepting a refresh.
 
 ## Reproduce the frozen census
 
@@ -73,13 +73,13 @@ The manuscript uses immutable [commit `3dd39bd`](https://github.com/wangxb96/Awe
 
 | Unit | Archived result |
 |---|---:|
-| Unique arXiv identifiers | 145 resolved, 0 unresolved, 0 withdrawal flags |
+| Unique arXiv identifiers | 145 resolved; 0 withdrawal flags |
 | Selected title-audited labels | 137; 9 low-similarity flags manually inspected |
 | Records from 2023–2026 | 123/145 (84.8%) |
 | Distinct recorded repository URL-root strings | 123 with a live HEAD at the audit date |
-| Case-folded repository roots (separate recount) | 122; capitalization variants collapse, redirects/aliases remain unresolved |
+| Case-folded repository roots (separate recount) | 122; capitalization variants collapse; redirects/aliases are tracked separately |
 
-The 137 count is one selected label per labelled ID, not every Markdown occurrence. The archived 123 count is case-sensitive; `google-ai-edge/LiteRT-LM` and `google-ai-edge/litert-lm` are two recorded spellings of one normalized root. The frozen manifest remains unchanged. Repository URL strings and arXiv IDs are distinct units, not successive screening stages. Title flags reflect abbreviations, descriptive labels or version-title changes. Link deduplication does not resolve DOI/preprint identity at the study level. The manuscript bibliography also includes archival records and documentation outside this census.
+The 137 count uses one selected label per labelled ID; Markdown occurrences form a separate count. The archived 123 count is case-sensitive; `google-ai-edge/LiteRT-LM` and `google-ai-edge/litert-lm` are two recorded spellings of one normalized root. The frozen manifest remains unchanged. Repository URL strings and arXiv IDs are separate audit units. Title flags reflect abbreviations, descriptive labels or version-title changes. DOI/preprint identity is handled as a separate study-level audit unit. The manuscript bibliography also includes archival records and documentation outside this census.
 
 Use a disposable checkout because the archived scripts rewrite their manifests:
 
@@ -91,17 +91,17 @@ python3 survey/verify_corpus.py --offline
 python3 survey/verify_repos.py --offline
 ```
 
-These commands replay saved metadata and HEAD status. They do not check today's source state or recover historical searches. Root files `corpus_manifest.json` and `repos_manifest.json` under `survey/` remain the frozen inputs; the living audits use separate `current_*` outputs.
+These commands replay saved metadata and HEAD status. They replay the archived source state; live checks and dated search runs are reported separately. Root files `corpus_manifest.json` and `repos_manifest.json` under `survey/` remain the frozen inputs; the living audits use separate `current_*` outputs.
 
-## Measurement and historical limits
+## Measurement scope and evidence
 
-The [benchmark protocol](benchmark_protocol.md) specifies new request logs, task-episode linkage, failures, repetition and power boundaries. The [analysis helper](compute_ci.py) summarizes supplied request observations; it cannot infer complete-task success, certify logging completeness, validate power integration or recover missing inputs. Its analysis revision must be pinned separately from the census.
+The [benchmark protocol](benchmark_protocol.md) specifies new request logs, task-episode linkage, failures, repetition and power boundaries. The [analysis helper](compute_ci.py) summarizes supplied request observations. Pair its request-level output with an episode ledger for complete-task success, an expected-attempt roster for logging completeness, and timestamped instrumentation for power integration. Pin the analysis revision separately from the census.
 
-Supplement S1 preserves the original server aggregate and provides a [recovered-record reanalysis](server/README.md). Thirteen campaigns contain 2350 logged requests and 189 recorded errors. The complete five-model campaign (1200 requests) and later Qwen follow-up (200 requests) remain separate. Scorer replay and raw-request percentiles are recalculable, giving E2 descriptive support. The old score was answer containment, actual prompts were short, an old TTFT field was prompt-evaluation duration, and energy used two endpoint-power samples. Exact execution settings remain unrecorded; unsupported E3 matched-capability/edge claims are withdrawn. The synthetic format example is separate from these observations. No recommendation depends on a numerical server ranking.
+Supplement S1 preserves the original server aggregate and provides a [recovered-record reanalysis](server/README.md). Thirteen campaigns contain 2350 logged requests and 189 recorded errors. The complete five-model campaign (1200 requests) and later Qwen follow-up (200 requests) remain separate. Scorer replay and raw-request percentiles are recalculable, giving E2 descriptive support. The historical score is answer containment, recorded prompts contain 16--95 tokens, the saved TTFT-named field is prompt-evaluation duration, and energy uses two endpoint-power samples. The current analysis reports these server measurements descriptively; edge recommendations are sourced from the device literature. The synthetic format example is separate from these observations. Deployment guidance uses source-specific device evidence.
 
 ## Artifact map
 
-The [public supplement PDF](supplement/cognitive_edge_supplement.pdf), [bibliographic database](references.bib) and files in the [public inventory](public_artifacts.json) are distributed at [tag `public-artifacts-2026-11-18-v13`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v13). Editable manuscript sources and TeX build inputs are intentionally excluded. Run `python3 survey/check_public_artifacts.py` for local file closure and add `--online` to check anonymous access to every inventoried file. This artifact edition does not replace the frozen census.
+The [public supplement PDF](supplement/cognitive_edge_supplement.pdf), [bibliographic database](references.bib) and files in the [public inventory](public_artifacts.json) are distributed at [tag `public-artifacts-2026-11-18-v14`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v14). Editable manuscript sources and TeX build inputs are intentionally excluded. Run `python3 survey/check_public_artifacts.py` for local file closure and add `--online` to check anonymous access to every inventoried file. This artifact edition and the frozen census are separate versioned records.
 
 | Scientific purpose | Location |
 |---|---|
@@ -115,4 +115,4 @@ The [public supplement PDF](supplement/cognitive_edge_supplement.pdf), [bibliogr
 | Request-log format and expected output | [Clearly labelled synthetic fixture](examples/README.md), not a measurement archive |
 | Primary model and runtime artifacts | [Models and runtimes](../README.md#models-and-runtimes) |
 
-The main manuscript retains the scientific argument, representative evidence and acceptance criteria. Extended identifiers, configuration locators, reporting schemas and prospective traces are supplementary detail. Missing historical search and measurement records remain limitations rather than reconstructed evidence.
+The main manuscript presents the scientific argument, representative evidence, and acceptance criteria. The supplement provides extended identifiers, configuration locators, reporting schemas, prospective traces, and the archived search and measurement records.

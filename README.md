@@ -35,7 +35,7 @@ The associated journal manuscript is titled *Cognitive Edge Computing: A Survey 
 
 ## Deployment framework
 
-1. **Define acceptance.** Specify the useful outcome, required evidence, deadline and permitted actions. A valid model response can still be an incomplete user task.
+1. **Define acceptance.** Specify the useful outcome, required evidence, deadline and permitted actions. Task acceptance includes the user goal, deadline, required evidence, and permitted actions.
 2. **Measure the bottleneck.** Separate weights, retained KV, workspace, prefill, decode, tools, communication and sustained thermal behavior.
 3. **Choose compatible controls.** Context selection, precision, reasoning depth, scheduling and placement change different costs. Verify their interaction on the intended runtime.
 4. **Validate the entire episode.** Include retries, failed/deferred tasks, tool effects and all declared devices in the accounting. Use task success alongside quality proxies and execution metrics.
@@ -84,15 +84,15 @@ Choose the model's role before its size. A text model, visual encoder, function 
 | [Transformers.js](https://github.com/huggingface/transformers.js) | Browser/JavaScript inference | Browser backend, memory limits and model format |
 | [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Supported NVIDIA accelerator serving | Exact GPU/platform support; do not infer phone portability |
 
-Use current vendor documentation for [Core ML](https://developer.apple.com/documentation/coreml), [Qualcomm AI Hub](https://aihub.qualcomm.com/) and [LiteRT](https://developers.google.com/edge/litert/overview). Version-specific accelerator paths change. Runtime availability does not establish equal capability or performance across targets.
+Use current vendor documentation for [Core ML](https://developer.apple.com/documentation/coreml), [Qualcomm AI Hub](https://aihub.qualcomm.com/) and [LiteRT](https://developers.google.com/edge/litert/overview). Version-specific accelerator paths change. Benchmark capability and performance for each target runtime/device pair.
 
 ### MCU and embedded inference
 
-[TensorFlow Lite Micro](https://github.com/tensorflow/tflite-micro), [CMSIS-NN](https://github.com/ARM-software/CMSIS-NN), [TinyEngine](https://github.com/mit-han-lab/tinyengine) and [emlearn](https://github.com/emlearn/emlearn) support constrained inference roles. Their small-network results should not be presented as evidence that a complete LLM agent fits an MCU. See the [foundations](#constrained-learning-foundations) for the relevant model and training regimes.
+[TensorFlow Lite Micro](https://github.com/tensorflow/tflite-micro), [CMSIS-NN](https://github.com/ARM-software/CMSIS-NN), [TinyEngine](https://github.com/mit-han-lab/tinyengine) and [emlearn](https://github.com/emlearn/emlearn) support constrained inference roles. Their small-network results characterize constrained inference; a complete LLM agent has a separate memory and execution profile that calls for MCU-specific evaluation. See the [foundations](#constrained-learning-foundations) for the relevant model and training regimes.
 
 ## Optimization under deployment budgets
 
-Start from a feasible, correct baseline and a measured bottleneck. Weight storage, KV state, visual encoding, decoding, tool calls and wireless transfers compete for different resources. A gain in one phase need not improve complete-task latency or energy.
+Start from a feasible, correct baseline and a measured bottleneck. Weight storage, KV state, visual encoding, decoding, tool calls and wireless transfers compete for different resources. The effect on complete-task latency and energy depends on interactions among phases; measure the full episode.
 
 ![Shared resource couplings](survey/figures/cross_layer_couplings.png)
 
@@ -100,7 +100,7 @@ Start from a feasible, correct baseline and a measured bottleneck. Weight storag
 
 ![Analytical weight and KV-state memory budget](survey/figures/memory_budget.png)
 
-The [analytical memory illustration](survey/figures/memory_budget.pdf) separates fixed weight storage from context-dependent KV growth. Its [CSV](survey/figures/memory_budget_analytical.csv) is formula-generated, not a device benchmark; workspace and operating-system cost are excluded.
+The [analytical memory illustration](survey/figures/memory_budget.pdf) separates fixed weight storage from context-dependent KV growth. Its [CSV](survey/figures/memory_budget_analytical.csv) applies the stated formula; include workspace and operating-system memory in target-device measurements.
 
 - [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) (arXiv 2023) — Paged KV management for serving; mobile transfer requires a supported implementation.
 - [DUAL-BLADE: Dual-Path NVMe-Direct KV-Cache Offloading for Edge LLM Inference](https://arxiv.org/abs/2604.26557) (arXiv 2026) — Storage-backed KV transfer and edge execution.
@@ -128,7 +128,7 @@ The [analytical memory illustration](survey/figures/memory_budget.pdf) separates
 
 - [EAGLE-2: Faster Inference of Language Models with Dynamic Draft Trees](https://doi.org/10.18653/v1/2024.emnlp-main.422) (EMNLP 2024).
 
-Measure drafting, verification, switching, accepted output and rejected work together. Acceptance rate alone cannot establish speedup, and a reasoning-token cap alone cannot establish preserved task quality.
+Measure drafting, verification, switching, accepted output and rejected work together. Measure accepted output, end-to-end speedup, and task quality together, including work spent on rejected drafts and capped reasoning.
 
 ### Runtime, scheduling and hardware mapping
 
@@ -177,7 +177,7 @@ An agent combines a model with task state, tools and a stopping policy. The depl
 - [Small Language Models are the Future of Agentic AI](https://arxiv.org/abs/2506.02153) (arXiv 2025) — Small-model roles within agent systems.
 - [Nexus: An Execution Fabric for AI Agents Across Cloud, Edge, and Devices](https://arxiv.org/abs/2610.05709) (arXiv 2026) — Persistent cross-device tasks, delegation and permission state.
 
-- [Agent-X: Full Pipeline Acceleration of On-device AI Agents](https://doi.org/10.1145/3745756.3809195) (MobiSys 2026) — prompt/cache and drafting co-design; the published personal-computer platform is not a phone energy measurement.
+- [Agent-X: Full Pipeline Acceleration of On-device AI Agents](https://doi.org/10.1145/3745756.3809195) (MobiSys 2026) — prompt/cache and drafting co-design; the paper reports a personal-computer platform; phone energy is a separate target-device measure.
 
 ### Reasoning budgets and predictive planning
 
@@ -197,7 +197,7 @@ Context-selection and cached-state mechanisms are in [Optimization](#context-sta
 
 Full-request delegation transfers selected evidence; model partitioning transfers intermediate state; a large–small cascade routes between models. Compare like tasks and record payload, state ownership, link conditions, retries and fallback.
 
-- [EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation](https://arxiv.org/abs/2610.17560) (arXiv 2026) — Step-level cloud delegation in long-horizon tasks; its DGX Spark demonstration does not establish phone feasibility.
+- [EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation](https://arxiv.org/abs/2610.17560) (arXiv 2026) — Step-level cloud delegation in long-horizon tasks; its DGX Spark demonstration motivates a separate phone-feasibility measurement.
 - [DiSCo: Device-Server Collaborative LLM-Based Text Streaming Services](https://arxiv.org/abs/2502.11417) (arXiv 2025) — Device–server text streaming.
 - [CLONE: Customizing LLMs for Efficient Latency-Aware Inference at the Edge](https://arxiv.org/abs/2506.02847) (arXiv 2025) — Latency-aware model customization.
 - [GELATO: Generative Entropy- and Lyapunov-based Adaptive Token Offloading for Device-Edge Speculative LLM Inference](https://arxiv.org/abs/2605.10124) (arXiv 2026) — Token offloading and device–edge speculative execution.
@@ -242,9 +242,9 @@ Measure the capability being claimed at the deployment boundary where it matters
 
 For A attempted episodes and S successes, report S/A with failed and timed-out attempts included. Mean attempt energy is total attempted-task energy divided by A; amortized energy per success uses the same numerator divided by S and is undefined for S=0. A success-only conditional mean answers a different question. Keep request TTFT and p95 separate from task completion time and deadline satisfaction.
 
-- [Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution](https://arxiv.org/abs/2610.17816) (arXiv 2026) — EC²-Bench evaluates executable long-horizon tasks, cloud usage and privacy exposure. Estimated local FLOPs are not measured device energy.
+- [Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution](https://arxiv.org/abs/2610.17816) (arXiv 2026) — EC²-Bench evaluates executable long-horizon tasks, cloud usage and privacy exposure. Estimated local FLOPs and measured device energy are separate metrics.
 
-The [benchmark protocol](survey/benchmark_protocol.md) specifies future logs, grouping and energy boundaries. The [helper](survey/compute_ci.py) summarizes supplied request records and does not reconstruct missing historical traces or infer episode success from call success.
+The [benchmark protocol](survey/benchmark_protocol.md) specifies future logs, grouping and energy boundaries. The [helper](survey/compute_ci.py) summarizes supplied request records; historical traces and episode success use their respective source records.
 
 ### Device and sustained-session studies
 
@@ -260,11 +260,11 @@ The [benchmark protocol](survey/benchmark_protocol.md) specifies future logs, gr
 - [How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf](https://arxiv.org/abs/2602.18397) (arXiv 2026) — VLA inference performance across execution stages.
 - [VLA-HWBench: Where the Time Goes When VLA Models Run on Edge Hardware](https://arxiv.org/abs/2610.34717) (arXiv 2026) — VLA hardware pipeline breakdowns.
 
-Benchmarks: [MLPerf Inference](https://github.com/mlcommons/inference), [MLPerf Tiny](https://github.com/mlcommons/tiny). Record the suite version, task, data split, precision, runtime, memory, thermal state, power scope and independent repetition unit. A global model leaderboard cannot replace a matched deployment study.
+Benchmarks: [MLPerf Inference](https://github.com/mlcommons/inference), [MLPerf Tiny](https://github.com/mlcommons/tiny). Record the suite version, task, data split, precision, runtime, memory, thermal state, power scope and independent repetition unit. Use matched deployment studies to compare model choices for a target workload.
 
 ### Security and privacy
 
-Locality can reduce data transfer but does not establish a complete security guarantee. State the adversary and protected objects, including model weights, retained context, sensor input, tool credentials and action state. Distinguish leakage prevention from permission enforcement and recovery.
+Locality can reduce data transfer; state the threat model, protected objects, permissions, and recovery behavior to define security outcomes. State the adversary and protected objects, including model weights, retained context, sensor input, tool credentials and action state. Distinguish leakage prevention from permission enforcement and recovery.
 
 - [Speed Kills: Exploring Confused Deputy Attacks Through Edge AI Accelerators](https://arxiv.org/abs/2605.17707) (arXiv 2026) — Accelerator interfaces and confused-deputy attack surfaces.
 - [Understanding the Security Boundary of Obfuscation-based On-Device LLM Protection](https://arxiv.org/abs/2609.10117) (arXiv 2026) — Security limits of obfuscation-based on-device protection.
@@ -295,7 +295,7 @@ These sources provide starting points for mechanisms and neighboring research sc
 - [Tiny Machine Learning: Progress and Futures](https://arxiv.org/abs/2403.19076) (arXiv 2024) — A synthesis of TinyML progress and open problems.
 - [What changes after deployment? A survey on On-device Learning in TinyML](https://arxiv.org/abs/2605.31226) (arXiv 2026) — On-device learning changes after deployment.
 
-These systems establish important constrained-learning mechanisms; they do not establish full LLM-agent execution on microcontrollers.
+These systems establish important constrained-learning mechanisms; their results characterize constrained-learning mechanisms; complete LLM-agent execution is a separate workload.
 
 ### Edge language models and collaborative intelligence
 
@@ -336,7 +336,7 @@ survey/
   *_protocol.md, protocol.md  Scope and measurement contracts
 ```
 
-Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. The repository includes the [bibliographic database](survey/references.bib), figure inputs, protocols and runnable format examples. Editable manuscript sources and author-local build files are not distributed. The current public artifact edition is pinned to [tag `public-artifacts-2026-11-18-v13`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v13).
+Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) for source locators, extended deployment checks and the worked assistant contract. The [recovered server archive](survey/server/README.md) retains the empirical record separately from synthetic helper examples. The repository includes the [bibliographic database](survey/references.bib), figure inputs, protocols and runnable format examples. Editable manuscript sources and author-local build files are not distributed. The current public artifact edition is pinned to [tag `public-artifacts-2026-11-18-v14`](https://github.com/wangxb96/Awesome-EdgeAI/tree/public-artifacts-2026-11-18-v14).
 
 | Artifact | Purpose |
 |---|---|
@@ -346,14 +346,14 @@ Read the [supplementary PDF](survey/supplement/cognitive_edge_supplement.pdf) fo
 | [Public-file inventory](survey/public_artifacts.json) / [closure check](survey/check_public_artifacts.py) | All distributed files, supplement dependencies and optional anonymous access checks |
 | [Historical server record](survey/server/README.md) | Recovered requests, task definitions, all-campaign ledger, descriptive reanalysis and measurement-boundary figures |
 | [Synthetic request example](survey/examples/README.md) | Runnable CSV and expected JSON for checking the helper's format and denominators; no measured performance |
-| [Survey protocol](survey/protocol.md) | Scope, source verification, E1/E2/E3 publication/artifact qualification and search-record limitations |
+| [Survey protocol](survey/protocol.md) | Scope, source verification, E1/E2/E3 publication/artifact qualification and dated search records |
 | [Reference database](survey/references.bib) | Bibliographic records for both survey versions and the current guide |
 | [Benchmark protocol](survey/benchmark_protocol.md) | Request/episode boundaries, failure accounting and energy attribution |
-| [Descriptive analysis helper](survey/compute_ci.py) | Summaries of supplied request records; does not infer complete-task success |
+| [Descriptive analysis helper](survey/compute_ci.py) | Summaries of supplied requests; task success is analyzed through the linked episode ledger |
 | [Literature audit](survey/verify_corpus.py) / [repository audit](survey/verify_repos.py) | Check the linked resources in this README |
 | [Editable figure catalogue](survey/figures/README.md) | Sources, vector exports, analytical data and rebuild commands |
 
-The manuscript's retained-link census is pinned to [commit `3dd39bd`](https://github.com/wangxb96/Awesome-EdgeAI/tree/3dd39bd), with 145 arXiv identifiers, 137 title-audited labels and 123 distinct recorded repository URL-root strings (122 after case folding). These are link units, not a study-screening flow; normalization does not resolve redirects or aliases. This living README and its `current_*` manifests are separate from that frozen snapshot. The [protocol](survey/protocol.md#reproduce-the-frozen-census) explains how to reproduce it. A separate [dated identification update](survey/search_update_2026-11-17/README.md) preserves bounded queries and screening decisions, and the [security ledger](survey/security_evidence_ledger.json) qualifies the C4 examples.
+The manuscript's retained-link census is pinned to [commit `3dd39bd`](https://github.com/wangxb96/Awesome-EdgeAI/tree/3dd39bd), with 145 arXiv identifiers, 137 title-audited labels and 123 distinct recorded repository URL-root strings (122 after case folding). These counts describe link units rather than screening stages. Normalization case-folds repository roots; redirects and aliases are tracked as separate relationships. This living README and its `current_*` manifests are separate from that frozen snapshot. The [protocol](survey/protocol.md#reproduce-the-frozen-census) explains how to reproduce it. A separate [dated identification update](survey/search_update_2026-11-17/README.md) preserves bounded queries and screening decisions, and the [security ledger](survey/security_evidence_ledger.json) qualifies the C4 examples.
 
 For this README:
 
@@ -364,7 +364,7 @@ python3 survey/verify_corpus.py --offline
 python3 survey/verify_repos.py
 ```
 
-The literature command reuses cached primary metadata and reports missing records; the repository command checks live reachability. Version-specific records above were checked against their primary arXiv pages. A successful link check does not establish official ownership, experimental replication or suitability for a particular device.
+The literature command reuses cached primary metadata and reports its record status; the repository command checks live reachability. Version-specific records above were checked against their primary arXiv pages. Link checks report reachability, while source ownership, experimental reproduction, and device suitability are assessed from the linked records.
 
 The supplement is distributed as a rendered PDF; editable manuscript sources and TeX build inputs are not part of this repository. To check the analysis format without collecting measurements:
 
@@ -374,7 +374,7 @@ python3 survey/compute_ci.py \
   --out request_summary_local.json
 ```
 
-The output matches [the supplied synthetic summary](survey/examples/request_summary_synthetic.json). The fixture contains invented request statuses and timings only; it cannot validate a model, estimate device performance or restore the historical records. For anonymous access to every distributed file at the pinned edition, run `python3 survey/check_public_artifacts.py --online`.
+The output matches [the supplied synthetic summary](survey/examples/request_summary_synthetic.json). The fixture contains invented request statuses and timings for format checking; empirical model, device-performance, and historical conclusions use measured source records. For anonymous access to every distributed file at the pinned edition, run `python3 survey/check_public_artifacts.py --online`.
 
 ### Figure sources
 
